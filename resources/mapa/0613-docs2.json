@@ -1,0 +1,426 @@
+{
+  "modulo": "0613",
+  "modulo_nombre": "Desarrollo Web en entorno servidor",
+  "ciclo": "daw",
+  "origen": "docs2",
+  "estado": "propuesta",
+  "nota": "Mapa propuesto automáticamente a partir del contenido de docs2/. Pendiente de validación del profesorado. Cada unidad se asocia a uno o varios RA del módulo 0613 (BOE).",
+  "unidades": [
+    {
+      "ruta": "introduccion/02-lenguajes-programacion.md",
+      "titulo": "Lenguajes de programación en el servidor",
+      "tipo": "teoria",
+      "ra": ["RA1"],
+      "confianza": "alta",
+      "justificacion": "Arquitecturas y tecnologías de programación web en entorno servidor."
+    },
+    {
+      "ruta": "introduccion/03-herramientas.md",
+      "titulo": "Herramientas del ecosistema",
+      "tipo": "teoria",
+      "ra": ["RA1"],
+      "confianza": "alta",
+      "justificacion": "Herramientas y frameworks de programación en entorno servidor (Composer, Docker…)."
+    },
+    {
+      "ruta": "php/02-primeros-pasos.md",
+      "titulo": "Primeros pasos con PHP",
+      "tipo": "teoria",
+      "ra": ["RA2", "RA3"],
+      "confianza": "alta",
+      "justificacion": "Sentencias ejecutables por el servidor y primeras estructuras del lenguaje."
+    },
+    {
+      "ruta": "php/03-estructuras-control.md",
+      "titulo": "Estructuras de control",
+      "tipo": "teoria",
+      "ra": ["RA3"],
+      "confianza": "alta",
+      "justificacion": "Estructuras de programación embebidas en lenguajes de marcas."
+    },
+    {
+      "ruta": "php/04-arrays.md",
+      "titulo": "Arrays",
+      "tipo": "teoria",
+      "ra": ["RA3"],
+      "confianza": "alta",
+      "justificacion": "Estructuras de datos del lenguaje."
+    },
+    {
+      "ruta": "php/05-funciones.md",
+      "titulo": "Funciones",
+      "tipo": "teoria",
+      "ra": ["RA3"],
+      "confianza": "alta",
+      "justificacion": "Modularización del código embebido."
+    },
+    {
+      "ruta": "php/06-poo.md",
+      "titulo": "Programación orientada a objetos",
+      "tipo": "teoria",
+      "ra": ["RA3"],
+      "confianza": "media",
+      "justificacion": "Estructuras de programación avanzadas."
+    },
+    {
+      "ruta": "php/07-excepciones.md",
+      "titulo": "Excepciones y errores",
+      "tipo": "teoria",
+      "ra": ["RA3"],
+      "confianza": "alta",
+      "justificacion": "Manejo de errores en bloques de sentencias."
+    },
+    {
+      "ruta": "php/08-directivas.md",
+      "titulo": "Directivas",
+      "tipo": "teoria",
+      "ra": ["RA3"],
+      "confianza": "alta",
+      "justificacion": "Organización y configuración del código."
+    },
+    {
+      "ruta": "php/09-codigo-embebido.md",
+      "titulo": "Código embebido",
+      "tipo": "teoria",
+      "ra": ["RA2"],
+      "confianza": "alta",
+      "justificacion": "Integración de código de servidor en lenguajes de marcas."
+    },
+    {
+      "ruta": "php/99-ejercicios.md",
+      "titulo": "Ejercicios de PHP",
+      "tipo": "ejercicios",
+      "ra": ["RA2", "RA3"],
+      "confianza": "alta",
+      "justificacion": "Colección de ejercicios evaluables del bloque de sintaxis."
+    },
+    {
+      "ruta": "aplicaciones_web/02-formularios.md",
+      "titulo": "Formularios",
+      "tipo": "teoria",
+      "ra": ["RA4"],
+      "confianza": "alta",
+      "justificacion": "Recepción y procesado de la entrada del usuario."
+    },
+    {
+      "ruta": "aplicaciones_web/ampliacion-formularios.md",
+      "titulo": "Ampliación de formularios",
+      "tipo": "teoria",
+      "ra": ["RA4"],
+      "confianza": "alta",
+      "justificacion": "Funcionalidades adicionales sobre formularios."
+    },
+    {
+      "ruta": "aplicaciones_web/03-sesiones-cookies.md",
+      "titulo": "Sesiones y cookies",
+      "tipo": "teoria",
+      "ra": ["RA4", "RA6"],
+      "confianza": "media",
+      "justificacion": "Mantenimiento de estado (RA4) y almacenamiento seguro de la información de sesión (RA6)."
+    },
+    {
+      "ruta": "aplicaciones_web/04-seguridad.md",
+      "titulo": "Seguridad",
+      "tipo": "teoria",
+      "ra": ["RA6"],
+      "confianza": "alta",
+      "justificacion": "Medidas de seguridad e integridad de la información."
+    },
+    {
+      "ruta": "aplicaciones_web/05-ficheros.md",
+      "titulo": "Gestión de ficheros",
+      "tipo": "teoria",
+      "ra": ["RA4"],
+      "confianza": "alta",
+      "justificacion": "Subida y tratamiento de ficheros en la aplicación web."
+    },
+    {
+      "ruta": "aplicaciones_web/06-bases-datos.md",
+      "titulo": "Bases de datos (SQL y PDO, MongoDB)",
+      "tipo": "teoria",
+      "ra": ["RA6"],
+      "confianza": "alta",
+      "justificacion": "Acceso a almacenes de datos y persistencia."
+    },
+    {
+      "ruta": "aplicaciones_web/07-estructura-proyecto.md",
+      "titulo": "Estructura de proyecto",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "media",
+      "justificacion": "Separación entre presentación y lógica de negocio."
+    },
+    {
+      "ruta": "aplicaciones_web/98-ejercicios-persistencia.md",
+      "titulo": "Ejercicios de persistencia",
+      "tipo": "ejercicios",
+      "ra": ["RA6"],
+      "confianza": "alta",
+      "justificacion": "Ejercicios evaluables de acceso a datos."
+    },
+    {
+      "ruta": "aplicaciones_web/99-ejercicios.md",
+      "titulo": "Ejercicios de aplicaciones web",
+      "tipo": "ejercicios",
+      "ra": ["RA4", "RA6"],
+      "confianza": "media",
+      "justificacion": "Ejercicios evaluables del bloque de aplicaciones."
+    },
+    {
+      "ruta": "webs_dinamicas/02-ajax.md",
+      "titulo": "AJAX",
+      "tipo": "teoria",
+      "ra": ["RA8"],
+      "confianza": "alta",
+      "justificacion": "Generación de páginas dinámicas con comunicación asíncrona."
+    },
+    {
+      "ruta": "webs_dinamicas/03-validacion-formularios.md",
+      "titulo": "Validación de formularios",
+      "tipo": "teoria",
+      "ra": ["RA8"],
+      "confianza": "media",
+      "justificacion": "Validación en cliente integrada con el servidor."
+    },
+    {
+      "ruta": "webs_dinamicas/04-modificacion-dom.md",
+      "titulo": "Modificación del DOM",
+      "tipo": "teoria",
+      "ra": ["RA8"],
+      "confianza": "alta",
+      "justificacion": "Actualización dinámica del documento."
+    },
+    {
+      "ruta": "webs_dinamicas/05-async-patrones.md",
+      "titulo": "Patrones asíncronos",
+      "tipo": "teoria",
+      "ra": ["RA8"],
+      "confianza": "alta",
+      "justificacion": "Comunicación asíncrona entre cliente y servidor."
+    },
+    {
+      "ruta": "webs_dinamicas/06-seguridad-ajax.md",
+      "titulo": "Seguridad en AJAX",
+      "tipo": "teoria",
+      "ra": ["RA8"],
+      "confianza": "media",
+      "justificacion": "Seguridad en la comunicación asíncrona."
+    },
+    {
+      "ruta": "webs_dinamicas/99-ejercicios.md",
+      "titulo": "Ejercicios de webs dinámicas",
+      "tipo": "ejercicios",
+      "ra": ["RA8"],
+      "confianza": "alta",
+      "justificacion": "Ejercicios evaluables de dinamismo en cliente."
+    },
+    {
+      "ruta": "laravel/02-instalacion.md",
+      "titulo": "Instalación de Laravel",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "alta",
+      "justificacion": "Puesta en marcha de un framework con arquitectura MVC."
+    },
+    {
+      "ruta": "laravel/03-rutas.md",
+      "titulo": "Rutas",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "alta",
+      "justificacion": "Enrutamiento y control del flujo de la aplicación."
+    },
+    {
+      "ruta": "laravel/04-controladores.md",
+      "titulo": "Controladores",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "alta",
+      "justificacion": "Separación de la lógica de negocio."
+    },
+    {
+      "ruta": "laravel/05-vistas.md",
+      "titulo": "Vistas (Blade)",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "alta",
+      "justificacion": "Separación de la presentación."
+    },
+    {
+      "ruta": "laravel/06-formularios.md",
+      "titulo": "Formularios en Laravel",
+      "tipo": "teoria",
+      "ra": ["RA4", "RA5"],
+      "confianza": "media",
+      "justificacion": "Entrada del usuario gestionada a través del framework."
+    },
+    {
+      "ruta": "laravel/07-modelos.md",
+      "titulo": "Modelos (Eloquent)",
+      "tipo": "teoria",
+      "ra": ["RA6"],
+      "confianza": "alta",
+      "justificacion": "Acceso a almacenes de datos mediante ORM."
+    },
+    {
+      "ruta": "laravel/08-cookies-sesiones.md",
+      "titulo": "Cookies y sesiones en Laravel",
+      "tipo": "teoria",
+      "ra": ["RA6"],
+      "confianza": "media",
+      "justificacion": "Gestión de estado y seguridad de la sesión."
+    },
+    {
+      "ruta": "laravel/09-servicios.md",
+      "titulo": "Servicios",
+      "tipo": "teoria",
+      "ra": ["RA7"],
+      "confianza": "media",
+      "justificacion": "Componentes de servicio de la aplicación."
+    },
+    {
+      "ruta": "laravel/10-seguridad.md",
+      "titulo": "Seguridad en Laravel",
+      "tipo": "teoria",
+      "ra": ["RA6"],
+      "confianza": "alta",
+      "justificacion": "Protección e integridad de la información."
+    },
+    {
+      "ruta": "laravel/11-inyeccion-dependencias.md",
+      "titulo": "Inyección de dependencias",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "media",
+      "justificacion": "Desacoplamiento de la lógica de negocio."
+    },
+    {
+      "ruta": "laravel/12-testing.md",
+      "titulo": "Testing",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "baja",
+      "justificacion": "Verificación de la aplicación; no encaja de forma directa en un RA."
+    },
+    {
+      "ruta": "laravel/13-fechas.md",
+      "titulo": "Fechas",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "baja",
+      "justificacion": "Utilidad transversal del framework."
+    },
+    {
+      "ruta": "laravel/14-response.md",
+      "titulo": "Respuestas HTTP",
+      "tipo": "teoria",
+      "ra": ["RA5"],
+      "confianza": "media",
+      "justificacion": "Construcción de la respuesta desde la capa de presentación."
+    },
+    {
+      "ruta": "laravel/15-migrations.md",
+      "titulo": "Migraciones",
+      "tipo": "teoria",
+      "ra": ["RA6"],
+      "confianza": "alta",
+      "justificacion": "Definición y evolución del almacén de datos."
+    },
+    {
+      "ruta": "servicios_web/02-tecnologias.md",
+      "titulo": "Tecnologías de servicios web",
+      "tipo": "teoria",
+      "ra": ["RA7"],
+      "confianza": "alta",
+      "justificacion": "Análisis del funcionamiento de los servicios web."
+    },
+    {
+      "ruta": "servicios_web/03-creando-servicio.md",
+      "titulo": "Creación de un servicio",
+      "tipo": "teoria",
+      "ra": ["RA7"],
+      "confianza": "alta",
+      "justificacion": "Implantación de la estructura de sus componentes."
+    },
+    {
+      "ruta": "servicios_web/04-probando-servicio.md",
+      "titulo": "Prueba del servicio",
+      "tipo": "teoria",
+      "ra": ["RA7"],
+      "confianza": "alta",
+      "justificacion": "Verificación del servicio web."
+    },
+    {
+      "ruta": "servicios_web/05-documentando-servicio.md",
+      "titulo": "Documentación del servicio",
+      "tipo": "teoria",
+      "ra": ["RA7"],
+      "confianza": "alta",
+      "justificacion": "Documentación del servicio (Swagger)."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/02-apis-terceros.md",
+      "titulo": "APIs de terceros",
+      "tipo": "teoria",
+      "ra": ["RA9"],
+      "confianza": "alta",
+      "justificacion": "Consumo de repositorios heterogéneos de información."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/03-creando-apis-propias.md",
+      "titulo": "Creación de APIs propias",
+      "tipo": "teoria",
+      "ra": ["RA7", "RA9"],
+      "confianza": "media",
+      "justificacion": "Servicios web propios consumidos por la aplicación híbrida."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/04-sdks-frameworks.md",
+      "titulo": "SDKs y frameworks",
+      "tipo": "teoria",
+      "ra": ["RA9"],
+      "confianza": "alta",
+      "justificacion": "Uso de librerías de código de terceros."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/05-big-data-ia.md",
+      "titulo": "Big Data e IA",
+      "tipo": "teoria",
+      "ra": ["RA9"],
+      "confianza": "media",
+      "justificacion": "Integración de repositorios heterogéneos de información."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/06-testing-depuracion.md",
+      "titulo": "Testing y depuración",
+      "tipo": "teoria",
+      "ra": ["RA9"],
+      "confianza": "baja",
+      "justificacion": "Calidad de la aplicación híbrida; encaje indirecto."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/07-autenticacion-apis.md",
+      "titulo": "Autenticación de APIs",
+      "tipo": "teoria",
+      "ra": ["RA9"],
+      "confianza": "alta",
+      "justificacion": "Consumo seguro de servicios de terceros."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/08-versionado-webhooks.md",
+      "titulo": "Versionado y webhooks",
+      "tipo": "teoria",
+      "ra": ["RA9"],
+      "confianza": "alta",
+      "justificacion": "Integración de servicios externos mediante eventos."
+    },
+    {
+      "ruta": "aplicaciones_web_hibridas/99-ejercicios.md",
+      "titulo": "Ejercicios de aplicaciones híbridas",
+      "tipo": "ejercicios",
+      "ra": ["RA9"],
+      "confianza": "alta",
+      "justificacion": "Ejercicios evaluables de integración de servicios."
+    }
+  ]
+}

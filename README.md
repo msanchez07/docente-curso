@@ -1,0 +1,133 @@
+# Docente Curso · gestión de entregas y calificaciones
+
+Aplicación de escritorio **local** para organizar la docencia de FP alrededor de **grupos de
+clase**: programación, alumnado, entregas con rúbrica, evidencias, calificaciones, formación en
+empresa e informes trazables al BOE.
+
+> **Repositorio:** [git@github.com:msanchez07/docente-curso.git](https://github.com/msanchez07/docente-curso)
+>
+> El detalle de lo construido, las decisiones y el historial de iteraciones están en
+> [`RESUMEN-ITERACIONES.md`](./RESUMEN-ITERACIONES.md). Ese documento es el que debe actualizarse
+> al cerrar cada nueva iteración.
+
+## Estado
+
+Aplicación funcional en desarrollo activo. Verificación actual:
+
+- `npm run typecheck` ✅
+- `npm test` ✅ **191 tests**
+- `npm run build` ✅
+- `npm run smoke` ✅
+
+## Funcionalidad principal
+
+- **Cursos académicos automáticos** por fecha (septiembre–julio); actualmente `2026/2027`.
+- **Grupos** por ciclo, nivel, modalidad y módulo, con nombre generado y curso académico
+  asignado automáticamente.
+- **Horario semanal** de bloques de 55 minutos:
+  - Mañana 08:00–14:00, recreo 10:45–11:15.
+  - Tarde 14:40–21:05, recreo 18:00–18:20.
+  - En semipresencial se marcan sesiones, tutorías colectivas y tutorías individuales, con
+    varias posibles por día y colores distintos.
+  - Vista independiente de horario desde el dashboard.
+- **Dashboard** con agenda ordenada por fechas y minicalendario mensual:
+  - Días coloreados por entregas, exámenes, evaluaciones y festivos/no lectivos.
+  - Festivos y no lectivos con fondo rojo.
+- **Programación de aula**: sesiones por fecha y hora, varias por día, unidades, desviaciones y
+  observaciones.
+- **Programación didáctica**: unidades, fechas, criterios, RA/CE y calendario escolar.
+- **Entregas**:
+  - Rúbrica en texto y/o archivo y evidencias.
+  - Mapeo a RA/CE, bloqueo/desbloqueo y notas.
+  - Exportación por entrega, avaluación/trimestre o curso completo.
+  - Previsualización en ventana propia y descarga en PDF (solo texto/rúbrica) o ZIP (archivos),
+    incluyendo el dossier dentro del ZIP cuando hay ambos.
+  - El archivo de una sola entrega usa el nombre de la entrega.
+- **Calificaciones**:
+  - Notas decimales por entrega y anotaciones.
+  - Cálculo de categorías, avaluaciones, RA y nota final.
+  - Desbloqueo directo de entregas bloqueadas.
+  - Informe PDF por alumno y acceso a su informe completo.
+- **Informes** de grupo y alumno con gráficas, RA, formación, impresión y exportación.
+- **Plantillas de criterios** con listado y edición en páginas propias.
+- **Normativa FP** a pantalla completa e importación desde la barra lateral.
+- **Datos de prueba** en la previsualización web: restaurar o eliminar.
+
+## Stack
+
+- Electron
+- Vue 3 + TypeScript + Pinia + Vue Router
+- SQLite con `better-sqlite3` y migraciones versionadas
+- Vite / electron-vite
+- Vitest
+- JSZip para exportaciones con archivos
+
+## Puesta en marcha
+
+Requisitos: Node.js 20+ y npm.
+
+```bash
+npm install
+npm run dev        # app de escritorio en desarrollo
+npm run dev:web    # previsualización en navegador con API simulada
+```
+
+## Comandos
+
+```bash
+npm run typecheck  # comprobación de tipos
+npm test           # tests unitarios
+npm run build      # typecheck + build de main, preload y renderer
+npm run smoke      # flujo renderer → preload → IPC → SQLite
+npm run smoke:boe  # lectura de los recursos del BOE
+npm run format     # Prettier
+npm run lint       # ESLint
+```
+
+Empaquetado:
+
+```bash
+npm run build:unpack
+npm run build:mac
+npm run build:win
+npm run build:linux
+```
+
+## Estructura
+
+```text
+src/
+├── main/            # proceso principal: SQLite, IPC, servicios de exportación
+│   ├── db/          # esquema, migraciones y repositorios
+│   ├── entregas/    # exportación de entregas (PDF/ZIP)
+│   ├── informes/    # informes HTML/PDF/CSV
+│   └── programacion/# exportación de programación a PDF
+├── preload/         # puente tipado entre renderer y main
+├── renderer/        # interfaz Vue 3
+│   ├── components/  # componentes reutilizables
+│   ├── dev/         # API simulada para la previsualización web
+│   ├── stores/      # Pinia
+│   └── views/       # vistas por grupo y globales
+├── shared/          # tipos, validaciones y generadores compartidos
+└── resources/       # BOE, normativa y materiales de ejemplo
+tests/               # pruebas unitarias
+scripts/             # smoke tests y utilidades
+```
+
+## Datos y privacidad
+
+La base de datos vive en el equipo del docente:
+
+```text
+~/Library/Application Support/gestion-entregas/gestion-entregas.db   # macOS
+```
+
+No hay backend remoto. La previsualización web (`npm run dev:web`) es solo una simulación local
+con `localStorage`. Las exportaciones se generan localmente.
+
+## Documentación
+
+- [`RESUMEN-ITERACIONES.md`](./RESUMEN-ITERACIONES.md) — estado vivo, decisiones, historial y
+  pendientes.
+- [`PLAN.md`](./PLAN.md) — plan original por fases.
+- [`PLAN-REVISION-SECCIONES.md`](./PLAN-REVISION-SECCIONES.md) — revisión de secciones.
