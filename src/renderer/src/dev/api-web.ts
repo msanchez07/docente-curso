@@ -2518,6 +2518,36 @@ const api = {
         'La exportación CSV está disponible en la aplicación de escritorio. En la previsualización web puedes usar «Ver informe».'
     })
   },
+  backup: {
+    estado: async () => ({
+      carpeta: 'Solo disponible en la aplicación de escritorio',
+      existe: false,
+      configurada: false,
+      grupos: 0,
+      backups: 0,
+      mensaje: 'Las copias de seguridad están disponibles en la aplicación de escritorio.'
+    }),
+    elegirCarpeta: async () => null,
+    usarCarpetaRecomendada: async () => ({
+      carpeta: 'Solo disponible en la aplicación de escritorio',
+      existe: false,
+      configurada: false,
+      grupos: 0,
+      backups: 0,
+      mensaje: 'Las copias de seguridad están disponibles en la aplicación de escritorio.'
+    }),
+    abrirCarpeta: async () => false,
+    listar: async () => [],
+    crear: async () => ({
+      ok: false,
+      mensaje: 'Las copias de seguridad están disponibles en la aplicación de escritorio.'
+    }),
+    crearTodos: async () => [],
+    importar: async () => ({
+      ok: false,
+      mensaje: 'Las copias de seguridad están disponibles en la aplicación de escritorio.'
+    })
+  },
   demo: {
     cargar: async (): Promise<void> => {
       limpiarDatosDemo()

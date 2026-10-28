@@ -26,7 +26,7 @@ export function vaciarDatos(db: Bd): void {
       DELETE FROM grupos_clase;
       DELETE FROM grupos;
       DELETE FROM alumnos;
-      DELETE FROM config;
+      DELETE FROM config WHERE clave <> 'backup_carpeta';
     `)
   })()
   db.pragma('wal_checkpoint(TRUNCATE)')

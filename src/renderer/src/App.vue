@@ -17,12 +17,27 @@ const eliminandoDemo = ref(false)
 const puedeDemo = Boolean(window.api.demo)
 const esNormativa = computed(() => route.name === 'normativa')
 const ficheroNormativa = ref<HTMLInputElement | null>(null)
+const menuGlobal = ref<HTMLDetailsElement | null>(null)
+const avisoBackup = ref<string | null>(null)
 const importandoNormativa = ref(false)
 const mensajeNormativa = ref<string | null>(null)
 let temporizadorNormativa = 0
 
+async function comprobarBackup(): Promise<void> {
+  if (!window.api.backup) return
+  try {
+    const estado = await window.api.backup.estado()
+    avisoBackup.value = estado.grupos > 0 ? (estado.mensaje ?? null) : null
+  } catch {
+    avisoBackup.value = null
+  }
+}
+
 onMounted(async () => {
   await Promise.all([grupos.cargar(), cursos.cargar()])
+  await comprobarBackup()
+  window.addEventListener('backup-configurado', comprobarBackup)
+  window.addEventListener('focus', comprobarBackup)
 })
 
 const gruposVisibles = computed(() =>
@@ -74,6 +89,21 @@ async function eliminarDemo(): Promise<void> {
   } finally {
     eliminandoDemo.value = false
   }
+}
+
+function cerrarMenuGlobal(): void {
+  if (menuGlobal.value) menuGlobal.value.open = false
+}
+
+function importarNormativaDesdeMenu(): void {
+  cerrarMenuGlobal()
+  ficheroNormativa.value?.click()
+}
+
+function abrirDemoDesdeMenu(tipo: 'restaurar' | 'eliminar'): void {
+  cerrarMenuGlobal()
+  if (tipo === 'restaurar') confirmarDemo.value = true
+  else confirmarEliminarDemo.value = true
 }
 
 async function importarNormativa(evento: Event): Promise<void> {
@@ -169,43 +199,71 @@ async function importarNormativa(evento: Event): Promise<void> {
         </RouterLink>
       </nav>
 
-      <nav class="menu menu--pie" aria-label="Administración">
-        <RouterLink to="/grupos" class="menu__enlace">Gestionar grupos</RouterLink>
-        <RouterLink to="/normativa" class="menu__enlace">Normativa FP</RouterLink>
-        <button
-          class="menu__enlace menu__enlace--boton"
-          type="button"
-          :disabled="importandoNormativa"
-          @click="ficheroNormativa?.click()"
-        >
-          {{ importandoNormativa ? 'Importando normativa…' : 'Importar normativa' }}
-        </button>
-        <p v-if="mensajeNormativa" class="menu__aviso">{{ mensajeNormativa }}</p>
-        <RouterLink to="/plantillas" class="menu__enlace">Plantillas</RouterLink>
-        <button
-          v-if="puedeDemo"
-          class="menu__enlace menu__enlace--boton"
-          type="button"
-          @click="confirmarDemo = true"
-        >
-          Restaurar datos de prueba
-        </button>
-        <button
-          v-if="puedeDemo"
-          class="menu__enlace menu__enlace--boton menu__enlace--peligro"
-          type="button"
-          @click="confirmarEliminarDemo = true"
-        >
-          Eliminar datos de prueba
-        </button>
-        <input
-          ref="ficheroNormativa"
-          hidden
-          type="file"
-          accept=".html,text/html"
-          @change="importarNormativa"
-        />
-      </nav>
+      <details ref="menuGlobal" class="menu menu--pie menu-global">
+        <summary class="menu__enlace menu-global__boton">
+          <span>Opciones globales</span>
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </summary>
+        <div class="menu-global__panel">
+          <RouterLink to="/grupos" class="menu__enlace" @click="cerrarMenuGlobal">
+            Gestionar grupos
+          </RouterLink>
+          <RouterLink to="/cursos" class="menu__enlace" @click="cerrarMenuGlobal">
+            Cursos académicos
+          </RouterLink>
+          <RouterLink to="/plantillas" class="menu__enlace" @click="cerrarMenuGlobal">
+            Plantillas
+          </RouterLink>
+          <RouterLink to="/backups" class="menu__enlace" @click="cerrarMenuGlobal">
+            Copias de seguridad
+          </RouterLink>
+          <RouterLink to="/normativa" class="menu__enlace" @click="cerrarMenuGlobal">
+            Normativa FP
+          </RouterLink>
+          <button
+            class="menu__enlace menu__enlace--boton"
+            type="button"
+            :disabled="importandoNormativa"
+            @click="importarNormativaDesdeMenu"
+          >
+            {{ importandoNormativa ? 'Importando normativa…' : 'Importar normativa' }}
+          </button>
+          <template v-if="puedeDemo">
+            <button
+              class="menu__enlace menu__enlace--boton"
+              type="button"
+              @click="abrirDemoDesdeMenu('restaurar')"
+            >
+              Restaurar datos de prueba
+            </button>
+            <button
+              class="menu__enlace menu__enlace--boton menu__enlace--peligro"
+              type="button"
+              @click="abrirDemoDesdeMenu('eliminar')"
+            >
+              Eliminar datos de prueba
+            </button>
+          </template>
+          <p v-if="mensajeNormativa" class="menu__aviso">{{ mensajeNormativa }}</p>
+        </div>
+      </details>
+      <input
+        ref="ficheroNormativa"
+        hidden
+        type="file"
+        accept=".html,text/html"
+        @change="importarNormativa"
+      />
 
       <footer class="pie">
         <div>Gestión del curso</div>
@@ -214,6 +272,10 @@ async function importarNormativa(evento: Event): Promise<void> {
     </aside>
 
     <main class="contenido" :class="{ 'contenido--normativa': esNormativa }">
+      <div v-if="avisoBackup && !esNormativa" class="aviso aviso--aviso backup-aviso" role="status">
+        <span>{{ avisoBackup }}</span>
+        <RouterLink to="/backups" class="backup-aviso__enlace">Revisar copias</RouterLink>
+      </div>
       <RouterView />
     </main>
 

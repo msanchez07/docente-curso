@@ -5,6 +5,7 @@ import icon from '../../resources/icon.png?asset'
 import { cerrarBd, inicializarBd } from './bd'
 import { registrarIpc } from './ipc'
 import { registrarEsquemaNormativa, registrarProtocoloNormativa } from './normativa-fpt'
+import { backupAutomatico } from './backup/servicio'
 
 // Nombre fijo de la aplicación: determina el directorio de datos del usuario
 // (`userData`), donde vive la base de datos. Sin esto dependería de cómo se
@@ -65,6 +66,10 @@ app.whenReady().then(() => {
   inicializarBd()
   registrarIpc()
   registrarProtocoloNormativa()
+  // Copia automática al abrir: solo escribe los grupos que hayan cambiado.
+  void backupAutomatico().catch((error) => {
+    console.error('No se pudo completar la copia automática:', error)
+  })
   crearVentana()
 
   app.on('activate', () => {

@@ -264,6 +264,49 @@ body {
   cursor: pointer;
 }
 
+.menu-global {
+  position: relative;
+}
+
+.menu-global__boton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu-global__boton::-webkit-details-marker {
+  display: none;
+}
+
+.menu-global__boton svg {
+  width: 15px;
+  height: 15px;
+  transition: transform 150ms ease;
+}
+
+.menu-global[open] .menu-global__boton svg {
+  transform: rotate(180deg);
+}
+
+.menu-global__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 6px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 9px;
+  background: #1b2a41;
+  box-shadow: 0 12px 28px -18px rgba(0, 0, 0, 0.7);
+}
+
+.menu-global__panel .menu__enlace {
+  font-size: 12.5px;
+}
+
 .menu__enlace--peligro {
   color: #fda29b;
 }
@@ -4439,6 +4482,51 @@ a:focus-visible {
 
 .dashboard__horario {
   margin-bottom: 18px;
+}
+
+.backup-aviso {
+  margin-bottom: 16px;
+}
+
+.backup-aviso__enlace {
+  color: inherit;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.backups__carpeta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.backups__carpeta-info {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.backups__ruta {
+  margin: 7px 0;
+  padding: 8px 10px;
+  overflow-wrap: anywhere;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  background: #f8fafc;
+  font-size: 12px;
+}
+
+.backups__carpeta-acciones {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.backups__archivo {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
 }
 
 .entregas__vista-cabecera {

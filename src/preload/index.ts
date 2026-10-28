@@ -185,6 +185,16 @@ const api: Api = {
     html: (grupoId, alumnoId) => ipcRenderer.invoke(CANALES.informesHtml, grupoId, alumnoId),
     exportarPdf: (grupoId, alumnoId) => ipcRenderer.invoke(CANALES.informesPdf, grupoId, alumnoId),
     exportarCsv: (grupoId) => ipcRenderer.invoke(CANALES.informesCsv, grupoId)
+  },
+  backup: {
+    estado: () => ipcRenderer.invoke(CANALES.backupEstado),
+    elegirCarpeta: () => ipcRenderer.invoke(CANALES.backupElegirCarpeta),
+    usarCarpetaRecomendada: () => ipcRenderer.invoke(CANALES.backupCarpetaRecomendada),
+    abrirCarpeta: () => ipcRenderer.invoke(CANALES.backupAbrirCarpeta),
+    listar: () => ipcRenderer.invoke(CANALES.backupListar),
+    crear: (grupoClaseId) => ipcRenderer.invoke(CANALES.backupCrear, grupoClaseId),
+    crearTodos: () => ipcRenderer.invoke(CANALES.backupCrearTodos),
+    importar: (ruta) => ipcRenderer.invoke(CANALES.backupImportar, ruta)
   }
 }
 

@@ -872,6 +872,46 @@ export interface ResultadoInforme {
   mensaje?: string
 }
 
+/* --- Copias de seguridad --------------------------------------------- */
+
+export interface EstadoBackup {
+  /** Carpeta raíz configurada; `null` si no hay ninguna. */
+  carpeta: string | null
+  existe: boolean
+  configurada: boolean
+  /** Número de grupos de trabajo actuales. */
+  grupos: number
+  /** Número de backups encontrados en la carpeta. */
+  backups: number
+  /** Aviso para la interfaz, si la carpeta no está disponible. */
+  mensaje?: string
+}
+
+export interface ArchivoBackup {
+  archivo: string
+  ruta: string
+  grupo_id: number | null
+  grupo_nombre: string
+  curso: string
+  generado_en: string
+  tamano: number
+}
+
+export interface ResultadoBackup extends ResultadoInforme {
+  grupo_id?: number
+}
+
+export interface ApiBackup {
+  estado(): Promise<EstadoBackup>
+  elegirCarpeta(): Promise<EstadoBackup | null>
+  usarCarpetaRecomendada(): Promise<EstadoBackup>
+  abrirCarpeta(): Promise<boolean>
+  listar(): Promise<ArchivoBackup[]>
+  crear(grupoClaseId: number): Promise<ResultadoBackup>
+  crearTodos(): Promise<ResultadoBackup[]>
+  importar(ruta?: string): Promise<ResultadoBackup>
+}
+
 /* --- API (preload) ---------------------------------------------------- */
 
 export interface Api {
@@ -1060,6 +1100,7 @@ export interface Api {
     exportarPdf(grupoId: number, alumnoId?: number): Promise<ResultadoInforme>
     exportarCsv(grupoId: number): Promise<ResultadoInforme>
   }
+  backup: ApiBackup
   /** Solo en la previsualización web: carga el curso de ejemplo. */
   demo?: {
     cargar(): Promise<void>
@@ -1172,5 +1213,13 @@ export const CANALES = {
   coberturaModulo: 'cobertura:modulo',
   informesHtml: 'informes:html',
   informesPdf: 'informes:pdf',
-  informesCsv: 'informes:csv'
+  informesCsv: 'informes:csv',
+  backupEstado: 'backup:estado',
+  backupElegirCarpeta: 'backup:elegirCarpeta',
+  backupCarpetaRecomendada: 'backup:carpetaRecomendada',
+  backupAbrirCarpeta: 'backup:abrirCarpeta',
+  backupListar: 'backup:listar',
+  backupCrear: 'backup:crear',
+  backupCrearTodos: 'backup:crearTodos',
+  backupImportar: 'backup:importar'
 } as const

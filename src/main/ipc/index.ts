@@ -147,6 +147,17 @@ import { contarBoe } from '../db/seed'
 import { exportarCsv, exportarPdf, informeHtml } from '../informes/servicio'
 import { exportarProgramacionPdf } from '../programacion/servicio'
 import { exportarEntregas, vistaPreviaEntregas } from '../entregas/servicio'
+import {
+  abrirCarpetaBackup,
+  backupAutomatico,
+  crearBackupGrupo,
+  crearBackupsTodos,
+  elegirCarpetaBackup,
+  estadoBackup,
+  importarBackupConDialogo,
+  listarBackups,
+  usarCarpetaRecomendada
+} from '../backup/servicio'
 
 export function registrarIpc(): void {
   const bd = (): ReturnType<typeof obtenerBd> => obtenerBd()
@@ -495,4 +506,16 @@ export function registrarIpc(): void {
     exportarPdf(grupoId, alumnoId)
   )
   ipcMain.handle(CANALES.informesCsv, (_e, grupoId: number) => exportarCsv(grupoId))
+
+  // Copias de seguridad por grupo.
+  ipcMain.handle(CANALES.backupEstado, () => estadoBackup())
+  ipcMain.handle(CANALES.backupElegirCarpeta, () => elegirCarpetaBackup())
+  ipcMain.handle(CANALES.backupCarpetaRecomendada, () => usarCarpetaRecomendada())
+  ipcMain.handle(CANALES.backupAbrirCarpeta, () => abrirCarpetaBackup())
+  ipcMain.handle(CANALES.backupListar, () => listarBackups())
+  ipcMain.handle(CANALES.backupCrear, (_e, grupoClaseId: number) => crearBackupGrupo(grupoClaseId))
+  ipcMain.handle(CANALES.backupCrearTodos, () => crearBackupsTodos())
+  ipcMain.handle(CANALES.backupImportar, (_e, ruta?: string) => importarBackupConDialogo(ruta))
+  // Se conserva el canal automático para poder lanzarlo desde pruebas o ajustes.
+  ipcMain.handle('backup:automatico', () => backupAutomatico())
 }

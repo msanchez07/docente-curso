@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **191 tests**
+- `npm test` ✅ **192 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -52,6 +52,16 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 - **Plantillas de criterios** con listado y edición en páginas propias.
 - **Normativa FP** a pantalla completa e importación desde la barra lateral.
 - **Datos de prueba** en la previsualización web: restaurar o eliminar.
+- **Copias de seguridad por grupo**:
+  - Carpeta raíz global configurable.
+  - Subcarpeta automática por curso académico.
+  - JSON autocontenido por grupo (alumnado, criterios, entregas, notas, evidencias,
+    programación, unidades, eventos y formación; archivos en base64).
+  - Importación de una copia para restaurar solo ese grupo.
+  - Aviso si la carpeta no está configurada o ha desaparecido.
+  - Copia automática al abrir la aplicación si el contenido de un grupo cambió.
+- **Menú de opciones globales** en la barra lateral (cursos, plantillas, copias, normativa y
+  datos de prueba).
 
 ## Stack
 

@@ -6,7 +6,7 @@
 
 **Última actualización:** 28/10/2026  
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **191 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **192 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -110,7 +110,21 @@ Vite/electron-vite + Vitest**.
 - El archivo de una sola entrega usa el **nombre de la entrega**.
 - Los archivos se organizan por entrega, rúbrica y evidencias.
 
-### 2.6. Normativa y datos de prueba
+### 2.6. Copias de seguridad
+
+- Carpeta raíz **global** de copias, elegida por el usuario.
+- Subcarpeta automática por **curso académico**; cada grupo se guarda como JSON autocontenido
+  con alumnado, criterios, entregas, notas, evidencias, programación, unidades, eventos,
+  formación y archivos en base64.
+- Importación por grupo: restaura solo ese grupo; si ya existe la misma identidad
+  (curso + ciclo + nivel + modalidad + módulo), sustituye su contenido.
+- Aviso en la aplicación si la carpeta no está configurada o deja de existir.
+- **Copia automática al abrir la aplicación** si cambió el contenido de un grupo; también se
+  puede crear manualmente por grupo o para todos.
+- Menú **Opciones globales** en la barra lateral para cursos, plantillas, copias, normativa y
+  datos de prueba.
+
+### 2.7. Normativa y datos de prueba
 
 - Normativa FP a pantalla completa manteniendo la barra lateral; importación desde la barra.
 - Previsualización web:
@@ -118,7 +132,7 @@ Vite/electron-vite + Vitest**.
   - **Eliminar datos de prueba** con confirmación; deja la aplicación vacía y no vuelve a
     sembrar datos automáticamente.
 
-### 2.7. Persistencia y migraciones
+### 2.8. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
 - Última migración aplicada: **v28**.
@@ -160,7 +174,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **191 tests**, 29 archivos de test, build y smoke correctos.
+Estado actual: **192 tests**, 30 archivos de test, build y smoke correctos.
 
 ---
 
