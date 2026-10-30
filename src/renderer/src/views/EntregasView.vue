@@ -343,6 +343,14 @@ onBeforeUnmount(() => {
   if (ventanaPrevia.value && !ventanaPrevia.value.closed) ventanaPrevia.value.close()
 })
 
+function accionesCabecera(): AccionMenu[] {
+  return [{ id: 'exportar', etiqueta: 'Exportar curso', icono: 'descargar' }]
+}
+
+function ejecutarAccionCabecera(accion: string): void {
+  if (accion === 'exportar') void previsualizar('curso')
+}
+
 async function previsualizar(
   ambito: 'entrega' | 'avaluacion' | 'curso',
   entregaId?: number
@@ -495,14 +503,7 @@ async function confirmarBloqueo(): Promise<void> {
         </select>
         <span class="chip">{{ entregasFiltradas.length }} de {{ entregas.length }}</span>
         <span class="barra__espacio"></span>
-        <button
-          class="boton"
-          type="button"
-          :disabled="exportando || preparandoVista"
-          @click="previsualizar('curso')"
-        >
-          {{ exportando ? 'Exportando…' : 'Exportar curso' }}
-        </button>
+        <MenuAcciones :acciones="accionesCabecera()" @accion="ejecutarAccionCabecera" />
         <RouterLink
           class="boton boton--principal"
           :to="{

@@ -80,7 +80,7 @@ const unidadSeleccionada = computed(() => {
 
 const opcionesAvaluaciones = computed(() => {
   const fila = filaSeleccionada.value
-  if (!fila) return [{ value: 'final', label: 'Nota final' }]
+  if (!fila) return [{ value: 'final', label: 'Final' }]
   const evaluaciones = modoUnidades.value
     ? fila.unidades.map((unidad) => ({
         value: `u:${unidad.unidadId}`,
@@ -88,13 +88,13 @@ const opcionesAvaluaciones = computed(() => {
       }))
     : fila.avaluaciones.map((avaluacion) => ({
         value: avaluacion.avaluacionId,
-        label: `${avaluacion.nombre} · ${formato(avaluacion.nota)}`
+        label: `${avaluacion.nombre.replace(' evaluación', '')} · ${formato(avaluacion.nota)}`
       }))
   return [
     ...evaluaciones,
     { value: 'ordinaria', label: 'Ordinaria' },
     { value: 'extraordinaria', label: 'Extraordinaria' },
-    { value: 'final', label: 'Nota final' }
+    { value: 'final', label: 'Final' }
   ]
 })
 

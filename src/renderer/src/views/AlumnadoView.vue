@@ -259,6 +259,18 @@ async function quitarDelGrupo(): Promise<void> {
   }
 }
 
+function accionesCabecera(): AccionMenu[] {
+  return [
+    { id: 'importar', etiqueta: 'Importar alumnado', icono: 'importar' },
+    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' }
+  ]
+}
+
+function ejecutarAccionCabecera(accion: string): void {
+  if (accion === 'importar') abrirImportar()
+  else if (accion === 'esquema') exportarEsquema()
+}
+
 function abrirImportar(): void {
   mostrarImportar.value = true
   textoImportar.value = ''
@@ -327,8 +339,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
         </select>
         <span class="chip">{{ visibles.length }} de {{ alumnos.length }}</span>
         <span class="barra__espacio"></span>
-        <button class="boton" type="button" @click="abrirImportar">Importar</button>
-        <button class="boton" type="button" @click="exportarEsquema">Descargar esquema</button>
+        <MenuAcciones :acciones="accionesCabecera()" @accion="ejecutarAccionCabecera" />
         <button class="boton boton--principal" type="button" @click="nuevo">Nuevo alumno</button>
       </div>
 
