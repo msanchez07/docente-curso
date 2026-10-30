@@ -12,6 +12,7 @@ import type {
   UnidadProgramacion
 } from '@shared/tipos'
 import { cursoAcademicoActual } from '@shared/curso-academico'
+import { notificar } from '@renderer/composables/notificaciones'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
 import {
@@ -322,6 +323,7 @@ async function guardar(): Promise<void> {
       await window.api.entregasClase.crear(grupo.value.id, datos)
     }
 
+    notificar(esEdicion.value ? 'Entrega actualizada.' : 'Entrega creada.')
     await router.push({ name: 'entregas', params: { grupoId: grupo.value.id } })
   } catch (e) {
     errorFormulario.value = (e as Error).message ?? String(e)

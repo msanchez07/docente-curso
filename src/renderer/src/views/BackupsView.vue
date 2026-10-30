@@ -6,6 +6,7 @@ import Confirmacion from '@renderer/components/Confirmacion.vue'
 import type { ArchivoBackup, EstadoBackup, GrupoClase, ResultadoBackup } from '@shared/tipos'
 import { etiquetaModalidad } from '@shared/grupos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
+import { notificar } from '@renderer/composables/notificaciones'
 
 const router = useRouter()
 const store = useGruposClaseStore()
@@ -77,6 +78,7 @@ async function elegirCarpeta(): Promise<void> {
       estado.value = nuevo
       archivos.value = await window.api.backup.listar()
       mensaje.value = 'Carpeta de copias actualizada.'
+      notificar(mensaje.value)
     }
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -93,6 +95,7 @@ async function usarRecomendada(): Promise<void> {
     estado.value = await window.api.backup.usarCarpetaRecomendada()
     archivos.value = await window.api.backup.listar()
     mensaje.value = 'Carpeta recomendada preparada.'
+    notificar(mensaje.value)
     window.dispatchEvent(new CustomEvent('backup-configurado'))
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -117,6 +120,7 @@ async function crear(grupo: GrupoClase): Promise<void> {
       return
     }
     mensaje.value = `Copia de «${grupo.nombre}» creada.`
+    notificar(mensaje.value)
     await recargar()
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -166,6 +170,7 @@ async function importar(): Promise<void> {
       return
     }
     mensaje.value = resultado.mensaje ?? 'Copia importada.'
+    notificar(mensaje.value)
     await recargar()
     if (resultado.grupo_id) {
       await router.push({ name: 'grupo', params: { id: resultado.grupo_id } })
@@ -192,7 +197,6 @@ async function importar(): Promise<void> {
     </header>
 
     <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
-    <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
     <div v-if="cargando" class="vacio">Cargando copias de seguridad…</div>
 

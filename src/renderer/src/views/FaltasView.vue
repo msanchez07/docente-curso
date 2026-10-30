@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
 import { extraerFaltasPdf } from '@renderer/utils/faltas-pdf'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
+import { notificar } from '@renderer/composables/notificaciones'
 import type {
   AlumnoFaltasCurso,
   ClaveCursoFaltas,
@@ -181,6 +182,7 @@ async function guardarConfiguracion(): Promise<void> {
     }
     await window.api.faltas.guardarAjustes(clave.value, limite.value, incluirJustificadas.value)
     mensaje.value = 'Configuración de faltas guardada.'
+    notificar(mensaje.value)
     await cargarCohorte()
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -241,6 +243,7 @@ async function alElegirPdf(evento: Event): Promise<void> {
     await window.api.faltas.importarInforme(clave.value, archivo.name, datos)
     await cargarCohorte()
     mensaje.value = `Faltas de «${archivo.name}» añadidas al historial.`
+    notificar(mensaje.value)
     if (modulosSinCoincidencia.length > 0) {
       error.value = `No se han encontrado estas columnas en el PDF: ${modulosSinCoincidencia.join(', ')}. Revisa el nombre exacto de cada módulo.`
     }
@@ -302,7 +305,6 @@ function imprimir(): void {
 
     <div v-if="cargando" class="vacio">Cargando faltas…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
-    <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
     <template v-if="!cargando && cohortes.length > 0">
       <section class="tarjeta faltas__selector">

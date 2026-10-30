@@ -15,6 +15,7 @@ import type {
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { generarHtmlFichaEntrega } from '@shared/entrega-ficha'
+import { notificar } from '@renderer/composables/notificaciones'
 
 const route = useRoute()
 const router = useRouter()
@@ -254,6 +255,7 @@ async function copiarFicha(): Promise<void> {
   try {
     await navigator.clipboard.writeText(fichaHtml.value)
     mensaje.value = 'Ficha HTML copiada al portapapeles.'
+    notificar(mensaje.value)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   }
@@ -403,6 +405,7 @@ async function confirmarExportacion(): Promise<void> {
       mensaje.value = resultado.ruta
         ? `Entregas exportadas: ${resultado.ruta}`
         : (resultado.mensaje ?? 'Entregas exportadas.')
+      notificar(mensaje.value)
       if (ventanaPrevia.value && !ventanaPrevia.value.closed) ventanaPrevia.value.close()
       ventanaPrevia.value = null
     } else if (resultado.mensaje && resultado.mensaje !== 'Guardado cancelado') {
@@ -422,6 +425,7 @@ async function borrar(): Promise<void> {
   try {
     await window.api.entregasClase.borrar(entregaABorrar.value.id)
     mensaje.value = `Entrega «${entregaABorrar.value.titulo}» borrada.`
+    notificar(mensaje.value)
     entregaABorrar.value = null
     entregas.value = await window.api.entregasClase.listar(grupo.value.id)
   } catch (e) {
@@ -449,6 +453,7 @@ async function confirmarBloqueo(): Promise<void> {
       mensaje.value = actualizada.bloqueada
         ? `Entrega «${actualizada.titulo}» bloqueada.`
         : `Entrega «${actualizada.titulo}» desbloqueada.`
+      notificar(mensaje.value)
     }
     entregaABloquear.value = null
     entregas.value = await window.api.entregasClase.listar(grupo.value.id)
@@ -503,7 +508,11 @@ async function confirmarBloqueo(): Promise<void> {
         </select>
         <span class="chip">{{ entregasFiltradas.length }} de {{ entregas.length }}</span>
         <span class="barra__espacio"></span>
-        <MenuAcciones :acciones="accionesCabecera()" @accion="ejecutarAccionCabecera" />
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesCabecera()"
+          @accion="ejecutarAccionCabecera"
+        />
         <RouterLink
           class="boton boton--principal"
           :to="{
@@ -546,8 +555,6 @@ async function confirmarBloqueo(): Promise<void> {
             </span>
           </div>
         </div>
-
-        <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
         <div v-if="entregas.length === 0" class="vacio">
           Todavía no hay entregas en este grupo. Crea la primera, asígnale una rúbrica y mapeála a

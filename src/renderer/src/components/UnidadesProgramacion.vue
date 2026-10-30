@@ -5,6 +5,7 @@ import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones
 import { ESQUEMA_UNIDADES } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
 import { REQUISITOS_POR_DEFECTO } from '@shared/modelo'
+import { notificar } from '@renderer/composables/notificaciones'
 import type {
   CategoriaEvaluacion,
   CriterioDisponible,
@@ -185,6 +186,7 @@ async function importarTexto(texto: string): Promise<void> {
     await cargar()
     emit('actualizado')
     mensaje.value = `${resultado.creados} unidad(es) importada(s).`
+    notificar(mensaje.value)
     errorImportar.value =
       resultado.errores.length > 0 ? resultado.errores.slice(0, 6).join(' · ') : null
     if (resultado.creados > 0) mostrarImportar.value = false
@@ -426,9 +428,11 @@ async function guardar(): Promise<void> {
         ...form
       }))!
       mensaje.value = 'Unidad actualizada.'
+      notificar(mensaje.value)
     } else {
       guardada = await window.api.unidadesProgramacion.crear(props.grupo.id, { ...form })
       mensaje.value = 'Unidad creada.'
+      notificar(mensaje.value)
     }
     await cargar()
     unidadSeleccionada.value = guardada.id
@@ -449,6 +453,7 @@ async function borrar(): Promise<void> {
   try {
     await window.api.unidadesProgramacion.borrar(unidadABorrar.value.id)
     mensaje.value = 'Unidad borrada. Sus sesiones quedan sin asignar.'
+    notificar(mensaje.value)
     unidadABorrar.value = null
     await cargar()
     emit('actualizado')
@@ -477,7 +482,6 @@ async function borrar(): Promise<void> {
     </div>
 
     <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
-    <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
     <section v-if="mostrarImportar" class="tarjeta programacion__importar unidades__importar">
       <header class="entrega-form__seccion-cabecera">

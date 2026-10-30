@@ -7,6 +7,7 @@ import { ESQUEMA_ALUMNADO } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { copiarTexto } from '@renderer/utils/portapapeles'
+import { notificar } from '@renderer/composables/notificaciones'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type { AlumnoClase, AlumnoEntrada, GrupoClase } from '@shared/tipos'
 
@@ -89,6 +90,7 @@ async function copiarCorreo(alumno: AlumnoClase): Promise<void> {
   if (!alumno.email) return
   if (await copiarTexto(alumno.email)) {
     mensaje.value = `Correo de ${alumno.nombre} ${alumno.apellidos} copiado.`
+    notificar(mensaje.value)
   }
 }
 
@@ -221,6 +223,7 @@ async function guardar(): Promise<void> {
       await window.api.alumnosClase.actualizar(editando.value, datos)
       mensaje.value = 'Datos del alumno actualizados.'
     }
+    notificar(mensaje.value ?? '')
     mostrarForm.value = false
     await refrescar()
   } catch (e) {
@@ -237,6 +240,7 @@ async function alternarActivo(alumno: AlumnoClase): Promise<void> {
     mensaje.value = alumno.activo
       ? `«${alumno.apellidos}, ${alumno.nombre}» desactivado.`
       : `«${alumno.apellidos}, ${alumno.nombre}» reactivado.`
+    notificar(mensaje.value)
     await refrescar()
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -250,6 +254,7 @@ async function quitarDelGrupo(): Promise<void> {
   try {
     await window.api.alumnosClase.desmatricular(grupo.value.id, alumnoAQuitar.value.id)
     mensaje.value = `«${alumnoAQuitar.value.apellidos}, ${alumnoAQuitar.value.nombre}» ya no está en el grupo.`
+    notificar(mensaje.value)
     alumnoAQuitar.value = null
     await refrescar()
   } catch (e) {
@@ -289,6 +294,7 @@ async function importarTexto(texto: string): Promise<void> {
   try {
     const resultado = await window.api.matriculasClase.importar(grupo.value.id, texto)
     mensaje.value = `${resultado.creados} alumnos nuevos y ${resultado.existentes} ya existentes matriculados.`
+    notificar(mensaje.value)
     error.value = resultado.errores.length > 0 ? resultado.errores.slice(0, 6).join(' · ') : null
     mostrarImportar.value = false
     await refrescar()
@@ -339,7 +345,11 @@ async function alElegirFichero(evento: Event): Promise<void> {
         </select>
         <span class="chip">{{ visibles.length }} de {{ alumnos.length }}</span>
         <span class="barra__espacio"></span>
-        <MenuAcciones :acciones="accionesCabecera()" @accion="ejecutarAccionCabecera" />
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesCabecera()"
+          @accion="ejecutarAccionCabecera"
+        />
         <button class="boton boton--principal" type="button" @click="nuevo">Nuevo alumno</button>
       </div>
 
@@ -413,8 +423,6 @@ async function alElegirFichero(evento: Event): Promise<void> {
             </button>
           </div>
         </div>
-
-        <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
         <section v-if="mostrarForm" ref="formularioRef" class="tarjeta form-inline">
           <header class="entrega-form__seccion-cabecera">

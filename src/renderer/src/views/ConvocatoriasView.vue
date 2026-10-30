@@ -15,6 +15,7 @@ import type {
   UnidadProgramacion
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
+import { notificar } from '@renderer/composables/notificaciones'
 
 interface FilaAsignacion {
   marcada: boolean
@@ -296,6 +297,7 @@ async function crearBloque(): Promise<void> {
     mostrarBloque.value = false
     await cargarDetalle()
     mensaje.value = 'Bloque añadido.'
+    notificar(mensaje.value)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -344,6 +346,7 @@ async function guardarAsignaciones(): Promise<void> {
     )
     inicializarAsignaciones()
     mensaje.value = 'Asignaciones y notas guardadas.'
+    notificar(mensaje.value)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -409,7 +412,6 @@ watch(grupoId, cargar)
 
     <div v-if="cargando" class="vacio">Cargando convocatorias…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
-    <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
     <template v-else-if="grupo && modelo">
       <div v-if="!embebido" class="barra">

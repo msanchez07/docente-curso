@@ -67,8 +67,9 @@ function iconoDe(icono?: IconoAccion): string | undefined {
   return icono ? ICONOS[icono] : undefined
 }
 
-withDefaults(defineProps<{ acciones: AccionMenu[]; etiqueta?: string }>(), {
-  etiqueta: 'Acciones'
+withDefaults(defineProps<{ acciones: AccionMenu[]; etiqueta?: string; texto?: string }>(), {
+  etiqueta: 'Acciones',
+  texto: ''
 })
 
 const emit = defineEmits<{ accion: [id: string] }>()
@@ -123,11 +124,12 @@ onBeforeUnmount(cerrar)
   <div class="menu-acciones">
     <button
       ref="boton"
-      class="icono-accion"
+      :class="texto ? 'menu-acciones__disparador' : 'icono-accion'"
       type="button"
       :aria-label="etiqueta"
       :aria-expanded="abierto"
-      data-tooltip="Acciones"
+      aria-haspopup="menu"
+      :data-tooltip="etiqueta"
       @click.stop="abierto ? cerrar() : abrir()"
     >
       <svg
@@ -142,6 +144,21 @@ onBeforeUnmount(cerrar)
         <circle cx="12" cy="12" r="1" />
         <circle cx="19" cy="12" r="1" />
       </svg>
+      <template v-if="texto">
+        <span>{{ texto }}</span>
+        <svg
+          class="menu-acciones__chevron"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </template>
     </button>
 
     <Teleport to="body">

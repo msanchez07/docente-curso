@@ -2,6 +2,7 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
+import NotificacionesGlobales from '@renderer/components/NotificacionesGlobales.vue'
 import { EVENTO_NORMATIVA_ACTUALIZADA } from '@shared/normativa'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
@@ -315,5 +316,6 @@ async function importarNormativa(evento: Event): Promise<void> {
         de prueba con «Restaurar datos de prueba».
       </p>
     </Confirmacion>
+    <NotificacionesGlobales />
   </div>
 </template>

@@ -2,6 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import EditorCriterios from '@renderer/components/EditorCriterios.vue'
 import { etiquetaModalidad } from '@shared/grupos'
+import { notificar } from '@renderer/composables/notificaciones'
 import type { CriterioDisponible, GrupoClase, ModeloEvaluacion } from '@shared/tipos'
 
 const props = defineProps<{ grupo: GrupoClase }>()
@@ -69,6 +70,7 @@ async function guardar(): Promise<void> {
     modelo.value = await window.api.criterios.guardar(props.grupo.id, modelo.value)
     guardado.value = true
     mensaje.value = 'Criterios guardados.'
+    notificar(mensaje.value)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -87,6 +89,7 @@ async function crearPlantilla(): Promise<void> {
     const creada = await window.api.criterios.crearPlantillaDesdeGrupo(props.grupo.id, modelo.value)
     plantilla.value = creada.nombre
     mensaje.value = `Plantilla «${creada.nombre}» guardada. Se aplicará a los grupos nuevos con el mismo módulo y modalidad.`
+    notificar(mensaje.value)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -147,7 +150,6 @@ async function copiar(): Promise<void> {
       <EditorCriterios :modelo="modelo" :ras="ras" @valido="valido = $event" />
 
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
-      <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
     </template>
 
     <p v-else class="aviso aviso--error" role="alert">

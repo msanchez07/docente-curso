@@ -13,6 +13,7 @@ import type {
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { generarHtmlFichaEntrega } from '@shared/entrega-ficha'
+import { notificar } from '@renderer/composables/notificaciones'
 import {
   abrirArchivoRubrica,
   descargarArchivoRubrica,
@@ -160,6 +161,7 @@ async function copiarFicha(): Promise<void> {
   try {
     await navigator.clipboard.writeText(fichaHtml.value)
     mensaje.value = 'Ficha HTML copiada al portapapeles.'
+    notificar(mensaje.value)
   } catch (e) {
     errorGuardado.value = (e as Error).message ?? String(e)
   }
@@ -195,6 +197,7 @@ async function desbloquear(): Promise<void> {
     const actualizada = await window.api.entregasClase.bloquear(entrega.value.id, false)
     if (actualizada) entrega.value = actualizada
     mensaje.value = 'Entrega desbloqueada. Ya puedes editar las notas.'
+    notificar(mensaje.value)
   } catch (e) {
     errorGuardado.value = (e as Error).message ?? String(e)
   } finally {
@@ -219,6 +222,7 @@ async function guardar(): Promise<void> {
       ])
     }
     mensaje.value = 'Notas y anotaciones guardadas.'
+    notificar(mensaje.value)
     await cargarNotas()
   } catch (e) {
     errorGuardado.value = (e as Error).message ?? String(e)
@@ -278,7 +282,6 @@ async function guardar(): Promise<void> {
         </RouterLink>
       </div>
 
-      <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
       <p v-if="errorGuardado" class="aviso aviso--error" role="alert">{{ errorGuardado }}</p>
 
       <template v-if="tab === 'ficha'">
