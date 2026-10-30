@@ -35,7 +35,9 @@ function parrafos(texto: string | null, vacio = 'Sin contenido.'): string {
   return texto
     .trim()
     .split(/\n{2,}/)
-    .map((bloque) => `<p style="margin: 0 0 10px 0;">${escapar(bloque).replaceAll('\n', '<br>')}</p>`)
+    .map(
+      (bloque) => `<p style="margin: 0 0 10px 0;">${escapar(bloque).replaceAll('\n', '<br>')}</p>`
+    )
     .join('')
 }
 
@@ -55,7 +57,7 @@ export function generarHtmlFichaEntrega(datos: DatosFichaEntrega): string {
     ? `${unidad.codigo ?? 'UD'}${unidad.nombre ? ` · ${unidad.nombre}` : ''}`
     : 'Sin unidad asignada'
 
-  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; max-width: 1000px; margin: 10px auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); overflow: hidden; color: #334155; line-height: 1.5; box-sizing: border-box;">
+  return `<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; width: 100%; max-width: 100%; margin: 0; background: #ffffff; color: #334155; line-height: 1.5; box-sizing: border-box;">
   <div style="padding: 20px 24px; border-bottom: 1px solid #f1f5f9; background: #ffffff;">
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px;">
       <h2 style="margin: 0; color: #0f172a; font-size: 1.35rem; font-weight: bold; display: flex; align-items: center;">

@@ -2266,6 +2266,20 @@ a:focus-visible {
   width: 12%;
 }
 
+.ficha-preview {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.ficha-preview iframe {
+  display: block;
+  width: 100%;
+  height: 82vh;
+  min-height: 620px;
+  background: #ffffff;
+  border: 0;
+}
+
 .ficha-modal {
   position: fixed;
   z-index: 80;

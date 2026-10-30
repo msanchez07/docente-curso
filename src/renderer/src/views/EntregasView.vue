@@ -45,7 +45,7 @@ const opcionesExportacion = ref<OpcionesExportacionEntregas | null>(null)
 
 const fichaDocumento = computed(
   () =>
-    `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>html,body{margin:0;padding:0;background:#f4f6f9}body{padding:22px}*{box-sizing:border-box}@media print{html,body{background:#fff}body{padding:0}}</style></head><body>${fichaHtml.value}</body></html>`
+    `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>html,body{margin:0;padding:0;background:#f4f6f9}body{padding:0}*{box-sizing:border-box}@media print{html,body{background:#fff}body{padding:0}}</style></head><body>${fichaHtml.value}</body></html>`
 )
 
 const id = computed(() => Number(route.params.grupoId))
@@ -202,7 +202,7 @@ watch(id, cargar)
 function accionesEntrega(entrega: EntregaClase): AccionMenu[] {
   return [
     { id: 'ficha', etiqueta: 'Ver ficha HTML', icono: 'rae' },
-    { id: 'notas', etiqueta: 'Ver notas y anotaciones', icono: 'notas' },
+    { id: 'notas', etiqueta: 'Ver ficha y notas', icono: 'notas' },
     { id: 'exportar', etiqueta: 'Exportar entrega', icono: 'descargar' },
     { id: 'evidencias', etiqueta: `Evidencias (${entrega.evidencias})`, icono: 'evidencias' },
     {
