@@ -307,29 +307,37 @@ function imprimir(): void {
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
     <template v-if="!cargando && cohortes.length > 0">
-      <section class="tarjeta faltas__selector">
-        <label for="faltas-curso">Curso / tutoría</label>
-        <select
-          id="faltas-curso"
-          v-model.number="seleccion"
-          :disabled="trabajando"
-          @change="cargarCohorte"
-        >
-          <option v-for="(cohorte, indice) in cohortes" :key="indice" :value="indice">
-            {{ cohorte.nombre }} · {{ cohorte.cursoAcademicoNombre }} ·
-            {{ plural(cohorte.modulos, 'módulo', 'módulos') }} ·
-            {{ plural(cohorte.alumnos, 'alumno', 'alumnos') }}
-          </option>
-        </select>
+      <section class="faltas__contexto">
+        <div class="faltas__contexto-info">
+          <span class="faltas__contexto-etiqueta">Curso</span>
+          <strong>{{ nombreCurso }}</strong>
+          <span class="tenue">
+            {{ curso?.cursoAcademicoNombre }} · {{ plural(modulos.length, 'módulo', 'módulos') }} ·
+            {{ plural(curso?.alumnos.length ?? 0, 'alumno', 'alumnos') }}
+          </span>
+        </div>
+        <label v-if="cohortes.length > 1" class="faltas__contexto-cambio">
+          <span class="tenue">Cambiar curso</span>
+          <select
+            id="faltas-curso"
+            v-model.number="seleccion"
+            :disabled="trabajando"
+            @change="cargarCohorte"
+          >
+            <option v-for="(cohorte, indice) in cohortes" :key="indice" :value="indice">
+              {{ cohorte.nombre }} · {{ cohorte.cursoAcademicoNombre }}
+            </option>
+          </select>
+        </label>
       </section>
 
       <template v-if="curso">
-        <section class="tarjeta">
-          <header class="dashboard__tarjeta-cabecera">
+        <section class="tarjeta faltas__configuracion">
+          <header class="faltas__configuracion-cabecera">
             <div>
-              <h3>Módulos del curso</h3>
+              <h3>Configuración del control</h3>
               <p class="tenue">
-                El nombre debe coincidir exactamente con la columna del PDF de ITACA.
+                Ajusta el límite y relaciona cada módulo con su columna del PDF de ITACA.
               </p>
             </div>
             <button
@@ -338,44 +346,70 @@ function imprimir(): void {
               :disabled="trabajando"
               @click="guardarConfiguracion"
             >
-              {{ trabajando ? 'Guardando…' : 'Guardar configuración' }}
+              {{ trabajando ? 'Guardando…' : 'Guardar cambios' }}
             </button>
           </header>
 
-          <div class="formulario">
-            <div class="campo">
-              <label for="faltas-limite">Límite de faltas (%)</label>
-              <input id="faltas-limite" v-model.number="limite" type="number" min="1" max="100" />
+          <div class="faltas__ajustes">
+            <div class="faltas__ajuste">
+              <label class="faltas__ajuste-titulo" for="faltas-limite">Límite de faltas</label>
+              <div class="faltas__limite">
+                <input
+                  id="faltas-limite"
+                  v-model.number="limite"
+                  type="number"
+                  min="1"
+                  max="100"
+                  inputmode="numeric"
+                />
+                <span aria-hidden="true">%</span>
+              </div>
+              <span class="tenue">Se marca pérdida al alcanzar este porcentaje.</span>
             </div>
-            <div class="campo faltas__check">
-              <label>
-                <input v-model="incluirJustificadas" type="checkbox" />
-                Contar faltas justificadas
+
+            <div class="faltas__ajuste faltas__ajuste--switch">
+              <span class="faltas__ajuste-titulo">Faltas justificadas</span>
+              <label class="interruptor">
+                <input v-model="incluirJustificadas" class="interruptor__input" type="checkbox" />
+                <span class="interruptor__pista" aria-hidden="true"></span>
+                <span class="interruptor__texto">
+                  {{ incluirJustificadas ? 'Sí se cuentan' : 'No se cuentan' }}
+                </span>
               </label>
+              <span class="tenue">Decide si suman dentro del total del módulo.</span>
             </div>
           </div>
 
+          <div class="faltas__modulos-cabecera" aria-hidden="true">
+            <span>Módulo</span>
+            <span>Nombre de columna en ITACA</span>
+            <span>Horas</span>
+          </div>
           <div class="faltas__modulos-lista">
             <article v-for="modulo in modulos" :key="modulo.moduloCodigo" class="faltas__modulo">
               <div class="faltas__modulo-info">
                 <strong>{{ modulo.nombre }}</strong>
-                <span class="tenue monospace">{{ modulo.moduloCodigo }}</span>
+                <span class="monospace">{{ modulo.moduloCodigo }}</span>
               </div>
-              <div class="faltas__modulo-campos">
-                <label>
-                  <span>Nombre en el PDF</span>
-                  <input v-model="modulo.nombreInforme" class="faltas__nombre" />
-                </label>
-                <label>
-                  <span>Horas</span>
-                  <input
-                    v-model.number="modulo.horas"
-                    class="faltas__horas"
-                    type="number"
-                    min="1"
-                  />
-                </label>
-              </div>
+              <label class="faltas__campo faltas__campo--nombre">
+                <span class="faltas__campo-etiqueta">Nombre en el PDF</span>
+                <input
+                  v-model="modulo.nombreInforme"
+                  class="faltas__nombre"
+                  placeholder="Nombre de la columna"
+                  aria-label="Nombre de columna en ITACA"
+                />
+              </label>
+              <label class="faltas__campo faltas__campo--horas">
+                <span class="faltas__campo-etiqueta">Horas</span>
+                <input
+                  v-model.number="modulo.horas"
+                  class="faltas__horas"
+                  type="number"
+                  min="1"
+                  aria-label="Horas del módulo"
+                />
+              </label>
             </article>
           </div>
         </section>
