@@ -31,6 +31,7 @@ const trabajando = ref(false)
 const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
 const ficheroPdf = ref<HTMLInputElement | null>(null)
+const mostrarHistorial = ref(false)
 const clave = ref<ClaveCursoFaltas | null>(null)
 const nombreCurso = computed(() => cohortes.value[seleccion.value]?.nombre ?? '')
 
@@ -116,6 +117,7 @@ function claveDe(cohorte: CursoFaltasResumen): ClaveCursoFaltas {
 async function cargarCohorte(): Promise<void> {
   const cohorte = cohortes.value[seleccion.value]
   if (!cohorte) return
+  mostrarHistorial.value = false
   clave.value = claveDe(cohorte)
   const datos = await window.api.faltas.obtenerCurso(clave.value)
   curso.value = datos
@@ -164,6 +166,11 @@ onMounted(cargar)
 
 async function verInforme(id: number): Promise<void> {
   informe.value = await window.api.faltas.obtenerInforme(id)
+}
+
+async function seleccionarInforme(id: number): Promise<void> {
+  await verInforme(id)
+  mostrarHistorial.value = false
 }
 
 async function guardarConfiguracion(): Promise<void> {
@@ -280,7 +287,7 @@ function imprimir(): void {
   const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Faltas · ${nombreCurso.value}</title>
   <style>@page{size:A4 landscape;margin:12mm}body{font:10px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d2939;-webkit-print-color-adjust:exact;print-color-adjust:exact}h1{font-size:20px;margin:0 0 4px}p{margin:0 0 10px;color:#667085}table{width:100%;border-collapse:collapse;-webkit-print-color-adjust:exact;print-color-adjust:exact}th,td{padding:5px;border:1px solid #dbe5ee;text-align:center}th{background:#eef4f8;color:#36536b;font-size:8px;text-transform:uppercase}td:first-child{text-align:left;font-weight:600}</style></head><body>
   <h1>Control de faltas</h1><p>${nombreCurso.value} · ${curso.value.cursoAcademicoNombre} · ${informe.value.archivo} · límite ${informe.value.datos.limite} %</p>
-  <table><thead><tr><th rowspan="2">Alumno/a</th>${cabeceras}</tr><tr>${subcabeceras}</tr></thead><tbody>${filas}</tbody></table>
+  <table><thead><tr><th rowspan="2" scope="col">Alumno/a</th>${cabeceras}</tr><tr>${subcabeceras}</tr></thead><tbody>${filas}</tbody></table>
   </body></html>`
   const ventana = window.open('', 'faltas-impresion', 'width=1100,height=800')
   if (!ventana) return
@@ -411,78 +418,64 @@ function imprimir(): void {
           </div>
         </section>
 
-        <section class="tarjeta faltas__historial">
-          <header class="dashboard__tarjeta-cabecera">
-            <div>
-              <h3>Historial de faltas</h3>
-              <p class="tenue">De cada informe se guardan las faltas extraídas, no el PDF.</p>
-            </div>
-            <button
-              class="boton boton--principal"
-              type="button"
-              :disabled="trabajando"
-              @click="elegirPdf"
-            >
-              {{ trabajando ? 'Leyendo…' : 'Subir PDF' }}
-            </button>
-            <input
-              ref="ficheroPdf"
-              class="visualmente-oculto"
-              type="file"
-              accept=".pdf,application/pdf"
-              @change="alElegirPdf"
-            />
-          </header>
-
-          <p v-if="informes.length === 0" class="tenue">
-            Todavía no hay informes. Sube un PDF de faltas de ITACA para empezar el historial.
-          </p>
-          <ul v-else class="faltas__historial-lista">
-            <li v-for="item in informes" :key="item.id">
-              <button
-                type="button"
-                class="faltas__historial-item"
-                :class="{ 'faltas__historial-item--activo': informe?.id === item.id }"
-                @click="verInforme(item.id)"
-              >
-                <strong>{{ item.archivo }}</strong>
-                <span>{{ formatearFecha(item.subidoEn) }}</span>
-                <span class="tenue"
-                  >{{ plural(item.totalAlumnos, 'alumno', 'alumnos') }} ·
-                  {{ plural(item.totalModulos, 'módulo', 'módulos') }}</span
-                >
-              </button>
-            </li>
-          </ul>
-        </section>
-
         <section class="tarjeta faltas__panel">
-          <header class="dashboard__tarjeta-cabecera">
+          <header class="dashboard__tarjeta-cabecera faltas__panel-cabecera">
             <div>
               <h3>Registro seleccionado</h3>
               <p class="tenue">
                 {{
                   informe
                     ? `${informe.archivo} · ${formatearFecha(informe.subidoEn)}`
-                    : 'Selecciona un informe del historial.'
+                    : 'Sube un PDF de ITACA para consultar el registro.'
                 }}
               </p>
             </div>
-            <button class="boton" type="button" :disabled="!informe" @click="imprimir">
-              Imprimir / PDF
-            </button>
+            <div class="faltas__panel-acciones">
+              <button
+                class="boton boton--principal"
+                type="button"
+                :disabled="trabajando"
+                @click="elegirPdf"
+              >
+                {{ trabajando ? 'Leyendo…' : 'Subir PDF' }}
+              </button>
+              <button
+                class="boton"
+                type="button"
+                :aria-expanded="mostrarHistorial"
+                aria-controls="faltas-historial"
+                :disabled="informes.length === 0"
+                @click="mostrarHistorial = !mostrarHistorial"
+              >
+                Historial
+                <span v-if="informes.length > 0" class="faltas__contador">{{
+                  informes.length
+                }}</span>
+              </button>
+              <button class="boton" type="button" :disabled="!informe" @click="imprimir">
+                Imprimir / PDF
+              </button>
+              <input
+                ref="ficheroPdf"
+                class="visualmente-oculto"
+                type="file"
+                accept=".pdf,application/pdf"
+                @change="alElegirPdf"
+              />
+            </div>
           </header>
 
           <p v-if="!informe" class="tenue">No hay ningún registro seleccionado.</p>
-          <div v-else class="tabla-scroll">
+          <div v-else class="tabla-scroll faltas__tabla-scroll">
             <table class="tabla faltas__tabla">
               <thead>
                 <tr>
-                  <th rowspan="2">Alumno/a</th>
+                  <th rowspan="2" scope="col">Alumno/a</th>
                   <th
                     v-for="modulo in informe.datos.modulos"
                     :key="modulo.moduloCodigo"
                     colspan="2"
+                    scope="colgroup"
                     class="faltas__modulo-cabecera"
                   >
                     {{ modulo.nombreInforme }}
@@ -493,8 +486,8 @@ function imprimir(): void {
                     v-for="modulo in informe.datos.modulos"
                     :key="`sub-${modulo.moduloCodigo}`"
                   >
-                    <th class="num">Faltas</th>
-                    <th class="num">%</th>
+                    <th class="num" scope="col">Faltas</th>
+                    <th class="num" scope="col">%</th>
                   </template>
                 </tr>
               </thead>
@@ -522,6 +515,41 @@ function imprimir(): void {
               </tbody>
             </table>
           </div>
+        </section>
+
+        <section v-if="mostrarHistorial" id="faltas-historial" class="tarjeta faltas__historial">
+          <header class="dashboard__tarjeta-cabecera">
+            <div>
+              <h3>Historial de faltas</h3>
+              <p class="tenue">
+                Consulta informes anteriores. De cada PDF se guardan las faltas extraídas.
+              </p>
+            </div>
+            <button class="boton boton--sutil" type="button" @click="mostrarHistorial = false">
+              Cerrar
+            </button>
+          </header>
+
+          <p v-if="informes.length === 0" class="tenue">
+            Todavía no hay informes. Sube un PDF de faltas de ITACA para empezar el historial.
+          </p>
+          <ul v-else class="faltas__historial-lista">
+            <li v-for="item in informes" :key="item.id">
+              <button
+                type="button"
+                class="faltas__historial-item"
+                :class="{ 'faltas__historial-item--activo': informe?.id === item.id }"
+                @click="seleccionarInforme(item.id)"
+              >
+                <strong>{{ item.archivo }}</strong>
+                <span>{{ formatearFecha(item.subidoEn) }}</span>
+                <span class="tenue"
+                  >{{ plural(item.totalAlumnos, 'alumno', 'alumnos') }} ·
+                  {{ plural(item.totalModulos, 'módulo', 'módulos') }}</span
+                >
+              </button>
+            </li>
+          </ul>
         </section>
       </template>
     </template>
