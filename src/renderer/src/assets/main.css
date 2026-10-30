@@ -561,17 +561,29 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+.horario__resumen {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
 .horario-semanal-scroll {
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding: 2px 0 6px;
 }
 
 .horario-semanal {
   display: grid;
-  grid-template-columns: 104px repeat(7, minmax(62px, 1fr));
-  gap: 4px;
-  min-width: 720px;
-  margin-top: 6px;
+  grid-template-columns: 92px repeat(var(--dias, 7), minmax(84px, 1fr));
+  gap: 5px;
+  min-width: 640px;
+  margin-top: 8px;
+}
+
+.horario-semanal--compacto {
+  grid-template-columns: 78px repeat(var(--dias, 7), minmax(42px, 1fr));
+  min-width: 0;
 }
 
 .horario-semanal__cabecera {
@@ -580,6 +592,31 @@ body {
   font-size: 11px;
   font-weight: 600;
   text-align: center;
+}
+
+.horario-semanal__dia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  min-height: 44px;
+  padding: 5px 4px;
+  color: var(--tenue);
+  font-size: 11px;
+  font-weight: 650;
+  text-align: center;
+  background: #f8fafc;
+  border: 1px solid #eef1f5;
+  border-radius: 8px;
+}
+
+.horario-semanal__dia small {
+  color: var(--acento);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .horario-semanal__hora {
@@ -592,24 +629,42 @@ body {
   white-space: nowrap;
 }
 
+.horario-semanal__hora.horario-semanal__cabecera {
+  min-height: 44px;
+  justify-content: flex-start;
+  padding-left: 8px;
+  color: var(--tenue);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .horario-semanal__celda {
-  display: grid;
-  place-items: center;
-  min-height: 28px;
-  padding: 2px;
-  border: 1px solid var(--borde);
-  border-radius: 5px;
-  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 4px 6px;
+  overflow: hidden;
   color: transparent;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #eef1f5;
+  border-radius: 8px;
   cursor: pointer;
   transition:
     background 120ms ease,
-    border-color 120ms ease;
+    border-color 120ms ease,
+    box-shadow 120ms ease;
 }
 
-.horario-semanal__celda:hover {
-  border-color: var(--acento);
-  background: #f5f8ff;
+.horario-semanal__celda--libre {
+  background: #fbfcfe;
+  border-color: #f0f3f7;
 }
 
 .horario-semanal__celda--lectura {
@@ -617,72 +672,104 @@ body {
 }
 
 .horario-semanal__celda--lectura:hover {
-  background: #fff;
+  border-color: #cfd8e3;
 }
 
+.horario-semanal__celda--sesion,
 .horario-semanal__celda--lectura.horario-semanal__celda--sesion:hover {
-  background: var(--acento);
+  color: #ffffff;
+  background: linear-gradient(180deg, #3b82f6, #2563eb);
+  border-color: #2563eb;
+  box-shadow: 0 1px 2px rgba(37, 99, 235, 0.22);
 }
 
+.horario-semanal__celda--colectiva,
 .horario-semanal__celda--lectura.horario-semanal__celda--colectiva:hover {
+  color: #05603a;
   background: #d1fadf;
+  border-color: #6ce9a6;
 }
 
+.horario-semanal__celda--individual,
 .horario-semanal__celda--lectura.horario-semanal__celda--individual:hover {
+  color: #93370d;
   background: #fef0c7;
-}
-
-.horario-semanal__cabecera--hoy {
-  color: var(--acento);
+  border-color: #fec84b;
 }
 
 .horario-semanal__celda--hoy {
-  box-shadow: inset 0 0 0 2px rgba(37, 99, 235, 0.28);
+  background: #f4f8ff;
+  border-color: #dbe7ff;
 }
 
-.horario-semanal__celda--sesion {
-  border-color: var(--acento);
-  background: var(--acento);
-  color: #fff;
-  font-weight: 700;
+.horario-semanal__celda--hoy.horario-semanal__celda--sesion {
+  background: linear-gradient(180deg, #3b82f6, #2563eb);
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #bfdbfe;
 }
 
-.horario-semanal__celda--colectiva {
-  border-color: #6ce9a6;
+.horario-semanal__celda--hoy.horario-semanal__celda--colectiva {
   background: #d1fadf;
-  color: #05603a;
-  font-weight: 700;
+  border-color: #6ce9a6;
 }
 
-.horario-semanal__celda--individual {
-  border-color: #fec84b;
+.horario-semanal__celda--hoy.horario-semanal__celda--individual {
   background: #fef0c7;
-  color: #93370d;
-  font-weight: 700;
+  border-color: #fec84b;
+}
+
+.horario-semanal__cabecera--hoy {
+  color: #ffffff;
+  background: var(--acento);
+  border-color: var(--acento);
+}
+
+.horario-semanal__cabecera--hoy small {
+  color: #dbeafe;
+}
+
+.horario-semanal__recreo {
+  grid-column: 1 / -1;
+  padding: 3px 10px;
+  color: var(--tenue);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  background: #f8fafc;
+  border: 1px dashed #dfe5ee;
+  border-radius: 999px;
 }
 
 .horario-semanal__leyenda {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 7px;
   flex-wrap: wrap;
-  margin-top: 8px;
-  font-size: 11px;
+  margin-top: 12px;
+  padding-top: 10px;
   color: var(--tenue);
+  font-size: 10px;
+  border-top: 1px solid #eef1f5;
 }
 
 .horario-semanal__leyenda-item {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  padding: 3px 8px;
+  background: #ffffff;
+  border: 1px solid #eef1f5;
+  border-radius: 999px;
 }
 
 .horario-semanal__muestra {
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .horario-semanal__muestra--sesion {
@@ -700,14 +787,8 @@ body {
   background: #fef0c7;
 }
 
-.horario-semanal__recreo {
-  grid-column: 1 / -1;
-  padding: 3px 8px;
-  border-radius: 4px;
-  background: #f2f4f7;
-  color: var(--tenue);
+.horario-semanal__leyenda .tenue {
   font-size: 10px;
-  text-align: center;
 }
 
 .horario-semanal__pie {
@@ -4058,8 +4139,143 @@ a:focus-visible {
 
 .unidades__ras {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.unidades__ra-tabs {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--borde);
+}
+
+.unidades__ra-tab {
+  display: inline-flex;
+  align-items: center;
   gap: 6px;
+  padding: 7px 10px;
+  color: var(--tenue);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  white-space: nowrap;
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+}
+
+.unidades__ra-tab:hover {
+  color: var(--texto);
+  background: #f7f9fc;
+}
+
+.unidades__ra-tab--activa {
+  margin-bottom: -1px;
+  color: var(--acento);
+  background: #ffffff;
+  border-color: var(--borde);
+}
+
+.unidades__ra-tab small {
+  padding: 1px 5px;
+  color: var(--tenue);
+  font-size: 9px;
+  font-weight: 600;
+  background: #f2f4f7;
+  border-radius: 999px;
+}
+
+.unidades__ra-tab--activa small {
+  color: var(--acento);
+  background: var(--acento-suave);
+}
+
+.unidades__ra-panel {
+  overflow: hidden;
+  background: #fbfcfe;
+  border: 1px solid var(--borde);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+.unidades__ra-panel-cabecera {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: #f7f9fc;
+  border-bottom: 1px solid #eef1f5;
+}
+
+.unidades__ra-panel-cabecera .tenue {
+  flex: 1;
+  min-width: 180px;
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.unidades__ces {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2px 10px;
+  padding: 8px 10px;
+}
+
+.unidades__ce {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 5px 6px;
+  font-size: 11.5px;
+  line-height: 1.35;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.unidades__ce:hover {
+  background: #ffffff;
+}
+
+.unidades__ce--activo {
+  background: var(--acento-suave);
+}
+
+.unidades__ce input {
+  margin: 2px 0 0;
+}
+
+.unidades__ce-codigo {
+  flex: 0 0 auto;
+  min-width: 14px;
+  color: var(--acento);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.unidades__ce-descripcion {
+  color: var(--texto);
+}
+
+.unidades__criterios-resumen {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.unidades__criterios-grupo {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.unidades__criterios-grupo .tenue {
+  font-size: 11.5px;
+  line-height: 1.35;
 }
 
 .unidades__ra {

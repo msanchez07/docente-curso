@@ -126,7 +126,7 @@ export const ESQUEMA_UNIDADES = {
   $schema: 'https://json-schema.org/draft/2020-12/schema',
   title: 'Importación de unidades de programación',
   description:
-    'Array de unidades o { unidades: [...] }. Cada unidad puede incluir sus sesiones, RA y contenidos.',
+    'Array de unidades o { unidades: [...] }. Cada unidad puede incluir sus sesiones, criterios de evaluación (RA + CE) y contenidos.',
   type: 'array',
   items: {
     type: 'object',
@@ -137,10 +137,33 @@ export const ESQUEMA_UNIDADES = {
       fecha_fin: { type: 'string', description: 'ISO o dd/mm/aaaa.' },
       contenidos: { type: 'string' },
       observaciones: { type: ['string', 'null'] },
+      criterios: {
+        type: 'array',
+        description:
+          'Criterios concretos que trabaja la unidad. Puede ser un CE suelto, todos los de un RA o CE de varios RA.',
+        items: {
+          oneOf: [
+            {
+              type: 'object',
+              properties: {
+                raCodigo: { type: 'string', description: 'Código del RA, por ejemplo RA1.' },
+                ceCodigo: { type: 'string', description: 'Código del CE, por ejemplo a.' }
+              },
+              required: ['raCodigo', 'ceCodigo'],
+              additionalProperties: true
+            },
+            {
+              type: 'string',
+              description: 'Forma abreviada RA1.a o RA1|a.'
+            }
+          ]
+        }
+      },
       ra_codigos: {
         type: 'array',
         items: { type: 'string' },
-        description: 'Códigos de RA, por ejemplo RA1.'
+        description:
+          'Compatibilidad: si no se envían criterios, se incluyen todos los CE de estos RA.'
       },
       sesiones: {
         type: 'array',
@@ -168,7 +191,11 @@ export const ESQUEMA_UNIDADES = {
         fecha_inicio: '2026-09-15',
         fecha_fin: '2026-10-15',
         contenidos: 'Entorno, sintaxis y estructuras de control.',
-        ra_codigos: ['RA1', 'RA2'],
+        criterios: [
+          { raCodigo: 'RA1', ceCodigo: 'a' },
+          { raCodigo: 'RA1', ceCodigo: 'b' },
+          { raCodigo: 'RA2', ceCodigo: 'a' }
+        ],
         sesiones: [{ fecha: '2026-09-16', contenido: 'Presentación del módulo' }]
       }
     ]

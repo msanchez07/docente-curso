@@ -604,6 +604,11 @@ export interface ProgramacionEntrada {
 }
 
 /** Unidad de programación: agrupa sesiones, RA y contenidos. */
+export interface CriterioUnidad {
+  raCodigo: string
+  ceCodigo: string
+}
+
 export interface UnidadProgramacion {
   id: number
   grupo_clase_id: number
@@ -613,7 +618,10 @@ export interface UnidadProgramacion {
   fecha_fin: string | null
   contenidos: string
   observaciones: string | null
+  /** RA afectados; se deriva de los criterios seleccionados. */
   ra_codigos: string[]
+  /** Criterios de evaluación concretos que trabaja la unidad. */
+  criterios: CriterioUnidad[]
   sesiones: ProgramacionAula[]
   creado_en: string
   actualizado_en: string
@@ -626,6 +634,9 @@ export interface UnidadProgramacionEntrada {
   fecha_fin?: string | null
   contenidos?: string
   observaciones?: string | null
+  /** Criterios concretos (RA + CE) que trabaja la unidad. */
+  criterios?: CriterioUnidad[]
+  /** Compatibilidad: si no hay criterios, se expanden todos los CE de estos RA. */
   ra_codigos?: string[]
   /** Solo en importación: sesiones que se asignan a la unidad. */
   sesiones?: ProgramacionEntrada[]

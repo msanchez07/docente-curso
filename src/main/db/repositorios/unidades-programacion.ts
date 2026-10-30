@@ -1,11 +1,14 @@
 /**
  * Unidades de programación por grupo.
  *
- * Cada unidad agrupa sesiones (filas de `programacion_aula`), resultados de
- * aprendizaje y contenidos. Las sesiones se asignan desde su formulario.
+ * Cada unidad agrupa sesiones (filas de `programacion_aula`), criterios de
+ * evaluación concretos y contenidos. Los RA se derivan de los criterios
+ * seleccionados; una unidad puede trabajar un CE suelto, todos los de un RA o
+ * criterios de varios RA.
  */
 import type { Bd } from '../conexion'
 import type {
+  CriterioUnidad,
   ProgramacionAula,
   ResultadoImportacionUnidades,
   UnidadProgramacion,
@@ -20,21 +23,56 @@ const CAMPOS_SESION = `id, grupo_clase_id, unidad_id, fecha, hora, orden, conten
                        desviacion, observaciones, creado_en, actualizado_en`
 const RE_FECHA = /^\d{4}-\d{2}-\d{2}$/
 
-function fechaValida(fecha: string): boolean {
-  if (!RE_FECHA.test(fecha)) return false
-  const interpretada = new Date(`${fecha}T00:00:00Z`)
-  return !Number.isNaN(interpretada.getTime()) && interpretada.toISOString().slice(0, 10) === fecha
-}
-
-function normalizar(entrada: UnidadProgramacionEntrada): {
+interface DatosUnidad {
   codigo: string | null
   nombre: string
   fecha_inicio: string | null
   fecha_fin: string | null
   contenidos: string
   observaciones: string | null
+  criterios: CriterioUnidad[]
   ra_codigos: string[]
-} {
+}
+
+function fechaValida(fecha: string): boolean {
+  if (!RE_FECHA.test(fecha)) return false
+  const interpretada = new Date(`${fecha}T00:00:00Z`)
+  return !Number.isNaN(interpretada.getTime()) && interpretada.toISOString().slice(0, 10) === fecha
+}
+
+function claveCriterio(criterio: CriterioUnidad): string {
+  return `${criterio.raCodigo}|${criterio.ceCodigo}`
+}
+
+function unicos(criterios: CriterioUnidad[]): CriterioUnidad[] {
+  const mapa = new Map<string, CriterioUnidad>()
+  for (const criterio of criterios) {
+    const raCodigo = criterio.raCodigo?.trim().toUpperCase()
+    const ceCodigo = criterio.ceCodigo?.trim()
+    if (!raCodigo || !ceCodigo) continue
+    const normalizado = { raCodigo, ceCodigo }
+    mapa.set(claveCriterio(normalizado), normalizado)
+  }
+  return [...mapa.values()].sort(
+    (a, b) => a.raCodigo.localeCompare(b.raCodigo) || a.ceCodigo.localeCompare(b.ceCodigo)
+  )
+}
+
+function criteriosDelGrupo(db: Bd, grupoClaseId: number): Map<string, CriterioUnidad> {
+  const filas = db
+    .prepare(
+      `SELECT ra.codigo AS raCodigo, ce.codigo AS ceCodigo
+         FROM criterios_evaluacion ce
+         JOIN resultados_aprendizaje ra ON ra.id = ce.ra_id
+         JOIN grupos_clase gc ON gc.modulo_codigo = ra.modulo_codigo
+        WHERE gc.id = ?
+        ORDER BY ra.numero, ce.codigo`
+    )
+    .all(grupoClaseId) as CriterioUnidad[]
+  return new Map(filas.map((fila) => [claveCriterio(fila), fila]))
+}
+
+function normalizar(db: Bd, grupoClaseId: number, entrada: UnidadProgramacionEntrada): DatosUnidad {
   const nombre = entrada.nombre?.trim()
   if (!nombre) throw new Error('El nombre de la unidad es obligatorio.')
 
@@ -50,7 +88,30 @@ function normalizar(entrada: UnidadProgramacionEntrada): {
     throw new Error('La fecha de inicio no puede ser posterior a la de fin.')
   }
 
-  const raCodigos = [...new Set((entrada.ra_codigos ?? []).map((ra) => ra.trim()).filter(Boolean))]
+  const disponibles = criteriosDelGrupo(db, grupoClaseId)
+  const explicitos = unicos(entrada.criterios ?? [])
+  const raSolicitados = new Set(
+    (entrada.ra_codigos ?? []).map((ra) => ra.trim().toUpperCase()).filter(Boolean)
+  )
+  let criterios: CriterioUnidad[] = []
+
+  if (explicitos.length > 0) {
+    for (const criterio of explicitos) {
+      if (!disponibles.has(claveCriterio(criterio))) {
+        throw new Error(
+          `El criterio ${criterio.raCodigo} · ${criterio.ceCodigo} no pertenece al módulo del grupo.`
+        )
+      }
+    }
+    criterios = explicitos
+  } else if (raSolicitados.size > 0) {
+    criterios = [...disponibles.values()].filter((criterio) => raSolicitados.has(criterio.raCodigo))
+  }
+
+  const raCodigos =
+    criterios.length > 0
+      ? [...new Set(criterios.map((criterio) => criterio.raCodigo))]
+      : [...raSolicitados]
 
   return {
     codigo: entrada.codigo?.trim() || null,
@@ -59,6 +120,7 @@ function normalizar(entrada: UnidadProgramacionEntrada): {
     fecha_fin: fechaFin,
     contenidos: entrada.contenidos?.trim() ?? '',
     observaciones: entrada.observaciones?.trim() || null,
+    criterios,
     ra_codigos: raCodigos
   }
 }
@@ -74,6 +136,17 @@ function sesionesDeUnidad(db: Bd, unidadId: number): ProgramacionAula[] {
     .all(unidadId) as ProgramacionAula[]
 }
 
+function criteriosDeUnidad(db: Bd, unidadId: number): CriterioUnidad[] {
+  return db
+    .prepare(
+      `SELECT ra_codigo AS raCodigo, ce_codigo AS ceCodigo
+         FROM unidad_programacion_ce
+        WHERE unidad_id = ?
+        ORDER BY ra_codigo, ce_codigo`
+    )
+    .all(unidadId) as CriterioUnidad[]
+}
+
 function raDeUnidad(db: Bd, unidadId: number): string[] {
   return (
     db
@@ -86,13 +159,31 @@ function raDeUnidad(db: Bd, unidadId: number): string[] {
 
 function aUnidad(
   db: Bd,
-  fila: Omit<UnidadProgramacion, 'ra_codigos' | 'sesiones'>
+  fila: Omit<UnidadProgramacion, 'ra_codigos' | 'criterios' | 'sesiones'>
 ): UnidadProgramacion {
+  const criterios = criteriosDeUnidad(db, fila.id)
+  const raCodigos = [...new Set(criterios.map((criterio) => criterio.raCodigo))]
   return {
     ...fila,
-    ra_codigos: raDeUnidad(db, fila.id),
+    ra_codigos: raCodigos.length > 0 ? raCodigos : raDeUnidad(db, fila.id),
+    criterios,
     sesiones: sesionesDeUnidad(db, fila.id)
   }
+}
+
+function guardarCriterios(db: Bd, unidadId: number, datos: DatosUnidad): void {
+  db.prepare('DELETE FROM unidad_programacion_ce WHERE unidad_id = ?').run(unidadId)
+  db.prepare('DELETE FROM unidad_programacion_ra WHERE unidad_id = ?').run(unidadId)
+  const insertarCe = db.prepare(
+    'INSERT INTO unidad_programacion_ce (unidad_id, ra_codigo, ce_codigo) VALUES (?, ?, ?)'
+  )
+  const insertarRa = db.prepare(
+    'INSERT INTO unidad_programacion_ra (unidad_id, ra_codigo) VALUES (?, ?)'
+  )
+  for (const criterio of datos.criterios) {
+    insertarCe.run(unidadId, criterio.raCodigo, criterio.ceCodigo)
+  }
+  for (const ra of datos.ra_codigos) insertarRa.run(unidadId, ra)
 }
 
 export function listarUnidadesProgramacion(db: Bd, grupoClaseId: number): UnidadProgramacion[] {
@@ -104,7 +195,7 @@ export function listarUnidadesProgramacion(db: Bd, grupoClaseId: number): Unidad
         WHERE grupo_clase_id = ?
         ORDER BY fecha_inicio IS NULL, fecha_inicio, id`
     )
-    .all(grupoClaseId) as Omit<UnidadProgramacion, 'ra_codigos' | 'sesiones'>[]
+    .all(grupoClaseId) as Omit<UnidadProgramacion, 'ra_codigos' | 'criterios' | 'sesiones'>[]
   return filas.map((fila) => aUnidad(db, fila))
 }
 
@@ -114,20 +205,17 @@ export function crearUnidadProgramacion(
   entrada: UnidadProgramacionEntrada
 ): UnidadProgramacion {
   if (!obtenerGrupoClase(db, grupoClaseId)) throw new Error('El grupo no existe.')
-  const datos = normalizar(entrada)
+  const datos = normalizar(db, grupoClaseId, entrada)
   const insertar = db.prepare(
     `INSERT INTO unidades_programacion
        (grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, contenidos, observaciones)
      VALUES (@grupo_clase_id, @codigo, @nombre, @fecha_inicio, @fecha_fin, @contenidos, @observaciones)`
   )
-  const insertarRa = db.prepare(
-    'INSERT INTO unidad_programacion_ra (unidad_id, ra_codigo) VALUES (?, ?)'
-  )
   let id = 0
   db.transaction(() => {
     const resultado = insertar.run({ ...datos, grupo_clase_id: grupoClaseId })
     id = Number(resultado.lastInsertRowid)
-    for (const ra of datos.ra_codigos) insertarRa.run(id, ra)
+    guardarCriterios(db, id, datos)
   })()
   return listarUnidadesProgramacion(db, grupoClaseId).find((unidad) => unidad.id === id)!
 }
@@ -141,7 +229,7 @@ export function actualizarUnidadProgramacion(
     .prepare('SELECT grupo_clase_id FROM unidades_programacion WHERE id = ?')
     .get(id) as { grupo_clase_id: number } | undefined
   if (!actual) return null
-  const datos = normalizar(entrada)
+  const datos = normalizar(db, actual.grupo_clase_id, entrada)
   const actualizar = db.prepare(
     `UPDATE unidades_programacion
         SET codigo = @codigo, nombre = @nombre, fecha_inicio = @fecha_inicio,
@@ -151,11 +239,7 @@ export function actualizarUnidadProgramacion(
   )
   db.transaction(() => {
     actualizar.run({ ...datos, id })
-    db.prepare('DELETE FROM unidad_programacion_ra WHERE unidad_id = ?').run(id)
-    const insertarRa = db.prepare(
-      'INSERT INTO unidad_programacion_ra (unidad_id, ra_codigo) VALUES (?, ?)'
-    )
-    for (const ra of datos.ra_codigos) insertarRa.run(id, ra)
+    guardarCriterios(db, id, datos)
   })()
   return (
     listarUnidadesProgramacion(db, actual.grupo_clase_id).find((unidad) => unidad.id === id) ?? null

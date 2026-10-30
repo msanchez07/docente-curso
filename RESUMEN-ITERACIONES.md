@@ -147,7 +147,7 @@ Vite/electron-vite + Vitest**.
 ### 2.9. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
-- Última migración aplicada: **v28**.
+- Última migración aplicada: **v31**.
   - v23: unidades y calendario escolar.
   - v24: horas de formación.
   - v25: varias sesiones por día (`hora`, `orden`).
@@ -156,6 +156,7 @@ Vite/electron-vite + Vitest**.
   - v28: bloques de 55 minutos del calendario semanal.
   - v29: totales de faltas y justificadas por alumno/grupo.
   - v30: configuración de módulos e historial de informes de faltas por curso.
+  - v31: criterios de evaluación concretos (RA + CE) por unidad de programación.
 - `dias_semana` y `tutorias_semana` se derivan del calendario cuando hay bloques, para que la
   programación, el resumen del grupo y el PDF sean coherentes.
 
@@ -173,6 +174,8 @@ Vite/electron-vite + Vitest**.
 - Los días festivos/no lectivos tienen prioridad visual roja en la agenda.
 - La agenda muestra las unidades didácticas de cada día con un color estable por unidad; la
   leyenda del mes permite identificar todas las unidades visibles.
+- Una unidad puede trabajar CE concretos de un RA, todos los CE de un RA o CE de varios RA. En
+  el formulario se agrupan por pestañas de RA para no mostrar un listado largo con scroll.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.
 - La previsualización de entregas se abre en ventana propia; la exportación se confirma desde
@@ -192,7 +195,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **195 tests**, 31 archivos de test, build y smoke correctos.
+Estado actual: **198 tests**, 31 archivos de test, build y smoke correctos.
 
 ---
 
@@ -218,11 +221,12 @@ Al cerrar cada iteración:
 
 ### Registro de iteraciones
 
-| Fecha      | Iteración          | Resumen                                                                                                                                 |
-| ---------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| 28/10/2026 | Base               | Electron + Vue 3 + SQLite, cursos, grupos, alumnado, criterios, entregas, notas, informes, normativa, BOE.                              |
-| 28/10/2026 | Programación       | Unidades, calendario escolar, sesiones múltiples, programación didáctica, PDF de programación.                                          |
-| 28/10/2026 | Dashboard          | Agenda, formación, programación didáctica, fechas visibles y calendario de agenda coloreado.                                            |
-| 28/10/2026 | Horarios           | Bloques de 55 minutos, recreos, tutorías colectivas/individuales múltiples por día, vista de horario.                                   |
-| 28/10/2026 | Entregas           | Exportación por entrega/avaluación/curso, previsualización en ventana propia, PDF/ZIP, nombre de archivo e informe por alumno.          |
-| 30/10/2026 | Homogeneización UI | Cabeceras de página y de sección unificadas, métricas compartidas, navegación de mes común y unidades didácticas visibles en la agenda. |
+| Fecha      | Iteración           | Resumen                                                                                                                                 |
+| ---------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 28/10/2026 | Base                | Electron + Vue 3 + SQLite, cursos, grupos, alumnado, criterios, entregas, notas, informes, normativa, BOE.                              |
+| 28/10/2026 | Programación        | Unidades, calendario escolar, sesiones múltiples, programación didáctica, PDF de programación.                                          |
+| 28/10/2026 | Dashboard           | Agenda, formación, programación didáctica, fechas visibles y calendario de agenda coloreado.                                            |
+| 28/10/2026 | Horarios            | Bloques de 55 minutos, recreos, tutorías colectivas/individuales múltiples por día, vista de horario.                                   |
+| 28/10/2026 | Entregas            | Exportación por entrega/avaluación/curso, previsualización en ventana propia, PDF/ZIP, nombre de archivo e informe por alumno.          |
+| 30/10/2026 | Homogeneización UI  | Cabeceras de página y de sección unificadas, métricas compartidas, navegación de mes común y unidades didácticas visibles en la agenda. |
+| 30/10/2026 | Horario y criterios | Horario semanal más legible y criterios de evaluación por unidad agrupados en pestañas de RA.                                           |

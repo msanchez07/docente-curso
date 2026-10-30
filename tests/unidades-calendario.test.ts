@@ -36,7 +36,29 @@ const cicloPrueba: Ciclo = {
       curso: '2',
       ects: 12,
       horas_minimas_boe: 100,
-      ra: []
+      ra: [
+        {
+          codigo: 'RA1',
+          numero: 1,
+          descripcion: 'RA1 de prueba',
+          ce: [
+            { codigo: 'a', descripcion: 'CE a de RA1' },
+            { codigo: 'b', descripcion: 'CE b de RA1' }
+          ]
+        },
+        {
+          codigo: 'RA2',
+          numero: 2,
+          descripcion: 'RA2 de prueba',
+          ce: [{ codigo: 'a', descripcion: 'CE a de RA2' }]
+        },
+        {
+          codigo: 'RA3',
+          numero: 3,
+          descripcion: 'RA3 de prueba',
+          ce: [{ codigo: 'a', descripcion: 'CE a de RA3' }]
+        }
+      ]
     }
   ]
 }
@@ -83,6 +105,37 @@ describe('unidades de programación', () => {
     const lista = listarUnidadesProgramacion(db, grupoId)
     expect(lista[0].sesiones).toHaveLength(1)
     expect(lista[0].sesiones[0].unidad_id).toBe(unidad.id)
+  })
+
+  it('guarda criterios concretos de uno o varios RA', () => {
+    const unidad = crearUnidadProgramacion(db, grupoId, {
+      nombre: 'Criterios parciales',
+      criterios: [
+        { raCodigo: 'RA1', ceCodigo: 'a' },
+        { raCodigo: 'RA2', ceCodigo: 'a' }
+      ]
+    })
+    expect(unidad.criterios).toEqual([
+      { raCodigo: 'RA1', ceCodigo: 'a' },
+      { raCodigo: 'RA2', ceCodigo: 'a' }
+    ])
+    expect(unidad.ra_codigos).toEqual(['RA1', 'RA2'])
+
+    const actualizada = actualizarUnidadProgramacion(db, unidad.id, {
+      nombre: 'Solo RA1',
+      criterios: [{ raCodigo: 'RA1', ceCodigo: 'b' }]
+    })
+    expect(actualizada?.criterios).toEqual([{ raCodigo: 'RA1', ceCodigo: 'b' }])
+    expect(actualizada?.ra_codigos).toEqual(['RA1'])
+  })
+
+  it('rechaza criterios que no pertenecen al módulo', () => {
+    expect(() =>
+      crearUnidadProgramacion(db, grupoId, {
+        nombre: 'Inválida',
+        criterios: [{ raCodigo: 'RA9', ceCodigo: 'z' }]
+      })
+    ).toThrow(/no pertenece/)
   })
 
   it('importa unidades con sus sesiones', () => {

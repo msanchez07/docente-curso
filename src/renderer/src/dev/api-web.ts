@@ -30,6 +30,7 @@ import { modeloPorDefecto } from '@shared/modelo'
 import JSZip from 'jszip'
 import type {
   AlumnoClase,
+  CriterioUnidad,
   AlumnoEntrada,
   AlumnoFaltasCurso,
   ClaveCursoFaltas,
@@ -481,6 +482,19 @@ function leerUnidades(): UnidadesProgramacion {
   }
 }
 
+const CE_DEMO: Record<string, string[]> = {
+  RA1: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+  RA2: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
+  RA3: ['a', 'b', 'c', 'd', 'e', 'f', 'g'],
+  RA4: ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+}
+
+function criteriosDemo(raCodigos: string[]): CriterioUnidad[] {
+  return raCodigos.flatMap((raCodigo) =>
+    (CE_DEMO[raCodigo] ?? []).map((ceCodigo) => ({ raCodigo, ceCodigo }))
+  )
+}
+
 function escribirUnidades(unidades: UnidadesProgramacion): void {
   localStorage.setItem(CLAVE_UNIDADES, JSON.stringify(unidades))
 }
@@ -491,6 +505,7 @@ function unidadesDeGrupo(grupoClaseId: number): UnidadProgramacion[] {
     .filter((unidad) => unidad.grupo_clase_id === grupoClaseId)
     .map((unidad) => ({
       ...unidad,
+      criterios: unidad.criterios ?? criteriosDemo(unidad.ra_codigos ?? []),
       sesiones: sesiones
         .filter((sesion) => sesion.unidad_id === unidad.id)
         .slice()
@@ -849,6 +864,7 @@ function escribirDemo(): void {
       contenidos: 'Entorno PHP, sintaxis, estructuras de control, arrays y formularios.',
       observaciones: null,
       ra_codigos: ['RA1', 'RA2'],
+      criterios: criteriosDemo(['RA1', 'RA2']),
       sesiones: [],
       creado_en: '2026-10-27 09:00:00',
       actualizado_en: '2026-10-27 09:00:00'
@@ -863,6 +879,7 @@ function escribirDemo(): void {
       contenidos: 'Sesiones, acceso a datos, MVC, APIs REST y seguridad básica.',
       observaciones: 'Incluye la práctica 1.',
       ra_codigos: ['RA2', 'RA3', 'RA4'],
+      criterios: criteriosDemo(['RA2', 'RA3', 'RA4']),
       sesiones: [],
       creado_en: '2026-10-27 09:00:00',
       actualizado_en: '2026-10-27 09:00:00'
@@ -2538,6 +2555,7 @@ const api = {
       }
       const unidades = leerUnidades()
       const ahora = new Date().toISOString().slice(0, 19).replace('T', ' ')
+      const criterios = entrada.criterios ?? criteriosDemo(entrada.ra_codigos ?? [])
       const nueva: UnidadProgramacion = {
         id: Math.max(0, ...unidades.map((unidad) => unidad.id)) + 1,
         grupo_clase_id: grupoClaseId,
@@ -2547,7 +2565,8 @@ const api = {
         fecha_fin: fechaFin,
         contenidos: entrada.contenidos?.trim() ?? '',
         observaciones: entrada.observaciones?.trim() || null,
-        ra_codigos: [...new Set((entrada.ra_codigos ?? []).map((ra) => ra.trim()).filter(Boolean))],
+        ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],
+        criterios,
         sesiones: [],
         creado_en: ahora,
         actualizado_en: ahora
@@ -2575,6 +2594,9 @@ const api = {
       if (fechaInicio && fechaFin && fechaInicio > fechaFin) {
         throw new Error('La fecha de inicio no puede ser posterior a la de fin.')
       }
+      const criterios =
+        entrada.criterios ??
+        (entrada.ra_codigos ? criteriosDemo(entrada.ra_codigos) : anterior.criterios)
       const actualizada: UnidadProgramacion = {
         ...anterior,
         codigo: entrada.codigo?.trim() || null,
@@ -2583,7 +2605,8 @@ const api = {
         fecha_fin: fechaFin,
         contenidos: entrada.contenidos?.trim() ?? '',
         observaciones: entrada.observaciones?.trim() || null,
-        ra_codigos: [...new Set((entrada.ra_codigos ?? []).map((ra) => ra.trim()).filter(Boolean))],
+        ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],
+        criterios,
         actualizado_en: new Date().toISOString().slice(0, 19).replace('T', ' ')
       }
       escribirUnidades(unidades.map((unidad) => (unidad.id === id ? actualizada : unidad)))
@@ -2616,6 +2639,7 @@ const api = {
       let creados = 0
 
       for (const entrada of importadas) {
+        const criterios = entrada.criterios ?? criteriosDemo(entrada.ra_codigos ?? [])
         const unidad: UnidadProgramacion = {
           id: siguienteUnidad++,
           grupo_clase_id: grupoClaseId,
@@ -2625,7 +2649,8 @@ const api = {
           fecha_fin: entrada.fecha_fin ?? null,
           contenidos: entrada.contenidos ?? '',
           observaciones: entrada.observaciones ?? null,
-          ra_codigos: entrada.ra_codigos ?? [],
+          ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],
+          criterios,
           sesiones: [],
           creado_en: ahora,
           actualizado_en: ahora

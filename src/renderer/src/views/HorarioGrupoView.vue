@@ -3,7 +3,6 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
 import HorarioSemanal from '@renderer/components/HorarioSemanal.vue'
-import { etiquetaModalidad } from '@shared/grupos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import type { GrupoClase } from '@shared/tipos'
 
@@ -16,6 +15,20 @@ const error = ref<string | null>(null)
 const id = computed(() => Number(route.params.grupoId))
 const hayHorario = computed(() =>
   Object.values(grupo.value?.bloques_semana ?? {}).some((bloques) => bloques.length > 0)
+)
+
+const totalSesiones = computed(
+  () =>
+    Object.values(grupo.value?.bloques_semana ?? {})
+      .flat()
+      .filter((bloque) => bloque.tipo === 'sesion').length
+)
+
+const totalTutorias = computed(
+  () =>
+    Object.values(grupo.value?.bloques_semana ?? {})
+      .flat()
+      .filter((bloque) => bloque.tipo !== 'sesion').length
 )
 
 async function cargar(): Promise<void> {
@@ -46,10 +59,7 @@ watch(id, cargar)
     <template v-else-if="grupo">
       <header class="vista__cabecera">
         <h2>Horario semanal</h2>
-        <p class="tenue">
-          Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }} ·
-          {{ etiquetaModalidad(grupo.modalidad) }}
-        </p>
+        <p class="tenue">Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }}</p>
       </header>
 
       <div class="tarjeta">
@@ -61,7 +71,14 @@ watch(id, cargar)
               aparece resaltada.
             </p>
           </div>
-          <RouterLink to="/grupos" class="dashboard__enlace">Editar en el grupo</RouterLink>
+          <div class="horario__resumen">
+            <span class="chip">{{ totalSesiones }} sesiones</span>
+            <span v-if="totalTutorias > 0" class="chip chip--aviso">
+              {{ totalTutorias }} tutorías
+            </span>
+            <span class="chip">55 min</span>
+            <RouterLink to="/grupos" class="dashboard__enlace">Editar en el grupo</RouterLink>
+          </div>
         </header>
 
         <HorarioSemanal

@@ -17,6 +17,12 @@ type FilaHorario =
 
 const hoy = new Date().getDay() as DiaSemana
 
+const diasVisibles = computed(() =>
+  DIAS_SEMANA.filter(
+    (dia) => (dia.valor !== 0 && dia.valor !== 6) || (props.bloques[dia.valor]?.length ?? 0) > 0
+  )
+)
+
 const filas = computed<FilaHorario[]>(() => {
   const resultado: FilaHorario[] = []
   for (const bloque of BLOQUES_HORARIO) {
@@ -36,10 +42,22 @@ function tipoBloque(dia: DiaSemana, inicio: string): TipoBloqueHorario | null {
 }
 
 function etiqueta(tipo: TipoBloqueHorario | null): string {
-  if (tipo === 'sesion') return 'S'
-  if (tipo === 'colectiva') return 'C'
-  if (tipo === 'individual') return 'I'
-  return ''
+  if (!tipo) return ''
+  if (props.compacto) {
+    if (tipo === 'sesion') return 'S'
+    if (tipo === 'colectiva') return 'C'
+    return 'I'
+  }
+  if (tipo === 'sesion') return 'Sesión'
+  if (tipo === 'colectiva') return 'Colectiva'
+  return 'Individual'
+}
+
+function descripcion(tipo: TipoBloqueHorario | null): string {
+  if (tipo === 'sesion') return 'sesión'
+  if (tipo === 'colectiva') return 'tutoría colectiva'
+  if (tipo === 'individual') return 'tutoría individual'
+  return 'libre'
 }
 </script>
 
@@ -48,15 +66,17 @@ function etiqueta(tipo: TipoBloqueHorario | null): string {
     <div
       class="horario-semanal horario-semanal--lectura"
       :class="{ 'horario-semanal--compacto': compacto }"
+      :style="{ '--dias': diasVisibles.length }"
     >
       <div class="horario-semanal__hora horario-semanal__cabecera">Hora</div>
       <div
-        v-for="dia in DIAS_SEMANA"
+        v-for="dia in diasVisibles"
         :key="`cabecera-${dia.valor}`"
         class="horario-semanal__dia horario-semanal__cabecera"
         :class="{ 'horario-semanal__cabecera--hoy': dia.valor === hoy }"
       >
-        {{ dia.corto }}
+        <span>{{ dia.etiqueta }}</span>
+        <small v-if="dia.valor === hoy">Hoy</small>
       </div>
 
       <template v-for="(fila, indice) in filas" :key="`fila-${indice}`">
@@ -66,7 +86,7 @@ function etiqueta(tipo: TipoBloqueHorario | null): string {
         <template v-else>
           <div class="horario-semanal__hora">{{ fila.inicio }}–{{ fila.fin }}</div>
           <div
-            v-for="dia in DIAS_SEMANA"
+            v-for="dia in diasVisibles"
             :key="`${fila.inicio}-${dia.valor}`"
             class="horario-semanal__celda horario-semanal__celda--lectura"
             :class="{
@@ -75,17 +95,11 @@ function etiqueta(tipo: TipoBloqueHorario | null): string {
                 tipoBloque(dia.valor, fila.inicio) === 'colectiva',
               'horario-semanal__celda--individual':
                 tipoBloque(dia.valor, fila.inicio) === 'individual',
+              'horario-semanal__celda--libre': tipoBloque(dia.valor, fila.inicio) === null,
               'horario-semanal__celda--hoy': dia.valor === hoy
             }"
-            :title="`${dia.etiqueta} ${fila.inicio}–${fila.fin}: ${
-              tipoBloque(dia.valor, fila.inicio) === 'sesion'
-                ? 'sesión'
-                : tipoBloque(dia.valor, fila.inicio) === 'colectiva'
-                  ? 'tutoría colectiva'
-                  : tipoBloque(dia.valor, fila.inicio) === 'individual'
-                    ? 'tutoría individual'
-                    : 'libre'
-            }`"
+            :title="`${dia.etiqueta} ${fila.inicio}–${fila.fin}: ${descripcion(tipoBloque(dia.valor, fila.inicio))}`"
+            :aria-label="`${dia.etiqueta} ${fila.inicio}–${fila.fin}: ${descripcion(tipoBloque(dia.valor, fila.inicio))}`"
           >
             {{ etiqueta(tipoBloque(dia.valor, fila.inicio)) }}
           </div>

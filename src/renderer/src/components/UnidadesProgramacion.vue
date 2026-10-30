@@ -6,6 +6,7 @@ import { ESQUEMA_UNIDADES } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
 import type {
   CriterioDisponible,
+  CriterioUnidad,
   GrupoClase,
   UnidadProgramacion,
   UnidadProgramacionEntrada
@@ -38,8 +39,10 @@ const form = reactive<UnidadProgramacionEntrada>({
   fecha_fin: '',
   contenidos: '',
   observaciones: '',
-  ra_codigos: []
+  criterios: []
 })
+
+const raActiva = ref<string | null>(null)
 
 const unidadActual = computed(
   () =>
@@ -62,12 +65,34 @@ watch(
   { immediate: true }
 )
 
-const ras = computed(() => {
-  const mapa = new Map<string, string>()
+const rasConCriterios = computed(() => {
+  const mapa = new Map<
+    string,
+    { codigo: string; descripcion: string; criterios: CriterioDisponible[] }
+  >()
   for (const criterio of criterios.value) {
-    if (!mapa.has(criterio.raCodigo)) mapa.set(criterio.raCodigo, criterio.raDescripcion)
+    const grupo = mapa.get(criterio.raCodigo) ?? {
+      codigo: criterio.raCodigo,
+      descripcion: criterio.raDescripcion,
+      criterios: []
+    }
+    grupo.criterios.push(criterio)
+    mapa.set(criterio.raCodigo, grupo)
   }
-  return [...mapa.entries()].map(([codigo, descripcion]) => ({ codigo, descripcion }))
+  return [...mapa.values()]
+})
+
+const raActual = computed(
+  () =>
+    rasConCriterios.value.find((ra) => ra.codigo === raActiva.value) ??
+    rasConCriterios.value[0] ??
+    null
+)
+
+watch(rasConCriterios, (ras) => {
+  if (!raActiva.value || !ras.some((ra) => ra.codigo === raActiva.value)) {
+    raActiva.value = ras[0]?.codigo ?? null
+  }
 })
 
 function fechaCorta(fecha: string | null): string {
@@ -120,7 +145,8 @@ function resetFormulario(): void {
   form.fecha_fin = ''
   form.contenidos = ''
   form.observaciones = ''
-  form.ra_codigos = []
+  form.criterios = []
+  raActiva.value = rasConCriterios.value[0]?.codigo ?? null
   error.value = null
 }
 
@@ -183,18 +209,64 @@ function editar(unidad: UnidadProgramacion): void {
   form.fecha_fin = unidad.fecha_fin ?? ''
   form.contenidos = unidad.contenidos
   form.observaciones = unidad.observaciones ?? ''
-  form.ra_codigos = [...unidad.ra_codigos]
+  form.criterios = unidad.criterios.map((criterio) => ({ ...criterio }))
+  raActiva.value = unidad.criterios[0]?.raCodigo ?? rasConCriterios.value[0]?.codigo ?? null
   mostrarForm.value = true
   error.value = null
   mensaje.value = null
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-function alternarRa(codigo: string): void {
-  const codigos = form.ra_codigos ?? []
-  form.ra_codigos = codigos.includes(codigo)
-    ? codigos.filter((item) => item !== codigo)
-    : [...codigos, codigo]
+function claveCriterio(criterio: CriterioUnidad): string {
+  return `${criterio.raCodigo}|${criterio.ceCodigo}`
+}
+
+function criteriosPorRa(criterios: CriterioUnidad[]): { raCodigo: string; ceCodigos: string[] }[] {
+  const mapa = new Map<string, string[]>()
+  for (const criterio of criterios) {
+    const lista = mapa.get(criterio.raCodigo) ?? []
+    lista.push(criterio.ceCodigo)
+    mapa.set(criterio.raCodigo, lista)
+  }
+  return [...mapa.entries()].map(([raCodigo, ceCodigos]) => ({ raCodigo, ceCodigos }))
+}
+
+function criterioSeleccionado(criterio: CriterioDisponible): boolean {
+  return (form.criterios ?? []).some(
+    (item) => item.raCodigo === criterio.raCodigo && item.ceCodigo === criterio.ceCodigo
+  )
+}
+
+function seleccionadosRa(ra: { criterios: CriterioDisponible[] }): number {
+  return ra.criterios.filter((criterio) => criterioSeleccionado(criterio)).length
+}
+
+function todosRa(ra: { criterios: CriterioDisponible[] }): boolean {
+  return ra.criterios.length > 0 && seleccionadosRa(ra) === ra.criterios.length
+}
+
+function alternarCriterio(criterio: CriterioDisponible): void {
+  const actuales = form.criterios ?? []
+  form.criterios = criterioSeleccionado(criterio)
+    ? actuales.filter((item) => claveCriterio(item) !== claveCriterio(criterio))
+    : [...actuales, { raCodigo: criterio.raCodigo, ceCodigo: criterio.ceCodigo }]
+}
+
+function alternarRa(ra: { criterios: CriterioDisponible[] }): void {
+  const actuales = form.criterios ?? []
+  if (todosRa(ra)) {
+    const claves = new Set(ra.criterios.map((criterio) => claveCriterio(criterio)))
+    form.criterios = actuales.filter((item) => !claves.has(claveCriterio(item)))
+    return
+  }
+  const porClave = new Map(actuales.map((item) => [claveCriterio(item), item]))
+  for (const criterio of ra.criterios) {
+    porClave.set(claveCriterio(criterio), {
+      raCodigo: criterio.raCodigo,
+      ceCodigo: criterio.ceCodigo
+    })
+  }
+  form.criterios = [...porClave.values()]
 }
 
 async function guardar(): Promise<void> {
@@ -247,7 +319,9 @@ async function borrar(): Promise<void> {
     <div class="cabecera-criterios">
       <div class="cabecera-criterios__titulo">
         <h3>Unidades de programación</h3>
-        <span class="tenue"> {{ unidades.length }} unidades · sesiones, RA y contenidos </span>
+        <span class="tenue">
+          {{ unidades.length }} unidades · sesiones, criterios y contenidos
+        </span>
       </div>
       <div class="cabecera-criterios__acciones">
         <button class="boton" type="button" @click="abrirImportar">Importar JSON</button>
@@ -265,7 +339,7 @@ async function borrar(): Promise<void> {
           <h3>Importar unidades</h3>
           <p class="tenue">
             Acepta un array o <span class="monospace">{ "unidades": [...] }</span>. Cada unidad
-            puede incluir sus sesiones, RA y contenidos.
+            puede incluir sus sesiones, criterios (RA + CE) y contenidos.
           </p>
         </div>
       </header>
@@ -290,7 +364,10 @@ async function borrar(): Promise<void> {
   {
     "codigo": "UD1",
     "nombre": "Introducción",
-    "ra_codigos": ["RA1", "RA2"],
+    "criterios": [
+      { "raCodigo": "RA1", "ceCodigo": "a" },
+      { "raCodigo": "RA2", "ceCodigo": "b" }
+    ],
     "contenidos": "Entorno, sintaxis y estructuras de control",
     "sesiones": [{ "fecha": "2026-09-16", "contenido": "Presentación" }]
   }
@@ -315,7 +392,7 @@ async function borrar(): Promise<void> {
       <header class="entrega-form__seccion-cabecera">
         <div>
           <h3>{{ editando ? 'Editar unidad' : 'Nueva unidad' }}</h3>
-          <p class="tenue">Agrupa sesiones, resultados de aprendizaje y contenidos.</p>
+          <p class="tenue">Agrupa sesiones, criterios de evaluación y contenidos.</p>
         </div>
         <button class="boton" type="button" @click="mostrarForm = false">Cancelar</button>
       </header>
@@ -338,16 +415,59 @@ async function borrar(): Promise<void> {
           <input id="unidad-fin" v-model="form.fecha_fin" type="date" />
         </div>
         <div class="campo campo--ancho">
-          <span class="campo__etiqueta">Resultados de aprendizaje</span>
+          <span class="campo__etiqueta">
+            Criterios de evaluación
+            <span class="tenue">· {{ form.criterios?.length ?? 0 }} seleccionados</span>
+          </span>
           <div class="unidades__ras">
-            <label v-for="ra in ras" :key="ra.codigo" class="chip unidades__ra">
-              <input
-                type="checkbox"
-                :checked="(form.ra_codigos ?? []).includes(ra.codigo)"
-                @change="alternarRa(ra.codigo)"
-              />
-              {{ ra.codigo }}
-            </label>
+            <div class="unidades__ra-tabs" role="tablist" aria-label="Resultados de aprendizaje">
+              <button
+                v-for="ra in rasConCriterios"
+                :key="ra.codigo"
+                class="unidades__ra-tab"
+                :class="{ 'unidades__ra-tab--activa': raActual?.codigo === ra.codigo }"
+                type="button"
+                role="tab"
+                :aria-selected="raActual?.codigo === ra.codigo"
+                @click="raActiva = ra.codigo"
+              >
+                {{ ra.codigo }}
+                <small>{{ seleccionadosRa(ra) }}/{{ ra.criterios.length }}</small>
+              </button>
+            </div>
+
+            <section v-if="raActual" class="unidades__ra-panel">
+              <header class="unidades__ra-panel-cabecera">
+                <label class="chip unidades__ra">
+                  <input
+                    type="checkbox"
+                    :checked="todosRa(raActual)"
+                    @change="alternarRa(raActual)"
+                  />
+                  {{ raActual.codigo }}
+                </label>
+                <span class="tenue">{{ raActual.descripcion }}</span>
+                <button class="boton boton--sutil" type="button" @click="alternarRa(raActual)">
+                  {{ todosRa(raActual) ? 'Quitar todos' : 'Seleccionar todos' }}
+                </button>
+              </header>
+              <div class="unidades__ces">
+                <label
+                  v-for="criterio in raActual.criterios"
+                  :key="criterio.ceCodigo"
+                  class="unidades__ce"
+                  :class="{ 'unidades__ce--activo': criterioSeleccionado(criterio) }"
+                >
+                  <input
+                    type="checkbox"
+                    :checked="criterioSeleccionado(criterio)"
+                    @change="alternarCriterio(criterio)"
+                  />
+                  <span class="unidades__ce-codigo">{{ criterio.ceCodigo }}</span>
+                  <span class="unidades__ce-descripcion">{{ criterio.descripcion }}</span>
+                </label>
+              </div>
+            </section>
           </div>
         </div>
         <div class="campo campo--ancho">
@@ -386,7 +506,8 @@ async function borrar(): Promise<void> {
 
     <div v-if="cargando" class="vacio">Cargando unidades…</div>
     <div v-else-if="unidades.length === 0" class="vacio">
-      Todavía no hay unidades. Crea la primera para agrupar las sesiones, los RA y los contenidos.
+      Todavía no hay unidades. Crea la primera para agrupar las sesiones, los criterios de
+      evaluación y los contenidos.
     </div>
     <div v-else class="unidades__layout">
       <aside class="tarjeta unidades__indice" aria-label="Unidades de programación">
@@ -406,7 +527,8 @@ async function borrar(): Promise<void> {
           <span class="unidades__item-nombre">{{ unidad.nombre }}</span>
           <span class="unidades__item-fechas">{{ rango(unidad) }}</span>
           <span class="unidades__item-meta">
-            {{ unidad.sesiones.length }} sesiones · {{ unidad.ra_codigos.length }} RA
+            {{ unidad.sesiones.length }} sesiones · {{ unidad.ra_codigos.length }} RA ·
+            {{ unidad.criterios.length }} CE
           </span>
         </button>
       </aside>
@@ -429,11 +551,18 @@ async function borrar(): Promise<void> {
             <strong>{{ unidadActual.sesiones.length }}</strong>
           </div>
           <div>
-            <span class="tenue">Resultados de aprendizaje</span>
-            <div v-if="unidadActual.ra_codigos.length > 0" class="chips">
-              <span v-for="ra in unidadActual.ra_codigos" :key="ra" class="chip">{{ ra }}</span>
+            <span class="tenue">Criterios de evaluación</span>
+            <div v-if="unidadActual.criterios.length > 0" class="unidades__criterios-resumen">
+              <div
+                v-for="grupo in criteriosPorRa(unidadActual.criterios)"
+                :key="grupo.raCodigo"
+                class="unidades__criterios-grupo"
+              >
+                <span class="chip">{{ grupo.raCodigo }}</span>
+                <span class="tenue">{{ grupo.ceCodigos.join(' · ') }}</span>
+              </div>
             </div>
-            <span v-else class="tenue">Sin RA</span>
+            <span v-else class="tenue">Sin criterios</span>
           </div>
           <div>
             <span class="tenue">Fechas</span>

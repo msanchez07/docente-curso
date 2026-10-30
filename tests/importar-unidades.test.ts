@@ -23,6 +23,27 @@ describe('importación de unidades de programación', () => {
     expect(resultado.unidades[0].sesiones?.[0].fecha).toBe('2026-09-16')
   })
 
+  it('acepta criterios concretos por RA y CE', () => {
+    const resultado = parsearUnidadesProgramacion(
+      JSON.stringify([
+        {
+          nombre: 'UD criterios',
+          criterios: [
+            { raCodigo: 'RA1', ceCodigo: 'a' },
+            { raCodigo: 'RA1', ceCodigo: 'b' },
+            'RA2.c'
+          ]
+        }
+      ])
+    )
+    expect(resultado.errores).toEqual([])
+    expect(resultado.unidades[0].criterios).toEqual([
+      { raCodigo: 'RA1', ceCodigo: 'a' },
+      { raCodigo: 'RA1', ceCodigo: 'b' },
+      { raCodigo: 'RA2', ceCodigo: 'c' }
+    ])
+  })
+
   it('acepta { unidades: [...] } y valida fechas', () => {
     const resultado = parsearUnidadesProgramacion(
       JSON.stringify({

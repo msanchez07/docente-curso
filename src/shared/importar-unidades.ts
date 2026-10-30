@@ -5,7 +5,7 @@
  * sus sesiones; si no las trae, se crea solo la unidad y las sesiones se
  * asignan después desde la programación de aula.
  */
-import type { ProgramacionEntrada, UnidadProgramacionEntrada } from './tipos'
+import type { CriterioUnidad, ProgramacionEntrada, UnidadProgramacionEntrada } from './tipos'
 
 export interface ResultadoUnidadesImportadas {
   unidades: UnidadProgramacionEntrada[]
@@ -69,6 +69,36 @@ function listaRas(valor: unknown): string[] {
         .filter(Boolean)
     )
   ]
+}
+
+function listaCriterios(valor: unknown): CriterioUnidad[] {
+  const resultado = new Map<string, CriterioUnidad>()
+  const agregar = (raCodigo: string, ceCodigo: string): void => {
+    const ra = raCodigo.trim().toUpperCase()
+    const ce = ceCodigo.trim()
+    if (!ra || !ce) return
+    resultado.set(`${ra}|${ce}`, { raCodigo: ra, ceCodigo: ce })
+  }
+  const procesar = (item: unknown): void => {
+    if (typeof item === 'string') {
+      const coincidencia = /^([A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)\s*[.:|]\s*(.+)$/.exec(item.trim())
+      if (coincidencia) agregar(coincidencia[1], coincidencia[2])
+      return
+    }
+    if (!item || typeof item !== 'object') return
+    const objeto = item as Record<string, unknown>
+    const ra = texto(
+      objeto.raCodigo ?? objeto.ra ?? objeto.resultado ?? objeto.resultadoAprendizaje
+    )
+    const ce = texto(objeto.ceCodigo ?? objeto.ce ?? objeto.criterio ?? objeto.criterioEvaluacion)
+    if (ra && ce) agregar(ra, ce)
+  }
+  if (Array.isArray(valor)) {
+    valor.forEach(procesar)
+  } else {
+    procesar(valor)
+  }
+  return [...resultado.values()]
 }
 
 function normalizarSesion(
@@ -170,6 +200,7 @@ export function parsearUnidadesProgramacion(textoImportado: string): ResultadoUn
       fecha_fin: fechaFin,
       contenidos: texto(buscar(objeto, [/^contenidos?/, /^contents?/])),
       observaciones: texto(buscar(objeto, [/^observacion/, /^notas?/])) || null,
+      criterios: listaCriterios(buscar(objeto, [/^criterios/, /^ces?$/, /^criteriosevaluacion/])),
       ra_codigos: listaRas(buscar(objeto, [/^racodigos/, /^ras?/, /^resultados/])),
       sesiones
     })
