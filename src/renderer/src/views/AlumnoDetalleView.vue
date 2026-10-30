@@ -64,6 +64,22 @@ function fechaInformeFaltas(): string {
   return `${dia}/${mes}/${anio}`
 }
 
+function moduloCorto(nombre: string): string {
+  const palabras = nombre
+    .replace(/[()]/g, '')
+    .split(/\s+/)
+    .filter(
+      (palabra) =>
+        palabra.length > 2 &&
+        !['del', 'los', 'las', 'con', 'para', 'por', 'una', 'uno'].includes(palabra.toLowerCase())
+    )
+  return palabras
+    .map((palabra) => palabra[0])
+    .join('')
+    .slice(0, 4)
+    .toUpperCase()
+}
+
 async function cargar(): Promise<void> {
   cargando.value = true
   error.value = null
@@ -115,11 +131,10 @@ watch([grupoId, alumnoId], cargar)
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
     <template v-else-if="fila && grupo">
-      <header class="tarjeta alumno__cabecera">
+      <header class="vista__cabecera alumno__cabecera">
         <div class="alumno__identidad">
           <div class="alumno__avatar" aria-hidden="true">{{ iniciales }}</div>
-          <div>
-            <p class="dashboard__eyebrow">Ficha del alumno</p>
+          <div class="alumno__identidad-texto">
             <h2>{{ fila.alumno.apellidos }}, {{ fila.alumno.nombre }}</h2>
             <p class="tenue">
               {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }} ·
@@ -133,7 +148,7 @@ watch([grupoId, alumnoId], cargar)
           </span>
           <span v-if="fila.incompleta" class="chip chip--aviso">incompleta</span>
           <RouterLink
-            class="boton boton--sutil"
+            class="boton"
             :to="{
               name: 'calificaciones',
               params: { grupoId: grupo.id },
@@ -143,7 +158,7 @@ watch([grupoId, alumnoId], cargar)
             Calificaciones
           </RouterLink>
           <RouterLink
-            class="boton boton--sutil"
+            class="boton"
             :to="{
               name: 'alumno-formacion',
               params: { grupoId: grupo.id, alumnoId: fila.alumno.id }
@@ -151,10 +166,7 @@ watch([grupoId, alumnoId], cargar)
           >
             Formación
           </RouterLink>
-          <RouterLink
-            class="boton boton--sutil"
-            :to="{ name: 'faltas', query: { grupo: grupo.id } }"
-          >
+          <RouterLink class="boton" :to="{ name: 'faltas', query: { grupo: grupo.id } }">
             Faltas
           </RouterLink>
         </div>
@@ -182,9 +194,15 @@ watch([grupoId, alumnoId], cargar)
           <span class="tenue">con nota registrada</span>
         </article>
         <article class="tarjeta alumno__stat alumno__stat--faltas">
-          <span class="alumno__stat-etiqueta">
-            Faltas · {{ ultimaFalta?.moduloNombre ?? 'sin datos' }}
-            <template v-if="ultimaFalta"> · {{ fechaInformeFaltas() }}</template>
+          <span
+            class="alumno__stat-etiqueta"
+            :title="
+              ultimaFalta ? `${ultimaFalta.moduloNombre} · ${fechaInformeFaltas()}` : undefined
+            "
+          >
+            Faltas<template v-if="ultimaFalta">
+              · {{ moduloCorto(ultimaFalta.moduloNombre) }}</template
+            >
           </span>
           <strong :class="claseFaltas()">
             {{ ultimaFalta ? `${ultimaFalta.porcentaje} %` : '—' }}

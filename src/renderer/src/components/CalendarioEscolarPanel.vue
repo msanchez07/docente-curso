@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
+import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import { ESQUEMA_CALENDARIO } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
 import type {
@@ -325,10 +326,12 @@ async function vaciar(): Promise<void> {
     <div v-if="cargando" class="vacio">Cargando calendario…</div>
     <template v-else>
       <div class="calendario-escolar__barra">
-        <button class="boton boton--sutil" type="button" @click="cambiarMes(-1)">←</button>
-        <strong>{{ mesTexto }}</strong>
-        <button class="boton boton--sutil" type="button" @click="cambiarMes(1)">→</button>
-        <button class="boton boton--sutil" type="button" @click="irMesActual">Hoy</button>
+        <NavegacionMes
+          :etiqueta="mesTexto"
+          @anterior="cambiarMes(-1)"
+          @siguiente="cambiarMes(1)"
+          @hoy="irMesActual"
+        />
         <span class="barra__espacio"></span>
         <div class="calendario-escolar__leyenda" aria-label="Tipos de día">
           <span

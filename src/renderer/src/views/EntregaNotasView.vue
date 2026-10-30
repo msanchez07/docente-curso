@@ -197,7 +197,7 @@ async function guardar(): Promise<void> {
           <span class="chip">{{ conNota }} de {{ filas.length }} con nota</span>
           <span class="chip">media {{ formato(media) }}</span>
           <RouterLink
-            class="boton boton--sutil"
+            class="boton"
             :to="{
               name: 'entrega-evidencias',
               params: { grupoId: grupo.id, entregaId: entrega.id }

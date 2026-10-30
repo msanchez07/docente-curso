@@ -171,6 +171,10 @@ Vite/electron-vite + Vitest**.
   semipresencial.
 - Las tutorías se marcan en el propio calendario, no en una sección separada.
 - Los días festivos/no lectivos tienen prioridad visual roja en la agenda.
+- La agenda muestra las unidades didácticas de cada día con un color estable por unidad; la
+  leyenda del mes permite identificar todas las unidades visibles.
+- Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
+  página, para mantener una jerarquía única.
 - La previsualización de entregas se abre en ventana propia; la exportación se confirma desde
   ella.
 - El PDF de entregas usa el nombre de la entrega cuando el ámbito es una sola entrega.
@@ -214,10 +218,11 @@ Al cerrar cada iteración:
 
 ### Registro de iteraciones
 
-| Fecha      | Iteración    | Resumen                                                                                                                        |
-| ---------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| 28/10/2026 | Base         | Electron + Vue 3 + SQLite, cursos, grupos, alumnado, criterios, entregas, notas, informes, normativa, BOE.                     |
-| 28/10/2026 | Programación | Unidades, calendario escolar, sesiones múltiples, programación didáctica, PDF de programación.                                 |
-| 28/10/2026 | Dashboard    | Agenda, formación, programación didáctica, fechas visibles y calendario de agenda coloreado.                                   |
-| 28/10/2026 | Horarios     | Bloques de 55 minutos, recreos, tutorías colectivas/individuales múltiples por día, vista de horario.                          |
-| 28/10/2026 | Entregas     | Exportación por entrega/avaluación/curso, previsualización en ventana propia, PDF/ZIP, nombre de archivo e informe por alumno. |
+| Fecha      | Iteración          | Resumen                                                                                                                                 |
+| ---------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 28/10/2026 | Base               | Electron + Vue 3 + SQLite, cursos, grupos, alumnado, criterios, entregas, notas, informes, normativa, BOE.                              |
+| 28/10/2026 | Programación       | Unidades, calendario escolar, sesiones múltiples, programación didáctica, PDF de programación.                                          |
+| 28/10/2026 | Dashboard          | Agenda, formación, programación didáctica, fechas visibles y calendario de agenda coloreado.                                            |
+| 28/10/2026 | Horarios           | Bloques de 55 minutos, recreos, tutorías colectivas/individuales múltiples por día, vista de horario.                                   |
+| 28/10/2026 | Entregas           | Exportación por entrega/avaluación/curso, previsualización en ventana propia, PDF/ZIP, nombre de archivo e informe por alumno.          |
+| 30/10/2026 | Homogeneización UI | Cabeceras de página y de sección unificadas, métricas compartidas, navegación de mes común y unidades didácticas visibles en la agenda. |

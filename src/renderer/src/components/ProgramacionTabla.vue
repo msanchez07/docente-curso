@@ -4,6 +4,7 @@ import Confirmacion from '@renderer/components/Confirmacion.vue'
 import SelectButton from '@renderer/components/SelectButton.vue'
 import UnidadesProgramacion from '@renderer/components/UnidadesProgramacion.vue'
 import CalendarioEscolarPanel from '@renderer/components/CalendarioEscolarPanel.vue'
+import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { ESQUEMA_PROGRAMACION } from '@shared/esquemas-importacion'
 import { parsearDiasProgramacion } from '@shared/importar-programacion'
@@ -515,12 +516,14 @@ async function exportarPdf(): Promise<void> {
           </span>
         </template>
 
-        <div v-else class="programacion__mes">
-          <button class="boton boton--sutil" type="button" @click="cambiarMes(-1)">←</button>
-          <strong>{{ mesTexto }}</strong>
-          <button class="boton boton--sutil" type="button" @click="cambiarMes(1)">→</button>
-          <button class="boton boton--sutil" type="button" @click="irMesActual">Hoy</button>
-        </div>
+        <NavegacionMes
+          v-else
+          class="programacion__mes"
+          :etiqueta="mesTexto"
+          @anterior="cambiarMes(-1)"
+          @siguiente="cambiarMes(1)"
+          @hoy="irMesActual"
+        />
 
         <span
           class="programacion__estado"

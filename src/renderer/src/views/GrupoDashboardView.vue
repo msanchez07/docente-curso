@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
+import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
 import { DIAS_SEMANA, etiquetaModalidad } from '@shared/grupos'
@@ -103,6 +104,16 @@ function formato(nota: number | null): string {
   return nota === null ? '—' : nota.toFixed(2).replace('.', ',')
 }
 
+function cuando(fecha: string): string {
+  const dias = Math.round(
+    (new Date(`${fecha}T00:00:00`).getTime() - new Date(`${hoy}T00:00:00`).getTime()) / 86400000
+  )
+  if (dias === 0) return 'Hoy'
+  if (dias === 1) return 'Mañana'
+  if (dias > 1) return `En ${dias} días`
+  return ''
+}
+
 const proximasSesiones = computed(() =>
   programacion.value
     .filter((fila) => fila.fecha >= hoy)
@@ -117,6 +128,14 @@ const proximasEntregas = computed(() =>
     .slice()
     .sort((a, b) => (a.fecha_limite ?? '').localeCompare(b.fecha_limite ?? ''))
     .slice(0, 3)
+)
+
+const proximoExamen = computed(
+  () => agendaItems.value.find((item) => item.tipo === 'examen' && item.fecha >= hoy) ?? null
+)
+
+const proximaEvaluacion = computed(
+  () => agendaItems.value.find((item) => item.tipo === 'evaluacion' && item.fecha >= hoy) ?? null
 )
 
 const agendaItems = computed<ItemAgenda[]>(() => {
@@ -184,6 +203,33 @@ const mesAgendaTexto = computed(() => {
   return texto.charAt(0).toUpperCase() + texto.slice(1)
 })
 
+const PALETA_UNIDADES = ['#2563eb', '#0891b2', '#7c3aed', '#c2410c', '#0f766e', '#be185d']
+
+function colorUnidad(unidad: UnidadProgramacion): string {
+  const indice = unidades.value.findIndex((item) => item.id === unidad.id)
+  return PALETA_UNIDADES[(indice >= 0 ? indice : 0) % PALETA_UNIDADES.length]
+}
+
+function unidadesDelDia(fecha: string): UnidadProgramacion[] {
+  const porId = new Map<number, UnidadProgramacion>()
+  for (const unidad of unidades.value) {
+    if (
+      unidad.fecha_inicio &&
+      unidad.fecha_fin &&
+      unidad.fecha_inicio <= fecha &&
+      unidad.fecha_fin >= fecha
+    ) {
+      porId.set(unidad.id, unidad)
+    }
+  }
+  for (const fila of programacion.value) {
+    if (fila.fecha !== fecha || fila.unidad_id === null) continue
+    const unidad = unidades.value.find((item) => item.id === fila.unidad_id)
+    if (unidad) porId.set(unidad.id, unidad)
+  }
+  return [...porId.values()]
+}
+
 const celdasAgenda = computed(() => {
   const anio = mesAgenda.value.getFullYear()
   const mes = mesAgenda.value.getMonth()
@@ -198,10 +244,30 @@ const celdasAgenda = computed(() => {
       dia: fecha.getDate(),
       esMes: fecha.getMonth() === mes,
       esHoy: iso === hoy,
-      items: agendaItems.value.filter((item) => item.fecha === iso)
+      items: agendaItems.value.filter((item) => item.fecha === iso),
+      unidades: unidadesDelDia(iso)
     }
   })
 })
+
+const unidadesAgendaMes = computed(() => {
+  const ids = new Set<number>()
+  for (const celda of celdasAgenda.value) {
+    for (const unidad of celda.unidades) ids.add(unidad.id)
+  }
+  return unidades.value.filter((unidad) => ids.has(unidad.id))
+})
+
+function tituloCelda(celda: {
+  unidades: UnidadProgramacion[]
+  items: ItemAgenda[]
+}): string | undefined {
+  const partes = [
+    ...celda.unidades.map((unidad) => `${unidad.codigo ?? 'UD'} · ${unidad.nombre}`),
+    ...celda.items.map((item) => item.titulo)
+  ]
+  return partes.length > 0 ? partes.join(' · ') : undefined
+}
 
 function cambiarMesAgenda(delta: number): void {
   mesAgenda.value = new Date(mesAgenda.value.getFullYear(), mesAgenda.value.getMonth() + delta, 1)
@@ -672,54 +738,11 @@ watch(id, cargar)
             <strong>
               {{ proximasSesiones[0] ? fechaCorta(proximasSesiones[0].fecha) : '—' }}
             </strong>
-            <p>{{ proximasSesiones[0]?.contenido || 'Sin programación próxima' }}</p>
-          </div>
-        </article>
-
-        <article class="tarjeta dashboard__stat">
-          <span class="dashboard__stat-icono dashboard__stat-icono--ambar">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M12 20h9" />
-              <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
-            </svg>
-          </span>
-          <div>
-            <span>Notas por poner</span>
-            <strong>{{ totalPendientes }}</strong>
-            <p>{{ pendientesCorreccion.length }} entrega(s) con correcciones pendientes</p>
-          </div>
-        </article>
-
-        <article class="tarjeta dashboard__stat">
-          <span class="dashboard__stat-icono dashboard__stat-icono--rojo">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path
-                d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"
-              />
-              <path d="M12 9v4" />
-              <path d="M12 17h.01" />
-            </svg>
-          </span>
-          <div>
-            <span>Alumnado en riesgo</span>
-            <strong>{{ totalRiesgo }}</strong>
-            <p>con RA pendientes, incompletas o sin nota</p>
+            <p v-if="proximasSesiones[0]">
+              <span class="dashboard__stat-cuando">{{ cuando(proximasSesiones[0].fecha) }}</span>
+              · {{ proximasSesiones[0].contenido || 'Sin contenido' }}
+            </p>
+            <p v-else>Sin programación próxima</p>
           </div>
         </article>
 
@@ -743,7 +766,68 @@ watch(id, cargar)
             <strong>
               {{ proximasEntregas[0] ? fechaCorta(proximasEntregas[0].fecha_limite ?? '') : '—' }}
             </strong>
-            <p>{{ proximasEntregas[0]?.titulo || 'Sin fechas próximas' }}</p>
+            <p v-if="proximasEntregas[0]">
+              <span class="dashboard__stat-cuando">
+                {{ cuando(proximasEntregas[0].fecha_limite ?? '') }}
+              </span>
+              · {{ proximasEntregas[0].titulo }}
+            </p>
+            <p v-else>Sin fechas próximas</p>
+          </div>
+        </article>
+
+        <article class="tarjeta dashboard__stat">
+          <span class="dashboard__stat-icono dashboard__stat-icono--ambar">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 2h6l4 4v16H5V2Z" />
+              <path d="M9 12h6" />
+              <path d="M9 16h4" />
+            </svg>
+          </span>
+          <div>
+            <span>Próximo examen</span>
+            <strong>{{ proximoExamen ? fechaCorta(proximoExamen.fecha) : '—' }}</strong>
+            <p v-if="proximoExamen">
+              <span class="dashboard__stat-cuando">{{ cuando(proximoExamen.fecha) }}</span>
+              <template v-if="proximoExamen.hora"> · {{ proximoExamen.hora }}</template>
+              · {{ proximoExamen.titulo }}
+            </p>
+            <p v-else>Sin exámenes programados</p>
+          </div>
+        </article>
+
+        <article class="tarjeta dashboard__stat">
+          <span class="dashboard__stat-icono dashboard__stat-icono--verde">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+          </span>
+          <div>
+            <span>Próxima evaluación</span>
+            <strong>{{ proximaEvaluacion ? fechaCorta(proximaEvaluacion.fecha) : '—' }}</strong>
+            <p v-if="proximaEvaluacion">
+              <span class="dashboard__stat-cuando">{{ cuando(proximaEvaluacion.fecha) }}</span>
+              <template v-if="proximaEvaluacion.hora"> · {{ proximaEvaluacion.hora }}</template>
+              · {{ proximaEvaluacion.titulo }}
+            </p>
+            <p v-else>Sin evaluaciones programadas</p>
           </div>
         </article>
       </section>
@@ -791,7 +875,9 @@ watch(id, cargar)
             <header class="dashboard__tarjeta-cabecera">
               <div>
                 <h3>Alumnado que necesita atención</h3>
-                <p class="tenue">Los 5 casos más urgentes del grupo</p>
+                <p class="tenue">
+                  {{ totalRiesgo }} caso(s) en riesgo · se muestran los 5 más urgentes
+                </p>
               </div>
               <RouterLink
                 :to="{ name: 'calificaciones', params: { grupoId: grupo.id } }"
@@ -897,18 +983,13 @@ watch(id, cargar)
               </RouterLink>
             </header>
             <div class="agenda-mini">
-              <div class="agenda-mini__barra">
-                <button class="boton boton--sutil" type="button" @click="cambiarMesAgenda(-1)">
-                  ←
-                </button>
-                <strong>{{ mesAgendaTexto }}</strong>
-                <button class="boton boton--sutil" type="button" @click="cambiarMesAgenda(1)">
-                  →
-                </button>
-                <button class="boton boton--sutil" type="button" @click="irMesActualAgenda">
-                  Hoy
-                </button>
-              </div>
+              <NavegacionMes
+                class="agenda-mini__barra"
+                :etiqueta="mesAgendaTexto"
+                @anterior="cambiarMesAgenda(-1)"
+                @siguiente="cambiarMesAgenda(1)"
+                @hoy="irMesActualAgenda"
+              />
 
               <div class="agenda-mini__grid">
                 <span
@@ -929,13 +1010,27 @@ watch(id, cargar)
                       'agenda-mini__celda--hoy': celda.esHoy
                     }
                   ]"
-                  :title="
-                    celda.items.length > 0
-                      ? celda.items.map((item) => item.titulo).join(' · ')
-                      : undefined
-                  "
+                  :title="tituloCelda(celda)"
+                  :aria-current="celda.esHoy ? 'date' : undefined"
                 >
                   <span class="agenda-mini__numero">{{ celda.dia }}</span>
+                  <span v-if="celda.unidades.length > 0" class="agenda-mini__unidades">
+                    <span
+                      v-for="unidad in celda.unidades.slice(0, 2)"
+                      :key="unidad.id"
+                      class="agenda-mini__unidad"
+                      :style="{ background: colorUnidad(unidad) }"
+                      :title="unidad.nombre"
+                    >
+                      {{ unidad.codigo ?? 'UD' }}
+                    </span>
+                    <span
+                      v-if="celda.unidades.length > 2"
+                      class="agenda-mini__unidad agenda-mini__unidad--mas"
+                    >
+                      +{{ celda.unidades.length - 2 }}
+                    </span>
+                  </span>
                   <span v-if="celda.items.length > 0" class="agenda-mini__puntos">
                     <i
                       v-for="item in celda.items.slice(0, 4)"
@@ -951,6 +1046,22 @@ watch(id, cargar)
                 <span><i class="agenda-punto agenda-punto--examen"></i>Examen</span>
                 <span><i class="agenda-punto agenda-punto--evaluacion"></i>Evaluación</span>
                 <span><i class="agenda-punto agenda-punto--no-lectivo"></i>No lectivo</span>
+              </div>
+              <div
+                v-if="unidadesAgendaMes.length > 0"
+                class="agenda-mini__unidades-leyenda"
+                aria-label="Unidades del mes"
+              >
+                <span class="agenda-mini__unidades-titulo">Unidades</span>
+                <span
+                  v-for="unidad in unidadesAgendaMes"
+                  :key="unidad.id"
+                  class="agenda-mini__unidad-leyenda"
+                  :title="unidad.nombre"
+                >
+                  <i :style="{ background: colorUnidad(unidad) }"></i>
+                  {{ unidad.codigo ?? 'UD' }}
+                </span>
               </div>
             </div>
 

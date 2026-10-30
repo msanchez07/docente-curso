@@ -39,7 +39,7 @@ watch(id, cargar)
       :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'"
     />
 
-    <header class="vista__cabecera criterios__cabecera">
+    <header v-if="!embebido" class="vista__cabecera criterios__cabecera">
       <div>
         <h2>Criterios de calificación</h2>
         <p v-if="grupo" class="tenue">
@@ -48,10 +48,16 @@ watch(id, cargar)
       </div>
       <RouterLink to="/plantillas" class="boton">Plantillas</RouterLink>
     </header>
+    <header v-else class="seccion__cabecera">
+      <div>
+        <h3>Criterios de calificación</h3>
+        <p class="tenue">Pesos, mínimos y redondeos del grupo.</p>
+      </div>
+      <RouterLink to="/plantillas" class="boton">Plantillas</RouterLink>
+    </header>
 
     <div v-if="cargando && !grupo" class="vacio">Cargando criterios…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
     <CriteriosTabla v-else-if="grupo" :grupo="grupo" />
-
   </section>
 </template>

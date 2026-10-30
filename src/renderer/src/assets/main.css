@@ -359,14 +359,34 @@ body {
 }
 
 .vista__cabecera {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .vista__cabecera h2 {
   margin: 0 0 4px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 650;
   letter-spacing: -0.01em;
+}
+
+.seccion__cabecera {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.seccion__cabecera h3 {
+  margin: 0 0 2px;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.seccion__cabecera .tenue {
+  font-size: 12.5px;
 }
 
 /* --- Tarjetas -------------------------------------------------------- */
@@ -1108,8 +1128,9 @@ a:focus-visible {
 
 .cabecera-criterios__titulo h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
 .cabecera-criterios__acciones {
@@ -1127,8 +1148,9 @@ a:focus-visible {
 
 .tarjeta .cabecera-criterios h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
 .tarjeta .cabecera-criterios .tenue {
@@ -1592,17 +1614,23 @@ a:focus-visible {
 .alumnado__resumen {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
-  margin: 4px 0 16px;
+  gap: 12px;
+  margin: 0 0 16px;
 }
 
 .alumnado__stat {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  padding: 12px 14px;
+  gap: 3px;
+  padding: 14px 16px;
   overflow: hidden;
+}
+
+.alumnado__stat > .tenue {
+  color: var(--tenue);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .alumnado__stat::before {
@@ -1686,7 +1714,7 @@ a:focus-visible {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .formacion__cabecera h2 {
@@ -1704,13 +1732,39 @@ a:focus-visible {
 }
 
 .formacion__resumen .tarjeta {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 3px;
+  padding: 14px 16px;
+  overflow: hidden;
+}
+
+.formacion__resumen .tarjeta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--acento);
+}
+
+.formacion__resumen .tarjeta:nth-child(2)::before {
+  background: var(--ok);
+}
+
+.formacion__resumen .tarjeta:nth-child(3)::before {
+  background: #d98a2b;
+}
+
+.formacion__resumen .tarjeta > .tenue {
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .formacion__resumen strong {
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 650;
 }
 
@@ -2310,7 +2364,7 @@ a:focus-visible {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .entrega-form__cabecera h2 {
@@ -2357,6 +2411,9 @@ a:focus-visible {
 
 .entrega-form__seccion-cabecera h3 {
   margin: 0 0 2px;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
 .entrega-form__ce-contador {
@@ -2817,7 +2874,7 @@ a:focus-visible {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .entrega-notas__cabecera h2 {
@@ -3669,6 +3726,11 @@ a:focus-visible {
 
 .vista:has(> .volver) .vista__cabecera {
   padding-left: 46px;
+}
+
+.vista:has(> .volver) > .vacio,
+.vista:has(> .volver) > .aviso {
+  margin-left: 46px;
 }
 
 .vista:has(> .volver) .formacion__cabecera,
@@ -4988,6 +5050,11 @@ a:focus-visible {
   white-space: nowrap;
 }
 
+.dashboard__stat-cuando {
+  color: var(--acento);
+  font-weight: 650;
+}
+
 .dashboard__lateral {
   display: flex;
   flex-direction: column;
@@ -5193,6 +5260,9 @@ a:focus-visible {
 
 .dashboard__tarjeta-cabecera h3 {
   margin: 0 0 2px;
+  font-size: 17px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
 .dashboard__dias {
@@ -5442,14 +5512,17 @@ a:focus-visible {
 
 .alumno__cabecera {
   align-items: flex-start;
-  padding: 18px 20px;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .alumno__identidad {
   display: flex;
   align-items: center;
   gap: 14px;
+  min-width: 0;
+}
+
+.alumno__identidad-texto {
   min-width: 0;
 }
 
@@ -5480,6 +5553,11 @@ a:focus-visible {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
   margin-bottom: 16px;
+}
+
+.alumno__stats,
+.alumnado__resumen {
+  align-items: stretch;
 }
 
 .alumno__stat {
@@ -5515,7 +5593,7 @@ a:focus-visible {
 .alumno__stat-etiqueta {
   overflow: hidden;
   color: var(--tenue);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.35;
   text-overflow: ellipsis;
@@ -5797,90 +5875,163 @@ a:focus-visible {
 }
 
 .agenda-mini {
-  margin: 10px 0 14px;
-  padding: 10px;
-  border: 1px solid var(--borde);
-  border-radius: 9px;
-  background: #fbfcfe;
+  margin: 12px 0 16px;
+  padding: 12px;
+  border: 1px solid #e7ecf3;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
 }
 
 .agenda-mini__barra {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-bottom: 8px;
+  gap: 4px;
+  margin-bottom: 10px;
 }
 
-.agenda-mini__barra strong {
+.nav-mes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-mes strong {
   flex: 1;
-  font-size: 12px;
+  font-size: 12.5px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
   text-align: center;
-  text-transform: capitalize;
 }
 
-.agenda-mini__barra .boton {
-  padding: 1px 7px;
-  font-size: 11px;
+.nav-mes__boton {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  color: var(--tenue);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.nav-mes__boton svg {
+  width: 15px;
+  height: 15px;
+}
+
+.nav-mes__boton:hover {
+  color: var(--acento);
+  background: #ffffff;
+  border-color: var(--borde);
+}
+
+.nav-mes__hoy {
+  margin-left: 2px;
+  padding: 3px 8px;
+  color: var(--acento);
+  font: inherit;
+  font-size: 10px;
+  font-weight: 650;
+  background: #ffffff;
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.nav-mes__hoy:hover {
+  background: var(--acento-suave);
+  border-color: #c7d7fe;
 }
 
 .agenda-mini__grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 3px;
+  gap: 4px;
 }
 
 .agenda-mini__dia-semana {
+  padding-bottom: 5px;
   color: var(--tenue);
-  font-size: 9px;
+  font-size: 8.5px;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .agenda-mini__celda {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 30px;
-  padding: 3px 2px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  font-size: 10px;
+  min-height: 44px;
+  padding: 3px 1px 2px;
+  font-size: 10.5px;
   font-variant-numeric: tabular-nums;
+  background: #ffffff;
+  border: 1px solid #edf0f4;
+  border-radius: 8px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.agenda-mini__celda:hover {
+  border-color: #cfd8e3;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
 }
 
 .agenda-mini__celda--fuera {
-  opacity: 0.35;
+  opacity: 0.32;
+  background: transparent;
+  border-color: transparent;
 }
 
 .agenda-mini__celda--hoy {
-  box-shadow: inset 0 0 0 2px var(--acento);
+  border-color: #c7d7fe;
+  box-shadow: 0 0 0 1px #c7d7fe;
   font-weight: 700;
 }
 
+.agenda-mini__celda--hoy .agenda-mini__numero {
+  color: #ffffff;
+  background: var(--acento);
+}
+
 .agenda-mini__celda--entrega {
-  border-color: #bfdbfe;
-  background: #eff6ff;
   color: #1d4ed8;
+  background: #f5f9ff;
+  border-color: #dbe7ff;
 }
 
 .agenda-mini__celda--examen {
-  border-color: #f2d9a4;
-  background: #fffaeb;
   color: #b54708;
+  background: #fffbf0;
+  border-color: #fde7b0;
 }
 
 .agenda-mini__celda--evaluacion {
-  border-color: #b7e4c7;
-  background: #ecfdf3;
   color: #067647;
+  background: #f4fdf8;
+  border-color: #cdeedd;
 }
 
 .agenda-mini__celda--no-lectivo {
-  border-color: #fecdca;
-  background: #fef3f2;
   color: #b42318;
+  background: #fef3f2;
+  border-color: #fecdca;
 }
 
 .agenda-mini__celda--no-lectivo .agenda-mini__numero {
@@ -5888,35 +6039,108 @@ a:focus-visible {
 }
 
 .agenda-mini__leyenda {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px 10px;
-  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px 6px;
+  margin-top: 10px;
+  padding-top: 9px;
   color: var(--tenue);
-  font-size: 9.5px;
+  font-size: 9px;
+  border-top: 1px solid #eef1f5;
 }
 
 .agenda-mini__leyenda span {
   display: inline-flex;
+  justify-self: start;
   align-items: center;
   gap: 4px;
+  padding: 2px 6px;
+  background: #ffffff;
+  border: 1px solid #eef1f5;
+  border-radius: 999px;
 }
 
 .agenda-mini__numero {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  font-weight: 550;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+.agenda-mini__unidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+  width: 100%;
+  margin-top: 1px;
+}
+
+.agenda-mini__unidad {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1.5px 3px;
+  color: #ffffff;
+  font-size: 7px;
+  font-weight: 700;
   line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+.agenda-mini__unidad--mas {
+  color: var(--tenue);
+  background: #eef1f5;
+}
+
+.agenda-mini__unidades-leyenda {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  margin-top: 7px;
+  padding-top: 7px;
+  color: var(--tenue);
+  font-size: 9px;
+  border-top: 1px dashed #eef1f5;
+}
+
+.agenda-mini__unidades-titulo {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.agenda-mini__unidad-leyenda {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.agenda-mini__unidad-leyenda i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
 }
 
 .agenda-mini__puntos {
   display: flex;
   gap: 2px;
-  margin-top: 2px;
+  margin-top: auto;
+  padding-top: 2px;
 }
 
 .agenda-punto {
-  width: 4px;
-  height: 4px;
+  width: 4.5px;
+  height: 4.5px;
   border-radius: 50%;
   background: #667085;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
 .agenda-punto--entrega {
@@ -5932,7 +6156,7 @@ a:focus-visible {
 }
 
 .agenda-punto--no-lectivo {
-  background: #98a2b3;
+  background: #b42318;
 }
 
 .dashboard__proximas-lista {

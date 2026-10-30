@@ -332,6 +332,28 @@ async function alElegirFichero(evento: Event): Promise<void> {
         <button class="boton boton--principal" type="button" @click="nuevo">Nuevo alumno</button>
       </div>
 
+      <div v-if="alumnos.length > 0" class="alumnado__resumen" aria-label="Resumen del alumnado">
+        <article class="tarjeta alumnado__stat">
+          <span class="tenue">Alumnos</span>
+          <strong>{{ resumen.total }}</strong>
+        </article>
+        <article class="tarjeta alumnado__stat alumnado__stat--ok">
+          <span class="tenue">Activos</span>
+          <strong>{{ resumen.activos }}</strong>
+        </article>
+        <article class="tarjeta alumnado__stat alumnado__stat--muted">
+          <span class="tenue">Inactivos</span>
+          <strong>{{ resumen.inactivos }}</strong>
+        </article>
+        <article
+          class="tarjeta alumnado__stat"
+          :class="{ 'alumnado__stat--aviso': resumen.sinCorreo > 0 }"
+        >
+          <span class="tenue">Sin correo</span>
+          <strong>{{ resumen.sinCorreo }}</strong>
+        </article>
+      </div>
+
       <div class="tarjeta">
         <div class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
@@ -441,28 +463,6 @@ async function alElegirFichero(evento: Event): Promise<void> {
         </div>
 
         <template v-else>
-          <div class="alumnado__resumen" aria-label="Resumen del alumnado">
-            <article class="tarjeta alumnado__stat">
-              <span class="tenue">Alumnos</span>
-              <strong>{{ resumen.total }}</strong>
-            </article>
-            <article class="tarjeta alumnado__stat alumnado__stat--ok">
-              <span class="tenue">Activos</span>
-              <strong>{{ resumen.activos }}</strong>
-            </article>
-            <article class="tarjeta alumnado__stat alumnado__stat--muted">
-              <span class="tenue">Inactivos</span>
-              <strong>{{ resumen.inactivos }}</strong>
-            </article>
-            <article
-              class="tarjeta alumnado__stat"
-              :class="{ 'alumnado__stat--aviso': resumen.sinCorreo > 0 }"
-            >
-              <span class="tenue">Sin correo</span>
-              <strong>{{ resumen.sinCorreo }}</strong>
-            </article>
-          </div>
-
           <div v-if="visibles.length === 0" class="vacio">
             <template v-if="hayFiltros">
               No hay nadie que coincida con la búsqueda o el filtro.

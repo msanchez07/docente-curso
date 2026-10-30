@@ -129,11 +129,17 @@ watch(id, cargar)
       :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'"
     />
 
-    <header class="vista__cabecera">
+    <header v-if="!embebido" class="vista__cabecera">
       <h2>BOE · RA y CE</h2>
       <p v-if="grupo" class="tenue">
         Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }} · {{ grupo.modulo_nombre }}
       </p>
+    </header>
+    <header v-else class="seccion__cabecera">
+      <div>
+        <h3>Resultados de aprendizaje y criterios</h3>
+        <p class="tenue">Cobertura de RA/CE a partir de las entregas del grupo.</p>
+      </div>
     </header>
 
     <div v-if="cargando && !grupo" class="vacio">Cargando RA/CE…</div>

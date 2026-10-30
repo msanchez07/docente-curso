@@ -513,6 +513,28 @@ async function confirmarBloqueo(): Promise<void> {
         </RouterLink>
       </div>
 
+      <div v-if="entregas.length > 0" class="alumnado__resumen" aria-label="Resumen de entregas">
+        <article class="tarjeta alumnado__stat">
+          <span class="tenue">Entregas</span>
+          <strong>{{ resumen.total }}</strong>
+        </article>
+        <article class="tarjeta alumnado__stat alumnado__stat--ok">
+          <span class="tenue">Con rúbrica</span>
+          <strong>{{ resumen.conRubrica }}</strong>
+        </article>
+        <article class="tarjeta alumnado__stat">
+          <span class="tenue">Con RA/CE</span>
+          <strong>{{ resumen.conRa }}</strong>
+        </article>
+        <article
+          class="tarjeta alumnado__stat"
+          :class="{ 'alumnado__stat--aviso': resumen.bloqueadas > 0 }"
+        >
+          <span class="tenue">Bloqueadas</span>
+          <strong>{{ resumen.bloqueadas }}</strong>
+        </article>
+      </div>
+
       <div class="tarjeta">
         <div class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
@@ -531,28 +553,6 @@ async function confirmarBloqueo(): Promise<void> {
         </div>
 
         <template v-else>
-          <div class="alumnado__resumen" aria-label="Resumen de entregas">
-            <article class="tarjeta alumnado__stat">
-              <span class="tenue">Entregas</span>
-              <strong>{{ resumen.total }}</strong>
-            </article>
-            <article class="tarjeta alumnado__stat alumnado__stat--ok">
-              <span class="tenue">Con rúbrica</span>
-              <strong>{{ resumen.conRubrica }}</strong>
-            </article>
-            <article class="tarjeta alumnado__stat">
-              <span class="tenue">Con RA/CE</span>
-              <strong>{{ resumen.conRa }}</strong>
-            </article>
-            <article
-              class="tarjeta alumnado__stat"
-              :class="{ 'alumnado__stat--aviso': resumen.bloqueadas > 0 }"
-            >
-              <span class="tenue">Bloqueadas</span>
-              <strong>{{ resumen.bloqueadas }}</strong>
-            </article>
-          </div>
-
           <div v-if="entregasFiltradas.length === 0" class="vacio">
             <template v-if="hayFiltros">
               No hay entregas que coincidan con los filtros.

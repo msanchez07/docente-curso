@@ -229,11 +229,17 @@ async function alElegirFichero(evento: Event): Promise<void> {
       :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'"
     />
 
-    <header class="vista__cabecera">
+    <header v-if="!embebido" class="vista__cabecera">
       <h2>Evaluaciones y exámenes</h2>
       <p v-if="grupo" class="tenue">
         Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }}
       </p>
+    </header>
+    <header v-else class="seccion__cabecera">
+      <div>
+        <h3>Evaluaciones y exámenes</h3>
+        <p class="tenue">Fechas clave del grupo ordenadas por día.</p>
+      </div>
     </header>
 
     <div v-if="cargando" class="vacio">Cargando fechas…</div>
