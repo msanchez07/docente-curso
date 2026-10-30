@@ -47,6 +47,7 @@ const importando = ref(false)
 
 function accionesAlumno(alumno: AlumnoClase): AccionMenu[] {
   return [
+    { id: 'ficha', etiqueta: 'Ver ficha del alumno', icono: 'rae' },
     { id: 'notas', etiqueta: 'Ver notas', icono: 'notas' },
     ...(alumno.email
       ? [{ id: 'copiar-correo', etiqueta: 'Copiar correo', icono: 'correo' as const }]
@@ -64,7 +65,9 @@ function accionesAlumno(alumno: AlumnoClase): AccionMenu[] {
 
 function ejecutarAccionAlumno(alumno: AlumnoClase, accion: string): void {
   if (!grupo.value) return
-  if (accion === 'notas') {
+  if (accion === 'ficha') {
+    irAFicha(alumno)
+  } else if (accion === 'notas') {
     irANotas(alumno)
   } else if (accion === 'copiar-correo') {
     void copiarCorreo(alumno)
@@ -87,6 +90,14 @@ async function copiarCorreo(alumno: AlumnoClase): Promise<void> {
   if (await copiarTexto(alumno.email)) {
     mensaje.value = `Correo de ${alumno.nombre} ${alumno.apellidos} copiado.`
   }
+}
+
+function irAFicha(alumno: AlumnoClase): void {
+  if (!grupo.value) return
+  router.push({
+    name: 'alumno',
+    params: { grupoId: grupo.value.id, alumnoId: alumno.id }
+  })
 }
 
 function irANotas(alumno: AlumnoClase): void {
@@ -478,8 +489,8 @@ async function alElegirFichero(evento: Event): Promise<void> {
                     <button
                       class="alumno__enlace"
                       type="button"
-                      :title="`Ver notas de ${alumno.nombre} ${alumno.apellidos}`"
-                      @click="irANotas(alumno)"
+                      :title="`Ver ficha de ${alumno.nombre} ${alumno.apellidos}`"
+                      @click="irAFicha(alumno)"
                     >
                       {{ alumno.apellidos }}, {{ alumno.nombre }}
                     </button>
