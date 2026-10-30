@@ -2069,7 +2069,50 @@ a:focus-visible {
 }
 
 .entregas-tabla__entrega {
-  max-width: 460px;
+  max-width: 520px;
+}
+
+.entregas-tabla__fila {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.entregas-tabla__marca {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-top: 1px;
+  border-radius: 9px;
+  background: var(--acento-suave);
+  color: var(--acento);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.entregas-tabla__marca--examen {
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.entregas-tabla__marca--proyecto {
+  background: #ecfdf3;
+  color: #067647;
+}
+
+.entregas-tabla__marca--practica {
+  background: #fffaeb;
+  color: #b54708;
+}
+
+.entregas-tabla__datos {
+  min-width: 0;
+}
+
+.entregas-tabla__grupo td {
+  border-left: 3px solid var(--acento);
 }
 
 .entrega__enlace {
@@ -3585,33 +3628,53 @@ a:focus-visible {
 }
 
 .volver {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 14px;
-  padding: 8px 14px;
-  font: inherit;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--acento);
-  text-decoration: none;
-  background: var(--acento-suave);
-  border: 1px solid #c7d7fe;
-  border-radius: 999px;
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  color: var(--texto);
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 50%;
   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
   cursor: pointer;
   transition:
     color 0.15s ease,
     background 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
+    border-color 0.15s ease;
+}
+
+.volver svg {
+  width: 17px;
+  height: 17px;
 }
 
 .volver:hover {
   color: #ffffff;
   border-color: var(--acento);
   background: var(--acento);
-  transform: translateX(-2px);
+}
+
+.vista {
+  position: relative;
+}
+
+.vista > .volver {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.vista:has(> .volver) .vista__cabecera {
+  padding-left: 46px;
+}
+
+.vista:has(> .volver) .formacion__cabecera,
+.vista:has(> .volver) .entrega-form__cabecera,
+.vista:has(> .volver) .entrega-notas__cabecera {
+  padding-left: 46px;
 }
 
 .programacion__acciones .volver {

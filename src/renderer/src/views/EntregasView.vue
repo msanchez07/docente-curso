@@ -187,6 +187,10 @@ function etiquetaTipo(tipo: string): string {
   return etiquetas[tipo] ?? tipo
 }
 
+function inicialTipo(tipo: string): string {
+  return etiquetaTipo(tipo).charAt(0).toUpperCase()
+}
+
 function tieneRubrica(entrega: EntregaClase): boolean {
   return Boolean(entrega.rubrica || entrega.rubrica_archivo)
 }
@@ -527,32 +531,26 @@ async function confirmarBloqueo(): Promise<void> {
         </div>
 
         <template v-else>
-          <div class="entrega__resumen" aria-label="Resumen de entregas">
-            <div class="entrega__resumen-item">
-              <strong class="entrega__resumen-valor">{{ resumen.total }}</strong>
-              <span class="entrega__resumen-etiqueta">entregas</span>
-            </div>
-            <div
-              class="entrega__resumen-item"
-              :class="{ 'entrega__resumen-item--aviso': resumen.conRubrica < resumen.total }"
+          <div class="alumnado__resumen" aria-label="Resumen de entregas">
+            <article class="tarjeta alumnado__stat">
+              <span class="tenue">Entregas</span>
+              <strong>{{ resumen.total }}</strong>
+            </article>
+            <article class="tarjeta alumnado__stat alumnado__stat--ok">
+              <span class="tenue">Con rúbrica</span>
+              <strong>{{ resumen.conRubrica }}</strong>
+            </article>
+            <article class="tarjeta alumnado__stat">
+              <span class="tenue">Con RA/CE</span>
+              <strong>{{ resumen.conRa }}</strong>
+            </article>
+            <article
+              class="tarjeta alumnado__stat"
+              :class="{ 'alumnado__stat--aviso': resumen.bloqueadas > 0 }"
             >
-              <strong class="entrega__resumen-valor">{{ resumen.conRubrica }}</strong>
-              <span class="entrega__resumen-etiqueta">con rúbrica</span>
-            </div>
-            <div
-              class="entrega__resumen-item"
-              :class="{ 'entrega__resumen-item--aviso': resumen.conRa < resumen.total }"
-            >
-              <strong class="entrega__resumen-valor">{{ resumen.conRa }}</strong>
-              <span class="entrega__resumen-etiqueta">con RA/CE</span>
-            </div>
-            <div
-              class="entrega__resumen-item"
-              :class="{ 'entrega__resumen-item--aviso': resumen.bloqueadas > 0 }"
-            >
-              <strong class="entrega__resumen-valor">{{ resumen.bloqueadas }}</strong>
-              <span class="entrega__resumen-etiqueta">bloqueadas</span>
-            </div>
+              <span class="tenue">Bloqueadas</span>
+              <strong>{{ resumen.bloqueadas }}</strong>
+            </article>
           </div>
 
           <div v-if="entregasFiltradas.length === 0" class="vacio">
@@ -591,20 +589,42 @@ async function confirmarBloqueo(): Promise<void> {
                 </tr>
                 <tr v-for="entrega in seccion.entregas" :key="entrega.id">
                   <td class="entregas-tabla__entrega">
-                    <div class="entrega__titulo">
-                      <button class="entrega__enlace" type="button" @click="irANotas(entrega)">
-                        {{ entrega.titulo }}
-                      </button>
-                      <span class="chip">{{ etiquetaTipo(entrega.tipo) }}</span>
-                      <span v-if="entrega.bloqueada" class="chip chip--aviso"> Bloqueada </span>
+                    <div class="entregas-tabla__fila">
+                      <span
+                        class="entregas-tabla__marca"
+                        :class="`entregas-tabla__marca--${entrega.tipo}`"
+                        aria-hidden="true"
+                      >
+                        {{ inicialTipo(entrega.tipo) }}
+                      </span>
+                      <div class="entregas-tabla__datos">
+                        <div class="entrega__titulo">
+                          <button class="entrega__enlace" type="button" @click="irANotas(entrega)">
+                            {{ entrega.titulo }}
+                          </button>
+                          <span class="chip">{{ etiquetaTipo(entrega.tipo) }}</span>
+                          <span v-if="entrega.bloqueada" class="chip chip--aviso"> Bloqueada </span>
+                        </div>
+                        <span v-if="entrega.descripcion" class="entrega__descripcion">
+                          {{ entrega.descripcion }}
+                        </span>
+                        <span
+                          v-if="entrega.evidencias > 0 || entrega.criterios > 0"
+                          class="entrega__meta"
+                        >
+                          <template v-if="entrega.evidencias > 0">
+                            {{ entrega.evidencias }}
+                            {{ entrega.evidencias === 1 ? 'evidencia' : 'evidencias' }}
+                          </template>
+                          <template v-if="entrega.evidencias > 0 && entrega.criterios > 0">
+                            ·
+                          </template>
+                          <template v-if="entrega.criterios > 0">
+                            {{ entrega.criterios }} RA/CE
+                          </template>
+                        </span>
+                      </div>
                     </div>
-                    <span v-if="entrega.descripcion" class="entrega__descripcion">
-                      {{ entrega.descripcion }}
-                    </span>
-                    <span v-if="entrega.evidencias > 0" class="entrega__meta">
-                      {{ entrega.evidencias }}
-                      {{ entrega.evidencias === 1 ? 'evidencia' : 'evidencias' }}
-                    </span>
                   </td>
                   <td>
                     <span class="chip">{{ nombreAvaluacion(entrega.avaluacion_id) }}</span>
@@ -688,6 +708,5 @@ async function confirmarBloqueo(): Promise<void> {
       </p>
       <p v-else class="tenue">Sus datos, notas y anotaciones volverán a ser editables.</p>
     </Confirmacion>
-
   </section>
 </template>

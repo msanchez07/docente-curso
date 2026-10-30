@@ -15,5 +15,17 @@ const { volver } = useVolver(() => props.a)
 </script>
 
 <template>
-  <button class="volver" type="button" @click="volver">← {{ etiqueta }}</button>
+  <button class="volver" type="button" :aria-label="etiqueta" :title="etiqueta" @click="volver">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path d="m15 18-6-6 6-6" />
+    </svg>
+  </button>
 </template>
