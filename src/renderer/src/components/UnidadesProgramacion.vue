@@ -284,6 +284,30 @@ function alternarRa(ra: { criterios: CriterioDisponible[] }): void {
   form.criterios = [...porClave.values()]
 }
 
+const requisitosUnidad = computed(() =>
+  (form.requisitos ?? []).filter((requisito) => requisito.id !== 'aprobado')
+)
+
+const ETIQUETAS_REQUISITO: Record<string, string> = {
+  notaMinimaEntrega: 'Nota mínima de cada entrega',
+  notaMinimaCategoria: 'Media mínima de cada categoría',
+  notaMinimaAvaluacion: 'Nota mínima de la unidad'
+}
+
+const DESCRIPCIONES_REQUISITO: Record<string, string> = {
+  notaMinimaEntrega: 'Si una entrega baja de esta nota, su categoría queda suspensa.',
+  notaMinimaCategoria: 'La media de la categoría debe llegar a esta nota para no suspender.',
+  notaMinimaAvaluacion: 'La media ponderada de la unidad debe llegar a esta nota.'
+}
+
+function etiquetaRequisito(id: string): string {
+  return ETIQUETAS_REQUISITO[id] ?? id
+}
+
+function descripcionRequisito(id: string): string {
+  return DESCRIPCIONES_REQUISITO[id] ?? ''
+}
+
 const sumaCategorias = computed(() =>
   (form.categorias ?? []).reduce((total, categoria) => total + (Number(categoria.peso) || 0), 0)
 )
@@ -646,10 +670,15 @@ async function borrar(): Promise<void> {
             </p>
 
             <div class="unidades__minimos">
-              <strong>Mínimos de la unidad</strong>
+              <strong>Mínimos para superar la unidad</strong>
+              <p class="tenue unidades__minimos-ayuda">
+                Son condiciones de corte: la nota de una entrega, la media de una categoría y la
+                media final de la unidad deben alcanzar estos valores.
+              </p>
               <div class="unidades__minimos-grid">
-                <label v-for="requisito in form.requisitos" :key="requisito.id">
-                  <span>{{ requisito.nombre }}</span>
+                <label v-for="requisito in requisitosUnidad" :key="requisito.id">
+                  <span>{{ etiquetaRequisito(requisito.id) }}</span>
+                  <small class="tenue">{{ descripcionRequisito(requisito.id) }}</small>
                   <input
                     v-model.number="requisito.valor"
                     type="number"
@@ -778,8 +807,12 @@ async function borrar(): Promise<void> {
         <div v-if="unidadActual.requisitos.length > 0" class="unidades__bloque">
           <h4>Mínimos de la unidad</h4>
           <div class="chips">
-            <span v-for="requisito in unidadActual.requisitos" :key="requisito.id" class="chip">
-              {{ requisito.nombre }}: {{ requisito.valor }}
+            <span
+              v-for="requisito in unidadActual.requisitos.filter((item) => item.id !== 'aprobado')"
+              :key="requisito.id"
+              class="chip"
+            >
+              {{ etiquetaRequisito(requisito.id) }}: {{ requisito.valor }}
             </span>
           </div>
         </div>
