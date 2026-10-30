@@ -396,10 +396,11 @@ watch(grupoId, cargar)
 <template>
   <section class="vista vista--ancha">
     <BotonVolver
+      v-if="!embebido"
       :a="grupo ? { name: 'calificaciones', params: { grupoId: grupo.id } } : '/grupos'"
     />
 
-    <header class="vista__cabecera">
+    <header v-if="!embebido" class="vista__cabecera">
       <h2>Convocatorias</h2>
       <p v-if="grupo" class="tenue">
         Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }} · ordinaria y extraordinaria

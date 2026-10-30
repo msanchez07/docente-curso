@@ -2934,6 +2934,10 @@ a:focus-visible {
   align-items: start;
 }
 
+.convocatorias__layout--embebido {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .convocatorias__lista {
   position: sticky;
   top: 18px;
@@ -3000,6 +3004,10 @@ a:focus-visible {
 @media (max-width: 900px) {
   .convocatorias__layout {
     grid-template-columns: 1fr;
+  }
+
+  .convocatorias__layout--embebido {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .convocatorias__lista {
