@@ -675,32 +675,6 @@ watch(id, cargar)
           </RouterLink>
           <RouterLink
             class="dashboard__tool"
-            :to="{
-              name: 'programacion-didactica',
-              params: { grupoId: grupo.id },
-              query: { tab: 'presentacion' }
-            }"
-          >
-            <span class="dashboard__tool-icono">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8" />
-                <path d="M12 17v4" />
-                <path d="m10 8 5 3-5 3Z" />
-              </svg>
-            </span>
-            Presentación
-          </RouterLink>
-          <RouterLink
-            class="dashboard__tool"
             :to="{ name: 'informes', params: { grupoId: grupo.id } }"
           >
             <span class="dashboard__tool-icono"

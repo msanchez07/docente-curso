@@ -24,6 +24,7 @@ const cargando = ref(true)
 const guardando = ref(false)
 const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
+const ficheroPlantilla = ref<HTMLInputElement | null>(null)
 
 const html = computed(() => renderizarPlantilla(config.value.plantilla, datosPresentacion.value))
 
@@ -123,6 +124,48 @@ async function copiarHtml(): Promise<void> {
     } catch (e) {
       error.value = (e as Error).message ?? String(e)
     }
+  }
+}
+
+async function copiarPlantilla(): Promise<void> {
+  error.value = null
+  mensaje.value = null
+  try {
+    await navigator.clipboard.writeText(config.value.plantilla)
+    mensaje.value = 'Código de la plantilla copiado. Puedes editarlo y volver a subirlo.'
+  } catch (e) {
+    error.value = (e as Error).message ?? String(e)
+  }
+}
+
+function abrirPlantilla(): void {
+  ficheroPlantilla.value?.click()
+}
+
+function contenidoPlantilla(texto: string): string {
+  const cuerpo = /<body[^>]*>([\s\S]*?)<\/body>/i.exec(texto)
+  if (!cuerpo) return texto
+  const estilos = [...texto.matchAll(/<style[^>]*>[\s\S]*?<\/style>/gi)]
+    .map((coincidencia) => coincidencia[0])
+    .join('')
+  return `${estilos}${cuerpo[1]}`
+}
+
+async function alElegirPlantilla(evento: Event): Promise<void> {
+  const entrada = evento.target as HTMLInputElement
+  const archivo = entrada.files?.[0]
+  if (!archivo) return
+  error.value = null
+  mensaje.value = null
+  try {
+    const texto = await archivo.text()
+    if (!texto.trim()) throw new Error('El archivo HTML está vacío.')
+    config.value.plantilla = contenidoPlantilla(texto)
+    mensaje.value = `Plantilla cargada desde «${archivo.name}». Revisa la vista previa y guarda.`
+  } catch (e) {
+    error.value = (e as Error).message ?? String(e)
+  } finally {
+    entrada.value = ''
   }
 }
 
@@ -265,6 +308,21 @@ onMounted(cargar)
           <code v-pre>{{^lista}}…{{/lista}}</code> para el caso vacío. Para insertar HTML sin
           escapar, usa <code v-pre>{{{campo}}}</code>.
         </p>
+        <div class="barra presentacion__plantilla-acciones">
+          <button class="boton" type="button" @click="copiarPlantilla">
+            Copiar código de plantilla
+          </button>
+          <button class="boton" type="button" @click="abrirPlantilla">Subir plantilla HTML</button>
+          <input
+            ref="ficheroPlantilla"
+            class="visualmente-oculto"
+            type="file"
+            accept=".html,.htm,.txt,text/html"
+            @change="alElegirPlantilla"
+          />
+          <span class="tenue">También puedes editar directamente el código inferior.</span>
+        </div>
+
         <textarea
           v-model="config.plantilla"
           class="monospace presentacion__plantilla"
@@ -278,8 +336,8 @@ onMounted(cargar)
         <button class="boton boton--principal" type="button" :disabled="guardando" @click="guardar">
           {{ guardando ? 'Guardando…' : 'Guardar plantilla' }}
         </button>
-        <button class="boton" type="button" @click="copiarHtml">Copiar HTML</button>
-        <button class="boton" type="button" @click="descargarHtml">Descargar HTML</button>
+        <button class="boton" type="button" @click="copiarHtml">Copiar presentación</button>
+        <button class="boton" type="button" @click="descargarHtml">Descargar presentación</button>
         <button class="boton" type="button" @click="imprimir">Imprimir / PDF</button>
         <span class="barra__espacio"></span>
         <span class="tenue">
