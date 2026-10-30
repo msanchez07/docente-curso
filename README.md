@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **192 tests**
+- `npm test` ✅ **194 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -52,6 +52,11 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 - **Plantillas de criterios** con listado y edición en páginas propias.
 - **Normativa FP** a pantalla completa e importación desde la barra lateral.
 - **Datos de prueba** en la previsualización web: restaurar o eliminar.
+- **Control de faltas por grupo**:
+  - Horas del módulo, límite de faltas y código del informe ITACA configurables.
+  - Importación del PDF de faltas de ITACA con `pdfjs-dist`.
+  - Totales y justificadas editables por alumno, porcentaje y estados por colores.
+  - Impresión/PDF del informe de faltas.
 - **Copias de seguridad por grupo**:
   - Carpeta raíz global configurable.
   - Subcarpeta automática por curso académico.

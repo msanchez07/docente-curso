@@ -186,6 +186,13 @@ const api: Api = {
     exportarPdf: (grupoId, alumnoId) => ipcRenderer.invoke(CANALES.informesPdf, grupoId, alumnoId),
     exportarCsv: (grupoId) => ipcRenderer.invoke(CANALES.informesCsv, grupoId)
   },
+  faltas: {
+    obtener: (grupoClaseId) => ipcRenderer.invoke(CANALES.faltasObtener, grupoClaseId),
+    guardarAjustes: (grupoClaseId, ajustes) =>
+      ipcRenderer.invoke(CANALES.faltasGuardarAjustes, grupoClaseId, ajustes),
+    guardarFilas: (grupoClaseId, filas) =>
+      ipcRenderer.invoke(CANALES.faltasGuardarFilas, grupoClaseId, filas)
+  },
   backup: {
     estado: () => ipcRenderer.invoke(CANALES.backupEstado),
     elegirCarpeta: () => ipcRenderer.invoke(CANALES.backupElegirCarpeta),

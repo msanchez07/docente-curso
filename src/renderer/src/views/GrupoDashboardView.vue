@@ -525,6 +525,25 @@ watch(id, cargar)
           </RouterLink>
           <RouterLink
             class="dashboard__tool"
+            :to="{ name: 'faltas', params: { grupoId: grupo.id } }"
+          >
+            <span class="dashboard__tool-icono"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M9 11l3 3L22 4" />
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></svg
+            ></span>
+            Faltas
+          </RouterLink>
+          <RouterLink
+            class="dashboard__tool"
             :to="{ name: 'entregas', params: { grupoId: grupo.id } }"
           >
             <span class="dashboard__tool-icono"

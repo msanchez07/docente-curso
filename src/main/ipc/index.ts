@@ -147,6 +147,7 @@ import { contarBoe } from '../db/seed'
 import { exportarCsv, exportarPdf, informeHtml } from '../informes/servicio'
 import { exportarProgramacionPdf } from '../programacion/servicio'
 import { exportarEntregas, vistaPreviaEntregas } from '../entregas/servicio'
+import { obtenerFaltas, guardarAjustesFaltas, guardarFilasFaltas } from '../db/repositorios/faltas'
 import {
   abrirCarpetaBackup,
   backupAutomatico,
@@ -518,4 +519,19 @@ export function registrarIpc(): void {
   ipcMain.handle(CANALES.backupImportar, (_e, ruta?: string) => importarBackupConDialogo(ruta))
   // Se conserva el canal automático para poder lanzarlo desde pruebas o ajustes.
   ipcMain.handle('backup:automatico', () => backupAutomatico())
+
+  // Control de faltas por grupo.
+  ipcMain.handle(CANALES.faltasObtener, (_e, grupoClaseId: number) =>
+    obtenerFaltas(bd(), grupoClaseId)
+  )
+  ipcMain.handle(
+    CANALES.faltasGuardarAjustes,
+    (_e, grupoClaseId: number, ajustes: import('@shared/tipos').AjustesFaltas) =>
+      guardarAjustesFaltas(bd(), grupoClaseId, ajustes)
+  )
+  ipcMain.handle(
+    CANALES.faltasGuardarFilas,
+    (_e, grupoClaseId: number, filas: import('@shared/tipos').FilaFaltasEntrada[]) =>
+      guardarFilasFaltas(bd(), grupoClaseId, filas)
+  )
 }

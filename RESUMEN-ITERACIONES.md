@@ -6,7 +6,7 @@
 
 **Última actualización:** 28/10/2026  
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **192 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **194 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -124,7 +124,16 @@ Vite/electron-vite + Vitest**.
 - Menú **Opciones globales** en la barra lateral para cursos, plantillas, copias, normativa y
   datos de prueba.
 
-### 2.7. Normativa y datos de prueba
+### 2.7. Control de faltas
+
+- Módulo de faltas por grupo con horas del módulo, límite porcentual, cómputo de justificadas y
+  código del PDF de ITACA.
+- Importación del PDF de faltas y vinculación por nombre con el alumnado del grupo.
+- Totales y justificadas editables, porcentaje y estados por colores.
+- Impresión/PDF del control de faltas.
+- Nueva migración **v29** (`faltas_alumno`) y persistencia de ajustes en `config`.
+
+### 2.8. Normativa y datos de prueba
 
 - Normativa FP a pantalla completa manteniendo la barra lateral; importación desde la barra.
 - Previsualización web:
@@ -132,7 +141,7 @@ Vite/electron-vite + Vitest**.
   - **Eliminar datos de prueba** con confirmación; deja la aplicación vacía y no vuelve a
     sembrar datos automáticamente.
 
-### 2.8. Persistencia y migraciones
+### 2.9. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
 - Última migración aplicada: **v28**.
@@ -142,6 +151,7 @@ Vite/electron-vite + Vitest**.
   - v26: horario semanal por días.
   - v27: tutorías semanales.
   - v28: bloques de 55 minutos del calendario semanal.
+  - v29: totales de faltas y justificadas por alumno/grupo.
 - `dias_semana` y `tutorias_semana` se derivan del calendario cuando hay bloques, para que la
   programación, el resumen del grupo y el PDF sean coherentes.
 
@@ -174,7 +184,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **192 tests**, 30 archivos de test, build y smoke correctos.
+Estado actual: **194 tests**, 31 archivos de test, build y smoke correctos.
 
 ---
 

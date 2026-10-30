@@ -18,6 +18,7 @@ import InformesView from '@renderer/views/InformesView.vue'
 import NormativaView from '@renderer/views/NormativaView.vue'
 import ProgramacionView from '@renderer/views/ProgramacionView.vue'
 import HorarioGrupoView from '@renderer/views/HorarioGrupoView.vue'
+import FaltasView from '@renderer/views/FaltasView.vue'
 import ProgramacionDidacticaView from '@renderer/views/ProgramacionDidacticaView.vue'
 import PlantillasView from '@renderer/views/PlantillasView.vue'
 import PlantillaFormView from '@renderer/views/PlantillaFormView.vue'
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/grupo/:grupoId/horario',
       name: 'horario-grupo',
       component: HorarioGrupoView
+    },
+    {
+      path: '/grupo/:grupoId/faltas',
+      name: 'faltas',
+      component: FaltasView
     },
     {
       path: '/grupo/:grupoId/programacion-didactica',

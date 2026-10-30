@@ -872,6 +872,36 @@ export interface ResultadoInforme {
   mensaje?: string
 }
 
+/* --- Control de faltas ----------------------------------------------- */
+
+export interface AjustesFaltas {
+  /** Horas totales del módulo para calcular el porcentaje. */
+  horas: number
+  /** Porcentaje a partir del cual se marca la pérdida de evaluación. */
+  limite: number
+  /** Si las faltas justificadas suman para el porcentaje. */
+  incluirJustificadas: boolean
+  /** Código del módulo en el PDF de ITACA (por ejemplo, DWES). */
+  codigoInforme: string
+}
+
+export interface FilaFaltas {
+  alumno: AlumnoClase
+  faltas: number
+  justificadas: number
+}
+
+export interface DatosFaltas {
+  ajustes: AjustesFaltas
+  filas: FilaFaltas[]
+}
+
+export interface FilaFaltasEntrada {
+  alumnoId: number
+  faltas: number
+  justificadas: number
+}
+
 /* --- Copias de seguridad --------------------------------------------- */
 
 export interface EstadoBackup {
@@ -1101,6 +1131,11 @@ export interface Api {
     exportarCsv(grupoId: number): Promise<ResultadoInforme>
   }
   backup: ApiBackup
+  faltas: {
+    obtener(grupoClaseId: number): Promise<DatosFaltas>
+    guardarAjustes(grupoClaseId: number, ajustes: AjustesFaltas): Promise<DatosFaltas>
+    guardarFilas(grupoClaseId: number, filas: FilaFaltasEntrada[]): Promise<DatosFaltas>
+  }
   /** Solo en la previsualización web: carga el curso de ejemplo. */
   demo?: {
     cargar(): Promise<void>
@@ -1221,5 +1256,8 @@ export const CANALES = {
   backupListar: 'backup:listar',
   backupCrear: 'backup:crear',
   backupCrearTodos: 'backup:crearTodos',
-  backupImportar: 'backup:importar'
+  backupImportar: 'backup:importar',
+  faltasObtener: 'faltas:obtener',
+  faltasGuardarAjustes: 'faltas:guardarAjustes',
+  faltasGuardarFilas: 'faltas:guardarFilas'
 } as const

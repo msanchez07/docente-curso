@@ -4484,6 +4484,76 @@ a:focus-visible {
   margin-bottom: 18px;
 }
 
+.faltas__ajustes .formulario {
+  margin-top: 12px;
+}
+
+.faltas__check {
+  justify-content: flex-end;
+}
+
+.faltas__check label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  color: #475467;
+}
+
+.faltas__acciones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.faltas__input {
+  width: 88px;
+  padding: 5px 7px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.faltas__tabla tbody tr.faltas__estado--peligro td {
+  background: #fef3f2;
+}
+
+.faltas__tabla tbody tr.faltas__estado--aviso td {
+  background: #fffaeb;
+}
+
+.faltas__tabla tbody tr.faltas__estado--proximo td {
+  background: #fefce8;
+}
+
+.faltas__tabla tbody tr.faltas__estado--ok td {
+  background: #f6fef9;
+}
+
+.faltas__estado--peligro {
+  color: #b42318;
+  background: #fef3f2;
+  border-color: #fecdca;
+}
+
+.faltas__estado--aviso {
+  color: #b54708;
+  background: #fffaeb;
+  border-color: #f2d9a4;
+}
+
+.faltas__estado--proximo {
+  color: #854d0e;
+  background: #fefce8;
+  border-color: #fef08a;
+}
+
+.faltas__estado--ok {
+  color: #067647;
+  background: #ecfdf3;
+  border-color: #b7e4c7;
+}
+
 .backup-aviso {
   margin-bottom: 16px;
 }

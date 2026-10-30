@@ -28,8 +28,11 @@ import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto } from '@shared/modelo'
 import JSZip from 'jszip'
 import type {
+  AjustesFaltas,
   AlumnoClase,
   AlumnoEntrada,
+  DatosFaltas,
+  FilaFaltasEntrada,
   Api,
   Ciclo,
   CriterioDisponible,
@@ -79,6 +82,7 @@ const CLAVE_FORMACION = 'gestion-entregas:formacion-empresa'
 const CLAVE_EVENTOS = 'gestion-entregas:eventos-evaluacion'
 const CLAVE_UNIDADES = 'gestion-entregas:unidades-programacion'
 const CLAVE_CALENDARIO = 'gestion-entregas:calendario-escolar'
+const CLAVE_FALTAS = 'gestion-entregas:faltas-clase'
 const CLAVE_DEMO = 'gestion-entregas:demo-cargado'
 
 type GrupoGuardado = Omit<
@@ -710,6 +714,7 @@ function limpiarDatosDemo(): void {
   localStorage.removeItem(CLAVE_EVENTOS)
   localStorage.removeItem(CLAVE_UNIDADES)
   localStorage.removeItem(CLAVE_CALENDARIO)
+  localStorage.removeItem(CLAVE_FALTAS)
 }
 
 const ALUMNOS_DEMO: Omit<AlumnoGuardado, 'id'>[] = [
@@ -1201,6 +1206,56 @@ function htmlEntregasWeb(
     tituloAmbito: titulo,
     fecha: new Date()
   })
+}
+
+interface FaltasGuardadas {
+  [grupoId: string]: {
+    ajustes: AjustesFaltas
+    filas: Record<string, { faltas: number; justificadas: number }>
+  }
+}
+
+function leerFaltas(): FaltasGuardadas {
+  try {
+    const crudo = localStorage.getItem(CLAVE_FALTAS)
+    return crudo ? (JSON.parse(crudo) as FaltasGuardadas) : {}
+  } catch {
+    return {}
+  }
+}
+
+function escribirFaltas(datos: FaltasGuardadas): void {
+  localStorage.setItem(CLAVE_FALTAS, JSON.stringify(datos))
+}
+
+async function datosFaltasWeb(grupoClaseId: number): Promise<DatosFaltas> {
+  const grupo = leer().find((item) => item.id === grupoClaseId)
+  if (!grupo) throw new Error('El grupo no existe.')
+  const ciclo = await cicloDaw()
+  const modulo = ciclo.modulos.find((item) => item.codigo === grupo.modulo_codigo)
+  const guardadas = leerFaltas()[String(grupoClaseId)]
+  const ajustes: AjustesFaltas = guardadas?.ajustes ?? {
+    horas: modulo?.horas_minimas_boe ?? 0,
+    limite: 15,
+    incluirJustificadas: false,
+    codigoInforme: modulo?.siglas ?? grupo.modulo_siglas ?? ''
+  }
+  const ids = new Set(leerMatriculas()[String(grupoClaseId)] ?? [])
+  const alumnos = leerAlumnos()
+    .filter((alumno) => ids.has(alumno.id))
+    .sort((a, b) => `${a.apellidos} ${a.nombre}`.localeCompare(`${b.apellidos} ${b.nombre}`))
+    .map<AlumnoClase>((alumno) => ({
+      ...alumno,
+      grupos_clase: [grupoClaseId]
+    }))
+  return {
+    ajustes,
+    filas: alumnos.map((alumno) => ({
+      alumno,
+      faltas: guardadas?.filas[String(alumno.id)]?.faltas ?? 0,
+      justificadas: guardadas?.filas[String(alumno.id)]?.justificadas ?? 0
+    }))
+  }
 }
 
 const api = {
@@ -2517,6 +2572,35 @@ const api = {
       mensaje:
         'La exportación CSV está disponible en la aplicación de escritorio. En la previsualización web puedes usar «Ver informe».'
     })
+  },
+  faltas: {
+    obtener: async (grupoClaseId: number): Promise<DatosFaltas> => datosFaltasWeb(grupoClaseId),
+    guardarAjustes: async (grupoClaseId: number, ajustes: AjustesFaltas): Promise<DatosFaltas> => {
+      const datos = leerFaltas()
+      const actual = datos[String(grupoClaseId)] ?? { ajustes, filas: {} }
+      datos[String(grupoClaseId)] = { ...actual, ajustes }
+      escribirFaltas(datos)
+      return datosFaltasWeb(grupoClaseId)
+    },
+    guardarFilas: async (
+      grupoClaseId: number,
+      filas: FilaFaltasEntrada[]
+    ): Promise<DatosFaltas> => {
+      const datos = leerFaltas()
+      const actual = datos[String(grupoClaseId)] ?? {
+        ajustes: (await datosFaltasWeb(grupoClaseId)).ajustes,
+        filas: {}
+      }
+      actual.filas = Object.fromEntries(
+        filas.map((fila) => [
+          String(fila.alumnoId),
+          { faltas: fila.faltas, justificadas: fila.justificadas }
+        ])
+      )
+      datos[String(grupoClaseId)] = actual
+      escribirFaltas(datos)
+      return datosFaltasWeb(grupoClaseId)
+    }
   },
   backup: {
     estado: async () => ({

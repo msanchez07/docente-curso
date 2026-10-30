@@ -36,6 +36,7 @@ type Tabla =
   | 'eventos_evaluacion_clase'
   | 'formacion_empresa'
   | 'calendario_escolar'
+  | 'faltas_alumno'
 
 interface DatosBackup {
   formato: string
@@ -58,6 +59,8 @@ interface DatosBackup {
   eventos: Fila[]
   formacion: Fila[]
   calendario: Fila[]
+  faltas: Fila[]
+  faltas_config: string | null
 }
 
 function filas(db: Bd, sql: string, ...params: unknown[]): Fila[] {
@@ -313,6 +316,12 @@ function datosDeGrupo(grupoId: number): DatosBackup {
     'SELECT * FROM calendario_escolar WHERE curso_academico_id = ? ORDER BY fecha',
     curso.id
   )
+  const faltas = filas(
+    db,
+    'SELECT * FROM faltas_alumno WHERE grupo_clase_id = ? ORDER BY alumno_id',
+    grupoId
+  )
+  const faltasConfig = leerConfig(db, `faltas:${grupoId}`)
 
   const base = {
     formato: FORMATO,
@@ -332,7 +341,9 @@ function datosDeGrupo(grupoId: number): DatosBackup {
     unidad_ra: unidadRa,
     eventos,
     formacion,
-    calendario
+    calendario,
+    faltas,
+    faltas_config: faltasConfig
   }
   const huella = createHash('sha256').update(JSON.stringify(base)).digest('hex')
   return {
@@ -656,6 +667,19 @@ export async function importarBackupDesdeRuta(ruta: string): Promise<ResultadoBa
           grupo_clase_id: nuevoGrupoId,
           alumno_id: alumnoId
         })
+      }
+
+      for (const falta of datos.faltas ?? []) {
+        const alumnoId = alumnosImportados.get(Number(falta.alumno_id))
+        if (!alumnoId) continue
+        insertarFila(db, 'faltas_alumno', {
+          ...falta,
+          grupo_clase_id: nuevoGrupoId,
+          alumno_id: alumnoId
+        })
+      }
+      if (datos.faltas_config) {
+        escribirConfig(db, `faltas:${nuevoGrupoId}`, datos.faltas_config)
       }
 
       for (const dia of datos.calendario ?? []) {
