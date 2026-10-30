@@ -16,6 +16,8 @@ import type {
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import SelectButton from '@renderer/components/SelectButton.vue'
+import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
+import { notificar } from '@renderer/composables/notificaciones'
 
 const route = useRoute()
 const store = useGruposClaseStore()
@@ -511,6 +513,17 @@ const todasSeleccionadas = computed(() =>
   opcionesSeccion.value.every((opcion) => seleccion.value[opcion.id])
 )
 
+function accionesInforme(): AccionMenu[] {
+  return [
+    { id: 'html', etiqueta: 'Descargar HTML', icono: 'descargar' },
+    { id: 'csv', etiqueta: 'Descargar CSV', icono: 'descargar' }
+  ]
+}
+
+function ejecutarAccionInforme(accion: string): void {
+  abrirOpciones(accion as AccionInforme)
+}
+
 function abrirOpciones(accion: AccionInforme): void {
   accionPendiente.value = accion
 }
@@ -528,8 +541,10 @@ function ejecutarAccion(): void {
     window.setTimeout(() => imprimir(), 80)
   } else if (accion === 'html') {
     descargar('informe.html', htmlActivo.value, 'text/html')
+    notificar('Informe HTML descargado.')
   } else {
     descargarCsv()
+    notificar('Informe CSV descargado.')
   }
 }
 
@@ -1718,8 +1733,11 @@ function imprimir(): void {
         </label>
         <span class="chip">{{ filas.length }} {{ filas.length === 1 ? 'alumno' : 'alumnos' }}</span>
         <span class="barra__espacio"></span>
-        <button class="boton" type="button" @click="abrirOpciones('csv')">Descargar CSV</button>
-        <button class="boton" type="button" @click="abrirOpciones('html')">Descargar HTML</button>
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesInforme()"
+          @accion="ejecutarAccionInforme"
+        />
         <button class="boton boton--principal" type="button" @click="abrirOpciones('imprimir')">
           Imprimir / PDF
         </button>
