@@ -874,32 +874,81 @@ export interface ResultadoInforme {
 
 /* --- Control de faltas ----------------------------------------------- */
 
-export interface AjustesFaltas {
+export interface ConfigModuloFaltas {
+  grupoId: number
+  moduloCodigo: string
+  nombre: string
+  /** Nombre exacto de la columna en el PDF de ITACA. */
+  nombreInforme: string
   /** Horas totales del módulo para calcular el porcentaje. */
   horas: number
-  /** Porcentaje a partir del cual se marca la pérdida de evaluación. */
+}
+
+export interface CursoFaltasResumen {
+  cursoAcademicoId: number
+  cursoAcademicoNombre: string
+  cicloId: string
+  cicloNombre: string
+  curso: Curso
+  modalidad: Modalidad
+  nombre: string
+  modulos: number
+  alumnos: number
+}
+
+export interface AlumnoFaltasCurso {
+  id: number
+  nombre: string
+  apellidos: string
+}
+
+export interface DatosCursoFaltas {
+  cursoAcademicoId: number
+  cursoAcademicoNombre: string
+  cicloId: string
+  cicloNombre: string
+  curso: Curso
+  modalidad: Modalidad
+  modulos: ConfigModuloFaltas[]
+  alumnos: AlumnoFaltasCurso[]
   limite: number
-  /** Si las faltas justificadas suman para el porcentaje. */
   incluirJustificadas: boolean
-  /** Código del módulo en el PDF de ITACA (por ejemplo, DWES). */
-  codigoInforme: string
 }
 
-export interface FilaFaltas {
-  alumno: AlumnoClase
-  faltas: number
-  justificadas: number
-}
-
-export interface DatosFaltas {
-  ajustes: AjustesFaltas
-  filas: FilaFaltas[]
-}
-
-export interface FilaFaltasEntrada {
+export interface FaltasAlumnoInforme {
   alumnoId: number
-  faltas: number
-  justificadas: number
+  /** Total de faltas por grupo/módulo; la clave es el id del grupo. */
+  faltas: Record<string, number>
+}
+
+export interface InformeFaltasDatos {
+  modulos: ConfigModuloFaltas[]
+  alumnos: FaltasAlumnoInforme[]
+  limite: number
+  incluirJustificadas: boolean
+}
+
+export interface InformeFaltasResumen {
+  id: number
+  archivo: string
+  subidoEn: string
+  totalAlumnos: number
+  totalModulos: number
+}
+
+export interface InformeFaltas extends InformeFaltasResumen {
+  datos: InformeFaltasDatos
+  cursoAcademicoId: number
+  cicloId: string
+  curso: Curso
+  modalidad: Modalidad
+}
+
+export interface ClaveCursoFaltas {
+  cursoAcademicoId: number
+  cicloId: string
+  curso: Curso
+  modalidad: Modalidad
 }
 
 /* --- Copias de seguridad --------------------------------------------- */
@@ -1132,9 +1181,21 @@ export interface Api {
   }
   backup: ApiBackup
   faltas: {
-    obtener(grupoClaseId: number): Promise<DatosFaltas>
-    guardarAjustes(grupoClaseId: number, ajustes: AjustesFaltas): Promise<DatosFaltas>
-    guardarFilas(grupoClaseId: number, filas: FilaFaltasEntrada[]): Promise<DatosFaltas>
+    cursos(): Promise<CursoFaltasResumen[]>
+    obtenerCurso(clave: ClaveCursoFaltas): Promise<DatosCursoFaltas>
+    guardarModulo(grupoClaseId: number, nombreInforme: string, horas: number): Promise<void>
+    guardarAjustes(
+      clave: ClaveCursoFaltas,
+      limite: number,
+      incluirJustificadas: boolean
+    ): Promise<DatosCursoFaltas>
+    listarInformes(clave: ClaveCursoFaltas): Promise<InformeFaltasResumen[]>
+    obtenerInforme(id: number): Promise<InformeFaltas | null>
+    importarInforme(
+      clave: ClaveCursoFaltas,
+      archivo: string,
+      datos: InformeFaltasDatos
+    ): Promise<InformeFaltas>
   }
   /** Solo en la previsualización web: carga el curso de ejemplo. */
   demo?: {
@@ -1257,7 +1318,11 @@ export const CANALES = {
   backupCrear: 'backup:crear',
   backupCrearTodos: 'backup:crearTodos',
   backupImportar: 'backup:importar',
-  faltasObtener: 'faltas:obtener',
+  faltasCursos: 'faltas:cursos',
+  faltasObtenerCurso: 'faltas:obtenerCurso',
+  faltasGuardarModulo: 'faltas:guardarModulo',
   faltasGuardarAjustes: 'faltas:guardarAjustes',
-  faltasGuardarFilas: 'faltas:guardarFilas'
+  faltasListarInformes: 'faltas:listarInformes',
+  faltasObtenerInforme: 'faltas:obtenerInforme',
+  faltasImportarInforme: 'faltas:importarInforme'
 } as const

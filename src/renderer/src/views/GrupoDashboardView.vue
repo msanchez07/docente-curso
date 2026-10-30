@@ -523,10 +523,7 @@ watch(id, cargar)
             ></span>
             Horario
           </RouterLink>
-          <RouterLink
-            class="dashboard__tool"
-            :to="{ name: 'faltas', params: { grupoId: grupo.id } }"
-          >
+          <RouterLink class="dashboard__tool" :to="{ name: 'faltas', query: { grupo: grupo.id } }">
             <span class="dashboard__tool-icono"
               ><svg
                 viewBox="0 0 24 24"

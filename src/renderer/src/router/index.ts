@@ -53,7 +53,7 @@ const router = createRouter({
       component: HorarioGrupoView
     },
     {
-      path: '/grupo/:grupoId/faltas',
+      path: '/faltas',
       name: 'faltas',
       component: FaltasView
     },

@@ -147,7 +147,15 @@ import { contarBoe } from '../db/seed'
 import { exportarCsv, exportarPdf, informeHtml } from '../informes/servicio'
 import { exportarProgramacionPdf } from '../programacion/servicio'
 import { exportarEntregas, vistaPreviaEntregas } from '../entregas/servicio'
-import { obtenerFaltas, guardarAjustesFaltas, guardarFilasFaltas } from '../db/repositorios/faltas'
+import {
+  guardarAjustesFaltas,
+  guardarModuloFaltas,
+  importarInformeFaltas,
+  listarCursosFaltas,
+  listarInformesFaltas,
+  obtenerCursoFaltas,
+  obtenerInformeFaltas
+} from '../db/repositorios/faltas'
 import {
   abrirCarpetaBackup,
   backupAutomatico,
@@ -520,18 +528,38 @@ export function registrarIpc(): void {
   // Se conserva el canal automático para poder lanzarlo desde pruebas o ajustes.
   ipcMain.handle('backup:automatico', () => backupAutomatico())
 
-  // Control de faltas por grupo.
-  ipcMain.handle(CANALES.faltasObtener, (_e, grupoClaseId: number) =>
-    obtenerFaltas(bd(), grupoClaseId)
+  // Control de faltas por curso.
+  ipcMain.handle(CANALES.faltasCursos, () => listarCursosFaltas(bd()))
+  ipcMain.handle(
+    CANALES.faltasObtenerCurso,
+    (_e, clave: import('@shared/tipos').ClaveCursoFaltas) => obtenerCursoFaltas(bd(), clave)
+  )
+  ipcMain.handle(
+    CANALES.faltasGuardarModulo,
+    (_e, grupoClaseId: number, nombreInforme: string, horas: number) =>
+      guardarModuloFaltas(bd(), grupoClaseId, nombreInforme, horas)
   )
   ipcMain.handle(
     CANALES.faltasGuardarAjustes,
-    (_e, grupoClaseId: number, ajustes: import('@shared/tipos').AjustesFaltas) =>
-      guardarAjustesFaltas(bd(), grupoClaseId, ajustes)
+    (
+      _e,
+      clave: import('@shared/tipos').ClaveCursoFaltas,
+      limite: number,
+      incluirJustificadas: boolean
+    ) => guardarAjustesFaltas(bd(), clave, limite, incluirJustificadas)
   )
   ipcMain.handle(
-    CANALES.faltasGuardarFilas,
-    (_e, grupoClaseId: number, filas: import('@shared/tipos').FilaFaltasEntrada[]) =>
-      guardarFilasFaltas(bd(), grupoClaseId, filas)
+    CANALES.faltasListarInformes,
+    (_e, clave: import('@shared/tipos').ClaveCursoFaltas) => listarInformesFaltas(bd(), clave)
+  )
+  ipcMain.handle(CANALES.faltasObtenerInforme, (_e, id: number) => obtenerInformeFaltas(bd(), id))
+  ipcMain.handle(
+    CANALES.faltasImportarInforme,
+    (
+      _e,
+      clave: import('@shared/tipos').ClaveCursoFaltas,
+      archivo: string,
+      datos: import('@shared/tipos').InformeFaltasDatos
+    ) => importarInformeFaltas(bd(), clave, archivo, datos)
   )
 }

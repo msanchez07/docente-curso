@@ -6,7 +6,7 @@
 
 **Última actualización:** 28/10/2026  
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **194 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **195 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -124,14 +124,17 @@ Vite/electron-vite + Vitest**.
 - Menú **Opciones globales** en la barra lateral para cursos, plantillas, copias, normativa y
   datos de prueba.
 
-### 2.7. Control de faltas
+### 2.7. Control de faltas por curso
 
-- Módulo de faltas por grupo con horas del módulo, límite porcentual, cómputo de justificadas y
-  código del PDF de ITACA.
-- Importación del PDF de faltas y vinculación por nombre con el alumnado del grupo.
-- Totales y justificadas editables, porcentaje y estados por colores.
-- Impresión/PDF del control de faltas.
-- Nueva migración **v29** (`faltas_alumno`) y persistencia de ajustes en `config`.
+- Vista de tutoría a nivel de **curso** (ciclo + nivel + modalidad), con todos los módulos y el
+  alumnado matriculado en cualquiera de ellos.
+- Nombre exacto de cada módulo en el PDF de ITACA, horas y límite configurables.
+- Importación de PDFs de faltas de **varias páginas** con `pdfjs-dist`.
+- **Historial de informes**: cada PDF subido se guarda como una instantánea independiente y se
+  puede consultar después.
+- Tabla por alumno y módulo, porcentajes y estados por colores.
+- Impresión/PDF del informe seleccionado.
+- Nueva migración **v30** (`faltas_modulo_config`, `faltas_informes`).
 
 ### 2.8. Normativa y datos de prueba
 
@@ -152,6 +155,7 @@ Vite/electron-vite + Vitest**.
   - v27: tutorías semanales.
   - v28: bloques de 55 minutos del calendario semanal.
   - v29: totales de faltas y justificadas por alumno/grupo.
+  - v30: configuración de módulos e historial de informes de faltas por curso.
 - `dias_semana` y `tutorias_semana` se derivan del calendario cuando hay bloques, para que la
   programación, el resumen del grupo y el PDF sean coherentes.
 
@@ -184,7 +188,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **194 tests**, 31 archivos de test, build y smoke correctos.
+Estado actual: **195 tests**, 31 archivos de test, build y smoke correctos.
 
 ---
 

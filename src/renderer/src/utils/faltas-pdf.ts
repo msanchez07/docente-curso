@@ -100,21 +100,29 @@ function moduloDe(modulos: Record<string, string>, columna: number): string | nu
   return modulos[String(cercana)] ?? null
 }
 
-export async function extraerFaltasPdf(
-  archivo: File,
-  incluirJustificadas: boolean
-): Promise<FilaFaltasPdf[]> {
-  const pdf = await pdfjsLib.getDocument({ data: new Uint8Array(await archivo.arrayBuffer()) })
-    .promise
-  const pagina = await pdf.getPage(1)
-  const contenido = await pagina.getTextContent()
-  const items = contenido.items as any[]
+function normalizarNombre(texto: string): string {
+  return texto
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+}
 
-  const modulos = modulosDe(items, incluirJustificadas)
+function procesarPagina(
+  items: any[],
+  incluirJustificadas: boolean,
+  modulosPrevios: Record<string, string> | null
+): { filas: FilaFaltasPdf[]; modulos: Record<string, string> } {
+  const propios = modulosDe(items, incluirJustificadas)
+  const modulos = Object.keys(propios).length > 0 ? propios : (modulosPrevios ?? {})
   const alumnos = alumnosDe(items)
   const filas = new Map<string, FilaFaltasPdf>()
   for (const nombre of Object.values(alumnos)) {
-    filas.set(nombre, { nombre, modulos: Object.fromEntries(Object.values(modulos).map((m) => [m, 0])) })
+    filas.set(normalizarNombre(nombre), {
+      nombre,
+      modulos: Object.fromEntries(Object.values(modulos).map((modulo) => [modulo, 0]))
+    })
   }
 
   for (let i = posicionAlumnos(items); i < items.length; i++) {
@@ -124,9 +132,41 @@ export async function extraerFaltasPdf(
     const columna = item.transform[5] | 0
     const alumno = alumnos[fila]
     const modulo = moduloDe(modulos, columna)
-    const filaAlumno = alumno ? filas.get(alumno) : null
-    if (filaAlumno && modulo) filaAlumno.modulos[modulo] += Number(item.str)
+    if (!alumno || !modulo) continue
+    const filaAlumno = filas.get(normalizarNombre(alumno))
+    if (filaAlumno)
+      filaAlumno.modulos[modulo] = (filaAlumno.modulos[modulo] ?? 0) + Number(item.str)
+  }
+  return { filas: [...filas.values()], modulos }
+}
+
+export async function extraerFaltasPdf(
+  archivo: File,
+  incluirJustificadas: boolean
+): Promise<FilaFaltasPdf[]> {
+  const pdf = await pdfjsLib.getDocument({ data: new Uint8Array(await archivo.arrayBuffer()) })
+    .promise
+  const acumulado = new Map<string, FilaFaltasPdf>()
+  let modulosPrevios: Record<string, string> | null = null
+
+  for (let numero = 1; numero <= pdf.numPages; numero++) {
+    const pagina = await pdf.getPage(numero)
+    const contenido = await pagina.getTextContent()
+    const items = contenido.items as any[]
+    const { filas, modulos } = procesarPagina(items, incluirJustificadas, modulosPrevios)
+    modulosPrevios = modulos
+    for (const fila of filas) {
+      const clave = normalizarNombre(fila.nombre)
+      const existente = acumulado.get(clave)
+      if (!existente) {
+        acumulado.set(clave, fila)
+        continue
+      }
+      for (const [modulo, valor] of Object.entries(fila.modulos)) {
+        existente.modulos[modulo] = (existente.modulos[modulo] ?? 0) + valor
+      }
+    }
   }
 
-  return [...filas.values()]
+  return [...acumulado.values()]
 }

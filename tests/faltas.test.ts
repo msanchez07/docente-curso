@@ -6,8 +6,12 @@ import { crearGrupoClase } from '../src/main/db/repositorios/grupos-clase'
 import { crearAlumnoEnGrupoClase } from '../src/main/db/repositorios/alumnos-clase'
 import {
   guardarAjustesFaltas,
-  guardarFilasFaltas,
-  obtenerFaltas
+  guardarModuloFaltas,
+  importarInformeFaltas,
+  listarCursosFaltas,
+  listarInformesFaltas,
+  obtenerCursoFaltas,
+  obtenerInformeFaltas
 } from '../src/main/db/repositorios/faltas'
 
 const ciclo: Ciclo = {
@@ -54,25 +58,43 @@ beforeEach(() => {
   alumnoId = alumno.alumno.id
 })
 
-describe('control de faltas', () => {
-  it('parte de las horas del módulo y permite guardar ajustes', () => {
-    const inicial = obtenerFaltas(db, grupoId)
-    expect(inicial.ajustes.horas).toBe(100)
-    expect(inicial.ajustes.codigoInforme).toBe('DWES')
+const clave = {
+  cursoAcademicoId: 1,
+  cicloId: 'daw',
+  curso: '2' as const,
+  modalidad: 'presencial' as const
+}
 
-    const actualizado = guardarAjustesFaltas(db, grupoId, {
-      ...inicial.ajustes,
-      limite: 10,
-      incluirJustificadas: true
-    })
-    expect(actualizado.ajustes.limite).toBe(10)
-    expect(actualizado.ajustes.incluirJustificadas).toBe(true)
+describe('control de faltas por curso', () => {
+  it('describe el curso con todos sus módulos y alumnado', () => {
+    const cursos = listarCursosFaltas(db)
+    expect(cursos).toHaveLength(1)
+    const datos = obtenerCursoFaltas(db, clave)
+    expect(datos.modulos).toHaveLength(1)
+    expect(datos.modulos[0].horas).toBe(100)
+    expect(datos.modulos[0].nombreInforme).toBe('DWES')
+    expect(datos.alumnos[0].nombre).toBe('Ana')
   })
 
-  it('guarda los totales por alumno y los devuelve en el listado', () => {
-    const datos = guardarFilasFaltas(db, grupoId, [{ alumnoId, faltas: 4, justificadas: 2 }])
-    expect(datos.filas[0].faltas).toBe(4)
-    expect(datos.filas[0].justificadas).toBe(2)
-    expect(obtenerFaltas(db, grupoId).filas[0].faltas).toBe(4)
+  it('permite configurar nombre de informe, horas y ajustes', () => {
+    guardarModuloFaltas(db, grupoId, 'DWES ITACA', 120)
+    const datos = guardarAjustesFaltas(db, clave, 10, true)
+    expect(datos.modulos[0].nombreInforme).toBe('DWES ITACA')
+    expect(datos.modulos[0].horas).toBe(120)
+    expect(datos.limite).toBe(10)
+    expect(datos.incluirJustificadas).toBe(true)
+  })
+
+  it('guarda cada informe como una entrada del historial', () => {
+    const curso = obtenerCursoFaltas(db, clave)
+    const informe = importarInformeFaltas(db, clave, 'faltas-octubre.pdf', {
+      modulos: curso.modulos,
+      alumnos: [{ alumnoId, faltas: { [String(grupoId)]: 4 } }],
+      limite: 15,
+      incluirJustificadas: false
+    })
+    expect(informe.archivo).toBe('faltas-octubre.pdf')
+    expect(listarInformesFaltas(db, clave)).toHaveLength(1)
+    expect(obtenerInformeFaltas(db, informe.id)?.datos.alumnos[0].faltas[String(grupoId)]).toBe(4)
   })
 })

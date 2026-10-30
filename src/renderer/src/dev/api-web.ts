@@ -28,11 +28,16 @@ import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto } from '@shared/modelo'
 import JSZip from 'jszip'
 import type {
-  AjustesFaltas,
   AlumnoClase,
   AlumnoEntrada,
-  DatosFaltas,
-  FilaFaltasEntrada,
+  AlumnoFaltasCurso,
+  ClaveCursoFaltas,
+  ConfigModuloFaltas,
+  CursoFaltasResumen,
+  DatosCursoFaltas,
+  InformeFaltas,
+  InformeFaltasDatos,
+  InformeFaltasResumen,
   Api,
   Ciclo,
   CriterioDisponible,
@@ -1209,10 +1214,17 @@ function htmlEntregasWeb(
 }
 
 interface FaltasGuardadas {
-  [grupoId: string]: {
-    ajustes: AjustesFaltas
-    filas: Record<string, { faltas: number; justificadas: number }>
+  [clave: string]: {
+    modulos: Record<string, { nombreInforme: string; horas: number }>
+    limite: number
+    incluirJustificadas: boolean
+    informes: InformeFaltas[]
+    siguienteId: number
   }
+}
+
+function claveFaltas(clave: ClaveCursoFaltas): string {
+  return `${clave.cursoAcademicoId}|${clave.cicloId}|${clave.curso}|${clave.modalidad}`
 }
 
 function leerFaltas(): FaltasGuardadas {
@@ -1228,33 +1240,51 @@ function escribirFaltas(datos: FaltasGuardadas): void {
   localStorage.setItem(CLAVE_FALTAS, JSON.stringify(datos))
 }
 
-async function datosFaltasWeb(grupoClaseId: number): Promise<DatosFaltas> {
-  const grupo = leer().find((item) => item.id === grupoClaseId)
-  if (!grupo) throw new Error('El grupo no existe.')
-  const ciclo = await cicloDaw()
-  const modulo = ciclo.modulos.find((item) => item.codigo === grupo.modulo_codigo)
-  const guardadas = leerFaltas()[String(grupoClaseId)]
-  const ajustes: AjustesFaltas = guardadas?.ajustes ?? {
-    horas: modulo?.horas_minimas_boe ?? 0,
-    limite: 15,
-    incluirJustificadas: false,
-    codigoInforme: modulo?.siglas ?? grupo.modulo_siglas ?? ''
+function gruposDeCohorte(clave: ClaveCursoFaltas) {
+  return leer().filter(
+    (grupo) =>
+      grupo.curso_academico_id === clave.cursoAcademicoId &&
+      grupo.ciclo_id === clave.cicloId &&
+      grupo.curso === clave.curso &&
+      grupo.modalidad === clave.modalidad
+  )
+}
+
+function alumnosDeCohorte(clave: ClaveCursoFaltas): AlumnoFaltasCurso[] {
+  const ids = new Set<number>()
+  for (const grupo of gruposDeCohorte(clave)) {
+    for (const id of leerMatriculas()[String(grupo.id)] ?? []) ids.add(id)
   }
-  const ids = new Set(leerMatriculas()[String(grupoClaseId)] ?? [])
-  const alumnos = leerAlumnos()
+  return leerAlumnos()
     .filter((alumno) => ids.has(alumno.id))
     .sort((a, b) => `${a.apellidos} ${a.nombre}`.localeCompare(`${b.apellidos} ${b.nombre}`))
-    .map<AlumnoClase>((alumno) => ({
-      ...alumno,
-      grupos_clase: [grupoClaseId]
-    }))
+    .map((alumno) => ({ id: alumno.id, nombre: alumno.nombre, apellidos: alumno.apellidos }))
+}
+
+async function obtenerCursoFaltasWeb(clave: ClaveCursoFaltas): Promise<DatosCursoFaltas> {
+  const grupos = gruposDeCohorte(clave)
+  if (grupos.length === 0) throw new Error('No hay módulos para este curso.')
+  const guardado = leerFaltas()[claveFaltas(clave)]
+  const ciclo = await cicloDaw()
+  const modulos: ConfigModuloFaltas[] = grupos.map((grupo) => {
+    const modulo = ciclo.modulos.find((item) => item.codigo === grupo.modulo_codigo)
+    const config = guardado?.modulos[String(grupo.id)]
+    return {
+      grupoId: grupo.id,
+      moduloCodigo: grupo.modulo_codigo,
+      nombre: grupo.modulo_nombre,
+      nombreInforme: config?.nombreInforme ?? modulo?.siglas ?? grupo.modulo_siglas ?? '',
+      horas: config?.horas ?? modulo?.horas_minimas_boe ?? 0
+    }
+  })
   return {
-    ajustes,
-    filas: alumnos.map((alumno) => ({
-      alumno,
-      faltas: guardadas?.filas[String(alumno.id)]?.faltas ?? 0,
-      justificadas: guardadas?.filas[String(alumno.id)]?.justificadas ?? 0
-    }))
+    ...clave,
+    cursoAcademicoNombre: cursoPorId(grupos[0].curso_academico_id)?.nombre ?? '—',
+    cicloNombre: grupos[0].ciclo_nombre,
+    modulos,
+    alumnos: alumnosDeCohorte(clave),
+    limite: guardado?.limite ?? 15,
+    incluirJustificadas: guardado?.incluirJustificadas ?? false
   }
 }
 
@@ -2574,32 +2604,133 @@ const api = {
     })
   },
   faltas: {
-    obtener: async (grupoClaseId: number): Promise<DatosFaltas> => datosFaltasWeb(grupoClaseId),
-    guardarAjustes: async (grupoClaseId: number, ajustes: AjustesFaltas): Promise<DatosFaltas> => {
-      const datos = leerFaltas()
-      const actual = datos[String(grupoClaseId)] ?? { ajustes, filas: {} }
-      datos[String(grupoClaseId)] = { ...actual, ajustes }
-      escribirFaltas(datos)
-      return datosFaltasWeb(grupoClaseId)
-    },
-    guardarFilas: async (
-      grupoClaseId: number,
-      filas: FilaFaltasEntrada[]
-    ): Promise<DatosFaltas> => {
-      const datos = leerFaltas()
-      const actual = datos[String(grupoClaseId)] ?? {
-        ajustes: (await datosFaltasWeb(grupoClaseId)).ajustes,
-        filas: {}
+    cursos: async (): Promise<CursoFaltasResumen[]> => {
+      const mapa = new Map<string, CursoFaltasResumen>()
+      for (const grupo of leer()) {
+        const clave: ClaveCursoFaltas = {
+          cursoAcademicoId: grupo.curso_academico_id,
+          cicloId: grupo.ciclo_id,
+          curso: grupo.curso,
+          modalidad: grupo.modalidad
+        }
+        const id = claveFaltas(clave)
+        const existente = mapa.get(id)
+        if (existente) {
+          existente.modulos += 1
+          existente.alumnos = alumnosDeCohorte(clave).length
+          continue
+        }
+        mapa.set(id, {
+          ...clave,
+          cursoAcademicoNombre: cursoPorId(grupo.curso_academico_id)?.nombre ?? '—',
+          cicloNombre: grupo.ciclo_nombre,
+          nombre: `${grupo.curso}º ${grupo.ciclo_id.toUpperCase()} · ${
+            grupo.modalidad === 'semipresencial' ? 'Semipresencial' : 'Presencial'
+          }`,
+          modulos: 1,
+          alumnos: alumnosDeCohorte(clave).length
+        })
       }
-      actual.filas = Object.fromEntries(
-        filas.map((fila) => [
-          String(fila.alumnoId),
-          { faltas: fila.faltas, justificadas: fila.justificadas }
-        ])
-      )
-      datos[String(grupoClaseId)] = actual
+      return [...mapa.values()]
+    },
+    obtenerCurso: async (clave: ClaveCursoFaltas): Promise<DatosCursoFaltas> =>
+      obtenerCursoFaltasWeb(clave),
+    guardarModulo: async (grupoId: number, nombreInforme: string, horas: number): Promise<void> => {
+      const grupo = leer().find((item) => item.id === grupoId)
+      if (!grupo) throw new Error('El grupo no existe.')
+      const clave: ClaveCursoFaltas = {
+        cursoAcademicoId: grupo.curso_academico_id,
+        cicloId: grupo.ciclo_id,
+        curso: grupo.curso,
+        modalidad: grupo.modalidad
+      }
+      const id = claveFaltas(clave)
+      const datos = leerFaltas()
+      const actual = datos[id] ?? {
+        modulos: {},
+        limite: 15,
+        incluirJustificadas: false,
+        informes: [],
+        siguienteId: 1
+      }
+      actual.modulos[String(grupoId)] = { nombreInforme, horas }
+      datos[id] = actual
       escribirFaltas(datos)
-      return datosFaltasWeb(grupoClaseId)
+    },
+    guardarAjustes: async (
+      clave: ClaveCursoFaltas,
+      limite: number,
+      incluirJustificadas: boolean
+    ): Promise<DatosCursoFaltas> => {
+      const id = claveFaltas(clave)
+      const datos = leerFaltas()
+      const actual = datos[id] ?? {
+        modulos: {},
+        limite: 15,
+        incluirJustificadas: false,
+        informes: [],
+        siguienteId: 1
+      }
+      actual.limite = limite
+      actual.incluirJustificadas = incluirJustificadas
+      datos[id] = actual
+      escribirFaltas(datos)
+      return obtenerCursoFaltasWeb(clave)
+    },
+    listarInformes: async (clave: ClaveCursoFaltas): Promise<InformeFaltasResumen[]> => {
+      const guardado = leerFaltas()[claveFaltas(clave)]
+      return (guardado?.informes ?? []).map((item) => ({
+        id: item.id,
+        archivo: item.archivo,
+        subidoEn: item.subidoEn,
+        totalAlumnos: item.datos.alumnos.length,
+        totalModulos: item.datos.modulos.length
+      }))
+    },
+    obtenerInforme: async (id: number): Promise<InformeFaltas | null> => {
+      for (const guardado of Object.values(leerFaltas())) {
+        const informe = guardado.informes.find((item) => item.id === id)
+        if (informe) return informe
+      }
+      return null
+    },
+    importarInforme: async (
+      clave: ClaveCursoFaltas,
+      archivo: string,
+      datos: InformeFaltasDatos
+    ): Promise<InformeFaltas> => {
+      const id = claveFaltas(clave)
+      const store = leerFaltas()
+      const actual = store[id] ?? {
+        modulos: {},
+        limite: 15,
+        incluirJustificadas: false,
+        informes: [],
+        siguienteId: 1
+      }
+      const curso = await obtenerCursoFaltasWeb(clave)
+      const nuevo: InformeFaltas = {
+        id: actual.siguienteId,
+        archivo,
+        subidoEn: new Date().toISOString().slice(0, 19).replace('T', ' '),
+        totalAlumnos: datos.alumnos.length,
+        totalModulos: datos.modulos.length,
+        cursoAcademicoId: clave.cursoAcademicoId,
+        cicloId: clave.cicloId,
+        curso: clave.curso,
+        modalidad: clave.modalidad,
+        datos: {
+          modulos: curso.modulos,
+          alumnos: datos.alumnos,
+          limite: curso.limite,
+          incluirJustificadas: curso.incluirJustificadas
+        }
+      }
+      actual.siguienteId += 1
+      actual.informes.unshift(nuevo)
+      store[id] = actual
+      escribirFaltas(store)
+      return nuevo
     }
   },
   backup: {

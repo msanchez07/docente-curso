@@ -4484,6 +4484,98 @@ a:focus-visible {
   margin-bottom: 18px;
 }
 
+.faltas__selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.faltas__selector label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #475467;
+}
+
+.faltas__selector select {
+  min-width: 420px;
+  flex: 1 1 420px;
+}
+
+.faltas__layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.faltas__historial-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faltas__historial-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid var(--borde);
+  border-radius: 7px;
+  background: #fff;
+  color: var(--texto);
+  text-align: left;
+  cursor: pointer;
+}
+
+.faltas__historial-item:hover,
+.faltas__historial-item--activo {
+  border-color: var(--acento);
+  background: var(--acento-suave);
+}
+
+.faltas__historial-item span {
+  color: var(--tenue);
+  font-size: 11px;
+}
+
+.faltas__modulos {
+  min-width: 680px;
+  margin-top: 14px;
+}
+
+.faltas__nombre {
+  width: 100%;
+  min-width: 180px;
+}
+
+.faltas__horas {
+  width: 84px;
+  text-align: right;
+}
+
+.faltas__modulo-cabecera {
+  text-align: center;
+  border-left: 1px solid #cfdae5;
+}
+
+.faltas__modulos td .tenue {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+}
+
+@media (max-width: 1000px) {
+  .faltas__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
 .faltas__ajustes .formulario {
   margin-top: 12px;
 }
@@ -4505,10 +4597,6 @@ a:focus-visible {
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
-}
-
-.faltas__tabla {
-  min-width: 720px;
 }
 
 .faltas__tabla th,

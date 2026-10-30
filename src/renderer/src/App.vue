@@ -224,6 +224,9 @@ async function importarNormativa(evento: Event): Promise<void> {
           <RouterLink to="/plantillas" class="menu__enlace" @click="cerrarMenuGlobal">
             Plantillas
           </RouterLink>
+          <RouterLink to="/faltas" class="menu__enlace" @click="cerrarMenuGlobal">
+            Control de faltas
+          </RouterLink>
           <RouterLink to="/backups" class="menu__enlace" @click="cerrarMenuGlobal">
             Copias de seguridad
           </RouterLink>

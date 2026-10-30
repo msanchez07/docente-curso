@@ -187,11 +187,16 @@ const api: Api = {
     exportarCsv: (grupoId) => ipcRenderer.invoke(CANALES.informesCsv, grupoId)
   },
   faltas: {
-    obtener: (grupoClaseId) => ipcRenderer.invoke(CANALES.faltasObtener, grupoClaseId),
-    guardarAjustes: (grupoClaseId, ajustes) =>
-      ipcRenderer.invoke(CANALES.faltasGuardarAjustes, grupoClaseId, ajustes),
-    guardarFilas: (grupoClaseId, filas) =>
-      ipcRenderer.invoke(CANALES.faltasGuardarFilas, grupoClaseId, filas)
+    cursos: () => ipcRenderer.invoke(CANALES.faltasCursos),
+    obtenerCurso: (clave) => ipcRenderer.invoke(CANALES.faltasObtenerCurso, clave),
+    guardarModulo: (grupoClaseId, nombreInforme, horas) =>
+      ipcRenderer.invoke(CANALES.faltasGuardarModulo, grupoClaseId, nombreInforme, horas),
+    guardarAjustes: (clave, limite, incluirJustificadas) =>
+      ipcRenderer.invoke(CANALES.faltasGuardarAjustes, clave, limite, incluirJustificadas),
+    listarInformes: (clave) => ipcRenderer.invoke(CANALES.faltasListarInformes, clave),
+    obtenerInforme: (id) => ipcRenderer.invoke(CANALES.faltasObtenerInforme, id),
+    importarInforme: (clave, archivo, datos) =>
+      ipcRenderer.invoke(CANALES.faltasImportarInforme, clave, archivo, datos)
   },
   backup: {
     estado: () => ipcRenderer.invoke(CANALES.backupEstado),
