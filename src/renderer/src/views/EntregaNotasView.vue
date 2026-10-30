@@ -225,7 +225,7 @@ async function guardar(): Promise<void> {
       <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
       <p v-if="errorGuardado" class="aviso aviso--error" role="alert">{{ errorGuardado }}</p>
 
-      <div class="tarjeta">
+      <div class="tarjeta entrega-notas__tarjeta-compacta">
         <div class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
             <h3>Rúbrica</h3>
@@ -260,7 +260,7 @@ async function guardar(): Promise<void> {
         </p>
       </div>
 
-      <div class="tarjeta">
+      <div class="tarjeta entrega-notas__tarjeta-compacta">
         <div class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
             <h3>Notas por alumno</h3>
@@ -316,7 +316,7 @@ async function guardar(): Promise<void> {
                 <td>
                   <textarea
                     v-model="fila.observaciones"
-                    rows="2"
+                    rows="1"
                     placeholder="Observaciones, correcciones, acuerdos…"
                     :disabled="bloqueada"
                     aria-label="Anotaciones de la entrega"
@@ -326,21 +326,6 @@ async function guardar(): Promise<void> {
             </tbody>
           </table>
         </div>
-      </div>
-
-      <div class="barra">
-        <span class="tenue">
-          Las notas se guardan por entrega y alimentan la categoría y la avaluación.
-        </span>
-        <span class="barra__espacio"></span>
-        <button
-          class="boton boton--principal"
-          type="button"
-          :disabled="guardando || bloqueada || filas.length === 0"
-          @click="guardar"
-        >
-          {{ guardando ? 'Guardando…' : 'Guardar notas' }}
-        </button>
       </div>
     </template>
   </section>

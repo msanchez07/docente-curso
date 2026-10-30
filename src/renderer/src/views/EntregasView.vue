@@ -98,13 +98,16 @@ const resumen = computed(() => {
   }
 })
 
+const PALETA_CATEGORIAS = ['#2563eb', '#d98a2b', '#067647', '#7c3aed', '#be185d', '#0891b2']
+
 const secciones = computed(() => {
   const categorias = criterios.value?.categorias ?? []
   const resultado = categorias
-    .map((categoria) => ({
+    .map((categoria, indice) => ({
       id: categoria.id,
       nombre: categoria.nombre,
       peso: categoria.peso,
+      color: PALETA_CATEGORIAS[indice % PALETA_CATEGORIAS.length],
       entregas: entregasFiltradas.value.filter((entrega) => entrega.categoria_id === categoria.id)
     }))
     .filter((seccion) => seccion.entregas.length > 0)
@@ -118,6 +121,7 @@ const secciones = computed(() => {
       id: 'sin-categoria',
       nombre: 'Sin categoría',
       peso: 0,
+      color: '#98a2b3',
       entregas: huerfanas
     })
   }
@@ -575,10 +579,12 @@ async function confirmarBloqueo(): Promise<void> {
                 </tr>
               </thead>
               <tbody v-for="seccion in secciones" :key="seccion.id">
-                <tr class="entregas-tabla__grupo">
+                <tr class="entregas-tabla__grupo" :style="{ '--color-grupo': seccion.color }">
                   <td colspan="5">
                     <div class="entregas-tabla__grupo-contenido">
-                      <span class="entregas-tabla__grupo-nombre">{{ seccion.nombre }}</span>
+                      <span class="entregas-tabla__grupo-nombre" :style="{ color: seccion.color }">
+                        {{ seccion.nombre }}
+                      </span>
                       <span class="tenue">
                         {{ seccion.peso > 0 ? `${seccion.peso} % de la nota · ` : '' }}
                         {{ seccion.entregas.length }}

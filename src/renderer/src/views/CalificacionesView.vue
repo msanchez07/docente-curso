@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
+import SelectButton from '@renderer/components/SelectButton.vue'
 import type {
   AvaluacionCalificacion,
   FilaCalificacionClase,
@@ -21,10 +22,7 @@ const cargando = ref(true)
 const error = ref<string | null>(null)
 const busqueda = ref('')
 const seleccionadoId = ref<number | null>(null)
-const valores = ref<Record<number, number | ''>>({})
-const observaciones = ref<Record<number, string>>({})
-const guardando = ref(false)
-const desbloqueando = ref(false)
+const avaluacionActiva = ref('')
 const exportandoInforme = ref(false)
 const errorGuardado = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
@@ -61,83 +59,39 @@ const filaSeleccionada = computed<FilaCalificacionClase | null>(() => {
   )
 })
 
-const entregasSeleccionadas = computed(() =>
-  filaSeleccionada.value
-    ? filaSeleccionada.value.avaluaciones.flatMap((avaluacion) =>
-        avaluacion.categorias.flatMap((categoria) => categoria.entregas)
-      )
-    : []
-)
-
-const hayEditables = computed(() =>
-  entregasSeleccionadas.value.some((entrega) => !entrega.bloqueada)
-)
-
-const entregasBloqueadas = computed(() => [
-  ...new Set(
-    entregasSeleccionadas.value
-      .filter((entrega) => entrega.bloqueada)
-      .map((entrega) => entrega.entregaId)
+const avaluacionSeleccionada = computed<AvaluacionCalificacion | null>(() => {
+  const fila = filaSeleccionada.value
+  if (!fila) return null
+  return (
+    fila.avaluaciones.find((avaluacion) => avaluacion.avaluacionId === avaluacionActiva.value) ??
+    fila.avaluaciones[0] ??
+    null
   )
-])
+})
+
+const opcionesAvaluaciones = computed(
+  () =>
+    filaSeleccionada.value?.avaluaciones.map((avaluacion) => ({
+      value: avaluacion.avaluacionId,
+      label: `${avaluacion.nombre} · ${formato(avaluacion.nota)}`
+    })) ?? []
+)
 
 const rasSuperados = computed(
   () => filaSeleccionada.value?.ras.filter((ra) => ra.superado).length ?? 0
 )
 
-const hayCambiosNotas = computed(() => {
-  if (!filaSeleccionada.value) return false
-  for (const avaluacion of filaSeleccionada.value.avaluaciones) {
-    for (const categoria of avaluacion.categorias) {
-      for (const entrega of categoria.entregas) {
-        if (entrega.bloqueada) continue
-        const valor = valores.value[entrega.entregaId]
-        const nota = valor === '' || valor === undefined ? null : Number(valor)
-        const observacionesActual = (observaciones.value[entrega.entregaId] ?? '').trim() || null
-        if (nota !== entrega.nota || observacionesActual !== entrega.observaciones) {
-          return true
-        }
-      }
-    }
-  }
-  return false
-})
-
 function formato(nota: number | null): string {
   return nota === null ? '—' : nota.toFixed(2).replace('.', ',')
-}
-
-function irANotas(): void {
-  const input = document.querySelector<HTMLInputElement>(
-    '.calificaciones__nota input:not(:disabled)'
-  )
-  if (!input) return
-  input.scrollIntoView({ behavior: 'smooth', block: 'center' })
-  input.focus()
 }
 
 function estado(fila: FilaCalificacionClase): string {
   return fila.aprobado ? 'Apto' : fila.vaAConvocatoria ? 'A convocatoria' : 'No apto'
 }
 
-function cargarFormulario(fila: FilaCalificacionClase): void {
-  const mapa: Record<number, number | ''> = {}
-  const textos: Record<number, string> = {}
-  for (const avaluacion of fila.avaluaciones) {
-    for (const categoria of avaluacion.categorias) {
-      for (const entrega of categoria.entregas) {
-        mapa[entrega.entregaId] = entrega.nota ?? ''
-        textos[entrega.entregaId] = entrega.observaciones ?? ''
-      }
-    }
-  }
-  valores.value = mapa
-  observaciones.value = textos
-}
-
 function seleccionar(fila: FilaCalificacionClase): void {
   seleccionadoId.value = fila.alumno.id
-  cargarFormulario(fila)
+  avaluacionActiva.value = fila.avaluaciones[0]?.avaluacionId ?? ''
   mensaje.value = null
   errorGuardado.value = null
   correoCopiado.value = false
@@ -192,7 +146,7 @@ async function cargar(): Promise<void> {
       resumen.value.alumnos[0] ??
       null
     seleccionadoId.value = fila?.alumno.id ?? null
-    if (fila) cargarFormulario(fila)
+    avaluacionActiva.value = fila?.avaluaciones[0]?.avaluacionId ?? ''
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -224,54 +178,6 @@ async function exportarInformeAlumno(): Promise<void> {
     errorGuardado.value = (e as Error).message ?? String(e)
   } finally {
     exportandoInforme.value = false
-  }
-}
-
-async function desbloquearEntregas(ids = entregasBloqueadas.value): Promise<void> {
-  if (ids.length === 0) return
-  desbloqueando.value = true
-  errorGuardado.value = null
-  mensaje.value = null
-  try {
-    for (const entregaId of ids) {
-      await window.api.entregasClase.bloquear(entregaId, false)
-    }
-    mensaje.value = 'Entregas desbloqueadas. Ya puedes editar las notas.'
-    await cargar()
-  } catch (e) {
-    errorGuardado.value = (e as Error).message ?? String(e)
-  } finally {
-    desbloqueando.value = false
-  }
-}
-
-async function guardar(): Promise<void> {
-  if (!filaSeleccionada.value || !grupo.value) return
-  guardando.value = true
-  errorGuardado.value = null
-  mensaje.value = null
-  try {
-    const notas = filaSeleccionada.value.avaluaciones.flatMap((avaluacion) =>
-      avaluacion.categorias.flatMap((categoria) =>
-        categoria.entregas
-          .filter((entrega) => !entrega.bloqueada)
-          .map((entrega) => {
-            const valor = valores.value[entrega.entregaId]
-            return {
-              entregaId: entrega.entregaId,
-              nota: valor === '' || valor === undefined ? null : Number(valor),
-              observaciones: (observaciones.value[entrega.entregaId] ?? '').trim() || null
-            }
-          })
-      )
-    )
-    await window.api.notasClase.guardar(grupo.value.id, filaSeleccionada.value.alumno.id, notas)
-    mensaje.value = 'Notas y anotaciones guardadas.'
-    await cargar()
-  } catch (e) {
-    errorGuardado.value = (e as Error).message ?? String(e)
-  } finally {
-    guardando.value = false
   }
 }
 
@@ -361,7 +267,7 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
 
         <section v-if="filaSeleccionada" class="calificaciones__detalle">
           <header class="tarjeta calificaciones__detalle-cabecera">
-            <div>
+            <div class="calificaciones__detalle-info">
               <h3>
                 {{ filaSeleccionada.alumno.apellidos }},
                 {{ filaSeleccionada.alumno.nombre }}
@@ -397,29 +303,123 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
               <span :class="filaSeleccionada.aprobado ? 'nota-aprobado' : 'nota-suspendido'">
                 {{ estado(filaSeleccionada) }}
               </span>
-              <button class="boton boton--sutil" type="button" @click="irANotas">
-                Editar notas
-              </button>
+            </div>
+            <div class="calificaciones__detalle-acciones">
               <button
-                class="boton boton--sutil"
+                class="calificaciones__accion calificaciones__accion--pdf"
                 type="button"
                 :disabled="exportandoInforme"
                 @click="exportarInformeAlumno"
               >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                  <path d="M14 2v6h6" />
+                  <path d="M9 13h6" />
+                  <path d="M9 17h4" />
+                </svg>
                 {{ exportandoInforme ? 'Generando…' : 'Informe PDF' }}
               </button>
               <RouterLink
-                class="boton boton--sutil"
+                class="calificaciones__accion calificaciones__accion--informe"
                 :to="{
                   name: 'informes',
                   params: { grupoId: grupo?.id },
                   query: { alumno: filaSeleccionada.alumno.id }
                 }"
               >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
                 Ver informe
               </RouterLink>
             </div>
           </header>
+
+          <div v-if="opcionesAvaluaciones.length > 0" class="calificaciones__tabs">
+            <SelectButton
+              v-model="avaluacionActiva"
+              :opciones="opcionesAvaluaciones"
+              aria-label="Evaluación"
+              compacto
+            />
+          </div>
+
+          <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
+          <p v-if="errorGuardado" class="aviso aviso--error" role="alert">
+            {{ errorGuardado }}
+          </p>
+
+          <section v-if="avaluacionSeleccionada" class="tarjeta calificaciones__avaluacion">
+            <header class="calificaciones__avaluacion-cabecera">
+              <div>
+                <h3>{{ avaluacionSeleccionada.nombre }}</h3>
+                <p class="tenue">{{ motivoAvaluacion(avaluacionSeleccionada) }}</p>
+              </div>
+              <strong
+                class="calificaciones__nota-avaluacion"
+                :class="avaluacionSeleccionada.suspensa ? 'nota-suspendido' : ''"
+              >
+                {{ formato(avaluacionSeleccionada.nota) }}
+              </strong>
+            </header>
+
+            <div v-if="avaluacionSeleccionada.categorias.length === 0" class="tenue">
+              Sin entregas en esta evaluación.
+            </div>
+
+            <div
+              v-for="categoria in avaluacionSeleccionada.categorias"
+              :key="categoria.categoriaId"
+              class="calificaciones__categoria"
+            >
+              <header class="calificaciones__categoria-cabecera">
+                <span class="chip">{{ categoria.nombre }} · {{ categoria.peso }} %</span>
+                <span class="tenue">Media {{ formato(categoria.media) }}</span>
+                <span v-if="categoria.suspensa" class="chip chip--aviso">suspensa</span>
+              </header>
+
+              <div class="calificaciones__entregas">
+                <div
+                  v-for="entrega in categoria.entregas"
+                  :key="entrega.entregaId"
+                  class="calificaciones__entrega"
+                >
+                  <div class="calificaciones__entrega-info">
+                    <strong>{{ entrega.titulo }}</strong>
+                    <span class="calificaciones__entrega-chips">
+                      <span v-if="entrega.bloqueada" class="chip chip--aviso">bloqueada</span>
+                      <span v-if="entrega.suspensa" class="chip chip--aviso">suspensa</span>
+                    </span>
+                  </div>
+                  <div class="calificaciones__nota calificaciones__nota--lectura">
+                    <span class="tenue">Nota</span>
+                    <strong>{{ formato(entrega.nota) }}</strong>
+                  </div>
+                  <div class="calificaciones__anotacion calificaciones__anotacion--lectura">
+                    <span class="tenue">Anotaciones</span>
+                    <span>{{ entrega.observaciones || '—' }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section v-if="filaSeleccionada.ras.length > 0" class="tarjeta calificaciones__ra">
             <header class="calificaciones__avaluacion-cabecera">
@@ -463,124 +463,6 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
               </div>
             </div>
           </section>
-
-          <div v-if="entregasBloqueadas.length > 0" class="aviso aviso--aviso">
-            <span>
-              {{ entregasBloqueadas.length }}
-              {{ entregasBloqueadas.length === 1 ? 'entrega bloqueada' : 'entregas bloqueadas' }}.
-              Las notas de esas entregas no se pueden cambiar hasta desbloquearlas.
-            </span>
-            <button
-              class="boton boton--sutil"
-              type="button"
-              :disabled="desbloqueando"
-              @click="desbloquearEntregas()"
-            >
-              {{ desbloqueando ? 'Desbloqueando…' : 'Desbloquear entregas' }}
-            </button>
-          </div>
-          <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
-          <p v-if="errorGuardado" class="aviso aviso--error" role="alert">
-            {{ errorGuardado }}
-          </p>
-
-          <section
-            v-for="avaluacion in filaSeleccionada.avaluaciones"
-            :key="avaluacion.avaluacionId"
-            class="tarjeta calificaciones__avaluacion"
-          >
-            <header class="calificaciones__avaluacion-cabecera">
-              <div>
-                <h3>{{ avaluacion.nombre }}</h3>
-                <p class="tenue">{{ motivoAvaluacion(avaluacion) }}</p>
-              </div>
-              <strong
-                class="calificaciones__nota-avaluacion"
-                :class="avaluacion.suspensa ? 'nota-suspendido' : ''"
-              >
-                {{ formato(avaluacion.nota) }}
-              </strong>
-            </header>
-
-            <div v-if="avaluacion.categorias.length === 0" class="tenue">
-              Sin entregas en esta avaluación.
-            </div>
-
-            <div
-              v-for="categoria in avaluacion.categorias"
-              :key="categoria.categoriaId"
-              class="calificaciones__categoria"
-            >
-              <header class="calificaciones__categoria-cabecera">
-                <span class="chip">{{ categoria.nombre }} · {{ categoria.peso }} %</span>
-                <span class="tenue">Media {{ formato(categoria.media) }}</span>
-                <span v-if="categoria.suspensa" class="chip chip--aviso">suspensa</span>
-              </header>
-
-              <div class="calificaciones__entregas">
-                <div
-                  v-for="entrega in categoria.entregas"
-                  :key="entrega.entregaId"
-                  class="calificaciones__entrega"
-                >
-                  <div class="calificaciones__entrega-info">
-                    <strong>{{ entrega.titulo }}</strong>
-                    <span class="calificaciones__entrega-chips">
-                      <span v-if="entrega.bloqueada" class="chip chip--aviso">bloqueada</span>
-                      <span v-if="entrega.suspensa" class="chip chip--aviso">suspensa</span>
-                      <button
-                        v-if="entrega.bloqueada"
-                        class="boton boton--sutil"
-                        type="button"
-                        :disabled="desbloqueando"
-                        @click="desbloquearEntregas([entrega.entregaId])"
-                      >
-                        Desbloquear
-                      </button>
-                    </span>
-                  </div>
-                  <label class="calificaciones__nota">
-                    <span class="tenue">Nota</span>
-                    <input
-                      v-model.number="valores[entrega.entregaId]"
-                      type="number"
-                      min="0"
-                      max="10"
-                      step="0.01"
-                      inputmode="decimal"
-                      :disabled="entrega.bloqueada"
-                      :aria-label="`Nota de ${entrega.titulo}`"
-                    />
-                  </label>
-                  <label class="calificaciones__anotacion">
-                    <span class="tenue">Anotaciones</span>
-                    <textarea
-                      v-model="observaciones[entrega.entregaId]"
-                      rows="2"
-                      placeholder="Observaciones, correcciones…"
-                      :disabled="entrega.bloqueada"
-                      :aria-label="`Anotaciones de ${entrega.titulo}`"
-                    ></textarea>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <div v-if="hayCambiosNotas || guardando" class="calificaciones__acciones">
-            <span class="tenue">
-              Las notas se guardan por alumno; las entregas bloqueadas no se modifican.
-            </span>
-            <span class="barra__espacio"></span>
-            <button
-              class="boton boton--principal"
-              type="button"
-              :disabled="guardando || !hayEditables"
-              @click="guardar"
-            >
-              {{ guardando ? 'Guardando…' : 'Guardar notas del alumno' }}
-            </button>
-          </div>
         </section>
       </div>
     </template>

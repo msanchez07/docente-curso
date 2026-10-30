@@ -250,14 +250,6 @@ const celdasAgenda = computed(() => {
   })
 })
 
-const unidadesAgendaMes = computed(() => {
-  const ids = new Set<number>()
-  for (const celda of celdasAgenda.value) {
-    for (const unidad of celda.unidades) ids.add(unidad.id)
-  }
-  return unidades.value.filter((unidad) => ids.has(unidad.id))
-})
-
 function tituloCelda(celda: {
   unidades: UnidadProgramacion[]
   items: ItemAgenda[]
@@ -1035,22 +1027,6 @@ watch(id, cargar)
                 </span>
                 <span>
                   <i class="agenda-mini__muestra agenda-mini__muestra--no-lectivo"></i>No lectivo
-                </span>
-              </div>
-              <div
-                v-if="unidadesAgendaMes.length > 0"
-                class="agenda-mini__unidades-leyenda"
-                aria-label="Unidades del mes"
-              >
-                <span class="agenda-mini__unidades-titulo">Unidades</span>
-                <span
-                  v-for="unidad in unidadesAgendaMes"
-                  :key="unidad.id"
-                  class="agenda-mini__unidad-leyenda"
-                  :style="{ color: colorUnidad(unidad) }"
-                  :title="unidad.nombre"
-                >
-                  {{ unidad.codigo ?? 'UD' }}
                 </span>
               </div>
             </div>

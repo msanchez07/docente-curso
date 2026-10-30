@@ -72,6 +72,18 @@ function estado(faltas: number, modulo: ConfigModuloFaltas): string {
   return 'faltas__estado--ok'
 }
 
+function colorPorcentaje(
+  faltas: number,
+  modulo: ConfigModuloFaltas
+): { fondo: string; color: string; borde: string } {
+  const valor = porcentaje(faltas, modulo)
+  const tope = informe.value?.datos.limite ?? limite.value
+  if (valor >= tope) return { fondo: '#fef3f2', color: '#b42318', borde: '#fecdca' }
+  if (valor >= tope * 0.66) return { fondo: '#fffaeb', color: '#b54708', borde: '#f2d9a4' }
+  if (valor >= tope * 0.33) return { fondo: '#eff6ff', color: '#1d4ed8', borde: '#bfdbfe' }
+  return { fondo: '#ecfdf3', color: '#067647', borde: '#b7e4c7' }
+}
+
 function textoEstado(faltas: number, modulo: ConfigModuloFaltas): string {
   const clase = estado(faltas, modulo)
   if (clase === 'faltas__estado--peligro') return 'Pérdida'
@@ -253,14 +265,17 @@ function imprimir(): void {
       const celdas = modulos
         .map((modulo) => {
           const faltas = Number(alumno.faltas[modulo.moduloCodigo] ?? 0)
-          return `<td>${faltas}</td><td>${porcentaje(faltas, modulo)} %</td>`
+          const valor = porcentaje(faltas, modulo)
+          const color = colorPorcentaje(faltas, modulo)
+          const estilo = `background:${color.fondo};color:${color.color};font-weight:600;-webkit-print-color-adjust:exact;print-color-adjust:exact;`
+          return `<td style="${estilo}">${faltas}</td><td style="${estilo}">${valor} %</td>`
         })
         .join('')
       return `<tr><td>${nombreAlumno(alumno.alumnoId)}</td>${celdas}</tr>`
     })
     .join('')
   const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Faltas · ${nombreCurso.value}</title>
-  <style>@page{size:A4 landscape;margin:12mm}body{font:10px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d2939}h1{font-size:20px;margin:0 0 4px}p{margin:0 0 10px;color:#667085}table{width:100%;border-collapse:collapse}th,td{padding:5px;border:1px solid #dbe5ee;text-align:center}th{background:#eef4f8;color:#36536b;font-size:8px;text-transform:uppercase}td:first-child{text-align:left;font-weight:600}</style></head><body>
+  <style>@page{size:A4 landscape;margin:12mm}body{font:10px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d2939;-webkit-print-color-adjust:exact;print-color-adjust:exact}h1{font-size:20px;margin:0 0 4px}p{margin:0 0 10px;color:#667085}table{width:100%;border-collapse:collapse;-webkit-print-color-adjust:exact;print-color-adjust:exact}th,td{padding:5px;border:1px solid #dbe5ee;text-align:center}th{background:#eef4f8;color:#36536b;font-size:8px;text-transform:uppercase}td:first-child{text-align:left;font-weight:600}</style></head><body>
   <h1>Control de faltas</h1><p>${nombreCurso.value} · ${curso.value.cursoAcademicoNombre} · ${informe.value.archivo} · límite ${informe.value.datos.limite} %</p>
   <table><thead><tr><th rowspan="2">Alumno/a</th>${cabeceras}</tr><tr>${subcabeceras}</tr></thead><tbody>${filas}</tbody></table>
   </body></html>`
