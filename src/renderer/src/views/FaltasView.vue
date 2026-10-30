@@ -2,7 +2,6 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
-import { etiquetaModalidad } from '@shared/grupos'
 import { extraerFaltasPdf } from '@renderer/utils/faltas-pdf'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import type { AjustesFaltas, DatosFaltas, FilaFaltas, GrupoClase } from '@shared/tipos'
@@ -199,10 +198,7 @@ function imprimir(): void {
     <template v-if="grupo && datos">
       <header class="vista__cabecera">
         <h2>Control de faltas</h2>
-        <p class="tenue">
-          {{ grupo.nombre }} · {{ etiquetaModalidad(grupo.modalidad) }} ·
-          {{ grupo.curso_academico_nombre }}
-        </p>
+        <p class="tenue">{{ grupo.nombre }} · Curso {{ grupo.curso_academico_nombre }}</p>
       </header>
 
       <section class="tarjeta faltas__ajustes">

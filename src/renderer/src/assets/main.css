@@ -4507,8 +4507,21 @@ a:focus-visible {
   flex-wrap: wrap;
 }
 
+.faltas__tabla {
+  min-width: 720px;
+}
+
+.faltas__tabla th,
+.faltas__tabla td {
+  white-space: nowrap;
+}
+
+.faltas__estado {
+  white-space: nowrap;
+}
+
 .faltas__input {
-  width: 88px;
+  width: 72px;
   padding: 5px 7px;
   text-align: right;
   font-variant-numeric: tabular-nums;
