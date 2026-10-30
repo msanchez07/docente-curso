@@ -380,36 +380,33 @@ function imprimir(): void {
             </div>
           </div>
 
-          <div class="faltas__modulos-cabecera" aria-hidden="true">
-            <span>Módulo</span>
-            <span>Nombre de columna en ITACA</span>
-            <span>Horas</span>
-          </div>
           <div class="faltas__modulos-lista">
             <article v-for="modulo in modulos" :key="modulo.moduloCodigo" class="faltas__modulo">
               <div class="faltas__modulo-info">
                 <strong>{{ modulo.nombre }}</strong>
                 <span class="monospace">{{ modulo.moduloCodigo }}</span>
               </div>
-              <label class="faltas__campo faltas__campo--nombre">
-                <span class="faltas__campo-etiqueta">Nombre en el PDF</span>
-                <input
-                  v-model="modulo.nombreInforme"
-                  class="faltas__nombre"
-                  placeholder="Nombre de la columna"
-                  aria-label="Nombre de columna en ITACA"
-                />
-              </label>
-              <label class="faltas__campo faltas__campo--horas">
-                <span class="faltas__campo-etiqueta">Horas</span>
-                <input
-                  v-model.number="modulo.horas"
-                  class="faltas__horas"
-                  type="number"
-                  min="1"
-                  aria-label="Horas del módulo"
-                />
-              </label>
+              <div class="faltas__modulo-campos">
+                <label class="faltas__campo faltas__campo--nombre">
+                  <span class="faltas__campo-etiqueta">Nombre en el PDF</span>
+                  <input
+                    v-model="modulo.nombreInforme"
+                    class="faltas__nombre"
+                    placeholder="Nombre de la columna"
+                    aria-label="Nombre de columna en ITACA"
+                  />
+                </label>
+                <label class="faltas__campo faltas__campo--horas">
+                  <span class="faltas__campo-etiqueta">Horas</span>
+                  <input
+                    v-model.number="modulo.horas"
+                    class="faltas__horas"
+                    type="number"
+                    min="1"
+                    aria-label="Horas del módulo"
+                  />
+                </label>
+              </div>
             </article>
           </div>
         </section>
