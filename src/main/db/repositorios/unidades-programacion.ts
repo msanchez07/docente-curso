@@ -19,7 +19,7 @@ import type {
 import { parsearUnidadesProgramacion } from '@shared/importar-unidades'
 import { obtenerGrupoClase } from './grupos-clase'
 
-const CAMPOS = `id, grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, peso,
+const CAMPOS = `id, grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, avaluacion_id, peso,
                 categorias_json, requisitos_json, contenidos, observaciones, creado_en, actualizado_en`
 const CAMPOS_SESION = `id, grupo_clase_id, unidad_id, fecha, hora, orden, contenido,
                        desviacion, observaciones, creado_en, actualizado_en`
@@ -30,6 +30,7 @@ interface DatosUnidad {
   nombre: string
   fecha_inicio: string | null
   fecha_fin: string | null
+  avaluacion_id: string | null
   peso: number
   categorias: CategoriaEvaluacion[]
   requisitos: RequisitoEvaluacion[]
@@ -141,6 +142,7 @@ function normalizar(db: Bd, grupoClaseId: number, entrada: UnidadProgramacionEnt
 
   return {
     codigo: entrada.codigo?.trim() || null,
+    avaluacion_id: entrada.avaluacion_id?.trim() || null,
     nombre,
     fecha_inicio: fechaInicio,
     fecha_fin: fechaFin,
@@ -261,8 +263,8 @@ export function crearUnidadProgramacion(
   const datos = normalizar(db, grupoClaseId, entrada)
   const insertar = db.prepare(
     `INSERT INTO unidades_programacion
-       (grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, peso, categorias_json, requisitos_json, contenidos, observaciones)
-     VALUES (@grupo_clase_id, @codigo, @nombre, @fecha_inicio, @fecha_fin, @peso, @categorias_json, @requisitos_json, @contenidos, @observaciones)`
+       (grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, avaluacion_id, peso, categorias_json, requisitos_json, contenidos, observaciones)
+     VALUES (@grupo_clase_id, @codigo, @nombre, @fecha_inicio, @fecha_fin, @avaluacion_id, @peso, @categorias_json, @requisitos_json, @contenidos, @observaciones)`
   )
   let id = 0
   db.transaction(() => {
@@ -291,7 +293,8 @@ export function actualizarUnidadProgramacion(
   const actualizar = db.prepare(
     `UPDATE unidades_programacion
         SET codigo = @codigo, nombre = @nombre, fecha_inicio = @fecha_inicio,
-            fecha_fin = @fecha_fin, peso = @peso, categorias_json = @categorias_json,
+            fecha_fin = @fecha_fin, avaluacion_id = @avaluacion_id, peso = @peso,
+            categorias_json = @categorias_json,
             requisitos_json = @requisitos_json, contenidos = @contenidos,
             observaciones = @observaciones, actualizado_en = datetime('now')
       WHERE id = @id`

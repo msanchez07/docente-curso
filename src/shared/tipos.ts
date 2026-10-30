@@ -343,8 +343,17 @@ export interface RaCalificacion {
   }[]
 }
 
+export interface AvaluacionUnidadCalificacion {
+  avaluacionId: string
+  nombre: string
+  peso: number
+  nota: number | null
+  suspensa: boolean
+}
+
 export interface UnidadCalificacion {
   unidadId: number
+  avaluacionId: string | null
   codigo: string | null
   nombre: string
   peso: number
@@ -356,8 +365,10 @@ export interface UnidadCalificacion {
 export interface FilaCalificacionClase {
   alumno: AlumnoClase
   avaluaciones: AvaluacionCalificacion[]
-  /** Cálculo por unidades; vacío en modo trimestres. */
+  /** Cálculo por unidades. */
   unidades: UnidadCalificacion[]
+  /** Nota de cada trimestre agrupando sus unidades. */
+  trimestres: AvaluacionUnidadCalificacion[]
   /** Resultados de aprendizaje del módulo, con su nota y estado. */
   ras: RaCalificacion[]
   /** Códigos de los RA que el alumno todavía no tiene superados. */
@@ -631,7 +642,9 @@ export interface UnidadProgramacion {
   nombre: string
   fecha_inicio: string | null
   fecha_fin: string | null
-  /** Peso de la unidad en la nota final. */
+  /** Evaluación/trimestre al que pertenece la unidad. */
+  avaluacion_id: string | null
+  /** Peso de la unidad dentro de su evaluación. */
   peso: number
   /** Plantilla de calificación propia de la unidad. */
   categorias: CategoriaEvaluacion[]
@@ -653,6 +666,7 @@ export interface UnidadProgramacionEntrada {
   nombre: string
   fecha_inicio?: string | null
   fecha_fin?: string | null
+  avaluacion_id?: string | null
   peso?: number
   categorias?: CategoriaEvaluacion[]
   requisitos?: RequisitoEvaluacion[]

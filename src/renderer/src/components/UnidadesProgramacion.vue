@@ -10,6 +10,7 @@ import type {
   CriterioDisponible,
   CriterioUnidad,
   GrupoClase,
+  ModeloEvaluacion,
   UnidadProgramacion,
   UnidadProgramacionEntrada
 } from '@shared/tipos'
@@ -19,6 +20,7 @@ const emit = defineEmits<{ actualizado: [] }>()
 
 const unidades = ref<UnidadProgramacion[]>([])
 const criterios = ref<CriterioDisponible[]>([])
+const modelo = ref<ModeloEvaluacion | null>(null)
 const cargando = ref(true)
 const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
@@ -40,6 +42,7 @@ const form = reactive<UnidadProgramacionEntrada>({
   nombre: '',
   fecha_inicio: '',
   fecha_fin: '',
+  avaluacion_id: '',
   peso: 0,
   categorias: [],
   requisitos: [],
@@ -128,12 +131,14 @@ async function cargar(): Promise<void> {
   cargando.value = true
   error.value = null
   try {
-    const [lista, ce] = await Promise.all([
+    const [lista, ce, modeloGrupo] = await Promise.all([
       window.api.unidadesProgramacion.listar(props.grupo.id),
-      window.api.entregasClase.criterios(props.grupo.id)
+      window.api.entregasClase.criterios(props.grupo.id),
+      window.api.criterios.obtener(props.grupo.id)
     ])
     unidades.value = lista
     criterios.value = ce
+    modelo.value = modeloGrupo
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -149,6 +154,7 @@ function resetFormulario(): void {
   form.nombre = ''
   form.fecha_inicio = ''
   form.fecha_fin = ''
+  form.avaluacion_id = modelo.value?.avaluaciones[0]?.id ?? ''
   form.peso = 0
   form.categorias = []
   form.requisitos = REQUISITOS_POR_DEFECTO.map((requisito) => ({ ...requisito }))
@@ -216,6 +222,7 @@ function editar(unidad: UnidadProgramacion): void {
   form.nombre = unidad.nombre
   form.fecha_inicio = unidad.fecha_inicio ?? ''
   form.fecha_fin = unidad.fecha_fin ?? ''
+  form.avaluacion_id = unidad.avaluacion_id ?? modelo.value?.avaluaciones[0]?.id ?? ''
   form.peso = unidad.peso
   form.categorias = unidad.categorias.map((categoria) => ({ ...categoria }))
   form.requisitos =
@@ -304,9 +311,32 @@ function etiquetaRequisito(id: string): string {
   return ETIQUETAS_REQUISITO[id] ?? id
 }
 
+function nombreAvaluacion(id: string | null): string {
+  return (
+    modelo.value?.avaluaciones.find((avaluacion) => avaluacion.id === id)?.nombre ?? 'Sin trimestre'
+  )
+}
+
 function descripcionRequisito(id: string): string {
   return DESCRIPCIONES_REQUISITO[id] ?? ''
 }
+
+const avaluacionFormulario = computed(
+  () => form.avaluacion_id || modelo.value?.avaluaciones[0]?.id || ''
+)
+
+const totalPesosAvaluacion = computed(() =>
+  unidades.value.reduce((total, unidad) => {
+    const avaluacion =
+      editando.value?.id === unidad.id ? avaluacionFormulario.value : unidad.avaluacion_id
+    if (avaluacion !== avaluacionFormulario.value) return total
+    const peso =
+      editando.value?.id === unidad.id ? Number(form.peso) || 0 : Number(unidad.peso) || 0
+    return total + peso
+  }, 0)
+)
+
+const pesosAvaluacionOk = computed(() => Math.abs(totalPesosAvaluacion.value - 100) < 0.01)
 
 const sumaCategorias = computed(() =>
   (form.categorias ?? []).reduce((total, categoria) => total + (Number(categoria.peso) || 0), 0)
@@ -382,6 +412,10 @@ async function importarPlantillaCalificacion(evento: Event): Promise<void> {
 }
 
 async function guardar(): Promise<void> {
+  if (!pesosAvaluacionOk.value) {
+    error.value = `Los pesos de las unidades de este trimestre suman ${totalPesosAvaluacion.value} %; deben sumar exactamente 100 %.`
+    return
+  }
   guardando.value = true
   error.value = null
   mensaje.value = null
@@ -527,7 +561,19 @@ async function borrar(): Promise<void> {
           <input id="unidad-fin" v-model="form.fecha_fin" type="date" />
         </div>
         <div class="campo">
-          <label for="unidad-peso">Peso en la nota final (%)</label>
+          <label for="unidad-avaluacion">Trimestre / evaluación</label>
+          <select id="unidad-avaluacion" v-model="form.avaluacion_id">
+            <option
+              v-for="avaluacion in modelo?.avaluaciones ?? []"
+              :key="avaluacion.id"
+              :value="avaluacion.id"
+            >
+              {{ avaluacion.nombre }} · {{ avaluacion.peso }} % de la final
+            </option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="unidad-peso">Peso dentro del trimestre (%)</label>
           <input
             id="unidad-peso"
             v-model.number="form.peso"
@@ -536,6 +582,12 @@ async function borrar(): Promise<void> {
             max="100"
             step="0.01"
           />
+          <small
+            class="unidad__peso-total"
+            :class="pesosAvaluacionOk ? 'unidad__peso-total--ok' : 'unidad__peso-total--aviso'"
+          >
+            Total del trimestre: {{ totalPesosAvaluacion }} %
+          </small>
         </div>
         <div class="campo campo--ancho">
           <span class="campo__etiqueta">
@@ -786,7 +838,11 @@ async function borrar(): Promise<void> {
             <span v-else class="tenue">Sin criterios</span>
           </div>
           <div>
-            <span class="tenue">Peso en la nota final</span>
+            <span class="tenue">Trimestre</span>
+            <strong>{{ nombreAvaluacion(unidadActual.avaluacion_id) }}</strong>
+          </div>
+          <div>
+            <span class="tenue">Peso dentro del trimestre</span>
             <strong>{{ unidadActual.peso }} %</strong>
           </div>
           <div>

@@ -32,7 +32,7 @@ const descripcionModelo = computed(() => {
   if (!resumen.value) return ''
   const modelo = resumen.value.modelo
   if (modelo.modoCalificacion === 'unidades') {
-    return 'Cálculo por unidades didácticas · la nota final pondera el peso de cada unidad'
+    return 'Cálculo por unidades · cada trimestre pondera en la final y sus unidades ponderan dentro del trimestre'
   }
   const categorias = modelo.categorias.map((c) => `${c.nombre} ${c.peso} %`).join(' + ')
   const avaluaciones = modelo.avaluaciones.map((a) => `${a.peso} % ${a.nombre}`).join(' + ')
@@ -94,17 +94,10 @@ const opcionesAvaluaciones = computed(() => {
 })
 
 const formulaFinal = computed(() => {
-  if (modoUnidades.value) {
-    return (
-      filaSeleccionada.value?.unidades
-        .map((unidad) => `${unidad.codigo ?? unidad.nombre} ${unidad.peso} %`)
-        .join(' + ') ?? ''
-    )
-  }
   const modelo = resumen.value?.modelo
   if (!modelo) return ''
   return modelo.avaluaciones
-    .map((avaluacion) => `${avaluacion.peso} % ${avaluacion.nombre}`)
+    .map((avaluacion) => `${avaluacion.nombre} ${avaluacion.peso} %`)
     .join(' + ')
 })
 
@@ -112,6 +105,11 @@ function primeraPestana(fila: FilaCalificacionClase | null): string {
   if (!fila) return 'final'
   if (modoUnidades.value) return fila.unidades[0] ? `u:${fila.unidades[0].unidadId}` : 'final'
   return fila.avaluaciones[0]?.avaluacionId ?? 'final'
+}
+
+function irATrimestre(avaluacionId: string): void {
+  const unidad = filaSeleccionada.value?.unidades.find((item) => item.avaluacionId === avaluacionId)
+  if (unidad) avaluacionActiva.value = `u:${unidad.unidadId}`
 }
 
 const rasSuperados = computed(
@@ -424,7 +422,7 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
                 <p class="tenue">
                   {{
                     modoUnidades
-                      ? 'Calculada a partir del peso de las unidades y sus entregas.'
+                      ? 'Calculada ponderando los trimestres y, dentro de cada uno, sus unidades.'
                       : 'Calculada a partir de las evaluaciones y las entregas.'
                   }}
                 </p>
@@ -440,14 +438,14 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
             <div class="calificaciones__final-evaluaciones">
               <template v-if="modoUnidades">
                 <button
-                  v-for="unidad in filaSeleccionada.unidades"
-                  :key="unidad.unidadId"
+                  v-for="trimestre in filaSeleccionada.trimestres"
+                  :key="trimestre.avaluacionId"
                   class="calificaciones__final-evaluacion"
                   type="button"
-                  @click="avaluacionActiva = `u:${unidad.unidadId}`"
+                  @click="irATrimestre(trimestre.avaluacionId)"
                 >
-                  <span>{{ unidad.codigo ?? unidad.nombre }} · {{ unidad.peso }} %</span>
-                  <strong>{{ formato(unidad.nota) }}</strong>
+                  <span>{{ trimestre.nombre }} · {{ trimestre.peso }} %</span>
+                  <strong>{{ formato(trimestre.nota) }}</strong>
                 </button>
               </template>
               <template v-else>
@@ -469,7 +467,7 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
               <p class="tenue">
                 {{
                   modoUnidades
-                    ? 'Si alguna unidad no alcanza el mínimo, se recupera en la convocatoria ordinaria o, si procede, extraordinaria.'
+                    ? 'Cada trimestre pondera según su porcentaje. Dentro de cada trimestre, las unidades se ponderan al 100 %. Si una unidad no alcanza el mínimo, se recupera en ordinaria o extraordinaria.'
                     : 'Si hay evaluaciones suspensas, la nota se sustituye por la del examen de la convocatoria ordinaria o, si procede, extraordinaria.'
                 }}
               </p>

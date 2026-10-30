@@ -4606,6 +4606,21 @@ a:focus-visible {
   margin-bottom: 8px;
 }
 
+.unidad__peso-total {
+  display: block;
+  margin-top: 3px;
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.unidad__peso-total--ok {
+  color: var(--ok);
+}
+
+.unidad__peso-total--aviso {
+  color: var(--ambar);
+}
+
 .unidades__plantilla {
   padding: 10px;
   background: #fbfcfe;

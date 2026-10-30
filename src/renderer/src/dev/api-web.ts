@@ -508,6 +508,7 @@ function unidadesDeGrupo(grupoClaseId: number): UnidadProgramacion[] {
     .filter((unidad) => unidad.grupo_clase_id === grupoClaseId)
     .map((unidad) => ({
       ...unidad,
+      avaluacion_id: unidad.avaluacion_id ?? null,
       peso: unidad.peso ?? 0,
       categorias: unidad.categorias ?? [],
       requisitos: unidad.requisitos ?? [],
@@ -868,7 +869,8 @@ function escribirDemo(): void {
       nombre: 'Del entorno a los formularios',
       fecha_inicio: '2026-10-28',
       fecha_fin: '2026-11-17',
-      peso: 50,
+      avaluacion_id: 'AV1',
+      peso: 100,
       categorias: [
         { id: 'examenes', nombre: 'Exámenes', peso: 50 },
         { id: 'actividades', nombre: 'Actividades', peso: 50 }
@@ -889,7 +891,8 @@ function escribirDemo(): void {
       nombre: 'Persistencia, MVC y APIs',
       fecha_inicio: '2026-11-18',
       fecha_fin: '2026-12-20',
-      peso: 50,
+      avaluacion_id: 'AV2',
+      peso: 100,
       categorias: [
         { id: 'proyectos', nombre: 'Proyectos', peso: 60 },
         { id: 'actividades', nombre: 'Actividades', peso: 40 }
@@ -2617,6 +2620,7 @@ const api = {
         nombre,
         fecha_inicio: fechaInicio,
         fecha_fin: fechaFin,
+        avaluacion_id: entrada.avaluacion_id ?? null,
         peso: Number(entrada.peso) || 0,
         categorias: entrada.categorias ?? [],
         requisitos: entrada.requisitos ?? [],
@@ -2660,6 +2664,7 @@ const api = {
         nombre,
         fecha_inicio: fechaInicio,
         fecha_fin: fechaFin,
+        avaluacion_id: entrada.avaluacion_id ?? null,
         peso: Number(entrada.peso) || 0,
         categorias: entrada.categorias ?? [],
         requisitos: entrada.requisitos ?? [],
@@ -2707,6 +2712,7 @@ const api = {
           nombre: entrada.nombre,
           fecha_inicio: entrada.fecha_inicio ?? null,
           fecha_fin: entrada.fecha_fin ?? null,
+          avaluacion_id: entrada.avaluacion_id ?? null,
           peso: Number(entrada.peso) || 0,
           categorias: entrada.categorias ?? [],
           requisitos: entrada.requisitos ?? [],

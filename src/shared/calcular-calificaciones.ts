@@ -188,6 +188,7 @@ export function calcularResumenClase(
               )
       return {
         unidadId: unidad.id,
+        avaluacionId: unidad.avaluacion_id,
         codigo: unidad.codigo,
         nombre: unidad.nombre,
         peso: Number(unidad.peso) || 0,
@@ -198,11 +199,30 @@ export function calcularResumenClase(
     })
 
     const usaUnidades = modelo.modoCalificacion === 'unidades' && unidadesCalificadas.length > 0
+    const trimestres = modelo.avaluaciones.map((avaluacion) => {
+      const unidadesAvaluacion = unidadesCalificadas.filter(
+        (unidad) => unidad.avaluacionId === avaluacion.id
+      )
+      const nota = mediaPonderada(
+        unidadesAvaluacion
+          .filter((unidad) => unidad.nota !== null)
+          .map((unidad) => ({ peso: unidad.peso, valor: unidad.nota ?? 0 }))
+      )
+      return {
+        avaluacionId: avaluacion.id,
+        nombre: avaluacion.nombre,
+        peso: Number(avaluacion.peso) || 0,
+        nota,
+        suspensa:
+          unidadesAvaluacion.some((unidad) => unidad.suspensa) ||
+          (nota !== null && nota < minAvaluacion)
+      }
+    })
     const notaFinal = usaUnidades
       ? mediaPonderada(
-          unidadesCalificadas
-            .filter((unidad) => unidad.nota !== null)
-            .map((unidad) => ({ peso: unidad.peso, valor: unidad.nota ?? 0 }))
+          trimestres
+            .filter((trimestre) => trimestre.nota !== null)
+            .map((trimestre) => ({ peso: trimestre.peso, valor: trimestre.nota ?? 0 }))
         )
       : mediaPonderada(
           avaluaciones
@@ -274,6 +294,7 @@ export function calcularResumenClase(
       alumno,
       avaluaciones,
       unidades: unidadesCalificadas,
+      trimestres,
       ras,
       rasNoSuperados,
       todosRasSuperados,
