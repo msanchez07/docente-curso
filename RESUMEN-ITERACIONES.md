@@ -147,7 +147,7 @@ Vite/electron-vite + Vitest**.
 ### 2.9. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
-- Última migración aplicada: **v35**.
+- Última migración aplicada: **v36**.
   - v23: unidades y calendario escolar.
   - v24: horas de formación.
   - v25: varias sesiones por día (`hora`, `orden`).
@@ -161,6 +161,7 @@ Vite/electron-vite + Vitest**.
   - v33: plantilla de calificación propia por unidad (categorías e instrumentos).
   - v34: mínimos de la plantilla de calificación por unidad.
   - v35: trimestre/evaluación asociado a cada unidad.
+  - v36: secciones enunciado, problema y restricciones de cada entrega.
 - `dias_semana` y `tutorias_semana` se derivan del calendario cuando hay bloques, para que la
   programación, el resumen del grupo y el PDF sean coherentes.
 
@@ -211,7 +212,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **203 tests**, 32 archivos de test, build y smoke correctos.
+Estado actual: **204 tests**, 33 archivos de test, build y smoke correctos.
 
 ---
 

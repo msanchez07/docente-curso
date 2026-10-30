@@ -947,6 +947,12 @@ function escribirDemo(): void {
       grupo_clase_id: 1,
       titulo: 'Práctica 1: formulario PHP',
       descripcion: 'Formulario con validación y persistencia en sesión.',
+      enunciado:
+        'Crea un formulario PHP que valide los datos recibidos y conserve la información en sesión.',
+      problema:
+        'La clínica necesita registrar solicitudes de cita sin perder los datos entre pasos del formulario.',
+      restricciones:
+        'Entrega un único proyecto PHP. No uses frameworks externos. Incluye validación de campos obligatorios y un mensaje de error por campo.',
       tipo: 'practica',
       fecha_limite: '2026-11-06',
       rubrica:
@@ -964,6 +970,11 @@ function escribirDemo(): void {
       grupo_clase_id: 1,
       titulo: 'Examen AV1',
       descripcion: 'Prueba teórico-práctica de la primera evaluación.',
+      enunciado: 'Resuelve el supuesto práctico aplicando los contenidos de la primera evaluación.',
+      problema:
+        'El equipo debe justificar una solución técnica y demostrar que domina los conceptos del módulo.',
+      restricciones:
+        'Prueba individual. No se permite material adicional salvo el indicado por el docente. Duración máxima: una sesión.',
       tipo: 'examen',
       fecha_limite: '2026-11-19',
       rubrica:
@@ -981,6 +992,12 @@ function escribirDemo(): void {
       grupo_clase_id: 1,
       titulo: 'Proyecto: mini framework MVC',
       descripcion: 'Entrega del proyecto de la segunda evaluación.',
+      enunciado:
+        'Desarrolla un mini framework MVC funcional y documenta las decisiones de arquitectura.',
+      problema:
+        'La aplicación debe separar presentación, lógica y acceso a datos para poder mantenerla y ampliarla.',
+      restricciones:
+        'Arquitectura MVC obligatoria. Incluye documentación y una defensa individual. No se aceptan entregas fuera de plazo sin justificación.',
       tipo: 'proyecto',
       fecha_limite: '2026-12-18',
       rubrica:
@@ -1885,6 +1902,9 @@ const api = {
         grupo_clase_id: grupoClaseId,
         titulo: entrada.titulo.trim(),
         descripcion: entrada.descripcion?.trim() || null,
+        enunciado: entrada.enunciado?.trim() || '',
+        problema: entrada.problema?.trim() || '',
+        restricciones: entrada.restricciones?.trim() || '',
         tipo: entrada.tipo || 'tarea',
         fecha_limite: entrada.fecha_limite?.trim() || null,
         rubrica: entrada.rubrica?.trim() || null,
@@ -1941,6 +1961,9 @@ const api = {
               ...entrega,
               titulo: entrada.titulo.trim(),
               descripcion: entrada.descripcion?.trim() || null,
+              enunciado: entrada.enunciado?.trim() || '',
+              problema: entrada.problema?.trim() || '',
+              restricciones: entrada.restricciones?.trim() || '',
               tipo: entrada.tipo || 'tarea',
               fecha_limite: entrada.fecha_limite?.trim() || null,
               rubrica: entrada.rubrica?.trim() || null,

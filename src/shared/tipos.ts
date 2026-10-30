@@ -129,6 +129,12 @@ export interface EntregaClase {
   grupo_clase_id: number
   titulo: string
   descripcion: string | null
+  /** Texto principal de la ficha: qué debe hacer el alumnado. */
+  enunciado: string
+  /** Contexto y descripción del problema. */
+  problema: string
+  /** Condiciones y límites de la entrega. */
+  restricciones: string
   tipo: string
   fecha_limite: string | null
   /** Rúbrica libre: criterios, niveles y puntuaciones. */
@@ -157,6 +163,9 @@ export interface EntregaClase {
 export interface EntregaClaseEntrada {
   titulo: string
   descripcion?: string | null
+  enunciado?: string
+  problema?: string
+  restricciones?: string
   tipo?: string
   fecha_limite?: string | null
   rubrica?: string | null

@@ -16,7 +16,8 @@ import { criteriosDisponibles } from './entregas'
 import { obtenerCriterios } from './criterios-grupo'
 import { obtenerGrupoClase } from './grupos-clase'
 
-const CAMPOS = `e.id, e.grupo_clase_id, e.titulo, e.descripcion, e.tipo,
+const CAMPOS = `e.id, e.grupo_clase_id, e.titulo, e.descripcion, e.enunciado, e.problema,
+                e.restricciones, e.tipo,
                 e.fecha_limite, e.rubrica, e.rubrica_archivo, e.bloqueada,
                 e.avaluacion_id, e.categoria_id, e.unidad_id, e.creada_en,
                 (SELECT GROUP_CONCAT(ec.ce_id)
@@ -38,6 +39,9 @@ interface FilaEntrega {
   grupo_clase_id: number
   titulo: string
   descripcion: string | null
+  enunciado: string
+  problema: string
+  restricciones: string
   tipo: string
   fecha_limite: string | null
   rubrica: string | null
@@ -117,6 +121,9 @@ interface Validada {
   datos: {
     titulo: string
     descripcion: string | null
+    enunciado: string
+    problema: string
+    restricciones: string
     tipo: string
     fecha_limite: string | null
     rubrica: string | null
@@ -189,6 +196,9 @@ function validar(db: Bd, grupoClaseId: number, entrada: EntregaClaseEntrada): Va
     datos: {
       titulo,
       descripcion: entrada.descripcion?.trim() || null,
+      enunciado: entrada.enunciado?.trim() || '',
+      problema: entrada.problema?.trim() || '',
+      restricciones: entrada.restricciones?.trim() || '',
       tipo: entrada.tipo || 'tarea',
       fecha_limite: fecha,
       rubrica: entrada.rubrica?.trim() || null,
@@ -218,9 +228,9 @@ export function crearEntregaClase(
     const resultado = db
       .prepare(
         `INSERT INTO entregas_clase
-           (grupo_clase_id, titulo, descripcion, tipo, fecha_limite, rubrica,
+           (grupo_clase_id, titulo, descripcion, enunciado, problema, restricciones, tipo, fecha_limite, rubrica,
             rubrica_archivo, avaluacion_id, categoria_id, unidad_id)
-         VALUES (@grupo_clase_id, @titulo, @descripcion, @tipo, @fecha_limite, @rubrica,
+         VALUES (@grupo_clase_id, @titulo, @descripcion, @enunciado, @problema, @restricciones, @tipo, @fecha_limite, @rubrica,
                  @rubrica_archivo, @avaluacion_id, @categoria_id, @unidad_id)`
       )
       .run({ ...validada.datos, grupo_clase_id: grupoClaseId })
@@ -245,7 +255,8 @@ export function actualizarEntregaClase(
   db.transaction(() => {
     db.prepare(
       `UPDATE entregas_clase
-          SET titulo = @titulo, descripcion = @descripcion, tipo = @tipo,
+          SET titulo = @titulo, descripcion = @descripcion, enunciado = @enunciado,
+              problema = @problema, restricciones = @restricciones, tipo = @tipo,
               fecha_limite = @fecha_limite, rubrica = @rubrica,
               rubrica_archivo = @rubrica_archivo, avaluacion_id = @avaluacion_id,
               categoria_id = @categoria_id, unidad_id = @unidad_id,

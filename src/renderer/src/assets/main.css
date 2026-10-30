@@ -2266,6 +2266,60 @@ a:focus-visible {
   width: 12%;
 }
 
+.ficha-modal {
+  position: fixed;
+  z-index: 80;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.ficha-modal__panel {
+  display: flex;
+  flex-direction: column;
+  width: min(1120px, 100%);
+  height: min(88vh, 900px);
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.28);
+}
+
+.ficha-modal__cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--borde);
+}
+
+.ficha-modal__cabecera strong {
+  display: block;
+}
+
+.ficha-modal__cabecera .tenue {
+  display: block;
+  font-size: 11.5px;
+}
+
+.ficha-modal__acciones {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ficha-modal__panel iframe {
+  flex: 1;
+  width: 100%;
+  background: #f4f6f9;
+  border: 0;
+}
+
 .entregas-tabla__grupo td {
   padding: 11px 16px;
   background: #f8fafc;

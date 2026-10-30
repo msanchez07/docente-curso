@@ -10,9 +10,11 @@ import type {
   GrupoClase,
   ModeloEvaluacion,
   OpcionesExportacionEntregas,
+  UnidadProgramacion,
   VistaPreviaEntregas
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
+import { generarHtmlFichaEntrega } from '@shared/entrega-ficha'
 
 const route = useRoute()
 const router = useRouter()
@@ -22,6 +24,10 @@ const grupo = ref<GrupoClase | null>(null)
 const criterios = ref<ModeloEvaluacion | null>(null)
 const entregas = ref<EntregaClase[]>([])
 const alumnos = ref<AlumnoClase[]>([])
+const unidades = ref<UnidadProgramacion[]>([])
+const fichaHtml = ref('')
+const fichaTitulo = ref('')
+const mostrarFicha = ref(false)
 const cargando = ref(true)
 const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
@@ -36,6 +42,11 @@ const exportando = ref(false)
 const preparandoVista = ref(false)
 const ventanaPrevia = ref<Window | null>(null)
 const opcionesExportacion = ref<OpcionesExportacionEntregas | null>(null)
+
+const fichaDocumento = computed(
+  () =>
+    `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>html,body{margin:0;padding:0;background:#f4f6f9}body{padding:22px}*{box-sizing:border-box}@media print{html,body{background:#fff}body{padding:0}}</style></head><body>${fichaHtml.value}</body></html>`
+)
 
 const id = computed(() => Number(route.params.grupoId))
 
@@ -177,6 +188,7 @@ async function cargar(): Promise<void> {
     criterios.value = await window.api.criterios.obtener(grupo.value.id)
     entregas.value = await window.api.entregasClase.listar(grupo.value.id)
     alumnos.value = await window.api.alumnosClase.listar(grupo.value.id)
+    unidades.value = await window.api.unidadesProgramacion.listar(grupo.value.id)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -189,6 +201,7 @@ watch(id, cargar)
 
 function accionesEntrega(entrega: EntregaClase): AccionMenu[] {
   return [
+    { id: 'ficha', etiqueta: 'Ver ficha HTML', icono: 'rae' },
     { id: 'notas', etiqueta: 'Ver notas y anotaciones', icono: 'notas' },
     { id: 'exportar', etiqueta: 'Exportar entrega', icono: 'descargar' },
     { id: 'evidencias', etiqueta: `Evidencias (${entrega.evidencias})`, icono: 'evidencias' },
@@ -216,12 +229,54 @@ function accionesEntrega(entrega: EntregaClase): AccionMenu[] {
 }
 
 function ejecutarAccion(entrega: EntregaClase, accion: string): void {
-  if (accion === 'notas') irANotas(entrega)
+  if (accion === 'ficha') abrirFicha(entrega)
+  else if (accion === 'notas') irANotas(entrega)
   else if (accion === 'exportar') void previsualizar('entrega', entrega.id)
   else if (accion === 'evidencias') irAEvidencias(entrega)
   else if (accion === 'editar') irAEditar(entrega)
   else if (accion === 'bloquear') abrirBloqueo(entrega)
   else if (accion === 'borrar') entregaABorrar.value = entrega
+}
+
+function abrirFicha(entrega: EntregaClase): void {
+  if (!grupo.value) return
+  const unidad = unidades.value.find((item) => item.id === entrega.unidad_id) ?? null
+  fichaHtml.value = generarHtmlFichaEntrega({ grupo: grupo.value, entrega, unidad })
+  fichaTitulo.value = entrega.titulo
+  mostrarFicha.value = true
+}
+
+function cerrarFicha(): void {
+  mostrarFicha.value = false
+}
+
+async function copiarFicha(): Promise<void> {
+  try {
+    await navigator.clipboard.writeText(fichaHtml.value)
+    mensaje.value = 'Ficha HTML copiada al portapapeles.'
+  } catch (e) {
+    error.value = (e as Error).message ?? String(e)
+  }
+}
+
+function descargarFicha(): void {
+  const blob = new Blob([fichaDocumento.value], { type: 'text/html;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const enlace = document.createElement('a')
+  enlace.href = url
+  enlace.download = `ficha-${fichaTitulo.value.toLowerCase().replace(/[^a-z0-9]+/g, '-')}.html`
+  enlace.click()
+  URL.revokeObjectURL(url)
+}
+
+function imprimirFicha(): void {
+  const ventana = window.open('', '_blank', 'width=1120,height=860')
+  if (!ventana) return
+  ventana.document.open()
+  ventana.document.write(fichaDocumento.value)
+  ventana.document.close()
+  ventana.focus()
+  setTimeout(() => ventana.print(), 300)
 }
 
 function irAEvidencias(entrega: EntregaClase): void {
@@ -617,6 +672,32 @@ async function confirmarBloqueo(): Promise<void> {
         </template>
       </div>
     </template>
+
+    <div
+      v-if="mostrarFicha"
+      class="ficha-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Ficha HTML de la entrega"
+    >
+      <div class="ficha-modal__panel">
+        <header class="ficha-modal__cabecera">
+          <div>
+            <strong>{{ fichaTitulo }}</strong>
+            <span class="tenue">Vista previa para copiar en Aules</span>
+          </div>
+          <div class="ficha-modal__acciones">
+            <button class="boton" type="button" @click="copiarFicha">Copiar HTML</button>
+            <button class="boton" type="button" @click="descargarFicha">Descargar</button>
+            <button class="boton" type="button" @click="imprimirFicha">Imprimir / PDF</button>
+            <button class="boton boton--principal" type="button" @click="cerrarFicha">
+              Cerrar
+            </button>
+          </div>
+        </header>
+        <iframe :srcdoc="fichaDocumento" title="Ficha HTML de la entrega"></iframe>
+      </div>
+    </div>
 
     <Confirmacion
       v-if="entregaABorrar"

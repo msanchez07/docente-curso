@@ -24,6 +24,9 @@ import {
 interface FormEntrega {
   titulo: string
   descripcion: string
+  enunciado: string
+  problema: string
+  restricciones: string
   tipo: string
   fecha_limite: string
   rubrica: string
@@ -60,6 +63,9 @@ const ficheroRubrica = ref<HTMLInputElement | null>(null)
 const form = reactive<FormEntrega>({
   titulo: '',
   descripcion: '',
+  enunciado: '',
+  problema: '',
+  restricciones: '',
   tipo: 'tarea',
   fecha_limite: '',
   rubrica: '',
@@ -409,12 +415,42 @@ async function guardar(): Promise<void> {
               </div>
 
               <div class="campo campo--ancho">
-                <label for="entrega-descripcion">Descripción</label>
+                <label for="entrega-descripcion">Resumen corto</label>
                 <textarea
                   id="entrega-descripcion"
                   v-model="form.descripcion"
                   rows="2"
-                  placeholder="Qué tiene que hacer el alumnado…"
+                  placeholder="Resumen que aparece en el listado de entregas…"
+                ></textarea>
+              </div>
+
+              <div class="campo campo--ancho">
+                <label for="entrega-enunciado">Enunciado</label>
+                <textarea
+                  id="entrega-enunciado"
+                  v-model="form.enunciado"
+                  rows="4"
+                  placeholder="Qué debe hacer el alumnado, paso a paso…"
+                ></textarea>
+              </div>
+
+              <div class="campo campo--ancho">
+                <label for="entrega-problema">Descripción del problema</label>
+                <textarea
+                  id="entrega-problema"
+                  v-model="form.problema"
+                  rows="4"
+                  placeholder="Contexto, escenario o caso que debe resolver…"
+                ></textarea>
+              </div>
+
+              <div class="campo campo--ancho">
+                <label for="entrega-restricciones">Restricciones</label>
+                <textarea
+                  id="entrega-restricciones"
+                  v-model="form.restricciones"
+                  rows="3"
+                  placeholder="Formato, herramientas permitidas, límites, condiciones…"
                 ></textarea>
               </div>
 
