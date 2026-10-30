@@ -857,6 +857,8 @@ export interface ModeloEvaluacion {
   convocatorias?: ConvocatoriasEvaluacion
   /** Cálculo final por trimestres o por unidades didácticas. */
   modoCalificacion?: ModoCalificacion
+  /** Peso de cada RA en la nota final, por código de RA. */
+  pesosRa?: Record<string, number>
 }
 
 /* --- Resultado de la evaluación --------------------------------------- */

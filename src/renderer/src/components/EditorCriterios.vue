@@ -3,15 +3,20 @@ import { computed, ref, watch } from 'vue'
 import Pestanas from '@renderer/components/Pestanas.vue'
 import type { ModeloEvaluacion } from '@shared/tipos'
 
-const props = defineProps<{ modelo: ModeloEvaluacion }>()
+const props = defineProps<{
+  modelo: ModeloEvaluacion
+  ras?: { codigo: string; descripcion: string }[]
+}>()
 const emit = defineEmits<{ valido: [boolean] }>()
 
 props.modelo.modoCalificacion = 'unidades'
+if (!props.modelo.pesosRa) props.modelo.pesosRa = {}
 
 const pestana = ref('avaluaciones')
 const pestanas = [
   { id: 'avaluaciones', etiqueta: 'Avaluaciones' },
   { id: 'categorias', etiqueta: 'Categorías' },
+  { id: 'ra', etiqueta: 'RA' },
   { id: 'minimos', etiqueta: 'Mínimos' },
   { id: 'resumen', etiqueta: 'Resumen' }
 ]
@@ -27,6 +32,16 @@ function redondear2(valor: number): number {
   return Math.round((valor + Number.EPSILON) * 100) / 100
 }
 
+const sumaPesosRa = computed(() =>
+  (props.ras ?? []).reduce(
+    (total, ra) => total + (Number(props.modelo.pesosRa?.[ra.codigo]) || 0),
+    0
+  )
+)
+const pesosRaOk = computed(
+  () => (props.ras?.length ?? 0) === 0 || Math.abs(redondear2(sumaPesosRa.value) - 100) < 1e-9
+)
+
 const categoriasOk = computed(() => Math.abs(redondear2(sumaCategorias.value) - 100) < 1e-9)
 const avaluacionesOk = computed(() => Math.abs(redondear2(sumaAvaluaciones.value) - 100) < 1e-9)
 const nombresOk = computed(
@@ -40,6 +55,7 @@ const valido = computed(
     props.modelo.avaluaciones.length > 0 &&
     categoriasOk.value &&
     avaluacionesOk.value &&
+    pesosRaOk.value &&
     nombresOk.value
 )
 
@@ -107,7 +123,7 @@ function quitarCategoria(indice: number): void {
     </p>
 
     <p
-      v-if="!categoriasOk || !avaluacionesOk || !nombresOk"
+      v-if="!categoriasOk || !avaluacionesOk || !pesosRaOk || !nombresOk"
       class="aviso aviso--error"
       role="alert"
     >
@@ -118,6 +134,9 @@ function quitarCategoria(indice: number): void {
       <template v-if="!categoriasOk">
         Los pesos de las categorías suman {{ porcentaje(sumaCategorias) }} %; deben sumar
         exactamente 100 %.
+      </template>
+      <template v-if="!pesosRaOk">
+        Los pesos de los RA suman {{ porcentaje(sumaPesosRa) }} %; deben sumar exactamente 100 %.
       </template>
       <template v-if="!nombresOk">Los nombres no pueden estar vacíos.</template>
     </p>
@@ -262,6 +281,51 @@ function quitarCategoria(indice: number): void {
             <span class="barra__espacio"></span>
             <span class="chip" :class="categoriasOk ? 'chip--ok' : 'chip--aviso'">
               Suma: {{ porcentaje(sumaCategorias) }} %
+            </span>
+          </div>
+        </div>
+
+        <div
+          v-else-if="pestana === 'ra'"
+          id="panel-ra"
+          role="tabpanel"
+          aria-labelledby="pestana-ra"
+          tabindex="0"
+        >
+          <p class="tenue">
+            Peso de cada resultado de aprendizaje en la nota final. Por defecto se reparte el 100 %
+            a partes iguales.
+          </p>
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th>Resultado de aprendizaje</th>
+                <th class="num">Peso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="ra in ras ?? []" :key="ra.codigo">
+                <td>
+                  <strong>{{ ra.codigo }}</strong>
+                  <span class="tenue">{{ ra.descripcion }}</span>
+                </td>
+                <td class="num">
+                  <input
+                    v-model.number="modelo.pesosRa![ra.codigo]"
+                    type="number"
+                    min="0"
+                    max="100"
+                    step="0.01"
+                    class="editor-criterios__peso"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="criterios__pie-fila">
+            <span class="barra__espacio"></span>
+            <span class="chip" :class="pesosRaOk ? 'chip--ok' : 'chip--aviso'">
+              Suma: {{ porcentaje(sumaPesosRa) }} %
             </span>
           </div>
         </div>

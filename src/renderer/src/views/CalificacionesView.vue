@@ -31,15 +31,11 @@ const id = computed(() => Number(route.params.grupoId))
 const descripcionModelo = computed(() => {
   if (!resumen.value) return ''
   const modelo = resumen.value.modelo
-  if (modelo.modoCalificacion === 'unidades') {
-    return 'Cálculo por unidades · cada trimestre pondera en la final y sus unidades ponderan dentro del trimestre'
-  }
   const categorias = modelo.categorias.map((c) => `${c.nombre} ${c.peso} %`).join(' + ')
-  const avaluaciones = modelo.avaluaciones.map((a) => `${a.peso} % ${a.nombre}`).join(' + ')
-  return `${categorias} · final: ${avaluaciones}`
+  return `${categorias} · nota final ponderada por RA`
 })
 
-const modoUnidades = computed(() => resumen.value?.modelo.modoCalificacion === 'unidades')
+const modoUnidades = computed(() => false)
 
 const alumnosFiltrados = computed(() => {
   if (!resumen.value) return []
@@ -94,10 +90,14 @@ const opcionesAvaluaciones = computed(() => {
 })
 
 const formulaFinal = computed(() => {
+  const fila = filaSeleccionada.value
   const modelo = resumen.value?.modelo
-  if (!modelo) return ''
-  return modelo.avaluaciones
-    .map((avaluacion) => `${avaluacion.nombre} ${avaluacion.peso} %`)
+  if (!fila || !modelo || fila.ras.length === 0) return ''
+  return fila.ras
+    .map((ra) => {
+      const peso = modelo.pesosRa?.[ra.codigo] ?? 100 / fila.ras.length
+      return `${ra.codigo} ${Math.round(peso * 100) / 100} %`
+    })
     .join(' + ')
 })
 
@@ -216,12 +216,14 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
   <section class="vista vista--ancha">
     <BotonVolver :a="grupo ? { name: 'alumnado', params: { grupoId: grupo.id } } : '/grupos'" />
 
-    <header class="vista__cabecera">
-      <h2>Calificaciones del grupo</h2>
-      <p v-if="grupo" class="tenue">
-        Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }}
-      </p>
-      <p v-if="descripcionModelo" class="tenue">{{ descripcionModelo }}</p>
+    <header class="vista__cabecera calificaciones__page-header">
+      <div>
+        <h2>Calificaciones del grupo</h2>
+        <p v-if="grupo" class="tenue">
+          Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }}
+        </p>
+        <p v-if="descripcionModelo" class="tenue">{{ descripcionModelo }}</p>
+      </div>
       <RouterLink class="boton" :to="{ name: 'convocatorias', params: { grupoId: id } }">
         Convocatorias
       </RouterLink>
@@ -468,11 +470,8 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
             <div class="calificaciones__final-formula">
               <strong>Nota final = {{ formulaFinal || 'sin pesos configurados' }}</strong>
               <p class="tenue">
-                {{
-                  modoUnidades
-                    ? 'Cada trimestre pondera según su porcentaje. Dentro de cada trimestre, las unidades se ponderan al 100 %. Si una unidad no alcanza el mínimo, se recupera en ordinaria o extraordinaria.'
-                    : 'Si hay evaluaciones suspensas, la nota se sustituye por la del examen de la convocatoria ordinaria o, si procede, extraordinaria.'
-                }}
+                Cada RA pondera según el porcentaje configurado; la nota final es la media ponderada
+                de los RA. Las recuperaciones se gestionan desde Convocatorias.
               </p>
             </div>
 

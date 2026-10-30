@@ -262,7 +262,48 @@ describe('cálculo por unidades didácticas', () => {
     )
     const fila = resumen.alumnos[0]
     expect(fila.unidades.map((unidad) => unidad.nota)).toEqual([7.33, 7])
-    expect(fila.notaFinal).toBe(7.2)
+    expect(fila.notaFinal).toBe(7.17)
     expect(fila.aprobado).toBe(true)
+  })
+})
+
+describe('nota final por pesos de RA', () => {
+  it('pondera los RA según su peso', () => {
+    const modelo = {
+      ...modeloPorDefecto('presencial'),
+      pesosRa: { RA1: 75, RA2: 25 }
+    }
+    const criterios = [
+      {
+        ceId: 1,
+        ceCodigo: 'a',
+        raCodigo: 'RA1',
+        raDescripcion: 'RA1',
+        descripcion: 'CE RA1'
+      },
+      {
+        ceId: 2,
+        ceCodigo: 'a',
+        raCodigo: 'RA2',
+        raDescripcion: 'RA2',
+        descripcion: 'CE RA2'
+      }
+    ]
+    const entregasRa = [
+      { ...entrega(1, 'AV1', 'examenes', 'RA1'), ce_ids: [1] },
+      { ...entrega(2, 'AV1', 'actividades', 'RA2'), ce_ids: [2] }
+    ]
+    const resumen = calcularResumenClase(
+      grupo,
+      modelo,
+      entregasRa,
+      [alumno],
+      notas({ 1: 8, 2: 4 }),
+      criterios
+    )
+    const fila = resumen.alumnos[0]
+    expect(fila.ras.find((ra) => ra.codigo === 'RA1')?.nota).toBe(8)
+    expect(fila.ras.find((ra) => ra.codigo === 'RA2')?.nota).toBe(4)
+    expect(fila.notaFinal).toBe(7)
   })
 })

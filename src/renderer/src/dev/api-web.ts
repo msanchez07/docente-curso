@@ -725,6 +725,10 @@ function normalizarModelo(modelo: ModeloEvaluacion): ModeloEvaluacion {
   return {
     ...modelo,
     modoCalificacion: 'unidades',
+    pesosRa:
+      modelo.pesosRa && typeof modelo.pesosRa === 'object'
+        ? (modelo.pesosRa as Record<string, number>)
+        : {},
     convocatorias: modelo.convocatorias ?? {
       extraordinaria: 'suspensas',
       perdidaEvaluacionContinua: 'global'

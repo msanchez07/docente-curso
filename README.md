@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **204 tests**
+- `npm test` ✅ **205 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -40,8 +40,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 - **Programación didáctica**: unidades, fechas, criterios, RA/CE y calendario escolar.
   - **Presentación del módulo**: plantilla HTML editable, con datos reales del grupo, vista
     previa, copia para Aules, descarga e impresión/PDF.
-  - Plantilla de calificación por unidad: categorías, pesos y mínimos; editable o importable
-    desde JSON.
+
 - **Entregas**:
   - Asociación obligatoria a una unidad didáctica.
   - Secciones **Enunciado**, **Descripción del problema** y **Restricciones**.
@@ -52,10 +51,10 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Exportación PDF/ZIP por entrega o curso completo, con dossier y archivos cuando corresponde.
 - **Calificaciones**:
   - Vista de consulta: la nota final no se edita aquí, se calcula desde las entregas.
-  - Pestañas por unidad didáctica y última pestaña **Nota final**.
-  - Cada trimestre pondera en la nota final; las unidades ponderan dentro de su trimestre.
-  - La suma de pesos de las unidades de un trimestre debe ser 100 %.
-  - Cálculo de categorías, RA y nota final, con mínimos por unidad.
+  - Pestañas por evaluación y última pestaña **Nota final**.
+  - Instrumentos de calificación: categorías y pesos.
+  - **Cada RA tiene su peso en la nota final**; por defecto se reparten a partes iguales entre los RA.
+  - La nota final es la media ponderada de las notas de los RA.
   - Informe PDF por alumno y acceso a su informe completo.
   - **Convocatorias ordinaria y extraordinaria** con bloques por trimestre, unidad o RA/CE,
     asignación de bloques por alumno, notas y examen personalizado.

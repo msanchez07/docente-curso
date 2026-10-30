@@ -560,7 +560,7 @@ async function borrar(): Promise<void> {
           <label for="unidad-fin">Fin</label>
           <input id="unidad-fin" v-model="form.fecha_fin" type="date" />
         </div>
-        <div class="campo">
+        <div v-show="false" class="campo">
           <label for="unidad-avaluacion">Trimestre / evaluación</label>
           <select id="unidad-avaluacion" v-model="form.avaluacion_id">
             <option
@@ -572,7 +572,7 @@ async function borrar(): Promise<void> {
             </option>
           </select>
         </div>
-        <div class="campo">
+        <div v-show="false" class="campo">
           <label for="unidad-peso">Peso dentro del trimestre (%)</label>
           <input
             id="unidad-peso"
@@ -645,7 +645,7 @@ async function borrar(): Promise<void> {
             </section>
           </div>
         </div>
-        <div class="campo campo--ancho">
+        <div v-show="false" class="campo campo--ancho">
           <span class="campo__etiqueta">Plantilla de calificación de la unidad</span>
           <div class="unidades__plantilla-barra">
             <button class="boton boton--sutil" type="button" @click="abrirPlantillaCalificacion">
@@ -837,11 +837,11 @@ async function borrar(): Promise<void> {
             </div>
             <span v-else class="tenue">Sin criterios</span>
           </div>
-          <div>
+          <div v-if="false">
             <span class="tenue">Trimestre</span>
             <strong>{{ nombreAvaluacion(unidadActual.avaluacion_id) }}</strong>
           </div>
-          <div>
+          <div v-if="false">
             <span class="tenue">Peso dentro del trimestre</span>
             <strong>{{ unidadActual.peso }} %</strong>
           </div>
@@ -851,7 +851,7 @@ async function borrar(): Promise<void> {
           </div>
         </div>
 
-        <div v-if="unidadActual.categorias.length > 0" class="unidades__bloque">
+        <div v-if="false" class="unidades__bloque">
           <h4>Plantilla de calificación</h4>
           <div class="chips">
             <span v-for="categoria in unidadActual.categorias" :key="categoria.id" class="chip">
@@ -860,7 +860,7 @@ async function borrar(): Promise<void> {
           </div>
         </div>
 
-        <div v-if="unidadActual.requisitos.length > 0" class="unidades__bloque">
+        <div v-if="false" class="unidades__bloque">
           <h4>Mínimos de la unidad</h4>
           <div class="chips">
             <span

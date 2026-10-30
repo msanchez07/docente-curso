@@ -71,6 +71,10 @@ export function normalizarModelo(bruto: unknown): ModeloEvaluacion | null {
     avaluaciones: (modelo.avaluaciones as ModeloEvaluacion['avaluaciones']) ?? [],
     requisitos,
     modoCalificacion: 'unidades',
+    pesosRa:
+      modelo.pesosRa && typeof modelo.pesosRa === 'object'
+        ? (modelo.pesosRa as Record<string, number>)
+        : {},
     convocatorias: convocatorias as ModeloEvaluacion['convocatorias']
   }
 }

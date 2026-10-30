@@ -231,9 +231,7 @@ async function crearConvocatoria(): Promise<void> {
     crearForm.fecha = ''
     mostrarFormulario.value = false
     await recargarConvocatorias()
-    seleccionada.value = convocatoria.id
-    await cargarDetalle()
-    mensaje.value = 'Convocatoria creada con bloques iniciales.'
+    await seleccionar(convocatoria.id)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {

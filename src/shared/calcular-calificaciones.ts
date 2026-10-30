@@ -198,7 +198,6 @@ export function calcularResumenClase(
       }
     })
 
-    const usaUnidades = modelo.modoCalificacion === 'unidades' && unidadesCalificadas.length > 0
     const trimestres = modelo.avaluaciones.map((avaluacion) => {
       const unidadesAvaluacion = unidadesCalificadas.filter(
         (unidad) => unidad.avaluacionId === avaluacion.id
@@ -218,21 +217,6 @@ export function calcularResumenClase(
           (nota !== null && nota < minAvaluacion)
       }
     })
-    const notaFinal = usaUnidades
-      ? mediaPonderada(
-          trimestres
-            .filter((trimestre) => trimestre.nota !== null)
-            .map((trimestre) => ({ peso: trimestre.peso, valor: trimestre.nota ?? 0 }))
-        )
-      : mediaPonderada(
-          avaluaciones
-            .filter((avaluacion) => avaluacion.nota !== null)
-            .map((avaluacion) => ({
-              peso: modelo.avaluaciones.find((a) => a.id === avaluacion.avaluacionId)?.peso ?? 0,
-              valor: avaluacion.nota ?? 0
-            }))
-        )
-
     const ras: RaCalificacion[] = rasModulo.map((ra) => {
       const entregasRa = entregas.filter((entrega) =>
         entrega.ce_ids.some((ceId) => cePorId.get(ceId)?.raCodigo === ra.codigo)
@@ -281,14 +265,29 @@ export function calcularResumenClase(
     const rasNoSuperados = ras.filter((ra) => !ra.superado).map((ra) => ra.codigo)
     const todosRasSuperados = ras.length === 0 || rasNoSuperados.length === 0
 
-    const unidadesSuspensas = usaUnidades && unidadesCalificadas.some((unidad) => unidad.suspensa)
-    const avaluacionesSuspensas =
-      !usaUnidades && avaluaciones.some((avaluacion) => avaluacion.suspensa)
-    const vaAConvocatoria =
-      avaluacionesSuspensas ||
-      unidadesSuspensas ||
-      (notaFinal !== null && notaFinal < minAprobado) ||
-      !todosRasSuperados
+    const usaPesosRa = ras.length > 0
+    const notaFinal = usaPesosRa
+      ? mediaPonderada(
+          ras.map((ra) => ({
+            peso: Number(modelo.pesosRa?.[ra.codigo] ?? 100 / ras.length) || 0,
+            valor: ra.nota ?? 0
+          }))
+        )
+      : mediaPonderada(
+          avaluaciones
+            .filter((avaluacion) => avaluacion.nota !== null)
+            .map((avaluacion) => ({
+              peso: modelo.avaluaciones.find((a) => a.id === avaluacion.avaluacionId)?.peso ?? 0,
+              valor: avaluacion.nota ?? 0
+            }))
+        )
+
+    const avaluacionesSuspensas = avaluaciones.some((avaluacion) => avaluacion.suspensa)
+    const vaAConvocatoria = usaPesosRa
+      ? (notaFinal !== null && notaFinal < minAprobado) || !todosRasSuperados
+      : avaluacionesSuspensas ||
+        (notaFinal !== null && notaFinal < minAprobado) ||
+        !todosRasSuperados
 
     return {
       alumno,

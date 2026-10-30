@@ -2,7 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import EditorCriterios from '@renderer/components/EditorCriterios.vue'
 import { etiquetaModalidad } from '@shared/grupos'
-import type { GrupoClase, ModeloEvaluacion } from '@shared/tipos'
+import type { CriterioDisponible, GrupoClase, ModeloEvaluacion } from '@shared/tipos'
 
 const props = defineProps<{ grupo: GrupoClase }>()
 
@@ -14,21 +14,44 @@ const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
 const guardado = ref(false)
 const plantilla = ref<string | null>(null)
+const ras = ref<{ codigo: string; descripcion: string }[]>([])
 
 const etiqueta = computed(() => etiquetaModalidad(props.grupo.modalidad))
 
 onMounted(async () => {
   try {
-    const [existente, base] = await Promise.all([
+    const [existente, base, criterios] = await Promise.all([
       window.api.criterios.obtener(props.grupo.id),
-      window.api.criterios.plantillaParaGrupo(props.grupo.id)
+      window.api.criterios.plantillaParaGrupo(props.grupo.id),
+      window.api.entregasClase.criterios(props.grupo.id)
     ])
     plantilla.value = base.nombre
+    const mapa = new Map<string, string>()
+    for (const criterio of criterios as CriterioDisponible[]) {
+      if (!mapa.has(criterio.raCodigo)) mapa.set(criterio.raCodigo, criterio.raDescripcion)
+    }
+    ras.value = [...mapa.entries()].map(([codigo, descripcion]) => ({ codigo, descripcion }))
     if (existente) {
       modelo.value = existente
       guardado.value = true
     } else {
       modelo.value = base.modelo
+    }
+    if (
+      modelo.value &&
+      Object.keys(modelo.value.pesosRa ?? {}).length === 0 &&
+      ras.value.length > 0
+    ) {
+      const base = Math.floor((100 / ras.value.length) * 100) / 100
+      const pesos: Record<string, number> = {}
+      let acumulado = 0
+      ras.value.forEach((ra, indice) => {
+        const peso =
+          indice === ras.value.length - 1 ? Math.round((100 - acumulado) * 100) / 100 : base
+        pesos[ra.codigo] = peso
+        acumulado += peso
+      })
+      modelo.value.pesosRa = pesos
     }
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -121,7 +144,7 @@ async function copiar(): Promise<void> {
         </span>
       </div>
 
-      <EditorCriterios :modelo="modelo" @valido="valido = $event" />
+      <EditorCriterios :modelo="modelo" :ras="ras" @valido="valido = $event" />
 
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
       <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>

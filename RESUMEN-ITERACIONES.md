@@ -187,12 +187,11 @@ Vite/electron-vite + Vitest**.
   Se puede copiar como HTML enriquecido, descargar o imprimir, y la vista previa se actualiza al
   cambiar la plantilla.
 - Calificaciones es una vista de consulta: la nota final no se edita ahí, se calcula desde las
-  entregas. Se muestran pestañas por unidad y la última es «Nota final», con el resumen de
-  trimestres, unidades, fórmula e informes.
-- La calificación final se organiza por trimestres: cada trimestre tiene un peso en la nota final
-  y, dentro de él, las unidades tienen un peso que suma 100 %. Cada unidad tiene además su
-  plantilla propia de categorías/instrumentos y sus mínimos; las entregas se asignan a una unidad.
-- La plantilla de la unidad se puede editar con formulario o importar desde JSON.
+  entregas. Se muestran pestañas por evaluación y la última es «Nota final».
+- La calificación se organiza con instrumentos/categorías; **cada RA tiene un peso en la nota
+  final** y por defecto se reparte el 100 % a partes iguales entre los RA. La nota final es la
+  media ponderada de las notas de los RA.
+- Las unidades organizan contenidos y sesiones; las entregas se asocian a una unidad.
 - Las entregas incluyen un enunciado, una descripción del problema y restricciones. Su ficha
   HTML autocontenida se puede copiar, descargar o imprimir; al abrir una entrega se muestra la
   ficha primero y las notas en una pestaña aparte.
@@ -219,7 +218,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **204 tests**, 33 archivos de test, build y smoke correctos.
+Estado actual: **205 tests**, 33 archivos de test, build y smoke correctos.
 
 ---
 

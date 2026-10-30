@@ -3007,6 +3007,14 @@ a:focus-visible {
   }
 }
 
+.calificaciones__page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .calificaciones__alumno-cabecera {
   display: flex;
   align-items: baseline;
@@ -3979,6 +3987,12 @@ a:focus-visible {
 }
 
 /* --- Criterios de calificación --------------------------------------- */
+
+.editor-criterios__peso {
+  width: 86px;
+  padding: 5px 7px;
+  text-align: right;
+}
 
 .criterios__modo {
   display: flex;
