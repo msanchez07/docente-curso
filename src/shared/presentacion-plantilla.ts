@@ -46,7 +46,7 @@ export const PLANTILLA_PRESENTACION_POR_DEFECTO = `<div style="font-family: -app
             {{#unidades}}
             <tr style="border-bottom: 1px solid #f1f5f9;">
               <td style="padding: 7px 10px; font-weight: 600; color: #0f172a;">{{codigo}}</td>
-              <td style="padding: 7px 10px; color: #475569;"><strong>{{nombre}}</strong><br><span style="white-space: pre-line;">{{contenidos}}</span><br><span style="font-size: 0.76rem; color: #94a3b8;">{{fechas}}</span></td>
+              <td style="padding: 7px 10px; color: #475569;"><strong>{{nombre}}</strong><br><span style="white-space: pre-line;">{{contenidos}}</span><br><span style="font-size: 0.76rem; color: #94a3b8;">{{fechas}} · {{sesiones}} sesiones</span></td>
               <td style="padding: 7px 10px; text-align: center; font-weight: 600; color: #2563eb;">{{ra}}</td>
               <td style="padding: 7px 10px; color: #64748b;">{{ce}}</td>
             </tr>
@@ -60,7 +60,8 @@ export const PLANTILLA_PRESENTACION_POR_DEFECTO = `<div style="font-family: -app
 
     <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px; font-size: 0.82rem; color: #475569; display: flex; flex-direction: column; gap: 6px;">
       <div><strong style="color: #0f172a;">🎯 Resumen de evaluación</strong></div>
-      <div style="display: flex; flex-wrap: wrap; gap: 6px;">Pesos por evaluación: {{#pesos}}<span style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 999px; padding: 2px 8px;"><strong>{{nombre}}</strong> {{peso}}</span>{{/pesos}}{{^pesos}}<span>sin pesos configurados</span>{{/pesos}}</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px;">Evaluaciones: {{#pesos}}<span style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 999px; padding: 2px 8px;"><strong>{{nombre}}</strong> {{peso}}</span>{{/pesos}}{{^pesos}}<span>sin pesos configurados</span>{{/pesos}}</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 6px;">Categorías: {{#categorias}}<span style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 999px; padding: 2px 8px;"><strong>{{nombre}}</strong> {{peso}}</span>{{/categorias}}{{^categorias}}<span>sin categorías configuradas</span>{{/categorias}}</div>
       {{#requisitos}}<div>Requisito: <strong>{{nombre}}</strong> · {{peso}}</div>{{/requisitos}}
     </div>
   </div>

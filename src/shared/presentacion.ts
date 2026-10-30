@@ -26,6 +26,7 @@ export interface UnidadPresentacion {
   ra: string
   ce: string
   fechas: string
+  sesiones: number
 }
 
 export interface TrimestrePresentacion {
@@ -66,7 +67,9 @@ export interface PresentacionDatos {
   trimestres: TrimestrePresentacion[]
   examenes: ExamenPresentacion[]
   pesos: PesoPresentacion[]
+  categorias: PesoPresentacion[]
   requisitos: PesoPresentacion[]
+  tutoriasAuto: string
 }
 
 type Nodo =
@@ -305,8 +308,33 @@ function aUnidadPresentacion(unidad: UnidadProgramacion): UnidadPresentacion {
     contenidos: unidad.contenidos.trim() || 'Sin contenidos definidos.',
     ra: formatoRas(unidad),
     ce: formatoCes(unidad),
-    fechas: rango(unidad.fecha_inicio, unidad.fecha_fin)
+    fechas: rango(unidad.fecha_inicio, unidad.fecha_fin),
+    sesiones: unidad.sesiones.length
   }
+}
+
+function tutoriasDe(grupo: GrupoClase): string {
+  const nombres: Record<number, string> = {
+    1: 'Lunes',
+    2: 'Martes',
+    3: 'Miércoles',
+    4: 'Jueves',
+    5: 'Viernes',
+    6: 'Sábado',
+    0: 'Domingo'
+  }
+  const partes: string[] = []
+  for (const [dia, datos] of Object.entries(grupo.tutorias_semana ?? {})) {
+    const nombre = nombres[Number(dia)]
+    if (!nombre) continue
+    if (datos.presencial.length > 0) {
+      partes.push(`colectiva ${nombre.toLowerCase()} ${datos.presencial.join(', ')}`)
+    }
+    if (datos.individual.length > 0) {
+      partes.push(`individual ${nombre.toLowerCase()} ${datos.individual.join(', ')}`)
+    }
+  }
+  return partes.join(' · ')
 }
 
 export function construirDatosPresentacion(
@@ -331,10 +359,15 @@ export function construirDatosPresentacion(
     nombre: avaluacion.nombre,
     peso: `${avaluacion.peso} %`
   }))
+  const categorias = (modelo?.categorias ?? []).map((categoria) => ({
+    nombre: categoria.nombre,
+    peso: `${categoria.peso} %`
+  }))
   const requisitos = (modelo?.requisitos ?? []).map((requisito) => ({
     nombre: requisito.nombre,
     peso: `${requisito.valor}`
   }))
+  const tutoriasAuto = tutoriasDe(grupo)
 
   const todosLosCriterios = unidades.flatMap((unidad) => unidad.criterios)
   const ras = new Set(todosLosCriterios.map((criterio) => criterio.raCodigo))
@@ -350,7 +383,7 @@ export function construirDatosPresentacion(
     profesor: config.profesor.trim(),
     contacto: config.contacto.trim(),
     webApuntes: config.webApuntes.trim(),
-    tutorias: config.tutorias.trim() || 'Cita previa por correo oficial',
+    tutorias: config.tutorias.trim() || tutoriasAuto || 'Cita previa por correo oficial',
     cierre: config.cierre.trim() || '¡Mucho ánimo con el curso y buen trabajo!',
     curso: grupo.curso_academico_nombre,
     ciclo: grupo.ciclo_nombre,
@@ -364,7 +397,9 @@ export function construirDatosPresentacion(
     trimestres: agruparUnidades(unidades, eventos, modelo),
     examenes,
     pesos,
-    requisitos
+    categorias,
+    requisitos,
+    tutoriasAuto
   }
 }
 
@@ -376,7 +411,7 @@ export const CONFIG_PRESENTACION_POR_DEFECTO: PresentacionConfig = {
   profesor: '',
   contacto: '',
   webApuntes: '',
-  tutorias: 'Cita previa por correo oficial',
+  tutorias: '',
   cierre: '¡Mucho ánimo con el curso y buen trabajo!'
 }
 

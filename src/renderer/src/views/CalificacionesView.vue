@@ -58,21 +58,29 @@ const filaSeleccionada = computed<FilaCalificacionClase | null>(() => {
 
 const avaluacionSeleccionada = computed<AvaluacionCalificacion | null>(() => {
   const fila = filaSeleccionada.value
-  if (!fila) return null
+  if (!fila || avaluacionActiva.value === 'final') return null
   return (
     fila.avaluaciones.find((avaluacion) => avaluacion.avaluacionId === avaluacionActiva.value) ??
-    fila.avaluaciones[0] ??
     null
   )
 })
 
-const opcionesAvaluaciones = computed(
-  () =>
+const opcionesAvaluaciones = computed(() => {
+  const evaluaciones =
     filaSeleccionada.value?.avaluaciones.map((avaluacion) => ({
       value: avaluacion.avaluacionId,
       label: `${avaluacion.nombre} · ${formato(avaluacion.nota)}`
     })) ?? []
-)
+  return [...evaluaciones, { value: 'final', label: 'Nota final' }]
+})
+
+const formulaFinal = computed(() => {
+  const modelo = resumen.value?.modelo
+  if (!modelo) return ''
+  return modelo.avaluaciones
+    .map((avaluacion) => `${avaluacion.peso} % ${avaluacion.nombre}`)
+    .join(' + ')
+})
 
 const rasSuperados = computed(
   () => filaSeleccionada.value?.ras.filter((ra) => ra.superado).length ?? 0
@@ -130,7 +138,7 @@ async function cargar(): Promise<void> {
       resumen.value.alumnos[0] ??
       null
     seleccionadoId.value = fila?.alumno.id ?? null
-    avaluacionActiva.value = fila?.avaluaciones[0]?.avaluacionId ?? ''
+    avaluacionActiva.value = fila.avaluaciones[0]?.avaluacionId ?? ''
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -250,66 +258,14 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
         </aside>
 
         <section v-if="filaSeleccionada" class="calificaciones__detalle">
-          <header class="tarjeta calificaciones__detalle-cabecera">
-            <div class="calificaciones__detalle-info">
-              <h3>
-                {{ filaSeleccionada.alumno.apellidos }},
-                {{ filaSeleccionada.alumno.nombre }}
-              </h3>
-            </div>
-            <div class="calificaciones__detalle-nota">
-              <span class="tenue">Nota final calculada</span>
-              <strong>{{ formato(filaSeleccionada.notaFinal) }}</strong>
-              <span :class="filaSeleccionada.aprobado ? 'nota-aprobado' : 'nota-suspendido'">
-                {{ estado(filaSeleccionada) }}
-              </span>
-            </div>
-            <div class="calificaciones__detalle-acciones">
-              <button
-                class="calificaciones__accion calificaciones__accion--pdf"
-                type="button"
-                :disabled="exportandoInforme"
-                @click="exportarInformeAlumno"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
-                  <path d="M14 2v6h6" />
-                  <path d="M9 13h6" />
-                  <path d="M9 17h4" />
-                </svg>
-                {{ exportandoInforme ? 'Generando…' : 'Informe PDF' }}
-              </button>
-              <RouterLink
-                class="calificaciones__accion calificaciones__accion--informe"
-                :to="{
-                  name: 'informes',
-                  params: { grupoId: grupo?.id },
-                  query: { alumno: filaSeleccionada.alumno.id }
-                }"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-                Ver informe
-              </RouterLink>
-            </div>
+          <header class="calificaciones__alumno-cabecera">
+            <h3>{{ filaSeleccionada.alumno.apellidos }}, {{ filaSeleccionada.alumno.nombre }}</h3>
+            <span
+              class="calificaciones__estado"
+              :class="filaSeleccionada.aprobado ? 'nota-aprobado' : 'nota-suspendido'"
+            >
+              {{ estado(filaSeleccionada) }}
+            </span>
           </header>
 
           <div v-if="opcionesAvaluaciones.length > 0" class="calificaciones__tabs">
@@ -381,7 +337,94 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
             </div>
           </section>
 
-          <section v-if="filaSeleccionada.ras.length > 0" class="tarjeta calificaciones__ra">
+          <section v-if="avaluacionActiva === 'final'" class="tarjeta calificaciones__final">
+            <header class="calificaciones__final-cabecera">
+              <div>
+                <p class="dashboard__eyebrow">Resumen del módulo</p>
+                <h3>Nota final</h3>
+                <p class="tenue">Calculada a partir de las evaluaciones y las entregas.</p>
+              </div>
+              <div class="calificaciones__final-nota">
+                <strong>{{ formato(filaSeleccionada.notaFinal) }}</strong>
+                <span :class="filaSeleccionada.aprobado ? 'nota-aprobado' : 'nota-suspendido'">
+                  {{ estado(filaSeleccionada) }}
+                </span>
+              </div>
+            </header>
+
+            <div class="calificaciones__final-evaluaciones">
+              <button
+                v-for="avaluacion in filaSeleccionada.avaluaciones"
+                :key="avaluacion.avaluacionId"
+                class="calificaciones__final-evaluacion"
+                type="button"
+                @click="avaluacionActiva = avaluacion.avaluacionId"
+              >
+                <span>{{ avaluacion.nombre }}</span>
+                <strong>{{ formato(avaluacion.nota) }}</strong>
+              </button>
+            </div>
+
+            <div class="calificaciones__final-formula">
+              <strong>Nota final = {{ formulaFinal || 'sin pesos configurados' }}</strong>
+              <p class="tenue">
+                Si hay evaluaciones suspensas, la nota se sustituye por la del examen de la
+                convocatoria ordinaria o, si procede, extraordinaria.
+              </p>
+            </div>
+
+            <div class="calificaciones__detalle-acciones">
+              <button
+                class="calificaciones__accion calificaciones__accion--pdf"
+                type="button"
+                :disabled="exportandoInforme"
+                @click="exportarInformeAlumno"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                  <path d="M14 2v6h6" />
+                  <path d="M9 13h6" />
+                  <path d="M9 17h4" />
+                </svg>
+                {{ exportandoInforme ? 'Generando…' : 'Informe PDF' }}
+              </button>
+              <RouterLink
+                class="calificaciones__accion calificaciones__accion--informe"
+                :to="{
+                  name: 'informes',
+                  params: { grupoId: grupo?.id },
+                  query: { alumno: filaSeleccionada.alumno.id }
+                }"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                Ver informe
+              </RouterLink>
+            </div>
+          </section>
+
+          <section
+            v-if="avaluacionActiva === 'final' && filaSeleccionada.ras.length > 0"
+            class="tarjeta calificaciones__ra"
+          >
             <header class="calificaciones__avaluacion-cabecera">
               <div>
                 <h3>Resultados de aprendizaje</h3>

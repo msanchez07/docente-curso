@@ -2855,6 +2855,111 @@ a:focus-visible {
   font-size: 19px;
 }
 
+.calificaciones__alumno-cabecera {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.calificaciones__alumno-cabecera h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.calificaciones__tabs {
+  margin-bottom: 12px;
+}
+
+.calificaciones__final-cabecera {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--borde);
+}
+
+.calificaciones__final-cabecera h3 {
+  margin: 0 0 2px;
+  font-size: 20px;
+}
+
+.calificaciones__final-nota {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+.calificaciones__final-nota strong {
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 650;
+}
+
+.calificaciones__final-nota span {
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.calificaciones__final-evaluaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.calificaciones__final-evaluacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 10px;
+  color: var(--texto);
+  font: inherit;
+  font-size: 12.5px;
+  background: #fbfcfe;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.calificaciones__final-evaluacion:hover {
+  background: var(--acento-suave);
+  border-color: #c7d7fe;
+}
+
+.calificaciones__final-evaluacion strong {
+  font-size: 14px;
+}
+
+.calificaciones__final-formula {
+  padding: 10px 12px;
+  font-size: 12.5px;
+  background: #f8fafc;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.calificaciones__final-formula strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.calificaciones__final-formula p {
+  margin: 0;
+  font-size: 11.5px;
+}
+
+.calificaciones__final .calificaciones__detalle-acciones {
+  margin-top: 10px;
+}
+
 .calificaciones__ra-lista {
   margin-top: 6px;
 }
