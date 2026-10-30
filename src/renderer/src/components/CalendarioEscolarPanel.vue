@@ -68,7 +68,13 @@ function colorUnidad(unidad: UnidadProgramacion): string {
   return PALETA_UNIDADES[unidad.id % PALETA_UNIDADES.length]
 }
 
+function esNoLectivo(fecha: string): boolean {
+  const dia = mapaDias.value.get(fecha)
+  return Boolean(dia && dia.tipo !== 'lectivo')
+}
+
 function unidadDeCelda(fecha: string): UnidadProgramacion | undefined {
+  if (esNoLectivo(fecha)) return undefined
   return unidadPorFecha.value.get(fecha)
 }
 
@@ -118,14 +124,12 @@ const celdasCalendario = computed(() => {
   return celdas
 })
 
-const diasDelMes = computed(() => {
-  const anio = mesCalendario.value.getFullYear()
-  const mes = mesCalendario.value.getMonth()
-  return dias.value.filter((dia) => {
-    const fecha = new Date(`${dia.fecha}T00:00:00`)
-    return fecha.getFullYear() === anio && fecha.getMonth() === mes
-  })
-})
+const diasSenalados = computed(() =>
+  dias.value
+    .filter((dia) => dia.tipo !== 'lectivo')
+    .slice()
+    .sort((a, b) => a.fecha.localeCompare(b.fecha) || a.id - b.id)
+)
 
 function cambiarMes(delta: number): void {
   mesCalendario.value = new Date(
@@ -427,10 +431,10 @@ async function vaciar(): Promise<void> {
         </span>
       </div>
 
-      <div v-if="diasDelMes.length > 0" class="calendario-escolar__lista">
-        <h4>Días señalados este mes</h4>
+      <div v-if="diasSenalados.length > 0" class="calendario-escolar__lista">
+        <h4>Días no lectivos, festivos y vacaciones del curso</h4>
         <ul>
-          <li v-for="dia in diasDelMes" :key="dia.id">
+          <li v-for="dia in diasSenalados" :key="dia.id">
             <span class="monospace">{{ fechaCorta(dia.fecha) }}</span>
             <span
               class="chip"

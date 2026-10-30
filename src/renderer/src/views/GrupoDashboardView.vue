@@ -195,7 +195,11 @@ const agendaItems = computed<ItemAgenda[]>(() => {
 })
 
 const agendaProxima = computed(() =>
-  agendaItems.value.filter((item) => item.fecha >= hoy).slice(0, 6)
+  agendaItems.value.filter((item) => item.fecha >= hoy && item.tipo !== 'no_lectivo').slice(0, 6)
+)
+
+const proximosNoLectivos = computed(() =>
+  agendaItems.value.filter((item) => item.fecha >= hoy && item.tipo === 'no_lectivo').slice(0, 8)
 )
 
 const mesAgendaTexto = computed(() => {
@@ -239,13 +243,15 @@ const celdasAgenda = computed(() => {
   return Array.from({ length: 42 }, (_, indice) => {
     const fecha = sumarDias(inicio, indice)
     const iso = isoLocal(fecha)
+    const items = agendaItems.value.filter((item) => item.fecha === iso)
+    const noLectivo = items.some((item) => item.tipo === 'no_lectivo')
     return {
       fecha: iso,
       dia: fecha.getDate(),
       esMes: fecha.getMonth() === mes,
       esHoy: iso === hoy,
-      items: agendaItems.value.filter((item) => item.fecha === iso),
-      unidades: unidadesDelDia(iso)
+      items,
+      unidades: noLectivo ? [] : unidadesDelDia(iso)
     }
   })
 })
@@ -1036,6 +1042,17 @@ watch(id, cargar)
                 </span>
               </li>
             </ul>
+            <div v-if="proximosNoLectivos.length > 0" class="dashboard__no-lectivos">
+              <span class="tenue">Días no lectivos:</span>
+              <span
+                v-for="dia in proximosNoLectivos"
+                :key="dia.id"
+                class="dashboard__fecha dashboard__fecha--no_lectivo"
+                :title="dia.titulo"
+              >
+                {{ fechaCorta(dia.fecha) }}
+              </span>
+            </div>
           </section>
 
           <section class="tarjeta">
