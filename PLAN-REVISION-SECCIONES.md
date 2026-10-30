@@ -50,6 +50,8 @@ Cada sección se define con esta ficha antes de tocar código:
   - `/grupo/:id/boe` — RA/CE y cobertura.
   - `/grupo/:id/calificaciones` — notas por avaluación y final.
   - `/grupo/:id/informes` — informe por alumno o grupo.
+  - `/faltas` — control de faltas por curso/tutoría, con acceso desde el grupo mediante
+    `?grupo=:id`.
   - `/normativa` — Normativa FP: guía consultable e importación de `index.html`.
   - `/grupos` — gestión de grupos del curso activo.
   - `/cursos` — cursos académicos: renombrar y borrar.
@@ -197,6 +199,8 @@ Ficha completa en `PROPUESTA-ALUMNADO.md`.
 | 28 oct 2026 | **Dashboard**: barra de acciones agrupada y widgets orientados a tareas, no gráficas genéricas.                 |
 | 27 oct 2026 | La interfaz gira alrededor del grupo: barra de grupos + dashboard + secciones del grupo.                        |
 | 27 oct 2026 | Cada cambio se revisa en el **navegador**; Electron se valida más adelante.                                     |
+| 30 oct 2026 | **Navegación de grupo**: barra superior Dashboard + Día a día + Consulta; sin botón Volver en vistas de grupo.  |
+| 30 oct 2026 | **Acciones**: menús desplegables con iconos; guardados con notificaciones emergentes de color.                  |
 
 ## Curso académico (transversal)
 
@@ -212,8 +216,12 @@ Ficha completa en `PROPUESTA-ALUMNADO.md`.
 
 ## Dashboard y experiencia de uso
 
-- El dashboard prioriza el trabajo diario: barra de acciones agrupada («Día a día» y
-  «Consulta», con acceso a Fechas), próxima sesión, notas por poner, alumnado en riesgo y
+- La navegación de grupo vive en una **barra superior común**: Dashboard, Día a día
+  (Programación, Horario, Faltas, Entregas y Calificaciones) y Consulta (Alumnado,
+  Programación didáctica e Informes), con separadores verticales y sin rótulos intermedios.
+- Las vistas de grupo no muestran botón «Volver»: la barra superior resuelve la navegación.
+- La antigua barra de acciones del dashboard se ha retirado para no duplicar accesos.
+- El dashboard prioriza el trabajo diario: próxima sesión, notas por poner, alumnado en riesgo y
   próxima entrega.
 - Debajo: próximas sesiones, top 5 de alumnado que necesita atención, tareas pendientes,
   próximas entregas, estado del grupo, progresos y distribución de calificaciones.

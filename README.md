@@ -31,12 +31,16 @@ Aplicación funcional en desarrollo activo. Verificación actual:
     varias posibles por día y colores distintos.
   - Vista independiente de horario desde el dashboard.
 - **Dashboard** con agenda ordenada por fechas y minicalendario mensual:
+  - **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,
+    Faltas, Entregas, Calificaciones) y Consulta (Alumnado, Programación didáctica, Informes),
+    con separadores verticales. Sustituye al botón «Volver» en las vistas de grupo.
   - Días coloreados por entregas, exámenes, evaluaciones y festivos/no lectivos.
   - Festivos y no lectivos con fondo rojo, sin indicar unidad didáctica.
   - Unidades didácticas visibles por día con colores estables.
   - Listado de próximos hitos y fila aparte de días no lectivos.
 - **Programación de aula**: sesiones por fecha y hora, varias por día, unidades, desviaciones y
-  observaciones.
+  observaciones. El **calendario escolar** está disponible como pestaña junto a Unidades y
+  comparte la navegación mensual de la barra superior.
 - **Programación didáctica**: unidades, fechas, criterios, RA/CE y calendario escolar.
   - **Presentación del módulo**: plantilla HTML editable, con datos reales del grupo, vista
     previa, copia para Aules, descarga e impresión/PDF.
@@ -60,15 +64,21 @@ Aplicación funcional en desarrollo activo. Verificación actual:
     trimestre, unidad o RA/CE, asignación por alumno, notas y examen personalizado. Solo se crea
     una convocatoria de cada tipo.
 - **Informes** de grupo y alumno con gráficas, RA, formación, impresión y exportación.
+  - Las descargas **HTML/CSV** se agrupan en el menú **Acciones**; la impresión/PDF queda como
+    acción principal.
 - **Plantillas de criterios** con listado y edición en páginas propias.
 - **Normativa FP** a pantalla completa e importación desde la barra lateral.
 - **Datos de prueba** en la previsualización web: restaurar o eliminar.
 - **Control de faltas por curso/tutoría**:
-  - Todos los módulos del curso con nombre exacto en el informe ITACA, horas y límite.
+  - Contexto de curso compacto; el selector solo aparece cuando hay varios cursos/tutorías.
+  - Límite de faltas y cómputo de justificadas en una barra de ajustes compacta, con interruptor.
+  - Todos los módulos del curso en tarjetas, con nombre exacto en el informe ITACA, horas y
+    límite.
   - Se excluyen los módulos de FCT/formación en empresa, que no tienen faltas.
   - Importación de PDFs de faltas de varias páginas.
-  - Historial de las faltas extraídas de cada informe; no se guarda el PDF.
-  - Tabla por alumno y módulo, porcentajes y estados por colores.
+  - **Historial plegable** con las faltas extraídas de cada informe; no se guarda el PDF.
+  - Tabla por alumno y módulo: número de faltas en caja neutra y porcentaje en píldora de color,
+    con primera columna fija y cabecera por código/nombre de módulo.
   - Impresión/PDF del informe seleccionado.
 - **Copias de seguridad por grupo**:
   - Carpeta raíz global configurable.
@@ -80,6 +90,10 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Copia automática al abrir la aplicación si el contenido de un grupo cambió.
 - **Menú de opciones globales** en la barra lateral (cursos, plantillas, copias, normativa y
   datos de prueba).
+- **Interfaz homogénea**:
+  - Menús **Acciones** desplegables con iconos para las operaciones secundarias.
+  - Notificaciones emergentes de guardado, error y aviso, en lugar de mensajes perdidos en la
+    página.
 
 ## Stack
 

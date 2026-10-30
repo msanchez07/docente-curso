@@ -4,9 +4,9 @@
 > tomadas, las verificaciones ejecutadas y lo que queda pendiente. La versión corta de producto
 > está en [`README.md`](./README.md).
 
-**Última actualización:** 28/10/2026  
+**Última actualización:** 30/10/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **195 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **205 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -51,6 +51,10 @@ Vite/electron-vite + Vitest**.
 ### 2.2. Dashboard del grupo
 
 - Cabecera del grupo, criterios, RA/CE y accesos rápidos.
+- **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,
+  Faltas, Entregas, Calificaciones) y Consulta (Alumnado, Programación didáctica, Informes),
+  separadas por barras verticales. Sustituye al botón «Volver» y a la antigua barra de acciones
+  del dashboard.
 - Tarjetas de próxima sesión, notas pendientes, alumnado en riesgo y próxima entrega.
 - **Próximas sesiones** con fecha visible, contenido, unidad, hora y desviación.
 - **Agenda**:
@@ -66,6 +70,8 @@ Vite/electron-vite + Vitest**.
 ### 2.3. Programación de aula y programación didáctica
 
 - Programación de aula por sesiones/fechas, con varias sesiones por día mediante hora y orden.
+- **Calendario escolar como pestaña** de Programación de aula, junto a Unidades. La navegación
+  mensual se integra en la barra superior y no se duplica con la del panel.
 - Unidades de programación en maestro-detalle:
   - Sesiones, RA y contenidos.
   - Importación JSON y descarga de esquema.
@@ -94,6 +100,7 @@ Vite/electron-vite + Vitest**.
   - Resumen/Calificaciones/RA.
   - Gráficas al final, pastel 3D y criterios superados por RA.
   - Impresión/exportación HTML/CSV/PDF con opciones y previsualización.
+  - **Acciones** agrupa las descargas HTML/CSV; **Imprimir / PDF** queda como acción principal.
 - Plantillas de criterios con listado y edición en páginas propias (`/plantillas`,
   `/plantillas/:id`), no en modal.
 - Criterios de calificación en maestro-detalle con categorías, avaluaciones, mínimos y resumen.
@@ -128,12 +135,20 @@ Vite/electron-vite + Vitest**.
 
 - Vista de tutoría a nivel de **curso** (ciclo + nivel + modalidad), con todos los módulos y el
   alumnado matriculado en cualquiera de ellos.
-- Nombre exacto de cada módulo en el PDF de ITACA, horas y límite configurables.
+- Contexto de curso compacto: no se muestra un selector grande cuando solo hay una cohorte; con
+  varias, el cambio de curso queda en una fila secundaria.
+- Configuración del control en una barra compacta:
+  - límite de faltas en un campo pequeño con `%`;
+  - faltas justificadas mediante interruptor, no checkbox suelto.
+- Módulos en **tarjetas** con nombre, código, nombre exacto en el PDF de ITACA y horas.
 - Importación de PDFs de faltas de **varias páginas** con `pdfjs-dist`.
-- **Historial de informes**: cada PDF subido se guarda como una instantánea independiente y se
-  puede consultar después.
-- Tabla por alumno y módulo, porcentajes y estados por colores.
-- Impresión/PDF del informe seleccionado.
+- **Historial plegable**: cada PDF subido se guarda como una instantánea independiente y se
+  consulta cuando hace falta; el botón muestra el número de informes.
+- Tabla por alumno y módulo:
+  - una sola columna por módulo, con código y nombre en la cabecera;
+  - número de faltas en caja neutra y porcentaje en píldora de color;
+  - primera columna fija, filas alternas y hover.
+- Impresión/PDF del informe seleccionado, manteniendo el color de estado en las celdas.
 - Nueva migración **v30** (`faltas_modulo_config`, `faltas_informes`).
 
 ### 2.8. Normativa y datos de prueba
@@ -144,7 +159,21 @@ Vite/electron-vite + Vitest**.
   - **Eliminar datos de prueba** con confirmación; deja la aplicación vacía y no vuelve a
     sembrar datos automáticamente.
 
-### 2.9. Persistencia y migraciones
+### 2.9. Interfaz y navegación
+
+- **Barra superior de grupo** común a dashboard, programación, faltas, entregas, calificaciones,
+  alumnado, programación didáctica e informes:
+  - opción **Dashboard**;
+  - accesos de **Día a día** y **Consulta**;
+  - separadores verticales finos, sin rótulos intermedios.
+- Las vistas de grupo ya no usan botón «Volver»; la barra superior resuelve la navegación.
+- La barra antigua del dashboard se elimina para no duplicar accesos.
+- Operaciones secundarias agrupadas en menús **Acciones** desplegables con iconos.
+- Guardados, errores y avisos se muestran con **notificaciones emergentes** superiores, no como
+  mensajes perdidos dentro de la página.
+- El botón «Volver» se conserva solo en páginas globales sin contexto de grupo.
+
+### 2.10. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
 - Última migración aplicada: **v37**.
@@ -201,6 +230,15 @@ Vite/electron-vite + Vitest**.
   bloques que le corresponden según lo suspenso y el profesor puede ajustarlos y calificarlos.
 - Si un alumno tiene asignado el bloque «Examen global», su nota sustituye al resto de bloques
   de la convocatoria y pasa a valer el 100 % de esa convocatoria.
+- La barra superior de grupo sustituye al botón «Volver» y a la antigua barra del dashboard:
+  Dashboard + Día a día + Consulta, con separadores verticales en lugar de rótulos.
+- Las acciones secundarias viven en menús **Acciones** desplegables con iconos; las principales
+  permanecen visibles.
+- Los guardados se confirman con notificaciones emergentes de color (verde, ámbar o rojo), no
+  con mensajes inline perdidos.
+- El historial de faltas es una consulta puntual: permanece plegado y se abre desde su botón.
+- La tabla de faltas muestra el número de faltas y el porcentaje con estilos distintos: caja
+  neutra para el recuento y píldora de color para el porcentaje.
 - El PDF de faltas colorea el fondo de las celdas de faltas y porcentaje según el estado.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.
@@ -221,7 +259,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **205 tests**, 33 archivos de test, build y smoke correctos.
+Estado actual (30/10/2026): **205 tests**, 33 archivos de test, build y smoke correctos.
 
 ---
 
@@ -247,12 +285,16 @@ Al cerrar cada iteración:
 
 ### Registro de iteraciones
 
-| Fecha      | Iteración           | Resumen                                                                                                                                 |
-| ---------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| 28/10/2026 | Base                | Electron + Vue 3 + SQLite, cursos, grupos, alumnado, criterios, entregas, notas, informes, normativa, BOE.                              |
-| 28/10/2026 | Programación        | Unidades, calendario escolar, sesiones múltiples, programación didáctica, PDF de programación.                                          |
-| 28/10/2026 | Dashboard           | Agenda, formación, programación didáctica, fechas visibles y calendario de agenda coloreado.                                            |
-| 28/10/2026 | Horarios            | Bloques de 55 minutos, recreos, tutorías colectivas/individuales múltiples por día, vista de horario.                                   |
-| 28/10/2026 | Entregas            | Exportación por entrega/avaluación/curso, previsualización en ventana propia, PDF/ZIP, nombre de archivo e informe por alumno.          |
-| 30/10/2026 | Homogeneización UI  | Cabeceras de página y de sección unificadas, métricas compartidas, navegación de mes común y unidades didácticas visibles en la agenda. |
-| 30/10/2026 | Horario y criterios | Horario semanal más legible y criterios de evaluación por unidad agrupados en pestañas de RA.                                           |
+| Fecha      | Iteración               | Resumen                                                                                                                                 |
+| ---------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| 28/10/2026 | Base                    | Electron + Vue 3 + SQLite, cursos, grupos, alumnado, criterios, entregas, notas, informes, normativa, BOE.                              |
+| 28/10/2026 | Programación            | Unidades, calendario escolar, sesiones múltiples, programación didáctica, PDF de programación.                                          |
+| 28/10/2026 | Dashboard               | Agenda, formación, programación didáctica, fechas visibles y calendario de agenda coloreado.                                            |
+| 28/10/2026 | Horarios                | Bloques de 55 minutos, recreos, tutorías colectivas/individuales múltiples por día, vista de horario.                                   |
+| 28/10/2026 | Entregas                | Exportación por entrega/avaluación/curso, previsualización en ventana propia, PDF/ZIP, nombre de archivo e informe por alumno.          |
+| 30/10/2026 | Homogeneización UI      | Cabeceras de página y de sección unificadas, métricas compartidas, navegación de mes común y unidades didácticas visibles en la agenda. |
+| 30/10/2026 | Horario y criterios     | Horario semanal más legible y criterios de evaluación por unidad agrupados en pestañas de RA.                                           |
+| 30/10/2026 | Calificaciones          | Pesos por RA, pestañas de convocatorias y examen global exclusivo al 100 % de la convocatoria.                                          |
+| 30/10/2026 | Navegación y UI         | Barra superior de grupo con Dashboard/Día a día/Consulta, menús Acciones, notificaciones emergentes y retirada del botón Volver.        |
+| 30/10/2026 | Programación e informes | Calendario escolar como pestaña y acciones de informes agrupadas.                                                                       |
+| 30/10/2026 | Control de faltas       | Contexto compacto, configuración con interruptor, tarjetas de módulos, historial plegable y tabla con faltas/porcentaje diferenciados.  |
