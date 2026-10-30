@@ -176,6 +176,10 @@ Vite/electron-vite + Vitest**.
   leyenda del mes permite identificar todas las unidades visibles.
 - Una unidad puede trabajar CE concretos de un RA, todos los CE de un RA o CE de varios RA. En
   el formulario se agrupan por pestañas de RA para no mostrar un listado largo con scroll.
+- La presentación del módulo es una plantilla HTML global editable, guardada en `config`; los
+  datos del grupo (unidades, RA/CE, exámenes, pesos y requisitos) se inyectan al renderizar.
+  Se puede copiar como HTML enriquecido, descargar o imprimir, y la vista previa se actualiza al
+  cambiar la plantilla.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.
 - La previsualización de entregas se abre en ventana propia; la exportación se confirma desde
@@ -195,7 +199,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual: **198 tests**, 31 archivos de test, build y smoke correctos.
+Estado actual: **202 tests**, 32 archivos de test, build y smoke correctos.
 
 ---
 

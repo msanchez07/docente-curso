@@ -285,10 +285,6 @@ function etiquetaAgenda(tipo: TipoAgenda): string {
   return 'Entrega'
 }
 
-function claseAgenda(tipo: TipoAgenda): string {
-  return `agenda-punto--${tipo.replace('_', '-')}`
-}
-
 function claseDiaAgenda(items: ItemAgenda[]): string {
   if (items.some((item) => item.tipo === 'no_lectivo')) return 'agenda-mini__celda--no-lectivo'
   if (items.some((item) => item.tipo === 'examen')) return 'agenda-mini__celda--examen'
@@ -533,12 +529,6 @@ watch(id, cargar)
             {{ grupo.modulo_nombre }} · {{ etiquetaModalidad(grupo.modalidad) }} ·
             {{ grupo.ciclo_id.toUpperCase() }} {{ grupo.curso }}º
           </p>
-        </div>
-        <div class="dashboard__chips">
-          <span class="chip" :class="grupo.criterios ? 'chip--ok' : 'chip--aviso'">
-            {{ grupo.criterios ? 'Criterios definidos' : 'Sin criterios' }}
-          </span>
-          <span class="chip">{{ grupo.ra }} RA · {{ grupo.ce }} CE</span>
         </div>
       </header>
 
@@ -1031,21 +1021,21 @@ watch(id, cargar)
                       +{{ celda.unidades.length - 2 }}
                     </span>
                   </span>
-                  <span v-if="celda.items.length > 0" class="agenda-mini__puntos">
-                    <i
-                      v-for="item in celda.items.slice(0, 4)"
-                      :key="item.id"
-                      class="agenda-punto"
-                      :class="claseAgenda(item.tipo)"
-                    ></i>
-                  </span>
                 </div>
               </div>
               <div class="agenda-mini__leyenda">
-                <span><i class="agenda-punto agenda-punto--entrega"></i>Entrega</span>
-                <span><i class="agenda-punto agenda-punto--examen"></i>Examen</span>
-                <span><i class="agenda-punto agenda-punto--evaluacion"></i>Evaluación</span>
-                <span><i class="agenda-punto agenda-punto--no-lectivo"></i>No lectivo</span>
+                <span>
+                  <i class="agenda-mini__muestra agenda-mini__muestra--entrega"></i>Entrega
+                </span>
+                <span>
+                  <i class="agenda-mini__muestra agenda-mini__muestra--examen"></i>Examen
+                </span>
+                <span>
+                  <i class="agenda-mini__muestra agenda-mini__muestra--evaluacion"></i>Evaluación
+                </span>
+                <span>
+                  <i class="agenda-mini__muestra agenda-mini__muestra--no-lectivo"></i>No lectivo
+                </span>
               </div>
               <div
                 v-if="unidadesAgendaMes.length > 0"
@@ -1057,9 +1047,9 @@ watch(id, cargar)
                   v-for="unidad in unidadesAgendaMes"
                   :key="unidad.id"
                   class="agenda-mini__unidad-leyenda"
+                  :style="{ color: colorUnidad(unidad) }"
                   :title="unidad.nombre"
                 >
-                  <i :style="{ background: colorUnidad(unidad) }"></i>
                   {{ unidad.codigo ?? 'UD' }}
                 </span>
               </div>

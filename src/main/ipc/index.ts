@@ -22,6 +22,7 @@ import type {
   NotaRegistro,
   OpcionesExportacionEntregas,
   PeriodoFormacionEmpresaEntrada,
+  PresentacionConfig,
   ProgramacionEntrada,
   UnidadProgramacionEntrada
 } from '@shared/tipos'
@@ -55,6 +56,7 @@ import {
   listarEvidenciasClase,
   subirEvidenciasClase
 } from '../db/repositorios/evidencias-clase'
+import { guardarPresentacion, obtenerPresentacion } from '../db/repositorios/presentacion'
 import {
   actualizarFormacionEmpresa,
   borrarFormacionEmpresa,
@@ -295,6 +297,12 @@ export function registrarIpc(): void {
   )
   ipcMain.handle(CANALES.eventosEvaluacionImportar, (_e, grupoClaseId: number, texto: string) =>
     importarEventosEvaluacion(bd(), grupoClaseId, texto)
+  )
+
+  // Presentación editable del módulo.
+  ipcMain.handle(CANALES.presentacionObtener, () => obtenerPresentacion(bd()))
+  ipcMain.handle(CANALES.presentacionGuardar, (_e, config: PresentacionConfig) =>
+    guardarPresentacion(bd(), config)
   )
 
   // Normativa de FP (documento incluido o importado).

@@ -27,12 +27,14 @@ import { parsearEntradaAlumnos } from '@shared/importar-alumnos'
 import { validarHtmlNormativa } from '@shared/normativa'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto } from '@shared/modelo'
+import { normalizarPresentacion } from '@shared/presentacion'
 import JSZip from 'jszip'
 import type {
   AlumnoClase,
   CriterioUnidad,
   AlumnoEntrada,
   AlumnoFaltasCurso,
+  PresentacionConfig,
   ClaveCursoFaltas,
   ConfigModuloFaltas,
   CursoFaltasResumen,
@@ -91,6 +93,7 @@ const CLAVE_UNIDADES = 'gestion-entregas:unidades-programacion'
 const CLAVE_CALENDARIO = 'gestion-entregas:calendario-escolar'
 const CLAVE_FALTAS = 'gestion-entregas:faltas-clase'
 const CLAVE_DEMO = 'gestion-entregas:demo-cargado'
+const CLAVE_PRESENTACION = 'gestion-entregas:presentacion'
 
 type GrupoGuardado = Omit<
   GrupoClase,
@@ -1419,6 +1422,21 @@ async function obtenerCursoFaltasWeb(clave: ClaveCursoFaltas): Promise<DatosCurs
   }
 }
 
+function leerPresentacion(): PresentacionConfig {
+  try {
+    const crudo = localStorage.getItem(CLAVE_PRESENTACION)
+    return normalizarPresentacion(crudo ? (JSON.parse(crudo) as Partial<PresentacionConfig>) : null)
+  } catch {
+    return normalizarPresentacion(null)
+  }
+}
+
+function escribirPresentacion(config: PresentacionConfig): PresentacionConfig {
+  const normalizada = normalizarPresentacion(config)
+  localStorage.setItem(CLAVE_PRESENTACION, JSON.stringify(normalizada))
+  return normalizada
+}
+
 const api = {
   app: {
     version: async () => '0.1.0-web'
@@ -2216,6 +2234,11 @@ const api = {
       escribirFormacion(restantes)
       return true
     }
+  },
+  presentacion: {
+    obtener: async (): Promise<PresentacionConfig> => leerPresentacion(),
+    guardar: async (config: PresentacionConfig): Promise<PresentacionConfig> =>
+      escribirPresentacion(config)
   },
   normativaFpt: {
     leer: async (): Promise<NormativaFpt> => respuestaNormativa(),

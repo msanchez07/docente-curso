@@ -1016,6 +1016,20 @@ export interface ApiBackup {
   importar(ruta?: string): Promise<ResultadoBackup>
 }
 
+/* --- Presentación editable del módulo ---------------------------------- */
+
+export interface PresentacionConfig {
+  /** HTML de la plantilla con marcadores {{campo}}, {{#lista}}…{{/lista}}. */
+  plantilla: string
+  titulo: string
+  subtitulo: string
+  profesor: string
+  contacto: string
+  webApuntes: string
+  tutorias: string
+  cierre: string
+}
+
 /* --- API (preload) ---------------------------------------------------- */
 
 export interface Api {
@@ -1088,6 +1102,10 @@ export interface Api {
       entrada: PeriodoFormacionEmpresaEntrada
     ): Promise<PeriodoFormacionEmpresa | null>
     borrar(id: number): Promise<boolean>
+  }
+  presentacion: {
+    obtener(): Promise<PresentacionConfig>
+    guardar(config: PresentacionConfig): Promise<PresentacionConfig>
   }
   normativaFpt: {
     leer(): Promise<NormativaFpt>
@@ -1277,6 +1295,8 @@ export const CANALES = {
   formacionEmpresaCrear: 'formacionEmpresa:crear',
   formacionEmpresaActualizar: 'formacionEmpresa:actualizar',
   formacionEmpresaBorrar: 'formacionEmpresa:borrar',
+  presentacionObtener: 'presentacion:obtener',
+  presentacionGuardar: 'presentacion:guardar',
   normativaFptLeer: 'normativaFpt:leer',
   normativaFptImportar: 'normativaFpt:importar',
   normativaFptRestaurar: 'normativaFpt:restaurar',

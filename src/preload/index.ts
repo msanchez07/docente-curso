@@ -69,6 +69,10 @@ const api: Api = {
       ipcRenderer.invoke(CANALES.formacionEmpresaActualizar, id, entrada),
     borrar: (id) => ipcRenderer.invoke(CANALES.formacionEmpresaBorrar, id)
   },
+  presentacion: {
+    obtener: () => ipcRenderer.invoke(CANALES.presentacionObtener),
+    guardar: (config) => ipcRenderer.invoke(CANALES.presentacionGuardar, config)
+  },
   normativaFpt: {
     leer: () => ipcRenderer.invoke(CANALES.normativaFptLeer),
     importar: (html) => ipcRenderer.invoke(CANALES.normativaFptImportar, html),

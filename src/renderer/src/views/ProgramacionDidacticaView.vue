@@ -5,6 +5,7 @@ import BotonVolver from '@renderer/components/BotonVolver.vue'
 import SelectButton from '@renderer/components/SelectButton.vue'
 import UnidadesProgramacion from '@renderer/components/UnidadesProgramacion.vue'
 import CalendarioEscolarPanel from '@renderer/components/CalendarioEscolarPanel.vue'
+import PresentacionModulo from '@renderer/components/PresentacionModulo.vue'
 import BoeView from '@renderer/views/BoeView.vue'
 import CriteriosView from '@renderer/views/CriteriosView.vue'
 import EventosEvaluacionView from '@renderer/views/EventosEvaluacionView.vue'
@@ -24,7 +25,8 @@ const opciones = [
   { value: 'fechas', label: 'Fechas' },
   { value: 'criterios', label: 'Criterios' },
   { value: 'rae', label: 'RA/CE' },
-  { value: 'calendario', label: 'Calendario' }
+  { value: 'calendario', label: 'Calendario' },
+  { value: 'presentacion', label: 'Presentación' }
 ]
 
 const id = computed(() => Number(route.params.grupoId))
@@ -96,6 +98,7 @@ watch(pestana, (valor) => {
         :curso-academico-id="grupo.curso_academico_id"
         :grupo-clase-id="grupo.id"
       />
+      <PresentacionModulo v-else-if="pestana === 'presentacion'" :grupo="grupo" />
     </template>
   </section>
 </template>

@@ -561,6 +561,88 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+.presentacion__datos {
+  margin-bottom: 14px;
+}
+
+.presentacion__datos .formulario {
+  margin-top: 10px;
+}
+
+.presentacion__editor {
+  margin-bottom: 14px;
+}
+
+.presentacion__editor summary {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.presentacion__editor summary .tenue {
+  font-weight: 400;
+}
+
+.presentacion__marcadores {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin-top: 12px;
+}
+
+.presentacion__marcadores code {
+  padding: 2px 6px;
+  color: var(--texto);
+  font-size: 10.5px;
+  background: #f2f4f7;
+  border-radius: 5px;
+}
+
+.presentacion__ayuda {
+  margin: 8px 0;
+  font-size: 11.5px;
+}
+
+.presentacion__ayuda code {
+  padding: 1px 4px;
+  background: #f2f4f7;
+  border-radius: 4px;
+}
+
+.presentacion__plantilla {
+  width: 100%;
+  min-height: 340px;
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 11.5px;
+  line-height: 1.5;
+  background: #fbfcfe;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.presentacion__preview {
+  overflow: hidden;
+  background: #eef2f7;
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+}
+
+.presentacion__preview iframe {
+  display: block;
+  width: 100%;
+  height: 82vh;
+  min-height: 620px;
+  background: #f4f6f9;
+  border: 0;
+}
+
 .horario__resumen {
   display: flex;
   align-items: center;
@@ -6229,25 +6311,29 @@ a:focus-visible {
 .agenda-mini__celda--entrega {
   color: #1d4ed8;
   background: #f5f9ff;
-  border-color: #dbe7ff;
+  border-color: #bfdbfe;
+  border-left: 3px solid #2563eb;
 }
 
 .agenda-mini__celda--examen {
   color: #b54708;
   background: #fffbf0;
-  border-color: #fde7b0;
+  border-color: #f2d9a4;
+  border-left: 3px solid #d98a2b;
 }
 
 .agenda-mini__celda--evaluacion {
   color: #067647;
   background: #f4fdf8;
-  border-color: #cdeedd;
+  border-color: #b7e4c7;
+  border-left: 3px solid #067647;
 }
 
 .agenda-mini__celda--no-lectivo {
   color: #b42318;
   background: #fef3f2;
   border-color: #fecdca;
+  border-left: 3px solid #b42318;
 }
 
 .agenda-mini__celda--no-lectivo .agenda-mini__numero {
@@ -6257,7 +6343,8 @@ a:focus-visible {
 .agenda-mini__leyenda {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 5px 6px;
+  align-items: center;
+  gap: 5px 10px;
   margin-top: 10px;
   padding-top: 9px;
   color: var(--tenue);
@@ -6333,45 +6420,31 @@ a:focus-visible {
 }
 
 .agenda-mini__unidad-leyenda {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
+  font-weight: 650;
 }
 
-.agenda-mini__unidad-leyenda i {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
+.agenda-mini__muestra {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 3px;
+  height: 11px;
+  background: #98a2b3;
+  border-radius: 999px;
 }
 
-.agenda-mini__puntos {
-  display: flex;
-  gap: 2px;
-  margin-top: auto;
-  padding-top: 2px;
+.agenda-mini__muestra--entrega {
+  background: #2563eb;
 }
 
-.agenda-punto {
-  width: 4.5px;
-  height: 4.5px;
-  border-radius: 50%;
-  background: #667085;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7);
+.agenda-mini__muestra--examen {
+  background: #d98a2b;
 }
 
-.agenda-punto--entrega {
-  background: var(--acento);
+.agenda-mini__muestra--evaluacion {
+  background: #067647;
 }
 
-.agenda-punto--examen {
-  background: var(--ambar);
-}
-
-.agenda-punto--evaluacion {
-  background: var(--ok);
-}
-
-.agenda-punto--no-lectivo {
+.agenda-mini__muestra--no-lectivo {
   background: #b42318;
 }
 

@@ -33,6 +33,7 @@ type Tabla =
   | 'programacion_aula'
   | 'unidades_programacion'
   | 'unidad_programacion_ra'
+  | 'unidad_programacion_ce'
   | 'eventos_evaluacion_clase'
   | 'formacion_empresa'
   | 'calendario_escolar'
@@ -56,6 +57,7 @@ interface DatosBackup {
   programacion: Fila[]
   unidades: Fila[]
   unidad_ra: Fila[]
+  unidad_ce: Fila[]
   eventos: Fila[]
   formacion: Fila[]
   calendario: Fila[]
@@ -301,6 +303,14 @@ function datosDeGrupo(grupoId: number): DatosBackup {
       ORDER BY ur.unidad_id, ur.ra_codigo`,
     grupoId
   )
+  const unidadCe = filas(
+    db,
+    `SELECT uc.* FROM unidad_programacion_ce uc
+       JOIN unidades_programacion u ON u.id = uc.unidad_id
+      WHERE u.grupo_clase_id = ?
+      ORDER BY uc.unidad_id, uc.ra_codigo, uc.ce_codigo`,
+    grupoId
+  )
   const eventos = filas(
     db,
     'SELECT * FROM eventos_evaluacion_clase WHERE grupo_clase_id = ? ORDER BY fecha, id',
@@ -339,6 +349,7 @@ function datosDeGrupo(grupoId: number): DatosBackup {
     programacion,
     unidades,
     unidad_ra: unidadRa,
+    unidad_ce: unidadCe,
     eventos,
     formacion,
     calendario,
@@ -629,6 +640,15 @@ export async function importarBackupDesdeRuta(ruta: string): Promise<ResultadoBa
         if (!unidadId) continue
         insertarFila(db, 'unidad_programacion_ra', {
           ...unidadRa,
+          unidad_id: unidadId
+        })
+      }
+
+      for (const unidadCe of datos.unidad_ce ?? []) {
+        const unidadId = unidadesImportadas.get(Number(unidadCe.unidad_id))
+        if (!unidadId) continue
+        insertarFila(db, 'unidad_programacion_ce', {
+          ...unidadCe,
           unidad_id: unidadId
         })
       }
