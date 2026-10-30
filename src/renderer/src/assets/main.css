@@ -5498,6 +5498,41 @@ a:focus-visible {
   color: var(--acento);
 }
 
+.navegacion-grupo {
+  justify-content: flex-start;
+}
+
+.navegacion-grupo .dashboard__toolbar-grupo {
+  flex: 0 1 auto;
+}
+
+.navegacion-grupo__dashboard {
+  font-weight: 600;
+}
+
+.navegacion-grupo__division {
+  flex: 0 0 auto;
+  width: 1px;
+  height: 20px;
+  margin: 0 5px;
+  background: var(--borde);
+}
+
+@media (max-width: 720px) {
+  .navegacion-grupo__division {
+    display: none;
+  }
+}
+
+.dashboard__tool--activo {
+  background: var(--acento-suave);
+  color: var(--acento);
+}
+
+.dashboard__tool--activo .dashboard__tool-icono {
+  color: var(--acento);
+}
+
 .dashboard__quick {
   display: flex;
   flex-wrap: wrap;

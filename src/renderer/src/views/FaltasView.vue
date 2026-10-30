@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import { extraerFaltasPdf } from '@renderer/utils/faltas-pdf'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { notificar } from '@renderer/composables/notificaciones'
@@ -301,8 +300,6 @@ function imprimir(): void {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver a="/grupos" />
-
     <header class="vista__cabecera">
       <h2>Control de faltas</h2>
       <p class="tenue">

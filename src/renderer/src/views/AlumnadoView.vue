@@ -8,7 +8,6 @@ import { descargarJson } from '@renderer/utils/descargar-json'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { copiarTexto } from '@renderer/utils/portapapeles'
 import { notificar } from '@renderer/composables/notificaciones'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type { AlumnoClase, AlumnoEntrada, GrupoClase } from '@shared/tipos'
 
 const route = useRoute()
@@ -319,8 +318,6 @@ async function alElegirFichero(evento: Event): Promise<void> {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'" />
-
     <header class="vista__cabecera">
       <h2>Alumnado del grupo</h2>
       <p v-if="grupo" class="tenue">

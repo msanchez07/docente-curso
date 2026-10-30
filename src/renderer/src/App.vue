@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import NotificacionesGlobales from '@renderer/components/NotificacionesGlobales.vue'
+import NavegacionGrupo from '@renderer/components/NavegacionGrupo.vue'
 import { EVENTO_NORMATIVA_ACTUALIZADA } from '@shared/normativa'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
@@ -44,6 +45,20 @@ onMounted(async () => {
 const gruposVisibles = computed(() =>
   grupos.grupos.filter((grupo) => grupo.curso_academico_id === cursos.activoId)
 )
+
+const grupoIdContexto = computed(() => {
+  const valor = route.params.grupoId ?? route.params.id ?? route.query.grupo
+  const id = Number(valor)
+  return Number.isInteger(id) && id > 0 ? id : null
+})
+
+const mostrarNavegacionGrupo = computed(() => {
+  const nombre = String(route.name ?? '')
+  if (!nombre) return false
+  return !['grupos', 'cursos', 'plantillas', 'plantilla-editar', 'backups', 'normativa'].includes(
+    nombre
+  )
+})
 
 function grupoActivo(grupoId: number): boolean {
   return Number(route.params.grupoId ?? route.params.id) === grupoId
@@ -280,6 +295,7 @@ async function importarNormativa(evento: Event): Promise<void> {
         <span>{{ avisoBackup }}</span>
         <RouterLink to="/backups" class="backup-aviso__enlace">Revisar copias</RouterLink>
       </div>
+      <NavegacionGrupo v-if="mostrarNavegacionGrupo" :grupo-id="grupoIdContexto" />
       <RouterView />
     </main>
 

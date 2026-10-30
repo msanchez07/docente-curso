@@ -2,7 +2,6 @@
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type { AlumnoClase, GrupoClase, PeriodoFormacionEmpresa } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 
@@ -171,8 +170,6 @@ async function borrar(): Promise<void> {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'alumnado', params: { grupoId: grupo.id } } : '/grupos'" />
-
     <div v-if="cargando && !alumno" class="vacio">Cargando formación en empresa…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type { CriterioDisponible, EntregaClase, GrupoClase } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 
@@ -124,11 +123,6 @@ watch(id, cargar)
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver
-      v-if="!embebido"
-      :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'"
-    />
-
     <header v-if="!embebido" class="vista__cabecera">
       <h2>BOE · RA y CE</h2>
       <p v-if="grupo" class="tenue">

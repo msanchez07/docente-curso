@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import HorarioSemanal from '@renderer/components/HorarioSemanal.vue'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import type { GrupoClase } from '@shared/tipos'
@@ -51,8 +50,6 @@ watch(id, cargar)
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'" />
-
     <div v-if="cargando" class="vacio">Cargando horario…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 

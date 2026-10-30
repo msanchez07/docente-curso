@@ -213,13 +213,16 @@ function cancelarEdicion(): void {
   nuevaFila()
 }
 
-const mesTexto = computed(() => {
-  const texto = mesCalendario.value.toLocaleDateString('es-ES', {
-    month: 'long',
-    year: 'numeric'
-  })
+const mesEscolar = ref(new Date(new Date().getFullYear(), new Date().getMonth(), 1))
+
+const textoMes = (fecha: Date): string => {
+  const texto = fecha.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
   return texto.charAt(0).toUpperCase() + texto.slice(1)
-})
+}
+
+const etiquetaMesBarra = computed(() =>
+  textoMes(modo.value === 'calendario-escolar' ? mesEscolar.value : mesCalendario.value)
+)
 
 function ordenarFilas(a: ProgramacionAula, b: ProgramacionAula): number {
   return (
@@ -266,16 +269,14 @@ function ejecutarAccionSecundaria(accion: string): void {
   else if (accion === 'esquema') exportarEsquema()
 }
 
-function cambiarMes(delta: number): void {
-  mesCalendario.value = new Date(
-    mesCalendario.value.getFullYear(),
-    mesCalendario.value.getMonth() + delta,
-    1
-  )
+function cambiarMesBarra(delta: number): void {
+  const actual = modo.value === 'calendario-escolar' ? mesEscolar : mesCalendario
+  actual.value = new Date(actual.value.getFullYear(), actual.value.getMonth() + delta, 1)
 }
 
-function irMesActual(): void {
-  mesCalendario.value = new Date(new Date().getFullYear(), new Date().getMonth(), 1)
+function irMesActualBarra(): void {
+  const actual = modo.value === 'calendario-escolar' ? mesEscolar : mesCalendario
+  actual.value = new Date(new Date().getFullYear(), new Date().getMonth(), 1)
 }
 
 function seleccionarDia(fecha: string): void {
@@ -518,39 +519,37 @@ async function exportarPdf(): Promise<void> {
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
       <div class="programacion__barra">
-        <template v-if="modo !== 'calendario-escolar'">
-          <template v-if="modo !== 'calendario'">
-            <SelectButton
-              v-model="vista"
-              :opciones="opcionesVista"
-              aria-label="Vista de la programación"
-              compacto
-            />
-            <span class="tenue programacion__rango">
-              <template v-if="verTodo">Mostrando todos los días.</template>
-              <template v-else>
-                Del {{ fechaCorta(inicioQuincena) }} al {{ fechaCorta(limite) }}
-              </template>
-            </span>
-          </template>
-
-          <NavegacionMes
-            v-else
-            class="programacion__mes"
-            :etiqueta="mesTexto"
-            @anterior="cambiarMes(-1)"
-            @siguiente="cambiarMes(1)"
-            @hoy="irMesActual"
+        <template v-if="modo !== 'calendario' && modo !== 'calendario-escolar'">
+          <SelectButton
+            v-model="vista"
+            :opciones="opcionesVista"
+            aria-label="Vista de la programación"
+            compacto
           />
-
-          <span
-            class="programacion__estado"
-            :class="{ 'programacion__estado--pendiente': hayCambios }"
-          >
-            <span class="programacion__estado-punto" aria-hidden="true"></span>
-            {{ hayCambios ? 'Sin guardar' : 'Guardado' }}
+          <span class="tenue programacion__rango">
+            <template v-if="verTodo">Mostrando todos los días.</template>
+            <template v-else>
+              Del {{ fechaCorta(inicioQuincena) }} al {{ fechaCorta(limite) }}
+            </template>
           </span>
         </template>
+
+        <NavegacionMes
+          v-else
+          class="programacion__mes"
+          :etiqueta="etiquetaMesBarra"
+          @anterior="cambiarMesBarra(-1)"
+          @siguiente="cambiarMesBarra(1)"
+          @hoy="irMesActualBarra"
+        />
+
+        <span
+          class="programacion__estado"
+          :class="{ 'programacion__estado--pendiente': hayCambios }"
+        >
+          <span class="programacion__estado-punto" aria-hidden="true"></span>
+          {{ hayCambios ? 'Sin guardar' : 'Guardado' }}
+        </span>
         <span class="barra__espacio"></span>
         <SelectButton
           v-model="modo"
@@ -558,21 +557,19 @@ async function exportarPdf(): Promise<void> {
           aria-label="Modo de edición"
           compacto
         />
-        <template v-if="modo !== 'calendario-escolar'">
-          <MenuAcciones
-            texto="Acciones"
-            :acciones="accionesSecundarias()"
-            @accion="ejecutarAccionSecundaria"
-          />
-          <button
-            class="boton boton--principal"
-            type="button"
-            :disabled="exportandoPdf || guardando"
-            @click="exportarPdf"
-          >
-            {{ exportandoPdf ? 'Generando PDF…' : 'Exportar PDF' }}
-          </button>
-        </template>
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesSecundarias()"
+          @accion="ejecutarAccionSecundaria"
+        />
+        <button
+          class="boton boton--principal"
+          type="button"
+          :disabled="exportandoPdf || guardando"
+          @click="exportarPdf"
+        >
+          {{ exportandoPdf ? 'Generando PDF…' : 'Exportar PDF' }}
+        </button>
       </div>
 
       <div v-if="mostrarImportar" class="programacion__importar tarjeta">
@@ -622,6 +619,8 @@ async function exportarPdf(): Promise<void> {
 
       <CalendarioEscolarPanel
         v-if="modo === 'calendario-escolar'"
+        v-model:mes="mesEscolar"
+        ocultar-navegacion
         :curso-academico-id="grupo.curso_academico_id"
         :grupo-clase-id="grupo.id"
       />

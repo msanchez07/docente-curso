@@ -2,7 +2,6 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type { CategoriaEvidencia, EntregaClase, EvidenciaClase, GrupoClase } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { CATEGORIAS_EVIDENCIA, etiquetaCategoriaEvidencia } from '@shared/evidencias'
@@ -153,10 +152,6 @@ function fechaCorta(fecha: string): string {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver
-      :a="grupo ? { name: 'entrega-notas', params: { grupoId: grupo.id, entregaId } } : '/grupos'"
-    />
-
     <div v-if="cargando && !entrega" class="vacio">Cargando evidencias…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 

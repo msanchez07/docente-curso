@@ -2,7 +2,6 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import SelectButton from '@renderer/components/SelectButton.vue'
 import ConvocatoriasView from '@renderer/views/ConvocatoriasView.vue'
 import type {
@@ -223,8 +222,6 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'alumnado', params: { grupoId: grupo.id } } : '/grupos'" />
-
     <header class="vista__cabecera calificaciones__page-header">
       <div>
         <h2>Calificaciones del grupo</h2>

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import CriteriosTabla from '@renderer/components/CriteriosTabla.vue'
@@ -34,11 +33,6 @@ watch(id, cargar)
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver
-      v-if="!embebido"
-      :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'"
-    />
-
     <header v-if="!embebido" class="vista__cabecera criterios__cabecera">
       <div>
         <h2>Criterios de calificación</h2>

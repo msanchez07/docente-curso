@@ -4,7 +4,6 @@ import { useRoute } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
 import SelectButton from '@renderer/components/SelectButton.vue'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import { ESQUEMA_EVENTOS } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
 import type {
@@ -236,11 +235,6 @@ async function alElegirFichero(evento: Event): Promise<void> {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver
-      v-if="!embebido"
-      :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'"
-    />
-
     <header v-if="!embebido" class="vista__cabecera">
       <h2>Evaluaciones y exámenes</h2>
       <p v-if="grupo" class="tenue">

@@ -2,7 +2,6 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import SelectButton from '@renderer/components/SelectButton.vue'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type {
   AlumnoClase,
   EntregaClase,
@@ -234,8 +233,6 @@ async function guardar(): Promise<void> {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'entregas', params: { grupoId: grupo.id } } : '/grupos'" />
-
     <div v-if="cargando && !entrega" class="vacio">Cargando entrega…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 

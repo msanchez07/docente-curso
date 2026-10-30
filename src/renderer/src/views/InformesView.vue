@@ -3,7 +3,6 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
 import { etiquetaModalidad } from '@shared/grupos'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import Modal from '@renderer/components/Modal.vue'
 import type {
   AlumnoClase,
@@ -1688,8 +1687,6 @@ function imprimir(): void {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'" />
-
     <header class="vista__cabecera">
       <h2>Informes del grupo</h2>
       <p v-if="grupo" class="tenue">

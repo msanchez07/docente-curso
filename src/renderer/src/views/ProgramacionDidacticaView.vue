@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import SelectButton from '@renderer/components/SelectButton.vue'
 import UnidadesProgramacion from '@renderer/components/UnidadesProgramacion.vue'
 import CalendarioEscolarPanel from '@renderer/components/CalendarioEscolarPanel.vue'
@@ -69,8 +68,6 @@ watch(pestana, (valor) => {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'" />
-
     <header class="vista__cabecera">
       <h2>Programación didáctica</h2>
       <p v-if="grupo" class="tenue">

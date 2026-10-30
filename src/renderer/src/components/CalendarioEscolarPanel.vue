@@ -12,7 +12,14 @@ import type {
   UnidadProgramacion
 } from '@shared/tipos'
 
-const props = defineProps<{ cursoAcademicoId: number; grupoClaseId?: number }>()
+const props = defineProps<{
+  cursoAcademicoId: number
+  grupoClaseId?: number
+  mes?: Date
+  ocultarNavegacion?: boolean
+}>()
+
+const emit = defineEmits<{ 'update:mes': [Date] }>()
 
 const dias = ref<DiaCalendario[]>([])
 const unidades = ref<UnidadProgramacion[]>([])
@@ -41,7 +48,14 @@ const confirmarVaciar = ref(false)
 const vaciando = ref(false)
 const DIAS_SEMANA = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom']
 const hoy = new Date()
-const mesCalendario = ref(new Date(hoy.getFullYear(), hoy.getMonth(), 1))
+const mesInterno = ref(new Date(hoy.getFullYear(), hoy.getMonth(), 1))
+const mesCalendario = computed({
+  get: () => props.mes ?? mesInterno.value,
+  set: (valor: Date) => {
+    if (props.mes) emit('update:mes', valor)
+    else mesInterno.value = valor
+  }
+})
 
 const mapaDias = computed(() => new Map(dias.value.map((dia) => [dia.fecha, dia])))
 
@@ -328,6 +342,7 @@ async function vaciar(): Promise<void> {
     <template v-else>
       <div class="calendario-escolar__barra">
         <NavegacionMes
+          v-if="!ocultarNavegacion"
           :etiqueta="mesTexto"
           @anterior="cambiarMes(-1)"
           @siguiente="cambiarMes(1)"

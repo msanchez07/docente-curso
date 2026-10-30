@@ -2,7 +2,6 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type {
   FilaCalificacionClase,
   GrupoClase,
@@ -127,8 +126,6 @@ watch([grupoId, alumnoId], cargar)
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'alumnado', params: { grupoId: grupo.id } } : '/grupos'" />
-
     <div v-if="cargando && !fila" class="vacio">Cargando alumno…</div>
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 

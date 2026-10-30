@@ -3,7 +3,6 @@ import { onMounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import ProgramacionTabla from '@renderer/components/ProgramacionTabla.vue'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type { GrupoClase } from '@shared/tipos'
 
 const route = useRoute()
@@ -33,8 +32,6 @@ watch(() => route.params.grupoId, cargar)
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'" />
-
     <header class="vista__cabecera">
       <h2>Programación de aula</h2>
       <p v-if="grupo" class="tenue">

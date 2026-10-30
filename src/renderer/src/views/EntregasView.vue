@@ -3,7 +3,6 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type {
   AlumnoClase,
   EntregaClase,
@@ -467,8 +466,6 @@ async function confirmarBloqueo(): Promise<void> {
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver :a="grupo ? { name: 'grupo', params: { id: grupo.id } } : '/grupos'" />
-
     <header class="vista__cabecera">
       <h2>Entregas y evidencias</h2>
       <p v-if="grupo" class="tenue">

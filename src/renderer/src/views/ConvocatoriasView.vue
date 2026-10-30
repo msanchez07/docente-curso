@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import BotonVolver from '@renderer/components/BotonVolver.vue'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
 import type {
   AsignacionConvocatoriaEntrada,
@@ -434,11 +433,6 @@ watch(grupoId, cargar)
 
 <template>
   <section class="vista vista--ancha">
-    <BotonVolver
-      v-if="!embebido"
-      :a="grupo ? { name: 'calificaciones', params: { grupoId: grupo.id } } : '/grupos'"
-    />
-
     <header v-if="!embebido" class="vista__cabecera">
       <h2>Convocatorias</h2>
       <p v-if="grupo" class="tenue">
