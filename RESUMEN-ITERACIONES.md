@@ -187,7 +187,7 @@ Vite/electron-vite + Vitest**.
   Se puede copiar como HTML enriquecido, descargar o imprimir, y la vista previa se actualiza al
   cambiar la plantilla.
 - Calificaciones es una vista de consulta: la nota final no se edita ahí, se calcula desde las
-  entregas. Se muestran pestañas por evaluación y la última es «Nota final».
+  entregas. Se muestran pestañas por evaluación, Ordinaria, Extraordinaria y «Nota final».
 - La calificación se organiza con instrumentos/categorías; **cada RA tiene un peso en la nota
   final** y por defecto se reparte el 100 % a partes iguales entre los RA. La nota final es la
   media ponderada de las notas de los RA.
@@ -196,8 +196,9 @@ Vite/electron-vite + Vitest**.
   HTML autocontenida se puede copiar, descargar o imprimir; al abrir una entrega se muestra la
   ficha primero y las notas en una pestaña aparte.
 - Las convocatorias ordinaria y extraordinaria agrupan bloques de examen por trimestre, unidad o
-  RA/CE. Cada alumno recibe los bloques que le corresponden según lo suspenso y el profesor puede
-  ajustarlos, calificarlos y generar un examen personalizado.
+  RA/CE y se integran como pestañas de Calificaciones, antes de «Nota final». Solo existe una
+  convocatoria de cada tipo y se crea automáticamente al abrir su pestaña. Cada alumno recibe los
+  bloques que le corresponden según lo suspenso y el profesor puede ajustarlos y calificarlos.
 - El PDF de faltas colorea el fondo de las celdas de faltas y porcentaje según el estado.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.

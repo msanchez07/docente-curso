@@ -51,13 +51,14 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Exportación PDF/ZIP por entrega o curso completo, con dossier y archivos cuando corresponde.
 - **Calificaciones**:
   - Vista de consulta: la nota final no se edita aquí, se calcula desde las entregas.
-  - Pestañas por evaluación y última pestaña **Nota final**.
+  - Pestañas por evaluación, **Ordinaria**, **Extraordinaria** y **Nota final**.
   - Instrumentos de calificación: categorías y pesos.
   - **Cada RA tiene su peso en la nota final**; por defecto se reparten a partes iguales entre los RA.
   - La nota final es la media ponderada de las notas de los RA.
   - Informe PDF por alumno y acceso a su informe completo.
-  - **Convocatorias ordinaria y extraordinaria** con bloques por trimestre, unidad o RA/CE,
-    asignación de bloques por alumno, notas y examen personalizado.
+  - **Convocatorias ordinaria y extraordinaria** integradas como pestañas, con bloques por
+    trimestre, unidad o RA/CE, asignación por alumno, notas y examen personalizado. Solo se crea
+    una convocatoria de cada tipo.
 - **Informes** de grupo y alumno con gráficas, RA, formación, impresión y exportación.
 - **Plantillas de criterios** con listado y edición en páginas propias.
 - **Normativa FP** a pantalla completa e importación desde la barra lateral.

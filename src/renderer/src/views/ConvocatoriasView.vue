@@ -11,6 +11,7 @@ import type {
   FilaCalificacionClase,
   GrupoClase,
   ModeloEvaluacion,
+  TipoConvocatoria,
   UnidadProgramacion
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
@@ -20,6 +21,11 @@ interface FilaAsignacion {
   nota: number | ''
   observaciones: string
 }
+
+const props = withDefaults(defineProps<{ embebido?: boolean; tipo?: TipoConvocatoria }>(), {
+  embebido: false,
+  tipo: 'ordinaria'
+})
 
 const route = useRoute()
 const store = useGruposClaseStore()
@@ -170,7 +176,9 @@ async function cargar(): Promise<void> {
     ])
     modelo.value = modeloGrupo
     unidades.value = listaUnidades
-    convocatorias.value = listaConvocatorias
+    convocatorias.value = props.tipo
+      ? listaConvocatorias.filter((convocatoria) => convocatoria.tipo === props.tipo)
+      : listaConvocatorias
     resumen.value = modeloGrupo
       ? calcularResumenClase(
           grupo.value,
@@ -182,8 +190,20 @@ async function cargar(): Promise<void> {
           listaUnidades
         )
       : null
-    if (seleccionada.value === null && listaConvocatorias[0]) {
-      seleccionada.value = listaConvocatorias[0].id
+    if (props.embebido && convocatorias.value.length === 0) {
+      const creada = await window.api.convocatorias.crear(grupo.value.id, {
+        tipo: props.tipo,
+        nombre:
+          props.tipo === 'extraordinaria'
+            ? 'Convocatoria extraordinaria'
+            : 'Convocatoria ordinaria',
+        fecha: null
+      })
+      await crearBloquesIniciales(creada.id)
+      convocatorias.value = [creada]
+      seleccionada.value = creada.id
+    } else if (seleccionada.value === null && convocatorias.value[0]) {
+      seleccionada.value = convocatorias.value[0].id
     }
     await cargarDetalle()
   } catch (e) {
@@ -202,31 +222,35 @@ async function cargarDetalle(): Promise<void> {
   inicializarAsignaciones()
 }
 
+async function crearBloquesIniciales(convocatoriaId: number): Promise<void> {
+  for (const [indice, avaluacion] of (modelo.value?.avaluaciones ?? []).entries()) {
+    await window.api.convocatorias.crearBloque(convocatoriaId, {
+      nombre: `Recuperación ${avaluacion.nombre}`,
+      descripcion: `Ejercicios de recuperación de ${avaluacion.nombre}.`,
+      avaluacion_id: avaluacion.id,
+      peso: avaluacion.peso,
+      orden: indice
+    })
+  }
+  await window.api.convocatorias.crearBloque(convocatoriaId, {
+    nombre: 'Examen global',
+    descripcion: 'Examen global para alumnado con pérdida de evaluación continua o pendientes.',
+    peso: 0,
+    orden: 99
+  })
+}
+
 async function crearConvocatoria(): Promise<void> {
   if (!grupo.value || !crearForm.nombre.trim()) return
   guardando.value = true
   error.value = null
   try {
     const convocatoria = await window.api.convocatorias.crear(grupo.value.id, {
-      tipo: crearForm.tipo,
+      tipo: props.embebido ? props.tipo : crearForm.tipo,
       nombre: crearForm.nombre.trim(),
       fecha: crearForm.fecha || null
     })
-    for (const [indice, avaluacion] of (modelo.value?.avaluaciones ?? []).entries()) {
-      await window.api.convocatorias.crearBloque(convocatoria.id, {
-        nombre: `Recuperación ${avaluacion.nombre}`,
-        descripcion: `Ejercicios de recuperación de ${avaluacion.nombre}.`,
-        avaluacion_id: avaluacion.id,
-        peso: avaluacion.peso,
-        orden: indice
-      })
-    }
-    await window.api.convocatorias.crearBloque(convocatoria.id, {
-      nombre: 'Examen global',
-      descripcion: 'Examen global para alumnado con pérdida de evaluación continua o pendientes.',
-      peso: 0,
-      orden: 99
-    })
+    await crearBloquesIniciales(convocatoria.id)
     crearForm.nombre = ''
     crearForm.fecha = ''
     mostrarFormulario.value = false
@@ -241,7 +265,10 @@ async function crearConvocatoria(): Promise<void> {
 
 async function recargarConvocatorias(): Promise<void> {
   if (!grupo.value) return
-  convocatorias.value = await window.api.convocatorias.listar(grupo.value.id)
+  const lista = await window.api.convocatorias.listar(grupo.value.id)
+  convocatorias.value = props.tipo
+    ? lista.filter((convocatoria) => convocatoria.tipo === props.tipo)
+    : lista
 }
 
 async function seleccionar(id: number): Promise<void> {
@@ -359,7 +386,10 @@ function verExamen(alumnoId: number): void {
   ventana.focus()
 }
 
-onMounted(cargar)
+onMounted(() => {
+  crearForm.tipo = props.tipo
+  void cargar()
+})
 watch(grupoId, cargar)
 </script>
 
@@ -381,14 +411,14 @@ watch(grupoId, cargar)
     <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
     <template v-else-if="grupo && modelo">
-      <div class="barra">
+      <div v-if="!embebido" class="barra">
         <button class="boton boton--principal" type="button" @click="mostrarFormulario = true">
           Nueva convocatoria
         </button>
         <span class="tenue">{{ convocatorias.length }} convocatoria(s)</span>
       </div>
 
-      <section v-if="mostrarFormulario" class="tarjeta">
+      <section v-if="mostrarFormulario && !embebido" class="tarjeta">
         <div class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
             <h3>Nueva convocatoria</h3>
@@ -398,7 +428,7 @@ watch(grupoId, cargar)
           </div>
         </div>
         <div class="formulario">
-          <div class="campo">
+          <div v-if="!embebido" class="campo">
             <label for="convocatoria-tipo">Tipo</label>
             <select id="convocatoria-tipo" v-model="crearForm.tipo">
               <option value="ordinaria">Ordinaria</option>
@@ -432,8 +462,8 @@ watch(grupoId, cargar)
         </div>
       </section>
 
-      <div class="convocatorias__layout">
-        <aside class="tarjeta convocatorias__lista">
+      <div class="convocatorias__layout" :class="{ 'convocatorias__layout--embebido': embebido }">
+        <aside v-if="!embebido" class="tarjeta convocatorias__lista">
           <h3>Convocatorias</h3>
           <button
             v-for="convocatoria in convocatorias"
@@ -460,7 +490,7 @@ watch(grupoId, cargar)
                   {{ detalle.convocatoria.tipo }} · {{ detalle.convocatoria.fecha ?? 'sin fecha' }}
                 </span>
               </div>
-              <div class="cabecera-criterios__acciones">
+              <div v-if="!embebido" class="cabecera-criterios__acciones">
                 <button class="boton boton--peligro" type="button" @click="borrarConvocatoria">
                   Borrar
                 </button>

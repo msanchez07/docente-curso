@@ -4,6 +4,7 @@ import { RouterLink, useRoute } from 'vue-router'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
 import SelectButton from '@renderer/components/SelectButton.vue'
+import ConvocatoriasView from '@renderer/views/ConvocatoriasView.vue'
 import type {
   AvaluacionCalificacion,
   FilaCalificacionClase,
@@ -36,6 +37,9 @@ const descripcionModelo = computed(() => {
 })
 
 const modoUnidades = computed(() => false)
+const esConvocatoria = computed(
+  () => avaluacionActiva.value === 'ordinaria' || avaluacionActiva.value === 'extraordinaria'
+)
 
 const alumnosFiltrados = computed(() => {
   if (!resumen.value) return []
@@ -86,7 +90,12 @@ const opcionesAvaluaciones = computed(() => {
         value: avaluacion.avaluacionId,
         label: `${avaluacion.nombre} · ${formato(avaluacion.nota)}`
       }))
-  return [...evaluaciones, { value: 'final', label: 'Nota final' }]
+  return [
+    ...evaluaciones,
+    { value: 'ordinaria', label: 'Ordinaria' },
+    { value: 'extraordinaria', label: 'Extraordinaria' },
+    { value: 'final', label: 'Nota final' }
+  ]
 })
 
 const formulaFinal = computed(() => {
@@ -224,9 +233,6 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
         </p>
         <p v-if="descripcionModelo" class="tenue">{{ descripcionModelo }}</p>
       </div>
-      <RouterLink class="boton" :to="{ name: 'convocatorias', params: { grupoId: id } }">
-        Convocatorias
-      </RouterLink>
     </header>
 
     <div v-if="cargando && !grupo" class="vacio">Cargando calificaciones…</div>
@@ -249,6 +255,21 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
       <div v-if="resumen.alumnos.length === 0" class="vacio">
         No hay alumnado matriculado en este grupo.
       </div>
+
+      <div v-if="opcionesAvaluaciones.length > 0" class="calificaciones__tabs">
+        <SelectButton
+          v-model="avaluacionActiva"
+          :opciones="opcionesAvaluaciones"
+          aria-label="Vista de calificaciones"
+          compacto
+        />
+      </div>
+
+      <ConvocatoriasView
+        v-if="esConvocatoria"
+        embebido
+        :tipo="avaluacionActiva === 'extraordinaria' ? 'extraordinaria' : 'ordinaria'"
+      />
 
       <div v-else class="calificaciones__layout">
         <aside class="calificaciones__alumnos tarjeta">
@@ -304,15 +325,6 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
               {{ estado(filaSeleccionada) }}
             </span>
           </header>
-
-          <div v-if="opcionesAvaluaciones.length > 0" class="calificaciones__tabs">
-            <SelectButton
-              v-model="avaluacionActiva"
-              :opciones="opcionesAvaluaciones"
-              aria-label="Evaluación"
-              compacto
-            />
-          </div>
 
           <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
           <p v-if="errorGuardado" class="aviso aviso--error" role="alert">
