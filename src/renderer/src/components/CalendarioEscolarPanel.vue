@@ -155,17 +155,6 @@ const etiquetas: Record<TipoDiaCalendario, string> = {
   vacaciones: 'Vacaciones'
 }
 
-const conteo = computed(() => {
-  const resultado: Record<TipoDiaCalendario, number> = {
-    lectivo: 0,
-    no_lectivo: 0,
-    festivo: 0,
-    vacaciones: 0
-  }
-  for (const dia of dias.value) resultado[dia.tipo] += 1
-  return resultado
-})
-
 function fechaCorta(fecha: string): string {
   const [anio, mes, dia] = fecha.split('-')
   return `${dia}/${mes}/${anio}`
@@ -276,10 +265,6 @@ async function vaciar(): Promise<void> {
     <div class="cabecera-criterios">
       <div class="cabecera-criterios__titulo">
         <h3>Calendario escolar</h3>
-        <span class="tenue">
-          {{ dias.length }} días · {{ conteo.lectivo }} lectivos · {{ conteo.festivo }} festivos ·
-          {{ conteo.vacaciones }} vacaciones
-        </span>
       </div>
       <div class="cabecera-criterios__acciones">
         <MenuAcciones

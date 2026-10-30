@@ -470,25 +470,17 @@ function imprimir(): void {
             <table class="tabla faltas__tabla">
               <thead>
                 <tr>
-                  <th rowspan="2" scope="col">Alumno/a</th>
+                  <th scope="col">Alumno/a</th>
                   <th
                     v-for="modulo in informe.datos.modulos"
                     :key="modulo.moduloCodigo"
-                    colspan="2"
-                    scope="colgroup"
-                    class="faltas__modulo-cabecera"
+                    scope="col"
+                    class="faltas__modulo-col"
+                    :title="modulo.nombre"
                   >
-                    {{ modulo.nombreInforme }}
+                    <span class="faltas__modulo-codigo">{{ modulo.moduloCodigo }}</span>
+                    <span class="faltas__modulo-nombre">{{ modulo.nombre }}</span>
                   </th>
-                </tr>
-                <tr>
-                  <template
-                    v-for="modulo in informe.datos.modulos"
-                    :key="`sub-${modulo.moduloCodigo}`"
-                  >
-                    <th class="num" scope="col">Faltas</th>
-                    <th class="num" scope="col">%</th>
-                  </template>
                 </tr>
               </thead>
               <tbody>
@@ -496,21 +488,24 @@ function imprimir(): void {
                   <td>
                     <strong>{{ nombreAlumno(alumno.alumnoId) }}</strong>
                   </td>
-                  <template
+                  <td
                     v-for="modulo in informe.datos.modulos"
                     :key="`${alumno.alumnoId}-${modulo.moduloCodigo}`"
+                    class="num"
                   >
-                    <td class="num">{{ faltasDe(alumno.alumnoId, modulo.moduloCodigo) }}</td>
-                    <td class="num">
+                    <span
+                      class="faltas__celda"
+                      :class="estado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)"
+                      :title="`${modulo.nombre}: ${faltasDe(alumno.alumnoId, modulo.moduloCodigo)} faltas (${porcentaje(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)} %) · ${textoEstado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)}`"
+                    >
+                      <strong>{{ faltasDe(alumno.alumnoId, modulo.moduloCodigo) }}</strong>
                       <span
-                        class="chip faltas__estado"
-                        :class="estado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)"
-                        :title="textoEstado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)"
+                        >{{
+                          porcentaje(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)
+                        }}%</span
                       >
-                        {{ porcentaje(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo) }} %
-                      </span>
-                    </td>
-                  </template>
+                    </span>
+                  </td>
                 </tr>
               </tbody>
             </table>

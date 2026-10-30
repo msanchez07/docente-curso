@@ -517,7 +517,7 @@ async function exportarPdf(): Promise<void> {
     <template v-else>
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
-      <div class="programacion__barra">
+      <div v-if="modo !== 'calendario-escolar'" class="programacion__barra">
         <template v-if="modo !== 'calendario' && modo !== 'calendario-escolar'">
           <SelectButton
             v-model="vista"

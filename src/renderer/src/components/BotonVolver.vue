@@ -27,5 +27,6 @@ const { volver } = useVolver(() => props.a)
     >
       <path d="m15 18-6-6 6-6" />
     </svg>
+    <span class="volver__texto">{{ etiqueta }}</span>
   </button>
 </template>
