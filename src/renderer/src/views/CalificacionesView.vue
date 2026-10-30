@@ -11,7 +11,6 @@ import type {
   ResumenCalificacionesClase
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
-import { copiarTexto } from '@renderer/utils/portapapeles'
 
 const route = useRoute()
 const store = useGruposClaseStore()
@@ -26,8 +25,6 @@ const avaluacionActiva = ref('')
 const exportandoInforme = ref(false)
 const errorGuardado = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
-const correoCopiado = ref(false)
-let temporizadorCorreo = 0
 
 const id = computed(() => Number(route.params.grupoId))
 
@@ -94,19 +91,6 @@ function seleccionar(fila: FilaCalificacionClase): void {
   avaluacionActiva.value = fila.avaluaciones[0]?.avaluacionId ?? ''
   mensaje.value = null
   errorGuardado.value = null
-  correoCopiado.value = false
-}
-
-async function copiarCorreo(): Promise<void> {
-  const email = filaSeleccionada.value?.alumno.email
-  if (!email) return
-  if (await copiarTexto(email)) {
-    correoCopiado.value = true
-    window.clearTimeout(temporizadorCorreo)
-    temporizadorCorreo = window.setTimeout(() => {
-      correoCopiado.value = false
-    }, 2000)
-  }
 }
 
 async function cargar(): Promise<void> {
@@ -272,30 +256,6 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
                 {{ filaSeleccionada.alumno.apellidos }},
                 {{ filaSeleccionada.alumno.nombre }}
               </h3>
-              <p class="tenue calificaciones__contacto">
-                {{ filaSeleccionada.alumno.dni ?? 'sin DNI' }} ·
-                {{ filaSeleccionada.alumno.email ?? 'sin correo' }}
-                <button
-                  v-if="filaSeleccionada.alumno.email"
-                  class="boton-copiar"
-                  type="button"
-                  @click="copiarCorreo"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.8"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <rect x="9" y="9" width="13" height="13" rx="2" />
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                  </svg>
-                  {{ correoCopiado ? 'Copiado' : 'Copiar correo' }}
-                </button>
-              </p>
             </div>
             <div class="calificaciones__detalle-nota">
               <span class="tenue">Nota final calculada</span>
