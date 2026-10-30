@@ -270,13 +270,6 @@ function irMesActualAgenda(): void {
   mesAgenda.value = new Date(ahora.getFullYear(), ahora.getMonth(), 1)
 }
 
-function etiquetaAgenda(tipo: TipoAgenda): string {
-  if (tipo === 'examen') return 'Examen'
-  if (tipo === 'evaluacion') return 'Evaluación'
-  if (tipo === 'no_lectivo') return 'No lectivo'
-  return 'Entrega'
-}
-
 function claseDiaAgenda(items: ItemAgenda[]): string {
   if (items.some((item) => item.tipo === 'no_lectivo')) return 'agenda-mini__celda--no-lectivo'
   if (items.some((item) => item.tipo === 'examen')) return 'agenda-mini__celda--examen'
@@ -1034,19 +1027,12 @@ watch(id, cargar)
             <p v-if="agendaProxima.length === 0" class="tenue">No hay hitos próximos.</p>
             <ul v-else class="dashboard__proximas-lista">
               <li v-for="item in agendaProxima" :key="item.id">
-                <span class="dashboard__fecha">{{ fechaCorta(item.fecha) }}</span>
+                <span class="dashboard__fecha" :class="`dashboard__fecha--${item.tipo}`">
+                  {{ fechaCorta(item.fecha) }}
+                </span>
                 <span class="dashboard__contenido">
                   <small v-if="item.hora" class="tenue">{{ item.hora }} · </small>
                   {{ item.titulo }}
-                </span>
-                <span
-                  class="chip"
-                  :class="{
-                    'chip--aviso': item.tipo === 'examen',
-                    'chip--ok': item.tipo === 'evaluacion'
-                  }"
-                >
-                  {{ etiquetaAgenda(item.tipo) }}
                 </span>
               </li>
             </ul>

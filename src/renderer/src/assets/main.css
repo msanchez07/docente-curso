@@ -5831,15 +5831,44 @@ a:focus-visible {
   justify-content: center;
   justify-self: start;
   padding: 3px 7px;
-  border: 1px solid var(--borde);
-  border-radius: 6px;
-  background: #f2f4f7;
   color: #344054;
   font-size: 12px;
   font-weight: 650;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.01em;
   white-space: nowrap;
+  background: #f2f4f7;
+  border: 1px solid var(--borde);
+  border-left: 3px solid #98a2b3;
+  border-radius: 6px;
+}
+
+.dashboard__fecha--entrega {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  border-left-color: #2563eb;
+}
+
+.dashboard__fecha--examen {
+  color: #b54708;
+  background: #fffaeb;
+  border-color: #f2d9a4;
+  border-left-color: #d98a2b;
+}
+
+.dashboard__fecha--evaluacion {
+  color: #067647;
+  background: #ecfdf3;
+  border-color: #b7e4c7;
+  border-left-color: #067647;
+}
+
+.dashboard__fecha--no_lectivo {
+  color: #b42318;
+  background: #fef3f2;
+  border-color: #fecdca;
+  border-left-color: #b42318;
 }
 
 .dashboard__contenido {
@@ -6675,7 +6704,7 @@ a:focus-visible {
 
 .dashboard__proximas-lista li {
   display: grid;
-  grid-template-columns: 86px minmax(0, 1fr) auto;
+  grid-template-columns: 92px minmax(0, 1fr);
   gap: 10px;
   align-items: center;
   padding: 9px 0;
