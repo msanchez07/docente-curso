@@ -69,6 +69,21 @@ const api: Api = {
       ipcRenderer.invoke(CANALES.formacionEmpresaActualizar, id, entrada),
     borrar: (id) => ipcRenderer.invoke(CANALES.formacionEmpresaBorrar, id)
   },
+  convocatorias: {
+    listar: (grupoClaseId) => ipcRenderer.invoke(CANALES.convocatoriasListar, grupoClaseId),
+    obtener: (id) => ipcRenderer.invoke(CANALES.convocatoriasObtener, id),
+    crear: (grupoClaseId, entrada) =>
+      ipcRenderer.invoke(CANALES.convocatoriasCrear, grupoClaseId, entrada),
+    actualizar: (id, entrada) => ipcRenderer.invoke(CANALES.convocatoriasActualizar, id, entrada),
+    borrar: (id) => ipcRenderer.invoke(CANALES.convocatoriasBorrar, id),
+    crearBloque: (convocatoriaId, entrada) =>
+      ipcRenderer.invoke(CANALES.convocatoriasCrearBloque, convocatoriaId, entrada),
+    actualizarBloque: (id, entrada) =>
+      ipcRenderer.invoke(CANALES.convocatoriasActualizarBloque, id, entrada),
+    borrarBloque: (id) => ipcRenderer.invoke(CANALES.convocatoriasBorrarBloque, id),
+    guardarAsignaciones: (convocatoriaId, asignaciones) =>
+      ipcRenderer.invoke(CANALES.convocatoriasGuardarAsignaciones, convocatoriaId, asignaciones)
+  },
   presentacion: {
     obtener: () => ipcRenderer.invoke(CANALES.presentacionObtener),
     guardar: (config) => ipcRenderer.invoke(CANALES.presentacionGuardar, config)

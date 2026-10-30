@@ -34,6 +34,13 @@ import type {
   CriterioUnidad,
   AlumnoEntrada,
   AlumnoFaltasCurso,
+  AsignacionConvocatoria,
+  AsignacionConvocatoriaEntrada,
+  BloqueConvocatoria,
+  BloqueConvocatoriaEntrada,
+  Convocatoria,
+  ConvocatoriaDetalle,
+  ConvocatoriaEntrada,
   PresentacionConfig,
   ClaveCursoFaltas,
   ConfigModuloFaltas,
@@ -94,6 +101,7 @@ const CLAVE_CALENDARIO = 'gestion-entregas:calendario-escolar'
 const CLAVE_FALTAS = 'gestion-entregas:faltas-clase'
 const CLAVE_DEMO = 'gestion-entregas:demo-cargado'
 const CLAVE_PRESENTACION = 'gestion-entregas:presentacion'
+const CLAVE_CONVOCATORIAS = 'gestion-entregas:convocatorias'
 
 type GrupoGuardado = Omit<
   GrupoClase,
@@ -1461,6 +1469,41 @@ async function obtenerCursoFaltasWeb(clave: ClaveCursoFaltas): Promise<DatosCurs
   }
 }
 
+interface EstadoConvocatorias {
+  convocatorias: Convocatoria[]
+  bloques: BloqueConvocatoria[]
+  asignaciones: AsignacionConvocatoria[]
+}
+
+function leerEstadoConvocatorias(): EstadoConvocatorias {
+  try {
+    const crudo = localStorage.getItem(CLAVE_CONVOCATORIAS)
+    return crudo
+      ? (JSON.parse(crudo) as EstadoConvocatorias)
+      : { convocatorias: [], bloques: [], asignaciones: [] }
+  } catch {
+    return { convocatorias: [], bloques: [], asignaciones: [] }
+  }
+}
+
+function escribirEstadoConvocatorias(estado: EstadoConvocatorias): void {
+  localStorage.setItem(CLAVE_CONVOCATORIAS, JSON.stringify(estado))
+}
+
+function detalleConvocatoria(estado: EstadoConvocatorias, id: number): ConvocatoriaDetalle | null {
+  const convocatoria = estado.convocatorias.find((item) => item.id === id)
+  if (!convocatoria) return null
+  return {
+    convocatoria,
+    bloques: estado.bloques
+      .filter((bloque) => bloque.convocatoria_id === id)
+      .sort((a, b) => a.orden - b.orden || a.id - b.id),
+    asignaciones: estado.asignaciones
+      .filter((asignacion) => asignacion.convocatoria_id === id)
+      .map((asignacion) => ({ ...asignacion, incluida: asignacion.incluida !== false }))
+  }
+}
+
 function leerPresentacion(): PresentacionConfig {
   try {
     const crudo = localStorage.getItem(CLAVE_PRESENTACION)
@@ -2290,6 +2333,129 @@ const api = {
       if (restantes.length === formacion.length) return false
       escribirFormacion(restantes)
       return true
+    }
+  },
+  convocatorias: {
+    listar: async (grupoClaseId: number): Promise<Convocatoria[]> =>
+      leerEstadoConvocatorias()
+        .convocatorias.filter((item) => item.grupo_clase_id === grupoClaseId)
+        .sort((a, b) => (a.fecha ?? '9999').localeCompare(b.fecha ?? '9999') || a.id - b.id),
+    obtener: async (id: number): Promise<ConvocatoriaDetalle | null> =>
+      detalleConvocatoria(leerEstadoConvocatorias(), id),
+    crear: async (grupoClaseId: number, entrada: ConvocatoriaEntrada): Promise<Convocatoria> => {
+      const estado = leerEstadoConvocatorias()
+      const nueva: Convocatoria = {
+        id: Math.max(0, ...estado.convocatorias.map((item) => item.id)) + 1,
+        grupo_clase_id: grupoClaseId,
+        tipo: entrada.tipo,
+        nombre: entrada.nombre.trim(),
+        fecha: entrada.fecha ?? null,
+        creado_en: new Date().toISOString(),
+        actualizado_en: new Date().toISOString()
+      }
+      estado.convocatorias.push(nueva)
+      escribirEstadoConvocatorias(estado)
+      return nueva
+    },
+    actualizar: async (id: number, entrada: ConvocatoriaEntrada): Promise<Convocatoria | null> => {
+      const estado = leerEstadoConvocatorias()
+      const actual = estado.convocatorias.find((item) => item.id === id)
+      if (!actual) return null
+      Object.assign(actual, {
+        tipo: entrada.tipo,
+        nombre: entrada.nombre.trim(),
+        fecha: entrada.fecha ?? null,
+        actualizado_en: new Date().toISOString()
+      })
+      escribirEstadoConvocatorias(estado)
+      return actual
+    },
+    borrar: async (id: number): Promise<boolean> => {
+      const estado = leerEstadoConvocatorias()
+      const antes = estado.convocatorias.length
+      estado.convocatorias = estado.convocatorias.filter((item) => item.id !== id)
+      estado.bloques = estado.bloques.filter((item) => item.convocatoria_id !== id)
+      estado.asignaciones = estado.asignaciones.filter((item) => item.convocatoria_id !== id)
+      escribirEstadoConvocatorias(estado)
+      return estado.convocatorias.length !== antes
+    },
+    crearBloque: async (
+      convocatoriaId: number,
+      entrada: BloqueConvocatoriaEntrada
+    ): Promise<BloqueConvocatoria> => {
+      const estado = leerEstadoConvocatorias()
+      const bloque: BloqueConvocatoria = {
+        id: Math.max(0, ...estado.bloques.map((item) => item.id)) + 1,
+        convocatoria_id: convocatoriaId,
+        nombre: entrada.nombre.trim(),
+        descripcion: entrada.descripcion?.trim() || '',
+        avaluacion_id: entrada.avaluacion_id ?? null,
+        unidad_id: entrada.unidad_id ?? null,
+        ra_codigo: entrada.ra_codigo ?? null,
+        ce_codigo: entrada.ce_codigo ?? null,
+        peso: Number(entrada.peso) || 0,
+        orden: Number(entrada.orden) || 0
+      }
+      estado.bloques.push(bloque)
+      escribirEstadoConvocatorias(estado)
+      return bloque
+    },
+    actualizarBloque: async (
+      id: number,
+      entrada: BloqueConvocatoriaEntrada
+    ): Promise<BloqueConvocatoria | null> => {
+      const estado = leerEstadoConvocatorias()
+      const bloque = estado.bloques.find((item) => item.id === id)
+      if (!bloque) return null
+      Object.assign(bloque, {
+        nombre: entrada.nombre.trim(),
+        descripcion: entrada.descripcion?.trim() || '',
+        avaluacion_id: entrada.avaluacion_id ?? null,
+        unidad_id: entrada.unidad_id ?? null,
+        ra_codigo: entrada.ra_codigo ?? null,
+        ce_codigo: entrada.ce_codigo ?? null,
+        peso: Number(entrada.peso) || 0,
+        orden: Number(entrada.orden) || 0
+      })
+      escribirEstadoConvocatorias(estado)
+      return bloque
+    },
+    borrarBloque: async (id: number): Promise<boolean> => {
+      const estado = leerEstadoConvocatorias()
+      const antes = estado.bloques.length
+      estado.bloques = estado.bloques.filter((item) => item.id !== id)
+      estado.asignaciones = estado.asignaciones.filter((item) => item.bloque_id !== id)
+      escribirEstadoConvocatorias(estado)
+      return estado.bloques.length !== antes
+    },
+    guardarAsignaciones: async (
+      convocatoriaId: number,
+      asignaciones: AsignacionConvocatoriaEntrada[]
+    ): Promise<ConvocatoriaDetalle> => {
+      const estado = leerEstadoConvocatorias()
+      const bloqueIds = new Set(
+        estado.bloques
+          .filter((item) => item.convocatoria_id === convocatoriaId)
+          .map((item) => item.id)
+      )
+      estado.asignaciones = estado.asignaciones.filter(
+        (item) => item.convocatoria_id !== convocatoriaId
+      )
+      let siguiente = Math.max(0, ...estado.asignaciones.map((item) => item.id)) + 1
+      for (const asignacion of asignaciones) {
+        if (!bloqueIds.has(asignacion.bloqueId)) continue
+        estado.asignaciones.push({
+          id: siguiente++,
+          convocatoria_id: convocatoriaId,
+          alumno_id: asignacion.alumnoId,
+          bloque_id: asignacion.bloqueId,
+          nota: asignacion.nota ?? null,
+          observaciones: asignacion.observaciones?.trim() || null,
+          incluida: asignacion.incluida !== false
+        })
+      }
+      escribirEstadoConvocatorias(estado)
+      return detalleConvocatoria(estado, convocatoriaId)!
     }
   },
   presentacion: {

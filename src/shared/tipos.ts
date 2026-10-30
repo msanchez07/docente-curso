@@ -1067,6 +1067,74 @@ export interface ApiBackup {
   importar(ruta?: string): Promise<ResultadoBackup>
 }
 
+/* --- Convocatorias ordinaria y extraordinaria ------------------------- */
+
+export type TipoConvocatoria = 'ordinaria' | 'extraordinaria'
+
+export interface Convocatoria {
+  id: number
+  grupo_clase_id: number
+  tipo: TipoConvocatoria
+  nombre: string
+  fecha: string | null
+  creado_en: string
+  actualizado_en: string
+}
+
+export interface BloqueConvocatoria {
+  id: number
+  convocatoria_id: number
+  nombre: string
+  descripcion: string
+  avaluacion_id: string | null
+  unidad_id: number | null
+  ra_codigo: string | null
+  ce_codigo: string | null
+  peso: number
+  orden: number
+}
+
+export interface AsignacionConvocatoria {
+  id: number
+  convocatoria_id: number
+  alumno_id: number
+  bloque_id: number
+  nota: number | null
+  observaciones: string | null
+  incluida: boolean
+}
+
+export interface ConvocatoriaDetalle {
+  convocatoria: Convocatoria
+  bloques: BloqueConvocatoria[]
+  asignaciones: AsignacionConvocatoria[]
+}
+
+export interface ConvocatoriaEntrada {
+  tipo: TipoConvocatoria
+  nombre: string
+  fecha?: string | null
+}
+
+export interface BloqueConvocatoriaEntrada {
+  nombre: string
+  descripcion?: string
+  avaluacion_id?: string | null
+  unidad_id?: number | null
+  ra_codigo?: string | null
+  ce_codigo?: string | null
+  peso?: number
+  orden?: number
+}
+
+export interface AsignacionConvocatoriaEntrada {
+  alumnoId: number
+  bloqueId: number
+  nota?: number | null
+  observaciones?: string | null
+  incluida?: boolean
+}
+
 /* --- Presentación editable del módulo ---------------------------------- */
 
 export interface PresentacionConfig {
@@ -1153,6 +1221,26 @@ export interface Api {
       entrada: PeriodoFormacionEmpresaEntrada
     ): Promise<PeriodoFormacionEmpresa | null>
     borrar(id: number): Promise<boolean>
+  }
+  convocatorias: {
+    listar(grupoClaseId: number): Promise<Convocatoria[]>
+    obtener(id: number): Promise<ConvocatoriaDetalle | null>
+    crear(grupoClaseId: number, entrada: ConvocatoriaEntrada): Promise<Convocatoria>
+    actualizar(id: number, entrada: ConvocatoriaEntrada): Promise<Convocatoria | null>
+    borrar(id: number): Promise<boolean>
+    crearBloque(
+      convocatoriaId: number,
+      entrada: BloqueConvocatoriaEntrada
+    ): Promise<BloqueConvocatoria>
+    actualizarBloque(
+      id: number,
+      entrada: BloqueConvocatoriaEntrada
+    ): Promise<BloqueConvocatoria | null>
+    borrarBloque(id: number): Promise<boolean>
+    guardarAsignaciones(
+      convocatoriaId: number,
+      asignaciones: AsignacionConvocatoriaEntrada[]
+    ): Promise<ConvocatoriaDetalle>
   }
   presentacion: {
     obtener(): Promise<PresentacionConfig>
@@ -1346,6 +1434,15 @@ export const CANALES = {
   formacionEmpresaCrear: 'formacionEmpresa:crear',
   formacionEmpresaActualizar: 'formacionEmpresa:actualizar',
   formacionEmpresaBorrar: 'formacionEmpresa:borrar',
+  convocatoriasListar: 'convocatorias:listar',
+  convocatoriasObtener: 'convocatorias:obtener',
+  convocatoriasCrear: 'convocatorias:crear',
+  convocatoriasActualizar: 'convocatorias:actualizar',
+  convocatoriasBorrar: 'convocatorias:borrar',
+  convocatoriasCrearBloque: 'convocatorias:crearBloque',
+  convocatoriasActualizarBloque: 'convocatorias:actualizarBloque',
+  convocatoriasBorrarBloque: 'convocatorias:borrarBloque',
+  convocatoriasGuardarAsignaciones: 'convocatorias:guardarAsignaciones',
   presentacionObtener: 'presentacion:obtener',
   presentacionGuardar: 'presentacion:guardar',
   normativaFptLeer: 'normativaFpt:leer',

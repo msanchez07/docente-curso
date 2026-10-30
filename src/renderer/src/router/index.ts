@@ -4,6 +4,7 @@ import AlumnoDetalleView from '@renderer/views/AlumnoDetalleView.vue'
 import AlumnoFormacionView from '@renderer/views/AlumnoFormacionView.vue'
 import BoeView from '@renderer/views/BoeView.vue'
 import CalificacionesView from '@renderer/views/CalificacionesView.vue'
+import ConvocatoriasView from '@renderer/views/ConvocatoriasView.vue'
 import CriteriosView from '@renderer/views/CriteriosView.vue'
 import CursosView from '@renderer/views/CursosView.vue'
 import EntregaEvidenciasView from '@renderer/views/EntregaEvidenciasView.vue'
@@ -121,6 +122,11 @@ const router = createRouter({
       path: '/grupo/:grupoId/calificaciones',
       name: 'calificaciones',
       component: CalificacionesView
+    },
+    {
+      path: '/grupo/:grupoId/convocatorias',
+      name: 'convocatorias',
+      component: ConvocatoriasView
     },
     {
       path: '/grupo/:grupoId/informes',

@@ -43,6 +43,7 @@ import esquemaV33 from './esquema-v33.sql?raw'
 import esquemaV34 from './esquema-v34.sql?raw'
 import esquemaV35 from './esquema-v35.sql?raw'
 import esquemaV36 from './esquema-v36.sql?raw'
+import esquemaV37 from './esquema-v37.sql?raw'
 
 export type Bd = Database.Database
 
@@ -88,7 +89,8 @@ const MIGRACIONES: Migracion[] = [
   { version: 33, sql: esquemaV33 },
   { version: 34, sql: esquemaV34 },
   { version: 35, sql: esquemaV35 },
-  { version: 36, sql: esquemaV36 }
+  { version: 36, sql: esquemaV36 },
+  { version: 37, sql: esquemaV37 }
 ]
 
 export function abrirBd(ruta: string): Bd {

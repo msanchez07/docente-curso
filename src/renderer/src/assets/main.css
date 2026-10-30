@@ -2927,6 +2927,86 @@ a:focus-visible {
   font-size: 19px;
 }
 
+.convocatorias__layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.convocatorias__lista {
+  position: sticky;
+  top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px;
+}
+
+.convocatorias__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 9px 10px;
+  color: var(--texto);
+  font: inherit;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.convocatorias__item:hover {
+  background: #f7f9fc;
+}
+
+.convocatorias__item--activa {
+  background: var(--acento-suave);
+  border-color: #c7d7fe;
+}
+
+.convocatorias__item .tenue {
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.convocatorias__principal {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.convocatorias__alumnos th,
+.convocatorias__alumnos td {
+  vertical-align: middle;
+}
+
+.convocatorias__celda {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.convocatorias__nota {
+  width: 62px;
+  padding: 4px 5px;
+  font-size: 12px;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .convocatorias__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .convocatorias__lista {
+    position: static;
+  }
+}
+
 .calificaciones__alumno-cabecera {
   display: flex;
   align-items: baseline;

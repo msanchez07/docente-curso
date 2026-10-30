@@ -147,7 +147,7 @@ Vite/electron-vite + Vitest**.
 ### 2.9. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
-- Última migración aplicada: **v36**.
+- Última migración aplicada: **v37**.
   - v23: unidades y calendario escolar.
   - v24: horas de formación.
   - v25: varias sesiones por día (`hora`, `orden`).
@@ -162,6 +162,7 @@ Vite/electron-vite + Vitest**.
   - v34: mínimos de la plantilla de calificación por unidad.
   - v35: trimestre/evaluación asociado a cada unidad.
   - v36: secciones enunciado, problema y restricciones de cada entrega.
+  - v37: convocatorias ordinaria/extraordinaria, bloques y asignaciones por alumno.
 - `dias_semana` y `tutorias_semana` se derivan del calendario cuando hay bloques, para que la
   programación, el resumen del grupo y el PDF sean coherentes.
 
@@ -195,6 +196,9 @@ Vite/electron-vite + Vitest**.
 - Las entregas incluyen un enunciado, una descripción del problema y restricciones. Su ficha
   HTML autocontenida se puede copiar, descargar o imprimir; al abrir una entrega se muestra la
   ficha primero y las notas en una pestaña aparte.
+- Las convocatorias ordinaria y extraordinaria agrupan bloques de examen por trimestre, unidad o
+  RA/CE. Cada alumno recibe los bloques que le corresponden según lo suspenso y el profesor puede
+  ajustarlos, calificarlos y generar un examen personalizado.
 - El PDF de faltas colorea el fondo de las celdas de faltas y porcentaje según el estado.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.

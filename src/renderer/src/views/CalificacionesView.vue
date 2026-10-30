@@ -222,6 +222,9 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
         Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }}
       </p>
       <p v-if="descripcionModelo" class="tenue">{{ descripcionModelo }}</p>
+      <RouterLink class="boton" :to="{ name: 'convocatorias', params: { grupoId: id } }">
+        Convocatorias
+      </RouterLink>
     </header>
 
     <div v-if="cargando && !grupo" class="vacio">Cargando calificaciones…</div>

@@ -21,6 +21,9 @@ import type {
   NotaEntradaClase,
   NotaRegistro,
   OpcionesExportacionEntregas,
+  AsignacionConvocatoriaEntrada,
+  BloqueConvocatoriaEntrada,
+  ConvocatoriaEntrada,
   PeriodoFormacionEmpresaEntrada,
   PresentacionConfig,
   ProgramacionEntrada,
@@ -57,6 +60,17 @@ import {
   subirEvidenciasClase
 } from '../db/repositorios/evidencias-clase'
 import { guardarPresentacion, obtenerPresentacion } from '../db/repositorios/presentacion'
+import {
+  actualizarBloqueConvocatoria,
+  actualizarConvocatoria,
+  borrarBloqueConvocatoria,
+  borrarConvocatoria,
+  crearBloqueConvocatoria,
+  crearConvocatoria,
+  guardarAsignacionesConvocatoria,
+  listarConvocatorias,
+  obtenerConvocatoriaDetalle
+} from '../db/repositorios/convocatorias'
 import {
   actualizarFormacionEmpresa,
   borrarFormacionEmpresa,
@@ -297,6 +311,41 @@ export function registrarIpc(): void {
   )
   ipcMain.handle(CANALES.eventosEvaluacionImportar, (_e, grupoClaseId: number, texto: string) =>
     importarEventosEvaluacion(bd(), grupoClaseId, texto)
+  )
+
+  // Convocatorias ordinaria y extraordinaria.
+  ipcMain.handle(CANALES.convocatoriasListar, (_e, grupoClaseId: number) =>
+    listarConvocatorias(bd(), grupoClaseId)
+  )
+  ipcMain.handle(CANALES.convocatoriasObtener, (_e, id: number) =>
+    obtenerConvocatoriaDetalle(bd(), id)
+  )
+  ipcMain.handle(
+    CANALES.convocatoriasCrear,
+    (_e, grupoClaseId: number, entrada: ConvocatoriaEntrada) =>
+      crearConvocatoria(bd(), grupoClaseId, entrada)
+  )
+  ipcMain.handle(CANALES.convocatoriasActualizar, (_e, id: number, entrada: ConvocatoriaEntrada) =>
+    actualizarConvocatoria(bd(), id, entrada)
+  )
+  ipcMain.handle(CANALES.convocatoriasBorrar, (_e, id: number) => borrarConvocatoria(bd(), id))
+  ipcMain.handle(
+    CANALES.convocatoriasCrearBloque,
+    (_e, convocatoriaId: number, entrada: BloqueConvocatoriaEntrada) =>
+      crearBloqueConvocatoria(bd(), convocatoriaId, entrada)
+  )
+  ipcMain.handle(
+    CANALES.convocatoriasActualizarBloque,
+    (_e, id: number, entrada: BloqueConvocatoriaEntrada) =>
+      actualizarBloqueConvocatoria(bd(), id, entrada)
+  )
+  ipcMain.handle(CANALES.convocatoriasBorrarBloque, (_e, id: number) =>
+    borrarBloqueConvocatoria(bd(), id)
+  )
+  ipcMain.handle(
+    CANALES.convocatoriasGuardarAsignaciones,
+    (_e, convocatoriaId: number, asignaciones: AsignacionConvocatoriaEntrada[]) =>
+      guardarAsignacionesConvocatoria(bd(), convocatoriaId, asignaciones)
   )
 
   // Presentación editable del módulo.

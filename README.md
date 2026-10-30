@@ -57,6 +57,8 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - La suma de pesos de las unidades de un trimestre debe ser 100 %.
   - Cálculo de categorías, RA y nota final, con mínimos por unidad.
   - Informe PDF por alumno y acceso a su informe completo.
+  - **Convocatorias ordinaria y extraordinaria** con bloques por trimestre, unidad o RA/CE,
+    asignación de bloques por alumno, notas y examen personalizado.
 - **Informes** de grupo y alumno con gráficas, RA, formación, impresión y exportación.
 - **Plantillas de criterios** con listado y edición en páginas propias.
 - **Normativa FP** a pantalla completa e importación desde la barra lateral.
@@ -83,7 +85,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 
 - Electron
 - Vue 3 + TypeScript + Pinia + Vue Router
-- SQLite con `better-sqlite3` y migraciones versionadas (última: **v36**)
+- SQLite con `better-sqlite3` y migraciones versionadas (última: **v37**)
 - Vite / electron-vite
 - Vitest
 - JSZip para exportaciones con archivos
