@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
+import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import { ESQUEMA_CALENDARIO } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
@@ -194,6 +195,22 @@ async function cargar(): Promise<void> {
 onMounted(cargar)
 watch(() => [props.cursoAcademicoId, props.grupoClaseId], cargar)
 
+function accionesCabecera(): AccionMenu[] {
+  return [
+    { id: 'importar', etiqueta: 'Importar calendario', icono: 'importar' },
+    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' },
+    ...(dias.value.length > 0
+      ? [{ id: 'vaciar', etiqueta: 'Vaciar calendario', icono: 'borrar' as const, peligro: true }]
+      : [])
+  ]
+}
+
+function ejecutarAccionCabecera(accion: string): void {
+  if (accion === 'importar') abrirImportar()
+  else if (accion === 'esquema') exportarEsquema()
+  else if (accion === 'vaciar') confirmarVaciar.value = true
+}
+
 function abrirImportar(): void {
   mostrarImportar.value = true
   textoImportar.value = ''
@@ -265,16 +282,11 @@ async function vaciar(): Promise<void> {
         </span>
       </div>
       <div class="cabecera-criterios__acciones">
-        <button class="boton" type="button" @click="abrirImportar">Importar calendario</button>
-        <button class="boton" type="button" @click="exportarEsquema">Descargar esquema</button>
-        <button
-          v-if="dias.length > 0"
-          class="boton boton--peligro"
-          type="button"
-          @click="confirmarVaciar = true"
-        >
-          Vaciar
-        </button>
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesCabecera()"
+          @accion="ejecutarAccionCabecera"
+        />
       </div>
     </div>
 

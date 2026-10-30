@@ -177,6 +177,18 @@ async function borrar(): Promise<void> {
   }
 }
 
+function accionesCabecera(): AccionMenu[] {
+  return [
+    { id: 'importar', etiqueta: 'Importar fechas', icono: 'importar' },
+    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' }
+  ]
+}
+
+function ejecutarAccionCabecera(accion: string): void {
+  if (accion === 'importar') abrirImportar()
+  else if (accion === 'esquema') exportarEsquema()
+}
+
 function abrirImportar(): void {
   mostrarImportar.value = true
   textoImportar.value = ''
@@ -265,8 +277,11 @@ async function alElegirFichero(evento: Event): Promise<void> {
       </section>
 
       <div class="barra">
-        <button class="boton" type="button" @click="abrirImportar">Importar JSON</button>
-        <button class="boton" type="button" @click="exportarEsquema">Descargar esquema</button>
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesCabecera()"
+          @accion="ejecutarAccionCabecera"
+        />
         <span class="barra__espacio"></span>
         <span class="tenue">{{ eventos.length }} fechas registradas</span>
       </div>

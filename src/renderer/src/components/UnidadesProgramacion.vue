@@ -2,10 +2,10 @@
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
+import { notificar } from '@renderer/composables/notificaciones'
 import { ESQUEMA_UNIDADES } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
 import { REQUISITOS_POR_DEFECTO } from '@shared/modelo'
-import { notificar } from '@renderer/composables/notificaciones'
 import type {
   CategoriaEvaluacion,
   CriterioDisponible,
@@ -164,6 +164,18 @@ function resetFormulario(): void {
   form.criterios = []
   raActiva.value = rasConCriterios.value[0]?.codigo ?? null
   error.value = null
+}
+
+function accionesCabecera(): AccionMenu[] {
+  return [
+    { id: 'importar', etiqueta: 'Importar unidades', icono: 'importar' },
+    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' }
+  ]
+}
+
+function ejecutarAccionCabecera(accion: string): void {
+  if (accion === 'importar') abrirImportar()
+  else if (accion === 'esquema') exportarEsquema()
 }
 
 function abrirImportar(): void {
@@ -475,8 +487,11 @@ async function borrar(): Promise<void> {
         </span>
       </div>
       <div class="cabecera-criterios__acciones">
-        <button class="boton" type="button" @click="abrirImportar">Importar JSON</button>
-        <button class="boton" type="button" @click="exportarEsquema">Descargar esquema</button>
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesCabecera()"
+          @accion="ejecutarAccionCabecera"
+        />
         <button class="boton boton--principal" type="button" @click="nueva">Nueva unidad</button>
       </div>
     </div>

@@ -5,6 +5,8 @@ import SelectButton from '@renderer/components/SelectButton.vue'
 import UnidadesProgramacion from '@renderer/components/UnidadesProgramacion.vue'
 import CalendarioEscolarPanel from '@renderer/components/CalendarioEscolarPanel.vue'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
+import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
+import { notificar } from '@renderer/composables/notificaciones'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { ESQUEMA_PROGRAMACION } from '@shared/esquemas-importacion'
 import { parsearDiasProgramacion } from '@shared/importar-programacion'
@@ -250,6 +252,22 @@ const celdasCalendario = computed(() => {
   })
 })
 
+function accionesSecundarias(): AccionMenu[] {
+  return [
+    { id: 'ejemplo', etiqueta: 'Cargar ejemplo', icono: 'programacion' },
+    { id: 'importar', etiqueta: 'Importar programación', icono: 'importar' },
+    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' },
+    { id: 'calendario', etiqueta: 'Calendario escolar', icono: 'programacion' }
+  ]
+}
+
+function ejecutarAccionSecundaria(accion: string): void {
+  if (accion === 'ejemplo') cargarEjemplo()
+  else if (accion === 'importar') abrirImportar()
+  else if (accion === 'esquema') exportarEsquema()
+  else if (accion === 'calendario') mostrarCalendarioEscolar.value = !mostrarCalendarioEscolar.value
+}
+
 function cambiarMes(delta: number): void {
   mesCalendario.value = new Date(
     mesCalendario.value.getFullYear(),
@@ -461,6 +479,7 @@ async function guardar(): Promise<boolean> {
     filas.value = await window.api.programacion.guardar(props.grupo.id, filas.value)
     original.value = serializar(filas.value)
     mensaje.value = 'Programación guardada.'
+    notificar(mensaje.value)
     return true
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -481,6 +500,7 @@ async function exportarPdf(): Promise<void> {
       mensaje.value = resultado.ruta
         ? `Programación exportada: ${resultado.ruta}`
         : (resultado.mensaje ?? 'Programación exportada.')
+      notificar(mensaje.value)
     } else if (resultado.mensaje && resultado.mensaje !== 'Guardado cancelado') {
       error.value = resultado.mensaje
     }
@@ -498,7 +518,6 @@ async function exportarPdf(): Promise<void> {
 
     <template v-else>
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
-      <p v-if="mensaje" class="aviso aviso--ok" role="status">{{ mensaje }}</p>
 
       <div class="programacion__barra">
         <template v-if="modo !== 'calendario'">
@@ -539,11 +558,11 @@ async function exportarPdf(): Promise<void> {
           aria-label="Modo de edición"
           compacto
         />
-        <button class="boton boton--sutil" type="button" @click="cargarEjemplo">
-          Cargar ejemplo
-        </button>
-        <button class="boton" type="button" @click="abrirImportar">Importar</button>
-        <button class="boton" type="button" @click="exportarEsquema">Descargar esquema</button>
+        <MenuAcciones
+          texto="Acciones"
+          :acciones="accionesSecundarias()"
+          @accion="ejecutarAccionSecundaria"
+        />
         <button
           class="boton boton--principal"
           type="button"
@@ -551,13 +570,6 @@ async function exportarPdf(): Promise<void> {
           @click="exportarPdf"
         >
           {{ exportandoPdf ? 'Generando PDF…' : 'Exportar PDF' }}
-        </button>
-        <button
-          class="boton"
-          type="button"
-          @click="mostrarCalendarioEscolar = !mostrarCalendarioEscolar"
-        >
-          Calendario escolar
         </button>
       </div>
 
