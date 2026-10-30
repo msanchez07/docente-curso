@@ -121,6 +121,10 @@ function normalizar(texto: string): string {
     .replace(/[\u0300-\u036f]/g, '')
 }
 
+function iniciales(alumno: AlumnoClase): string {
+  return `${alumno.nombre[0] ?? ''}${alumno.apellidos[0] ?? ''}`.toUpperCase()
+}
+
 const visibles = computed(() => {
   const termino = normalizar(busqueda.value.trim())
   return alumnos.value.filter((alumno) => {
@@ -437,26 +441,26 @@ async function alElegirFichero(evento: Event): Promise<void> {
         </div>
 
         <template v-else>
-          <div class="entrega__resumen" aria-label="Resumen del alumnado">
-            <div class="entrega__resumen-item">
-              <strong class="entrega__resumen-valor">{{ resumen.total }}</strong>
-              <span class="entrega__resumen-etiqueta">alumnos</span>
-            </div>
-            <div class="entrega__resumen-item">
-              <strong class="entrega__resumen-valor">{{ resumen.activos }}</strong>
-              <span class="entrega__resumen-etiqueta">activos</span>
-            </div>
-            <div class="entrega__resumen-item">
-              <strong class="entrega__resumen-valor">{{ resumen.inactivos }}</strong>
-              <span class="entrega__resumen-etiqueta">inactivos</span>
-            </div>
-            <div
-              class="entrega__resumen-item"
-              :class="{ 'entrega__resumen-item--aviso': resumen.sinCorreo > 0 }"
+          <div class="alumnado__resumen" aria-label="Resumen del alumnado">
+            <article class="tarjeta alumnado__stat">
+              <span class="tenue">Alumnos</span>
+              <strong>{{ resumen.total }}</strong>
+            </article>
+            <article class="tarjeta alumnado__stat alumnado__stat--ok">
+              <span class="tenue">Activos</span>
+              <strong>{{ resumen.activos }}</strong>
+            </article>
+            <article class="tarjeta alumnado__stat alumnado__stat--muted">
+              <span class="tenue">Inactivos</span>
+              <strong>{{ resumen.inactivos }}</strong>
+            </article>
+            <article
+              class="tarjeta alumnado__stat"
+              :class="{ 'alumnado__stat--aviso': resumen.sinCorreo > 0 }"
             >
-              <strong class="entrega__resumen-valor">{{ resumen.sinCorreo }}</strong>
-              <span class="entrega__resumen-etiqueta">sin correo</span>
-            </div>
+              <span class="tenue">Sin correo</span>
+              <strong>{{ resumen.sinCorreo }}</strong>
+            </article>
           </div>
 
           <div v-if="visibles.length === 0" class="vacio">
@@ -486,20 +490,25 @@ async function alElegirFichero(evento: Event): Promise<void> {
                   :class="{ 'fila--inactiva': !alumno.activo }"
                 >
                   <td class="alumnado-tabla__alumno">
-                    <button
-                      class="alumno__enlace"
-                      type="button"
-                      :title="`Ver ficha de ${alumno.nombre} ${alumno.apellidos}`"
-                      @click="irAFicha(alumno)"
-                    >
-                      {{ alumno.apellidos }}, {{ alumno.nombre }}
-                    </button>
-                    <span class="alumno__meta monospace">
-                      {{ alumno.dni ? `DNI ${alumno.dni}` : 'Sin DNI' }}
-                    </span>
+                    <span class="alumnado__avatar" aria-hidden="true">{{ iniciales(alumno) }}</span>
+                    <div class="alumnado__identidad">
+                      <button
+                        class="alumno__enlace"
+                        type="button"
+                        :title="`Ver ficha de ${alumno.nombre} ${alumno.apellidos}`"
+                        @click="irAFicha(alumno)"
+                      >
+                        {{ alumno.apellidos }}, {{ alumno.nombre }}
+                      </button>
+                      <span class="alumno__meta monospace">
+                        {{ alumno.dni ? `DNI ${alumno.dni}` : 'Sin DNI' }}
+                      </span>
+                    </div>
                   </td>
                   <td>
-                    <span v-if="alumno.email" class="alumno__email">{{ alumno.email }}</span>
+                    <a v-if="alumno.email" class="alumnado__email" :href="`mailto:${alumno.email}`">
+                      {{ alumno.email }}
+                    </a>
                     <span v-else class="chip chip--aviso">Sin correo</span>
                   </td>
                   <td>

@@ -1589,6 +1589,83 @@ a:focus-visible {
   color: var(--tenue);
 }
 
+.alumnado__resumen {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 4px 0 16px;
+}
+
+.alumnado__stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 14px;
+  overflow: hidden;
+}
+
+.alumnado__stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--acento);
+}
+
+.alumnado__stat--ok::before {
+  background: var(--ok);
+}
+
+.alumnado__stat--muted::before {
+  background: #98a2b3;
+}
+
+.alumnado__stat--aviso::before {
+  background: var(--ambar);
+}
+
+.alumnado__stat strong {
+  font-size: 22px;
+  line-height: 1.15;
+  font-weight: 650;
+}
+
+.alumnado-tabla__alumno {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.alumnado__avatar {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--acento-suave);
+  color: var(--acento);
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.alumnado__identidad {
+  min-width: 0;
+}
+
+.alumnado__email {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.alumnado__email:hover {
+  color: var(--acento);
+  text-decoration: underline;
+}
+
 .alumnado-tabla th:nth-child(1) {
   width: 48%;
 }
