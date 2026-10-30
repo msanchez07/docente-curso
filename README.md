@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **195 tests**
+- `npm test` ✅ **204 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -32,21 +32,30 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Vista independiente de horario desde el dashboard.
 - **Dashboard** con agenda ordenada por fechas y minicalendario mensual:
   - Días coloreados por entregas, exámenes, evaluaciones y festivos/no lectivos.
-  - Festivos y no lectivos con fondo rojo.
+  - Festivos y no lectivos con fondo rojo, sin indicar unidad didáctica.
+  - Unidades didácticas visibles por día con colores estables.
+  - Listado de próximos hitos y fila aparte de días no lectivos.
 - **Programación de aula**: sesiones por fecha y hora, varias por día, unidades, desviaciones y
   observaciones.
 - **Programación didáctica**: unidades, fechas, criterios, RA/CE y calendario escolar.
+  - **Presentación del módulo**: plantilla HTML editable, con datos reales del grupo, vista
+    previa, copia para Aules, descarga e impresión/PDF.
+  - Plantilla de calificación por unidad: categorías, pesos y mínimos; editable o importable
+    desde JSON.
 - **Entregas**:
-  - Rúbrica en texto y/o archivo y evidencias.
-  - Mapeo a RA/CE, bloqueo/desbloqueo y notas.
-  - Exportación por entrega, avaluación/trimestre o curso completo.
-  - Previsualización en ventana propia y descarga en PDF (solo texto/rúbrica) o ZIP (archivos),
-    incluyendo el dossier dentro del ZIP cuando hay ambos.
-  - El archivo de una sola entrega usa el nombre de la entrega.
+  - Asociación obligatoria a una unidad didáctica.
+  - Secciones **Enunciado**, **Descripción del problema** y **Restricciones**.
+  - Pestañas **Ficha** y **Notas** al abrir una entrega; la ficha es la vista inicial.
+  - Ficha HTML autocontenida, con vista previa, copia para Aules, descarga e impresión/PDF.
+  - Rúbrica en texto y/o archivo, evidencias y mapeo a RA/CE.
+  - Bloqueo/desbloqueo y notas por alumno.
+  - Exportación PDF/ZIP por entrega o curso completo, con dossier y archivos cuando corresponde.
 - **Calificaciones**:
-  - Notas decimales por entrega y anotaciones.
-  - Cálculo de categorías, avaluaciones, RA y nota final.
-  - Desbloqueo directo de entregas bloqueadas.
+  - Vista de consulta: la nota final no se edita aquí, se calcula desde las entregas.
+  - Pestañas por unidad didáctica y última pestaña **Nota final**.
+  - Cada trimestre pondera en la nota final; las unidades ponderan dentro de su trimestre.
+  - La suma de pesos de las unidades de un trimestre debe ser 100 %.
+  - Cálculo de categorías, RA y nota final, con mínimos por unidad.
   - Informe PDF por alumno y acceso a su informe completo.
 - **Informes** de grupo y alumno con gráficas, RA, formación, impresión y exportación.
 - **Plantillas de criterios** con listado y edición en páginas propias.
@@ -63,7 +72,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Carpeta raíz global configurable.
   - Subcarpeta automática por curso académico.
   - JSON autocontenido por grupo (alumnado, criterios, entregas, notas, evidencias,
-    programación, unidades, eventos y formación; archivos en base64).
+    programación, unidades con sus plantillas, eventos y formación; archivos en base64).
   - Importación de una copia para restaurar solo ese grupo.
   - Aviso si la carpeta no está configurada o ha desaparecido.
   - Copia automática al abrir la aplicación si el contenido de un grupo cambió.
@@ -74,7 +83,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 
 - Electron
 - Vue 3 + TypeScript + Pinia + Vue Router
-- SQLite con `better-sqlite3` y migraciones versionadas
+- SQLite con `better-sqlite3` y migraciones versionadas (última: **v36**)
 - Vite / electron-vite
 - Vitest
 - JSZip para exportaciones con archivos

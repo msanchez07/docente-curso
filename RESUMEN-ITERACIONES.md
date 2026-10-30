@@ -186,12 +186,15 @@ Vite/electron-vite + Vitest**.
   Se puede copiar como HTML enriquecido, descargar o imprimir, y la vista previa se actualiza al
   cambiar la plantilla.
 - Calificaciones es una vista de consulta: la nota final no se edita ahí, se calcula desde las
-  entregas. Las evaluaciones se muestran como pestañas y la última es «Nota final», con el
-  resumen del cálculo y los informes.
+  entregas. Se muestran pestañas por unidad y la última es «Nota final», con el resumen de
+  trimestres, unidades, fórmula e informes.
 - La calificación final se organiza por trimestres: cada trimestre tiene un peso en la nota final
   y, dentro de él, las unidades tienen un peso que suma 100 %. Cada unidad tiene además su
   plantilla propia de categorías/instrumentos y sus mínimos; las entregas se asignan a una unidad.
 - La plantilla de la unidad se puede editar con formulario o importar desde JSON.
+- Las entregas incluyen un enunciado, una descripción del problema y restricciones. Su ficha
+  HTML autocontenida se puede copiar, descargar o imprimir; al abrir una entrega se muestra la
+  ficha primero y las notas en una pestaña aparte.
 - El PDF de faltas colorea el fondo de las celdas de faltas y porcentaje según el estado.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.
