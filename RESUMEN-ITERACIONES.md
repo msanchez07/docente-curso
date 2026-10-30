@@ -199,6 +199,8 @@ Vite/electron-vite + Vitest**.
   RA/CE y se integran como pestañas de Calificaciones, antes de «Nota final». Solo existe una
   convocatoria de cada tipo y se crea automáticamente al abrir su pestaña. Cada alumno recibe los
   bloques que le corresponden según lo suspenso y el profesor puede ajustarlos y calificarlos.
+- Si un alumno tiene asignado el bloque «Examen global», su nota sustituye al resto de bloques
+  de la convocatoria y pasa a valer el 100 % de esa convocatoria.
 - El PDF de faltas colorea el fondo de las celdas de faltas y porcentaje según el estado.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.

@@ -94,7 +94,12 @@ const objetivos = computed(() => {
 const asignacionesGuardadas = computed(() => detalle.value?.asignaciones ?? [])
 
 const notaConvocatoria = (alumnoId: number): number | null => {
+  const global = bloques.value.find(esBloqueGlobal)
+  const filaGlobal = global ? asignaciones.value[`${alumnoId}:${global.id}`] : undefined
+  if (filaGlobal?.marcada && filaGlobal.nota !== '') return Number(filaGlobal.nota)
+
   const bloquesConNota = bloques.value
+    .filter((bloque) => !esBloqueGlobal(bloque))
     .map((bloque) => {
       const fila = asignaciones.value[`${alumnoId}:${bloque.id}`]
       if (!fila?.marcada || fila.nota === '') return null
@@ -131,6 +136,28 @@ function requiereBloque(fila: FilaCalificacionClase, bloque: BloqueConvocatoria)
   return fila.vaAConvocatoria
 }
 
+function esBloqueGlobal(bloque: BloqueConvocatoria): boolean {
+  return !bloque.avaluacion_id && !bloque.unidad_id && !bloque.ra_codigo
+}
+
+function alCambiarBloque(alumnoId: number, bloque: BloqueConvocatoria): void {
+  const actual = asignaciones.value[`${alumnoId}:${bloque.id}`]
+  if (!actual?.marcada) return
+  if (esBloqueGlobal(bloque)) {
+    for (const otro of bloques.value) {
+      if (otro.id === bloque.id) continue
+      const fila = asignaciones.value[`${alumnoId}:${otro.id}`]
+      if (fila) fila.marcada = false
+    }
+    return
+  }
+  const global = bloques.value.find(esBloqueGlobal)
+  if (global) {
+    const filaGlobal = asignaciones.value[`${alumnoId}:${global.id}`]
+    if (filaGlobal) filaGlobal.marcada = false
+  }
+}
+
 function inicializarAsignaciones(): void {
   const siguiente: Record<string, FilaAsignacion> = {}
   for (const fila of alumnos.value) {
@@ -142,6 +169,15 @@ function inicializarAsignaciones(): void {
         marcada: guardada ? guardada.incluida : requiereBloque(fila, bloque),
         nota: guardada?.nota ?? '',
         observaciones: guardada?.observaciones ?? ''
+      }
+    }
+  }
+  for (const fila of alumnos.value) {
+    const global = bloques.value.find(esBloqueGlobal)
+    if (!global) continue
+    if (siguiente[`${fila.alumno.id}:${global.id}`]?.marcada) {
+      for (const bloque of bloques.value) {
+        if (bloque.id !== global.id) siguiente[`${fila.alumno.id}:${bloque.id}`].marcada = false
       }
     }
   }
@@ -629,6 +665,7 @@ watch(grupoId, cargar)
                           v-model="asignaciones[`${fila.alumno.id}:${bloque.id}`].marcada"
                           type="checkbox"
                           :aria-label="`Asignar ${bloque.nombre}`"
+                          @change="alCambiarBloque(fila.alumno.id, bloque)"
                         />
                         <input
                           v-model="asignaciones[`${fila.alumno.id}:${bloque.id}`].nota"
