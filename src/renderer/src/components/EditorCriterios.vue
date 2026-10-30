@@ -6,7 +6,7 @@ import type { ModeloEvaluacion } from '@shared/tipos'
 const props = defineProps<{ modelo: ModeloEvaluacion }>()
 const emit = defineEmits<{ valido: [boolean] }>()
 
-if (!props.modelo.modoCalificacion) props.modelo.modoCalificacion = 'trimestres'
+props.modelo.modoCalificacion = 'unidades'
 
 const pestana = ref('avaluaciones')
 const pestanas = [
@@ -100,24 +100,11 @@ function quitarCategoria(indice: number): void {
 
 <template>
   <div class="criterios">
-    <div class="criterios__modo">
-      <span class="campo__etiqueta">Modo de calificación</span>
-      <label class="criterios__modo-opcion">
-        <input v-model="modelo.modoCalificacion" type="radio" value="trimestres" />
-        Por trimestres
-      </label>
-      <label class="criterios__modo-opcion">
-        <input v-model="modelo.modoCalificacion" type="radio" value="unidades" />
-        Por unidades didácticas
-      </label>
-      <span class="tenue">
-        {{
-          modelo.modoCalificacion === 'unidades'
-            ? 'La nota final se calcula con el peso de cada unidad y sus entregas.'
-            : 'La nota final se calcula con las evaluaciones y categorías actuales.'
-        }}
-      </span>
-    </div>
+    <p class="aviso aviso--aviso" role="status">
+      La calificación final se organiza por unidades didácticas. La plantilla de cada unidad se
+      importa desde su formulario; las categorías y evaluaciones de esta pantalla solo se usan como
+      valores por defecto cuando una unidad no tiene plantilla propia.
+    </p>
 
     <p
       v-if="!categoriasOk || !avaluacionesOk || !nombresOk"

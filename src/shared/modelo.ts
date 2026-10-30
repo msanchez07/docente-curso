@@ -80,7 +80,7 @@ export function modeloPorDefecto(modalidad: Modalidad): ModeloEvaluacion {
     categorias: copiar(semipresencial ? CATEGORIAS_SEMIPRESENCIAL : CATEGORIAS_PRESENCIAL),
     avaluaciones: copiar(semipresencial ? AVALUACIONES_SEMIPRESENCIAL : AVALUACIONES_PRESENCIAL),
     requisitos: copiar(REQUISITOS_POR_DEFECTO),
-    modoCalificacion: 'trimestres',
+    modoCalificacion: 'unidades',
     convocatorias: copiar(CONVOCATORIAS_POR_DEFECTO)
   }
 }

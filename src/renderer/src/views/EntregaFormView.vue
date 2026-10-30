@@ -81,6 +81,19 @@ const cursoFormulario = computed(() => {
   return cursosStore.actual?.nombre ?? cursoAcademicoActual().nombre
 })
 
+const unidadSeleccionada = computed(
+  () => unidades.value.find((unidad) => unidad.id === form.unidad_id) ?? null
+)
+
+const categoriasDisponibles = computed(() => {
+  const propias = unidadSeleccionada.value?.categorias ?? []
+  return propias.length > 0 ? propias : (criterios.value?.categorias ?? [])
+})
+
+function alCambiarUnidad(): void {
+  form.categoria_id = categoriasDisponibles.value[0]?.id ?? ''
+}
+
 const ceAgrupados = computed<GrupoCe[]>(() => {
   const mapa = new Map<string, GrupoCe>()
   for (const ce of disponibles.value) {
@@ -257,6 +270,7 @@ async function cargar(): Promise<void> {
       criterios.value.avaluaciones[0]
     form.avaluacion_id = avaluacion?.id ?? ''
     form.categoria_id = criterios.value.categorias[0]?.id ?? ''
+    form.unidad_id = null
     form.ce_ids = []
   } catch (e) {
     errorCarga.value = (e as Error).message ?? String(e)
@@ -271,7 +285,7 @@ watch([grupoId, entregaId, esEdicion], cargar)
 async function guardar(): Promise<void> {
   if (!grupo.value) return
   errorFormulario.value = null
-  if (criterios.value?.modoCalificacion === 'unidades' && form.unidad_id === null) {
+  if (form.unidad_id === null) {
     errorFormulario.value = 'Selecciona la unidad didáctica a la que pertenece la entrega.'
     return
   }
@@ -420,18 +434,9 @@ async function guardar(): Promise<void> {
               </div>
 
               <div class="campo">
-                <label for="entrega-avaluacion">Avaluación *</label>
-                <select id="entrega-avaluacion" v-model="form.avaluacion_id">
-                  <option v-for="av in criterios.avaluaciones" :key="av.id" :value="av.id">
-                    {{ av.nombre }}
-                  </option>
-                </select>
-              </div>
-
-              <div class="campo">
                 <label for="entrega-categoria">Categoría *</label>
                 <select id="entrega-categoria" v-model="form.categoria_id">
-                  <option v-for="cat in criterios.categorias" :key="cat.id" :value="cat.id">
+                  <option v-for="cat in categoriasDisponibles" :key="cat.id" :value="cat.id">
                     {{ cat.nombre }}
                   </option>
                 </select>
@@ -442,7 +447,7 @@ async function guardar(): Promise<void> {
                   Unidad didáctica
                   <template v-if="criterios.modoCalificacion === 'unidades'"> *</template>
                 </label>
-                <select id="entrega-unidad" v-model="form.unidad_id">
+                <select id="entrega-unidad" v-model="form.unidad_id" @change="alCambiarUnidad">
                   <option :value="null">Sin asignar</option>
                   <option v-for="unidad in unidades" :key="unidad.id" :value="unidad.id">
                     {{ unidad.codigo ? `${unidad.codigo} · ` : '' }}{{ unidad.nombre }}

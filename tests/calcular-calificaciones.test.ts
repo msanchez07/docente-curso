@@ -210,6 +210,8 @@ describe('cálculo por unidades didácticas', () => {
       fecha_inicio: null,
       fecha_fin: null,
       peso: 60,
+      categorias: [],
+      requisitos: [],
       contenidos: '',
       observaciones: null,
       ra_codigos: ['RA1'],
@@ -226,6 +228,8 @@ describe('cálculo por unidades didácticas', () => {
       fecha_inicio: null,
       fecha_fin: null,
       peso: 40,
+      categorias: [],
+      requisitos: [],
       contenidos: '',
       observaciones: null,
       ra_codigos: ['RA2'],
@@ -255,8 +259,8 @@ describe('cálculo por unidades didácticas', () => {
       unidades
     )
     const fila = resumen.alumnos[0]
-    expect(fila.unidades.map((unidad) => unidad.nota)).toEqual([7, 7])
-    expect(fila.notaFinal).toBe(7)
+    expect(fila.unidades.map((unidad) => unidad.nota)).toEqual([7.33, 7])
+    expect(fila.notaFinal).toBe(7.2)
     expect(fila.aprobado).toBe(true)
   })
 })

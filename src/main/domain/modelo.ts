@@ -70,7 +70,7 @@ export function normalizarModelo(bruto: unknown): ModeloEvaluacion | null {
     categorias: (modelo.categorias as ModeloEvaluacion['categorias']) ?? [],
     avaluaciones: (modelo.avaluaciones as ModeloEvaluacion['avaluaciones']) ?? [],
     requisitos,
-    modoCalificacion: modelo.modoCalificacion === 'unidades' ? 'unidades' : 'trimestres',
+    modoCalificacion: 'unidades',
     convocatorias: convocatorias as ModeloEvaluacion['convocatorias']
   }
 }

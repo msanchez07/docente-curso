@@ -3,7 +3,6 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
-import SelectButton from '@renderer/components/SelectButton.vue'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
 import type {
   AlumnoClase,
@@ -26,13 +25,8 @@ const alumnos = ref<AlumnoClase[]>([])
 const cargando = ref(true)
 const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
-const pestanaActiva = ref('todas')
 const busqueda = ref('')
 const filtroEstado = ref<'todas' | 'abiertas' | 'bloqueadas' | 'sin-rubrica' | 'sin-ra'>('todas')
-const opcionesAvaluacion = computed(() =>
-  pestanas.value.map((pestana) => ({ value: pestana.id, label: pestana.etiqueta }))
-)
-
 const entregaABorrar = ref<EntregaClase | null>(null)
 const borrando = ref(false)
 const entregaABloquear = ref<EntregaClase | null>(null)
@@ -45,34 +39,9 @@ const opcionesExportacion = ref<OpcionesExportacionEntregas | null>(null)
 
 const id = computed(() => Number(route.params.grupoId))
 
-const CLAVE_PESTANA = 'gestion-entregas:entregas-pestana'
-
-function clavePestana(grupoClaseId: number): string {
-  return `${CLAVE_PESTANA}:${grupoClaseId}`
-}
-
-const pestanas = computed(() => [
-  ...(criterios.value?.avaluaciones ?? []).map((avaluacion) => ({
-    id: avaluacion.id,
-    etiqueta: `${avaluacion.nombre} (${
-      entregas.value.filter((entrega) => entrega.avaluacion_id === avaluacion.id).length
-    })`
-  })),
-  { id: 'todas', etiqueta: `Todas (${entregas.value.length})` }
-])
-
-watch(pestanaActiva, (valor) => {
-  if (grupo.value) localStorage.setItem(clavePestana(grupo.value.id), valor)
-})
-
-const entregasVisibles = computed(() => {
-  if (pestanaActiva.value === 'todas') return entregas.value
-  return entregas.value.filter((entrega) => entrega.avaluacion_id === pestanaActiva.value)
-})
-
 const entregasFiltradas = computed(() => {
   const termino = normalizar(busqueda.value.trim())
-  return entregasVisibles.value.filter((entrega) => {
+  return entregas.value.filter((entrega) => {
     if (filtroEstado.value === 'abiertas' && entrega.bloqueada) return false
     if (filtroEstado.value === 'bloqueadas' && !entrega.bloqueada) return false
     if (filtroEstado.value === 'sin-rubrica' && tieneRubrica(entrega)) return false
@@ -177,10 +146,6 @@ function limpiarFiltros(): void {
   filtroEstado.value = 'todas'
 }
 
-function nombreAvaluacion(id: string): string {
-  return criterios.value?.avaluaciones.find((avaluacion) => avaluacion.id === id)?.nombre ?? id
-}
-
 function etiquetaTipo(tipo: string): string {
   const etiquetas: Record<string, string> = {
     tarea: 'Tarea',
@@ -212,12 +177,6 @@ async function cargar(): Promise<void> {
     criterios.value = await window.api.criterios.obtener(grupo.value.id)
     entregas.value = await window.api.entregasClase.listar(grupo.value.id)
     alumnos.value = await window.api.alumnosClase.listar(grupo.value.id)
-
-    const guardada = localStorage.getItem(clavePestana(grupo.value.id))
-    pestanaActiva.value = guardada ?? 'todas'
-    if (!pestanas.value.some((pestana) => pestana.id === pestanaActiva.value)) {
-      pestanaActiva.value = 'todas'
-    }
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -340,8 +299,7 @@ async function previsualizar(
   try {
     const opciones: OpcionesExportacionEntregas = {
       ambito,
-      entregaId,
-      avaluacionId: ambito === 'avaluacion' ? pestanaActiva.value : undefined
+      entregaId
     }
     const vista = await window.api.entregasClase.vistaPrevia(grupo.value.id, opciones)
     opcionesExportacion.value = opciones
@@ -469,12 +427,6 @@ async function confirmarBloqueo(): Promise<void> {
 
     <template v-else-if="grupo">
       <div class="informe__controles">
-        <SelectButton
-          v-model="pestanaActiva"
-          :opciones="opcionesAvaluacion"
-          aria-label="Avaluación"
-          compacto
-        />
         <label class="entrega__buscador">
           <span class="visualmente-oculto">Buscar entrega</span>
           <input v-model="busqueda" type="search" placeholder="Buscar entrega…" />
@@ -489,15 +441,6 @@ async function confirmarBloqueo(): Promise<void> {
         <span class="chip">{{ entregasFiltradas.length }} de {{ entregas.length }}</span>
         <span class="barra__espacio"></span>
         <button
-          v-if="pestanaActiva !== 'todas'"
-          class="boton"
-          type="button"
-          :disabled="exportando || preparandoVista"
-          @click="previsualizar('avaluacion')"
-        >
-          Exportar avaluación
-        </button>
-        <button
           class="boton"
           type="button"
           :disabled="exportando || preparandoVista"
@@ -509,8 +452,7 @@ async function confirmarBloqueo(): Promise<void> {
           class="boton boton--principal"
           :to="{
             name: 'entrega-nueva',
-            params: { grupoId: grupo.id },
-            query: pestanaActiva !== 'todas' ? { avaluacion: pestanaActiva } : {}
+            params: { grupoId: grupo.id }
           }"
         >
           Nueva entrega
@@ -544,7 +486,7 @@ async function confirmarBloqueo(): Promise<void> {
           <div class="cabecera-criterios__titulo">
             <h3>Listado</h3>
             <span class="tenue">
-              {{ entregasVisibles.length }} de {{ entregas.length }} entregas
+              {{ entregasFiltradas.length }} de {{ entregas.length }} entregas
             </span>
           </div>
         </div>
@@ -572,7 +514,6 @@ async function confirmarBloqueo(): Promise<void> {
               <thead>
                 <tr>
                   <th scope="col">Entrega</th>
-                  <th scope="col">Avaluación</th>
                   <th scope="col">Fecha límite</th>
                   <th scope="col" class="num" title="Alumnos con nota o anotación">Registros</th>
                   <th scope="col" class="acciones">Acciones</th>
@@ -580,7 +521,7 @@ async function confirmarBloqueo(): Promise<void> {
               </thead>
               <tbody v-for="seccion in secciones" :key="seccion.id">
                 <tr class="entregas-tabla__grupo" :style="{ '--color-grupo': seccion.color }">
-                  <td colspan="5">
+                  <td colspan="4">
                     <div class="entregas-tabla__grupo-contenido">
                       <span class="entregas-tabla__grupo-nombre" :style="{ color: seccion.color }">
                         {{ seccion.nombre }}
@@ -631,9 +572,6 @@ async function confirmarBloqueo(): Promise<void> {
                         </span>
                       </div>
                     </div>
-                  </td>
-                  <td>
-                    <span class="chip">{{ nombreAvaluacion(entrega.avaluacion_id) }}</span>
                   </td>
                   <td>
                     <div class="entrega__fecha">

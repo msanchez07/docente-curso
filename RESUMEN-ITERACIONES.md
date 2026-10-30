@@ -147,7 +147,7 @@ Vite/electron-vite + Vitest**.
 ### 2.9. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
-- Última migración aplicada: **v32**.
+- Última migración aplicada: **v34**.
   - v23: unidades y calendario escolar.
   - v24: horas de formación.
   - v25: varias sesiones por día (`hora`, `orden`).
@@ -158,6 +158,8 @@ Vite/electron-vite + Vitest**.
   - v30: configuración de módulos e historial de informes de faltas por curso.
   - v31: criterios de evaluación concretos (RA + CE) por unidad de programación.
   - v32: modo de calificación por unidades, peso de cada unidad y unidad asignada a cada entrega.
+  - v33: plantilla de calificación propia por unidad (categorías e instrumentos).
+  - v34: mínimos de la plantilla de calificación por unidad.
 - `dias_semana` y `tutorias_semana` se derivan del calendario cuando hay bloques, para que la
   programación, el resumen del grupo y el PDF sean coherentes.
 
@@ -184,8 +186,9 @@ Vite/electron-vite + Vitest**.
 - Calificaciones es una vista de consulta: la nota final no se edita ahí, se calcula desde las
   entregas. Las evaluaciones se muestran como pestañas y la última es «Nota final», con el
   resumen del cálculo y los informes.
-- El grupo puede calcularse por trimestres (modelo actual) o por unidades. En modo unidades cada
-  unidad tiene un peso y una nota calculada con las entregas asignadas manualmente a esa unidad.
+- La calificación final se organiza por unidades. Cada unidad tiene un peso, una plantilla propia
+  de categorías/instrumentos y sus mínimos; las entregas se asignan obligatoriamente a una unidad.
+- La plantilla de la unidad se puede editar con formulario o importar desde JSON.
 - El PDF de faltas colorea el fondo de las celdas de faltas y porcentaje según el estado.
 - Las vistas embebidas en programación didáctica usan cabeceras de sección, no cabeceras de
   página, para mantener una jerarquía única.

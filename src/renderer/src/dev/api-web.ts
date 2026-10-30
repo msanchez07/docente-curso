@@ -26,7 +26,7 @@ import { parsearUnidadesProgramacion } from '@shared/importar-unidades'
 import { parsearEntradaAlumnos } from '@shared/importar-alumnos'
 import { validarHtmlNormativa } from '@shared/normativa'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
-import { modeloPorDefecto } from '@shared/modelo'
+import { modeloPorDefecto, REQUISITOS_POR_DEFECTO } from '@shared/modelo'
 import { normalizarPresentacion } from '@shared/presentacion'
 import JSZip from 'jszip'
 import type {
@@ -509,6 +509,8 @@ function unidadesDeGrupo(grupoClaseId: number): UnidadProgramacion[] {
     .map((unidad) => ({
       ...unidad,
       peso: unidad.peso ?? 0,
+      categorias: unidad.categorias ?? [],
+      requisitos: unidad.requisitos ?? [],
       criterios: unidad.criterios ?? criteriosDemo(unidad.ra_codigos ?? []),
       sesiones: sesiones
         .filter((sesion) => sesion.unidad_id === unidad.id)
@@ -713,7 +715,7 @@ function fechaValida(fecha: string): boolean {
 function normalizarModelo(modelo: ModeloEvaluacion): ModeloEvaluacion {
   return {
     ...modelo,
-    modoCalificacion: modelo.modoCalificacion === 'unidades' ? 'unidades' : 'trimestres',
+    modoCalificacion: 'unidades',
     convocatorias: modelo.convocatorias ?? {
       extraordinaria: 'suspensas',
       perdidaEvaluacionContinua: 'global'
@@ -867,6 +869,11 @@ function escribirDemo(): void {
       fecha_inicio: '2026-10-28',
       fecha_fin: '2026-11-17',
       peso: 50,
+      categorias: [
+        { id: 'examenes', nombre: 'Exámenes', peso: 50 },
+        { id: 'actividades', nombre: 'Actividades', peso: 50 }
+      ],
+      requisitos: REQUISITOS_POR_DEFECTO,
       contenidos: 'Entorno PHP, sintaxis, estructuras de control, arrays y formularios.',
       observaciones: null,
       ra_codigos: ['RA1', 'RA2'],
@@ -883,6 +890,11 @@ function escribirDemo(): void {
       fecha_inicio: '2026-11-18',
       fecha_fin: '2026-12-20',
       peso: 50,
+      categorias: [
+        { id: 'proyectos', nombre: 'Proyectos', peso: 60 },
+        { id: 'actividades', nombre: 'Actividades', peso: 40 }
+      ],
+      requisitos: REQUISITOS_POR_DEFECTO,
       contenidos: 'Sesiones, acceso a datos, MVC, APIs REST y seguridad básica.',
       observaciones: 'Incluye la práctica 1.',
       ra_codigos: ['RA2', 'RA3', 'RA4'],
@@ -1847,8 +1859,13 @@ const api = {
       if (!modelo.avaluaciones.some((a) => a.id === entrada.avaluacion_id)) {
         throw new Error('La avaluación no pertenece a los criterios del grupo.')
       }
-      if (!modelo.categorias.some((c) => c.id === entrada.categoria_id)) {
-        throw new Error('La categoría no pertenece a los criterios del grupo.')
+      const unidad = unidadesDeGrupo(Number(grupoClaseId)).find(
+        (item) => item.id === entrada.unidad_id
+      )
+      if (!unidad) throw new Error('Selecciona la unidad didáctica de la entrega.')
+      const categoriasUnidad = unidad.categorias.length > 0 ? unidad.categorias : modelo.categorias
+      if (!categoriasUnidad.some((c) => c.id === entrada.categoria_id)) {
+        throw new Error('La categoría no pertenece a la plantilla de la unidad.')
       }
 
       const ciclo = await cicloDaw()
@@ -1899,8 +1916,13 @@ const api = {
       if (!modelo.avaluaciones.some((a) => a.id === entrada.avaluacion_id)) {
         throw new Error('La avaluación no pertenece a los criterios del grupo.')
       }
-      if (!modelo.categorias.some((c) => c.id === entrada.categoria_id)) {
-        throw new Error('La categoría no pertenece a los criterios del grupo.')
+      const unidad = unidadesDeGrupo(Number(grupoClaseId)).find(
+        (item) => item.id === entrada.unidad_id
+      )
+      if (!unidad) throw new Error('Selecciona la unidad didáctica de la entrega.')
+      const categoriasUnidad = unidad.categorias.length > 0 ? unidad.categorias : modelo.categorias
+      if (!categoriasUnidad.some((c) => c.id === entrada.categoria_id)) {
+        throw new Error('La categoría no pertenece a la plantilla de la unidad.')
       }
 
       const ciclo = await cicloDaw()
@@ -2596,6 +2618,8 @@ const api = {
         fecha_inicio: fechaInicio,
         fecha_fin: fechaFin,
         peso: Number(entrada.peso) || 0,
+        categorias: entrada.categorias ?? [],
+        requisitos: entrada.requisitos ?? [],
         contenidos: entrada.contenidos?.trim() ?? '',
         observaciones: entrada.observaciones?.trim() || null,
         ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],
@@ -2637,6 +2661,8 @@ const api = {
         fecha_inicio: fechaInicio,
         fecha_fin: fechaFin,
         peso: Number(entrada.peso) || 0,
+        categorias: entrada.categorias ?? [],
+        requisitos: entrada.requisitos ?? [],
         contenidos: entrada.contenidos?.trim() ?? '',
         observaciones: entrada.observaciones?.trim() || null,
         ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],
@@ -2682,6 +2708,8 @@ const api = {
           fecha_inicio: entrada.fecha_inicio ?? null,
           fecha_fin: entrada.fecha_fin ?? null,
           peso: Number(entrada.peso) || 0,
+          categorias: entrada.categorias ?? [],
+          requisitos: entrada.requisitos ?? [],
           contenidos: entrada.contenidos ?? '',
           observaciones: entrada.observaciones ?? null,
           ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],

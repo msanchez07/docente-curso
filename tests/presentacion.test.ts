@@ -15,10 +15,10 @@ import type {
 
 describe('motor de plantillas de presentación', () => {
   it('sustituye variables, escapa HTML y permite HTML crudo', () => {
-    const html = renderizarPlantilla(
-      '<h1>{{titulo}}</h1><div>{{{html}}}</div>',
-      { titulo: 'A & B', html: '<strong>ok</strong>' }
-    )
+    const html = renderizarPlantilla('<h1>{{titulo}}</h1><div>{{{html}}}</div>', {
+      titulo: 'A & B',
+      html: '<strong>ok</strong>'
+    })
     expect(html).toBe('<h1>A &amp; B</h1><div><strong>ok</strong></div>')
   })
 
@@ -38,9 +38,7 @@ describe('motor de plantillas de presentación', () => {
       }
     )
     expect(html).toBe('[UD1:RA1.a;RA1.b;]')
-    expect(
-      renderizarPlantilla('{{^unidades}}vacío{{/unidades}}', { unidades: [] })
-    ).toBe('vacío')
+    expect(renderizarPlantilla('{{^unidades}}vacío{{/unidades}}', { unidades: [] })).toBe('vacío')
   })
 })
 

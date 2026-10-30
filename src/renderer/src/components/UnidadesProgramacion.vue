@@ -4,7 +4,9 @@ import Confirmacion from '@renderer/components/Confirmacion.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
 import { ESQUEMA_UNIDADES } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
+import { REQUISITOS_POR_DEFECTO } from '@shared/modelo'
 import type {
+  CategoriaEvaluacion,
   CriterioDisponible,
   CriterioUnidad,
   GrupoClase,
@@ -29,6 +31,7 @@ const unidadSeleccionada = ref<number | null>(null)
 const mostrarImportar = ref(false)
 const textoImportar = ref('')
 const ficheroImportar = ref<HTMLInputElement | null>(null)
+const ficheroPlantilla = ref<HTMLInputElement | null>(null)
 const errorImportar = ref<string | null>(null)
 const importando = ref(false)
 
@@ -38,6 +41,8 @@ const form = reactive<UnidadProgramacionEntrada>({
   fecha_inicio: '',
   fecha_fin: '',
   peso: 0,
+  categorias: [],
+  requisitos: [],
   contenidos: '',
   observaciones: '',
   criterios: []
@@ -145,6 +150,8 @@ function resetFormulario(): void {
   form.fecha_inicio = ''
   form.fecha_fin = ''
   form.peso = 0
+  form.categorias = []
+  form.requisitos = REQUISITOS_POR_DEFECTO.map((requisito) => ({ ...requisito }))
   form.contenidos = ''
   form.observaciones = ''
   form.criterios = []
@@ -210,6 +217,11 @@ function editar(unidad: UnidadProgramacion): void {
   form.fecha_inicio = unidad.fecha_inicio ?? ''
   form.fecha_fin = unidad.fecha_fin ?? ''
   form.peso = unidad.peso
+  form.categorias = unidad.categorias.map((categoria) => ({ ...categoria }))
+  form.requisitos =
+    unidad.requisitos.length > 0
+      ? unidad.requisitos.map((requisito) => ({ ...requisito }))
+      : REQUISITOS_POR_DEFECTO.map((requisito) => ({ ...requisito }))
   form.contenidos = unidad.contenidos
   form.observaciones = unidad.observaciones ?? ''
   form.criterios = unidad.criterios.map((criterio) => ({ ...criterio }))
@@ -270,6 +282,79 @@ function alternarRa(ra: { criterios: CriterioDisponible[] }): void {
     })
   }
   form.criterios = [...porClave.values()]
+}
+
+const sumaCategorias = computed(() =>
+  (form.categorias ?? []).reduce((total, categoria) => total + (Number(categoria.peso) || 0), 0)
+)
+
+function anadirCategoriaUnidad(): void {
+  const existentes = new Set((form.categorias ?? []).map((categoria) => categoria.id))
+  let numero = (form.categorias?.length ?? 0) + 1
+  let id = `categoria_${numero}`
+  while (existentes.has(id)) id = `categoria_${++numero}`
+  form.categorias = [...(form.categorias ?? []), { id, nombre: 'Nueva categoría', peso: 0 }]
+}
+
+function quitarCategoriaUnidad(indice: number): void {
+  form.categorias = (form.categorias ?? []).filter((_, posicion) => posicion !== indice)
+}
+
+function abrirPlantillaCalificacion(): void {
+  ficheroPlantilla.value?.click()
+}
+
+async function importarPlantillaCalificacion(evento: Event): Promise<void> {
+  const entrada = evento.target as HTMLInputElement
+  const archivo = entrada.files?.[0]
+  if (!archivo) return
+  error.value = null
+  mensaje.value = null
+  try {
+    const bruto = JSON.parse(await archivo.text()) as unknown
+    const lista = Array.isArray(bruto)
+      ? bruto
+      : bruto &&
+          typeof bruto === 'object' &&
+          Array.isArray((bruto as { categorias?: unknown }).categorias)
+        ? (bruto as { categorias: unknown[] }).categorias
+        : null
+    if (!lista) throw new Error('La plantilla debe incluir un array «categorias».')
+    const categorias: CategoriaEvaluacion[] = lista
+      .map((item) => {
+        const objeto = item as Record<string, unknown>
+        return {
+          id: String(objeto.id ?? objeto.codigo ?? '').trim(),
+          nombre: String(objeto.nombre ?? '').trim(),
+          peso: Number(objeto.peso ?? 0)
+        }
+      })
+      .filter((categoria) => categoria.id && categoria.nombre)
+    if (categorias.length === 0) throw new Error('La plantilla no contiene categorías válidas.')
+    const requisitosBrutos =
+      bruto && typeof bruto === 'object' && !Array.isArray(bruto)
+        ? (bruto as { requisitos?: unknown }).requisitos
+        : undefined
+    if (Array.isArray(requisitosBrutos)) {
+      form.requisitos = requisitosBrutos
+        .map((item) => {
+          const objeto = item as Record<string, unknown>
+          return {
+            id: String(objeto.id ?? '').trim(),
+            nombre: String(objeto.nombre ?? '').trim(),
+            valor: Number(objeto.valor ?? 0),
+            descripcion: String(objeto.descripcion ?? '').trim()
+          }
+        })
+        .filter((requisito) => requisito.id && requisito.nombre)
+    }
+    form.categorias = categorias
+    mensaje.value = `Plantilla de calificación cargada desde «${archivo.name}».`
+  } catch (e) {
+    error.value = (e as Error).message ?? String(e)
+  } finally {
+    entrada.value = ''
+  }
 }
 
 async function guardar(): Promise<void> {
@@ -485,6 +570,99 @@ async function borrar(): Promise<void> {
           </div>
         </div>
         <div class="campo campo--ancho">
+          <span class="campo__etiqueta">Plantilla de calificación de la unidad</span>
+          <div class="unidades__plantilla-barra">
+            <button class="boton boton--sutil" type="button" @click="abrirPlantillaCalificacion">
+              Importar plantilla JSON
+            </button>
+            <input
+              ref="ficheroPlantilla"
+              class="visualmente-oculto"
+              type="file"
+              accept=".json,application/json"
+              @change="importarPlantillaCalificacion"
+            />
+            <span class="tenue">
+              Categorías e instrumentos con sus pesos. Ejemplo: Exámenes 40 %, Tareas 60 %.
+            </span>
+          </div>
+          <div class="unidades__plantilla">
+            <div class="unidades__plantilla-cabecera">
+              <strong>Categorías e instrumentos</strong>
+              <button class="boton boton--sutil" type="button" @click="anadirCategoriaUnidad">
+                Añadir categoría
+              </button>
+              <span
+                class="chip"
+                :class="Math.abs(sumaCategorias - 100) < 0.01 ? 'chip--ok' : 'chip--aviso'"
+              >
+                Suma: {{ sumaCategorias }} %
+              </span>
+            </div>
+            <div v-if="form.categorias?.length" class="tabla-scroll">
+              <table class="tabla tabla--compacta">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th class="num">Peso (%)</th>
+                    <th class="acciones"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(categoria, indice) in form.categorias" :key="categoria.id">
+                    <td>
+                      <input
+                        v-model="categoria.nombre"
+                        type="text"
+                        aria-label="Nombre de la categoría"
+                      />
+                    </td>
+                    <td class="num">
+                      <input
+                        v-model.number="categoria.peso"
+                        type="number"
+                        min="0"
+                        max="100"
+                        step="0.01"
+                        class="unidades__peso"
+                        aria-label="Peso de la categoría"
+                      />
+                    </td>
+                    <td class="acciones">
+                      <button
+                        class="boton boton--sutil"
+                        type="button"
+                        @click="quitarCategoriaUnidad(indice)"
+                      >
+                        Quitar
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p v-else class="tenue">
+              Sin categorías propias. Las entregas usarán las categorías generales.
+            </p>
+
+            <div class="unidades__minimos">
+              <strong>Mínimos de la unidad</strong>
+              <div class="unidades__minimos-grid">
+                <label v-for="requisito in form.requisitos" :key="requisito.id">
+                  <span>{{ requisito.nombre }}</span>
+                  <input
+                    v-model.number="requisito.valor"
+                    type="number"
+                    min="0"
+                    max="10"
+                    step="0.01"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="campo campo--ancho">
           <label for="unidad-contenidos">Contenidos</label>
           <textarea
             id="unidad-contenidos"
@@ -585,6 +763,24 @@ async function borrar(): Promise<void> {
           <div>
             <span class="tenue">Fechas</span>
             <strong>{{ rango(unidadActual) }}</strong>
+          </div>
+        </div>
+
+        <div v-if="unidadActual.categorias.length > 0" class="unidades__bloque">
+          <h4>Plantilla de calificación</h4>
+          <div class="chips">
+            <span v-for="categoria in unidadActual.categorias" :key="categoria.id" class="chip">
+              {{ categoria.nombre }} · {{ categoria.peso }} %
+            </span>
+          </div>
+        </div>
+
+        <div v-if="unidadActual.requisitos.length > 0" class="unidades__bloque">
+          <h4>Mínimos de la unidad</h4>
+          <div class="chips">
+            <span v-for="requisito in unidadActual.requisitos" :key="requisito.id" class="chip">
+              {{ requisito.nombre }}: {{ requisito.valor }}
+            </span>
           </div>
         </div>
 

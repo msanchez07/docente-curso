@@ -139,6 +139,13 @@ export function calcularResumenClase(
     })
 
     const unidadesCalificadas: UnidadCalificacion[] = unidades.map((unidad) => {
+      const requisitoUnidad = (id: string, porDefecto: number): number => {
+        const valor = Number(unidad.requisitos.find((requisito) => requisito.id === id)?.valor)
+        return Number.isFinite(valor) ? valor : porDefecto
+      }
+      const minEntregaUnidad = requisitoUnidad('notaMinimaEntrega', minEntrega)
+      const minCategoriaUnidad = requisitoUnidad('notaMinimaCategoria', minCategoria)
+      const minUnidad = requisitoUnidad('notaMinimaAvaluacion', minAprobado)
       const entregasUnidad = entregas.filter((entrega) => entrega.unidad_id === unidad.id)
       const detalle: EntregaCalificacion[] = entregasUnidad.map((entrega) => {
         const registro = mapaNotas.get(`${alumno.id}:${entrega.id}`)
@@ -149,22 +156,43 @@ export function calcularResumenClase(
           titulo: entrega.titulo,
           nota,
           observaciones: registro?.observaciones ?? null,
-          suspensa: (nota ?? 0) < minEntrega,
+          suspensa: (nota ?? 0) < minEntregaUnidad,
           bloqueada: entrega.bloqueada
         }
       })
+      const categoriasUnidad = unidad.categorias.length > 0 ? unidad.categorias : modelo.categorias
+      let categoriaSuspensa = false
+      const mediasCategorias = categoriasUnidad
+        .map((categoria) => {
+          const entregasCategoria = entregasUnidad.filter(
+            (entrega) => entrega.categoria_id === categoria.id
+          )
+          if (entregasCategoria.length === 0) return null
+          const notas = entregasCategoria.map(
+            (entrega) => mapaNotas.get(`${alumno.id}:${entrega.id}`)?.nota ?? 0
+          )
+          const media = redondear(notas.reduce((total, nota) => total + nota, 0) / notas.length)
+          if (notas.some((nota) => nota < minEntregaUnidad) || media < minCategoriaUnidad) {
+            categoriaSuspensa = true
+          }
+          return { peso: Number(categoria.peso) || 0, valor: media }
+        })
+        .filter((media): media is Acumulado => media !== null)
       const nota =
-        detalle.length === 0
-          ? null
-          : redondear(
-              detalle.reduce((total, entrega) => total + (entrega.nota ?? 0), 0) / detalle.length
-            )
+        mediasCategorias.length > 0
+          ? mediaPonderada(mediasCategorias)
+          : detalle.length === 0
+            ? null
+            : redondear(
+                detalle.reduce((total, entrega) => total + (entrega.nota ?? 0), 0) / detalle.length
+              )
       return {
         unidadId: unidad.id,
         codigo: unidad.codigo,
         nombre: unidad.nombre,
         peso: Number(unidad.peso) || 0,
         nota,
+        suspensa: categoriaSuspensa || (nota !== null && nota < minUnidad),
         entregas: detalle
       }
     })
@@ -233,9 +261,7 @@ export function calcularResumenClase(
     const rasNoSuperados = ras.filter((ra) => !ra.superado).map((ra) => ra.codigo)
     const todosRasSuperados = ras.length === 0 || rasNoSuperados.length === 0
 
-    const unidadesSuspensas =
-      usaUnidades &&
-      unidadesCalificadas.some((unidad) => unidad.nota !== null && unidad.nota < minAprobado)
+    const unidadesSuspensas = usaUnidades && unidadesCalificadas.some((unidad) => unidad.suspensa)
     const avaluacionesSuspensas =
       !usaUnidades && avaluaciones.some((avaluacion) => avaluacion.suspensa)
     const vaAConvocatoria =

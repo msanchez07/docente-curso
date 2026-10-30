@@ -349,6 +349,7 @@ export interface UnidadCalificacion {
   nombre: string
   peso: number
   nota: number | null
+  suspensa: boolean
   entregas: EntregaCalificacion[]
 }
 
@@ -630,8 +631,12 @@ export interface UnidadProgramacion {
   nombre: string
   fecha_inicio: string | null
   fecha_fin: string | null
-  /** Peso de la unidad en la nota final (solo modo unidades). */
+  /** Peso de la unidad en la nota final. */
   peso: number
+  /** Plantilla de calificación propia de la unidad. */
+  categorias: CategoriaEvaluacion[]
+  /** Mínimos de la plantilla de la unidad. */
+  requisitos: RequisitoEvaluacion[]
   contenidos: string
   observaciones: string | null
   /** RA afectados; se deriva de los criterios seleccionados. */
@@ -649,6 +654,8 @@ export interface UnidadProgramacionEntrada {
   fecha_inicio?: string | null
   fecha_fin?: string | null
   peso?: number
+  categorias?: CategoriaEvaluacion[]
+  requisitos?: RequisitoEvaluacion[]
   contenidos?: string
   observaciones?: string | null
   /** Criterios concretos (RA + CE) que trabaja la unidad. */

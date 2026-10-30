@@ -142,15 +142,35 @@ function validar(db: Bd, grupoClaseId: number, entrada: EntregaClaseEntrada): Va
   if (!criterios.avaluaciones.some((a) => a.id === entrada.avaluacion_id)) {
     throw new Error('La avaluación no pertenece a los criterios del grupo.')
   }
-  if (!criterios.categorias.some((c) => c.id === entrada.categoria_id)) {
-    throw new Error('La categoría no pertenece a los criterios del grupo.')
-  }
   const unidadId = entrada.unidad_id ?? null
   if (unidadId !== null) {
     const unidad = db
-      .prepare('SELECT 1 FROM unidades_programacion WHERE id = ? AND grupo_clase_id = ?')
-      .get(unidadId, grupoClaseId)
+      .prepare(
+        'SELECT categorias_json FROM unidades_programacion WHERE id = ? AND grupo_clase_id = ?'
+      )
+      .get(unidadId, grupoClaseId) as { categorias_json: string } | undefined
     if (!unidad) throw new Error('La unidad didáctica no pertenece al grupo.')
+
+    let categoriasUnidad: { id: string }[] = []
+    try {
+      categoriasUnidad = JSON.parse(unidad.categorias_json) as { id: string }[]
+    } catch {
+      categoriasUnidad = []
+    }
+    const categoriasValidas = categoriasUnidad.length > 0 ? categoriasUnidad : criterios.categorias
+    if (!categoriasValidas.some((c) => c.id === entrada.categoria_id)) {
+      throw new Error('La categoría no pertenece a la plantilla de la unidad.')
+    }
+  } else {
+    const hayUnidades = db
+      .prepare('SELECT 1 FROM unidades_programacion WHERE grupo_clase_id = ? LIMIT 1')
+      .get(grupoClaseId)
+    if (hayUnidades) {
+      throw new Error('Selecciona la unidad didáctica a la que pertenece la entrega.')
+    }
+    if (!criterios.categorias.some((c) => c.id === entrada.categoria_id)) {
+      throw new Error('La categoría no pertenece a los criterios del grupo.')
+    }
   }
 
   const fecha = entrada.fecha_limite?.trim() || null
