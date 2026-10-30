@@ -360,3 +360,56 @@ export function importarInformeFaltas(
     )
   return obtenerInformeFaltas(db, Number(resultado.lastInsertRowid))!
 }
+
+export function obtenerUltimaFaltaAlumno(
+  db: Bd,
+  grupoClaseId: number,
+  alumnoId: number
+): import('@shared/tipos').UltimaFaltaAlumno | null {
+  const grupo = db
+    .prepare(
+      'SELECT ciclo_id, curso, modalidad, curso_academico_id, modulo_codigo FROM grupos_clase WHERE id = ?'
+    )
+    .get(grupoClaseId) as
+    | {
+        ciclo_id: string
+        curso: '1' | '2'
+        modalidad: 'presencial' | 'semipresencial'
+        curso_academico_id: number
+        modulo_codigo: string
+      }
+    | undefined
+  if (!grupo) return null
+  const fila = db
+    .prepare(
+      `SELECT id, archivo, subido_en, datos
+         FROM faltas_informes
+        WHERE curso_academico_id = ? AND ciclo_id = ? AND curso = ? AND modalidad = ?
+        ORDER BY subido_en DESC, id DESC
+        LIMIT 1`
+    )
+    .get(grupo.curso_academico_id, grupo.ciclo_id, grupo.curso, grupo.modalidad) as
+    { id: number; archivo: string; subido_en: string; datos: string } | undefined
+  if (!fila) return null
+  let datos: InformeFaltasDatos
+  try {
+    datos = JSON.parse(fila.datos) as InformeFaltasDatos
+  } catch {
+    return null
+  }
+  const modulo = datos.modulos.find((item) => item.moduloCodigo === grupo.modulo_codigo)
+  const alumno = datos.alumnos.find((item) => item.alumnoId === alumnoId)
+  if (!modulo || !alumno) return null
+  const faltas = Number(alumno.faltas[modulo.moduloCodigo] ?? 0)
+  return {
+    informeId: fila.id,
+    archivo: fila.archivo,
+    subidoEn: fila.subido_en,
+    moduloCodigo: modulo.moduloCodigo,
+    moduloNombre: modulo.nombre,
+    faltas,
+    horas: modulo.horas,
+    porcentaje: modulo.horas > 0 ? Math.round((faltas / modulo.horas) * 100) : 0,
+    limite: datos.limite
+  }
+}

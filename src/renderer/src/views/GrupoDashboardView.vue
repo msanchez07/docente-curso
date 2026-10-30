@@ -243,10 +243,6 @@ const formacionProxima = computed(
       .sort((a, b) => a.fecha_inicio.localeCompare(b.fecha_inicio))[0] ?? null
 )
 
-const horasFormacion = computed(() =>
-  formacion.value.reduce((total, periodo) => total + (periodo.horas ?? 0), 0)
-)
-
 const sesionesConUnidad = computed(
   () => programacion.value.filter((fila) => fila.unidad_id !== null).length
 )
@@ -1042,8 +1038,8 @@ watch(id, cargar)
                 <strong>{{ formacionActual.length }}</strong>
               </li>
               <li>
-                <span>Horas registradas</span>
-                <strong>{{ horasFormacion }}</strong>
+                <span>Periodos</span>
+                <strong>{{ formacion.length }}</strong>
               </li>
               <li>
                 <span>Próximo periodo</span>

@@ -5293,6 +5293,31 @@ a:focus-visible {
   font-weight: 650;
 }
 
+.alumno__faltas {
+  margin-top: 14px;
+}
+
+.alumno__faltas-resumen {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--borde);
+}
+
+.alumno__faltas-resumen > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 110px;
+}
+
+.alumno__faltas-resumen strong {
+  font-size: 13.5px;
+}
+
 .alumno__enlace {
   margin-top: 8px;
 }

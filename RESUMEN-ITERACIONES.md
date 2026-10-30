@@ -46,7 +46,7 @@ Vite/electron-vite + Vitest**.
   dashboard, sin ocupar espacio permanente.
 - Alumnado por grupo, alta manual e importación JSON/CSV, activación/desactivación y
   desmatriculación.
-- Formación en empresa por alumno y periodo, con horas.
+- Formación en empresa por alumno y periodo, con fechas y empresa. Las FCT no registran horas.
 
 ### 2.2. Dashboard del grupo
 
@@ -92,7 +92,7 @@ Vite/electron-vite + Vitest**.
   - Enlace **Ver informe** que abre Informes con el alumno seleccionado.
 - Informes:
   - Resumen/Calificaciones/RA.
-  - Gráficas al final, pastel 3D, criterios superados por RA y horas de formación.
+  - Gráficas al final, pastel 3D y criterios superados por RA.
   - Impresión/exportación HTML/CSV/PDF con opciones y previsualización.
 - Plantillas de criterios con listado y edición en páginas propias (`/plantillas`,
   `/plantillas/:id`), no en modal.

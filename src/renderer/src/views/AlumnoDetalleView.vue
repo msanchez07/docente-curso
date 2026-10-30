@@ -3,13 +3,19 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
-import type { FilaCalificacionClase, GrupoClase, ResumenCalificacionesClase } from '@shared/tipos'
+import type {
+  FilaCalificacionClase,
+  GrupoClase,
+  ResumenCalificacionesClase,
+  UltimaFaltaAlumno
+} from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 
 const route = useRoute()
 const store = useGruposClaseStore()
 const grupo = ref<GrupoClase | null>(null)
 const resumen = ref<ResumenCalificacionesClase | null>(null)
+const ultimaFalta = ref<UltimaFaltaAlumno | null>(null)
 const cargando = ref(true)
 const error = ref<string | null>(null)
 
@@ -28,6 +34,30 @@ function estado(fila: FilaCalificacionClase): string {
   return fila.aprobado ? 'Apto' : fila.vaAConvocatoria ? 'A convocatoria' : 'No apto'
 }
 
+function claseFaltas(): string {
+  if (!ultimaFalta.value) return ''
+  const valor = ultimaFalta.value.porcentaje
+  if (valor >= ultimaFalta.value.limite) return 'faltas__estado--peligro'
+  if (valor >= ultimaFalta.value.limite * 0.66) return 'faltas__estado--aviso'
+  if (valor >= ultimaFalta.value.limite * 0.33) return 'faltas__estado--proximo'
+  return 'faltas__estado--ok'
+}
+
+function textoFaltas(): string {
+  if (!ultimaFalta.value) return ''
+  if (claseFaltas() === 'faltas__estado--peligro') return 'Pérdida'
+  if (claseFaltas() === 'faltas__estado--aviso') return 'Riesgo'
+  if (claseFaltas() === 'faltas__estado--proximo') return 'Aviso'
+  return 'Correcto'
+}
+
+function fechaInformeFaltas(): string {
+  if (!ultimaFalta.value) return ''
+  const [fecha] = ultimaFalta.value.subidoEn.split(' ')
+  const [anio, mes, dia] = fecha.split('-')
+  return `${dia}/${mes}/${anio}`
+}
+
 async function cargar(): Promise<void> {
   cargando.value = true
   error.value = null
@@ -43,12 +73,14 @@ async function cargar(): Promise<void> {
       resumen.value = null
       return
     }
-    const [entregas, alumnos, notas, criteriosDisponibles] = await Promise.all([
+    const [entregas, alumnos, notas, criteriosDisponibles, faltas] = await Promise.all([
       window.api.entregasClase.listar(grupo.value.id),
       window.api.alumnosClase.listar(grupo.value.id),
       window.api.notasClase.listar(grupo.value.id),
-      window.api.entregasClase.criterios(grupo.value.id)
+      window.api.entregasClase.criterios(grupo.value.id),
+      window.api.faltas.ultimoAlumno(grupo.value.id, alumnoId.value)
     ])
+    ultimaFalta.value = faltas
     resumen.value = calcularResumenClase(
       grupo.value,
       modelo,
@@ -113,6 +145,47 @@ watch([grupoId, alumnoId], cargar)
           </strong>
         </div>
       </div>
+
+      <section class="tarjeta alumno__faltas">
+        <header class="dashboard__tarjeta-cabecera">
+          <div>
+            <h3>Faltas</h3>
+            <p class="tenue">
+              {{
+                ultimaFalta
+                  ? `Último informe: ${ultimaFalta.archivo} · ${fechaInformeFaltas()}`
+                  : 'Sin informes de faltas para este módulo.'
+              }}
+            </p>
+          </div>
+          <RouterLink
+            class="dashboard__enlace"
+            :to="{ name: 'faltas', query: { grupo: grupo.id } }"
+          >
+            Ver control de faltas
+          </RouterLink>
+        </header>
+
+        <div v-if="ultimaFalta" class="alumno__faltas-resumen">
+          <div>
+            <span class="tenue">Módulo</span>
+            <strong>{{ ultimaFalta.moduloNombre }}</strong>
+          </div>
+          <div>
+            <span class="tenue">Faltas</span>
+            <strong>{{ ultimaFalta.faltas }} / {{ ultimaFalta.horas }} h</strong>
+          </div>
+          <div>
+            <span class="tenue">Porcentaje</span>
+            <strong :class="claseFaltas()">{{ ultimaFalta.porcentaje }} %</strong>
+          </div>
+          <span class="chip faltas__estado" :class="claseFaltas()">{{ textoFaltas() }}</span>
+        </div>
+        <p v-else class="tenue">
+          Sube un informe en <strong>Control de faltas</strong> para ver aquí el último valor del
+          módulo.
+        </p>
+      </section>
 
       <div v-if="fila.avaluaciones.every((a) => a.nota === null)" class="vacio">
         Este alumno todavía no tiene notas registradas.

@@ -10,7 +10,6 @@ interface FormFormacion {
   fecha_inicio: string
   fecha_fin: string
   empresa: string
-  horas: number
   observaciones: string
 }
 
@@ -33,7 +32,6 @@ const form = reactive<FormFormacion>({
   fecha_inicio: '',
   fecha_fin: '',
   empresa: '',
-  horas: 0,
   observaciones: ''
 })
 
@@ -80,17 +78,12 @@ const totalDias = computed(() =>
   periodos.value.reduce((total, periodo) => total + duracionDias(periodo), 0)
 )
 
-const totalHoras = computed(() =>
-  periodos.value.reduce((total, periodo) => total + (periodo.horas ?? 0), 0)
-)
-
 function resetFormulario(): void {
   editando.value = null
   const inicio = new Date(`${hoy}T00:00:00`)
   form.fecha_inicio = isoLocal(inicio)
   form.fecha_fin = isoLocal(sumarDias(inicio, 14))
   form.empresa = ''
-  form.horas = 0
   form.observaciones = ''
   errorFormulario.value = null
 }
@@ -100,7 +93,6 @@ function editar(periodo: PeriodoFormacionEmpresa): void {
   form.fecha_inicio = periodo.fecha_inicio
   form.fecha_fin = periodo.fecha_fin
   form.empresa = periodo.empresa
-  form.horas = periodo.horas
   form.observaciones = periodo.observaciones ?? ''
   errorFormulario.value = null
 }
@@ -142,7 +134,6 @@ async function guardar(): Promise<void> {
       fecha_inicio: form.fecha_inicio,
       fecha_fin: form.fecha_fin,
       empresa: form.empresa,
-      horas: form.horas,
       observaciones: form.observaciones
     }
     if (editando.value) {
@@ -207,10 +198,6 @@ async function borrar(): Promise<void> {
           <strong>{{ totalDias }}</strong>
         </div>
         <div class="tarjeta">
-          <span class="tenue">Horas realizadas</span>
-          <strong>{{ totalHoras }}</strong>
-        </div>
-        <div class="tarjeta">
           <span class="tenue">Empresa actual</span>
           <strong>{{ periodoActual?.empresa ?? '—' }}</strong>
         </div>
@@ -238,7 +225,6 @@ async function borrar(): Promise<void> {
                   <th>Periodo</th>
                   <th>Empresa</th>
                   <th class="num">Días</th>
-                  <th class="num">Horas</th>
                   <th>Estado</th>
                   <th>Observaciones</th>
                   <th class="acciones">Acciones</th>
@@ -254,7 +240,6 @@ async function borrar(): Promise<void> {
                     <strong>{{ periodo.empresa }}</strong>
                   </td>
                   <td class="num">{{ duracionDias(periodo) }}</td>
-                  <td class="num">{{ periodo.horas }}</td>
                   <td>
                     <span
                       class="chip"
@@ -342,16 +327,6 @@ async function borrar(): Promise<void> {
             <div class="campo">
               <label for="formacion-fin">Fin *</label>
               <input id="formacion-fin" v-model="form.fecha_fin" type="date" required />
-            </div>
-            <div class="campo">
-              <label for="formacion-horas">Horas realizadas</label>
-              <input
-                id="formacion-horas"
-                v-model.number="form.horas"
-                type="number"
-                min="0"
-                step="0.5"
-              />
             </div>
             <div class="campo campo--ancho">
               <label for="formacion-empresa">Empresa *</label>

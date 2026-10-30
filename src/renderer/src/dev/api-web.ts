@@ -2693,6 +2693,34 @@ const api = {
       }
       return null
     },
+    ultimoAlumno: async (grupoClaseId: number, alumnoId: number) => {
+      const grupo = leer().find((item) => item.id === grupoClaseId)
+      if (!grupo) return null
+      const clave: ClaveCursoFaltas = {
+        cursoAcademicoId: grupo.curso_academico_id,
+        cicloId: grupo.ciclo_id,
+        curso: grupo.curso,
+        modalidad: grupo.modalidad
+      }
+      const guardado = leerFaltas()[claveFaltas(clave)]
+      const informe = guardado?.informes[0]
+      if (!informe) return null
+      const modulo = informe.datos.modulos.find((item) => item.moduloCodigo === grupo.modulo_codigo)
+      const alumno = informe.datos.alumnos.find((item) => item.alumnoId === alumnoId)
+      if (!modulo || !alumno) return null
+      const faltas = Number(alumno.faltas[modulo.moduloCodigo] ?? 0)
+      return {
+        informeId: informe.id,
+        archivo: informe.archivo,
+        subidoEn: informe.subidoEn,
+        moduloCodigo: modulo.moduloCodigo,
+        moduloNombre: modulo.nombre,
+        faltas,
+        horas: modulo.horas,
+        porcentaje: modulo.horas > 0 ? Math.round((faltas / modulo.horas) * 100) : 0,
+        limite: informe.datos.limite
+      }
+    },
     importarInforme: async (
       clave: ClaveCursoFaltas,
       archivo: string,

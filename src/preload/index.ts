@@ -195,6 +195,8 @@ const api: Api = {
       ipcRenderer.invoke(CANALES.faltasGuardarAjustes, clave, limite, incluirJustificadas),
     listarInformes: (clave) => ipcRenderer.invoke(CANALES.faltasListarInformes, clave),
     obtenerInforme: (id) => ipcRenderer.invoke(CANALES.faltasObtenerInforme, id),
+    ultimoAlumno: (grupoClaseId, alumnoId) =>
+      ipcRenderer.invoke(CANALES.faltasUltimoAlumno, grupoClaseId, alumnoId),
     importarInforme: (clave, archivo, datos) =>
       ipcRenderer.invoke(CANALES.faltasImportarInforme, clave, archivo, datos)
   },

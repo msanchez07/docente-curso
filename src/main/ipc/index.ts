@@ -149,6 +149,7 @@ import { exportarProgramacionPdf } from '../programacion/servicio'
 import { exportarEntregas, vistaPreviaEntregas } from '../entregas/servicio'
 import {
   guardarAjustesFaltas,
+  obtenerUltimaFaltaAlumno,
   guardarModuloFaltas,
   importarInformeFaltas,
   listarCursosFaltas,
@@ -558,6 +559,9 @@ export function registrarIpc(): void {
     (_e, clave: import('@shared/tipos').ClaveCursoFaltas) => listarInformesFaltas(bd(), clave)
   )
   ipcMain.handle(CANALES.faltasObtenerInforme, (_e, id: number) => obtenerInformeFaltas(bd(), id))
+  ipcMain.handle(CANALES.faltasUltimoAlumno, (_e, grupoClaseId: number, alumnoId: number) =>
+    obtenerUltimaFaltaAlumno(bd(), grupoClaseId, alumnoId)
+  )
   ipcMain.handle(
     CANALES.faltasImportarInforme,
     (

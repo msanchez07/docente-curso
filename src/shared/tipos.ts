@@ -946,6 +946,18 @@ export interface InformeFaltas extends InformeFaltasResumen {
   modalidad: Modalidad
 }
 
+export interface UltimaFaltaAlumno {
+  informeId: number
+  archivo: string
+  subidoEn: string
+  moduloCodigo: string
+  moduloNombre: string
+  faltas: number
+  horas: number
+  porcentaje: number
+  limite: number
+}
+
 export interface ClaveCursoFaltas {
   cursoAcademicoId: number
   cicloId: string
@@ -1198,6 +1210,7 @@ export interface Api {
     ): Promise<DatosCursoFaltas>
     listarInformes(clave: ClaveCursoFaltas): Promise<InformeFaltasResumen[]>
     obtenerInforme(id: number): Promise<InformeFaltas | null>
+    ultimoAlumno(grupoClaseId: number, alumnoId: number): Promise<UltimaFaltaAlumno | null>
     importarInforme(
       clave: ClaveCursoFaltas,
       archivo: string,
@@ -1331,5 +1344,6 @@ export const CANALES = {
   faltasGuardarAjustes: 'faltas:guardarAjustes',
   faltasListarInformes: 'faltas:listarInformes',
   faltasObtenerInforme: 'faltas:obtenerInforme',
+  faltasUltimoAlumno: 'faltas:ultimoAlumno',
   faltasImportarInforme: 'faltas:importarInforme'
 } as const

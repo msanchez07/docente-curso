@@ -392,10 +392,6 @@ const formacionVisible = computed(() => {
   return formacion.value.filter((periodo) => periodo.alumno_id === Number(alumnoId.value))
 })
 
-const totalHorasFormacion = computed(() =>
-  formacionVisible.value.reduce((total, periodo) => total + (periodo.horas ?? 0), 0)
-)
-
 function filasFormacionHtml(incluirAlumno: boolean): string {
   return formacionVisible.value
     .map((periodo) => {
@@ -406,17 +402,17 @@ function filasFormacionHtml(incluirAlumno: boolean): string {
           : estadoPeriodo === 'Finalizado'
             ? 'apto'
             : 'convocatoria'
-      return `<tr>${incluirAlumno ? `<td>${escapar(nombreAlumno(periodo.alumno_id))}</td>` : ''}<td><strong>${escapar(periodo.empresa)}</strong></td><td>${fechaCorta(periodo.fecha_inicio)} – ${fechaCorta(periodo.fecha_fin)}</td><td class="num">${periodo.horas}</td><td><span class="estado estado--${clase}">${estadoPeriodo}</span></td><td>${escapar(periodo.observaciones ?? '—')}</td></tr>`
+      return `<tr>${incluirAlumno ? `<td>${escapar(nombreAlumno(periodo.alumno_id))}</td>` : ''}<td><strong>${escapar(periodo.empresa)}</strong></td><td>${fechaCorta(periodo.fecha_inicio)} – ${fechaCorta(periodo.fecha_fin)}</td><td><span class="estado estado--${clase}">${estadoPeriodo}</span></td><td>${escapar(periodo.observaciones ?? '—')}</td></tr>`
     })
     .join('')
 }
 
 function seccionFormacionHtml(incluirAlumno: boolean): string {
-  const cabecera = `<h2>Formación en empresa</h2><p class="formacion-total">Horas realizadas: <strong>${totalHorasFormacion.value}</strong></p>`
+  const cabecera = `<h2>Formación en empresa</h2>`
   if (formacionVisible.value.length === 0) {
     return `${cabecera}<p class="sin-datos">No hay periodos de formación en empresa registrados.</p>`
   }
-  return `${cabecera}<table><thead><tr>${incluirAlumno ? '<th>Alumno/a</th>' : ''}<th>Empresa</th><th>Periodo</th><th class="num">Horas</th><th>Estado</th><th>Observaciones</th></tr></thead><tbody>${filasFormacionHtml(incluirAlumno)}</tbody></table>`
+  return `${cabecera}<table><thead><tr>${incluirAlumno ? '<th>Alumno/a</th>' : ''}<th>Empresa</th><th>Periodo</th><th>Estado</th><th>Observaciones</th></tr></thead><tbody>${filasFormacionHtml(incluirAlumno)}</tbody></table>`
 }
 
 function criteriosPorRa(fila: FilaCalificacionClase): { etiqueta: string; valor: number }[] {
@@ -1080,11 +1076,10 @@ const htmlRas = computed(() => {
           <tbody>${filasRa}</tbody>
         </table>
         <h2>Formación en empresa</h2>
-        <p class="formacion-total">Horas realizadas: <strong>${totalHorasFormacion.value}</strong></p>
         ${
           formacionVisible.value.length > 0
             ? `<table>
-                <thead><tr><th>Empresa</th><th>Periodo</th><th class="num">Horas</th><th>Estado</th><th>Observaciones</th></tr></thead>
+                <thead><tr><th>Empresa</th><th>Periodo</th><th>Estado</th><th>Observaciones</th></tr></thead>
                 <tbody>${filasFormacionHtml(false)}</tbody>
               </table>`
             : '<p class="sin-datos">No hay periodos de formación en empresa registrados.</p>'
