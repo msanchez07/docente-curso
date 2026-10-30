@@ -346,11 +346,11 @@ function imprimir(): void {
               </div>
               <div class="faltas__modulo-campos">
                 <label>
-                  <span>Nombre exacto en el PDF</span>
+                  <span>Nombre en el PDF</span>
                   <input v-model="modulo.nombreInforme" class="faltas__nombre" />
                 </label>
                 <label>
-                  <span>Horas del módulo</span>
+                  <span>Horas</span>
                   <input
                     v-model.number="modulo.horas"
                     class="faltas__horas"
