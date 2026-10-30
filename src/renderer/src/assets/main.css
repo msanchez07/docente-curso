@@ -5300,6 +5300,221 @@ a:focus-visible {
   font-weight: 650;
 }
 
+.alumno__cabecera {
+  align-items: flex-start;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+}
+
+.alumno__identidad {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.alumno__avatar {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--acento-suave);
+  color: var(--acento);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.alumno__acciones {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.alumno__stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.alumno__stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  padding: 14px 16px;
+  overflow: hidden;
+}
+
+.alumno__stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--acento);
+}
+
+.alumno__stat--estado::before {
+  background: #d98a2b;
+}
+.alumno__stat--evaluaciones::before {
+  background: #1e7a4b;
+}
+.alumno__stat--faltas::before {
+  background: #b42318;
+}
+
+.alumno__stat-etiqueta {
+  overflow: hidden;
+  color: var(--tenue);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+}
+
+.alumno__stat > strong {
+  font-size: 22px;
+  line-height: 1.15;
+  font-weight: 650;
+}
+
+.alumno__stat > .tenue {
+  overflow: hidden;
+  font-size: 11px;
+  text-overflow: ellipsis;
+}
+
+.alumno__stat > strong.faltas__estado--ok,
+.alumno__stat > strong.faltas__estado--aviso,
+.alumno__stat > strong.faltas__estado--proximo,
+.alumno__stat > strong.faltas__estado--peligro {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.alumno__evaluacion {
+  margin-bottom: 14px;
+}
+
+.alumno__evaluacion-cabecera {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid var(--borde);
+}
+
+.alumno__evaluacion-cabecera h3 {
+  margin: 0 0 2px;
+  font-size: 17px;
+}
+
+.alumno__categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.alumno__categoria {
+  padding: 12px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.alumno__categoria-cabecera {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.alumno__categoria-cabecera strong {
+  display: block;
+  font-size: 12.5px;
+}
+
+.alumno__categoria-cabecera .tenue {
+  display: block;
+  margin-top: 1px;
+  font-size: 11px;
+}
+
+.alumno__categoria-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.alumno__entregas {
+  margin-top: 9px;
+  border-top: 1px dashed var(--borde);
+}
+
+.alumno__entrega {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px dashed var(--borde);
+}
+
+.alumno__entrega:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.alumno__entrega strong {
+  display: block;
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+
+.alumno__entrega .tenue {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.alumno__entrega-nota {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 900px) {
+  .alumno__stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .alumno__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .alumno__acciones {
+    justify-content: flex-start;
+  }
+}
+
 .alumno__faltas {
   margin-top: 14px;
 }

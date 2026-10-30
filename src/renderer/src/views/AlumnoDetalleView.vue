@@ -26,6 +26,12 @@ const fila = computed<FilaCalificacionClase | null>(
   () => resumen.value?.alumnos.find((f) => f.alumno.id === alumnoId.value) ?? null
 )
 
+const iniciales = computed(() => {
+  const alumno = fila.value?.alumno
+  if (!alumno) return '·'
+  return `${alumno.nombre[0] ?? ''}${alumno.apellidos[0] ?? ''}`.toUpperCase()
+})
+
 function formato(nota: number | null): string {
   return nota === null ? '—' : nota.toFixed(2).replace('.', ',')
 }
@@ -109,93 +115,104 @@ watch([grupoId, alumnoId], cargar)
     <p v-else-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
     <template v-else-if="fila && grupo">
-      <header class="alumno__cabecera">
-        <div>
-          <h2>{{ fila.alumno.apellidos }}, {{ fila.alumno.nombre }}</h2>
-          <p class="tenue">
-            Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }} ·
-            {{ fila.alumno.dni ?? 'sin DNI' }} ·
-            {{ fila.alumno.email ?? 'sin correo' }}
-          </p>
+      <header class="tarjeta alumno__cabecera">
+        <div class="alumno__identidad">
+          <div class="alumno__avatar" aria-hidden="true">{{ iniciales }}</div>
+          <div>
+            <p class="dashboard__eyebrow">Ficha del alumno</p>
+            <h2>{{ fila.alumno.apellidos }}, {{ fila.alumno.nombre }}</h2>
+            <p class="tenue">
+              {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }} ·
+              {{ fila.alumno.dni ?? 'sin DNI' }} · {{ fila.alumno.email ?? 'sin correo' }}
+            </p>
+          </div>
         </div>
-        <div class="alumno__chips">
+        <div class="alumno__acciones">
           <span class="chip" :class="fila.alumno.activo ? 'chip--ok' : ''">
             {{ fila.alumno.activo ? 'Activo' : 'Inactivo' }}
           </span>
           <span v-if="fila.incompleta" class="chip chip--aviso">incompleta</span>
+          <RouterLink
+            class="boton boton--sutil"
+            :to="{
+              name: 'calificaciones',
+              params: { grupoId: grupo.id },
+              query: { alumno: fila.alumno.id }
+            }"
+          >
+            Calificaciones
+          </RouterLink>
+          <RouterLink
+            class="boton boton--sutil"
+            :to="{
+              name: 'alumno-formacion',
+              params: { grupoId: grupo.id, alumnoId: fila.alumno.id }
+            }"
+          >
+            Formación
+          </RouterLink>
+          <RouterLink
+            class="boton boton--sutil"
+            :to="{ name: 'faltas', query: { grupo: grupo.id } }"
+          >
+            Faltas
+          </RouterLink>
         </div>
       </header>
 
-      <div class="tarjeta alumno__resumen">
-        <div>
-          <span class="tenue">Nota final</span>
+      <section class="alumno__stats">
+        <article class="tarjeta alumno__stat alumno__stat--nota">
+          <span class="alumno__stat-etiqueta">Nota final</span>
           <strong class="alumno__final">{{ formato(fila.notaFinal) }}</strong>
-        </div>
-        <div>
-          <span class="tenue">Estado</span>
+          <span class="tenue">{{ estado(fila) }}</span>
+        </article>
+        <article class="tarjeta alumno__stat alumno__stat--estado">
+          <span class="alumno__stat-etiqueta">Estado</span>
           <strong :class="fila.aprobado ? 'nota-aprobado' : 'nota-suspendido'">
             {{ estado(fila) }}
           </strong>
-        </div>
-        <div>
-          <span class="tenue">Evaluaciones</span>
+          <span class="tenue">{{ fila.rasNoSuperados.length }} RA pendientes</span>
+        </article>
+        <article class="tarjeta alumno__stat alumno__stat--evaluaciones">
+          <span class="alumno__stat-etiqueta">Evaluaciones</span>
           <strong>
-            {{ fila.avaluaciones.filter((a) => a.nota !== null).length }} de
+            {{ fila.avaluaciones.filter((a) => a.nota !== null).length }} /
             {{ fila.avaluaciones.length }}
           </strong>
-        </div>
-      </div>
-
-      <section class="tarjeta alumno__faltas">
-        <header class="dashboard__tarjeta-cabecera">
-          <div>
-            <h3>Faltas</h3>
-            <p class="tenue">
-              {{
-                ultimaFalta
-                  ? `Último informe: ${ultimaFalta.archivo} · ${fechaInformeFaltas()}`
-                  : 'Sin informes de faltas para este módulo.'
-              }}
-            </p>
-          </div>
-          <RouterLink
-            class="dashboard__enlace"
-            :to="{ name: 'faltas', query: { grupo: grupo.id } }"
-          >
-            Ver control de faltas
-          </RouterLink>
-        </header>
-
-        <div v-if="ultimaFalta" class="alumno__faltas-resumen">
-          <div>
-            <span class="tenue">Módulo</span>
-            <strong>{{ ultimaFalta.moduloNombre }}</strong>
-          </div>
-          <div>
-            <span class="tenue">Faltas</span>
-            <strong>{{ ultimaFalta.faltas }} / {{ ultimaFalta.horas }} h</strong>
-          </div>
-          <div>
-            <span class="tenue">Porcentaje</span>
-            <strong :class="claseFaltas()">{{ ultimaFalta.porcentaje }} %</strong>
-          </div>
-          <span class="chip faltas__estado" :class="claseFaltas()">{{ textoFaltas() }}</span>
-        </div>
-        <p v-else class="tenue">
-          Sube un informe en <strong>Control de faltas</strong> para ver aquí el último valor del
-          módulo.
-        </p>
+          <span class="tenue">con nota registrada</span>
+        </article>
+        <article class="tarjeta alumno__stat alumno__stat--faltas">
+          <span class="alumno__stat-etiqueta">
+            Faltas · {{ ultimaFalta?.moduloNombre ?? 'sin datos' }}
+            <template v-if="ultimaFalta"> · {{ fechaInformeFaltas() }}</template>
+          </span>
+          <strong :class="claseFaltas()">
+            {{ ultimaFalta ? `${ultimaFalta.porcentaje} %` : '—' }}
+          </strong>
+          <span class="tenue">
+            {{
+              ultimaFalta
+                ? `${ultimaFalta.faltas} / ${ultimaFalta.horas} h · ${textoFaltas()}`
+                : 'Sin informes de faltas'
+            }}
+          </span>
+        </article>
       </section>
 
-      <div v-if="fila.avaluaciones.every((a) => a.nota === null)" class="vacio">
+      <div v-if="fila.avaluaciones.every((a) => a.nota === null)" class="tarjeta vacio">
         Este alumno todavía no tiene notas registradas.
       </div>
 
-      <div v-for="avaluacion in fila.avaluaciones" :key="avaluacion.avaluacionId" class="tarjeta">
-        <div class="alumno__avaluacion-cabecera">
+      <section
+        v-for="avaluacion in fila.avaluaciones"
+        :key="avaluacion.avaluacionId"
+        class="tarjeta alumno__evaluacion"
+      >
+        <header class="alumno__evaluacion-cabecera">
           <div>
+            <p class="dashboard__eyebrow">Evaluación</p>
             <h3>{{ avaluacion.nombre }}</h3>
-            <span class="tenue">
+            <p class="tenue">
               {{
                 avaluacion.suspensa
                   ? 'Suspensa'
@@ -206,47 +223,50 @@ watch([grupoId, alumnoId], cargar)
               <template v-if="avaluacion.motivos.length > 0">
                 · {{ avaluacion.motivos.join(' · ') }}
               </template>
-            </span>
+            </p>
           </div>
           <strong class="alumno__avaluacion-nota">{{ formato(avaluacion.nota) }}</strong>
-        </div>
+        </header>
 
-        <div v-if="avaluacion.categorias.length === 0" class="tenue">
+        <p v-if="avaluacion.categorias.length === 0" class="tenue">
           Sin entregas en esta avaluación.
-        </div>
+        </p>
 
-        <div
-          v-for="categoria in avaluacion.categorias"
-          :key="categoria.categoriaId"
-          class="ra-bloque"
-        >
-          <div class="ra-bloque__cabecera">
-            <span class="codigo">{{ categoria.nombre }} · {{ categoria.peso }} %</span>
-            <strong style="flex: 1">Media: {{ formato(categoria.media) }}</strong>
-            <span v-if="categoria.suspensa" class="chip chip--aviso">suspensa</span>
-          </div>
-          <table class="tabla">
-            <tbody>
-              <tr v-for="entrega in categoria.entregas" :key="entrega.entregaId">
-                <td>
-                  {{ entrega.titulo }}
-                  <span v-if="entrega.observaciones" class="entrega__meta">
-                    {{ entrega.observaciones }}
-                  </span>
-                </td>
-                <td class="num">{{ formato(entrega.nota) }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <div v-else class="alumno__categorias">
+          <article
+            v-for="categoria in avaluacion.categorias"
+            :key="categoria.categoriaId"
+            class="alumno__categoria"
+          >
+            <header class="alumno__categoria-cabecera">
+              <div>
+                <strong>{{ categoria.nombre }}</strong>
+                <span class="tenue">{{ categoria.peso }} % de la evaluación</span>
+              </div>
+              <div class="alumno__categoria-meta">
+                <span class="tenue">Media {{ formato(categoria.media) }}</span>
+                <span v-if="categoria.suspensa" class="chip chip--aviso">suspensa</span>
+              </div>
+            </header>
 
-      <RouterLink
-        class="boton alumno__enlace"
-        :to="{ name: 'calificaciones', params: { grupoId: grupo.id } }"
-      >
-        Abrir la tabla de calificaciones
-      </RouterLink>
+            <div class="alumno__entregas">
+              <div
+                v-for="entrega in categoria.entregas"
+                :key="entrega.entregaId"
+                class="alumno__entrega"
+              >
+                <div>
+                  <strong>{{ entrega.titulo }}</strong>
+                  <span v-if="entrega.observaciones" class="tenue">{{
+                    entrega.observaciones
+                  }}</span>
+                </div>
+                <span class="alumno__entrega-nota">{{ formato(entrega.nota) }}</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </template>
   </section>
 </template>
