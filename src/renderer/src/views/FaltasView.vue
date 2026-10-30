@@ -495,15 +495,17 @@ function imprimir(): void {
                   >
                     <span
                       class="faltas__celda"
-                      :class="estado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)"
                       :title="`${modulo.nombre}: ${faltasDe(alumno.alumnoId, modulo.moduloCodigo)} faltas (${porcentaje(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)} %) · ${textoEstado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)}`"
                     >
-                      <strong>{{ faltasDe(alumno.alumnoId, modulo.moduloCodigo) }}</strong>
+                      <span class="faltas__faltas">
+                        {{ faltasDe(alumno.alumnoId, modulo.moduloCodigo) }}
+                      </span>
                       <span
-                        >{{
-                          porcentaje(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)
-                        }}%</span
+                        class="faltas__porcentaje"
+                        :class="estado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)"
                       >
+                        {{ porcentaje(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo) }}%
+                      </span>
                     </span>
                   </td>
                 </tr>

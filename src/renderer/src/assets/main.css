@@ -5941,26 +5941,37 @@ a:focus-visible {
 
 .faltas__celda {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
-  gap: 3px;
-  min-width: 54px;
-  padding: 4px 8px;
-  border: 1px solid transparent;
-  border-radius: 999px;
+  gap: 4px;
   font-variant-numeric: tabular-nums;
+}
+
+.faltas__faltas {
+  display: inline-grid;
+  place-items: center;
+  min-width: 25px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 6px;
+  background: #f2f4f7;
+  color: #344054;
+  font-size: 11.5px;
+  font-weight: 700;
   line-height: 1;
 }
 
-.faltas__celda strong {
-  font-size: 11.5px;
-  font-weight: 700;
-}
-
-.faltas__celda span {
+.faltas__porcentaje {
+  display: inline-grid;
+  place-items: center;
+  min-width: 43px;
+  height: 22px;
+  padding: 0 7px;
+  border: 1px solid transparent;
+  border-radius: 999px;
   font-size: 9.5px;
-  font-weight: 600;
-  opacity: 0.8;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .faltas__historial {

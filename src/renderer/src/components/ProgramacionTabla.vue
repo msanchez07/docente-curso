@@ -517,38 +517,40 @@ async function exportarPdf(): Promise<void> {
     <template v-else>
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
-      <div v-if="modo !== 'calendario-escolar'" class="programacion__barra">
-        <template v-if="modo !== 'calendario' && modo !== 'calendario-escolar'">
-          <SelectButton
-            v-model="vista"
-            :opciones="opcionesVista"
-            aria-label="Vista de la programación"
-            compacto
+      <div class="programacion__barra">
+        <template v-if="modo !== 'calendario-escolar'">
+          <template v-if="modo !== 'calendario'">
+            <SelectButton
+              v-model="vista"
+              :opciones="opcionesVista"
+              aria-label="Vista de la programación"
+              compacto
+            />
+            <span class="tenue programacion__rango">
+              <template v-if="verTodo">Mostrando todos los días.</template>
+              <template v-else>
+                Del {{ fechaCorta(inicioQuincena) }} al {{ fechaCorta(limite) }}
+              </template>
+            </span>
+          </template>
+
+          <NavegacionMes
+            v-else
+            class="programacion__mes"
+            :etiqueta="mesTexto"
+            @anterior="cambiarMes(-1)"
+            @siguiente="cambiarMes(1)"
+            @hoy="irMesActual"
           />
-          <span class="tenue programacion__rango">
-            <template v-if="verTodo">Mostrando todos los días.</template>
-            <template v-else>
-              Del {{ fechaCorta(inicioQuincena) }} al {{ fechaCorta(limite) }}
-            </template>
+
+          <span
+            class="programacion__estado"
+            :class="{ 'programacion__estado--pendiente': hayCambios }"
+          >
+            <span class="programacion__estado-punto" aria-hidden="true"></span>
+            {{ hayCambios ? 'Sin guardar' : 'Guardado' }}
           </span>
         </template>
-
-        <NavegacionMes
-          v-else
-          class="programacion__mes"
-          :etiqueta="mesTexto"
-          @anterior="cambiarMes(-1)"
-          @siguiente="cambiarMes(1)"
-          @hoy="irMesActual"
-        />
-
-        <span
-          class="programacion__estado"
-          :class="{ 'programacion__estado--pendiente': hayCambios }"
-        >
-          <span class="programacion__estado-punto" aria-hidden="true"></span>
-          {{ hayCambios ? 'Sin guardar' : 'Guardado' }}
-        </span>
         <span class="barra__espacio"></span>
         <SelectButton
           v-model="modo"
@@ -556,19 +558,21 @@ async function exportarPdf(): Promise<void> {
           aria-label="Modo de edición"
           compacto
         />
-        <MenuAcciones
-          texto="Acciones"
-          :acciones="accionesSecundarias()"
-          @accion="ejecutarAccionSecundaria"
-        />
-        <button
-          class="boton boton--principal"
-          type="button"
-          :disabled="exportandoPdf || guardando"
-          @click="exportarPdf"
-        >
-          {{ exportandoPdf ? 'Generando PDF…' : 'Exportar PDF' }}
-        </button>
+        <template v-if="modo !== 'calendario-escolar'">
+          <MenuAcciones
+            texto="Acciones"
+            :acciones="accionesSecundarias()"
+            @accion="ejecutarAccionSecundaria"
+          />
+          <button
+            class="boton boton--principal"
+            type="button"
+            :disabled="exportandoPdf || guardando"
+            @click="exportarPdf"
+          >
+            {{ exportandoPdf ? 'Generando PDF…' : 'Exportar PDF' }}
+          </button>
+        </template>
       </div>
 
       <div v-if="mostrarImportar" class="programacion__importar tarjeta">
