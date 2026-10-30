@@ -4503,17 +4503,56 @@ a:focus-visible {
   flex: 1 1 420px;
 }
 
-.faltas__layout {
+.faltas__modulos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.faltas__modulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 13px 15px;
+  border: 1px solid var(--borde);
+  border-radius: 9px;
+  background: #fbfcfe;
+}
+
+.faltas__modulo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 210px;
+}
+
+.faltas__modulo-campos {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 16px;
-  align-items: start;
+  grid-template-columns: minmax(220px, 1fr) 110px;
+  gap: 12px;
+  flex: 1 1 420px;
+}
+
+.faltas__modulo-campos label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--tenue);
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.faltas__historial {
+  margin-bottom: 16px;
 }
 
 .faltas__historial-lista {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 8px;
   margin: 12px 0 0;
   padding: 0;
   list-style: none;
@@ -4570,8 +4609,8 @@ a:focus-visible {
   font-size: 11px;
 }
 
-@media (max-width: 1000px) {
-  .faltas__layout {
+@media (max-width: 620px) {
+  .faltas__modulo-campos {
     grid-template-columns: 1fr;
   }
 }

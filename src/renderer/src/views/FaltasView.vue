@@ -53,9 +53,9 @@ function nombreAlumno(id: number): string {
   return alumno ? `${alumno.apellidos}, ${alumno.nombre}` : `Alumno ${id}`
 }
 
-function faltasDe(alumnoId: number, grupoId: number): number {
+function faltasDe(alumnoId: number, moduloCodigo: string): number {
   const alumno = informe.value?.datos.alumnos.find((fila) => fila.alumnoId === alumnoId)
-  return Number(alumno?.faltas[String(grupoId)] ?? 0)
+  return Number(alumno?.faltas[moduloCodigo] ?? 0)
 }
 
 function porcentaje(faltas: number, modulo: ConfigModuloFaltas): number {
@@ -160,7 +160,12 @@ async function guardarConfiguracion(): Promise<void> {
   mensaje.value = null
   try {
     for (const modulo of modulos.value) {
-      await window.api.faltas.guardarModulo(modulo.grupoId, modulo.nombreInforme, modulo.horas)
+      await window.api.faltas.guardarModulo(
+        clave.value,
+        modulo.moduloCodigo,
+        modulo.nombreInforme,
+        modulo.horas
+      )
     }
     await window.api.faltas.guardarAjustes(clave.value, limite.value, incluirJustificadas.value)
     mensaje.value = 'Configuración de faltas guardada.'
@@ -207,7 +212,7 @@ async function alElegirPdf(evento: Event): Promise<void> {
         const nombrePdf = [...Object.keys(filasPdf[0].modulos)].find(
           (nombre) => normalizar(nombre) === normalizar(modulo.nombreInforme)
         )
-        valores[String(modulo.grupoId)] = nombrePdf ? (filaPdf?.modulos[nombrePdf] ?? 0) : 0
+        valores[modulo.moduloCodigo] = nombrePdf ? (filaPdf?.modulos[nombrePdf] ?? 0) : 0
       }
       faltas.set(String(alumno.id), valores)
     }
@@ -223,7 +228,7 @@ async function alElegirPdf(evento: Event): Promise<void> {
     }
     await window.api.faltas.importarInforme(clave.value, archivo.name, datos)
     await cargarCohorte()
-    mensaje.value = `Informe «${archivo.name}» añadido al historial.`
+    mensaje.value = `Faltas de «${archivo.name}» añadidas al historial.`
     if (modulosSinCoincidencia.length > 0) {
       error.value = `No se han encontrado estas columnas en el PDF: ${modulosSinCoincidencia.join(', ')}. Revisa el nombre exacto de cada módulo.`
     }
@@ -247,7 +252,7 @@ function imprimir(): void {
     .map((alumno) => {
       const celdas = modulos
         .map((modulo) => {
-          const faltas = Number(alumno.faltas[String(modulo.grupoId)] ?? 0)
+          const faltas = Number(alumno.faltas[modulo.moduloCodigo] ?? 0)
           return `<td>${faltas}</td><td>${porcentaje(faltas, modulo)} %</td>`
         })
         .join('')
@@ -333,152 +338,143 @@ function imprimir(): void {
             </div>
           </div>
 
-          <div class="tabla-scroll">
-            <table class="tabla faltas__modulos">
+          <div class="faltas__modulos-lista">
+            <article v-for="modulo in modulos" :key="modulo.moduloCodigo" class="faltas__modulo">
+              <div class="faltas__modulo-info">
+                <strong>{{ modulo.nombre }}</strong>
+                <span class="tenue monospace">{{ modulo.moduloCodigo }}</span>
+              </div>
+              <div class="faltas__modulo-campos">
+                <label>
+                  <span>Nombre exacto en el PDF</span>
+                  <input v-model="modulo.nombreInforme" class="faltas__nombre" />
+                </label>
+                <label>
+                  <span>Horas del módulo</span>
+                  <input
+                    v-model.number="modulo.horas"
+                    class="faltas__horas"
+                    type="number"
+                    min="1"
+                  />
+                </label>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="tarjeta faltas__historial">
+          <header class="dashboard__tarjeta-cabecera">
+            <div>
+              <h3>Historial de faltas</h3>
+              <p class="tenue">De cada informe se guardan las faltas extraídas, no el PDF.</p>
+            </div>
+            <button
+              class="boton boton--principal"
+              type="button"
+              :disabled="trabajando"
+              @click="elegirPdf"
+            >
+              {{ trabajando ? 'Leyendo…' : 'Subir PDF' }}
+            </button>
+            <input
+              ref="ficheroPdf"
+              class="visualmente-oculto"
+              type="file"
+              accept=".pdf,application/pdf"
+              @change="alElegirPdf"
+            />
+          </header>
+
+          <p v-if="informes.length === 0" class="tenue">
+            Todavía no hay informes. Sube un PDF de faltas de ITACA para empezar el historial.
+          </p>
+          <ul v-else class="faltas__historial-lista">
+            <li v-for="item in informes" :key="item.id">
+              <button
+                type="button"
+                class="faltas__historial-item"
+                :class="{ 'faltas__historial-item--activo': informe?.id === item.id }"
+                @click="verInforme(item.id)"
+              >
+                <strong>{{ item.archivo }}</strong>
+                <span>{{ formatearFecha(item.subidoEn) }}</span>
+                <span class="tenue"
+                  >{{ plural(item.totalAlumnos, 'alumno', 'alumnos') }} ·
+                  {{ plural(item.totalModulos, 'módulo', 'módulos') }}</span
+                >
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="tarjeta faltas__panel">
+          <header class="dashboard__tarjeta-cabecera">
+            <div>
+              <h3>Registro seleccionado</h3>
+              <p class="tenue">
+                {{
+                  informe
+                    ? `${informe.archivo} · ${formatearFecha(informe.subidoEn)}`
+                    : 'Selecciona un informe del historial.'
+                }}
+              </p>
+            </div>
+            <button class="boton" type="button" :disabled="!informe" @click="imprimir">
+              Imprimir / PDF
+            </button>
+          </header>
+
+          <p v-if="!informe" class="tenue">No hay ningún registro seleccionado.</p>
+          <div v-else class="tabla-scroll">
+            <table class="tabla faltas__tabla">
               <thead>
                 <tr>
-                  <th>Módulo</th>
-                  <th>Nombre exacto en el informe</th>
-                  <th class="num">Horas</th>
+                  <th rowspan="2">Alumno/a</th>
+                  <th
+                    v-for="modulo in informe.datos.modulos"
+                    :key="modulo.moduloCodigo"
+                    colspan="2"
+                    class="faltas__modulo-cabecera"
+                  >
+                    {{ modulo.nombreInforme }}
+                  </th>
+                </tr>
+                <tr>
+                  <template
+                    v-for="modulo in informe.datos.modulos"
+                    :key="`sub-${modulo.moduloCodigo}`"
+                  >
+                    <th class="num">Faltas</th>
+                    <th class="num">%</th>
+                  </template>
                 </tr>
               </thead>
               <tbody>
-                <tr v-for="modulo in modulos" :key="modulo.grupoId">
+                <tr v-for="alumno in informe.datos.alumnos" :key="alumno.alumnoId">
                   <td>
-                    <strong>{{ modulo.nombre }}</strong>
-                    <span class="tenue monospace">{{ modulo.moduloCodigo }}</span>
+                    <strong>{{ nombreAlumno(alumno.alumnoId) }}</strong>
                   </td>
-                  <td>
-                    <input v-model="modulo.nombreInforme" class="faltas__nombre" />
-                  </td>
-                  <td class="num">
-                    <input
-                      v-model.number="modulo.horas"
-                      class="faltas__horas"
-                      type="number"
-                      min="1"
-                    />
-                  </td>
+                  <template
+                    v-for="modulo in informe.datos.modulos"
+                    :key="`${alumno.alumnoId}-${modulo.moduloCodigo}`"
+                  >
+                    <td class="num">{{ faltasDe(alumno.alumnoId, modulo.moduloCodigo) }}</td>
+                    <td class="num">
+                      <span
+                        class="chip faltas__estado"
+                        :class="estado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)"
+                        :title="textoEstado(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo)"
+                      >
+                        {{ porcentaje(faltasDe(alumno.alumnoId, modulo.moduloCodigo), modulo) }} %
+                      </span>
+                    </td>
+                  </template>
                 </tr>
               </tbody>
             </table>
           </div>
         </section>
-
-        <div class="faltas__layout">
-          <section class="tarjeta faltas__historial">
-            <header class="dashboard__tarjeta-cabecera">
-              <div>
-                <h3>Historial de informes</h3>
-                <p class="tenue">Cada PDF subido queda guardado como una instantánea.</p>
-              </div>
-              <button
-                class="boton boton--principal"
-                type="button"
-                :disabled="trabajando"
-                @click="elegirPdf"
-              >
-                {{ trabajando ? 'Leyendo…' : 'Subir PDF' }}
-              </button>
-              <input
-                ref="ficheroPdf"
-                class="visualmente-oculto"
-                type="file"
-                accept=".pdf,application/pdf"
-                @change="alElegirPdf"
-              />
-            </header>
-
-            <p v-if="informes.length === 0" class="tenue">
-              Todavía no hay informes. Sube el PDF de faltas de ITACA para empezar el historial.
-            </p>
-            <ul v-else class="faltas__historial-lista">
-              <li v-for="item in informes" :key="item.id">
-                <button
-                  type="button"
-                  class="faltas__historial-item"
-                  :class="{ 'faltas__historial-item--activo': informe?.id === item.id }"
-                  @click="verInforme(item.id)"
-                >
-                  <strong>{{ item.archivo }}</strong>
-                  <span>{{ formatearFecha(item.subidoEn) }}</span>
-                  <span class="tenue"
-                    >{{ plural(item.totalAlumnos, 'alumno', 'alumnos') }} ·
-                    {{ plural(item.totalModulos, 'módulo', 'módulos') }}</span
-                  >
-                </button>
-              </li>
-            </ul>
-          </section>
-
-          <section class="tarjeta faltas__panel">
-            <header class="dashboard__tarjeta-cabecera">
-              <div>
-                <h3>Informe seleccionado</h3>
-                <p class="tenue">
-                  {{
-                    informe
-                      ? `${informe.archivo} · ${formatearFecha(informe.subidoEn)}`
-                      : 'Selecciona un informe del historial.'
-                  }}
-                </p>
-              </div>
-              <button class="boton" type="button" :disabled="!informe" @click="imprimir">
-                Imprimir / PDF
-              </button>
-            </header>
-
-            <p v-if="!informe" class="tenue">No hay ningún informe seleccionado.</p>
-            <div v-else class="tabla-scroll">
-              <table class="tabla faltas__tabla">
-                <thead>
-                  <tr>
-                    <th rowspan="2">Alumno/a</th>
-                    <th
-                      v-for="modulo in informe.datos.modulos"
-                      :key="modulo.grupoId"
-                      colspan="2"
-                      class="faltas__modulo-cabecera"
-                    >
-                      {{ modulo.nombreInforme }}
-                    </th>
-                  </tr>
-                  <tr>
-                    <template
-                      v-for="modulo in informe.datos.modulos"
-                      :key="`sub-${modulo.grupoId}`"
-                    >
-                      <th class="num">Faltas</th>
-                      <th class="num">%</th>
-                    </template>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr v-for="alumno in informe.datos.alumnos" :key="alumno.alumnoId">
-                    <td>
-                      <strong>{{ nombreAlumno(alumno.alumnoId) }}</strong>
-                    </td>
-                    <template
-                      v-for="modulo in informe.datos.modulos"
-                      :key="`${alumno.alumnoId}-${modulo.grupoId}`"
-                    >
-                      <td class="num">{{ faltasDe(alumno.alumnoId, modulo.grupoId) }}</td>
-                      <td class="num">
-                        <span
-                          class="chip faltas__estado"
-                          :class="estado(faltasDe(alumno.alumnoId, modulo.grupoId), modulo)"
-                          :title="textoEstado(faltasDe(alumno.alumnoId, modulo.grupoId), modulo)"
-                        >
-                          {{ porcentaje(faltasDe(alumno.alumnoId, modulo.grupoId), modulo) }} %
-                        </span>
-                      </td>
-                    </template>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </div>
       </template>
     </template>
   </section>

@@ -1266,17 +1266,19 @@ async function obtenerCursoFaltasWeb(clave: ClaveCursoFaltas): Promise<DatosCurs
   if (grupos.length === 0) throw new Error('No hay módulos para este curso.')
   const guardado = leerFaltas()[claveFaltas(clave)]
   const ciclo = await cicloDaw()
-  const modulos: ConfigModuloFaltas[] = grupos.map((grupo) => {
-    const modulo = ciclo.modulos.find((item) => item.codigo === grupo.modulo_codigo)
-    const config = guardado?.modulos[String(grupo.id)]
-    return {
-      grupoId: grupo.id,
-      moduloCodigo: grupo.modulo_codigo,
-      nombre: grupo.modulo_nombre,
-      nombreInforme: config?.nombreInforme ?? modulo?.siglas ?? grupo.modulo_siglas ?? '',
-      horas: config?.horas ?? modulo?.horas_minimas_boe ?? 0
-    }
-  })
+  const modulos: ConfigModuloFaltas[] = ciclo.modulos
+    .filter((modulo) => modulo.curso === clave.curso || modulo.curso === null)
+    .map((modulo) => {
+      const grupo = grupos.find((item) => item.modulo_codigo === modulo.codigo)
+      const config = guardado?.modulos[modulo.codigo]
+      return {
+        grupoId: grupo?.id ?? null,
+        moduloCodigo: modulo.codigo,
+        nombre: modulo.nombre,
+        nombreInforme: config?.nombreInforme ?? modulo.siglas ?? modulo.codigo,
+        horas: config?.horas ?? modulo.horas_minimas_boe ?? 0
+      }
+    })
   return {
     ...clave,
     cursoAcademicoNombre: cursoPorId(grupos[0].curso_academico_id)?.nombre ?? '—',
@@ -2635,15 +2637,12 @@ const api = {
     },
     obtenerCurso: async (clave: ClaveCursoFaltas): Promise<DatosCursoFaltas> =>
       obtenerCursoFaltasWeb(clave),
-    guardarModulo: async (grupoId: number, nombreInforme: string, horas: number): Promise<void> => {
-      const grupo = leer().find((item) => item.id === grupoId)
-      if (!grupo) throw new Error('El grupo no existe.')
-      const clave: ClaveCursoFaltas = {
-        cursoAcademicoId: grupo.curso_academico_id,
-        cicloId: grupo.ciclo_id,
-        curso: grupo.curso,
-        modalidad: grupo.modalidad
-      }
+    guardarModulo: async (
+      clave: ClaveCursoFaltas,
+      moduloCodigo: string,
+      nombreInforme: string,
+      horas: number
+    ): Promise<void> => {
       const id = claveFaltas(clave)
       const datos = leerFaltas()
       const actual = datos[id] ?? {
@@ -2653,7 +2652,7 @@ const api = {
         informes: [],
         siguienteId: 1
       }
-      actual.modulos[String(grupoId)] = { nombreInforme, horas }
+      actual.modulos[moduloCodigo] = { nombreInforme, horas }
       datos[id] = actual
       escribirFaltas(datos)
     },

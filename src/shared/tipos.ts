@@ -875,8 +875,10 @@ export interface ResultadoInforme {
 /* --- Control de faltas ----------------------------------------------- */
 
 export interface ConfigModuloFaltas {
-  grupoId: number
+  /** Código único del módulo dentro del curso. */
   moduloCodigo: string
+  /** Grupo existente para este módulo, si ya se ha creado. */
+  grupoId: number | null
   nombre: string
   /** Nombre exacto de la columna en el PDF de ITACA. */
   nombreInforme: string
@@ -917,7 +919,7 @@ export interface DatosCursoFaltas {
 
 export interface FaltasAlumnoInforme {
   alumnoId: number
-  /** Total de faltas por grupo/módulo; la clave es el id del grupo. */
+  /** Total de faltas por módulo; la clave es el código del módulo. */
   faltas: Record<string, number>
 }
 
@@ -1183,7 +1185,12 @@ export interface Api {
   faltas: {
     cursos(): Promise<CursoFaltasResumen[]>
     obtenerCurso(clave: ClaveCursoFaltas): Promise<DatosCursoFaltas>
-    guardarModulo(grupoClaseId: number, nombreInforme: string, horas: number): Promise<void>
+    guardarModulo(
+      clave: ClaveCursoFaltas,
+      moduloCodigo: string,
+      nombreInforme: string,
+      horas: number
+    ): Promise<void>
     guardarAjustes(
       clave: ClaveCursoFaltas,
       limite: number,

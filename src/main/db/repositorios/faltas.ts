@@ -67,22 +67,69 @@ function alumnosDe(db: Bd, clave: ClaveCursoFaltas): AlumnoFaltasCurso[] {
     .all(clave.cursoAcademicoId, clave.cicloId, clave.curso, clave.modalidad) as AlumnoFaltasCurso[]
 }
 
-function moduloDe(db: Bd, grupo: FilaGrupo): ConfigModuloFaltas {
-  const config = db
-    .prepare('SELECT nombre_informe, horas FROM faltas_modulo_config WHERE grupo_clase_id = ?')
-    .get(grupo.id) as { nombre_informe: string; horas: number } | undefined
-  const modulo = db
-    .prepare('SELECT horas_minimas_boe, siglas FROM modulos WHERE codigo = ?')
-    .get(grupo.modulo_codigo) as
-    { horas_minimas_boe: number | null; siglas: string | null } | undefined
-  return {
-    grupoId: grupo.id,
-    moduloCodigo: grupo.modulo_codigo,
-    nombre: grupo.modulo_nombre,
-    nombreInforme:
-      config?.nombre_informe || modulo?.siglas || grupo.modulo_siglas || grupo.modulo_codigo,
-    horas: config?.horas ?? modulo?.horas_minimas_boe ?? 0
+function configModulo(clave: ClaveCursoFaltas, moduloCodigo: string): string {
+  return `faltas_modulo:${claveConfig(clave)}:${moduloCodigo}`
+}
+
+function moduloConfigurado(
+  db: Bd,
+  clave: ClaveCursoFaltas,
+  moduloCodigo: string,
+  predeterminado: {
+    nombre: string
+    siglas: string | null
+    horas: number | null
+    grupoId: number | null
   }
+): ConfigModuloFaltas {
+  const fila = db
+    .prepare('SELECT valor FROM config WHERE clave = ?')
+    .get(configModulo(clave, moduloCodigo)) as { valor: string } | undefined
+  let guardado: { nombreInforme?: string; horas?: number } = {}
+  if (fila) {
+    try {
+      guardado = JSON.parse(fila.valor) as { nombreInforme?: string; horas?: number }
+    } catch {
+      guardado = {}
+    }
+  }
+  return {
+    moduloCodigo,
+    grupoId: predeterminado.grupoId,
+    nombre: predeterminado.nombre,
+    nombreInforme: guardado.nombreInforme || predeterminado.siglas || moduloCodigo,
+    horas: Number(guardado.horas) || predeterminado.horas || 0
+  }
+}
+
+function modulosDeCurso(
+  db: Bd,
+  clave: ClaveCursoFaltas,
+  grupos: FilaGrupo[]
+): ConfigModuloFaltas[] {
+  const modulos = db
+    .prepare(
+      `SELECT codigo, nombre, siglas, horas_minimas_boe
+         FROM modulos
+        WHERE ciclo_id = ? AND (curso = ? OR curso IS NULL)
+        ORDER BY curso, codigo`
+    )
+    .all(clave.cicloId, clave.curso) as {
+    codigo: string
+    nombre: string
+    siglas: string | null
+    horas_minimas_boe: number | null
+  }[]
+
+  return modulos.map((modulo) => {
+    const grupo = grupos.find((item) => item.modulo_codigo === modulo.codigo)
+    return moduloConfigurado(db, clave, modulo.codigo, {
+      nombre: modulo.nombre,
+      siglas: modulo.siglas,
+      horas: modulo.horas_minimas_boe,
+      grupoId: grupo?.id ?? null
+    })
+  })
 }
 
 function leerAjustes(
@@ -164,7 +211,7 @@ export function obtenerCursoFaltas(db: Bd, clave: ClaveCursoFaltas): DatosCursoF
     ...clave,
     cursoAcademicoNombre: grupos[0].curso_academico_nombre,
     cicloNombre: grupos[0].ciclo_nombre,
-    modulos: grupos.map((grupo) => moduloDe(db, grupo)),
+    modulos: modulosDeCurso(db, clave, grupos),
     alumnos: alumnosDe(db, clave),
     ...ajustes
   }
@@ -172,21 +219,23 @@ export function obtenerCursoFaltas(db: Bd, clave: ClaveCursoFaltas): DatosCursoF
 
 export function guardarModuloFaltas(
   db: Bd,
-  grupoClaseId: number,
+  clave: ClaveCursoFaltas,
+  moduloCodigo: string,
   nombreInforme: string,
   horas: number
 ): void {
-  const grupo = db.prepare('SELECT 1 FROM grupos_clase WHERE id = ?').get(grupoClaseId)
-  if (!grupo) throw new Error('El grupo no existe.')
+  const modulo = db
+    .prepare('SELECT 1 FROM modulos WHERE codigo = ? AND ciclo_id = ?')
+    .get(moduloCodigo, clave.cicloId)
+  if (!modulo) throw new Error('El módulo no pertenece al ciclo del curso.')
   if (!Number.isFinite(horas) || horas <= 0) throw new Error('Indica las horas del módulo.')
   db.prepare(
-    `INSERT INTO faltas_modulo_config (grupo_clase_id, nombre_informe, horas, actualizado_en)
-     VALUES (?, ?, ?, datetime('now'))
-     ON CONFLICT(grupo_clase_id) DO UPDATE SET
-       nombre_informe = excluded.nombre_informe,
-       horas = excluded.horas,
-       actualizado_en = datetime('now')`
-  ).run(grupoClaseId, nombreInforme.trim(), horas)
+    `INSERT INTO config (clave, valor) VALUES (?, ?)
+     ON CONFLICT(clave) DO UPDATE SET valor = excluded.valor`
+  ).run(
+    configModulo(clave, moduloCodigo),
+    JSON.stringify({ nombreInforme: nombreInforme.trim(), horas })
+  )
 }
 
 export function guardarAjustesFaltas(
@@ -277,9 +326,9 @@ export function importarInformeFaltas(
   datos: InformeFaltasDatos
 ): InformeFaltas {
   const curso = obtenerCursoFaltas(db, clave)
-  const modulosValidos = new Set(curso.modulos.map((modulo) => modulo.grupoId))
+  const modulosValidos = new Set(curso.modulos.map((modulo) => modulo.moduloCodigo))
   for (const modulo of datos.modulos) {
-    if (!modulosValidos.has(modulo.grupoId)) {
+    if (!modulosValidos.has(modulo.moduloCodigo)) {
       throw new Error('El informe contiene módulos que no pertenecen a este curso.')
     }
   }

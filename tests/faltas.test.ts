@@ -77,7 +77,7 @@ describe('control de faltas por curso', () => {
   })
 
   it('permite configurar nombre de informe, horas y ajustes', () => {
-    guardarModuloFaltas(db, grupoId, 'DWES ITACA', 120)
+    guardarModuloFaltas(db, clave, '0613', 'DWES ITACA', 120)
     const datos = guardarAjustesFaltas(db, clave, 10, true)
     expect(datos.modulos[0].nombreInforme).toBe('DWES ITACA')
     expect(datos.modulos[0].horas).toBe(120)
@@ -89,12 +89,12 @@ describe('control de faltas por curso', () => {
     const curso = obtenerCursoFaltas(db, clave)
     const informe = importarInformeFaltas(db, clave, 'faltas-octubre.pdf', {
       modulos: curso.modulos,
-      alumnos: [{ alumnoId, faltas: { [String(grupoId)]: 4 } }],
+      alumnos: [{ alumnoId, faltas: { '0613': 4 } }],
       limite: 15,
       incluirJustificadas: false
     })
     expect(informe.archivo).toBe('faltas-octubre.pdf')
     expect(listarInformesFaltas(db, clave)).toHaveLength(1)
-    expect(obtenerInformeFaltas(db, informe.id)?.datos.alumnos[0].faltas[String(grupoId)]).toBe(4)
+    expect(obtenerInformeFaltas(db, informe.id)?.datos.alumnos[0].faltas['0613']).toBe(4)
   })
 })

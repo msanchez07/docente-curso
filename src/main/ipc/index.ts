@@ -536,8 +536,13 @@ export function registrarIpc(): void {
   )
   ipcMain.handle(
     CANALES.faltasGuardarModulo,
-    (_e, grupoClaseId: number, nombreInforme: string, horas: number) =>
-      guardarModuloFaltas(bd(), grupoClaseId, nombreInforme, horas)
+    (
+      _e,
+      clave: import('@shared/tipos').ClaveCursoFaltas,
+      moduloCodigo: string,
+      nombreInforme: string,
+      horas: number
+    ) => guardarModuloFaltas(bd(), clave, moduloCodigo, nombreInforme, horas)
   )
   ipcMain.handle(
     CANALES.faltasGuardarAjustes,

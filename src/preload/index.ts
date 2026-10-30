@@ -189,8 +189,8 @@ const api: Api = {
   faltas: {
     cursos: () => ipcRenderer.invoke(CANALES.faltasCursos),
     obtenerCurso: (clave) => ipcRenderer.invoke(CANALES.faltasObtenerCurso, clave),
-    guardarModulo: (grupoClaseId, nombreInforme, horas) =>
-      ipcRenderer.invoke(CANALES.faltasGuardarModulo, grupoClaseId, nombreInforme, horas),
+    guardarModulo: (clave, moduloCodigo, nombreInforme, horas) =>
+      ipcRenderer.invoke(CANALES.faltasGuardarModulo, clave, moduloCodigo, nombreInforme, horas),
     guardarAjustes: (clave, limite, incluirJustificadas) =>
       ipcRenderer.invoke(CANALES.faltasGuardarAjustes, clave, limite, incluirJustificadas),
     listarInformes: (clave) => ipcRenderer.invoke(CANALES.faltasListarInformes, clave),
