@@ -37,7 +37,8 @@ const opcionesModo = [
   { value: 'tarjetas', label: 'Tarjetas' },
   { value: 'tabla', label: 'Tabla' },
   { value: 'calendario', label: 'Calendario' },
-  { value: 'unidades', label: 'Unidades' }
+  { value: 'unidades', label: 'Unidades' },
+  { value: 'calendario-escolar', label: 'Calendario escolar' }
 ]
 const opcionesVista = [
   { value: 'quincena', label: 'Quincena' },
@@ -56,7 +57,6 @@ const filaABorrar = ref<ProgramacionAula | null>(null)
 const borrando = ref(false)
 
 const mostrarImportar = ref(false)
-const mostrarCalendarioEscolar = ref(false)
 const unidades = ref<UnidadProgramacion[]>([])
 const textoImportar = ref('')
 const ficheroImportar = ref<HTMLInputElement | null>(null)
@@ -256,8 +256,7 @@ function accionesSecundarias(): AccionMenu[] {
   return [
     { id: 'ejemplo', etiqueta: 'Cargar ejemplo', icono: 'programacion' },
     { id: 'importar', etiqueta: 'Importar programación', icono: 'importar' },
-    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' },
-    { id: 'calendario', etiqueta: 'Calendario escolar', icono: 'programacion' }
+    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' }
   ]
 }
 
@@ -265,7 +264,6 @@ function ejecutarAccionSecundaria(accion: string): void {
   if (accion === 'ejemplo') cargarEjemplo()
   else if (accion === 'importar') abrirImportar()
   else if (accion === 'esquema') exportarEsquema()
-  else if (accion === 'calendario') mostrarCalendarioEscolar.value = !mostrarCalendarioEscolar.value
 }
 
 function cambiarMes(delta: number): void {
@@ -520,7 +518,7 @@ async function exportarPdf(): Promise<void> {
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
       <div class="programacion__barra">
-        <template v-if="modo !== 'calendario'">
+        <template v-if="modo !== 'calendario' && modo !== 'calendario-escolar'">
           <SelectButton
             v-model="vista"
             :opciones="opcionesVista"
@@ -573,12 +571,6 @@ async function exportarPdf(): Promise<void> {
         </button>
       </div>
 
-      <CalendarioEscolarPanel
-        v-if="mostrarCalendarioEscolar"
-        :curso-academico-id="grupo.curso_academico_id"
-        :grupo-clase-id="grupo.id"
-      />
-
       <div v-if="mostrarImportar" class="programacion__importar tarjeta">
         <div class="entrega-form__seccion-cabecera">
           <div>
@@ -624,7 +616,14 @@ async function exportarPdf(): Promise<void> {
         </div>
       </div>
 
+      <CalendarioEscolarPanel
+        v-if="modo === 'calendario-escolar'"
+        :curso-academico-id="grupo.curso_academico_id"
+        :grupo-clase-id="grupo.id"
+      />
+
       <div
+        v-else
         class="programacion__layout"
         :class="{
           'programacion__layout--tabla': modo === 'tabla',
