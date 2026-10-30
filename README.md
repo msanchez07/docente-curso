@@ -54,6 +54,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 - **Datos de prueba** en la previsualización web: restaurar o eliminar.
 - **Control de faltas por curso/tutoría**:
   - Todos los módulos del curso con nombre exacto en el informe ITACA, horas y límite.
+  - Se excluyen los módulos de FCT/formación en empresa, que no tienen faltas.
   - Importación de PDFs de faltas de varias páginas.
   - Historial de las faltas extraídas de cada informe; no se guarda el PDF.
   - Tabla por alumno y módulo, porcentajes y estados por colores.

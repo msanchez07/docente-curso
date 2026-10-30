@@ -252,6 +252,20 @@ export function siglasDesdeNombre(nombre: string): string {
   return limpio.slice(0, 4).toUpperCase()
 }
 
+/** Los módulos de formación en empresa/FCT no tienen control de faltas. */
+export function moduloConFaltas(nombre: string, siglas?: string | null): boolean {
+  const texto = nombre
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+  const sigla = (siglas ?? '').trim().toUpperCase()
+  return (
+    !texto.includes('formacion en centros de trabajo') &&
+    !texto.includes('formacion en empresa') &&
+    sigla !== 'FCT'
+  )
+}
+
 /** Nombre visible del grupo de clase, generado a partir de sus datos. */
 export function nombreGrupoClase(
   cicloId: string,

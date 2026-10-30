@@ -15,7 +15,7 @@ import type {
   InformeFaltasDatos,
   InformeFaltasResumen
 } from '@shared/tipos'
-import { etiquetaModalidad } from '@shared/grupos'
+import { etiquetaModalidad, moduloConFaltas } from '@shared/grupos'
 
 interface FilaGrupo {
   id: number
@@ -121,15 +121,17 @@ function modulosDeCurso(
     horas_minimas_boe: number | null
   }[]
 
-  return modulos.map((modulo) => {
-    const grupo = grupos.find((item) => item.modulo_codigo === modulo.codigo)
-    return moduloConfigurado(db, clave, modulo.codigo, {
-      nombre: modulo.nombre,
-      siglas: modulo.siglas,
-      horas: modulo.horas_minimas_boe,
-      grupoId: grupo?.id ?? null
+  return modulos
+    .filter((modulo) => moduloConFaltas(modulo.nombre, modulo.siglas))
+    .map((modulo) => {
+      const grupo = grupos.find((item) => item.modulo_codigo === modulo.codigo)
+      return moduloConfigurado(db, clave, modulo.codigo, {
+        nombre: modulo.nombre,
+        siglas: modulo.siglas,
+        horas: modulo.horas_minimas_boe,
+        grupoId: grupo?.id ?? null
+      })
     })
-  })
 }
 
 function leerAjustes(

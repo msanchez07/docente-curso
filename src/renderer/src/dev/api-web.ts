@@ -8,6 +8,7 @@
  * Este fichero no se carga dentro de Electron (allí `window.api` ya existe).
  */
 import {
+  moduloConFaltas,
   nombreGrupoClase,
   contarBloques,
   normalizarBloquesSemana,
@@ -1077,6 +1078,113 @@ function escribirDemo(): void {
       creado_en: '2026-10-27 09:00:00'
     }
   ])
+
+  const modulosFaltas = [
+    {
+      moduloCodigo: '0612',
+      grupoId: null,
+      nombre: 'Desarrollo Web en entorno cliente',
+      nombreInforme: 'DWEC',
+      horas: 80
+    },
+    {
+      moduloCodigo: '0613',
+      grupoId: 1,
+      nombre: 'Desarrollo Web en entorno servidor',
+      nombreInforme: 'DWES',
+      horas: 100
+    },
+    {
+      moduloCodigo: '0614',
+      grupoId: null,
+      nombre: 'Despliegue de aplicaciones Web',
+      nombreInforme: 'DESPL',
+      horas: 50
+    },
+    {
+      moduloCodigo: '0615',
+      grupoId: null,
+      nombre: 'Diseño de interfaces web',
+      nombreInforme: 'DIW',
+      horas: 80
+    },
+    {
+      moduloCodigo: '0616',
+      grupoId: null,
+      nombre: 'Proyecto de desarrollo de aplicaciones Web',
+      nombreInforme: 'PROY',
+      horas: 25
+    },
+    {
+      moduloCodigo: '0618',
+      grupoId: null,
+      nombre: 'Empresa e iniciativa emprendedora',
+      nombreInforme: 'EIE',
+      horas: 35
+    }
+  ]
+  const faltasOctubre = alumnos.map((alumno, indice) => ({
+    alumnoId: alumno.id,
+    faltas: { '0612': indice + 1, '0613': indice * 2 + 2 }
+  }))
+  const faltasNoviembre = alumnos.map((alumno, indice) => ({
+    alumnoId: alumno.id,
+    faltas: { '0612': indice + 2, '0613': indice * 3 + 4 }
+  }))
+  localStorage.setItem(
+    CLAVE_FALTAS,
+    JSON.stringify({
+      '1|daw|2|presencial': {
+        modulos: {
+          '0612': { nombreInforme: 'DWEC', horas: 80 },
+          '0613': { nombreInforme: 'DWES', horas: 100 },
+          '0614': { nombreInforme: 'DESPL', horas: 50 },
+          '0615': { nombreInforme: 'DIW', horas: 80 },
+          '0616': { nombreInforme: 'PROY', horas: 25 },
+          '0618': { nombreInforme: 'EIE', horas: 35 }
+        },
+        limite: 15,
+        incluirJustificadas: false,
+        siguienteId: 3,
+        informes: [
+          {
+            id: 2,
+            archivo: 'faltas-noviembre.pdf',
+            subidoEn: '2026-11-15 10:00:00',
+            totalAlumnos: alumnos.length,
+            totalModulos: modulosFaltas.length,
+            cursoAcademicoId: 1,
+            cicloId: 'daw',
+            curso: '2',
+            modalidad: 'presencial',
+            datos: {
+              modulos: modulosFaltas,
+              alumnos: faltasNoviembre,
+              limite: 15,
+              incluirJustificadas: false
+            }
+          },
+          {
+            id: 1,
+            archivo: 'faltas-octubre.pdf',
+            subidoEn: '2026-10-15 10:00:00',
+            totalAlumnos: alumnos.length,
+            totalModulos: modulosFaltas.length,
+            cursoAcademicoId: 1,
+            cicloId: 'daw',
+            curso: '2',
+            modalidad: 'presencial',
+            datos: {
+              modulos: modulosFaltas,
+              alumnos: faltasOctubre,
+              limite: 15,
+              incluirJustificadas: false
+            }
+          }
+        ]
+      }
+    })
+  )
 }
 
 function sembrarDemo(): void {
@@ -1267,7 +1375,11 @@ async function obtenerCursoFaltasWeb(clave: ClaveCursoFaltas): Promise<DatosCurs
   const guardado = leerFaltas()[claveFaltas(clave)]
   const ciclo = await cicloDaw()
   const modulos: ConfigModuloFaltas[] = ciclo.modulos
-    .filter((modulo) => modulo.curso === clave.curso || modulo.curso === null)
+    .filter(
+      (modulo) =>
+        (modulo.curso === clave.curso || modulo.curso === null) &&
+        moduloConFaltas(modulo.nombre, modulo.siglas)
+    )
     .map((modulo) => {
       const grupo = grupos.find((item) => item.modulo_codigo === modulo.codigo)
       const config = guardado?.modulos[modulo.codigo]
@@ -2703,23 +2815,26 @@ const api = {
         modalidad: grupo.modalidad
       }
       const guardado = leerFaltas()[claveFaltas(clave)]
-      const informe = guardado?.informes[0]
-      if (!informe) return null
-      const modulo = informe.datos.modulos.find((item) => item.moduloCodigo === grupo.modulo_codigo)
-      const alumno = informe.datos.alumnos.find((item) => item.alumnoId === alumnoId)
-      if (!modulo || !alumno) return null
-      const faltas = Number(alumno.faltas[modulo.moduloCodigo] ?? 0)
-      return {
-        informeId: informe.id,
-        archivo: informe.archivo,
-        subidoEn: informe.subidoEn,
-        moduloCodigo: modulo.moduloCodigo,
-        moduloNombre: modulo.nombre,
-        faltas,
-        horas: modulo.horas,
-        porcentaje: modulo.horas > 0 ? Math.round((faltas / modulo.horas) * 100) : 0,
-        limite: informe.datos.limite
+      for (const informe of guardado?.informes ?? []) {
+        const modulo = informe.datos.modulos.find(
+          (item) => item.moduloCodigo === grupo.modulo_codigo
+        )
+        const alumno = informe.datos.alumnos.find((item) => item.alumnoId === alumnoId)
+        if (!modulo || !alumno) continue
+        const faltas = Number(alumno.faltas[modulo.moduloCodigo] ?? 0)
+        return {
+          informeId: informe.id,
+          archivo: informe.archivo,
+          subidoEn: informe.subidoEn,
+          moduloCodigo: modulo.moduloCodigo,
+          moduloNombre: modulo.nombre,
+          faltas,
+          horas: modulo.horas,
+          porcentaje: modulo.horas > 0 ? Math.round((faltas / modulo.horas) * 100) : 0,
+          limite: informe.datos.limite
+        }
       }
+      return null
     },
     importarInforme: async (
       clave: ClaveCursoFaltas,
