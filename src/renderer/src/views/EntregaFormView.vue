@@ -8,7 +8,8 @@ import type {
   EntregaClase,
   EntregaClaseEntrada,
   GrupoClase,
-  ModeloEvaluacion
+  ModeloEvaluacion,
+  UnidadProgramacion
 } from '@shared/tipos'
 import { cursoAcademicoActual } from '@shared/curso-academico'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
@@ -29,6 +30,7 @@ interface FormEntrega {
   rubrica_archivo: ArchivoRubrica | null
   avaluacion_id: string
   categoria_id: string
+  unidad_id: number | null
   ce_ids: number[]
 }
 
@@ -45,6 +47,7 @@ const cursosStore = useCursosAcademicosStore()
 
 const grupo = ref<GrupoClase | null>(null)
 const criterios = ref<ModeloEvaluacion | null>(null)
+const unidades = ref<UnidadProgramacion[]>([])
 const disponibles = ref<CriterioDisponible[]>([])
 const entrega = ref<EntregaClase | null>(null)
 const cargando = ref(true)
@@ -63,6 +66,7 @@ const form = reactive<FormEntrega>({
   rubrica_archivo: null,
   avaluacion_id: '',
   categoria_id: '',
+  unidad_id: null,
   ce_ids: []
 })
 
@@ -197,6 +201,7 @@ function resetFormulario(): void {
   form.rubrica_archivo = null
   form.avaluacion_id = ''
   form.categoria_id = ''
+  form.unidad_id = null
   form.ce_ids = []
 }
 
@@ -209,6 +214,7 @@ function rellenarFormulario(datos: EntregaClase): void {
   form.rubrica_archivo = datos.rubrica_archivo
   form.avaluacion_id = datos.avaluacion_id
   form.categoria_id = datos.categoria_id
+  form.unidad_id = datos.unidad_id
   form.ce_ids = [...datos.ce_ids]
 }
 
@@ -231,6 +237,7 @@ async function cargar(): Promise<void> {
     if (!criterios.value) return
 
     disponibles.value = await window.api.entregasClase.criterios(grupo.value.id)
+    unidades.value = await window.api.unidadesProgramacion.listar(grupo.value.id)
 
     if (esEdicion.value) {
       const entregas = await window.api.entregasClase.listar(grupo.value.id)
@@ -264,6 +271,10 @@ watch([grupoId, entregaId, esEdicion], cargar)
 async function guardar(): Promise<void> {
   if (!grupo.value) return
   errorFormulario.value = null
+  if (criterios.value?.modoCalificacion === 'unidades' && form.unidad_id === null) {
+    errorFormulario.value = 'Selecciona la unidad didáctica a la que pertenece la entrega.'
+    return
+  }
   if (!form.rubrica.trim() && !form.rubrica_archivo) {
     errorFormulario.value =
       'Añade una rúbrica: escribe los criterios o adjunta un archivo con ellos.'
@@ -281,6 +292,7 @@ async function guardar(): Promise<void> {
       rubrica_archivo: form.rubrica_archivo,
       avaluacion_id: form.avaluacion_id,
       categoria_id: form.categoria_id,
+      unidad_id: form.unidad_id,
       ce_ids: [...form.ce_ids]
     }
 
@@ -421,6 +433,19 @@ async function guardar(): Promise<void> {
                 <select id="entrega-categoria" v-model="form.categoria_id">
                   <option v-for="cat in criterios.categorias" :key="cat.id" :value="cat.id">
                     {{ cat.nombre }}
+                  </option>
+                </select>
+              </div>
+
+              <div class="campo">
+                <label for="entrega-unidad">
+                  Unidad didáctica
+                  <template v-if="criterios.modoCalificacion === 'unidades'"> *</template>
+                </label>
+                <select id="entrega-unidad" v-model="form.unidad_id">
+                  <option :value="null">Sin asignar</option>
+                  <option v-for="unidad in unidades" :key="unidad.id" :value="unidad.id">
+                    {{ unidad.codigo ? `${unidad.codigo} · ` : '' }}{{ unidad.nombre }}
                   </option>
                 </select>
               </div>
@@ -599,6 +624,14 @@ async function guardar(): Promise<void> {
               <div>
                 <dt>Categoría</dt>
                 <dd>{{ categoriaSeleccionada }}</dd>
+              </div>
+              <div>
+                <dt>Unidad</dt>
+                <dd>
+                  {{
+                    unidades.find((unidad) => unidad.id === form.unidad_id)?.codigo ?? 'Sin asignar'
+                  }}
+                </dd>
               </div>
               <div>
                 <dt>Tipo</dt>

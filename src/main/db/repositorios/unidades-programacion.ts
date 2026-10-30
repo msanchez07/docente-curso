@@ -17,7 +17,7 @@ import type {
 import { parsearUnidadesProgramacion } from '@shared/importar-unidades'
 import { obtenerGrupoClase } from './grupos-clase'
 
-const CAMPOS = `id, grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin,
+const CAMPOS = `id, grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, peso,
                 contenidos, observaciones, creado_en, actualizado_en`
 const CAMPOS_SESION = `id, grupo_clase_id, unidad_id, fecha, hora, orden, contenido,
                        desviacion, observaciones, creado_en, actualizado_en`
@@ -28,6 +28,7 @@ interface DatosUnidad {
   nombre: string
   fecha_inicio: string | null
   fecha_fin: string | null
+  peso: number
   contenidos: string
   observaciones: string | null
   criterios: CriterioUnidad[]
@@ -78,6 +79,10 @@ function normalizar(db: Bd, grupoClaseId: number, entrada: UnidadProgramacionEnt
 
   const fechaInicio = entrada.fecha_inicio?.trim() || null
   const fechaFin = entrada.fecha_fin?.trim() || null
+  const peso = Number(entrada.peso ?? 0)
+  if (!Number.isFinite(peso) || peso < 0 || peso > 100) {
+    throw new Error('El peso de la unidad debe estar entre 0 y 100.')
+  }
   if (fechaInicio && !fechaValida(fechaInicio)) {
     throw new Error('La fecha de inicio no es válida.')
   }
@@ -118,6 +123,7 @@ function normalizar(db: Bd, grupoClaseId: number, entrada: UnidadProgramacionEnt
     nombre,
     fecha_inicio: fechaInicio,
     fecha_fin: fechaFin,
+    peso,
     contenidos: entrada.contenidos?.trim() ?? '',
     observaciones: entrada.observaciones?.trim() || null,
     criterios,
@@ -208,8 +214,8 @@ export function crearUnidadProgramacion(
   const datos = normalizar(db, grupoClaseId, entrada)
   const insertar = db.prepare(
     `INSERT INTO unidades_programacion
-       (grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, contenidos, observaciones)
-     VALUES (@grupo_clase_id, @codigo, @nombre, @fecha_inicio, @fecha_fin, @contenidos, @observaciones)`
+       (grupo_clase_id, codigo, nombre, fecha_inicio, fecha_fin, peso, contenidos, observaciones)
+     VALUES (@grupo_clase_id, @codigo, @nombre, @fecha_inicio, @fecha_fin, @peso, @contenidos, @observaciones)`
   )
   let id = 0
   db.transaction(() => {
@@ -233,7 +239,7 @@ export function actualizarUnidadProgramacion(
   const actualizar = db.prepare(
     `UPDATE unidades_programacion
         SET codigo = @codigo, nombre = @nombre, fecha_inicio = @fecha_inicio,
-            fecha_fin = @fecha_fin, contenidos = @contenidos,
+            fecha_fin = @fecha_fin, peso = @peso, contenidos = @contenidos,
             observaciones = @observaciones, actualizado_en = datetime('now')
       WHERE id = @id`
   )

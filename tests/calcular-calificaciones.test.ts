@@ -6,7 +6,8 @@ import type {
   CriterioDisponible,
   EntregaClase,
   GrupoClase,
-  NotaGuardadaClase
+  NotaGuardadaClase,
+  UnidadProgramacion
 } from '@shared/tipos'
 
 const grupo: GrupoClase = {
@@ -51,6 +52,7 @@ function entrega(id: number, avaluacion: string, categoria: string, titulo: stri
     fecha_limite: null,
     avaluacion_id: avaluacion,
     categoria_id: categoria,
+    unidad_id: null,
     criterios: 1,
     ce_ids: [1],
     rubrica: null,
@@ -195,5 +197,66 @@ describe('cálculo de calificaciones por grupo', () => {
     expect(fila.avaluaciones[1].nota).toBeNull()
     expect(fila.avaluaciones[2].nota).toBeNull()
     expect(fila.notaFinal).toBe(8)
+  })
+})
+
+describe('cálculo por unidades didácticas', () => {
+  const unidades = [
+    {
+      id: 10,
+      grupo_clase_id: 1,
+      codigo: 'UD1',
+      nombre: 'Unidad 1',
+      fecha_inicio: null,
+      fecha_fin: null,
+      peso: 60,
+      contenidos: '',
+      observaciones: null,
+      ra_codigos: ['RA1'],
+      criterios: [],
+      sesiones: [],
+      creado_en: '',
+      actualizado_en: ''
+    },
+    {
+      id: 11,
+      grupo_clase_id: 1,
+      codigo: 'UD2',
+      nombre: 'Unidad 2',
+      fecha_inicio: null,
+      fecha_fin: null,
+      peso: 40,
+      contenidos: '',
+      observaciones: null,
+      ra_codigos: ['RA2'],
+      criterios: [],
+      sesiones: [],
+      creado_en: '',
+      actualizado_en: ''
+    }
+  ] as UnidadProgramacion[]
+
+  it('calcula la nota de cada unidad y la final por pesos', () => {
+    const modelo = {
+      ...modeloPorDefecto('presencial'),
+      modoCalificacion: 'unidades' as const
+    }
+    const entregasUnidad = entregas.map((item, indice) => ({
+      ...item,
+      unidad_id: indice === 2 ? 11 : 10
+    }))
+    const resumen = calcularResumenClase(
+      grupo,
+      modelo,
+      entregasUnidad,
+      [alumno],
+      notas({ 1: 8, 2: 6, 3: 7 }),
+      [],
+      unidades
+    )
+    const fila = resumen.alumnos[0]
+    expect(fila.unidades.map((unidad) => unidad.nota)).toEqual([7, 7])
+    expect(fila.notaFinal).toBe(7)
+    expect(fila.aprobado).toBe(true)
   })
 })

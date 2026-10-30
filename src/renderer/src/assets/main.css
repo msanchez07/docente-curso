@@ -3832,6 +3832,31 @@ a:focus-visible {
 
 /* --- Criterios de calificación --------------------------------------- */
 
+.criterios__modo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  background: #f8fafc;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.criterios__modo-opcion {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.criterios__modo .tenue {
+  flex: 1 1 240px;
+  font-size: 11.5px;
+}
+
 .criterios__layout {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);

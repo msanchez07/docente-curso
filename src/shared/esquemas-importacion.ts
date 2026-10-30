@@ -135,6 +135,7 @@ export const ESQUEMA_UNIDADES = {
       nombre: { type: 'string' },
       fecha_inicio: { type: 'string', description: 'ISO o dd/mm/aaaa.' },
       fecha_fin: { type: 'string', description: 'ISO o dd/mm/aaaa.' },
+      peso: { type: 'number', description: 'Peso de la unidad en la nota final (0–100).' },
       contenidos: { type: 'string' },
       observaciones: { type: ['string', 'null'] },
       criterios: {

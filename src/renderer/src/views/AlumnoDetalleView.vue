@@ -95,12 +95,13 @@ async function cargar(): Promise<void> {
       resumen.value = null
       return
     }
-    const [entregas, alumnos, notas, criteriosDisponibles, faltas] = await Promise.all([
+    const [entregas, alumnos, notas, criteriosDisponibles, faltas, unidades] = await Promise.all([
       window.api.entregasClase.listar(grupo.value.id),
       window.api.alumnosClase.listar(grupo.value.id),
       window.api.notasClase.listar(grupo.value.id),
       window.api.entregasClase.criterios(grupo.value.id),
-      window.api.faltas.ultimoAlumno(grupo.value.id, alumnoId.value)
+      window.api.faltas.ultimoAlumno(grupo.value.id, alumnoId.value),
+      window.api.unidadesProgramacion.listar(grupo.value.id)
     ])
     ultimaFalta.value = faltas
     resumen.value = calcularResumenClase(
@@ -109,7 +110,8 @@ async function cargar(): Promise<void> {
       entregas,
       alumnos,
       notas,
-      criteriosDisponibles
+      criteriosDisponibles,
+      unidades
     )
     if (!fila.value) error.value = 'El alumno no está matriculado en este grupo.'
   } catch (e) {

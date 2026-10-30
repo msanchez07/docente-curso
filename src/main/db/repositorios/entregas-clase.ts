@@ -18,7 +18,7 @@ import { obtenerGrupoClase } from './grupos-clase'
 
 const CAMPOS = `e.id, e.grupo_clase_id, e.titulo, e.descripcion, e.tipo,
                 e.fecha_limite, e.rubrica, e.rubrica_archivo, e.bloqueada,
-                e.avaluacion_id, e.categoria_id, e.creada_en,
+                e.avaluacion_id, e.categoria_id, e.unidad_id, e.creada_en,
                 (SELECT GROUP_CONCAT(ec.ce_id)
                    FROM entrega_ce_clase ec WHERE ec.entrega_id = e.id) AS ce_ids,
                 (SELECT COUNT(*) FROM entrega_ce_clase ec
@@ -44,6 +44,7 @@ interface FilaEntrega {
   rubrica_archivo: string | null
   avaluacion_id: string
   categoria_id: string
+  unidad_id: number | null
   criterios: number
   notas: number
   evidencias: number
@@ -122,6 +123,7 @@ interface Validada {
     rubrica_archivo: string | null
     avaluacion_id: string
     categoria_id: string
+    unidad_id: number | null
   }
   ceIds: number[]
 }
@@ -142,6 +144,13 @@ function validar(db: Bd, grupoClaseId: number, entrada: EntregaClaseEntrada): Va
   }
   if (!criterios.categorias.some((c) => c.id === entrada.categoria_id)) {
     throw new Error('La categoría no pertenece a los criterios del grupo.')
+  }
+  const unidadId = entrada.unidad_id ?? null
+  if (unidadId !== null) {
+    const unidad = db
+      .prepare('SELECT 1 FROM unidades_programacion WHERE id = ? AND grupo_clase_id = ?')
+      .get(unidadId, grupoClaseId)
+    if (!unidad) throw new Error('La unidad didáctica no pertenece al grupo.')
   }
 
   const fecha = entrada.fecha_limite?.trim() || null
@@ -165,7 +174,8 @@ function validar(db: Bd, grupoClaseId: number, entrada: EntregaClaseEntrada): Va
       rubrica: entrada.rubrica?.trim() || null,
       rubrica_archivo: serializarArchivo(entrada.rubrica_archivo),
       avaluacion_id: entrada.avaluacion_id,
-      categoria_id: entrada.categoria_id
+      categoria_id: entrada.categoria_id,
+      unidad_id: unidadId
     },
     ceIds
   }
@@ -189,9 +199,9 @@ export function crearEntregaClase(
       .prepare(
         `INSERT INTO entregas_clase
            (grupo_clase_id, titulo, descripcion, tipo, fecha_limite, rubrica,
-            rubrica_archivo, avaluacion_id, categoria_id)
+            rubrica_archivo, avaluacion_id, categoria_id, unidad_id)
          VALUES (@grupo_clase_id, @titulo, @descripcion, @tipo, @fecha_limite, @rubrica,
-                 @rubrica_archivo, @avaluacion_id, @categoria_id)`
+                 @rubrica_archivo, @avaluacion_id, @categoria_id, @unidad_id)`
       )
       .run({ ...validada.datos, grupo_clase_id: grupoClaseId })
     id = Number(resultado.lastInsertRowid)
@@ -218,7 +228,8 @@ export function actualizarEntregaClase(
           SET titulo = @titulo, descripcion = @descripcion, tipo = @tipo,
               fecha_limite = @fecha_limite, rubrica = @rubrica,
               rubrica_archivo = @rubrica_archivo, avaluacion_id = @avaluacion_id,
-              categoria_id = @categoria_id, actualizado_en = datetime('now')
+              categoria_id = @categoria_id, unidad_id = @unidad_id,
+              actualizado_en = datetime('now')
         WHERE id = @id`
     ).run({ ...validada.datos, id })
     mapear(db, id, validada.ceIds)

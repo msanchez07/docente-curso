@@ -31,10 +31,15 @@ const id = computed(() => Number(route.params.grupoId))
 const descripcionModelo = computed(() => {
   if (!resumen.value) return ''
   const modelo = resumen.value.modelo
+  if (modelo.modoCalificacion === 'unidades') {
+    return 'Cálculo por unidades didácticas · la nota final pondera el peso de cada unidad'
+  }
   const categorias = modelo.categorias.map((c) => `${c.nombre} ${c.peso} %`).join(' + ')
   const avaluaciones = modelo.avaluaciones.map((a) => `${a.peso} % ${a.nombre}`).join(' + ')
   return `${categorias} · final: ${avaluaciones}`
 })
+
+const modoUnidades = computed(() => resumen.value?.modelo.modoCalificacion === 'unidades')
 
 const alumnosFiltrados = computed(() => {
   if (!resumen.value) return []
@@ -58,29 +63,56 @@ const filaSeleccionada = computed<FilaCalificacionClase | null>(() => {
 
 const avaluacionSeleccionada = computed<AvaluacionCalificacion | null>(() => {
   const fila = filaSeleccionada.value
-  if (!fila || avaluacionActiva.value === 'final') return null
+  if (!fila || avaluacionActiva.value === 'final' || avaluacionActiva.value.startsWith('u:')) {
+    return null
+  }
   return (
     fila.avaluaciones.find((avaluacion) => avaluacion.avaluacionId === avaluacionActiva.value) ??
     null
   )
 })
 
+const unidadSeleccionada = computed(() => {
+  if (!modoUnidades.value || !avaluacionActiva.value.startsWith('u:')) return null
+  const id = Number(avaluacionActiva.value.slice(2))
+  return filaSeleccionada.value?.unidades.find((unidad) => unidad.unidadId === id) ?? null
+})
+
 const opcionesAvaluaciones = computed(() => {
-  const evaluaciones =
-    filaSeleccionada.value?.avaluaciones.map((avaluacion) => ({
-      value: avaluacion.avaluacionId,
-      label: `${avaluacion.nombre} · ${formato(avaluacion.nota)}`
-    })) ?? []
+  const fila = filaSeleccionada.value
+  if (!fila) return [{ value: 'final', label: 'Nota final' }]
+  const evaluaciones = modoUnidades.value
+    ? fila.unidades.map((unidad) => ({
+        value: `u:${unidad.unidadId}`,
+        label: `${unidad.codigo ?? unidad.nombre} · ${formato(unidad.nota)}`
+      }))
+    : fila.avaluaciones.map((avaluacion) => ({
+        value: avaluacion.avaluacionId,
+        label: `${avaluacion.nombre} · ${formato(avaluacion.nota)}`
+      }))
   return [...evaluaciones, { value: 'final', label: 'Nota final' }]
 })
 
 const formulaFinal = computed(() => {
+  if (modoUnidades.value) {
+    return (
+      filaSeleccionada.value?.unidades
+        .map((unidad) => `${unidad.codigo ?? unidad.nombre} ${unidad.peso} %`)
+        .join(' + ') ?? ''
+    )
+  }
   const modelo = resumen.value?.modelo
   if (!modelo) return ''
   return modelo.avaluaciones
     .map((avaluacion) => `${avaluacion.peso} % ${avaluacion.nombre}`)
     .join(' + ')
 })
+
+function primeraPestana(fila: FilaCalificacionClase | null): string {
+  if (!fila) return 'final'
+  if (modoUnidades.value) return fila.unidades[0] ? `u:${fila.unidades[0].unidadId}` : 'final'
+  return fila.avaluaciones[0]?.avaluacionId ?? 'final'
+}
 
 const rasSuperados = computed(
   () => filaSeleccionada.value?.ras.filter((ra) => ra.superado).length ?? 0
@@ -96,7 +128,7 @@ function estado(fila: FilaCalificacionClase): string {
 
 function seleccionar(fila: FilaCalificacionClase): void {
   seleccionadoId.value = fila.alumno.id
-  avaluacionActiva.value = fila.avaluaciones[0]?.avaluacionId ?? ''
+  avaluacionActiva.value = primeraPestana(fila)
   mensaje.value = null
   errorGuardado.value = null
 }
@@ -116,11 +148,12 @@ async function cargar(): Promise<void> {
       resumen.value = null
       return
     }
-    const [entregas, alumnos, notas, criteriosDisponibles] = await Promise.all([
+    const [entregas, alumnos, notas, criteriosDisponibles, unidades] = await Promise.all([
       window.api.entregasClase.listar(grupo.value.id),
       window.api.alumnosClase.listar(grupo.value.id),
       window.api.notasClase.listar(grupo.value.id),
-      window.api.entregasClase.criterios(grupo.value.id)
+      window.api.entregasClase.criterios(grupo.value.id),
+      window.api.unidadesProgramacion.listar(grupo.value.id)
     ])
     resumen.value = calcularResumenClase(
       grupo.value,
@@ -128,7 +161,8 @@ async function cargar(): Promise<void> {
       entregas,
       alumnos,
       notas,
-      criteriosDisponibles
+      criteriosDisponibles,
+      unidades
     )
     const solicitado = Number(route.query.alumno)
     const anterior =
@@ -138,7 +172,7 @@ async function cargar(): Promise<void> {
       resumen.value.alumnos[0] ??
       null
     seleccionadoId.value = fila?.alumno.id ?? null
-    avaluacionActiva.value = fila.avaluaciones[0]?.avaluacionId ?? ''
+    avaluacionActiva.value = primeraPestana(fila)
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -337,12 +371,63 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
             </div>
           </section>
 
+          <section v-if="unidadSeleccionada" class="tarjeta calificaciones__avaluacion">
+            <header class="calificaciones__avaluacion-cabecera">
+              <div>
+                <h3>
+                  <template v-if="unidadSeleccionada.codigo"
+                    >{{ unidadSeleccionada.codigo }} ·
+                  </template>
+                  {{ unidadSeleccionada.nombre }}
+                </h3>
+                <p class="tenue">Peso en la nota final: {{ unidadSeleccionada.peso }} %</p>
+              </div>
+              <strong class="calificaciones__nota-avaluacion">
+                {{ formato(unidadSeleccionada.nota) }}
+              </strong>
+            </header>
+
+            <div v-if="unidadSeleccionada.entregas.length === 0" class="tenue">
+              Sin entregas asignadas a esta unidad.
+            </div>
+
+            <div v-else class="calificaciones__entregas">
+              <div
+                v-for="entrega in unidadSeleccionada.entregas"
+                :key="entrega.entregaId"
+                class="calificaciones__entrega"
+              >
+                <div class="calificaciones__entrega-info">
+                  <strong>{{ entrega.titulo }}</strong>
+                  <span class="calificaciones__entrega-chips">
+                    <span v-if="entrega.bloqueada" class="chip chip--aviso">bloqueada</span>
+                    <span v-if="entrega.suspensa" class="chip chip--aviso">suspensa</span>
+                  </span>
+                </div>
+                <div class="calificaciones__nota calificaciones__nota--lectura">
+                  <span class="tenue">Nota</span>
+                  <strong>{{ formato(entrega.nota) }}</strong>
+                </div>
+                <div class="calificaciones__anotacion calificaciones__anotacion--lectura">
+                  <span class="tenue">Anotaciones</span>
+                  <span>{{ entrega.observaciones || '—' }}</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section v-if="avaluacionActiva === 'final'" class="tarjeta calificaciones__final">
             <header class="calificaciones__final-cabecera">
               <div>
                 <p class="dashboard__eyebrow">Resumen del módulo</p>
                 <h3>Nota final</h3>
-                <p class="tenue">Calculada a partir de las evaluaciones y las entregas.</p>
+                <p class="tenue">
+                  {{
+                    modoUnidades
+                      ? 'Calculada a partir del peso de las unidades y sus entregas.'
+                      : 'Calculada a partir de las evaluaciones y las entregas.'
+                  }}
+                </p>
               </div>
               <div class="calificaciones__final-nota">
                 <strong>{{ formato(filaSeleccionada.notaFinal) }}</strong>
@@ -353,23 +438,40 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
             </header>
 
             <div class="calificaciones__final-evaluaciones">
-              <button
-                v-for="avaluacion in filaSeleccionada.avaluaciones"
-                :key="avaluacion.avaluacionId"
-                class="calificaciones__final-evaluacion"
-                type="button"
-                @click="avaluacionActiva = avaluacion.avaluacionId"
-              >
-                <span>{{ avaluacion.nombre }}</span>
-                <strong>{{ formato(avaluacion.nota) }}</strong>
-              </button>
+              <template v-if="modoUnidades">
+                <button
+                  v-for="unidad in filaSeleccionada.unidades"
+                  :key="unidad.unidadId"
+                  class="calificaciones__final-evaluacion"
+                  type="button"
+                  @click="avaluacionActiva = `u:${unidad.unidadId}`"
+                >
+                  <span>{{ unidad.codigo ?? unidad.nombre }} · {{ unidad.peso }} %</span>
+                  <strong>{{ formato(unidad.nota) }}</strong>
+                </button>
+              </template>
+              <template v-else>
+                <button
+                  v-for="avaluacion in filaSeleccionada.avaluaciones"
+                  :key="avaluacion.avaluacionId"
+                  class="calificaciones__final-evaluacion"
+                  type="button"
+                  @click="avaluacionActiva = avaluacion.avaluacionId"
+                >
+                  <span>{{ avaluacion.nombre }}</span>
+                  <strong>{{ formato(avaluacion.nota) }}</strong>
+                </button>
+              </template>
             </div>
 
             <div class="calificaciones__final-formula">
               <strong>Nota final = {{ formulaFinal || 'sin pesos configurados' }}</strong>
               <p class="tenue">
-                Si hay evaluaciones suspensas, la nota se sustituye por la del examen de la
-                convocatoria ordinaria o, si procede, extraordinaria.
+                {{
+                  modoUnidades
+                    ? 'Si alguna unidad no alcanza el mínimo, se recupera en la convocatoria ordinaria o, si procede, extraordinaria.'
+                    : 'Si hay evaluaciones suspensas, la nota se sustituye por la del examen de la convocatoria ordinaria o, si procede, extraordinaria.'
+                }}
               </p>
             </div>
 

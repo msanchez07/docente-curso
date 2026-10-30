@@ -508,6 +508,7 @@ function unidadesDeGrupo(grupoClaseId: number): UnidadProgramacion[] {
     .filter((unidad) => unidad.grupo_clase_id === grupoClaseId)
     .map((unidad) => ({
       ...unidad,
+      peso: unidad.peso ?? 0,
       criterios: unidad.criterios ?? criteriosDemo(unidad.ra_codigos ?? []),
       sesiones: sesiones
         .filter((sesion) => sesion.unidad_id === unidad.id)
@@ -712,6 +713,7 @@ function fechaValida(fecha: string): boolean {
 function normalizarModelo(modelo: ModeloEvaluacion): ModeloEvaluacion {
   return {
     ...modelo,
+    modoCalificacion: modelo.modoCalificacion === 'unidades' ? 'unidades' : 'trimestres',
     convocatorias: modelo.convocatorias ?? {
       extraordinaria: 'suspensas',
       perdidaEvaluacionContinua: 'global'
@@ -864,6 +866,7 @@ function escribirDemo(): void {
       nombre: 'Del entorno a los formularios',
       fecha_inicio: '2026-10-28',
       fecha_fin: '2026-11-17',
+      peso: 50,
       contenidos: 'Entorno PHP, sintaxis, estructuras de control, arrays y formularios.',
       observaciones: null,
       ra_codigos: ['RA1', 'RA2'],
@@ -879,6 +882,7 @@ function escribirDemo(): void {
       nombre: 'Persistencia, MVC y APIs',
       fecha_inicio: '2026-11-18',
       fecha_fin: '2026-12-20',
+      peso: 50,
       contenidos: 'Sesiones, acceso a datos, MVC, APIs REST y seguridad básica.',
       observaciones: 'Incluye la práctica 1.',
       ra_codigos: ['RA2', 'RA3', 'RA4'],
@@ -935,6 +939,7 @@ function escribirDemo(): void {
       rubrica_archivo: null,
       avaluacion_id: 'AV1',
       categoria_id: 'actividades',
+      unidad_id: 1,
       ce_ids: [1, 2, 3],
       bloqueada: false,
       creada_en: '2026-10-27 09:00:00'
@@ -951,6 +956,7 @@ function escribirDemo(): void {
       rubrica_archivo: null,
       avaluacion_id: 'AV1',
       categoria_id: 'examenes',
+      unidad_id: 1,
       ce_ids: [4, 5],
       bloqueada: false,
       creada_en: '2026-10-27 09:00:00'
@@ -973,6 +979,7 @@ function escribirDemo(): void {
       },
       avaluacion_id: 'AV2',
       categoria_id: 'proyectos',
+      unidad_id: 2,
       ce_ids: [6, 7, 8],
       bloqueada: false,
       creada_en: '2026-10-27 09:00:00'
@@ -1864,6 +1871,7 @@ const api = {
         rubrica_archivo: entrada.rubrica_archivo ?? null,
         avaluacion_id: entrada.avaluacion_id,
         categoria_id: entrada.categoria_id,
+        unidad_id: entrada.unidad_id ?? null,
         ce_ids: ceIds,
         bloqueada: false,
         creada_en: new Date().toISOString().slice(0, 19).replace('T', ' ')
@@ -1914,6 +1922,7 @@ const api = {
               rubrica_archivo: entrada.rubrica_archivo ?? null,
               avaluacion_id: entrada.avaluacion_id,
               categoria_id: entrada.categoria_id,
+              unidad_id: entrada.unidad_id ?? null,
               ce_ids: ceIds
             }
           : entrega
@@ -2586,6 +2595,7 @@ const api = {
         nombre,
         fecha_inicio: fechaInicio,
         fecha_fin: fechaFin,
+        peso: Number(entrada.peso) || 0,
         contenidos: entrada.contenidos?.trim() ?? '',
         observaciones: entrada.observaciones?.trim() || null,
         ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],
@@ -2626,6 +2636,7 @@ const api = {
         nombre,
         fecha_inicio: fechaInicio,
         fecha_fin: fechaFin,
+        peso: Number(entrada.peso) || 0,
         contenidos: entrada.contenidos?.trim() ?? '',
         observaciones: entrada.observaciones?.trim() || null,
         ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],
@@ -2670,6 +2681,7 @@ const api = {
           nombre: entrada.nombre,
           fecha_inicio: entrada.fecha_inicio ?? null,
           fecha_fin: entrada.fecha_fin ?? null,
+          peso: Number(entrada.peso) || 0,
           contenidos: entrada.contenidos ?? '',
           observaciones: entrada.observaciones ?? null,
           ra_codigos: [...new Set(criterios.map((criterio) => criterio.raCodigo))],

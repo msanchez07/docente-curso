@@ -1503,20 +1503,23 @@ async function cargar(): Promise<void> {
       resumen.value = null
       return
     }
-    const [entregas, alumnos, notas, criteriosDisponibles, periodosFormacion] = await Promise.all([
-      window.api.entregasClase.listar(grupo.value.id),
-      window.api.alumnosClase.listar(grupo.value.id),
-      window.api.notasClase.listar(grupo.value.id),
-      window.api.entregasClase.criterios(grupo.value.id),
-      window.api.formacionEmpresa.listar(grupo.value.id)
-    ])
+    const [entregas, alumnos, notas, criteriosDisponibles, periodosFormacion, unidades] =
+      await Promise.all([
+        window.api.entregasClase.listar(grupo.value.id),
+        window.api.alumnosClase.listar(grupo.value.id),
+        window.api.notasClase.listar(grupo.value.id),
+        window.api.entregasClase.criterios(grupo.value.id),
+        window.api.formacionEmpresa.listar(grupo.value.id),
+        window.api.unidadesProgramacion.listar(grupo.value.id)
+      ])
     resumen.value = calcularResumenClase(
       grupo.value,
       modelo,
       entregas,
       alumnos,
       notas,
-      criteriosDisponibles
+      criteriosDisponibles,
+      unidades
     )
     entregasClase.value = entregas
     notasClase.value = notas

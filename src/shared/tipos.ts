@@ -139,6 +139,8 @@ export interface EntregaClase {
   avaluacion_id: string
   /** Id de la categoría en los criterios del grupo (examenes, proyectos…). */
   categoria_id: string
+  /** Unidad didáctica a la que pertenece la entrega (modo unidades). */
+  unidad_id: number | null
   /** Número de criterios de evaluación mapeados. */
   criterios: number
   /** Ids de los CE mapeados. */
@@ -161,6 +163,7 @@ export interface EntregaClaseEntrada {
   rubrica_archivo?: ArchivoRubrica | null
   avaluacion_id: string
   categoria_id: string
+  unidad_id?: number | null
   ce_ids: number[]
 }
 
@@ -340,9 +343,20 @@ export interface RaCalificacion {
   }[]
 }
 
+export interface UnidadCalificacion {
+  unidadId: number
+  codigo: string | null
+  nombre: string
+  peso: number
+  nota: number | null
+  entregas: EntregaCalificacion[]
+}
+
 export interface FilaCalificacionClase {
   alumno: AlumnoClase
   avaluaciones: AvaluacionCalificacion[]
+  /** Cálculo por unidades; vacío en modo trimestres. */
+  unidades: UnidadCalificacion[]
   /** Resultados de aprendizaje del módulo, con su nota y estado. */
   ras: RaCalificacion[]
   /** Códigos de los RA que el alumno todavía no tiene superados. */
@@ -616,6 +630,8 @@ export interface UnidadProgramacion {
   nombre: string
   fecha_inicio: string | null
   fecha_fin: string | null
+  /** Peso de la unidad en la nota final (solo modo unidades). */
+  peso: number
   contenidos: string
   observaciones: string | null
   /** RA afectados; se deriva de los criterios seleccionados. */
@@ -632,6 +648,7 @@ export interface UnidadProgramacionEntrada {
   nombre: string
   fecha_inicio?: string | null
   fecha_fin?: string | null
+  peso?: number
   contenidos?: string
   observaciones?: string | null
   /** Criterios concretos (RA + CE) que trabaja la unidad. */
@@ -800,12 +817,16 @@ export const REQUISITOS_CONOCIDOS = [
   'aprobado'
 ] as const
 
+export type ModoCalificacion = 'trimestres' | 'unidades'
+
 export interface ModeloEvaluacion {
   categorias: CategoriaEvaluacion[]
   avaluaciones: Avaluacion[]
   requisitos: RequisitoEvaluacion[]
   /** Reglas de convocatorias; si faltan, se aplican las de por defecto. */
   convocatorias?: ConvocatoriasEvaluacion
+  /** Cálculo final por trimestres o por unidades didácticas. */
+  modoCalificacion?: ModoCalificacion
 }
 
 /* --- Resultado de la evaluación --------------------------------------- */

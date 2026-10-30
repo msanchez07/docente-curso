@@ -37,6 +37,7 @@ const form = reactive<UnidadProgramacionEntrada>({
   nombre: '',
   fecha_inicio: '',
   fecha_fin: '',
+  peso: 0,
   contenidos: '',
   observaciones: '',
   criterios: []
@@ -143,6 +144,7 @@ function resetFormulario(): void {
   form.nombre = ''
   form.fecha_inicio = ''
   form.fecha_fin = ''
+  form.peso = 0
   form.contenidos = ''
   form.observaciones = ''
   form.criterios = []
@@ -207,6 +209,7 @@ function editar(unidad: UnidadProgramacion): void {
   form.nombre = unidad.nombre
   form.fecha_inicio = unidad.fecha_inicio ?? ''
   form.fecha_fin = unidad.fecha_fin ?? ''
+  form.peso = unidad.peso
   form.contenidos = unidad.contenidos
   form.observaciones = unidad.observaciones ?? ''
   form.criterios = unidad.criterios.map((criterio) => ({ ...criterio }))
@@ -414,6 +417,17 @@ async function borrar(): Promise<void> {
           <label for="unidad-fin">Fin</label>
           <input id="unidad-fin" v-model="form.fecha_fin" type="date" />
         </div>
+        <div class="campo">
+          <label for="unidad-peso">Peso en la nota final (%)</label>
+          <input
+            id="unidad-peso"
+            v-model.number="form.peso"
+            type="number"
+            min="0"
+            max="100"
+            step="0.01"
+          />
+        </div>
         <div class="campo campo--ancho">
           <span class="campo__etiqueta">
             Criterios de evaluación
@@ -528,7 +542,7 @@ async function borrar(): Promise<void> {
           <span class="unidades__item-fechas">{{ rango(unidad) }}</span>
           <span class="unidades__item-meta">
             {{ unidad.sesiones.length }} sesiones · {{ unidad.ra_codigos.length }} RA ·
-            {{ unidad.criterios.length }} CE
+            {{ unidad.criterios.length }} CE · {{ unidad.peso }} %
           </span>
         </button>
       </aside>
@@ -563,6 +577,10 @@ async function borrar(): Promise<void> {
               </div>
             </div>
             <span v-else class="tenue">Sin criterios</span>
+          </div>
+          <div>
+            <span class="tenue">Peso en la nota final</span>
+            <strong>{{ unidadActual.peso }} %</strong>
           </div>
           <div>
             <span class="tenue">Fechas</span>

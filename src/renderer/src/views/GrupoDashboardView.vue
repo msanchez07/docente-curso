@@ -476,7 +476,8 @@ async function cargar(): Promise<void> {
           entregasGrupo,
           alumnosGrupo,
           notasGrupo,
-          criteriosCe
+          criteriosCe,
+          unidadesGrupo
         )
       : null
 

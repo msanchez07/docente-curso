@@ -88,9 +88,11 @@ describe('unidades de programación', () => {
       fecha_inicio: '2026-09-15',
       fecha_fin: '2026-10-15',
       contenidos: 'Entorno y primeros pasos',
+      peso: 60,
       ra_codigos: ['RA1', 'RA2']
     })
     expect(unidad.ra_codigos).toEqual(['RA1', 'RA2'])
+    expect(unidad.peso).toBe(60)
 
     guardarProgramacion(db, grupoId, [
       {

@@ -193,11 +193,15 @@ export function parsearUnidadesProgramacion(textoImportado: string): ResultadoUn
       })
     }
 
+    const pesoCrudo = Number(buscar(objeto, [/^peso/, /^weight/]))
+    const peso = Number.isFinite(pesoCrudo) ? Math.min(100, Math.max(0, pesoCrudo)) : 0
+
     unidades.push({
       codigo: texto(buscar(objeto, [/^codigo/, /^code/])) || null,
       nombre,
       fecha_inicio: fechaInicio,
       fecha_fin: fechaFin,
+      peso,
       contenidos: texto(buscar(objeto, [/^contenidos?/, /^contents?/])),
       observaciones: texto(buscar(objeto, [/^observacion/, /^notas?/])) || null,
       criterios: listaCriterios(buscar(objeto, [/^criterios/, /^ces?$/, /^criteriosevaluacion/])),

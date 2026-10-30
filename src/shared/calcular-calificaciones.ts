@@ -10,7 +10,9 @@ import type {
   ModeloEvaluacion,
   NotaGuardadaClase,
   RaCalificacion,
-  ResumenCalificacionesClase
+  ResumenCalificacionesClase,
+  UnidadCalificacion,
+  UnidadProgramacion
 } from './tipos'
 
 function redondear(valor: number): number {
@@ -49,7 +51,8 @@ export function calcularResumenClase(
   entregas: EntregaClase[],
   alumnos: AlumnoClase[],
   notas: NotaGuardadaClase[],
-  criterios: CriterioDisponible[] = []
+  criterios: CriterioDisponible[] = [],
+  unidades: UnidadProgramacion[] = []
 ): ResumenCalificacionesClase {
   const minEntrega = requisito(modelo, 'notaMinimaEntrega', 4)
   const minCategoria = requisito(modelo, 'notaMinimaCategoria', 5)
@@ -135,14 +138,52 @@ export function calcularResumenClase(
       }
     })
 
-    const notaFinal = mediaPonderada(
-      avaluaciones
-        .filter((avaluacion) => avaluacion.nota !== null)
-        .map((avaluacion) => ({
-          peso: modelo.avaluaciones.find((a) => a.id === avaluacion.avaluacionId)?.peso ?? 0,
-          valor: avaluacion.nota ?? 0
-        }))
-    )
+    const unidadesCalificadas: UnidadCalificacion[] = unidades.map((unidad) => {
+      const entregasUnidad = entregas.filter((entrega) => entrega.unidad_id === unidad.id)
+      const detalle: EntregaCalificacion[] = entregasUnidad.map((entrega) => {
+        const registro = mapaNotas.get(`${alumno.id}:${entrega.id}`)
+        const nota = registro?.nota ?? null
+        if (nota === null) incompleta = true
+        return {
+          entregaId: entrega.id,
+          titulo: entrega.titulo,
+          nota,
+          observaciones: registro?.observaciones ?? null,
+          suspensa: (nota ?? 0) < minEntrega,
+          bloqueada: entrega.bloqueada
+        }
+      })
+      const nota =
+        detalle.length === 0
+          ? null
+          : redondear(
+              detalle.reduce((total, entrega) => total + (entrega.nota ?? 0), 0) / detalle.length
+            )
+      return {
+        unidadId: unidad.id,
+        codigo: unidad.codigo,
+        nombre: unidad.nombre,
+        peso: Number(unidad.peso) || 0,
+        nota,
+        entregas: detalle
+      }
+    })
+
+    const usaUnidades = modelo.modoCalificacion === 'unidades' && unidadesCalificadas.length > 0
+    const notaFinal = usaUnidades
+      ? mediaPonderada(
+          unidadesCalificadas
+            .filter((unidad) => unidad.nota !== null)
+            .map((unidad) => ({ peso: unidad.peso, valor: unidad.nota ?? 0 }))
+        )
+      : mediaPonderada(
+          avaluaciones
+            .filter((avaluacion) => avaluacion.nota !== null)
+            .map((avaluacion) => ({
+              peso: modelo.avaluaciones.find((a) => a.id === avaluacion.avaluacionId)?.peso ?? 0,
+              valor: avaluacion.nota ?? 0
+            }))
+        )
 
     const ras: RaCalificacion[] = rasModulo.map((ra) => {
       const entregasRa = entregas.filter((entrega) =>
@@ -156,15 +197,12 @@ export function calcularResumenClase(
         detalle.length === 0
           ? null
           : redondear(
-              detalle.reduce((total, entrega) => total + (entrega.nota ?? 0), 0) /
-                detalle.length
+              detalle.reduce((total, entrega) => total + (entrega.nota ?? 0), 0) / detalle.length
             )
       const criteriosRa = criterios
         .filter((criterio) => criterio.raCodigo === ra.codigo)
         .map((criterio) => {
-          const entregasCe = entregas.filter((entrega) =>
-            entrega.ce_ids.includes(criterio.ceId)
-          )
+          const entregasCe = entregas.filter((entrega) => entrega.ce_ids.includes(criterio.ceId))
           const notasCe = entregasCe
             .map((entrega) => mapaNotas.get(`${alumno.id}:${entrega.id}`)?.nota ?? null)
             .filter((notaCe): notaCe is number => notaCe !== null)
@@ -195,14 +233,21 @@ export function calcularResumenClase(
     const rasNoSuperados = ras.filter((ra) => !ra.superado).map((ra) => ra.codigo)
     const todosRasSuperados = ras.length === 0 || rasNoSuperados.length === 0
 
+    const unidadesSuspensas =
+      usaUnidades &&
+      unidadesCalificadas.some((unidad) => unidad.nota !== null && unidad.nota < minAprobado)
+    const avaluacionesSuspensas =
+      !usaUnidades && avaluaciones.some((avaluacion) => avaluacion.suspensa)
     const vaAConvocatoria =
-      avaluaciones.some((avaluacion) => avaluacion.suspensa) ||
+      avaluacionesSuspensas ||
+      unidadesSuspensas ||
       (notaFinal !== null && notaFinal < minAprobado) ||
       !todosRasSuperados
 
     return {
       alumno,
       avaluaciones,
+      unidades: unidadesCalificadas,
       ras,
       rasNoSuperados,
       todosRasSuperados,
