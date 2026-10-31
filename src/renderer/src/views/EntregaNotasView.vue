@@ -12,6 +12,7 @@ import type {
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { generarHtmlFichaEntrega } from '@shared/entrega-ficha'
+import { generarHtmlImpresionEntrega } from '@shared/entrega-impresion'
 import { notificar } from '@renderer/composables/notificaciones'
 import {
   abrirArchivoRubrica,
@@ -70,10 +71,15 @@ const fichaDocumento = computed(
     `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#f4f6f9}body{padding:0}*{box-sizing:border-box}@media print{html,body{background:#fff}body{padding:0 0 26mm 0;-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style></head><body>${fichaHtml.value}</body></html>`
 )
 
-const fichaImpresion = computed(
-  () =>
-    `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#fff}body{padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}*{box-sizing:border-box}</style></head><body>${cabeceraHtml.value}${fichaHtml.value}${pieHtml.value}</body></html>`
-)
+const fichaImpresion = computed(() => {
+  if (!grupo.value || !entrega.value) return ''
+  const contenido = generarHtmlImpresionEntrega({
+    grupo: grupo.value,
+    entrega: entrega.value,
+    unidad: unidad.value
+  })
+  return `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#fff}body{padding:0 0 26mm 0;-webkit-print-color-adjust:exact;print-color-adjust:exact}*{box-sizing:border-box}</style></head><body>${cabeceraHtml.value}${contenido}${pieHtml.value}</body></html>`
+})
 
 const bloqueada = computed(() => entrega.value?.bloqueada ?? false)
 

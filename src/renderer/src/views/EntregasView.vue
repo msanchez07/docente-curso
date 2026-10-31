@@ -14,6 +14,7 @@ import type {
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { generarHtmlFichaEntrega } from '@shared/entrega-ficha'
+import { generarHtmlImpresionEntrega } from '@shared/entrega-impresion'
 import { notificar } from '@renderer/composables/notificaciones'
 
 const route = useRoute()
@@ -27,6 +28,7 @@ const alumnos = ref<AlumnoClase[]>([])
 const unidades = ref<UnidadProgramacion[]>([])
 const fichaHtml = ref('')
 const fichaTitulo = ref('')
+const fichaEntrega = ref<EntregaClase | null>(null)
 const cabeceraHtml = ref('')
 const pieHtml = ref('')
 const mostrarFicha = ref(false)
@@ -255,6 +257,7 @@ function abrirFicha(entrega: EntregaClase): void {
   const unidad = unidades.value.find((item) => item.id === entrega.unidad_id) ?? null
   fichaHtml.value = generarHtmlFichaEntrega({ grupo: grupo.value, entrega, unidad })
   fichaTitulo.value = entrega.titulo
+  fichaEntrega.value = entrega
   mostrarFicha.value = true
 }
 
@@ -285,7 +288,14 @@ function descargarFicha(): void {
 function imprimirFicha(): void {
   const ventana = window.open('', '_blank', 'width=1120,height=860')
   if (!ventana) return
-  const documento = `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#fff}body{padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}*{box-sizing:border-box}</style></head><body>${cabeceraHtml.value}${fichaHtml.value}${pieHtml.value}</body></html>`
+  if (!grupo.value || !fichaEntrega.value) return
+  const unidad = unidades.value.find((item) => item.id === fichaEntrega.value?.unidad_id) ?? null
+  const contenido = generarHtmlImpresionEntrega({
+    grupo: grupo.value,
+    entrega: fichaEntrega.value,
+    unidad
+  })
+  const documento = `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#fff}body{padding:0 0 26mm 0;-webkit-print-color-adjust:exact;print-color-adjust:exact}*{box-sizing:border-box}</style></head><body>${cabeceraHtml.value}${contenido}${pieHtml.value}</body></html>`
   ventana.document.open()
   ventana.document.write(documento)
   ventana.document.close()
