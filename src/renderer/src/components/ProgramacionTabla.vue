@@ -3,7 +3,6 @@ import { computed, onMounted, reactive, ref } from 'vue'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import SelectButton from '@renderer/components/SelectButton.vue'
 import UnidadesProgramacion from '@renderer/components/UnidadesProgramacion.vue'
-import CalendarioEscolarPanel from '@renderer/components/CalendarioEscolarPanel.vue'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
 import { notificar } from '@renderer/composables/notificaciones'
@@ -37,8 +36,7 @@ const opcionesModo = [
   { value: 'tarjetas', label: 'Tarjetas' },
   { value: 'tabla', label: 'Tabla' },
   { value: 'calendario', label: 'Calendario' },
-  { value: 'unidades', label: 'Unidades' },
-  { value: 'calendario-escolar', label: 'Calendario escolar' }
+  { value: 'unidades', label: 'Unidades' }
 ]
 const opcionesVista = [
   { value: 'quincena', label: 'Quincena' },
@@ -213,16 +211,12 @@ function cancelarEdicion(): void {
   nuevaFila()
 }
 
-const mesEscolar = ref(new Date(new Date().getFullYear(), new Date().getMonth(), 1))
-
 const textoMes = (fecha: Date): string => {
   const texto = fecha.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
   return texto.charAt(0).toUpperCase() + texto.slice(1)
 }
 
-const etiquetaMesBarra = computed(() =>
-  textoMes(modo.value === 'calendario-escolar' ? mesEscolar.value : mesCalendario.value)
-)
+const mesTexto = computed(() => textoMes(mesCalendario.value))
 
 function ordenarFilas(a: ProgramacionAula, b: ProgramacionAula): number {
   return (
@@ -269,14 +263,16 @@ function ejecutarAccionSecundaria(accion: string): void {
   else if (accion === 'esquema') exportarEsquema()
 }
 
-function cambiarMesBarra(delta: number): void {
-  const actual = modo.value === 'calendario-escolar' ? mesEscolar : mesCalendario
-  actual.value = new Date(actual.value.getFullYear(), actual.value.getMonth() + delta, 1)
+function cambiarMes(delta: number): void {
+  mesCalendario.value = new Date(
+    mesCalendario.value.getFullYear(),
+    mesCalendario.value.getMonth() + delta,
+    1
+  )
 }
 
-function irMesActualBarra(): void {
-  const actual = modo.value === 'calendario-escolar' ? mesEscolar : mesCalendario
-  actual.value = new Date(new Date().getFullYear(), new Date().getMonth(), 1)
+function irMesActual(): void {
+  mesCalendario.value = new Date(new Date().getFullYear(), new Date().getMonth(), 1)
 }
 
 function seleccionarDia(fecha: string): void {
@@ -519,7 +515,7 @@ async function exportarPdf(): Promise<void> {
       <p v-if="error" class="aviso aviso--error" role="alert">{{ error }}</p>
 
       <div class="programacion__barra">
-        <template v-if="modo !== 'calendario' && modo !== 'calendario-escolar'">
+        <template v-if="modo !== 'calendario'">
           <SelectButton
             v-model="vista"
             :opciones="opcionesVista"
@@ -537,10 +533,10 @@ async function exportarPdf(): Promise<void> {
         <NavegacionMes
           v-else
           class="programacion__mes"
-          :etiqueta="etiquetaMesBarra"
-          @anterior="cambiarMesBarra(-1)"
-          @siguiente="cambiarMesBarra(1)"
-          @hoy="irMesActualBarra"
+          :etiqueta="mesTexto"
+          @anterior="cambiarMes(-1)"
+          @siguiente="cambiarMes(1)"
+          @hoy="irMesActual"
         />
 
         <span
@@ -616,14 +612,6 @@ async function exportarPdf(): Promise<void> {
           </button>
         </div>
       </div>
-
-      <CalendarioEscolarPanel
-        v-if="modo === 'calendario-escolar'"
-        v-model:mes="mesEscolar"
-        ocultar-navegacion
-        :curso-academico-id="grupo.curso_academico_id"
-        :grupo-clase-id="grupo.id"
-      />
 
       <div
         v-else

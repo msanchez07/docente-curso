@@ -49,14 +49,15 @@ Vite/electron-vite + Vitest**.
   desmatriculación.
 - Formación en empresa por alumno y periodo, con fechas y empresa. Las FCT no registran horas.
 
-### 2.2. Dashboards: curso y grupo
+### 2.2. Calendario del curso y dashboard del grupo
 
-#### Dashboard del curso (punto de entrada)
+#### Calendario del curso (punto de entrada)
 
 - Calendario único de todos los módulos del curso académico activo.
 - Entregas, exámenes, evaluaciones y días no lectivos, con etiquetas por módulo.
 - Colores automáticos por módulo y leyenda de modalidad presencial/semipresencial.
 - Filtros por módulo y tipo, detalle del día seleccionado, impresión/PDF y exportación .ics.
+- Importación del calendario escolar y definición manual de días no lectivos.
 - Enlace al dashboard de cada módulo desde las etiquetas y la leyenda.
 - Sin tablas de alumnado, colas de trabajo ni listados de módulos.
 
@@ -83,15 +84,11 @@ Vite/electron-vite + Vitest**.
 ### 2.3. Programación de aula y programación didáctica
 
 - Programación de aula por sesiones/fechas, con varias sesiones por día mediante hora y orden.
-- **Calendario escolar como pestaña** de Programación de aula, junto a Unidades. La navegación
-  mensual se integra en la barra superior y no se duplica con la del panel.
+- El **calendario escolar** se gestiona de forma centralizada desde el Calendario del curso;
+  ya no hay una pestaña de calendario dentro de cada módulo.
 - Unidades de programación en maestro-detalle:
   - Sesiones, RA y contenidos.
   - Importación JSON y descarga de esquema.
-- Calendario escolar mensual:
-  - Festivos, no lectivos y vacaciones con colores.
-  - Colores de unidad por día.
-  - Importación JSON con `festivos`, `no_lectivos` y `vacaciones`; esquema descargable.
 - Hub de programación didáctica con pestañas Unidades, Fechas, Criterios, RA/CE y Calendario.
 - Exportación de la programación de aula a **PDF con todas las fechas**, márgenes y diseño de
   informe, incluyendo el horario semanal y las tutorías de la semipresencial.
@@ -323,5 +320,5 @@ Al cerrar cada iteración:
 | 31/10/2026 | Pesos por trimestre     | Criterios permite pesos de categorías propios por avaluación; las categorías a 0 % no penalizan el trimestre.                           |
 | 31/10/2026 | Guía integrada          | Guía completa con capturas en Opciones globales y ayuda contextual por sección.                                                         |
 | 31/10/2026 | Dashboard operativo     | Resumen de hoy, cola de trabajo, alumnado en riesgo, agenda y bloque plegable de estado.                                                |
-| 31/10/2026 | Dashboard del curso     | Entrada de la aplicación: todos los módulos, calendario global, pendientes y riesgo agregado.                                           |
+| 31/10/2026 | Calendario del curso    | Entrada de la aplicación con calendario global de todos los módulos y enlaces directos.                                                 |
 | 31/10/2026 | Calendario del curso    | Filtros por módulo y tipo, detalle del día, enlaces directos y exportación PDF/.ics.                                                    |

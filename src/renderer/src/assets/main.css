@@ -8290,7 +8290,7 @@ a:focus-visible {
   }
 }
 
-/* --- Dashboard del curso ------------------------------------------- */
+/* --- Calendario del curso ------------------------------------------ */
 
 .menu__enlace--general {
   margin-bottom: 8px;
@@ -8912,4 +8912,8 @@ a:focus-visible {
   color: var(--acento);
   background: var(--acento-suave);
   border-color: #c7d7fe;
+}
+
+.dashboard__calendario-acciones .navegacion-grupo__ayuda {
+  margin-left: 0;
 }

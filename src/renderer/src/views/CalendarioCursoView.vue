@@ -3,9 +3,16 @@ import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
+import Modal from '@renderer/components/Modal.vue'
+import AyudaSeccion from '@renderer/components/AyudaSeccion.vue'
 import { notificar } from '@renderer/composables/notificaciones'
 import { DIAS_SEMANA } from '@shared/grupos'
-import type { EntregaClase, EventoEvaluacionClase, GrupoClase } from '@shared/tipos'
+import type {
+  EntregaClase,
+  EventoEvaluacionClase,
+  GrupoClase,
+  TipoDiaCalendario
+} from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
 
@@ -38,6 +45,19 @@ const error = ref<string | null>(null)
 const mesAgenda = ref(new Date(new Date().getFullYear(), new Date().getMonth(), 1))
 const filtroModulo = ref<number | null>(null)
 const filtroTipo = ref<TipoHito | null>(null)
+const mostrarImportar = ref(false)
+const textoImportar = ref('')
+const errorImportar = ref<string | null>(null)
+const importando = ref(false)
+const ficheroCalendario = ref<HTMLInputElement | null>(null)
+const mostrarDefinir = ref(false)
+const nuevoDia = ref({
+  fecha: new Date().toISOString().slice(0, 10),
+  tipo: 'festivo' as TipoDiaCalendario,
+  descripcion: ''
+})
+const errorDia = ref<string | null>(null)
+const guardandoDia = ref(false)
 
 const TIPOS_CALENDARIO = [
   { id: 'entrega', etiqueta: 'Entregas' },
@@ -164,7 +184,7 @@ function fechaLarga(fecha: string): string {
 }
 
 function destinoHito(item: HitoGeneral): { name: string; params: Record<string, number> } {
-  if (item.grupoId === null) return { name: 'dashboard-curso', params: {} }
+  if (item.grupoId === null) return { name: 'calendario-curso', params: {} }
   if (item.tipo === 'entrega' && item.entregaId !== null) {
     return {
       name: 'entrega-notas',
@@ -244,13 +264,96 @@ function hitosDeGrupo(
 function accionesCalendario(): AccionMenu[] {
   return [
     { id: 'imprimir', etiqueta: 'Imprimir / PDF', icono: 'descargar' },
-    { id: 'ics', etiqueta: 'Descargar .ics', icono: 'descargar' }
+    { id: 'ics', etiqueta: 'Descargar .ics', icono: 'descargar' },
+    { id: 'importar', etiqueta: 'Importar calendario escolar', icono: 'importar' },
+    { id: 'definir', etiqueta: 'Definir día no lectivo', icono: 'programacion' }
   ]
 }
 
 function ejecutarAccionCalendario(accion: string): void {
   if (accion === 'imprimir') imprimirCalendario()
   else if (accion === 'ics') descargarIcs()
+  else if (accion === 'importar') abrirImportar()
+  else if (accion === 'definir') abrirDefinir()
+}
+
+function abrirImportar(): void {
+  textoImportar.value = ''
+  errorImportar.value = null
+  mostrarImportar.value = true
+}
+
+function abrirDefinir(): void {
+  errorDia.value = null
+  nuevoDia.value = {
+    fecha: hoy,
+    tipo: 'festivo',
+    descripcion: ''
+  }
+  mostrarDefinir.value = true
+}
+
+async function importarCalendarioTexto(texto: string): Promise<void> {
+  const cursoId = cursos.activo?.id
+  if (!cursoId || !texto.trim()) return
+  importando.value = true
+  errorImportar.value = null
+  try {
+    const resultado = await window.api.calendarioEscolar.importar(cursoId, texto)
+    if (resultado.creados === 0) {
+      errorImportar.value = resultado.errores.join(' · ') || 'No se ha importado ningún día.'
+      return
+    }
+    await recargarCalendario()
+    mostrarImportar.value = false
+    notificar(`${resultado.creados} día(s) del calendario importados.`)
+    if (resultado.errores.length > 0) errorImportar.value = resultado.errores.join(' · ')
+  } catch (e) {
+    errorImportar.value = (e as Error).message ?? String(e)
+  } finally {
+    importando.value = false
+  }
+}
+
+async function alElegirCalendario(evento: Event): Promise<void> {
+  const entrada = evento.target as HTMLInputElement
+  const archivo = entrada.files?.[0]
+  if (!archivo) return
+  try {
+    textoImportar.value = await archivo.text()
+  } finally {
+    entrada.value = ''
+  }
+}
+
+async function guardarDiaCalendario(): Promise<void> {
+  const cursoId = cursos.activo?.id
+  if (!cursoId) return
+  if (!nuevoDia.value.fecha) {
+    errorDia.value = 'Indica una fecha.'
+    return
+  }
+  guardandoDia.value = true
+  errorDia.value = null
+  try {
+    const actuales = await window.api.calendarioEscolar.listar(cursoId)
+    const dias = actuales
+      .filter((dia) => dia.fecha !== nuevoDia.value.fecha)
+      .map((dia) => ({ fecha: dia.fecha, tipo: dia.tipo, descripcion: dia.descripcion }))
+    dias.push({
+      fecha: nuevoDia.value.fecha,
+      tipo: nuevoDia.value.tipo,
+      descripcion: nuevoDia.value.descripcion.trim() || null
+    })
+    await window.api.calendarioEscolar.importar(cursoId, JSON.stringify({ dias }))
+    await recargarCalendario()
+    mostrarDefinir.value = false
+    notificar('Día añadido al calendario.')
+  } catch (e) {
+    errorDia.value = (e as Error).message ?? String(e)
+  } finally {
+    guardandoDia.value = false
+  }
 }
 
 function escapar(texto: string): string {
@@ -351,6 +454,35 @@ function descargarIcs(): void {
   notificar('Calendario descargado en formato .ics.')
 }
 
+async function recargarCalendario(): Promise<void> {
+  const cursoId = cursos.activo?.id
+  if (!cursoId) {
+    calendario.value = []
+    return
+  }
+  const diasCalendario = await window.api.calendarioEscolar.listar(cursoId)
+  calendario.value = diasCalendario
+    .filter((dia) => dia.tipo !== 'lectivo')
+    .map((dia) => ({
+      id: `calendario-${dia.id}`,
+      fecha: dia.fecha,
+      hora: null,
+      titulo:
+        dia.descripcion ||
+        (dia.tipo === 'vacaciones'
+          ? 'Vacaciones'
+          : dia.tipo === 'festivo'
+            ? 'Festivo'
+            : 'Día no lectivo'),
+      tipo: 'no_lectivo' as const,
+      grupoId: null,
+      grupoNombre: 'Calendario',
+      moduloSiglas: 'Curso',
+      modalidad: null,
+      entregaId: null
+    }))
+}
+
 async function cargar(): Promise<void> {
   cargando.value = true
   error.value = null
@@ -375,27 +507,7 @@ async function cargar(): Promise<void> {
       })
     )
 
-    const diasCalendario = await window.api.calendarioEscolar.listar(activos[0].curso_academico_id)
-    calendario.value = diasCalendario
-      .filter((dia) => dia.tipo !== 'lectivo')
-      .map((dia) => ({
-        id: `calendario-${dia.id}`,
-        fecha: dia.fecha,
-        hora: null,
-        titulo:
-          dia.descripcion ||
-          (dia.tipo === 'vacaciones'
-            ? 'Vacaciones'
-            : dia.tipo === 'festivo'
-              ? 'Festivo'
-              : 'Día no lectivo'),
-        tipo: 'no_lectivo' as const,
-        grupoId: null,
-        grupoNombre: 'Calendario',
-        moduloSiglas: 'Curso',
-        modalidad: null,
-        entregaId: null
-      }))
+    await recargarCalendario()
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -407,11 +519,11 @@ onMounted(cargar)
 </script>
 
 <template>
-  <section class="vista vista--ancha dashboard-curso">
+  <section class="vista vista--ancha calendario-curso">
     <header class="vista__cabecera">
       <div>
         <p class="dashboard__eyebrow">Curso {{ cursos.activo?.nombre }}</p>
-        <h2>Dashboard del curso</h2>
+        <h2>Calendario del curso</h2>
         <p class="tenue">Calendario de todos los módulos del curso.</p>
       </div>
     </header>
@@ -423,7 +535,6 @@ onMounted(cargar)
     <section v-else class="tarjeta dashboard__calendario-general">
       <header class="dashboard__tarjeta-cabecera">
         <div>
-          <h3>Calendario del curso</h3>
           <p class="tenue">
             {{ hitosDelMes }} {{ hitosDelMes === 1 ? 'hito' : 'hitos' }} en {{ mesAgendaTexto }} ·
             entregas, exámenes, evaluaciones y no lectivos
@@ -440,6 +551,7 @@ onMounted(cargar)
               Semipresencial
             </span>
           </div>
+          <AyudaSeccion />
           <MenuAcciones
             texto="Acciones"
             :acciones="accionesCalendario()"
@@ -600,5 +712,89 @@ onMounted(cargar)
         </ul>
       </section>
     </section>
+
+    <Modal
+      v-if="mostrarImportar"
+      titulo="Importar calendario escolar"
+      ancho="ancho"
+      @cerrar="mostrarImportar = false"
+    >
+      <p class="tenue">
+        Acepta un array de días, <span class="monospace">{ "dias": [...] }</span> o listas por tipo.
+        Al importar se sustituye el calendario del curso.
+      </p>
+      <div class="barra">
+        <button class="boton" type="button" @click="ficheroCalendario?.click()">
+          Elegir fichero…
+        </button>
+        <input
+          ref="ficheroCalendario"
+          hidden
+          type="file"
+          accept=".json,application/json"
+          @change="alElegirCalendario"
+        />
+        <span class="tenue">o pega el JSON abajo</span>
+      </div>
+      <textarea
+        v-model="textoImportar"
+        rows="8"
+        class="monospace"
+        placeholder='{
+  "festivos": ["2026-11-02", "2026-12-07"],
+  "vacaciones": ["2026-12-23"]
+}'
+      ></textarea>
+      <p v-if="errorImportar" class="aviso aviso--error" role="alert">{{ errorImportar }}</p>
+      <template #pie>
+        <button class="boton" type="button" @click="mostrarImportar = false">Cancelar</button>
+        <button
+          class="boton boton--principal"
+          type="button"
+          :disabled="importando || !textoImportar.trim()"
+          @click="importarCalendarioTexto(textoImportar)"
+        >
+          {{ importando ? 'Importando…' : 'Importar' }}
+        </button>
+      </template>
+    </Modal>
+
+    <Modal v-if="mostrarDefinir" titulo="Definir día no lectivo" @cerrar="mostrarDefinir = false">
+      <div class="formulario">
+        <div class="campo">
+          <label for="calendario-fecha">Fecha</label>
+          <input id="calendario-fecha" v-model="nuevoDia.fecha" type="date" />
+        </div>
+        <div class="campo">
+          <label for="calendario-tipo">Tipo</label>
+          <select id="calendario-tipo" v-model="nuevoDia.tipo">
+            <option value="festivo">Festivo</option>
+            <option value="no_lectivo">No lectivo</option>
+            <option value="vacaciones">Vacaciones</option>
+          </select>
+        </div>
+        <div class="campo campo--ancho">
+          <label for="calendario-descripcion">Descripción</label>
+          <input
+            id="calendario-descripcion"
+            v-model="nuevoDia.descripcion"
+            type="text"
+            placeholder="Ej.: Fiesta local"
+          />
+        </div>
+      </div>
+      <p v-if="errorDia" class="aviso aviso--error" role="alert">{{ errorDia }}</p>
+      <template #pie>
+        <button class="boton" type="button" @click="mostrarDefinir = false">Cancelar</button>
+        <button
+          class="boton boton--principal"
+          type="button"
+          :disabled="guardandoDia || !nuevoDia.fecha"
+          @click="guardarDiaCalendario"
+        >
+          {{ guardandoDia ? 'Guardando…' : 'Añadir día' }}
+        </button>
+      </template>
+    </Modal>
   </section>
 </template>

@@ -12,7 +12,7 @@ const path = require('node:path')
 app.disableHardwareAcceleration()
 
 const capturas = [
-  ['dashboard-curso', '#/dashboard'],
+  ['calendario-curso', '#/calendario'],
   ['dashboard', '#/grupo/1'],
   ['horario', '#/grupo/1/horario'],
   ['programacion', '#/grupo/1/programacion'],

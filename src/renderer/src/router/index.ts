@@ -24,7 +24,7 @@ import PlantillasView from '@renderer/views/PlantillasView.vue'
 import PlantillaFormView from '@renderer/views/PlantillaFormView.vue'
 import BackupsView from '@renderer/views/BackupsView.vue'
 import GuiaView from '@renderer/views/GuiaView.vue'
-import DashboardCursoView from '@renderer/views/DashboardCursoView.vue'
+import CalendarioCursoView from '@renderer/views/CalendarioCursoView.vue'
 import { registrarNavegacion } from '@renderer/composables/volver'
 
 // Solo Grupos por ahora. Las demás vistas siguen en `views/` y se irán
@@ -32,9 +32,10 @@ import { registrarNavegacion } from '@renderer/composables/volver'
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: '/', redirect: { name: 'dashboard-curso' } },
+    { path: '/', redirect: { name: 'calendario-curso' } },
     { path: '/grupos', name: 'grupos', component: GruposView },
-    { path: '/dashboard', name: 'dashboard-curso', component: DashboardCursoView },
+    { path: '/calendario', name: 'calendario-curso', component: CalendarioCursoView },
+    { path: '/dashboard', redirect: { name: 'calendario-curso' } },
     { path: '/cursos', name: 'cursos', component: CursosView },
     { path: '/plantillas', name: 'plantillas', component: PlantillasView },
     { path: '/backups', name: 'backups', component: BackupsView },

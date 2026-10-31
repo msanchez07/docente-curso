@@ -14,7 +14,7 @@
 2. [Puesta en marcha](#2-puesta-en-marcha)
 3. [Navegación general](#3-navegación-general)
 4. [Cursos y grupos](#4-cursos-y-grupos)
-5. [Dashboards: curso y grupo](#5-dashboards-curso-y-grupo)
+5. [Calendario del curso y dashboard del grupo](#5-calendario-del-curso-y-dashboard-del-grupo)
 6. [Programación de aula](#6-programación-de-aula)
 7. [Programación didáctica](#7-programación-didáctica)
 8. [Alumnado y formación en empresa](#8-alumnado-y-formación-en-empresa)
@@ -149,9 +149,9 @@ El menú **Opciones globales** de la barra lateral reúne:
 
 ---
 
-## 5. Dashboards: curso y grupo
+## 5. Calendario del curso y dashboard del grupo
 
-### Dashboard del curso
+### Calendario del curso
 
 Es el **punto de entrada** de la aplicación. Toda la pantalla gira alrededor de un único
 calendario con todos los módulos del curso activo:
@@ -160,6 +160,7 @@ calendario con todos los módulos del curso activo:
 - etiquetas por módulo dentro de cada día, con enlace al dashboard del módulo;
 - colores estables por módulo y leyenda de modalidad;
 - filtros por módulo y tipo, detalle del día seleccionado y exportación a PDF/.ics;
+- importación del calendario escolar y definición manual de días no lectivos;
 - navegación mensual y botón Hoy;
 - sin tablas de alumnado, colas de trabajo ni listados de módulos.
 
@@ -189,10 +190,8 @@ visibles por día usan colores estables.
 ## 6. Programación de aula
 
 - Sesiones por fecha y hora, con varias sesiones por día.
-- Vistas: Tarjetas, Tabla, Calendario, Unidades y **Calendario escolar**.
-- El calendario escolar es una pestaña junto a Unidades.
-- En la pestaña Calendario escolar, la barra superior de Programación mantiene la navegación
-  mensual y la navegación propia del panel no se duplica.
+- Vistas: Tarjetas, Tabla, Calendario y Unidades.
+- El calendario escolar no está dentro de cada módulo: se gestiona en **Calendario del curso**.
 - Las acciones secundarias están en **Acciones**:
   - cargar ejemplo;
   - importar programación;

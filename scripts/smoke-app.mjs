@@ -443,8 +443,8 @@ async function principal() {
     await new Promise((r) => setTimeout(r, 800))
     const tituloCurso = await ev('document.querySelector(".vista__cabecera h2")?.textContent')
     comprobar(
-      'la aplicación abre el dashboard del curso',
-      tituloCurso === 'Dashboard del curso',
+      'la aplicación abre el calendario del curso',
+      tituloCurso === 'Calendario del curso',
       String(tituloCurso)
     )
     await ev(`location.hash = '#/grupo/${clase.id}'`)

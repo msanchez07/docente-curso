@@ -30,11 +30,12 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - En semipresencial se marcan sesiones, tutorías colectivas y tutorías individuales, con
     varias posibles por día y colores distintos.
   - Vista independiente de horario desde el dashboard.
-- **Dashboard del curso** como punto de entrada de la aplicación:
+- **Calendario del curso** como punto de entrada de la aplicación:
   - Calendario único con entregas, exámenes, evaluaciones y no lectivos de todos los módulos.
   - Etiquetas por módulo dentro de cada día, con enlace al dashboard del módulo.
   - Colores automáticos por módulo y leyenda de modalidad presencial/semipresencial.
   - Filtros por módulo y tipo, panel del día seleccionado, impresión/PDF y exportación .ics.
+  - Importación del calendario escolar y definición manual de días no lectivos.
   - Sin tablas de alumnado, colas de trabajo ni listados de módulos.
 - **Dashboard del grupo** centrado en la acción y el calendario:
   - **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,
@@ -49,9 +50,9 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Unidades didácticas visibles por día con colores estables.
   - Listado de próximos hitos y fila aparte de días no lectivos.
 - **Programación de aula**: sesiones por fecha y hora, varias por día, unidades, desviaciones y
-  observaciones. El **calendario escolar** está disponible como pestaña junto a Unidades y
-  comparte la navegación mensual de la barra superior.
-- **Programación didáctica**: unidades, fechas, criterios, RA/CE y calendario escolar.
+  observaciones. El calendario escolar se gestiona de forma centralizada desde el **Calendario
+  del curso**.
+- **Programación didáctica**: unidades, fechas, criterios y RA/CE.
   - **Presentación del módulo**: plantilla HTML editable, con datos reales del grupo, vista
     previa, copia para Aules, descarga e impresión/PDF.
 

@@ -3,7 +3,6 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import SelectButton from '@renderer/components/SelectButton.vue'
 import UnidadesProgramacion from '@renderer/components/UnidadesProgramacion.vue'
-import CalendarioEscolarPanel from '@renderer/components/CalendarioEscolarPanel.vue'
 import PresentacionModulo from '@renderer/components/PresentacionModulo.vue'
 import BoeView from '@renderer/views/BoeView.vue'
 import CriteriosView from '@renderer/views/CriteriosView.vue'
@@ -24,7 +23,6 @@ const opciones = [
   { value: 'fechas', label: 'Fechas' },
   { value: 'criterios', label: 'Criterios' },
   { value: 'rae', label: 'RA/CE' },
-  { value: 'calendario', label: 'Calendario' },
   { value: 'presentacion', label: 'Presentación' }
 ]
 
@@ -90,11 +88,6 @@ watch(pestana, (valor) => {
       <EventosEvaluacionView v-else-if="pestana === 'fechas'" embebido />
       <CriteriosView v-else-if="pestana === 'criterios'" embebido />
       <BoeView v-else-if="pestana === 'rae'" embebido />
-      <CalendarioEscolarPanel
-        v-else-if="pestana === 'calendario'"
-        :curso-academico-id="grupo.curso_academico_id"
-        :grupo-clase-id="grupo.id"
-      />
       <PresentacionModulo v-else-if="pestana === 'presentacion'" :grupo="grupo" />
     </template>
   </section>

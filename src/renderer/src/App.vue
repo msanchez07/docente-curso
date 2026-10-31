@@ -62,7 +62,8 @@ const mostrarNavegacionGrupo = computed(() => {
     'plantilla-editar',
     'backups',
     'normativa',
-    'guia'
+    'guia',
+    'calendario-curso'
   ].includes(nombre)
 })
 
@@ -191,8 +192,8 @@ async function importarNormativa(evento: Event): Promise<void> {
       </div>
 
       <nav class="menu" aria-label="Grupos">
-        <RouterLink to="/dashboard" class="menu__enlace menu__enlace--general">
-          Dashboard del curso
+        <RouterLink to="/calendario" class="menu__enlace menu__enlace--general">
+          Calendario del curso
         </RouterLink>
         <div class="menu__titulo">Grupos</div>
 

@@ -1,5 +1,5 @@
 import dashboard from '../assets/guia/dashboard.png'
-import dashboardCurso from '../assets/guia/dashboard-curso.png'
+import calendarioCurso from '../assets/guia/calendario-curso.png'
 import horario from '../assets/guia/horario.png'
 import programacion from '../assets/guia/programacion.png'
 import programacionDidactica from '../assets/guia/programacion-didactica.png'
@@ -38,16 +38,16 @@ export interface SeccionGuia {
  */
 export const seccionesGuia: SeccionGuia[] = [
   {
-    id: 'dashboard-curso',
-    titulo: 'Dashboard del curso',
+    id: 'calendario-curso',
+    titulo: 'Calendario del curso',
     resumen: 'Punto de entrada de la aplicación: un calendario con todos los módulos del curso.',
     explicacion: [
-      'El dashboard del curso es la vista de conjunto y la pantalla inicial. No muestra tablas de alumnado ni listados de módulos: todo gira alrededor del calendario, que reúne entregas, exámenes, evaluaciones y días no lectivos de todos los grupos.',
+      'El calendario del curso es la pantalla inicial y la vista de conjunto. No muestra tablas de alumnado ni listados de módulos: todo gira alrededor del calendario, que reúne entregas, exámenes, evaluaciones y días no lectivos de todos los grupos.',
       'Cada módulo tiene un color estable. Las etiquetas dentro de cada día indican el módulo y el hito, y llevan al dashboard de ese módulo. La leyenda de módulos y la leyenda de modalidad permiten leer el calendario de un vistazo.'
     ],
-    imagen: dashboardCurso,
-    ruta: '/dashboard',
-    rutas: ['dashboard-curso'],
+    imagen: calendarioCurso,
+    ruta: '/calendario',
+    rutas: ['calendario-curso'],
     puntos: [
       {
         titulo: 'Calendario de todos los módulos',
@@ -78,6 +78,11 @@ export const seccionesGuia: SeccionGuia[] = [
         titulo: 'Día seleccionado',
         detalle:
           'Al pulsar un día, debajo del calendario se muestran todos sus hitos, con hora, módulo y enlace para abrir el módulo. Así no se pierde ningún evento cuando un día tiene más de dos etiquetas.'
+      },
+      {
+        titulo: 'Calendario escolar',
+        detalle:
+          'Desde Acciones puedes importar el calendario escolar completo o definir un día no lectivo con fecha, tipo y descripción. Los festivos importados aparecen en el mismo calendario.'
       },
       {
         titulo: 'Exportar',
@@ -192,7 +197,7 @@ export const seccionesGuia: SeccionGuia[] = [
       'Registra el trabajo diario del grupo: sesiones, contenidos, desviaciones y observaciones.',
     explicacion: [
       'Programación de aula sirve para anotar qué se trabaja cada día. Puedes crear sesiones con fecha y hora, añadir varias sesiones al mismo día y dejar constancia de contenidos, desviaciones y observaciones. Las vistas de Tarjetas y Tabla permiten pasar de una lectura cómoda a una edición rápida.',
-      'La pestaña Calendario muestra las sesiones en formato mensual. Calendario escolar es una pestaña independiente, junto a Unidades, y comparte la navegación mensual de la barra superior. Desde Acciones puedes cargar un ejemplo, importar días o descargar el esquema; Exportar PDF genera el informe completo.'
+      'La pestaña Calendario muestra las sesiones en formato mensual. El calendario escolar se gestiona de forma centralizada en Calendario del curso. Desde Acciones puedes cargar un ejemplo, importar días o descargar el esquema; Exportar PDF genera el informe completo.'
     ],
     imagen: programacion,
     ruta: '/grupo/:grupoId/programacion',
@@ -209,9 +214,9 @@ export const seccionesGuia: SeccionGuia[] = [
           'Tarjetas es cómoda para leer y revisar; Tabla permite editar muchas filas seguidas; Calendario muestra la distribución mensual de las sesiones.'
       },
       {
-        titulo: 'Unidades y calendario escolar',
+        titulo: 'Unidades',
         detalle:
-          'La pestaña Unidades organiza las unidades de programación y sus sesiones. Calendario escolar es una pestaña aparte, con festivos, no lectivos y vacaciones.'
+          'La pestaña Unidades organiza las unidades de programación y sus sesiones. Los festivos, no lectivos y vacaciones se gestionan en Calendario del curso.'
       },
       {
         titulo: 'Importar y exportar',
@@ -228,10 +233,9 @@ export const seccionesGuia: SeccionGuia[] = [
   {
     id: 'programacion-didactica',
     titulo: 'Programación didáctica',
-    resumen:
-      'Organiza unidades, fechas, criterios, RA/CE, calendario y la presentación del módulo.',
+    resumen: 'Organiza unidades, fechas, criterios, RA/CE y la presentación del módulo.',
     explicacion: [
-      'Programación didáctica es el espacio de planificación a más largo plazo. Sus pestañas separan las unidades, las fechas de evaluación y exámenes, los criterios, la cobertura de RA/CE y el calendario escolar. Cada unidad puede trabajar CE concretos, todos los CE de un RA o CE de varios RA.',
+      'Programación didáctica es el espacio de planificación a más largo plazo. Sus pestañas separan las unidades, las fechas de evaluación y exámenes, los criterios y la cobertura de RA/CE. Cada unidad puede trabajar CE concretos, todos los CE de un RA o CE de varios RA.',
       'La presentación del módulo es una plantilla HTML editable que se rellena con los datos reales del grupo: unidades, RA/CE, exámenes, pesos y requisitos. Puedes previsualizarla, copiarla como HTML enriquecido para Aules, descargarla o imprimirla en PDF.'
     ],
     imagen: programacionDidactica,
@@ -254,9 +258,9 @@ export const seccionesGuia: SeccionGuia[] = [
           'La pestaña de criterios muestra el peso de cada instrumento. La pestaña de RA/CE permite comprobar qué resultados y criterios están cubiertos por las unidades y las entregas.'
       },
       {
-        titulo: 'Calendario escolar',
+        titulo: 'Calendario del curso',
         detalle:
-          'Se gestiona por curso académico e indica días lectivos, no lectivos, festivos y vacaciones. Los días no lectivos quedan marcados también en la agenda y en la programación.'
+          'Los festivos, no lectivos y vacaciones se importan o definen desde Calendario del curso. Allí se ven junto a las entregas, exámenes y evaluaciones de todos los módulos.'
       },
       {
         titulo: 'Presentación del módulo',
