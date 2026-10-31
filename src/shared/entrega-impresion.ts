@@ -89,10 +89,6 @@ export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): strin
       </div>
     </div>
 
-    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#6b7280;font-size:10.5px;line-height:1.55;margin:0 0 16px;">
-      ${escapar(entrega.descripcion || 'Lee atentamente el enunciado y justifica tus decisiones.')}
-    </p>
-
     <div style="font-size:12px;line-height:1.7;color:#1f2937;">
       ${parrafos(entrega.enunciado, 'Sin enunciado definido.')}
     </div>
@@ -101,8 +97,5 @@ export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): strin
       ${parrafos(entrega.problema, 'Sin descripción del problema.')}
     </div>
 
-    <footer style="margin-top:28px;padding-top:8px;border-top:1px solid #d1d5db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#6b7280;font-size:9px;text-align:center;">
-      ${escapar(grupo.nombre)} · ${escapar(grupo.modulo_codigo)} · Documento de trabajo
-    </footer>
   </article>`
 }
