@@ -11,23 +11,31 @@
 
 ## Artefactos
 
-| Plataforma                | Archivo                                     |
-| ------------------------- | ------------------------------------------- |
-| macOS Apple Silicon       | `dist/AulaNova-1.0.0-mac-arm64.dmg`         |
-| macOS Intel               | `dist/AulaNova-1.0.0-mac-x64.dmg`           |
-| Windows x64               | `dist/AulaNova-1.0.0-win-x64-setup.exe`     |
-| Linux x64 · AppImage      | `dist/AulaNova-1.0.0-linux-x86_64.AppImage` |
-| Linux x64 · Debian/Ubuntu | `dist/aula-nova_1.0.0_amd64.deb`            |
+| Plataforma                | Archivo                               |
+| ------------------------- | ------------------------------------- |
+| macOS Apple Silicon       | `dist/AulaNova-mac-arm64.dmg`         |
+| macOS Intel               | `dist/AulaNova-mac-x64.dmg`           |
+| Windows x64               | `dist/AulaNova-win-x64-setup.exe`     |
+| Linux x64 · AppImage      | `dist/AulaNova-linux-x86_64.AppImage` |
+| Linux x64 · Debian/Ubuntu | `dist/aula-nova_amd64.deb`            |
 
 También se generan los ZIP de macOS en `dist/`.
 
 ## Notas de instalación
 
-- **macOS:** las compilaciones no están firmadas ni notarizadas. Si Gatekeeper lo impide, abre
-  con clic derecho → **Abrir**.
+- **macOS:** la aplicación va firmada **ad-hoc**, pero no notarizada. Si macOS dice que está
+  «dañada», ejecuta en Terminal:
+
+  ```bash
+  xattr -cr "/Applications/Aula Nova.app"
+  open "/Applications/Aula Nova.app"
+  ```
+
+  También puedes abrirla con clic derecho → **Abrir**.
+
 - **Windows:** el instalador no está firmado; SmartScreen puede mostrar un aviso.
 - **Linux:** el AppImage se ejecuta con `chmod +x` y doble clic. El `.deb` se instala con
-  `sudo apt install ./aula-nova_1.0.0_amd64.deb`.
+  `sudo apt install ./aula-nova_amd64.deb`.
 
 ## Datos incluidos
 

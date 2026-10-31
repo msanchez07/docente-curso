@@ -46,8 +46,30 @@
       .hero p { max-width: 720px; margin: 18px 0 0; color: #c9d8e8; font-size: 17px; }
       .hero__meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 26px; color: #a9bbcf; font-size: 13px; }
       .hero__meta a { color: #eaf2fb; }
+      .descargas {
+        position: relative;
+        width: min(1120px, calc(100% - 32px));
+        margin: -34px auto 18px;
+        padding: 24px;
+        border: 1px solid var(--borde);
+        border-radius: 18px;
+        background: var(--blanco);
+        box-shadow: var(--sombra);
+      }
+      .descargas__cabecera { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+      .descargas__etiqueta { color: var(--acento); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      .descargas h2 { margin: 2px 0 0; font-size: 24px; letter-spacing: -.02em; }
+      .descargas__todas { color: var(--acento); font-size: 13px; font-weight: 600; text-decoration: none; }
+      .descargas__todas:hover { text-decoration: underline; }
+      .descargas__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)); gap: 8px; }
+      .descarga { display: flex; align-items: center; gap: 11px; padding: 12px 13px; border: 1px solid var(--borde); border-radius: 11px; color: var(--tinta); text-decoration: none; transition: border-color .14s ease, background .14s ease; }
+      .descarga:hover { border-color: var(--acento); background: var(--acento-suave); }
+      .descarga__icono { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; background: #eef3f9; font-size: 18px; }
+      .descarga strong { display: block; font-size: 13.5px; }
+      .descarga small { display: block; color: var(--tinta-suave); font-size: 11.5px; }
+      .descargas__nota { margin: 12px 0 0; color: var(--tinta-suave); font-size: 11.5px; }
       .indice {
-        margin: -34px auto 0;
+        margin: 0 auto 0;
         position: relative;
         width: min(1120px, calc(100% - 32px));
         padding: 18px;
@@ -139,7 +161,7 @@
     <header class="hero">
       <div class="hero__interior">
         <div class="marca">
-          <img src="guia/icon.png" alt="Aula Nova" />
+          <img src="guia/icon.png?v=1.0.0" alt="Aula Nova" />
           <div>
             <strong>Aula Nova</strong>
             <span>Gestión de cursos académicos</span>
@@ -154,6 +176,43 @@
         </div>
       </div>
     </header>
+
+    <section class="descargas" aria-label="Descargar la última versión">
+      <div class="descargas__cabecera">
+        <div>
+          <span class="descargas__etiqueta">Última versión publicada</span>
+          <h2>Descarga Aula Nova</h2>
+        </div>
+        <a class="descargas__todas" href="https://github.com/msanchez07/docente-curso/releases/latest">
+          Ver todas las versiones →
+        </a>
+      </div>
+      <div class="descargas__grid">
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-mac-arm64.dmg">
+          <span class="descarga__icono"></span>
+          <span><strong>macOS</strong><small>Apple Silicon · DMG</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-mac-x64.dmg">
+          <span class="descarga__icono"></span>
+          <span><strong>macOS</strong><small>Intel · DMG</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-win-x64-setup.exe">
+          <span class="descarga__icono">⊞</span>
+          <span><strong>Windows</strong><small>x64 · instalador</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-linux-x86_64.AppImage">
+          <span class="descarga__icono">🐧</span>
+          <span><strong>Linux</strong><small>x64 · AppImage</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/aula-nova_amd64.deb">
+          <span class="descarga__icono">🐧</span>
+          <span><strong>Linux</strong><small>Debian/Ubuntu · .deb</small></span>
+        </a>
+      </div>
+      <p class="descargas__nota">
+        Estos enlaces apuntan siempre a la última release publicada en GitHub.
+      </p>
+    </section>
 
     <nav class="indice" aria-label="Índice de la guía">
       
@@ -241,8 +300,8 @@
             <p class="seccion__resumen">Punto de entrada de la aplicación: un calendario con todos los módulos del curso.</p>
           </div>
         </div>
-        <a class="captura" href="guia/calendario-curso.png" target="_blank" rel="noreferrer">
-          <img src="guia/calendario-curso.png" alt="Captura de Calendario del curso" loading="lazy" />
+        <a class="captura" href="guia/calendario-curso.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/calendario-curso.png?v=1.0.0" alt="Captura de Calendario del curso" loading="lazy" />
           <span class="captura__pie">Captura real de Calendario del curso · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -304,8 +363,8 @@
             <p class="seccion__resumen">Datos del profesorado, del centro educativo y logo PNG de la aplicación.</p>
           </div>
         </div>
-        <a class="captura" href="guia/configuracion.png" target="_blank" rel="noreferrer">
-          <img src="guia/configuracion.png" alt="Captura de Configuración general" loading="lazy" />
+        <a class="captura" href="guia/configuracion.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/configuracion.png?v=1.0.0" alt="Captura de Configuración general" loading="lazy" />
           <span class="captura__pie">Captura real de Configuración general · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -339,8 +398,8 @@
             <p class="seccion__resumen">El dashboard reúne la información importante del grupo y la barra superior permite saltar a cualquier sección.</p>
           </div>
         </div>
-        <a class="captura" href="guia/dashboard.png" target="_blank" rel="noreferrer">
-          <img src="guia/dashboard.png" alt="Captura de Dashboard del grupo" loading="lazy" />
+        <a class="captura" href="guia/dashboard.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/dashboard.png?v=1.0.0" alt="Captura de Dashboard del grupo" loading="lazy" />
           <span class="captura__pie">Captura real de Dashboard del grupo · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -382,8 +441,8 @@
             <p class="seccion__resumen">Consulta la distribución semanal de sesiones, recreos y tutorías del grupo.</p>
           </div>
         </div>
-        <a class="captura" href="guia/horario.png" target="_blank" rel="noreferrer">
-          <img src="guia/horario.png" alt="Captura de Horario semanal" loading="lazy" />
+        <a class="captura" href="guia/horario.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/horario.png?v=1.0.0" alt="Captura de Horario semanal" loading="lazy" />
           <span class="captura__pie">Captura real de Horario semanal · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -421,8 +480,8 @@
             <p class="seccion__resumen">Registra el trabajo diario del grupo: sesiones, contenidos, desviaciones y observaciones.</p>
           </div>
         </div>
-        <a class="captura" href="guia/programacion.png" target="_blank" rel="noreferrer">
-          <img src="guia/programacion.png" alt="Captura de Programación de aula" loading="lazy" />
+        <a class="captura" href="guia/programacion.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/programacion.png?v=1.0.0" alt="Captura de Programación de aula" loading="lazy" />
           <span class="captura__pie">Captura real de Programación de aula · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -460,8 +519,8 @@
             <p class="seccion__resumen">Organiza unidades, fechas, criterios, RA/CE y la presentación del módulo.</p>
           </div>
         </div>
-        <a class="captura" href="guia/programacion-didactica.png" target="_blank" rel="noreferrer">
-          <img src="guia/programacion-didactica.png" alt="Captura de Programación didáctica" loading="lazy" />
+        <a class="captura" href="guia/programacion-didactica.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/programacion-didactica.png?v=1.0.0" alt="Captura de Programación didáctica" loading="lazy" />
           <span class="captura__pie">Captura real de Programación didáctica · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -503,8 +562,8 @@
             <p class="seccion__resumen">Define cómo se calcula la nota: categorías, avaluaciones, RA, mínimos y pesos por trimestre.</p>
           </div>
         </div>
-        <a class="captura" href="guia/criterios.png" target="_blank" rel="noreferrer">
-          <img src="guia/criterios.png" alt="Captura de Criterios de calificación" loading="lazy" />
+        <a class="captura" href="guia/criterios.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/criterios.png?v=1.0.0" alt="Captura de Criterios de calificación" loading="lazy" />
           <span class="captura__pie">Captura real de Criterios de calificación · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -546,8 +605,8 @@
             <p class="seccion__resumen">Un trimestre puede usar los pesos generales o un cálculo propio, sin afectar a los demás.</p>
           </div>
         </div>
-        <a class="captura" href="guia/criterios-trimestres.png" target="_blank" rel="noreferrer">
-          <img src="guia/criterios-trimestres.png" alt="Captura de Pesos propios por trimestre" loading="lazy" />
+        <a class="captura" href="guia/criterios-trimestres.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/criterios-trimestres.png?v=1.0.0" alt="Captura de Pesos propios por trimestre" loading="lazy" />
           <span class="captura__pie">Captura real de Pesos propios por trimestre · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -589,8 +648,8 @@
             <p class="seccion__resumen">Consulta la nota de cada trimestre, la nota final, los RA y las convocatorias ordinaria y extraordinaria.</p>
           </div>
         </div>
-        <a class="captura" href="guia/calificaciones.png" target="_blank" rel="noreferrer">
-          <img src="guia/calificaciones.png" alt="Captura de Calificaciones y convocatorias" loading="lazy" />
+        <a class="captura" href="guia/calificaciones.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/calificaciones.png?v=1.0.0" alt="Captura de Calificaciones y convocatorias" loading="lazy" />
           <span class="captura__pie">Captura real de Calificaciones y convocatorias · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -632,8 +691,8 @@
             <p class="seccion__resumen">Cada entrega se asocia a una unidad, una avaluación, una categoría y sus RA/CE.</p>
           </div>
         </div>
-        <a class="captura" href="guia/entregas.png" target="_blank" rel="noreferrer">
-          <img src="guia/entregas.png" alt="Captura de Entregas y evidencias" loading="lazy" />
+        <a class="captura" href="guia/entregas.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/entregas.png?v=1.0.0" alt="Captura de Entregas y evidencias" loading="lazy" />
           <span class="captura__pie">Captura real de Entregas y evidencias · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -679,8 +738,8 @@
             <p class="seccion__resumen">Gestiona matrículas, datos del alumnado, ficha individual y formación en empresa.</p>
           </div>
         </div>
-        <a class="captura" href="guia/alumnado.png" target="_blank" rel="noreferrer">
-          <img src="guia/alumnado.png" alt="Captura de Alumnado y formación" loading="lazy" />
+        <a class="captura" href="guia/alumnado.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/alumnado.png?v=1.0.0" alt="Captura de Alumnado y formación" loading="lazy" />
           <span class="captura__pie">Captura real de Alumnado y formación · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -718,8 +777,8 @@
             <p class="seccion__resumen">Importa los PDFs de ITACA, configura los módulos y consulta el porcentaje de faltas por alumno.</p>
           </div>
         </div>
-        <a class="captura" href="guia/faltas.png" target="_blank" rel="noreferrer">
-          <img src="guia/faltas.png" alt="Captura de Control de faltas" loading="lazy" />
+        <a class="captura" href="guia/faltas.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/faltas.png?v=1.0.0" alt="Captura de Control de faltas" loading="lazy" />
           <span class="captura__pie">Captura real de Control de faltas · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -761,8 +820,8 @@
             <p class="seccion__resumen">Genera informes de grupo o de un alumno, con notas, RA, gráficas y formación.</p>
           </div>
         </div>
-        <a class="captura" href="guia/informes.png" target="_blank" rel="noreferrer">
-          <img src="guia/informes.png" alt="Captura de Informes" loading="lazy" />
+        <a class="captura" href="guia/informes.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/informes.png?v=1.0.0" alt="Captura de Informes" loading="lazy" />
           <span class="captura__pie">Captura real de Informes · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -800,8 +859,8 @@
             <p class="seccion__resumen">Crea los grupos de clase, cambia de curso académico y consulta el alumnado y los criterios de cada grupo.</p>
           </div>
         </div>
-        <a class="captura" href="guia/grupos.png" target="_blank" rel="noreferrer">
-          <img src="guia/grupos.png" alt="Captura de Grupos y cursos" loading="lazy" />
+        <a class="captura" href="guia/grupos.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/grupos.png?v=1.0.0" alt="Captura de Grupos y cursos" loading="lazy" />
           <span class="captura__pie">Captura real de Grupos y cursos · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -839,8 +898,8 @@
             <p class="seccion__resumen">Reutiliza criterios de calificación entre grupos del mismo módulo y modalidad.</p>
           </div>
         </div>
-        <a class="captura" href="guia/plantillas.png" target="_blank" rel="noreferrer">
-          <img src="guia/plantillas.png" alt="Captura de Plantillas de criterios" loading="lazy" />
+        <a class="captura" href="guia/plantillas.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/plantillas.png?v=1.0.0" alt="Captura de Plantillas de criterios" loading="lazy" />
           <span class="captura__pie">Captura real de Plantillas de criterios · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -874,8 +933,8 @@
             <p class="seccion__resumen">Guarda cada grupo en un JSON local y restaura solo el grupo que necesites.</p>
           </div>
         </div>
-        <a class="captura" href="guia/backups.png" target="_blank" rel="noreferrer">
-          <img src="guia/backups.png" alt="Captura de Copias de seguridad" loading="lazy" />
+        <a class="captura" href="guia/backups.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/backups.png?v=1.0.0" alt="Captura de Copias de seguridad" loading="lazy" />
           <span class="captura__pie">Captura real de Copias de seguridad · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -913,8 +972,8 @@
             <p class="seccion__resumen">Consulta la normativa y actualiza el contenido desde la barra lateral.</p>
           </div>
         </div>
-        <a class="captura" href="guia/normativa.png" target="_blank" rel="noreferrer">
-          <img src="guia/normativa.png" alt="Captura de Normativa FP" loading="lazy" />
+        <a class="captura" href="guia/normativa.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/normativa.png?v=1.0.0" alt="Captura de Normativa FP" loading="lazy" />
           <span class="captura__pie">Captura real de Normativa FP · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -948,8 +1007,8 @@
             <p class="seccion__resumen">El menú inferior de la barra lateral reúne las herramientas que no pertenecen a un único grupo.</p>
           </div>
         </div>
-        <a class="captura" href="guia/global-menu.png" target="_blank" rel="noreferrer">
-          <img src="guia/global-menu.png" alt="Captura de Opciones globales" loading="lazy" />
+        <a class="captura" href="guia/global-menu.png?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/global-menu.png?v=1.0.0" alt="Captura de Opciones globales" loading="lazy" />
           <span class="captura__pie">Captura real de Opciones globales · clic para ampliar</span>
         </a>
         <div class="seccion__texto">

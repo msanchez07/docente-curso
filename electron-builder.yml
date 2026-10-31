@@ -4,6 +4,7 @@ copyright: © 2026 Manuel Sánchez Gomis
 directories:
   buildResources: build
   output: dist
+afterPack: scripts/after-pack.cjs
 files:
   - '!**/.vscode/*'
   - '!src/*'
@@ -32,16 +33,17 @@ win:
       arch:
         - x64
 nsis:
-  artifactName: AulaNova-${version}-win-${arch}-setup.${ext}
+  artifactName: AulaNova-win-${arch}-setup.${ext}
   shortcutName: ${productName}
   uninstallDisplayName: ${productName}
   createDesktopShortcut: always
   oneClick: false
   allowToChangeInstallationDirectory: true
 dmg:
-  artifactName: AulaNova-${version}-mac-${arch}.${ext}
+  artifactName: AulaNova-mac-${arch}.${ext}
 mac:
   icon: build/icon.icns
+  identity: null
   category: public.app-category.education
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
@@ -72,7 +74,7 @@ linux:
   maintainer: Manuel Sánchez Gomis <me.sanchezgomis@edu.gva.es>
   category: Education
 appImage:
-  artifactName: AulaNova-${version}-linux-${arch}.${ext}
+  artifactName: AulaNova-linux-${arch}.${ext}
 deb:
-  artifactName: aula-nova_${version}_${arch}.${ext}
+  artifactName: aula-nova_${arch}.${ext}
 npmRebuild: false

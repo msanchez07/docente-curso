@@ -35,13 +35,13 @@ Aplicación funcional en **versión 1.0**. Verificación actual:
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
 **[GitHub Releases v1.0.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.0)**:
 
-| Plataforma                | Artefacto                              |
-| ------------------------- | -------------------------------------- |
-| macOS Apple Silicon       | `AulaNova-1.0.0-mac-arm64.dmg`         |
-| macOS Intel               | `AulaNova-1.0.0-mac-x64.dmg`           |
-| Windows x64               | `AulaNova-1.0.0-win-x64-setup.exe`     |
-| Linux x64 (AppImage)      | `AulaNova-1.0.0-linux-x86_64.AppImage` |
-| Linux x64 (Debian/Ubuntu) | `aula-nova_1.0.0_amd64.deb`            |
+| Plataforma                | Artefacto                        |
+| ------------------------- | -------------------------------- |
+| macOS Apple Silicon       | `AulaNova-mac-arm64.dmg`         |
+| macOS Intel               | `AulaNova-mac-x64.dmg`           |
+| Windows x64               | `AulaNova-win-x64-setup.exe`     |
+| Linux x64 (AppImage)      | `AulaNova-linux-x86_64.AppImage` |
+| Linux x64 (Debian/Ubuntu) | `aula-nova_amd64.deb`            |
 
 ```bash
 npm run dist:mac    # DMG + ZIP (arm64 y x64)

@@ -86,8 +86,8 @@ const secciones = seccionesGuia
             <p class="seccion__resumen">${escapar(seccion.resumen)}</p>
           </div>
         </div>
-        <a class="captura" href="guia/${escapar(seccion.imagen)}" target="_blank" rel="noreferrer">
-          <img src="guia/${escapar(seccion.imagen)}" alt="Captura de ${escapar(seccion.titulo)}" loading="lazy" />
+        <a class="captura" href="guia/${escapar(seccion.imagen)}?v=1.0.0" target="_blank" rel="noreferrer">
+          <img src="guia/${escapar(seccion.imagen)}?v=1.0.0" alt="Captura de ${escapar(seccion.titulo)}" loading="lazy" />
           <span class="captura__pie">Captura real de ${escapar(seccion.titulo)} · clic para ampliar</span>
         </a>
         <div class="seccion__texto">
@@ -156,8 +156,30 @@ const html = `<!doctype html>
       .hero p { max-width: 720px; margin: 18px 0 0; color: #c9d8e8; font-size: 17px; }
       .hero__meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 26px; color: #a9bbcf; font-size: 13px; }
       .hero__meta a { color: #eaf2fb; }
+      .descargas {
+        position: relative;
+        width: min(1120px, calc(100% - 32px));
+        margin: -34px auto 18px;
+        padding: 24px;
+        border: 1px solid var(--borde);
+        border-radius: 18px;
+        background: var(--blanco);
+        box-shadow: var(--sombra);
+      }
+      .descargas__cabecera { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+      .descargas__etiqueta { color: var(--acento); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+      .descargas h2 { margin: 2px 0 0; font-size: 24px; letter-spacing: -.02em; }
+      .descargas__todas { color: var(--acento); font-size: 13px; font-weight: 600; text-decoration: none; }
+      .descargas__todas:hover { text-decoration: underline; }
+      .descargas__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(195px, 1fr)); gap: 8px; }
+      .descarga { display: flex; align-items: center; gap: 11px; padding: 12px 13px; border: 1px solid var(--borde); border-radius: 11px; color: var(--tinta); text-decoration: none; transition: border-color .14s ease, background .14s ease; }
+      .descarga:hover { border-color: var(--acento); background: var(--acento-suave); }
+      .descarga__icono { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; background: #eef3f9; font-size: 18px; }
+      .descarga strong { display: block; font-size: 13.5px; }
+      .descarga small { display: block; color: var(--tinta-suave); font-size: 11.5px; }
+      .descargas__nota { margin: 12px 0 0; color: var(--tinta-suave); font-size: 11.5px; }
       .indice {
-        margin: -34px auto 0;
+        margin: 0 auto 0;
         position: relative;
         width: min(1120px, calc(100% - 32px));
         padding: 18px;
@@ -249,7 +271,7 @@ const html = `<!doctype html>
     <header class="hero">
       <div class="hero__interior">
         <div class="marca">
-          <img src="guia/icon.png" alt="Aula Nova" />
+          <img src="guia/icon.png?v=1.0.0" alt="Aula Nova" />
           <div>
             <strong>Aula Nova</strong>
             <span>Gestión de cursos académicos</span>
@@ -264,6 +286,43 @@ const html = `<!doctype html>
         </div>
       </div>
     </header>
+
+    <section class="descargas" aria-label="Descargar la última versión">
+      <div class="descargas__cabecera">
+        <div>
+          <span class="descargas__etiqueta">Última versión publicada</span>
+          <h2>Descarga Aula Nova</h2>
+        </div>
+        <a class="descargas__todas" href="https://github.com/msanchez07/docente-curso/releases/latest">
+          Ver todas las versiones →
+        </a>
+      </div>
+      <div class="descargas__grid">
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-mac-arm64.dmg">
+          <span class="descarga__icono"></span>
+          <span><strong>macOS</strong><small>Apple Silicon · DMG</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-mac-x64.dmg">
+          <span class="descarga__icono"></span>
+          <span><strong>macOS</strong><small>Intel · DMG</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-win-x64-setup.exe">
+          <span class="descarga__icono">⊞</span>
+          <span><strong>Windows</strong><small>x64 · instalador</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/AulaNova-linux-x86_64.AppImage">
+          <span class="descarga__icono">🐧</span>
+          <span><strong>Linux</strong><small>x64 · AppImage</small></span>
+        </a>
+        <a class="descarga" href="https://github.com/msanchez07/docente-curso/releases/latest/download/aula-nova_amd64.deb">
+          <span class="descarga__icono">🐧</span>
+          <span><strong>Linux</strong><small>Debian/Ubuntu · .deb</small></span>
+        </a>
+      </div>
+      <p class="descargas__nota">
+        Estos enlaces apuntan siempre a la última release publicada en GitHub.
+      </p>
+    </section>
 
     <nav class="indice" aria-label="Índice de la guía">
       ${indice}
