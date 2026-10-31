@@ -45,10 +45,6 @@ function tipoEtiqueta(tipo: string): string {
   return etiquetas[tipo] ?? tipo
 }
 
-function tituloSeccion(numero: number, titulo: string): string {
-  return `<h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#111827;border-bottom:1px solid #d1d5db;padding-bottom:4px;margin:22px 0 9px;">${numero}. ${titulo}</h2>`
-}
-
 /**
  * Documento limpio para imprimir un examen o una entrega.
  *
@@ -62,7 +58,7 @@ export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): strin
     ? `${unidad.codigo ?? 'UD'}${unidad.nombre ? ` · ${unidad.nombre}` : ''}`
     : 'Sin unidad asignada'
 
-  return `<article style="width:100%;max-width:100%;box-sizing:border-box;margin:0;background:#fff;color:#1f2937;font-family:Georgia,'Times New Roman',serif;line-height:1.6;">
+  return `<article style="width:100%;max-width:100%;box-sizing:border-box;margin:0;background:#fff;color:#1f2937;font-family:Georgia,'Times New Roman',serif;line-height:1.65;">
     <header style="text-align:center;border-bottom:2px solid #111827;padding:0 0 12px;margin:0 0 14px;">
       <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#6b7280;font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">
         ${escapar(grupo.modulo_codigo)} · ${escapar(tipoEtiqueta(entrega.tipo))}
@@ -75,7 +71,7 @@ export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): strin
       </div>
     </header>
 
-    <table style="width:100%;border-collapse:collapse;margin:0 0 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:10.5px;color:#374151;">
+    <table style="width:100%;border-collapse:collapse;margin:0 0 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:10.5px;color:#374151;">
       <tr>
         <td style="width:50%;padding:0 12px 0 0;border-bottom:1px solid #d1d5db;">Nombre y apellidos:</td>
         <td style="width:25%;padding:0 12px 0 0;border-bottom:1px solid #d1d5db;">Grupo:</td>
@@ -84,19 +80,26 @@ export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): strin
       <tr><td style="height:22px;"></td><td></td><td></td></tr>
     </table>
 
-    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#6b7280;font-size:10.5px;line-height:1.55;margin:0 0 14px;">
+    <div style="border:1px solid #111827;background:#f8fafc;padding:11px 14px;margin:0 0 20px;">
+      <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#111827;margin:0 0 6px;">
+        Instrucciones y restricciones
+      </div>
+      <div style="font-size:11.5px;line-height:1.6;color:#1f2937;">
+        ${parrafos(entrega.restricciones, 'Sin restricciones específicas.')}
+      </div>
+    </div>
+
+    <p style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#6b7280;font-size:10.5px;line-height:1.55;margin:0 0 16px;">
       ${escapar(entrega.descripcion || 'Lee atentamente el enunciado y justifica tus decisiones.')}
     </p>
 
-    ${tituloSeccion(1, 'Enunciado')}
-    <div style="font-size:12px;line-height:1.65;color:#1f2937;margin:0 0 20px;">${parrafos(entrega.enunciado, 'Sin enunciado definido.')}</div>
+    <div style="font-size:12px;line-height:1.7;color:#1f2937;">
+      ${parrafos(entrega.enunciado, 'Sin enunciado definido.')}
+    </div>
 
-    ${tituloSeccion(2, 'Descripción del problema')}
-    <div style="font-size:12px;line-height:1.65;color:#1f2937;margin:0 0 20px;">${parrafos(entrega.problema, 'Sin descripción del problema.')}</div>
-
-    ${tituloSeccion(3, 'Restricciones y condiciones')}
-    <div style="font-size:12px;line-height:1.65;color:#1f2937;margin:0 0 8px;">${parrafos(entrega.restricciones, 'Sin restricciones específicas.')}</div>
-
+    <div style="font-size:12px;line-height:1.7;color:#1f2937;margin-top:12px;">
+      ${parrafos(entrega.problema, 'Sin descripción del problema.')}
+    </div>
 
     <footer style="margin-top:28px;padding-top:8px;border-top:1px solid #d1d5db;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#6b7280;font-size:9px;text-align:center;">
       ${escapar(grupo.nombre)} · ${escapar(grupo.modulo_codigo)} · Documento de trabajo

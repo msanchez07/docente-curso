@@ -131,6 +131,8 @@ Vite/electron-vite + Vitest**.
 - Los archivos se organizan por entrega, rúbrica y evidencias.
 - Los PDF de entregas incluyen la cabecera institucional configurada: datos y logo del centro,
   logo de Conselleria y logo de la Unión Europea.
+- La impresión de exámenes usa un formato limpio de texto: instrucciones en recuadro, enunciado y
+  problema continuos, sin criterios de evaluación.
 
 ### 2.6. Copias de seguridad
 

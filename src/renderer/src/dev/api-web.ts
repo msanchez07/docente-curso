@@ -988,12 +988,14 @@ function escribirDemo(): void {
       id: 2,
       grupo_clase_id: 1,
       titulo: 'Examen AV1',
-      descripcion: 'Prueba teórico-práctica de la primera evaluación.',
-      enunciado: 'Resuelve el supuesto práctico aplicando los contenidos de la primera evaluación.',
+      descripcion:
+        'Prueba individual de la primera evaluación. Combina preguntas breves de comprensión con un supuesto práctico completo.',
+      enunciado:
+        'Una clínica dental necesita una pequeña aplicación web para registrar solicitudes de cita. El formulario debe recoger nombre, teléfono, fecha deseada, motivo y preferencia de horario. Antes de guardar, el sistema debe validar los campos obligatorios y mostrar un mensaje claro junto al campo que no sea correcto.\n\nLa aplicación debe conservar los datos introducidos si el usuario vuelve atrás y permitir corregir la solicitud sin empezar de nuevo. Además, debe mostrar una confirmación con un resumen de la cita cuando el registro sea válido.',
       problema:
-        'El equipo debe justificar una solución técnica y demostrar que domina los conceptos del módulo.',
+        'El centro trabaja actualmente con hojas de cálculo y pierde solicitudes cuando varias personas escriben a la vez. La nueva aplicación debe evitar duplicados evidentes, mantener la información aunque se recargue la página y ofrecer una experiencia clara para personas con poca familiaridad con la informática.\n\nNo se evalúa solo que funcione: también importa que el flujo sea comprensible, que los errores se expliquen bien y que la solución pueda mantenerse sin reescribir todo el formulario.',
       restricciones:
-        'Prueba individual. No se permite material adicional salvo el indicado por el docente. Duración máxima: una sesión.',
+        'Duración: una sesión de 55 minutos.\nEntrega un único proyecto comprimido con el código y un README breve.\nNo se permite usar frameworks ni librerías externas de interfaz.\nLa validación debe funcionar en cliente; no se acepta confiar solo en el servidor.\nIncluye una captura o breve explicación del flujo probado.',
       tipo: 'examen',
       fecha_limite: '2026-11-19',
       rubrica:

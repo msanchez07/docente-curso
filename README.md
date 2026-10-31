@@ -65,6 +65,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Bloqueo/desbloqueo y notas por alumno.
   - Exportación PDF/ZIP por entrega o curso completo, con dossier y archivos cuando corresponde.
   - Los PDF usan la cabecera institucional: datos y logo del centro, logo de Conselleria y logo de la Unión Europea.
+  - La impresión de exámenes usa un formato limpio de texto, con instrucciones destacadas y sin criterios de evaluación.
 - **Calificaciones**:
   - Vista de consulta: la nota final no se edita aquí, se calcula desde las entregas.
   - Pestañas por evaluación, **Ordinaria**, **Extraordinaria** y **Nota final**.

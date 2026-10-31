@@ -485,6 +485,11 @@ export const seccionesGuia: SeccionGuia[] = [
         titulo: 'Cabecera institucional',
         detalle:
           'Los PDF de entregas y exámenes usan la cabecera configurada: datos y logo del centro, logo de Conselleria y logo de la Unión Europea.'
+      },
+      {
+        titulo: 'Formato de examen',
+        detalle:
+          'Al imprimir un examen se usa un formato de texto limpio: instrucciones y restricciones en un recuadro superior, y después el enunciado y el problema como texto continuo, sin tarjetas ni criterios de evaluación.'
       }
     ]
   },
