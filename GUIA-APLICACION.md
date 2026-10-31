@@ -55,6 +55,9 @@ docente.
 
 ## 2. Puesta en marcha
 
+La primera vez, Aula Nova se abre a pantalla completa. Después recuerda el tamaño, la posición y
+si la dejaste maximizada o en pantalla completa.
+
 Requisitos: Node.js 20 o superior y npm.
 
 ```bash

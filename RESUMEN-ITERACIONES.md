@@ -335,4 +335,5 @@ Al cerrar cada iteración:
 | 31/10/2026 | Configuración general   | Datos de profesorado y centro, logo PNG, guardado local y ayuda integrada.                                                              |
 | 31/10/2026 | Calendario del curso    | Filtros por módulo y tipo, detalle del día, enlaces directos y exportación PDF/.ics.                                                    |
 | 31/10/2026 | Catálogo de horarios    | PDFs 2026/2027 de la Conselleria para GB/GM/GS, buscador de ciclos por nivel/familia y selector de módulos por curso al crear grupos.   |
-| 31/10/2026 | Release 1.0            | Identidad Aula Nova, autoría visible, iconos, empaquetado macOS/Windows/Linux y exclusión de datos de prueba en producción.                                             |
+| 31/10/2026 | Release 1.0             | Identidad Aula Nova, autoría visible, iconos, empaquetado macOS/Windows/Linux y exclusión de datos de prueba en producción.             |
+| 31/10/2026 | Ventana y release 1.0.1 | Primer arranque a pantalla completa, persistencia de tamaño/posición y publicación de la release corregida.                             |

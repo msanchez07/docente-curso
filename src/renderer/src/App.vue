@@ -315,7 +315,7 @@ async function importarNormativa(evento: Event): Promise<void> {
       />
 
       <footer class="pie">
-        <div>{{ APP.nombre }} · v{{ version || '1.0.0' }}</div>
+        <div>{{ APP.nombre }} · v{{ version || '1.0.1' }}</div>
         <div class="pie__autor">
           <span>{{ AUTOR.nombre }}</span>
           <span>{{ AUTOR.rol }}</span>
