@@ -1,6 +1,6 @@
 # Guía de uso · Aula Nova
 
-> **Versión visual con capturas:** [Guía online](https://raw.githack.com/msanchez07/docente-curso/main/docs/index.html)
+> **Versión visual con capturas:** [Guía online](https://msanchez07.github.io/docente-curso/)
 
 > Guía viva de la aplicación. Debe actualizarse siempre que se añada, cambie o elimine una
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
