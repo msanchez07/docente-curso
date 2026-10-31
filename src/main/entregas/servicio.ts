@@ -25,7 +25,7 @@ import { listarEvidenciasClase } from '../db/repositorios/evidencias-clase'
 import { obtenerCriterios } from '../db/repositorios/criterios-grupo'
 import { obtenerGrupoClase } from '../db/repositorios/grupos-clase'
 import { generarHtmlEntregas, type DatosExportacionEntregas } from '@shared/entregas-documento'
-import { cabeceraDocumentoHtml } from '../documentos/cabecera'
+import { cabeceraDocumentoHtml, pieDocumentoHtml } from '../documentos/cabecera'
 
 function seleccionarEntregas(
   grupoId: number,
@@ -85,7 +85,8 @@ async function datosDe(
     ambito,
     tituloAmbito,
     fecha: new Date(),
-    cabeceraHtml: await cabeceraDocumentoHtml()
+    cabeceraHtml: await cabeceraDocumentoHtml(),
+    pieHtml: await pieDocumentoHtml()
   }
 }
 

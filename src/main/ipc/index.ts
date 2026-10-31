@@ -188,7 +188,7 @@ import {
   guardarConfiguracionGeneral,
   obtenerConfiguracionGeneral
 } from '../db/repositorios/configuracion-general'
-import { cabeceraDocumentoHtml } from '../documentos/cabecera'
+import { cabeceraDocumentoHtml, pieDocumentoHtml } from '../documentos/cabecera'
 
 export function registrarIpc(): void {
   const bd = (): ReturnType<typeof obtenerBd> => obtenerBd()
@@ -201,6 +201,7 @@ export function registrarIpc(): void {
     guardarConfiguracionGeneral(bd(), configuracion)
   )
   ipcMain.handle(CANALES.configuracionCabeceraDocumento, () => cabeceraDocumentoHtml())
+  ipcMain.handle(CANALES.configuracionPieDocumento, () => pieDocumentoHtml())
 
   // Datos del BOE (desde la base de datos ya sembrada).
   ipcMain.handle(CANALES.boeListarCiclos, () => listarCiclos(bd()))

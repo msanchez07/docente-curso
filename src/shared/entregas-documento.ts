@@ -24,6 +24,8 @@ export interface DatosExportacionEntregas {
   fecha: Date
   /** Cabecera institucional ya generada, opcional. */
   cabeceraHtml?: string
+  /** Pie institucional ya generado, opcional. */
+  pieHtml?: string
 }
 
 const TIPOS: Record<string, string> = {
@@ -277,6 +279,7 @@ export function generarHtmlEntregas(datos: DatosExportacionEntregas): string {
   ${secciones}
 
   <footer class="pie">${escapar(datos.grupo.modulo_codigo)} · ${escapar(datos.grupo.nombre)} · Documento generado desde Gestión de entregas</footer>
+  ${datos.pieHtml ?? ''}
 </body>
 </html>`
 }

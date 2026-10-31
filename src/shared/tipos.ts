@@ -1207,6 +1207,7 @@ export interface Api {
     guardar(configuracion: ConfiguracionGeneral): Promise<ConfiguracionGeneral>
     /** Cabecera HTML institucional para documentos imprimibles. */
     cabeceraDocumento(): Promise<string>
+    pieDocumento(): Promise<string>
   }
   boe: {
     listarCiclos(): Promise<ResumenCiclo[]>
@@ -1565,6 +1566,7 @@ export const CANALES = {
   configuracionObtener: 'configuracion:obtener',
   configuracionGuardar: 'configuracion:guardar',
   configuracionCabeceraDocumento: 'configuracion:cabeceraDocumento',
+  configuracionPieDocumento: 'configuracion:pieDocumento',
   backupEstado: 'backup:estado',
   backupElegirCarpeta: 'backup:elegirCarpeta',
   backupCarpetaRecomendada: 'backup:carpetaRecomendada',

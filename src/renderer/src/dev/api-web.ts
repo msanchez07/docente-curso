@@ -28,7 +28,7 @@ import { validarHtmlNormativa } from '@shared/normativa'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto, REQUISITOS_POR_DEFECTO } from '@shared/modelo'
 import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
-import { generarCabeceraDocumento } from '@shared/cabecera-documento'
+import { generarCabeceraDocumento, generarPieDocumento } from '@shared/cabecera-documento'
 import conselleriaLogo from '@renderer/assets/plantillas/conselleria.png'
 import unionEuropeaLogo from '@renderer/assets/plantillas/union-europea.png'
 import { normalizarPresentacion } from '@shared/presentacion'
@@ -1806,6 +1806,10 @@ function htmlEntregasWeb(
     cabeceraHtml: generarCabeceraDocumento(leerConfiguracionGeneral(), {
       conselleria: conselleriaLogo,
       unionEuropea: unionEuropeaLogo
+    }),
+    pieHtml: generarPieDocumento({
+      conselleria: conselleriaLogo,
+      unionEuropea: unionEuropeaLogo
     })
   })
 }
@@ -1972,6 +1976,11 @@ const api = {
     },
     cabeceraDocumento: async (): Promise<string> =>
       generarCabeceraDocumento(leerConfiguracionGeneral(), {
+        conselleria: conselleriaLogo,
+        unionEuropea: unionEuropeaLogo
+      }),
+    pieDocumento: async (): Promise<string> =>
+      generarPieDocumento({
         conselleria: conselleriaLogo,
         unionEuropea: unionEuropeaLogo
       })

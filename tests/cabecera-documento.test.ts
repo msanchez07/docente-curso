@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { generarCabeceraDocumento } from '@shared/cabecera-documento'
+import { generarCabeceraDocumento, generarPieDocumento } from '@shared/cabecera-documento'
 import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
 
 describe('cabecera de documentos', () => {
@@ -24,6 +24,8 @@ describe('cabecera de documentos', () => {
     expect(html).toContain('46001199')
     expect(html).toContain('data:image/png;base64,abc')
     expect(html).toContain('data:image/png;base64,conselleria')
-    expect(html).toContain('data:image/png;base64,ue')
+    expect(generarPieDocumento({ unionEuropea: 'data:image/png;base64,ue' })).toContain(
+      'data:image/png;base64,ue'
+    )
   })
 })

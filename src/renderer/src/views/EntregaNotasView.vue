@@ -42,6 +42,7 @@ const error = ref<string | null>(null)
 const errorGuardado = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
 const cabeceraHtml = ref('')
+const pieHtml = ref('')
 
 const grupoId = computed(() => Number(route.params.grupoId))
 const entregaId = computed(() => Number(route.params.entregaId))
@@ -57,16 +58,21 @@ const unidad = computed(
 
 const fichaHtml = computed(() => {
   if (!grupo.value || !entrega.value) return ''
-  return `${cabeceraHtml.value}${generarHtmlFichaEntrega({
+  return generarHtmlFichaEntrega({
     grupo: grupo.value,
     entrega: entrega.value,
     unidad: unidad.value
-  })}`
+  })
 })
 
 const fichaDocumento = computed(
   () =>
     `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#f4f6f9}body{padding:0}*{box-sizing:border-box}@media print{html,body{background:#fff}body{padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style></head><body>${fichaHtml.value}</body></html>`
+)
+
+const fichaImpresion = computed(
+  () =>
+    `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#fff}body{padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}*{box-sizing:border-box}</style></head><body>${cabeceraHtml.value}${fichaHtml.value}${pieHtml.value}</body></html>`
 )
 
 const bloqueada = computed(() => entrega.value?.bloqueada ?? false)
@@ -134,13 +140,15 @@ async function cargar(): Promise<void> {
       error.value = 'No se ha encontrado el grupo.'
       return
     }
-    const [entregas, modelo, listaUnidades, cabecera] = await Promise.all([
+    const [entregas, modelo, listaUnidades, cabecera, pie] = await Promise.all([
       window.api.entregasClase.listar(grupo.value.id),
       window.api.criterios.obtener(grupo.value.id),
       window.api.unidadesProgramacion.listar(grupo.value.id),
-      window.api.configuracion.cabeceraDocumento()
+      window.api.configuracion.cabeceraDocumento(),
+      window.api.configuracion.pieDocumento()
     ])
     cabeceraHtml.value = cabecera
+    pieHtml.value = pie
     entrega.value = entregas.find((item) => item.id === entregaId.value) ?? null
     criterios.value = modelo
     unidades.value = listaUnidades
@@ -184,7 +192,7 @@ function imprimirFicha(): void {
   const ventana = window.open('', '_blank', 'width=1120,height=860')
   if (!ventana) return
   ventana.document.open()
-  ventana.document.write(fichaDocumento.value)
+  ventana.document.write(fichaImpresion.value)
   ventana.document.close()
   ventana.focus()
   setTimeout(() => ventana.print(), 300)

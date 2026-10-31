@@ -10,7 +10,8 @@ const api: Api = {
   configuracion: {
     obtener: () => ipcRenderer.invoke(CANALES.configuracionObtener),
     guardar: (configuracion) => ipcRenderer.invoke(CANALES.configuracionGuardar, configuracion),
-    cabeceraDocumento: () => ipcRenderer.invoke(CANALES.configuracionCabeceraDocumento)
+    cabeceraDocumento: () => ipcRenderer.invoke(CANALES.configuracionCabeceraDocumento),
+    pieDocumento: () => ipcRenderer.invoke(CANALES.configuracionPieDocumento)
   },
   boe: {
     listarCiclos: () => ipcRenderer.invoke(CANALES.boeListarCiclos),

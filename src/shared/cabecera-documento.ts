@@ -16,8 +16,9 @@ function escapar(texto: string | null | undefined): string {
 /**
  * Cabecera común de los documentos imprimibles.
  *
- * Reproduce la plantilla del centro: logos institucionales, datos del centro y
- * logo propio. El logo del centro llega desde la configuración general.
+ * Reproduce la plantilla del centro: Conselleria a la izquierda, datos del
+ * centro en el centro y logo propio a la derecha. El logo de la Unión Europea
+ * se coloca en el pie.
  */
 export function generarCabeceraDocumento(
   configuracion: ConfiguracionGeneral | null | undefined,
@@ -41,17 +42,29 @@ export function generarCabeceraDocumento(
     .join('')
 
   const logoCentro = configuracion?.logo
-    ? `<img class="doc-cabecera__logo-centro" src="${configuracion.logo}" alt="Logo del centro" style="display:inline-block;max-width:150px;max-height:65px;object-fit:contain;">`
+    ? `<img src="${configuracion.logo}" alt="Logo del centro" style="display:inline-block;max-width:150px;max-height:65px;object-fit:contain;">`
     : ''
 
-  return `<header class="doc-cabecera" style="margin:0 0 18px;padding:0 0 11px;border-bottom:1px solid #dbe5ee;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;text-align:center;">
-    <div style="display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:9px;">
-      ${logos.conselleria ? `<img src="${logos.conselleria}" alt="Generalitat Valenciana" style="display:block;max-width:150px;max-height:48px;object-fit:contain;">` : ''}
-      ${logoCentro}
-      ${logos.unionEuropea ? `<img class="doc-cabecera__ue" src="${logos.unionEuropea}" alt="Unió Europea" style="display:block;max-width:150px;max-height:34px;object-fit:contain;">` : ''}
-    </div>
-    <div class="doc-cabecera__centro" style="color:#475467;font-size:9px;line-height:1.35;">
-      ${lineas || '<span style="display:block;color:#1f2937;font-size:11px;font-weight:700;">Centro educativo</span>'}
-    </div>
+  return `<header class="doc-cabecera" style="margin:0 0 18px;padding:0 0 11px;border-bottom:1px solid #dbe5ee;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
+    <table style="width:100%;border-collapse:collapse;">
+      <tr>
+        <td style="width:27%;padding:0;text-align:center;vertical-align:middle;">
+          ${logos.conselleria ? `<img src="${logos.conselleria}" alt="Generalitat Valenciana" style="display:inline-block;max-width:150px;max-height:55px;object-fit:contain;">` : ''}
+        </td>
+        <td style="padding:0 12px;text-align:center;vertical-align:middle;color:#475467;font-size:9px;line-height:1.35;">
+          ${lineas || '<span style="display:block;color:#1f2937;font-size:11px;font-weight:700;">Centro educativo</span>'}
+        </td>
+        <td style="width:27%;padding:0;text-align:center;vertical-align:middle;">
+          ${logoCentro}
+        </td>
+      </tr>
+    </table>
   </header>`
+}
+
+export function generarPieDocumento(logos: LogosDocumento = {}): string {
+  if (!logos.unionEuropea) return ''
+  return `<footer class="doc-pie" style="margin-top:20px;padding-top:8px;border-top:1px solid #dbe5ee;display:flex;justify-content:flex-end;">
+    <img src="${logos.unionEuropea}" alt="Unió Europea" style="display:block;max-width:150px;max-height:34px;object-fit:contain;">
+  </footer>`
 }
