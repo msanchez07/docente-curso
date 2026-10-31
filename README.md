@@ -4,10 +4,15 @@ Aplicación de escritorio **local** para organizar la docencia de FP alrededor d
 clase**: programación, alumnado, entregas con rúbrica, evidencias, calificaciones, formación en
 empresa e informes trazables al BOE.
 
-> **📘 [Guía visual en HTML](./docs/index.html)** — la misma guía que la ayuda integrada de la
-> aplicación, con capturas reales de todas las pantallas.
+> **📘 [Guía visual online](https://raw.githack.com/msanchez07/docente-curso/main/docs/index.html)** — la misma guía que la
+> ayuda integrada de la aplicación, con capturas reales de todas las pantallas. Cuando se active
+> GitHub Pages quedará en `https://msanchez07.github.io/docente-curso/`.
 >
-> **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida.
+> **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
+>
+> **GitHub Pages:** el workflow está preparado en `.github/workflows/pages.yml`. Para publicarla en
+> `https://msanchez07.github.io/docente-curso/`, activa **Settings → Pages → Source: GitHub Actions**
+> y ejecuta el workflow **Publicar guía de uso**.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
 >
@@ -68,7 +73,7 @@ restringidos a la previsualización web de desarrollo.
 | **Calificaciones y convocatorias**                      | **Configuración general**                             |
 
 La guía completa, con todas las capturas y explicaciones, está en
-**[docs/index.html](./docs/index.html)**.
+**[la guía visual online](https://raw.githack.com/msanchez07/docente-curso/main/docs/index.html)**.
 
 ---
 

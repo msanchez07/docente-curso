@@ -1,6 +1,6 @@
 # Guía de uso · Aula Nova
 
-> **Versión visual con capturas:** [docs/index.html](./docs/index.html)
+> **Versión visual con capturas:** [Guía online](https://raw.githack.com/msanchez07/docente-curso/main/docs/index.html)
 
 > Guía viva de la aplicación. Debe actualizarse siempre que se añada, cambie o elimine una
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
@@ -86,6 +86,8 @@ npm run build:linux
 
 ## 3. Navegación general
 
+![Menú de opciones globales](./docs/guia/global-menu.png)
+
 ### Barra lateral
 
 - Selector de **curso académico**.
@@ -143,6 +145,8 @@ logo del instituto en PNG. Se guarda en la base de datos local.
 
 ## 4. Cursos y grupos
 
+![Grupos y cursos](./docs/guia/grupos.png)
+
 - El curso académico se calcula por fecha (septiembre–julio) y puede cambiarse desde la barra
   lateral.
 - Un grupo se crea con ciclo, módulo, curso y modalidad.
@@ -160,6 +164,9 @@ logo del instituto en PNG. Se guarda en la base de datos local.
 ---
 
 ## 5. Calendario del curso y dashboard del grupo
+
+![Calendario del curso](./docs/guia/calendario-curso.png)
+![Dashboard del grupo](./docs/guia/dashboard.png)
 
 ### Calendario del curso
 
@@ -199,6 +206,8 @@ visibles por día usan colores estables.
 
 ## 6. Programación de aula
 
+![Programación de aula](./docs/guia/programacion.png)
+
 - Sesiones por fecha y hora, con varias sesiones por día.
 - Vistas: Tarjetas, Tabla, Calendario y Unidades.
 - El calendario escolar no está dentro de cada módulo: se gestiona en **Calendario del curso**.
@@ -216,6 +225,7 @@ visibles por día usan colores estables.
 
 ## 7. Programación didáctica
 
+![Programación didáctica](./docs/guia/programacion-didactica.png)
 Pestañas:
 
 - Unidades.
@@ -230,6 +240,8 @@ previsualizar, copiar para Aules, descargar e imprimir/PDF.
 ---
 
 ## 8. Alumnado y formación en empresa
+
+![Alumnado y formación](./docs/guia/alumnado.png)
 
 - Alta manual de alumnado.
 - Importación JSON/CSV sin duplicar por DNI, correo o nombre y apellidos.
@@ -246,6 +258,7 @@ Las FCT no registran faltas en el control de faltas.
 
 ## 9. Entregas y evidencias
 
+![Entregas y evidencias](./docs/guia/entregas.png)
 Cada entrega se asocia obligatoriamente a:
 
 - una unidad didáctica;
@@ -277,6 +290,8 @@ Otras funciones:
 
 ## 10. Criterios de calificación
 
+![Criterios de calificación](./docs/guia/criterios.png)
+
 ### Categorías generales
 
 Las categorías son los instrumentos de calificación: exámenes, actividades, proyectos, etc.
@@ -288,6 +303,7 @@ Las categorías son los instrumentos de calificación: exámenes, actividades, p
 
 ### Pesos propios por trimestre
 
+![Pesos propios por trimestre](./docs/guia/criterios-trimestres.png)
 Cada trimestre puede usar los pesos generales o definir un **cálculo propio**:
 
 1. Ir a **Criterios → Trimestres**.
@@ -326,6 +342,7 @@ Se pueden configurar mínimos bloqueantes para:
 
 ## 11. Calificaciones y convocatorias
 
+![Calificaciones y convocatorias](./docs/guia/calificaciones.png)
 Calificaciones es una vista de consulta: la nota final no se edita aquí, se calcula desde
 entregas, categorías y RA.
 
@@ -364,6 +381,7 @@ En la pestaña Final:
 
 ## 12. Control de faltas
 
+![Control de faltas](./docs/guia/faltas.png)
 Vista de tutoría por curso, no por grupo.
 
 ### Configuración
@@ -402,6 +420,7 @@ Vista de tutoría por curso, no por grupo.
 
 ## 13. Informes
 
+![Informes](./docs/guia/informes.png)
 Tipos:
 
 - Resumen.
@@ -425,6 +444,8 @@ Incluyen:
 
 ## 14. Copias de seguridad
 
+![Copias de seguridad](./docs/guia/backups.png)
+
 - Carpeta raíz global configurable.
 - Subcarpeta automática por curso académico.
 - Un JSON autocontenido por grupo.
@@ -437,6 +458,8 @@ Incluyen:
 ---
 
 ## 15. Normativa FP y datos de prueba
+
+![Normativa FP](./docs/guia/normativa.png)
 
 - Normativa FP a pantalla completa.
 - Importación de normativa desde la barra lateral.
