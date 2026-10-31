@@ -1,0 +1,63 @@
+name: Publicar release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Empaquetar ${{ matrix.plataforma }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - plataforma: macOS
+            os: macos-latest
+            comando: npm run build && npx electron-builder --mac
+            archivos: |
+              dist/*.dmg
+              dist/*.zip
+          - plataforma: Windows
+            os: windows-latest
+            comando: npm run build && npx electron-builder --win
+            archivos: dist/*.exe
+          - plataforma: Linux
+            os: ubuntu-latest
+            comando: npm run build && npx electron-builder --linux
+            archivos: |
+              dist/*.AppImage
+              dist/*.deb
+
+    runs-on: ${{ matrix.os }}
+    env:
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Empaquetar
+        run: ${{ matrix.comando }}
+
+      - name: Publicar artefactos
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Aula Nova ${{ github.ref_name }}
+          body_path: RELEASE-1.0.md
+          files: ${{ matrix.archivos }}
+          fail_on_unmatched_files: true
+          generate_release_notes: true
