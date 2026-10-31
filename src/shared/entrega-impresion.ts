@@ -59,20 +59,20 @@ export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): strin
     : 'Sin unidad asignada'
 
   return `<article style="width:100%;max-width:100%;box-sizing:border-box;margin:0;background:#fff;color:#1f2937;font-family:Georgia,'Times New Roman',serif;line-height:1.65;">
-    <header style="text-align:center;border-bottom:2px solid #111827;padding:0 0 12px;margin:0 0 14px;">
-      <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#6b7280;font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">
-        ${escapar(grupo.modulo_codigo)} · ${escapar(tipoEtiqueta(entrega.tipo))}
+    <section style="border:1px solid #111827;background:#f8fafc;padding:14px 16px;margin:0 0 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
+      <div style="text-align:center;padding:0 4px 12px;border-bottom:1px solid #d1d5db;">
+        <div style="color:#6b7280;font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">
+          ${escapar(grupo.modulo_codigo)} · ${escapar(tipoEtiqueta(entrega.tipo))}
+        </div>
+        <h1 style="font-family:Georgia,'Times New Roman',serif;color:#111827;font-size:24px;line-height:1.2;margin:7px 0 4px;font-weight:700;">
+          ${escapar(entrega.titulo)}
+        </h1>
+        <div style="color:#4b5563;font-size:10.5px;line-height:1.4;">
+          ${escapar(grupo.modulo_nombre)} · ${escapar(grupo.curso_academico_nombre)} · ${escapar(unidadTexto)}
+        </div>
       </div>
-      <h1 style="color:#111827;font-size:24px;line-height:1.2;margin:8px 0 5px;font-weight:700;">
-        ${escapar(entrega.titulo)}
-      </h1>
-      <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;color:#4b5563;font-size:10.5px;">
-        ${escapar(grupo.modulo_nombre)} · ${escapar(grupo.curso_academico_nombre)} · ${escapar(unidadTexto)} · ${escapar(fechaCorta(entrega.fecha_limite))}
-      </div>
-    </header>
 
-    <section style="border:1px solid #111827;background:#f8fafc;padding:10px 12px;margin:0 0 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
-      <table style="width:100%;border-collapse:collapse;font-size:10.5px;color:#374151;">
+      <table style="width:100%;border-collapse:collapse;font-size:10.5px;color:#374151;margin-top:10px;">
         <tr>
           <td style="width:40%;padding:0 14px 0 0;vertical-align:bottom;">
             <div style="font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin-bottom:4px;">Nombre y apellidos</div>
