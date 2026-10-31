@@ -8,6 +8,9 @@ empresa e informes trazables al BOE.
 > ayuda integrada de la aplicación, con capturas reales de todas las pantallas.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
+>
+> **📦 [Descargar Aula Nova 1.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.0)** —
+> instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
 >
@@ -29,7 +32,8 @@ Aplicación funcional en **versión 1.0**. Verificación actual:
 
 ## Release 1.0
 
-Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/`:
+Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
+**[GitHub Releases v1.0.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.0)**:
 
 | Plataforma                | Artefacto                              |
 | ------------------------- | -------------------------------------- |

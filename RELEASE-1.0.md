@@ -2,6 +2,8 @@
 
 **Gestión de cursos académicos, entregas y calificaciones de Formación Profesional.**
 
+**Descarga:** [GitHub Releases v1.0.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.0)
+
 - **Fecha:** 31/10/2026
 - **Autor:** Manuel Sánchez Gomis · Profesor de Ciclos Formativos de Informática
 - **Contacto:** [me.sanchezgomis@edu.gva.es](mailto:me.sanchezgomis@edu.gva.es)
