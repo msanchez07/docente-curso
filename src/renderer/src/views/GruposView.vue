@@ -490,7 +490,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
       <p class="tenue">
         Curso académico
         <strong>{{ cursosStore.activo?.nombre ?? '—' }}</strong
-        >. Las clases de FP de DAW que impartes; cada grupo se identifica por ciclo, módulo, nivel y
+        >. Las clases de FP que impartes; cada grupo se identifica por ciclo, módulo, nivel y
         modalidad.
       </p>
     </header>

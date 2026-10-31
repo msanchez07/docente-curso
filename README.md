@@ -4,8 +4,10 @@ Aplicación de escritorio **local** para organizar la docencia de FP alrededor d
 clase**: programación, alumnado, entregas con rúbrica, evidencias, calificaciones, formación en
 empresa e informes trazables al BOE.
 
-> **📘 [Guía de uso completa](./GUIA-APLICACION.md)** — empieza aquí para ver cómo se organiza la
-> aplicación, cómo crear un grupo y cómo funciona el día a día.
+> **📘 [Guía visual en HTML](./docs/index.html)** — la misma guía que la ayuda integrada de la
+> aplicación, con capturas reales de todas las pantallas.
+>
+> **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
 >
@@ -51,6 +53,22 @@ distribución pública conviene configurar certificados de firma.
 La release **no carga datos de prueba**: la aplicación arranca vacía y solo incluye los datos
 oficiales del BOE y el catálogo de secuenciación y horarios. Los datos de ejemplo quedan
 restringidos a la previsualización web de desarrollo.
+
+---
+
+## Capturas
+
+|                                                         |                                                       |
+| ------------------------------------------------------- | ----------------------------------------------------- |
+| ![Calendario del curso](docs/guia/calendario-curso.png) | ![Dashboard del grupo](docs/guia/dashboard.png)       |
+| **Calendario del curso**                                | **Dashboard del grupo**                               |
+| ![Grupos y cursos](docs/guia/grupos.png)                | ![Entregas y evidencias](docs/guia/entregas.png)      |
+| **Grupos y cursos**                                     | **Entregas y evidencias**                             |
+| ![Calificaciones](docs/guia/calificaciones.png)         | ![Configuración general](docs/guia/configuracion.png) |
+| **Calificaciones y convocatorias**                      | **Configuración general**                             |
+
+La guía completa, con todas las capturas y explicaciones, está en
+**[docs/index.html](./docs/index.html)**.
 
 ---
 
@@ -185,6 +203,7 @@ npm run build      # typecheck + build de main, preload y renderer
 npm run smoke      # flujo renderer → preload → IPC → SQLite
 npm run smoke:boe  # lectura de los recursos del BOE
 npm run horarios:parse  # regenera el catálogo desde los PDFs de la Conselleria
+npm run guia:html  # regenera la guía visual en docs/index.html
 npm run format     # Prettier
 npm run lint       # ESLint
 ```

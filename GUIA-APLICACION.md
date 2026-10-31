@@ -1,5 +1,7 @@
 # Guía de uso · Aula Nova
 
+> **Versión visual con capturas:** [docs/index.html](./docs/index.html)
+
 > Guía viva de la aplicación. Debe actualizarse siempre que se añada, cambie o elimine una
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
 

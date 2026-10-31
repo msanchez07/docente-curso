@@ -1,0 +1,1003 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Guía de uso de Aula Nova: gestión de cursos académicos, entregas y calificaciones de FP." />
+    <title>Guía de uso · Aula Nova</title>
+    <style>
+      :root {
+        --tinta: #0f2438;
+        --tinta-suave: #52657a;
+        --navy: #0b1f33;
+        --navy-2: #143a5a;
+        --acento: #2563eb;
+        --acento-suave: #eef4ff;
+        --borde: #dbe3ec;
+        --fondo: #f5f8fc;
+        --blanco: #ffffff;
+        --dorado: #e8a33d;
+        --sombra: 0 18px 50px rgba(15, 36, 56, 0.10);
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--fondo);
+        color: var(--tinta);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.65;
+      }
+      a { color: var(--acento); }
+      .hero {
+        background:
+          radial-gradient(circle at 85% 5%, rgba(45, 212, 191, 0.25), transparent 34%),
+          radial-gradient(circle at 8% 95%, rgba(232, 163, 61, 0.16), transparent 32%),
+          linear-gradient(135deg, var(--navy), var(--navy-2));
+        color: #fff;
+        padding: 56px 24px 64px;
+      }
+      .hero__interior, .contenedor { width: min(1120px, 100%); margin: 0 auto; }
+      .marca { display: flex; align-items: center; gap: 14px; margin-bottom: 46px; }
+      .marca img { width: 44px; height: 44px; border-radius: 12px; box-shadow: 0 10px 24px rgba(0,0,0,.28); }
+      .marca strong { display: block; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; }
+      .marca span { display: block; color: #a9bbcf; font-size: 12px; }
+      .hero h1 { margin: 0; max-width: 760px; font-size: clamp(38px, 7vw, 72px); line-height: 1.02; letter-spacing: -.04em; }
+      .hero p { max-width: 720px; margin: 18px 0 0; color: #c9d8e8; font-size: 17px; }
+      .hero__meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 26px; color: #a9bbcf; font-size: 13px; }
+      .hero__meta a { color: #eaf2fb; }
+      .indice {
+        margin: -34px auto 0;
+        position: relative;
+        width: min(1120px, calc(100% - 32px));
+        padding: 18px;
+        border: 1px solid var(--borde);
+        border-radius: 18px;
+        background: var(--blanco);
+        box-shadow: var(--sombra);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 8px;
+      }
+      .indice__enlace {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 11px;
+        border-radius: 10px;
+        color: var(--tinta);
+        text-decoration: none;
+        font-size: 13.5px;
+        font-weight: 550;
+        transition: background .14s ease, color .14s ease;
+      }
+      .indice__enlace:hover { background: var(--acento-suave); color: var(--acento); }
+      .indice__numero { color: var(--acento); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+      .contenedor { padding: 54px 24px 90px; }
+      .seccion {
+        padding: 54px 0 60px;
+        border-top: 1px solid var(--borde);
+        scroll-margin-top: 24px;
+      }
+      .seccion:first-of-type { border-top: 0; padding-top: 18px; }
+      .seccion__cabecera { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 24px; }
+      .seccion__numero {
+        flex: 0 0 auto;
+        display: inline-grid;
+        place-items: center;
+        width: 42px; height: 42px;
+        border-radius: 12px;
+        background: var(--acento);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+      }
+      h2 { margin: 0; font-size: clamp(25px, 4vw, 38px); line-height: 1.12; letter-spacing: -.025em; }
+      .seccion__resumen { margin: 6px 0 0; color: var(--tinta-suave); font-size: 15.5px; }
+      .captura {
+        display: block;
+        overflow: hidden;
+        border: 1px solid var(--borde);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: var(--sombra);
+        text-decoration: none;
+      }
+      .captura img { display: block; width: 100%; height: auto; }
+      .captura__pie { display: block; padding: 10px 14px; border-top: 1px solid var(--borde); color: var(--tinta-suave); font-size: 12px; }
+      .seccion__texto { max-width: 880px; margin-top: 22px; }
+      .seccion__texto p { margin: 0 0 12px; color: #34485e; font-size: 15px; }
+      .puntos { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-top: 20px; }
+      .punto { padding: 17px 18px; border: 1px solid var(--borde); border-radius: 14px; background: #fff; }
+      .punto h3 { margin: 0 0 5px; font-size: 14.5px; }
+      .punto p { margin: 0; color: var(--tinta-suave); font-size: 13.5px; }
+      .pie {
+        padding: 34px 24px 50px;
+        border-top: 1px solid var(--borde);
+        background: #eef3f9;
+        color: var(--tinta-suave);
+        font-size: 13px;
+      }
+      .pie__interior { width: min(1120px, 100%); margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+      @media (max-width: 640px) {
+        .hero { padding-top: 34px; }
+        .marca { margin-bottom: 30px; }
+        .seccion__cabecera { gap: 12px; }
+        .seccion { padding: 40px 0 44px; }
+      }
+      @media print {
+        .hero { background: #fff; color: var(--tinta); }
+        .hero p, .hero__meta, .marca span { color: var(--tinta-suave); }
+        .indice { box-shadow: none; }
+        .captura { box-shadow: none; break-inside: avoid; }
+        .seccion { break-inside: avoid; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__interior">
+        <div class="marca">
+          <img src="guia/icon.png" alt="Aula Nova" />
+          <div>
+            <strong>Aula Nova</strong>
+            <span>Gestión de cursos académicos</span>
+          </div>
+        </div>
+        <h1>Guía de uso</h1>
+        <p>La misma guía que encontrarás dentro de la aplicación, con capturas reales de cada pantalla.</p>
+        <div class="hero__meta">
+          <span>Versión 1.0</span>
+          <span>Manuel Sánchez Gomis · Profesor de Ciclos Formativos de Informática</span>
+          <a href="mailto:me.sanchezgomis@edu.gva.es">me.sanchezgomis@edu.gva.es</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="indice" aria-label="Índice de la guía">
+      
+        <a class="indice__enlace" href="#calendario-curso">
+          <span class="indice__numero">01</span>
+          <span>Calendario del curso</span>
+        </a>
+        <a class="indice__enlace" href="#configuracion">
+          <span class="indice__numero">02</span>
+          <span>Configuración general</span>
+        </a>
+        <a class="indice__enlace" href="#dashboard">
+          <span class="indice__numero">03</span>
+          <span>Dashboard del grupo</span>
+        </a>
+        <a class="indice__enlace" href="#horario">
+          <span class="indice__numero">04</span>
+          <span>Horario semanal</span>
+        </a>
+        <a class="indice__enlace" href="#programacion">
+          <span class="indice__numero">05</span>
+          <span>Programación de aula</span>
+        </a>
+        <a class="indice__enlace" href="#programacion-didactica">
+          <span class="indice__numero">06</span>
+          <span>Programación didáctica</span>
+        </a>
+        <a class="indice__enlace" href="#criterios">
+          <span class="indice__numero">07</span>
+          <span>Criterios de calificación</span>
+        </a>
+        <a class="indice__enlace" href="#criterios-trimestres">
+          <span class="indice__numero">08</span>
+          <span>Pesos propios por trimestre</span>
+        </a>
+        <a class="indice__enlace" href="#calificaciones">
+          <span class="indice__numero">09</span>
+          <span>Calificaciones y convocatorias</span>
+        </a>
+        <a class="indice__enlace" href="#entregas">
+          <span class="indice__numero">10</span>
+          <span>Entregas y evidencias</span>
+        </a>
+        <a class="indice__enlace" href="#alumnado">
+          <span class="indice__numero">11</span>
+          <span>Alumnado y formación</span>
+        </a>
+        <a class="indice__enlace" href="#faltas">
+          <span class="indice__numero">12</span>
+          <span>Control de faltas</span>
+        </a>
+        <a class="indice__enlace" href="#informes">
+          <span class="indice__numero">13</span>
+          <span>Informes</span>
+        </a>
+        <a class="indice__enlace" href="#grupos">
+          <span class="indice__numero">14</span>
+          <span>Grupos y cursos</span>
+        </a>
+        <a class="indice__enlace" href="#plantillas">
+          <span class="indice__numero">15</span>
+          <span>Plantillas de criterios</span>
+        </a>
+        <a class="indice__enlace" href="#backups">
+          <span class="indice__numero">16</span>
+          <span>Copias de seguridad</span>
+        </a>
+        <a class="indice__enlace" href="#normativa">
+          <span class="indice__numero">17</span>
+          <span>Normativa FP</span>
+        </a>
+        <a class="indice__enlace" href="#global">
+          <span class="indice__numero">18</span>
+          <span>Opciones globales</span>
+        </a>
+    </nav>
+
+    <main class="contenedor">
+      
+      <section class="seccion" id="calendario-curso">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">01</span>
+          <div>
+            <h2>Calendario del curso</h2>
+            <p class="seccion__resumen">Punto de entrada de la aplicación: un calendario con todos los módulos del curso.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/calendario-curso.png" target="_blank" rel="noreferrer">
+          <img src="guia/calendario-curso.png" alt="Captura de Calendario del curso" loading="lazy" />
+          <span class="captura__pie">Captura real de Calendario del curso · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>El calendario del curso es la pantalla inicial y la vista de conjunto. No muestra tablas de alumnado ni listados de módulos: todo gira alrededor del calendario, que reúne entregas, exámenes, evaluaciones y días no lectivos de todos los grupos.</p><p>Cada módulo tiene un color estable. Las etiquetas dentro de cada día indican el módulo y el hito, y llevan al dashboard de ese módulo. La leyenda de módulos y la leyenda de modalidad permiten leer el calendario de un vistazo.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Calendario de todos los módulos</h3>
+              <p>Un único calendario mensual reúne los hitos de todos los módulos del curso. Puedes cambiar de mes o volver al mes actual con Hoy.</p>
+            </article>
+            <article class="punto">
+              <h3>Etiquetas por módulo</h3>
+              <p>Cada día muestra hasta dos etiquetas con las siglas del módulo y el título del hito. Si hay más, aparece un contador; la etiqueta abre el dashboard del módulo.</p>
+            </article>
+            <article class="punto">
+              <h3>Filtrar por módulo</h3>
+              <p>La fila de módulos funciona como filtro: pulsa Todos para ver el curso completo o un módulo concreto para quedarte solo con sus hitos. El filtro también actualiza el contador de hitos del mes.</p>
+            </article>
+            <article class="punto">
+              <h3>Filtro por tipo</h3>
+              <p>Además del módulo, puedes filtrar por Entregas, Exámenes, Evaluaciones o No lectivos. Los filtros se combinan y el contador del mes se actualiza con el resultado.</p>
+            </article>
+            <article class="punto">
+              <h3>Enlaces directos</h3>
+              <p>Una entrega abre directamente su pantalla de notas; un examen o evaluación abre las fechas del módulo; el resto de hitos abre el dashboard del módulo.</p>
+            </article>
+            <article class="punto">
+              <h3>Día seleccionado</h3>
+              <p>Al pulsar un día, debajo del calendario se muestran todos sus hitos, con hora, módulo y enlace para abrir el módulo. Así no se pierde ningún evento cuando un día tiene más de dos etiquetas.</p>
+            </article>
+            <article class="punto">
+              <h3>Calendario escolar</h3>
+              <p>Desde Acciones puedes importar el calendario escolar completo o definir un día no lectivo con fecha, tipo y descripción. Los festivos importados aparecen en el mismo calendario.</p>
+            </article>
+            <article class="punto">
+              <h3>Exportar</h3>
+              <p>Acciones permite imprimir el calendario en PDF o descargarlo en formato .ics para Google Calendar, Outlook o Apple Calendar.</p>
+            </article>
+            <article class="punto">
+              <h3>Colores estables</h3>
+              <p>La aplicación asigna automáticamente un color a cada módulo. La leyenda superior permite identificar los módulos y el color no cambia al navegar entre meses.</p>
+            </article>
+            <article class="punto">
+              <h3>Modalidad</h3>
+              <p>La leyenda azul/violeta indica presencial o semipresencial. Las etiquetas del calendario usan el color del módulo, no el de la modalidad.</p>
+            </article>
+            <article class="punto">
+              <h3>Sin ruido</h3>
+              <p>No hay tablas de alumnado, colas de trabajo ni listados de módulos en esta pantalla. Esas tareas se consultan desde el dashboard de cada módulo.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="configuracion">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">02</span>
+          <div>
+            <h2>Configuración general</h2>
+            <p class="seccion__resumen">Datos del profesorado, del centro educativo y logo PNG de la aplicación.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/configuracion.png" target="_blank" rel="noreferrer">
+          <img src="guia/configuracion.png" alt="Captura de Configuración general" loading="lazy" />
+          <span class="captura__pie">Captura real de Configuración general · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Configuración general es el lugar para identificar la instalación: quién la usa, qué centro aparece y qué logo se quiere mostrar. Los datos se guardan en el equipo, no en un servicio externo.</p><p>El logo debe ser un PNG de hasta 2 MB. Se puede cambiar o quitar cuando haga falta. Los campos de profesorado y centro están separados para que puedas completar solo lo que necesites.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Profesorado</h3>
+              <p>Nombre, apellidos, correo, teléfono y departamento de la persona que utiliza la aplicación. Son datos de identificación, no credenciales de acceso.</p>
+            </article>
+            <article class="punto">
+              <h3>Centro educativo</h3>
+              <p>Nombre, código de centro, dirección, localidad, provincia, código postal, teléfono, correo y web del instituto. Se guardan para la identificación de la aplicación.</p>
+            </article>
+            <article class="punto">
+              <h3>Logo PNG</h3>
+              <p>Selecciona una imagen PNG de hasta 2 MB. La vista previa aparece antes de guardar y puedes quitar el logo cuando quieras.</p>
+            </article>
+            <article class="punto">
+              <h3>Guardado local</h3>
+              <p>La configuración se guarda en la base de datos local. No se envía a ningún servidor ni se sincroniza entre equipos.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="dashboard">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">03</span>
+          <div>
+            <h2>Dashboard del grupo</h2>
+            <p class="seccion__resumen">El dashboard reúne la información importante del grupo y la barra superior permite saltar a cualquier sección.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/dashboard.png" target="_blank" rel="noreferrer">
+          <img src="guia/dashboard.png" alt="Captura de Dashboard del grupo" loading="lazy" />
+          <span class="captura__pie">Captura real de Dashboard del grupo · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>El dashboard es el punto de partida de un grupo. Arriba tienes la barra de navegación común: Dashboard, Día a día y Consulta. La opción activa aparece resaltada y el botón Ayuda abre la explicación de la pantalla en la que estás.</p><p>La primera fila responde a tres preguntas: qué pasa hoy, cuántas notas quedan por poner y cuánto alumnado está en riesgo. Debajo, la cola de trabajo muestra las entregas pendientes de corregir y los avisos que requieren una acción. La agenda y las próximas fechas quedan a la derecha, y el estado del grupo, la formación y la programación didáctica se consultan en «Más información del grupo».</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Navegación superior</h3>
+              <p>La barra cambia de sección sin usar el botón Volver: Dashboard, Día a día y Consulta. La opción activa queda resaltada y el botón Ayuda abre la explicación de la pantalla actual.</p>
+            </article>
+            <article class="punto">
+              <h3>Resumen de hoy</h3>
+              <p>Las tres tarjetas superiores muestran las sesiones de hoy, las notas que quedan por poner y el alumnado en riesgo. Son accesos directos: cada tarjeta enlaza con la pantalla donde se resuelve.</p>
+            </article>
+            <article class="punto">
+              <h3>Cola de trabajo</h3>
+              <p>Agrupa lo que pide una acción inmediata: entregas con notas pendientes y avisos como RA sin evidencias, entregas sin rúbrica o días de programación sin contenido.</p>
+            </article>
+            <article class="punto">
+              <h3>Alumnado que necesita atención</h3>
+              <p>La tabla muestra la nota final, el estado y los RA pendientes de cada alumno. Se actualiza con las notas, los criterios y las entregas, y permite detectar rápidamente quién va a convocatoria.</p>
+            </article>
+            <article class="punto">
+              <h3>Agenda y próximas fechas</h3>
+              <p>El calendario colorea entregas, exámenes, evaluaciones y días no lectivos. Debajo aparecen los próximos hitos y los días no lectivos, con navegación mensual y botón Hoy.</p>
+            </article>
+            <article class="punto">
+              <h3>Más información del grupo</h3>
+              <p>El bloque plegable reúne el estado del grupo, la formación en empresa y la programación didáctica. Se abre solo cuando necesitas consultar esos datos, para no llenar el dashboard de información pasiva.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="horario">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">04</span>
+          <div>
+            <h2>Horario semanal</h2>
+            <p class="seccion__resumen">Consulta la distribución semanal de sesiones, recreos y tutorías del grupo.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/horario.png" target="_blank" rel="noreferrer">
+          <img src="guia/horario.png" alt="Captura de Horario semanal" loading="lazy" />
+          <span class="captura__pie">Captura real de Horario semanal · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>La vista de horario muestra la semana completa del grupo en bloques de 55 minutos. La columna del día actual aparece resaltada y los recreos se dibujan como franjas separadas entre mañana y tarde.</p><p>En presencial se ven las sesiones del módulo. En semipresencial también aparecen las tutorías colectivas e individuales, con colores distintos. El botón Editar en el grupo abre el formulario del grupo para cambiar los bloques.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Bloques de 55 minutos</h3>
+              <p>La tabla muestra las franjas horarias de mañana y tarde. Cada bloque representa una sesión de 55 minutos y los recreos aparecen como separadores entre tramos.</p>
+            </article>
+            <article class="punto">
+              <h3>Sesiones y tutorías</h3>
+              <p>En presencial se muestran las sesiones del módulo. En semipresencial se añaden tutorías colectivas e individuales, con colores distintos para distinguirlas de una sesión normal.</p>
+            </article>
+            <article class="punto">
+              <h3>Día actual</h3>
+              <p>La columna del día de hoy queda resaltada para localizar rápidamente qué toca. La cabecera indica el curso académico y el grupo al que pertenece el horario.</p>
+            </article>
+            <article class="punto">
+              <h3>Resumen de la semana</h3>
+              <p>Las etiquetas superiores indican el número de sesiones y la duración del bloque. La leyenda inferior explica qué representa cada color.</p>
+            </article>
+            <article class="punto">
+              <h3>Editar el horario</h3>
+              <p>El enlace Editar en el grupo abre el formulario del grupo, donde se marcan los bloques de cada día y se configuran las tutorías de la modalidad semipresencial.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="programacion">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">05</span>
+          <div>
+            <h2>Programación de aula</h2>
+            <p class="seccion__resumen">Registra el trabajo diario del grupo: sesiones, contenidos, desviaciones y observaciones.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/programacion.png" target="_blank" rel="noreferrer">
+          <img src="guia/programacion.png" alt="Captura de Programación de aula" loading="lazy" />
+          <span class="captura__pie">Captura real de Programación de aula · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Programación de aula sirve para anotar qué se trabaja cada día. Puedes crear sesiones con fecha y hora, añadir varias sesiones al mismo día y dejar constancia de contenidos, desviaciones y observaciones. Las vistas de Tarjetas y Tabla permiten pasar de una lectura cómoda a una edición rápida.</p><p>La pestaña Calendario muestra las sesiones en formato mensual. El calendario escolar se gestiona de forma centralizada en Calendario del curso. Desde Acciones puedes cargar un ejemplo, importar días o descargar el esquema; Exportar PDF genera el informe completo.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Crear y editar sesiones</h3>
+              <p>Cada sesión tiene fecha, hora, contenido, desviación y observaciones. Puedes añadir varias sesiones al mismo día y editar la fila directamente en la vista de Tabla.</p>
+            </article>
+            <article class="punto">
+              <h3>Elegir la vista de trabajo</h3>
+              <p>Tarjetas es cómoda para leer y revisar; Tabla permite editar muchas filas seguidas; Calendario muestra la distribución mensual de las sesiones.</p>
+            </article>
+            <article class="punto">
+              <h3>Unidades</h3>
+              <p>La pestaña Unidades organiza las unidades de programación y sus sesiones. Los festivos, no lectivos y vacaciones se gestionan en Calendario del curso.</p>
+            </article>
+            <article class="punto">
+              <h3>Importar y exportar</h3>
+              <p>Desde Acciones puedes cargar un ejemplo, importar días desde JSON/CSV o descargar el esquema. Exportar PDF genera el documento completo con fechas, horario y tutorías.</p>
+            </article>
+            <article class="punto">
+              <h3>Ver cambios pendientes</h3>
+              <p>La barra superior indica si hay cambios sin guardar. Si cambias de pestaña o sales de la pantalla, revisa primero que la programación esté guardada.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="programacion-didactica">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">06</span>
+          <div>
+            <h2>Programación didáctica</h2>
+            <p class="seccion__resumen">Organiza unidades, fechas, criterios, RA/CE y la presentación del módulo.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/programacion-didactica.png" target="_blank" rel="noreferrer">
+          <img src="guia/programacion-didactica.png" alt="Captura de Programación didáctica" loading="lazy" />
+          <span class="captura__pie">Captura real de Programación didáctica · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Programación didáctica es el espacio de planificación a más largo plazo. Sus pestañas separan las unidades, las fechas de evaluación y exámenes, los criterios y la cobertura de RA/CE. Cada unidad puede trabajar CE concretos, todos los CE de un RA o CE de varios RA.</p><p>La presentación del módulo es una plantilla HTML editable que se rellena con los datos reales del grupo: unidades, RA/CE, exámenes, pesos y requisitos. Puedes previsualizarla, copiarla como HTML enriquecido para Aules, descargarla o imprimirla en PDF.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Unidades didácticas</h3>
+              <p>Cada unidad reúne sus sesiones, contenidos, RA/CE y criterios. Puedes crear unidades, ordenarlas y consultar qué parte del módulo cubre cada una.</p>
+            </article>
+            <article class="punto">
+              <h3>Fechas de evaluación y exámenes</h3>
+              <p>Las fechas se pueden crear a mano o importar. Se usan para la agenda del dashboard y para organizar los bloques de las convocatorias.</p>
+            </article>
+            <article class="punto">
+              <h3>Criterios y cobertura de RA/CE</h3>
+              <p>La pestaña de criterios muestra el peso de cada instrumento. La pestaña de RA/CE permite comprobar qué resultados y criterios están cubiertos por las unidades y las entregas.</p>
+            </article>
+            <article class="punto">
+              <h3>Calendario del curso</h3>
+              <p>Los festivos, no lectivos y vacaciones se importan o definen desde Calendario del curso. Allí se ven junto a las entregas, exámenes y evaluaciones de todos los módulos.</p>
+            </article>
+            <article class="punto">
+              <h3>Presentación del módulo</h3>
+              <p>La plantilla HTML se rellena con datos reales del grupo. Puedes ver la vista previa, copiarla como HTML enriquecido para Aules, descargarla o imprimirla en PDF.</p>
+            </article>
+            <article class="punto">
+              <h3>Coherencia del módulo</h3>
+              <p>Antes de cerrar la programación, revisa que las unidades tengan sus RA/CE, que las fechas de examen encajen con los trimestres y que la presentación muestre la información actualizada.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="criterios">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">07</span>
+          <div>
+            <h2>Criterios de calificación</h2>
+            <p class="seccion__resumen">Define cómo se calcula la nota: categorías, avaluaciones, RA, mínimos y pesos por trimestre.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/criterios.png" target="_blank" rel="noreferrer">
+          <img src="guia/criterios.png" alt="Captura de Criterios de calificación" loading="lazy" />
+          <span class="captura__pie">Captura real de Criterios de calificación · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Los criterios son la base de todos los cálculos. Las categorías agrupan instrumentos de evaluación (exámenes, actividades, proyectos, etc.) y tienen un peso. Las avaluaciones o trimestres también tienen su peso en la nota final. Todas las sumas deben ser exactamente 100 %.</p><p>La pestaña RA reparte el peso de cada resultado de aprendizaje en la nota final; por defecto se reparte a partes iguales. La pestaña Mínimos permite configurar notas mínimas bloqueantes. La pestaña Trimestres permite que un trimestre use pesos de categorías distintos a los generales, por ejemplo 50 % examen y 50 % proyecto con actividades a 0 %.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Categorías e instrumentos</h3>
+              <p>Cada categoría representa un tipo de instrumento: exámenes, actividades, proyectos, etc. Su peso se aplica a todos los trimestres que no tengan un cálculo propio.</p>
+            </article>
+            <article class="punto">
+              <h3>Peso de cada trimestre</h3>
+              <p>Los trimestres o avaluaciones también ponderan en la nota final. La suma de todos los pesos debe ser exactamente 100 %; si no, no se puede guardar.</p>
+            </article>
+            <article class="punto">
+              <h3>Peso de cada RA</h3>
+              <p>La nota final se calcula ponderando los RA. Por defecto se reparte el 100 % a partes iguales, pero puedes dar más peso a un RA concreto desde la pestaña RA.</p>
+            </article>
+            <article class="punto">
+              <h3>Mínimos bloqueantes</h3>
+              <p>Puedes fijar una nota mínima por entrega, por categoría, por avaluación y para aprobar el módulo. Si no se cumple, la categoría o el trimestre quedan suspensos aunque la media sea alta.</p>
+            </article>
+            <article class="punto">
+              <h3>Pesos propios por trimestre</h3>
+              <p>En Trimestres puedes activar un cálculo distinto solo para un trimestre. Es útil cuando un trimestre se evalúa con un examen y un proyecto, sin actividades, sin cambiar el resto del curso.</p>
+            </article>
+            <article class="punto">
+              <h3>Validación y guardado</h3>
+              <p>La pantalla muestra si las sumas son correctas. Los criterios guardados se usan en Calificaciones, en los informes y en los grupos que compartan la misma plantilla.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="criterios-trimestres">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">08</span>
+          <div>
+            <h2>Pesos propios por trimestre</h2>
+            <p class="seccion__resumen">Un trimestre puede usar los pesos generales o un cálculo propio, sin afectar a los demás.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/criterios-trimestres.png" target="_blank" rel="noreferrer">
+          <img src="guia/criterios-trimestres.png" alt="Captura de Pesos propios por trimestre" loading="lazy" />
+          <span class="captura__pie">Captura real de Pesos propios por trimestre · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Esta pestaña sirve para los trimestres que no siguen el cálculo general. Al activar «Pesos propios» en un trimestre, se copian los pesos generales y puedes cambiarlos solo para ese trimestre. Los demás trimestres siguen usando la configuración de Categorías.</p><p>Un ejemplo habitual es un trimestre con 50 % examen y 50 % proyecto, dejando actividades al 0 %. Las categorías con peso 0 no penalizan ese trimestre. La suma de los pesos propios debe ser 100 %; si no, no se puede guardar. En Calificaciones verás el indicador «Cálculo propio».</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Cuándo usarlo</h3>
+              <p>Úsalo cuando un trimestre tenga un sistema de evaluación distinto: por ejemplo, un proyecto final que sustituye a las actividades habituales o un examen que vale la mitad de la nota.</p>
+            </article>
+            <article class="punto">
+              <h3>Cómo activarlo</h3>
+              <p>Entra en Criterios → Trimestres y marca «Pesos propios» en el trimestre. Se copian los pesos generales como punto de partida y puedes modificarlos sin tocar los demás trimestres.</p>
+            </article>
+            <article class="punto">
+              <h3>Ejemplo 50/50</h3>
+              <p>Pon exámenes a 50 %, proyectos a 50 % y actividades a 0 %. El trimestre se calculará solo con exámenes y proyectos; las actividades seguirán visibles en el detalle, pero no restarán nota.</p>
+            </article>
+            <article class="punto">
+              <h3>Categorías a 0 %</h3>
+              <p>Una categoría con peso 0 no cuenta para la media del trimestre y sus suspensos tampoco bloquean ese trimestre. Esto permite excluir instrumentos que no se han usado.</p>
+            </article>
+            <article class="punto">
+              <h3>Validación</h3>
+              <p>Los pesos propios deben sumar exactamente 100 %. Si la suma no cuadra, la aplicación muestra un aviso y no permite guardar los criterios.</p>
+            </article>
+            <article class="punto">
+              <h3>Efecto en las notas</h3>
+              <p>El cálculo propio afecta a la nota del trimestre. La nota final sigue calculándose con los pesos de RA, para mantener la trazabilidad del módulo.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="calificaciones">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">09</span>
+          <div>
+            <h2>Calificaciones y convocatorias</h2>
+            <p class="seccion__resumen">Consulta la nota de cada trimestre, la nota final, los RA y las convocatorias ordinaria y extraordinaria.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/calificaciones.png" target="_blank" rel="noreferrer">
+          <img src="guia/calificaciones.png" alt="Captura de Calificaciones y convocatorias" loading="lazy" />
+          <span class="captura__pie">Captura real de Calificaciones y convocatorias · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Calificaciones es una vista de consulta: la nota final no se escribe a mano, se calcula a partir de las entregas, las categorías, los trimestres y los RA. La lista de la izquierda permite buscar alumnado y ver su nota final; a la derecha se muestra el detalle del alumno seleccionado.</p><p>Las pestañas superiores permiten entrar en cada trimestre, en Ordinaria, en Extraordinaria y en la nota final. En la pestaña final se muestra la fórmula de RA, los RA superados y pendientes y el acceso al informe. Las convocatorias agrupan bloques de examen y se crean automáticamente al abrirlas; el bloque Examen global, si se marca, vale el 100 % de esa convocatoria.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Lista de alumnado</h3>
+              <p>La columna izquierda permite buscar por nombre o DNI y muestra la nota final, el estado y los RA pendientes. Al seleccionar un alumno se carga su detalle completo.</p>
+            </article>
+            <article class="punto">
+              <h3>Nota de cada trimestre</h3>
+              <p>Cada pestaña de trimestre muestra las categorías, sus pesos efectivos, las entregas y la nota resultante. Si el trimestre tiene un cálculo propio, aparece el indicador correspondiente.</p>
+            </article>
+            <article class="punto">
+              <h3>Nota final por RA</h3>
+              <p>La pestaña Final muestra la nota final, la fórmula de pesos de RA y el estado de cada resultado de aprendizaje. La nota final no se edita aquí.</p>
+            </article>
+            <article class="punto">
+              <h3>Convocatorias</h3>
+              <p>Ordinaria y Extraordinaria se crean automáticamente y agrupan los bloques que debe realizar cada alumno. Puedes ajustar los bloques, asignar notas y consultar la nota de la convocatoria.</p>
+            </article>
+            <article class="punto">
+              <h3>Examen global</h3>
+              <p>Si un alumno tiene marcado el bloque Examen global, su nota sustituye al resto de bloques de esa convocatoria y pasa a valer el 100 %. No se suman los demás bloques.</p>
+            </article>
+            <article class="punto">
+              <h3>Informe del alumno</h3>
+              <p>Desde la pestaña Final puedes generar el informe PDF del alumno o abrir su informe completo en la sección Informes.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="entregas">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">10</span>
+          <div>
+            <h2>Entregas y evidencias</h2>
+            <p class="seccion__resumen">Cada entrega se asocia a una unidad, una avaluación, una categoría y sus RA/CE.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/entregas.png" target="_blank" rel="noreferrer">
+          <img src="guia/entregas.png" alt="Captura de Entregas y evidencias" loading="lazy" />
+          <span class="captura__pie">Captura real de Entregas y evidencias · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Las entregas son las tareas evaluables del grupo. Cada una debe pertenecer a una unidad, una avaluación y una categoría, y puede mapearse a uno o varios RA/CE. La ficha de la entrega contiene el enunciado, la descripción del problema y las restricciones.</p><p>Al abrir una entrega se muestra primero la pestaña Ficha y después Notas. La ficha HTML se puede copiar para Aules, descargar o imprimir. También puedes añadir rúbrica, evidencias y bloquear la entrega para que no admita cambios. La exportación genera PDF, ZIP o un ZIP con PDF y archivos según el contenido.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Asociaciones obligatorias</h3>
+              <p>Cada entrega debe tener unidad, avaluación, categoría y al menos un RA/CE. Estas asociaciones permiten calcular la nota del trimestre y la nota por RA.</p>
+            </article>
+            <article class="punto">
+              <h3>Ficha de la entrega</h3>
+              <p>La ficha contiene Enunciado, Descripción del problema y Restricciones. Es la primera pestaña al abrir la entrega y se puede copiar para Aules, descargar o imprimir.</p>
+            </article>
+            <article class="punto">
+              <h3>Rúbrica y evidencias</h3>
+              <p>Puedes añadir una rúbrica en texto y/o archivo y clasificar las evidencias por tipo. Las evidencias acompañan a la entrega en las exportaciones.</p>
+            </article>
+            <article class="punto">
+              <h3>Notas y bloqueo</h3>
+              <p>La pestaña Notas permite poner nota decimal y anotaciones por alumno. Una entrega bloqueada no admite cambios hasta que la desbloquees desde la propia entrega o desde Calificaciones.</p>
+            </article>
+            <article class="punto">
+              <h3>Exportación</h3>
+              <p>Puedes exportar una entrega, una avaluación o el curso completo. Si solo hay texto/rúbrica se genera PDF; si hay archivos, ZIP; si hay ambos, ZIP con el PDF y los archivos.</p>
+            </article>
+            <article class="punto">
+              <h3>Cabecera institucional</h3>
+              <p>Los PDF de entregas y exámenes usan la cabecera configurada: datos y logo del centro, logo de Conselleria y logo de la Unión Europea.</p>
+            </article>
+            <article class="punto">
+              <h3>Formato de examen</h3>
+              <p>Al imprimir un examen se usa un formato de texto limpio: instrucciones y restricciones en un recuadro superior, y después el enunciado y el problema como texto continuo, sin tarjetas ni criterios de evaluación.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="alumnado">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">11</span>
+          <div>
+            <h2>Alumnado y formación</h2>
+            <p class="seccion__resumen">Gestiona matrículas, datos del alumnado, ficha individual y formación en empresa.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/alumnado.png" target="_blank" rel="noreferrer">
+          <img src="guia/alumnado.png" alt="Captura de Alumnado y formación" loading="lazy" />
+          <span class="captura__pie">Captura real de Alumnado y formación · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>La sección de alumnado permite dar de alta manualmente o importar desde JSON/CSV. La importación evita duplicados por DNI, correo o nombre y apellidos. Puedes editar los datos, desactivar una matrícula o desmatricular sin borrar el historial del alumno.</p><p>La ficha individual reúne sus notas, RA, entregas y evolución. La formación en empresa se registra por periodos, con empresa y fechas. Las FCT no se incluyen en el control de faltas porque no generan faltas de asistencia al módulo.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Altas e importación</h3>
+              <p>Puedes crear alumnos uno a uno o importar una lista JSON/CSV. La importación busca duplicados por DNI, correo o nombre y apellidos antes de matricular.</p>
+            </article>
+            <article class="punto">
+              <h3>Matrícula y desmatriculación</h3>
+              <p>Desactivar un alumno conserva su historial; desmatricularlo lo quita del grupo sin borrar sus datos globales. Puedes reactivarlo cuando vuelva a estar activo.</p>
+            </article>
+            <article class="punto">
+              <h3>Ficha del alumno</h3>
+              <p>La ficha reúne sus datos, notas, RA, entregas y evolución. Es el punto de partida para revisar su situación completa antes de una evaluación.</p>
+            </article>
+            <article class="punto">
+              <h3>Formación en empresa</h3>
+              <p>Se registra por periodos, con empresa y fechas. Sirve para completar el expediente y aparece en los informes del alumno.</p>
+            </article>
+            <article class="punto">
+              <h3>Relación con notas y faltas</h3>
+              <p>El alumnado matriculado aparece en calificaciones y en el control de faltas del curso. Las FCT no generan faltas en el control de faltas.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="faltas">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">12</span>
+          <div>
+            <h2>Control de faltas</h2>
+            <p class="seccion__resumen">Importa los PDFs de ITACA, configura los módulos y consulta el porcentaje de faltas por alumno.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/faltas.png" target="_blank" rel="noreferrer">
+          <img src="guia/faltas.png" alt="Captura de Control de faltas" loading="lazy" />
+          <span class="captura__pie">Captura real de Control de faltas · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Control de faltas trabaja por curso/tutoría, no por un único grupo: reúne todos los módulos y el alumnado matriculado en cualquiera de ellos. La configuración permite ajustar el límite de faltas, decidir si cuentan las justificadas y relacionar cada módulo con su columna exacta del PDF de ITACA.</p><p>Los PDFs se importan y se guardan las faltas extraídas, no el archivo original. El historial está plegado por defecto y se abre con el botón Historial (n). La tabla muestra el número de faltas en una caja neutra y el porcentaje en una píldora de color; la primera columna queda fija al desplazar horizontalmente. El informe seleccionado se puede imprimir o guardar en PDF.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Contexto de curso</h3>
+              <p>La pantalla agrupa todos los módulos de un mismo curso/tutoría. Si hay varias cohortes, puedes cambiar de curso desde el selector compacto.</p>
+            </article>
+            <article class="punto">
+              <h3>Configuración de módulos</h3>
+              <p>Cada módulo es una tarjeta con su código, el nombre exacto de la columna del PDF de ITACA y las horas. El límite y las faltas justificadas se ajustan en la barra superior.</p>
+            </article>
+            <article class="punto">
+              <h3>Importar PDFs</h3>
+              <p>El botón Subir PDF lee los informes de ITACA y extrae las faltas por alumno y módulo. Se guardan las faltas, no el PDF original.</p>
+            </article>
+            <article class="punto">
+              <h3>Historial de informes</h3>
+              <p>El historial está plegado para no ocupar espacio. Se abre con Historial (n), muestra cada importación y se cierra al seleccionar un informe o cambiar de curso.</p>
+            </article>
+            <article class="punto">
+              <h3>Tabla de faltas</h3>
+              <p>Cada módulo ocupa una columna. El número de faltas va en una caja neutra y el porcentaje en una píldora de color; la primera columna queda fija al desplazar horizontalmente.</p>
+            </article>
+            <article class="punto">
+              <h3>Impresión/PDF</h3>
+              <p>El informe seleccionado se puede imprimir o guardar en PDF con el límite, los módulos y los colores de estado.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="informes">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">13</span>
+          <div>
+            <h2>Informes</h2>
+            <p class="seccion__resumen">Genera informes de grupo o de un alumno, con notas, RA, gráficas y formación.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/informes.png" target="_blank" rel="noreferrer">
+          <img src="guia/informes.png" alt="Captura de Informes" loading="lazy" />
+          <span class="captura__pie">Captura real de Informes · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Informes permite preparar documentación de consulta o entrega. Puedes elegir un resumen, un informe de calificaciones o un informe de RA superados, y limitarlo a todo el grupo o a un alumno concreto.</p><p>El informe incluye gráficas, RA/CE, formación en empresa y datos de alumnado. La vista previa respeta el formato A4. Las descargas HTML y CSV están agrupadas en Acciones; Imprimir/PDF es la acción principal y permite guardar el informe como PDF.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Tipo de informe</h3>
+              <p>Puedes elegir Resumen, Calificaciones o RA superados. Cada tipo cambia las secciones y las gráficas que se incluyen en la vista previa.</p>
+            </article>
+            <article class="punto">
+              <h3>Ámbito del informe</h3>
+              <p>El selector de alumnado permite generar el informe de todo el grupo o centrarte en un alumno concreto. El número de alumnos se muestra junto al selector.</p>
+            </article>
+            <article class="punto">
+              <h3>Contenido</h3>
+              <p>El informe puede incluir notas, RA/CE, formación en empresa, datos de alumnado y gráficas. Antes de exportar, elige qué secciones quieres incluir.</p>
+            </article>
+            <article class="punto">
+              <h3>Exportación</h3>
+              <p>Imprimir/PDF es la acción principal. HTML y CSV están en el menú Acciones. La vista previa respeta el formato A4 y refleja las secciones seleccionadas.</p>
+            </article>
+            <article class="punto">
+              <h3>Uso recomendado</h3>
+              <p>Revisa la vista previa antes de imprimir y comprueba que el alumno o el grupo seleccionado son correctos. El informe se genera con los datos guardados en ese momento.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="grupos">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">14</span>
+          <div>
+            <h2>Grupos y cursos</h2>
+            <p class="seccion__resumen">Crea los grupos de clase, cambia de curso académico y consulta el alumnado y los criterios de cada grupo.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/grupos.png" target="_blank" rel="noreferrer">
+          <img src="guia/grupos.png" alt="Captura de Grupos y cursos" loading="lazy" />
+          <span class="captura__pie">Captura real de Grupos y cursos · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>El grupo es la unidad de trabajo de toda la aplicación: un módulo, un curso, una modalidad y un curso académico. Los grupos se crean desde Gestionar grupos o desde el botón Nuevo grupo de la barra lateral. El nombre se genera automáticamente con las siglas del módulo.</p><p>El curso académico se calcula por fecha y se cambia desde la barra lateral. Al cambiar de curso, la lista de grupos se filtra. Los cursos se pueden renombrar y borrar si no tienen grupos; el curso activo vacío se puede borrar y se volverá a crear al guardar un grupo.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Curso académico</h3>
+              <p>El curso se calcula por fecha y se cambia desde la barra lateral. La lista de grupos y el dashboard se filtran por el curso activo.</p>
+            </article>
+            <article class="punto">
+              <h3>Crear un grupo</h3>
+              <p>Se elige ciclo, módulo, curso y modalidad. El nombre se genera con las siglas del módulo, por ejemplo «2º DAW · DWES · Presencial».</p>
+            </article>
+            <article class="punto">
+              <h3>Editar y borrar</h3>
+              <p>Puedes editar los datos del grupo y borrarlo con confirmación. Antes de borrar, revisa que no necesites conservar sus entregas, notas o programación.</p>
+            </article>
+            <article class="punto">
+              <h3>Gestionar cursos</h3>
+              <p>Los cursos se pueden renombrar y borrar si no tienen grupos. El curso actual vacío se puede borrar y se recreará al guardar un grupo.</p>
+            </article>
+            <article class="punto">
+              <h3>Entrar al grupo</h3>
+              <p>Al seleccionar un grupo se abre su dashboard. Desde la barra superior puedes entrar a programación, faltas, entregas, calificaciones, alumnado, programación didáctica e informes.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="plantillas">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">15</span>
+          <div>
+            <h2>Plantillas de criterios</h2>
+            <p class="seccion__resumen">Reutiliza criterios de calificación entre grupos del mismo módulo y modalidad.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/plantillas.png" target="_blank" rel="noreferrer">
+          <img src="guia/plantillas.png" alt="Captura de Plantillas de criterios" loading="lazy" />
+          <span class="captura__pie">Captura real de Plantillas de criterios · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Una plantilla guarda un modelo de criterios para reutilizarlo. Se crea desde los criterios de un grupo y se aplica automáticamente a los grupos nuevos que tengan el mismo módulo y modalidad.</p><p>Las plantillas se editan en una página propia, no en un modal. Si cambias una plantilla, conviene revisar qué grupos nuevos deben crearse o qué grupos existentes quieres actualizar. La copia de criterios a los grupos del mismo módulo se hace desde la propia pantalla de Criterios.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Qué guarda una plantilla</h3>
+              <p>Guarda categorías, pesos, avaluaciones, RA, mínimos y pesos propios por trimestre. Es el modelo completo de cálculo, no solo una lista de nombres.</p>
+            </article>
+            <article class="punto">
+              <h3>Cuándo se aplica</h3>
+              <p>Los grupos nuevos del mismo módulo y modalidad reciben automáticamente la plantilla. Los grupos existentes no se modifican solos al cambiar la plantilla.</p>
+            </article>
+            <article class="punto">
+              <h3>Editar una plantilla</h3>
+              <p>Se abre en una página propia con el mismo editor de criterios. Puedes ajustar los pesos y guardar los cambios sin entrar en cada grupo.</p>
+            </article>
+            <article class="punto">
+              <h3>Llevar criterios a grupos existentes</h3>
+              <p>Desde Criterios de un grupo puedes usar «Copiar al mismo módulo» para aplicar sus criterios a otros grupos del mismo módulo. Revisa antes qué grupos se van a actualizar.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="backups">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">16</span>
+          <div>
+            <h2>Copias de seguridad</h2>
+            <p class="seccion__resumen">Guarda cada grupo en un JSON local y restaura solo el grupo que necesites.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/backups.png" target="_blank" rel="noreferrer">
+          <img src="guia/backups.png" alt="Captura de Copias de seguridad" loading="lazy" />
+          <span class="captura__pie">Captura real de Copias de seguridad · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Las copias de seguridad son locales. Se elige una carpeta raíz y la aplicación crea una subcarpeta por curso académico. Cada grupo se guarda como un JSON autocontenido con alumnado, criterios, entregas, notas, evidencias, programación, unidades, eventos, formación y archivos en base64.</p><p>La aplicación avisa si la carpeta no está configurada o desaparece. También puede crear una copia automática al abrirse si detecta cambios en el contenido de un grupo. Al importar una copia se restaura solo ese grupo; si ya existe uno con la misma identidad, se sustituye su contenido.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Elegir la carpeta</h3>
+              <p>La carpeta raíz se configura una vez y la aplicación crea dentro una subcarpeta por curso académico. Puedes cambiarla cuando quieras desde esta pantalla.</p>
+            </article>
+            <article class="punto">
+              <h3>Contenido de la copia</h3>
+              <p>Cada grupo se guarda en un JSON autocontenido: alumnado, criterios, entregas, notas, evidencias, programación, unidades, eventos, formación y archivos en base64.</p>
+            </article>
+            <article class="punto">
+              <h3>Copia automática</h3>
+              <p>Al abrir la aplicación se comprueba si cambió el contenido de algún grupo. Si cambió, se crea una copia automática para no perder los últimos cambios.</p>
+            </article>
+            <article class="punto">
+              <h3>Importar una copia</h3>
+              <p>La importación restaura solo el grupo seleccionado. Si ya existe un grupo con la misma identidad, se sustituye su contenido; los demás grupos no se tocan.</p>
+            </article>
+            <article class="punto">
+              <h3>Avisos y errores</h3>
+              <p>Si la carpeta no está configurada o ha desaparecido, la aplicación muestra un aviso. Revisa la ruta antes de dar por buena una copia manual.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="normativa">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">17</span>
+          <div>
+            <h2>Normativa FP</h2>
+            <p class="seccion__resumen">Consulta la normativa y actualiza el contenido desde la barra lateral.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/normativa.png" target="_blank" rel="noreferrer">
+          <img src="guia/normativa.png" alt="Captura de Normativa FP" loading="lazy" />
+          <span class="captura__pie">Captura real de Normativa FP · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Normativa FP es una guía de consulta a pantalla completa. Se abre manteniendo la barra lateral para que no pierdas el contexto del grupo y permite buscar y leer la normativa disponible.</p><p>La importación de normativa se hace desde Opciones globales. Al importar se sustituye el contenido de consulta; no cambia por sí sola las notas, los criterios ni las programaciones ya guardadas.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Consulta a pantalla completa</h3>
+              <p>La normativa se abre en una vista de lectura amplia, manteniendo la barra lateral para conservar el contexto del grupo.</p>
+            </article>
+            <article class="punto">
+              <h3>Importar normativa</h3>
+              <p>La importación está en Opciones globales. Al terminar, la aplicación actualiza el contenido y vuelve a la pantalla de normativa.</p>
+            </article>
+            <article class="punto">
+              <h3>Efecto de la importación</h3>
+              <p>Importar normativa sustituye el contenido de consulta, pero no modifica por sí solo las notas, criterios, programaciones o copias ya guardadas.</p>
+            </article>
+            <article class="punto">
+              <h3>Relación con RA/CE</h3>
+              <p>La normativa sirve de referencia para interpretar los RA y CE del módulo. Los datos concretos de evaluación siguen viviendo en los criterios y en las unidades.</p>
+            </article>
+        </div>
+      </section>
+      <section class="seccion" id="global">
+        <div class="seccion__cabecera">
+          <span class="seccion__numero">18</span>
+          <div>
+            <h2>Opciones globales</h2>
+            <p class="seccion__resumen">El menú inferior de la barra lateral reúne las herramientas que no pertenecen a un único grupo.</p>
+          </div>
+        </div>
+        <a class="captura" href="guia/global-menu.png" target="_blank" rel="noreferrer">
+          <img src="guia/global-menu.png" alt="Captura de Opciones globales" loading="lazy" />
+          <span class="captura__pie">Captura real de Opciones globales · clic para ampliar</span>
+        </a>
+        <div class="seccion__texto">
+          <p>Opciones globales está al final de la barra lateral. Desde ahí se gestionan los grupos, los cursos académicos, las plantillas, el control de faltas, las copias de seguridad, la guía, la normativa y la importación de normativa.</p><p>En la previsualización web aparecen además dos acciones de datos de prueba: restaurar los datos de ejemplo y eliminarlos. Estas acciones no afectan a la aplicación de escritorio. La guía de uso también está en este menú para poder consultarla sin perder la pantalla en la que estás.</p>
+        </div>
+        <div class="puntos">
+          
+            <article class="punto">
+              <h3>Gestionar grupos</h3>
+              <p>Abre la lista de grupos del curso activo. Desde ahí puedes crear, editar, borrar y entrar al dashboard de cada grupo.</p>
+            </article>
+            <article class="punto">
+              <h3>Cursos académicos</h3>
+              <p>Permite renombrar o borrar cursos sin grupos. El curso activo se cambia desde el selector superior de la barra lateral.</p>
+            </article>
+            <article class="punto">
+              <h3>Plantillas</h3>
+              <p>Reutiliza criterios entre grupos del mismo módulo y modalidad. Los grupos nuevos reciben la plantilla automáticamente.</p>
+            </article>
+            <article class="punto">
+              <h3>Control de faltas</h3>
+              <p>Abre la vista de tutoría para importar PDFs de ITACA, configurar módulos y consultar el historial de faltas.</p>
+            </article>
+            <article class="punto">
+              <h3>Copias de seguridad</h3>
+              <p>Configura la carpeta, crea copias manuales o restaura un grupo concreto desde su JSON.</p>
+            </article>
+            <article class="punto">
+              <h3>Guía de uso</h3>
+              <p>Abre esta guía completa con capturas. La ayuda contextual de cada sección se abre desde el botón Ayuda de la barra superior.</p>
+            </article>
+            <article class="punto">
+              <h3>Normativa FP e Importar normativa</h3>
+              <p>La primera abre la consulta; la segunda importa un nuevo contenido. La importación no cambia por sí sola las notas ni los criterios.</p>
+            </article>
+            <article class="punto">
+              <h3>Datos de prueba</h3>
+              <p>Solo aparecen en la previsualización web. Permiten restaurar el grupo de ejemplo o vaciar los datos simulados; no afectan a la aplicación de escritorio.</p>
+            </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="pie__interior">
+        <span>Aula Nova · Guía de uso · v1.0.0</span>
+        <span>Manuel Sánchez Gomis · me.sanchezgomis@edu.gva.es</span>
+      </div>
+    </footer>
+  </body>
+</html>

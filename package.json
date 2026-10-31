@@ -28,7 +28,8 @@
     "dist:mac": "npm run build && electron-builder --mac",
     "dist:win": "npm run build && electron-builder --win",
     "dist:linux": "npm run build && electron-builder --linux",
-    "dist:all": "npm run build && electron-builder --mac --win --linux"
+    "dist:all": "npm run build && electron-builder --mac --win --linux",
+    "guia:html": "node scripts/generar-guia-html.mjs"
   },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.2",

@@ -22,11 +22,11 @@ También se generan los ZIP de macOS en `dist/`.
 ## SHA-256
 
 ```text
-b8c8b35c9f1872624368e6b1e540348bdec4f45ad351f8bcc17645e303bfd4ca  AulaNova-1.0.0-mac-arm64.dmg
-f54b317bfa2252a895c455a9d01dba7659e6c415a95c81e2872eff6c0a8f07bf  AulaNova-1.0.0-mac-x64.dmg
-25751e1cd46320f216e3da750fd770d98a33c0e018498a2a589562233dbf770e  AulaNova-1.0.0-win-x64-setup.exe
-16ac5a21957e2f6cbf7b53f916f3284d47782e0f2466639dd77e05878cfc615f  AulaNova-1.0.0-linux-x86_64.AppImage
-227bffa5fba42315977ca33dc25c968a3a903fb1ce568d31b61fe49da5329e58  aula-nova_1.0.0_amd64.deb
+7261012be8a323b907144a69e904338d8c0022a272266f35ea466bc65e181bdf  dist/AulaNova-1.0.0-mac-arm64.dmg
+7ba98c5b5acbbeecad168dce8a63aeb98f60d606812a37682e5be0ed676eb1c2  dist/AulaNova-1.0.0-mac-x64.dmg
+fc5c7cefae48e04b8490b39ecd67383d41072d8b773c6a0fb9e680ae45c129af  dist/AulaNova-1.0.0-win-x64-setup.exe
+ef9ef17a64216daae6e8de44087bbdd87f69a93949bf01f407e7527631b3aea3  dist/AulaNova-1.0.0-linux-x86_64.AppImage
+93077d003014ca880082a6178b7096bc8d153626b25a503d56b88d969e175337  dist/aula-nova_1.0.0_amd64.deb
 ```
 
 ## Notas de instalación
