@@ -1969,7 +1969,12 @@ const api = {
     guardar: async (configuracion: ConfiguracionGeneral): Promise<ConfiguracionGeneral> => {
       escribirConfiguracionGeneral(configuracion)
       return configuracion
-    }
+    },
+    cabeceraDocumento: async (): Promise<string> =>
+      generarCabeceraDocumento(leerConfiguracionGeneral(), {
+        conselleria: conselleriaLogo,
+        unionEuropea: unionEuropeaLogo
+      })
   },
   boe: {
     listarCiclos: async (): Promise<ResumenCiclo[]> => {

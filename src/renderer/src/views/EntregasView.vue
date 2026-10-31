@@ -27,6 +27,7 @@ const alumnos = ref<AlumnoClase[]>([])
 const unidades = ref<UnidadProgramacion[]>([])
 const fichaHtml = ref('')
 const fichaTitulo = ref('')
+const cabeceraHtml = ref('')
 const mostrarFicha = ref(false)
 const cargando = ref(true)
 const error = ref<string | null>(null)
@@ -185,10 +186,18 @@ async function cargar(): Promise<void> {
       error.value = 'No se ha encontrado el grupo.'
       return
     }
-    criterios.value = await window.api.criterios.obtener(grupo.value.id)
-    entregas.value = await window.api.entregasClase.listar(grupo.value.id)
-    alumnos.value = await window.api.alumnosClase.listar(grupo.value.id)
-    unidades.value = await window.api.unidadesProgramacion.listar(grupo.value.id)
+    const [modelo, listaEntregas, listaAlumnos, listaUnidades, cabecera] = await Promise.all([
+      window.api.criterios.obtener(grupo.value.id),
+      window.api.entregasClase.listar(grupo.value.id),
+      window.api.alumnosClase.listar(grupo.value.id),
+      window.api.unidadesProgramacion.listar(grupo.value.id),
+      window.api.configuracion.cabeceraDocumento()
+    ])
+    criterios.value = modelo
+    entregas.value = listaEntregas
+    alumnos.value = listaAlumnos
+    unidades.value = listaUnidades
+    cabeceraHtml.value = cabecera
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -241,7 +250,7 @@ function ejecutarAccion(entrega: EntregaClase, accion: string): void {
 function abrirFicha(entrega: EntregaClase): void {
   if (!grupo.value) return
   const unidad = unidades.value.find((item) => item.id === entrega.unidad_id) ?? null
-  fichaHtml.value = generarHtmlFichaEntrega({ grupo: grupo.value, entrega, unidad })
+  fichaHtml.value = `${cabeceraHtml.value}${generarHtmlFichaEntrega({ grupo: grupo.value, entrega, unidad })}`
   fichaTitulo.value = entrega.titulo
   mostrarFicha.value = true
 }

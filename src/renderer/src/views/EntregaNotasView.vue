@@ -41,6 +41,7 @@ const desbloqueando = ref(false)
 const error = ref<string | null>(null)
 const errorGuardado = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
+const cabeceraHtml = ref('')
 
 const grupoId = computed(() => Number(route.params.grupoId))
 const entregaId = computed(() => Number(route.params.entregaId))
@@ -56,11 +57,11 @@ const unidad = computed(
 
 const fichaHtml = computed(() => {
   if (!grupo.value || !entrega.value) return ''
-  return generarHtmlFichaEntrega({
+  return `${cabeceraHtml.value}${generarHtmlFichaEntrega({
     grupo: grupo.value,
     entrega: entrega.value,
     unidad: unidad.value
-  })
+  })}`
 })
 
 const fichaDocumento = computed(
@@ -133,11 +134,13 @@ async function cargar(): Promise<void> {
       error.value = 'No se ha encontrado el grupo.'
       return
     }
-    const [entregas, modelo, listaUnidades] = await Promise.all([
+    const [entregas, modelo, listaUnidades, cabecera] = await Promise.all([
       window.api.entregasClase.listar(grupo.value.id),
       window.api.criterios.obtener(grupo.value.id),
-      window.api.unidadesProgramacion.listar(grupo.value.id)
+      window.api.unidadesProgramacion.listar(grupo.value.id),
+      window.api.configuracion.cabeceraDocumento()
     ])
+    cabeceraHtml.value = cabecera
     entrega.value = entregas.find((item) => item.id === entregaId.value) ?? null
     criterios.value = modelo
     unidades.value = listaUnidades
