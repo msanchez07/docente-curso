@@ -66,6 +66,15 @@ jobs:
           set -o pipefail
           npx electron-builder --${{ matrix.objetivo }} --publish never 2>&1 | tee "$RUNNER_TEMP/empaquetado.log"
 
+      - name: Normalizar nombres de ZIP de macOS
+        if: matrix.objetivo == 'mac'
+        shell: bash
+        run: |
+          for f in dist/*.zip; do
+            [ -e "$f" ] || continue
+            cp "$f" "${f// /-}"
+          done
+
       - name: Resumen del error
         if: failure()
         shell: bash
