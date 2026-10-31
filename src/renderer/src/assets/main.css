@@ -8067,6 +8067,18 @@ a:focus-visible {
   line-height: 1.65;
 }
 
+.guia__explicacion p,
+.guia__puntos li span,
+.ayuda-seccion__explicacion p,
+.ayuda-seccion__puntos li span,
+.guia__detalle-cabecera .tenue,
+.guia__portada .tenue,
+.guia__pasos,
+.ayuda-seccion > .tenue {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .guia__explicacion p {
   margin: 0 0 10px;
 }

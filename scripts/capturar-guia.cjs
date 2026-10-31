@@ -13,6 +13,7 @@ app.disableHardwareAcceleration()
 
 const capturas = [
   ['dashboard', '#/grupo/1'],
+  ['horario', '#/grupo/1/horario'],
   ['programacion', '#/grupo/1/programacion'],
   ['programacion-didactica', '#/grupo/1/programacion-didactica'],
   ['criterios', '#/grupo/1/criterios'],

@@ -1,4 +1,5 @@
 import dashboard from '../assets/guia/dashboard.png'
+import horario from '../assets/guia/horario.png'
 import programacion from '../assets/guia/programacion.png'
 import programacionDidactica from '../assets/guia/programacion-didactica.png'
 import criterios from '../assets/guia/criterios.png'
@@ -46,7 +47,7 @@ export const seccionesGuia: SeccionGuia[] = [
     ],
     imagen: dashboard,
     ruta: '/grupo/:grupoId',
-    rutas: ['grupo', 'horario-grupo'],
+    rutas: ['grupo'],
     puntos: [
       {
         titulo: 'Navegación superior',
@@ -72,6 +73,45 @@ export const seccionesGuia: SeccionGuia[] = [
         titulo: 'Accesos rápidos',
         detalle:
           'Desde las tarjetas y los enlaces «Ver programación», «Ver calificaciones» o «Ver planificación» puedes saltar directamente a la sección relacionada sin pasar por el menú.'
+      }
+    ]
+  },
+  {
+    id: 'horario',
+    titulo: 'Horario semanal',
+    resumen: 'Consulta la distribución semanal de sesiones, recreos y tutorías del grupo.',
+    explicacion: [
+      'La vista de horario muestra la semana completa del grupo en bloques de 55 minutos. La columna del día actual aparece resaltada y los recreos se dibujan como franjas separadas entre mañana y tarde.',
+      'En presencial se ven las sesiones del módulo. En semipresencial también aparecen las tutorías colectivas e individuales, con colores distintos. El botón Editar en el grupo abre el formulario del grupo para cambiar los bloques.'
+    ],
+    imagen: horario,
+    ruta: '/grupo/:grupoId/horario',
+    rutas: ['horario-grupo'],
+    puntos: [
+      {
+        titulo: 'Bloques de 55 minutos',
+        detalle:
+          'La tabla muestra las franjas horarias de mañana y tarde. Cada bloque representa una sesión de 55 minutos y los recreos aparecen como separadores entre tramos.'
+      },
+      {
+        titulo: 'Sesiones y tutorías',
+        detalle:
+          'En presencial se muestran las sesiones del módulo. En semipresencial se añaden tutorías colectivas e individuales, con colores distintos para distinguirlas de una sesión normal.'
+      },
+      {
+        titulo: 'Día actual',
+        detalle:
+          'La columna del día de hoy queda resaltada para localizar rápidamente qué toca. La cabecera indica el curso académico y el grupo al que pertenece el horario.'
+      },
+      {
+        titulo: 'Resumen de la semana',
+        detalle:
+          'Las etiquetas superiores indican el número de sesiones y la duración del bloque. La leyenda inferior explica qué representa cada color.'
+      },
+      {
+        titulo: 'Editar el horario',
+        detalle:
+          'El enlace Editar en el grupo abre el formulario del grupo, donde se marcan los bloques de cada día y se configuran las tutorías de la modalidad semipresencial.'
       }
     ]
   },
