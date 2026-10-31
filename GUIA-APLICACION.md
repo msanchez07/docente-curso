@@ -153,17 +153,14 @@ El menú **Opciones globales** de la barra lateral reúne:
 
 ### Dashboard del curso
 
-Es el **punto de entrada** de la aplicación. Muestra todos los módulos del curso activo:
+Es el **punto de entrada** de la aplicación. Toda la pantalla gira alrededor de un único
+calendario con todos los módulos del curso activo:
 
-- número de módulos;
-- módulos con riesgo;
-- notas pendientes de corregir;
-- casos de riesgo agregados;
-- calendario y próximas fechas de todos los módulos, con colores por módulo y modalidad;
-- tabla de módulos agrupada por curso, con próxima sesión, próximo hito, pendientes y riesgo;
-- ningún listado de alumnado: el detalle de alumnado vive en cada módulo.
-
-Desde cada tarjeta se entra al dashboard del grupo correspondiente.
+- entregas, exámenes, evaluaciones y días no lectivos;
+- etiquetas por módulo dentro de cada día, con enlace al dashboard del módulo;
+- colores estables por módulo y leyenda de modalidad;
+- navegación mensual y botón Hoy;
+- sin tablas de alumnado, colas de trabajo ni listados de módulos.
 
 ### Dashboard del grupo
 

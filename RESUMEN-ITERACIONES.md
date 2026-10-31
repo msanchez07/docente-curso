@@ -53,11 +53,11 @@ Vite/electron-vite + Vitest**.
 
 #### Dashboard del curso (punto de entrada)
 
-- Vista de conjunto de todos los módulos del curso académico activo, en tabla compacta agrupada por curso.
-- Totales de módulos, notas pendientes, módulos con riesgo y casos de riesgo agregados.
-- Calendario y próximas fechas de todos los módulos, con colores automáticos por módulo y modalidad.
-- Cola de trabajo agregada y riesgo por módulo, sin listados de alumnado.
-- Acceso directo al dashboard de cada módulo.
+- Calendario único de todos los módulos del curso académico activo.
+- Entregas, exámenes, evaluaciones y días no lectivos, con etiquetas por módulo.
+- Colores automáticos por módulo y leyenda de modalidad presencial/semipresencial.
+- Enlace al dashboard de cada módulo desde las etiquetas y la leyenda.
+- Sin tablas de alumnado, colas de trabajo ni listados de módulos.
 
 #### Dashboard del grupo
 

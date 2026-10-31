@@ -84,6 +84,11 @@ app.whenReady().then(async () => {
           ?.click()
       `)
       await esperar(350)
+    } else if (accionExtra === 'siguiente') {
+      await ventana.webContents.executeJavaScript(`
+        document.querySelector('button[aria-label="Mes siguiente"]')?.click()
+      `)
+      await esperar(350)
     } else if (accionExtra === 'global') {
       await ventana.webContents.executeJavaScript(`
         document.querySelector('.menu-global summary')?.click()

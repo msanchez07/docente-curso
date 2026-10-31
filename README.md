@@ -31,10 +31,10 @@ Aplicación funcional en desarrollo activo. Verificación actual:
     varias posibles por día y colores distintos.
   - Vista independiente de horario desde el dashboard.
 - **Dashboard del curso** como punto de entrada de la aplicación:
-  - Todos los módulos del curso en una sola pantalla, en una tabla compacta agrupada por curso.
-  - Totales de módulos, notas pendientes, módulos con riesgo y casos de riesgo agregados.
-  - Calendario y próximas fechas de todos los módulos, con colores automáticos por módulo y modalidad.
-  - Cola de trabajo y riesgo por módulo, sin listados de alumnado.
+  - Calendario único con entregas, exámenes, evaluaciones y no lectivos de todos los módulos.
+  - Etiquetas por módulo dentro de cada día, con enlace al dashboard del módulo.
+  - Colores automáticos por módulo y leyenda de modalidad presencial/semipresencial.
+  - Sin tablas de alumnado, colas de trabajo ni listados de módulos.
 - **Dashboard del grupo** centrado en la acción y el calendario:
   - **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,
     Faltas, Entregas, Calificaciones) y Consulta (Alumnado, Programación didáctica, Informes),

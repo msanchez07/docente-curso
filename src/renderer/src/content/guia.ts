@@ -40,40 +40,39 @@ export const seccionesGuia: SeccionGuia[] = [
   {
     id: 'dashboard-curso',
     titulo: 'Dashboard del curso',
-    resumen:
-      'Reúne todos los módulos del curso en una sola pantalla: fechas, pendientes y riesgo agregado.',
+    resumen: 'Punto de entrada de la aplicación: un calendario con todos los módulos del curso.',
     explicacion: [
-      'El dashboard del curso es la vista de conjunto y el punto de entrada de la aplicación. En lugar de entrar módulo a módulo, muestra cuántos módulos hay, cuántas notas quedan por poner, cuántos casos de riesgo hay y en cuántos módulos aparecen.',
-      'Los módulos se agrupan por curso en una tabla compacta, con próxima sesión, próximo hito, pendientes y riesgo. A la derecha tienes el calendario general y las próximas fechas de todos los módulos; debajo, la cola de trabajo.'
+      'El dashboard del curso es la vista de conjunto y la pantalla inicial. No muestra tablas de alumnado ni listados de módulos: todo gira alrededor del calendario, que reúne entregas, exámenes, evaluaciones y días no lectivos de todos los grupos.',
+      'Cada módulo tiene un color estable. Las etiquetas dentro de cada día indican el módulo y el hito, y llevan al dashboard de ese módulo. La leyenda de módulos y la leyenda de modalidad permiten leer el calendario de un vistazo.'
     ],
     imagen: dashboardCurso,
     ruta: '/dashboard',
     rutas: ['dashboard-curso'],
     puntos: [
       {
-        titulo: 'Módulos del curso',
+        titulo: 'Calendario de todos los módulos',
         detalle:
-          'Los módulos se agrupan por curso en una tabla compacta: siglas, nombre, próxima sesión, próximo hito, pendientes y riesgo. El borde azul indica presencial y el violeta semipresencial; la leyenda está sobre la tabla.'
+          'Un único calendario mensual reúne los hitos de todos los módulos del curso. Puedes cambiar de mes o volver al mes actual con Hoy.'
       },
       {
-        titulo: 'Calendario general',
+        titulo: 'Etiquetas por módulo',
         detalle:
-          'El calendario reúne entregas, exámenes, evaluaciones y días no lectivos de todos los módulos. La aplicación asigna un color estable a cada módulo y pinta una barra en la celda; la leyenda inferior permite identificar los módulos de un vistazo.'
+          'Cada día muestra hasta dos etiquetas con las siglas del módulo y el título del hito. Si hay más, aparece un contador; la etiqueta abre el dashboard del módulo.'
       },
       {
-        titulo: 'Próximas fechas',
+        titulo: 'Colores estables',
         detalle:
-          'La lista ordena los próximos hitos de todos los grupos e indica el módulo. El punto del módulo usa el color de la modalidad: azul para presencial y violeta para semipresencial.'
+          'La aplicación asigna automáticamente un color a cada módulo. La leyenda superior permite identificar los módulos y el color no cambia al navegar entre meses.'
       },
       {
-        titulo: 'Cola de trabajo',
+        titulo: 'Modalidad',
         detalle:
-          'La cola muestra las entregas con más notas pendientes entre todos los módulos. Cada fila indica el módulo al que pertenece y lleva directamente a la entrega para corregir.'
+          'La leyenda azul/violeta indica presencial o semipresencial. Las etiquetas del calendario usan el color del módulo, no el de la modalidad.'
       },
       {
-        titulo: 'Riesgo agregado',
+        titulo: 'Sin ruido',
         detalle:
-          'Los indicadores de riesgo son de módulo, no un listado de alumnado. Así ves qué módulos necesitan atención sin convertir el panel general en una vista de expedientes.'
+          'No hay tablas de alumnado, colas de trabajo ni listados de módulos en esta pantalla. Esas tareas se consultan desde el dashboard de cada módulo.'
       }
     ]
   },

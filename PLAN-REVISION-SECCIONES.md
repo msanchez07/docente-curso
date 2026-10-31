@@ -27,7 +27,7 @@ Cada sección se define con esta ficha antes de tocar código:
 
 - **Barra izquierda:** todos los grupos, con alumnado, estado de criterios y acceso a
   «Gestionar grupos» y «Plantillas».
-- **Centro:** dashboard del curso como entrada, con todos los módulos, y dashboard del grupo
+- **Centro:** dashboard del curso como entrada, con un calendario global de todos los módulos, y dashboard del grupo
   con:
   - cabecera del grupo,
   - **Ahora** (quincena actual),
@@ -205,7 +205,7 @@ Ficha completa en `PROPUESTA-ALUMNADO.md`.
 | 30 oct 2026 | **Acciones**: menús desplegables con iconos; guardados con notificaciones emergentes de color.                  |
 | 31 oct 2026 | **Criterios**: pesos de categorías generales y pesos propios optativos por trimestre.                           |
 | 31 oct 2026 | **Guía**: completa con capturas en Opciones globales y ayuda contextual por sección en la barra superior.       |
-| 31 oct 2026 | **Dashboard del curso**: entrada de la aplicación, todos los módulos, alumnado compartido y calendario global.  |
+| 31 oct 2026 | **Dashboard del curso**: entrada de la aplicación con calendario global de todos los módulos.                   |
 
 ## Curso académico (transversal)
 
@@ -221,8 +221,8 @@ Ficha completa en `PROPUESTA-ALUMNADO.md`.
 
 ## Dashboard y experiencia de uso
 
-- El **dashboard del curso** es la entrada de la aplicación y reúne todos los módulos, calendario global,
-  pendientes y riesgo agregado.
+- El **dashboard del curso** es la entrada de la aplicación y muestra un calendario global con todos los
+  módulos, sus entregas, exámenes, evaluaciones y días no lectivos.
 - La navegación de grupo vive en una **barra superior común**: Dashboard, Día a día
   (Programación, Horario, Faltas, Entregas y Calificaciones) y Consulta (Alumnado,
   Programación didáctica e Informes), con separadores verticales y sin rótulos intermedios.

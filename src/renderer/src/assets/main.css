@@ -8672,3 +8672,112 @@ a:focus-visible {
 .dashboard__modulos-tabla .dashboard__enlace {
   margin-top: 0;
 }
+
+.dashboard__calendario-general {
+  padding: 20px;
+}
+
+.dashboard__modulo-leyenda {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--texto);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.dashboard__modulo-leyenda:hover {
+  text-decoration: underline;
+}
+
+.dashboard__modulo-leyenda i {
+  width: 14px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.dashboard__calendario-general .agenda-mini {
+  margin: 12px 0 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.calendario-general__grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.calendario-general__celda {
+  align-items: stretch;
+  min-height: 96px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.calendario-general__celda--seleccionada {
+  border-color: var(--acento);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.18);
+}
+
+.calendario-general__eventos {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  margin-top: 4px;
+}
+
+.calendario-general__evento {
+  display: block;
+  overflow: hidden;
+  padding: 3px 4px;
+  border-left: 3px solid #64748b;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.72);
+  color: #344054;
+  font-size: 9px;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.calendario-general__evento strong {
+  font-weight: 750;
+}
+
+.calendario-general__evento:hover {
+  background: #ffffff;
+  color: var(--acento);
+}
+
+.calendario-general__evento--curso {
+  border-left-color: #98a2b3;
+}
+
+.calendario-general__mas {
+  color: var(--tenue);
+  font-size: 9px;
+  font-weight: 650;
+}
+
+.dashboard__calendario-pie {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .dashboard__calendario-pie {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .calendario-general__celda {
+    min-height: 76px;
+  }
+}
