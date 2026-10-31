@@ -35,16 +35,6 @@ function parrafos(texto: string | null, vacio = 'Sin contenido.'): string {
     .join('')
 }
 
-function tipoEtiqueta(tipo: string): string {
-  const etiquetas: Record<string, string> = {
-    tarea: 'Tarea',
-    practica: 'Práctica',
-    examen: 'Examen',
-    proyecto: 'Proyecto'
-  }
-  return etiquetas[tipo] ?? tipo
-}
-
 /**
  * Documento limpio para imprimir un examen o una entrega.
  *
@@ -53,47 +43,30 @@ function tipoEtiqueta(tipo: string): string {
  * pie institucionales.
  */
 export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): string {
-  const { entrega, grupo, unidad } = datos
-  const unidadTexto = unidad
-    ? `${unidad.codigo ?? 'UD'}${unidad.nombre ? ` · ${unidad.nombre}` : ''}`
-    : 'Sin unidad asignada'
+  const { entrega } = datos
 
   return `<article style="width:100%;max-width:100%;box-sizing:border-box;margin:0;background:#fff;color:#1f2937;font-family:Georgia,'Times New Roman',serif;line-height:1.65;">
     <section style="border:1px solid #cfd9e5;border-radius:10px;overflow:hidden;margin:0 0 22px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
       <div style="height:5px;background:#1e3a5f;"></div>
-      <div style="padding:18px 22px 16px;background:#f8fafc;">
-        <div style="color:#6b7c93;font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;">
-          ${escapar(grupo.modulo_codigo)} · ${escapar(tipoEtiqueta(entrega.tipo))}
-        </div>
-        <h1 style="font-family:Georgia,'Times New Roman',serif;color:#102a43;font-size:25px;line-height:1.2;margin:5px 0 5px;font-weight:700;">
+      <div style="padding:20px 22px 18px;background:#f8fafc;">
+        <h1 style="font-family:Georgia,'Times New Roman',serif;color:#102a43;font-size:26px;line-height:1.2;margin:0;font-weight:700;">
           ${escapar(entrega.titulo)}
         </h1>
-        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;color:#52657a;font-size:10.5px;line-height:1.4;">
-          <span>${escapar(grupo.modulo_nombre)}</span>
-          <span style="color:#b7791f;">•</span>
-          <span>${escapar(grupo.curso_academico_nombre)}</span>
-          <span style="color:#b7791f;">•</span>
-          <span>${escapar(unidadTexto)}</span>
-        </div>
-        <div style="width:46px;height:2px;background:#b7791f;margin:11px 0 0;"></div>
+        <div style="width:46px;height:2px;background:#b7791f;margin:12px 0 0;"></div>
       </div>
 
       <div style="border-top:1px solid #dbe3ec;padding:12px 22px 15px;background:#fff;">
         <table style="width:100%;border-collapse:collapse;font-size:10.5px;color:#374151;">
           <tr>
-            <td style="width:37%;padding:0 18px 0 0;vertical-align:bottom;">
+            <td style="width:52%;padding:0 18px 0 0;vertical-align:bottom;">
               <div style="font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7c93;margin-bottom:5px;">Nombre y apellidos</div>
               <div style="height:19px;border-bottom:1px solid #9aa7b8;"></div>
             </td>
-            <td style="width:17%;padding:0 18px 0 0;vertical-align:bottom;">
+            <td style="width:20%;padding:0 18px 0 0;vertical-align:bottom;">
               <div style="font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7c93;margin-bottom:5px;">DNI</div>
               <div style="height:19px;border-bottom:1px solid #9aa7b8;"></div>
             </td>
-            <td style="width:26%;padding:0 18px 0 0;vertical-align:bottom;">
-              <div style="font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7c93;margin-bottom:5px;">Grupo</div>
-              <div style="min-height:19px;font-size:10px;font-weight:600;color:#102a43;border-bottom:1px solid #dbe3ec;padding-bottom:3px;">${escapar(grupo.nombre.replace(/\s*·\s*(Presencial|Semipresencial)$/i, ''))}</div>
-            </td>
-            <td style="width:20%;padding:0;vertical-align:bottom;">
+            <td style="width:28%;padding:0;vertical-align:bottom;">
               <div style="font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7c93;margin-bottom:5px;">Fecha</div>
               <div style="min-height:19px;font-size:10.5px;font-weight:600;color:#102a43;border-bottom:1px solid #dbe3ec;padding-bottom:3px;">${escapar(fechaCorta(entrega.fecha_limite))}</div>
             </td>
