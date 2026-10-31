@@ -4,7 +4,7 @@
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
 
 **Última actualización:** 31/10/2026  
-**Versión verificada:** 208 tests, `typecheck`, `build` y `smoke` en verde.
+**Versión verificada:** 211 tests, `typecheck`, `build` y `smoke` en verde.
 
 ---
 
@@ -130,8 +130,12 @@ El menú **Opciones globales** de la barra lateral reúne:
 - **Control de faltas**.
 - **Copias de seguridad**.
 - **Guía de uso**.
+- **Configuración general**.
 - **Normativa FP** e **Importar normativa**.
 - **Restaurar/Eliminar datos de prueba**, solo en la previsualización web.
+
+La **Configuración general** permite rellenar los datos del profesorado y del centro, y subir el
+logo del instituto en PNG. Se guarda en la base de datos local.
 
 ---
 

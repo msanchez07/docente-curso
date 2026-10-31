@@ -8917,3 +8917,36 @@ a:focus-visible {
 .dashboard__calendario-acciones .navegacion-grupo__ayuda {
   margin-left: 0;
 }
+
+.configuracion__logo {
+  margin-top: 12px;
+}
+
+.configuracion__logo-preview {
+  display: block;
+  width: min(280px, 100%);
+  max-height: 180px;
+  object-fit: contain;
+  padding: 14px;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.configuracion__logo-vacio {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 22px;
+  border: 1px dashed var(--borde-fuerte);
+  border-radius: 10px;
+  background: #fbfcfd;
+}
+
+.configuracion__acciones {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--borde);
+}

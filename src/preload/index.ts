@@ -7,6 +7,10 @@ const api: Api = {
   app: {
     version: () => ipcRenderer.invoke(CANALES.appVersion)
   },
+  configuracion: {
+    obtener: () => ipcRenderer.invoke(CANALES.configuracionObtener),
+    guardar: (configuracion) => ipcRenderer.invoke(CANALES.configuracionGuardar, configuracion)
+  },
   boe: {
     listarCiclos: () => ipcRenderer.invoke(CANALES.boeListarCiclos),
     obtenerCiclo: (id) => ipcRenderer.invoke(CANALES.boeObtenerCiclo, id),

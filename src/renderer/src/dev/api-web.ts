@@ -27,6 +27,7 @@ import { parsearEntradaAlumnos } from '@shared/importar-alumnos'
 import { validarHtmlNormativa } from '@shared/normativa'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto, REQUISITOS_POR_DEFECTO } from '@shared/modelo'
+import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
 import { normalizarPresentacion } from '@shared/presentacion'
 import JSZip from 'jszip'
 import type {
@@ -52,6 +53,7 @@ import type {
   Api,
   Ciclo,
   CriterioDisponible,
+  ConfiguracionGeneral,
   CursoAcademico,
   DiaCalendario,
   CursoAcademicoEntrada,
@@ -102,6 +104,7 @@ const CLAVE_FALTAS = 'gestion-entregas:faltas-clase'
 const CLAVE_DEMO = 'gestion-entregas:demo-cargado'
 const CLAVE_PRESENTACION = 'gestion-entregas:presentacion'
 const CLAVE_CONVOCATORIAS = 'gestion-entregas:convocatorias'
+const CLAVE_CONFIGURACION = 'gestion-entregas:configuracion-general'
 
 type GrupoGuardado = Omit<
   GrupoClase,
@@ -1931,9 +1934,35 @@ function escribirPresentacion(config: PresentacionConfig): PresentacionConfig {
   return normalizada
 }
 
+function leerConfiguracionGeneral(): ConfiguracionGeneral {
+  try {
+    const crudo = localStorage.getItem(CLAVE_CONFIGURACION)
+    if (!crudo) return { ...CONFIGURACION_GENERAL_POR_DEFECTO }
+    const datos = JSON.parse(crudo) as Partial<ConfiguracionGeneral>
+    return {
+      profesor: { ...CONFIGURACION_GENERAL_POR_DEFECTO.profesor, ...(datos.profesor ?? {}) },
+      centro: { ...CONFIGURACION_GENERAL_POR_DEFECTO.centro, ...(datos.centro ?? {}) },
+      logo: datos.logo ?? null
+    }
+  } catch {
+    return { ...CONFIGURACION_GENERAL_POR_DEFECTO }
+  }
+}
+
+function escribirConfiguracionGeneral(configuracion: ConfiguracionGeneral): void {
+  localStorage.setItem(CLAVE_CONFIGURACION, JSON.stringify(configuracion))
+}
+
 const api = {
   app: {
     version: async () => '0.1.0-web'
+  },
+  configuracion: {
+    obtener: async (): Promise<ConfiguracionGeneral> => leerConfiguracionGeneral(),
+    guardar: async (configuracion: ConfiguracionGeneral): Promise<ConfiguracionGeneral> => {
+      escribirConfiguracionGeneral(configuracion)
+      return configuracion
+    }
   },
   boe: {
     listarCiclos: async (): Promise<ResumenCiclo[]> => {

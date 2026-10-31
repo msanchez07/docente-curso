@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **208 tests**
+- `npm test` ✅ **211 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -104,6 +104,10 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Copia automática al abrir la aplicación si el contenido de un grupo cambió.
 - **Menú de opciones globales** en la barra lateral (cursos, plantillas, copias, normativa y
   datos de prueba).
+- **Configuración general**:
+  - Datos del profesorado y del centro educativo.
+  - Logo del centro en PNG con vista previa y límite de tamaño.
+  - Guardado local, sin servicios externos.
 - **Interfaz homogénea**:
   - Menús **Acciones** desplegables con iconos para las operaciones secundarias.
   - Notificaciones emergentes de guardado, error y aviso, en lugar de mensajes perdidos en la

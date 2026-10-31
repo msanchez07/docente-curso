@@ -7,7 +7,7 @@
 
 **Última actualización:** 31/10/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **208 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **211 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -188,7 +188,14 @@ Vite/electron-vite + Vitest**.
 - **Guía integrada** en Opciones globales, con capturas reales de cada sección, y **Ayuda
   contextual** en la barra superior de grupo.
 
-### 2.10. Persistencia y migraciones
+### 2.10. Configuración general
+
+- Datos del profesorado: nombre, apellidos, correo, teléfono y departamento.
+- Datos del centro: nombre, dirección, localidad, provincia, código postal, teléfono, correo y web.
+- Logo del centro en PNG, con vista previa y límite de 2 MB.
+- Guardado local en la tabla `config`; no se envía a ningún servicio externo.
+
+### 2.11. Persistencia y migraciones
 
 - SQLite con migraciones versionadas (`PRAGMA user_version`).
 - Última migración aplicada: **v37**.
@@ -277,7 +284,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual (31/10/2026): **208 tests**, 33 archivos de test, build y smoke correctos.
+Estado actual (31/10/2026): **211 tests**, 34 archivos de test, build y smoke correctos.
 
 ---
 
@@ -321,4 +328,5 @@ Al cerrar cada iteración:
 | 31/10/2026 | Guía integrada          | Guía completa con capturas en Opciones globales y ayuda contextual por sección.                                                         |
 | 31/10/2026 | Dashboard operativo     | Resumen de hoy, cola de trabajo, alumnado en riesgo, agenda y bloque plegable de estado.                                                |
 | 31/10/2026 | Calendario del curso    | Entrada de la aplicación con calendario global de todos los módulos y enlaces directos.                                                 |
+| 31/10/2026 | Configuración general   | Datos de profesorado y centro, logo PNG, guardado local y ayuda integrada.                                                              |
 | 31/10/2026 | Calendario del curso    | Filtros por módulo y tipo, detalle del día, enlaces directos y exportación PDF/.ics.                                                    |

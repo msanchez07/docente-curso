@@ -1159,9 +1159,50 @@ export interface PresentacionConfig {
 
 /* --- API (preload) ---------------------------------------------------- */
 
+export interface ConfiguracionGeneral {
+  profesor: {
+    nombre: string
+    apellidos: string
+    email: string
+    telefono: string
+    departamento: string
+  }
+  centro: {
+    nombre: string
+    direccion: string
+    localidad: string
+    provincia: string
+    codigoPostal: string
+    telefono: string
+    email: string
+    web: string
+  }
+  /** Logo del centro como data URL PNG. */
+  logo: string | null
+}
+
+export const CONFIGURACION_GENERAL_POR_DEFECTO: ConfiguracionGeneral = {
+  profesor: { nombre: '', apellidos: '', email: '', telefono: '', departamento: '' },
+  centro: {
+    nombre: '',
+    direccion: '',
+    localidad: '',
+    provincia: '',
+    codigoPostal: '',
+    telefono: '',
+    email: '',
+    web: ''
+  },
+  logo: null
+}
+
 export interface Api {
   app: {
     version(): Promise<string>
+  }
+  configuracion: {
+    obtener(): Promise<ConfiguracionGeneral>
+    guardar(configuracion: ConfiguracionGeneral): Promise<ConfiguracionGeneral>
   }
   boe: {
     listarCiclos(): Promise<ResumenCiclo[]>
@@ -1517,6 +1558,8 @@ export const CANALES = {
   informesHtml: 'informes:html',
   informesPdf: 'informes:pdf',
   informesCsv: 'informes:csv',
+  configuracionObtener: 'configuracion:obtener',
+  configuracionGuardar: 'configuracion:guardar',
   backupEstado: 'backup:estado',
   backupElegirCarpeta: 'backup:elegirCarpeta',
   backupCarpetaRecomendada: 'backup:carpetaRecomendada',

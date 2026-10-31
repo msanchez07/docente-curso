@@ -184,11 +184,21 @@ import {
   listarBackups,
   usarCarpetaRecomendada
 } from '../backup/servicio'
+import {
+  guardarConfiguracionGeneral,
+  obtenerConfiguracionGeneral
+} from '../db/repositorios/configuracion-general'
 
 export function registrarIpc(): void {
   const bd = (): ReturnType<typeof obtenerBd> => obtenerBd()
 
   ipcMain.handle(CANALES.appVersion, () => app.getVersion())
+
+  // Configuración general de la aplicación.
+  ipcMain.handle(CANALES.configuracionObtener, () => obtenerConfiguracionGeneral(bd()))
+  ipcMain.handle(CANALES.configuracionGuardar, (_e, configuracion) =>
+    guardarConfiguracionGeneral(bd(), configuracion)
+  )
 
   // Datos del BOE (desde la base de datos ya sembrada).
   ipcMain.handle(CANALES.boeListarCiclos, () => listarCiclos(bd()))

@@ -37,6 +37,7 @@ Cada sección se define con esta ficha antes de tocar código:
   - accesos a las secciones.
 - **Rutas:**
   - `/calendario` — calendario del curso y punto de entrada.
+  - `/configuracion` — datos del profesorado, centro y logo.
   - `/grupo/:id` — dashboard del grupo.
   - `/grupo/:id/programacion` — programación de aula.
   - `/grupo/:id/programacion-didactica` — unidades, fechas, criterios y RA/CE.
@@ -206,6 +207,7 @@ Ficha completa en `PROPUESTA-ALUMNADO.md`.
 | 31 oct 2026 | **Criterios**: pesos de categorías generales y pesos propios optativos por trimestre.                           |
 | 31 oct 2026 | **Guía**: completa con capturas en Opciones globales y ayuda contextual por sección en la barra superior.       |
 | 31 oct 2026 | **Calendario del curso**: entrada de la aplicación con calendario global de todos los módulos.                  |
+| 31 oct 2026 | **Configuración general**: datos de profesorado y centro, logo PNG y guardado local.                            |
 
 ## Curso académico (transversal)
 

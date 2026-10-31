@@ -27,6 +27,7 @@ const capturas = [
   ['grupos', '#/grupos'],
   ['plantillas', '#/plantillas'],
   ['backups', '#/backups'],
+  ['configuracion', '#/configuracion'],
   ['normativa', '#/normativa'],
   ['global-menu', '#/grupo/1', 'global']
 ]

@@ -63,7 +63,8 @@ const mostrarNavegacionGrupo = computed(() => {
     'backups',
     'normativa',
     'guia',
-    'calendario-curso'
+    'calendario-curso',
+    'configuracion'
   ].includes(nombre)
 })
 
@@ -255,6 +256,9 @@ async function importarNormativa(evento: Event): Promise<void> {
           </RouterLink>
           <RouterLink to="/backups" class="menu__enlace" @click="cerrarMenuGlobal">
             Copias de seguridad
+          </RouterLink>
+          <RouterLink to="/configuracion" class="menu__enlace" @click="cerrarMenuGlobal">
+            Configuración general
           </RouterLink>
           <RouterLink to="/guia" class="menu__enlace" @click="cerrarMenuGlobal">
             Guía de uso

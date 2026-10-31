@@ -14,6 +14,7 @@ import grupos from '../assets/guia/grupos.png'
 import plantillas from '../assets/guia/plantillas.png'
 import backups from '../assets/guia/backups.png'
 import normativa from '../assets/guia/normativa.png'
+import configuracion from '../assets/guia/configuracion.png'
 import globalMenu from '../assets/guia/global-menu.png'
 
 export interface PuntoGuia {
@@ -103,6 +104,40 @@ export const seccionesGuia: SeccionGuia[] = [
         titulo: 'Sin ruido',
         detalle:
           'No hay tablas de alumnado, colas de trabajo ni listados de módulos en esta pantalla. Esas tareas se consultan desde el dashboard de cada módulo.'
+      }
+    ]
+  },
+  {
+    id: 'configuracion',
+    titulo: 'Configuración general',
+    resumen: 'Datos del profesorado, del centro educativo y logo PNG de la aplicación.',
+    explicacion: [
+      'Configuración general es el lugar para identificar la instalación: quién la usa, qué centro aparece y qué logo se quiere mostrar. Los datos se guardan en el equipo, no en un servicio externo.',
+      'El logo debe ser un PNG de hasta 2 MB. Se puede cambiar o quitar cuando haga falta. Los campos de profesorado y centro están separados para que puedas completar solo lo que necesites.'
+    ],
+    imagen: configuracion,
+    ruta: '/configuracion',
+    rutas: ['configuracion'],
+    puntos: [
+      {
+        titulo: 'Profesorado',
+        detalle:
+          'Nombre, apellidos, correo, teléfono y departamento de la persona que utiliza la aplicación. Son datos de identificación, no credenciales de acceso.'
+      },
+      {
+        titulo: 'Centro educativo',
+        detalle:
+          'Nombre, dirección, localidad, provincia, código postal, teléfono, correo y web del instituto. Se guardan para la identificación de la aplicación.'
+      },
+      {
+        titulo: 'Logo PNG',
+        detalle:
+          'Selecciona una imagen PNG de hasta 2 MB. La vista previa aparece antes de guardar y puedes quitar el logo cuando quieras.'
+      },
+      {
+        titulo: 'Guardado local',
+        detalle:
+          'La configuración se guarda en la base de datos local. No se envía a ningún servidor ni se sincroniza entre equipos.'
       }
     ]
   },
