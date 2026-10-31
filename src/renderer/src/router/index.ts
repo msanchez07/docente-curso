@@ -14,7 +14,6 @@ import EntregasView from '@renderer/views/EntregasView.vue'
 import EventosEvaluacionView from '@renderer/views/EventosEvaluacionView.vue'
 import GrupoDashboardView from '@renderer/views/GrupoDashboardView.vue'
 import GruposView from '@renderer/views/GruposView.vue'
-import HomeView from '@renderer/views/HomeView.vue'
 import InformesView from '@renderer/views/InformesView.vue'
 import NormativaView from '@renderer/views/NormativaView.vue'
 import ProgramacionView from '@renderer/views/ProgramacionView.vue'
@@ -25,6 +24,7 @@ import PlantillasView from '@renderer/views/PlantillasView.vue'
 import PlantillaFormView from '@renderer/views/PlantillaFormView.vue'
 import BackupsView from '@renderer/views/BackupsView.vue'
 import GuiaView from '@renderer/views/GuiaView.vue'
+import DashboardCursoView from '@renderer/views/DashboardCursoView.vue'
 import { registrarNavegacion } from '@renderer/composables/volver'
 
 // Solo Grupos por ahora. Las demás vistas siguen en `views/` y se irán
@@ -32,8 +32,9 @@ import { registrarNavegacion } from '@renderer/composables/volver'
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: '/', component: HomeView },
+    { path: '/', redirect: { name: 'dashboard-curso' } },
     { path: '/grupos', name: 'grupos', component: GruposView },
+    { path: '/dashboard', name: 'dashboard-curso', component: DashboardCursoView },
     { path: '/cursos', name: 'cursos', component: CursosView },
     { path: '/plantillas', name: 'plantillas', component: PlantillasView },
     { path: '/backups', name: 'backups', component: BackupsView },

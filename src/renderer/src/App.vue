@@ -191,6 +191,9 @@ async function importarNormativa(evento: Event): Promise<void> {
       </div>
 
       <nav class="menu" aria-label="Grupos">
+        <RouterLink to="/dashboard" class="menu__enlace menu__enlace--general">
+          Dashboard del curso
+        </RouterLink>
         <div class="menu__titulo">Grupos</div>
 
         <p v-if="grupos.cargando && grupos.grupos.length === 0" class="menu__vacio">Cargando…</p>

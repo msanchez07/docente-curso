@@ -12,6 +12,7 @@ const path = require('node:path')
 app.disableHardwareAcceleration()
 
 const capturas = [
+  ['dashboard-curso', '#/dashboard'],
   ['dashboard', '#/grupo/1'],
   ['horario', '#/grupo/1/horario'],
   ['programacion', '#/grupo/1/programacion'],
@@ -54,6 +55,13 @@ app.whenReady().then(async () => {
   ventana.webContents.on('console-message', (_evento, nivel, mensaje) => {
     if (nivel >= 2) console.error(`[renderer] ${mensaje}`)
   })
+
+  if (process.env.CAPTURA_RESET === '1') {
+    await ventana.loadURL('http://localhost:5173/')
+    await esperar(400)
+    await ventana.webContents.executeJavaScript('localStorage.clear(); location.reload()')
+    await esperar(1000)
+  }
 
   const filtro = process.env.CAPTURA_RUTA
   const lista = filtro ? [['guia', filtro]] : capturas

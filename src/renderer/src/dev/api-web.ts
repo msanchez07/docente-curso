@@ -1153,7 +1153,7 @@ function escribirDemo(): void {
   const modulosFaltas = [
     {
       moduloCodigo: '0612',
-      grupoId: null,
+      grupoId: 2,
       nombre: 'Desarrollo Web en entorno cliente',
       nombreInforme: 'DWEC',
       horas: 80
@@ -1174,7 +1174,7 @@ function escribirDemo(): void {
     },
     {
       moduloCodigo: '0615',
-      grupoId: null,
+      grupoId: 3,
       nombre: 'Diseño de interfaces web',
       nombreInforme: 'DIW',
       horas: 80
@@ -1196,11 +1196,11 @@ function escribirDemo(): void {
   ]
   const faltasOctubre = alumnos.map((alumno, indice) => ({
     alumnoId: alumno.id,
-    faltas: { '0612': indice + 1, '0613': indice * 2 + 2 }
+    faltas: { '0612': indice + 1, '0613': indice * 2 + 2, '0615': indice + 1 }
   }))
   const faltasNoviembre = alumnos.map((alumno, indice) => ({
     alumnoId: alumno.id,
-    faltas: { '0612': indice + 2, '0613': indice * 3 + 4 }
+    faltas: { '0612': indice + 2, '0613': indice * 3 + 4, '0615': indice + 2 }
   }))
   localStorage.setItem(
     CLAVE_FALTAS,
@@ -1256,6 +1256,393 @@ function escribirDemo(): void {
       }
     })
   )
+  sembrarDemoExtra()
+}
+
+/** Añade dos módulos más al escenario de ejemplo para probar el panel general. */
+function sembrarDemoExtra(): void {
+  const grupos = leer()
+  if (grupos.some((grupo) => grupo.id === 2)) return
+
+  const gruposExtra: GrupoGuardado[] = [
+    {
+      id: 2,
+      curso_academico_id: 1,
+      ciclo_id: 'daw',
+      ciclo_nombre: 'Desarrollo de Aplicaciones Web',
+      curso: '2',
+      modalidad: 'presencial',
+      modulo_codigo: '0612',
+      modulo_nombre: 'Desarrollo web en entorno cliente',
+      modulo_siglas: 'DWEC',
+      nombre: '2º DAW · DWEC · Presencial',
+      dias_semana: { 2: 2, 4: 2 },
+      tutorias_semana: {},
+      bloques_semana: {
+        2: [
+          { inicio: '10:00', tipo: 'sesion' },
+          { inicio: '10:55', tipo: 'sesion' }
+        ],
+        4: [
+          { inicio: '10:00', tipo: 'sesion' },
+          { inicio: '10:55', tipo: 'sesion' }
+        ]
+      },
+      creado_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 3,
+      curso_academico_id: 1,
+      ciclo_id: 'daw',
+      ciclo_nombre: 'Desarrollo de Aplicaciones Web',
+      curso: '2',
+      modulo_codigo: '0615',
+      modulo_nombre: 'Diseño de interfaces web',
+      modulo_siglas: 'DIW',
+      modalidad: 'semipresencial',
+      nombre: '2º DAW · DIW · Semipresencial',
+      dias_semana: { 2: 1, 4: 1 },
+      tutorias_semana: {},
+      bloques_semana: {
+        2: [{ inicio: '12:10', tipo: 'sesion' }],
+        4: [{ inicio: '12:10', tipo: 'sesion' }]
+      },
+      creado_en: '2026-10-27 09:00:00'
+    }
+  ]
+  escribir([...grupos, ...gruposExtra])
+
+  const criterios = leerCriterios()
+  criterios['2'] = modeloPorDefecto('presencial')
+  criterios['3'] = modeloPorDefecto('semipresencial')
+  escribirCriterios(criterios)
+
+  const alumnos = leerAlumnos()
+  const nuevos = [
+    { nombre: 'Elena', apellidos: 'Torres', dni: '66666666P', email: 'elena@ejemplo.com' },
+    { nombre: 'Diego', apellidos: 'Ramos', dni: '77777777R', email: 'diego@ejemplo.com' }
+  ]
+  const idsNuevos: number[] = []
+  for (const base of nuevos) {
+    let alumno = alumnos.find((item) => item.email === base.email)
+    if (!alumno) {
+      alumno = { ...base, id: Math.max(0, ...alumnos.map((item) => item.id)) + 1, activo: true }
+      alumnos.push(alumno)
+    }
+    idsNuevos.push(alumno.id)
+  }
+  escribirAlumnos(alumnos)
+
+  const matriculas = leerMatriculas()
+  matriculas['2'] = [1, 2, 3, idsNuevos[0]]
+  matriculas['3'] = [3, 4, 5, idsNuevos[1]]
+  escribirMatriculas(matriculas)
+
+  const unidades = leerUnidades()
+  unidades.push(
+    {
+      id: 3,
+      grupo_clase_id: 2,
+      codigo: 'UD1',
+      nombre: 'JavaScript y consumo de APIs',
+      fecha_inicio: '2026-10-28',
+      fecha_fin: '2026-11-20',
+      avaluacion_id: 'AV1',
+      peso: 100,
+      categorias: [
+        { id: 'examenes', nombre: 'Exámenes', peso: 40 },
+        { id: 'actividades', nombre: 'Actividades', peso: 60 }
+      ],
+      requisitos: REQUISITOS_POR_DEFECTO,
+      contenidos: 'DOM, eventos, asincronía, fetch y consumo de APIs.',
+      observaciones: null,
+      ra_codigos: ['RA1', 'RA2'],
+      criterios: criteriosDemo(['RA1', 'RA2']),
+      sesiones: [],
+      creado_en: '2026-10-27 09:00:00',
+      actualizado_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 4,
+      grupo_clase_id: 2,
+      codigo: 'UD2',
+      nombre: 'Aplicaciones web interactivas',
+      fecha_inicio: '2026-11-23',
+      fecha_fin: '2026-12-20',
+      avaluacion_id: 'AV2',
+      peso: 100,
+      categorias: [
+        { id: 'proyectos', nombre: 'Proyectos', peso: 70 },
+        { id: 'actividades', nombre: 'Actividades', peso: 30 }
+      ],
+      requisitos: REQUISITOS_POR_DEFECTO,
+      contenidos: 'Componentes, estado, validación y experiencia de usuario.',
+      observaciones: null,
+      ra_codigos: ['RA3', 'RA4'],
+      criterios: criteriosDemo(['RA3', 'RA4']),
+      sesiones: [],
+      creado_en: '2026-10-27 09:00:00',
+      actualizado_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 5,
+      grupo_clase_id: 3,
+      codigo: 'UD1',
+      nombre: 'Diseño visual y accesibilidad',
+      fecha_inicio: '2026-10-28',
+      fecha_fin: '2026-12-04',
+      avaluacion_id: 'AV1',
+      peso: 100,
+      categorias: [
+        { id: 'examenes', nombre: 'Exámenes', peso: 40 },
+        { id: 'actividades', nombre: 'Actividades', peso: 60 }
+      ],
+      requisitos: REQUISITOS_POR_DEFECTO,
+      contenidos: 'Color, tipografía, layout, componentes y accesibilidad.',
+      observaciones: null,
+      ra_codigos: ['RA1', 'RA2'],
+      criterios: criteriosDemo(['RA1', 'RA2']),
+      sesiones: [],
+      creado_en: '2026-10-27 09:00:00',
+      actualizado_en: '2026-10-27 09:00:00'
+    }
+  )
+  escribirUnidades(unidades)
+
+  const dias = diasProgramacionDemo()
+  const contenidosDwec = [
+    'DOM y selección de elementos',
+    'Eventos y formularios',
+    'Fetch y consumo de APIs',
+    'Asincronía y promesas',
+    'Validación en cliente',
+    'Estado y persistencia en el navegador'
+  ]
+  const contenidosDiw = [
+    'Color, contraste y jerarquía visual',
+    'Tipografía y legibilidad',
+    'Layout responsive',
+    'Componentes y estados',
+    'Accesibilidad y navegación'
+  ]
+  const programacion = leerProgramacion()
+  programacion['2'] = dias.slice(0, 22).map((dia, indice) => ({
+    id: 1000 + indice,
+    grupo_clase_id: 2,
+    unidad_id: indice < 10 ? 3 : 4,
+    hora: null,
+    orden: 0,
+    ...dia,
+    contenido: contenidosDwec[indice % contenidosDwec.length],
+    creado_en: '2026-10-27 09:00:00',
+    actualizado_en: '2026-10-27 09:00:00'
+  }))
+  programacion['3'] = dias.slice(0, 14).map((dia, indice) => ({
+    id: 2000 + indice,
+    grupo_clase_id: 3,
+    unidad_id: 5,
+    hora: null,
+    orden: 0,
+    ...dia,
+    contenido: contenidosDiw[indice % contenidosDiw.length],
+    creado_en: '2026-10-27 09:00:00',
+    actualizado_en: '2026-10-27 09:00:00'
+  }))
+  escribirProgramacion(programacion)
+
+  const entregas = leerEntregas()
+  entregas['2'] = [
+    {
+      id: 4,
+      grupo_clase_id: 2,
+      titulo: 'Práctica 1: consumo de API',
+      descripcion: 'Consumo de una API pública y renderizado de resultados.',
+      enunciado: 'Crea una pequeña aplicación que consulte una API y muestre los datos.',
+      problema: 'La interfaz debe responder a búsquedas y mostrar estados de carga y error.',
+      restricciones: 'JavaScript sin frameworks. Incluye validación y manejo de errores.',
+      tipo: 'practica',
+      fecha_limite: '2026-11-10',
+      rubrica: 'Consumo de API 40 %, interfaz 30 %, estados 20 %, código 10 %.',
+      rubrica_archivo: null,
+      avaluacion_id: 'AV1',
+      categoria_id: 'actividades',
+      unidad_id: 3,
+      ce_ids: [1, 2],
+      bloqueada: false,
+      creada_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 5,
+      grupo_clase_id: 2,
+      titulo: 'Examen AV1',
+      descripcion: 'Prueba práctica de JavaScript y DOM.',
+      enunciado: 'Resuelve los ejercicios propuestos sobre DOM, eventos y asincronía.',
+      problema: 'Debes demostrar que dominas la manipulación del DOM y el consumo de datos.',
+      restricciones: 'Prueba individual. Duración máxima: una sesión.',
+      tipo: 'examen',
+      fecha_limite: '2026-11-25',
+      rubrica: 'Ejercicios 60 %, calidad 20 %, manejo de errores 20 %.',
+      rubrica_archivo: null,
+      avaluacion_id: 'AV1',
+      categoria_id: 'examenes',
+      unidad_id: 3,
+      ce_ids: [3, 4],
+      bloqueada: false,
+      creada_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 6,
+      grupo_clase_id: 2,
+      titulo: 'Proyecto: interfaz interactiva',
+      descripcion: 'Proyecto de la segunda evaluación.',
+      enunciado: 'Desarrolla una interfaz interactiva y accesible para un caso real.',
+      problema: 'La aplicación debe ser usable, accesible y mantener un estado coherente.',
+      restricciones: 'Incluye documentación y una defensa individual.',
+      tipo: 'proyecto',
+      fecha_limite: '2026-12-16',
+      rubrica: 'Funcionalidad 40 %, accesibilidad 30 %, diseño 20 %, defensa 10 %.',
+      rubrica_archivo: null,
+      avaluacion_id: 'AV2',
+      categoria_id: 'proyectos',
+      unidad_id: 4,
+      ce_ids: [5, 6],
+      bloqueada: false,
+      creada_en: '2026-10-27 09:00:00'
+    }
+  ]
+  entregas['3'] = [
+    {
+      id: 7,
+      grupo_clase_id: 3,
+      titulo: 'Auditoría de accesibilidad',
+      descripcion: 'Revisión de una interfaz aplicando criterios de accesibilidad.',
+      enunciado: 'Analiza una interfaz y propone mejoras de accesibilidad.',
+      problema: 'Hay que identificar barreras reales y priorizar las correcciones.',
+      restricciones: 'Incluye capturas, justificación y propuesta de mejora.',
+      tipo: 'practica',
+      fecha_limite: '2026-11-13',
+      rubrica: 'Análisis 40 %, propuestas 40 %, presentación 20 %.',
+      rubrica_archivo: null,
+      avaluacion_id: 'AV1',
+      categoria_id: 'actividades',
+      unidad_id: 5,
+      ce_ids: [1, 2],
+      bloqueada: false,
+      creada_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 8,
+      grupo_clase_id: 3,
+      titulo: 'Examen AV1',
+      descripcion: 'Prueba de diseño visual y accesibilidad.',
+      enunciado: 'Resuelve el supuesto de diseño y justifica las decisiones.',
+      problema: 'La solución debe cumplir contraste, jerarquía y navegación accesible.',
+      restricciones: 'Prueba individual. Duración máxima: una sesión.',
+      tipo: 'examen',
+      fecha_limite: '2026-11-27',
+      rubrica: 'Contraste 30 %, layout 30 %, accesibilidad 30 %, justificación 10 %.',
+      rubrica_archivo: null,
+      avaluacion_id: 'AV1',
+      categoria_id: 'examenes',
+      unidad_id: 5,
+      ce_ids: [3, 4],
+      bloqueada: false,
+      creada_en: '2026-10-27 09:00:00'
+    }
+  ]
+  escribirEntregas(entregas)
+
+  const notas = leerNotas()
+  notas['2'] = {
+    '1': {
+      '4': { nota: 7.5, observaciones: 'API bien integrada.' },
+      '5': { nota: 8, observaciones: 'Examen correcto.' },
+      '6': { nota: 7, observaciones: 'Proyecto funcional.' }
+    },
+    '2': {
+      '4': { nota: 5, observaciones: 'Faltan estados de error.' },
+      '5': { nota: 4.5, observaciones: 'No alcanza el mínimo.' }
+    },
+    '3': {
+      '4': { nota: 8, observaciones: 'Buen trabajo.' },
+      '5': { nota: 9, observaciones: 'Examen excelente.' },
+      '6': { nota: 8.5, observaciones: 'Proyecto muy completo.' }
+    },
+    [String(idsNuevos[0])]: {
+      '4': { nota: 6, observaciones: 'Entrega básica.' }
+    }
+  }
+  notas['3'] = {
+    '3': {
+      '7': { nota: 8, observaciones: 'Auditoría clara.' },
+      '8': { nota: 9, observaciones: 'Examen muy bueno.' }
+    },
+    '4': {
+      '7': { nota: 4.5, observaciones: 'Faltan mejoras.' },
+      '8': { nota: 3, observaciones: 'No alcanza los mínimos.' }
+    },
+    '5': {
+      '7': { nota: 7, observaciones: 'Correcto.' },
+      '8': { nota: 6, observaciones: 'Suficiente.' }
+    },
+    [String(idsNuevos[1])]: {
+      '7': { nota: 5, observaciones: 'Entrega justa.' }
+    }
+  }
+  escribirNotas(notas)
+
+  const eventos = leerEventosEvaluacion()
+  eventos.push(
+    {
+      id: 4,
+      grupo_clase_id: 2,
+      tipo: 'examen',
+      titulo: 'Examen AV1 · DWEC',
+      fecha: '2026-11-25',
+      hora: '10:00',
+      avaluacion_id: 'AV1',
+      observaciones: 'Aula 2.',
+      creado_en: '2026-10-27 09:00:00',
+      actualizado_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 5,
+      grupo_clase_id: 2,
+      tipo: 'evaluacion',
+      titulo: 'Sesión de evaluación 1ª · DWEC',
+      fecha: '2026-12-10',
+      hora: '18:00',
+      avaluacion_id: 'AV1',
+      observaciones: null,
+      creado_en: '2026-10-27 09:00:00',
+      actualizado_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 6,
+      grupo_clase_id: 3,
+      tipo: 'examen',
+      titulo: 'Examen AV1 · DIW',
+      fecha: '2026-11-27',
+      hora: '12:10',
+      avaluacion_id: 'AV1',
+      observaciones: 'Aula 4.',
+      creado_en: '2026-10-27 09:00:00',
+      actualizado_en: '2026-10-27 09:00:00'
+    },
+    {
+      id: 7,
+      grupo_clase_id: 3,
+      tipo: 'evaluacion',
+      titulo: 'Sesión de evaluación 1ª · DIW',
+      fecha: '2026-12-10',
+      hora: '18:00',
+      avaluacion_id: 'AV1',
+      observaciones: null,
+      creado_en: '2026-10-27 09:00:00',
+      actualizado_en: '2026-10-27 09:00:00'
+    }
+  )
+  escribirEventosEvaluacion(eventos)
 }
 
 function sembrarDemo(): void {

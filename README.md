@@ -30,7 +30,12 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - En semipresencial se marcan sesiones, tutorías colectivas y tutorías individuales, con
     varias posibles por día y colores distintos.
   - Vista independiente de horario desde el dashboard.
-- **Dashboard** centrado en la acción y el calendario:
+- **Dashboard del curso** como punto de entrada de la aplicación:
+  - Todos los módulos del curso en una sola pantalla, en una tabla compacta agrupada por curso.
+  - Totales de módulos, notas pendientes, módulos con riesgo y casos de riesgo agregados.
+  - Calendario y próximas fechas de todos los módulos, con colores automáticos por módulo y modalidad.
+  - Cola de trabajo y riesgo por módulo, sin listados de alumnado.
+- **Dashboard del grupo** centrado en la acción y el calendario:
   - **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,
     Faltas, Entregas, Calificaciones) y Consulta (Alumnado, Programación didáctica, Informes),
     con separadores verticales. Sustituye al botón «Volver» en las vistas de grupo.

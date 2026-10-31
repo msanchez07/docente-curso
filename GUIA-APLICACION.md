@@ -14,7 +14,7 @@
 2. [Puesta en marcha](#2-puesta-en-marcha)
 3. [Navegación general](#3-navegación-general)
 4. [Cursos y grupos](#4-cursos-y-grupos)
-5. [Dashboard del grupo](#5-dashboard-del-grupo)
+5. [Dashboards: curso y grupo](#5-dashboards-curso-y-grupo)
 6. [Programación de aula](#6-programación-de-aula)
 7. [Programación didáctica](#7-programación-didáctica)
 8. [Alumnado y formación en empresa](#8-alumnado-y-formación-en-empresa)
@@ -149,9 +149,25 @@ El menú **Opciones globales** de la barra lateral reúne:
 
 ---
 
-## 5. Dashboard del grupo
+## 5. Dashboards: curso y grupo
 
-El dashboard responde a tres preguntas:
+### Dashboard del curso
+
+Es el **punto de entrada** de la aplicación. Muestra todos los módulos del curso activo:
+
+- número de módulos;
+- módulos con riesgo;
+- notas pendientes de corregir;
+- casos de riesgo agregados;
+- calendario y próximas fechas de todos los módulos, con colores por módulo y modalidad;
+- tabla de módulos agrupada por curso, con próxima sesión, próximo hito, pendientes y riesgo;
+- ningún listado de alumnado: el detalle de alumnado vive en cada módulo.
+
+Desde cada tarjeta se entra al dashboard del grupo correspondiente.
+
+### Dashboard del grupo
+
+El dashboard del grupo responde a tres preguntas:
 
 1. **¿Qué pasa hoy?** Sesiones del día.
 2. **¿Qué tengo que hacer?** Notas por poner y avisos de la cola de trabajo.

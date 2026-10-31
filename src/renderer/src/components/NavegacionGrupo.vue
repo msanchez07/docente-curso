@@ -107,8 +107,14 @@ function activa(id: string): boolean {
   return rutasPorSeccion[id]?.includes(String(route.name)) ?? false
 }
 
+const esDashboardCurso = computed(() => route.name === 'dashboard-curso')
+
 const destinoDashboard = computed(() =>
-  props.grupoId ? { name: 'grupo', params: { id: props.grupoId } } : { name: 'grupos' }
+  props.grupoId
+    ? { name: 'grupo', params: { id: props.grupoId } }
+    : esDashboardCurso.value
+      ? { name: 'dashboard-curso' }
+      : { name: 'grupos' }
 )
 </script>
 
@@ -117,9 +123,9 @@ const destinoDashboard = computed(() =>
     <div class="dashboard__toolbar-grupo">
       <RouterLink
         class="dashboard__tool navegacion-grupo__dashboard"
-        :class="{ 'dashboard__tool--activo': route.name === 'grupo' }"
+        :class="{ 'dashboard__tool--activo': route.name === 'grupo' || esDashboardCurso }"
         :to="destinoDashboard"
-        :aria-current="route.name === 'grupo' ? 'page' : undefined"
+        :aria-current="route.name === 'grupo' || esDashboardCurso ? 'page' : undefined"
       >
         <span class="dashboard__tool-icono">
           <svg
@@ -133,7 +139,7 @@ const destinoDashboard = computed(() =>
             v-html="ICONOS.dashboard"
           ></svg>
         </span>
-        Dashboard
+        {{ esDashboardCurso ? 'Dashboard del curso' : 'Dashboard' }}
       </RouterLink>
     </div>
 

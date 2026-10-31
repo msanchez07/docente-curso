@@ -1,4 +1,5 @@
 import dashboard from '../assets/guia/dashboard.png'
+import dashboardCurso from '../assets/guia/dashboard-curso.png'
 import horario from '../assets/guia/horario.png'
 import programacion from '../assets/guia/programacion.png'
 import programacionDidactica from '../assets/guia/programacion-didactica.png'
@@ -37,8 +38,48 @@ export interface SeccionGuia {
  */
 export const seccionesGuia: SeccionGuia[] = [
   {
+    id: 'dashboard-curso',
+    titulo: 'Dashboard del curso',
+    resumen:
+      'Reúne todos los módulos del curso en una sola pantalla: fechas, pendientes y riesgo agregado.',
+    explicacion: [
+      'El dashboard del curso es la vista de conjunto y el punto de entrada de la aplicación. En lugar de entrar módulo a módulo, muestra cuántos módulos hay, cuántas notas quedan por poner, cuántos casos de riesgo hay y en cuántos módulos aparecen.',
+      'Los módulos se agrupan por curso en una tabla compacta, con próxima sesión, próximo hito, pendientes y riesgo. A la derecha tienes el calendario general y las próximas fechas de todos los módulos; debajo, la cola de trabajo.'
+    ],
+    imagen: dashboardCurso,
+    ruta: '/dashboard',
+    rutas: ['dashboard-curso'],
+    puntos: [
+      {
+        titulo: 'Módulos del curso',
+        detalle:
+          'Los módulos se agrupan por curso en una tabla compacta: siglas, nombre, próxima sesión, próximo hito, pendientes y riesgo. El borde azul indica presencial y el violeta semipresencial; la leyenda está sobre la tabla.'
+      },
+      {
+        titulo: 'Calendario general',
+        detalle:
+          'El calendario reúne entregas, exámenes, evaluaciones y días no lectivos de todos los módulos. La aplicación asigna un color estable a cada módulo y pinta una barra en la celda; la leyenda inferior permite identificar los módulos de un vistazo.'
+      },
+      {
+        titulo: 'Próximas fechas',
+        detalle:
+          'La lista ordena los próximos hitos de todos los grupos e indica el módulo. El punto del módulo usa el color de la modalidad: azul para presencial y violeta para semipresencial.'
+      },
+      {
+        titulo: 'Cola de trabajo',
+        detalle:
+          'La cola muestra las entregas con más notas pendientes entre todos los módulos. Cada fila indica el módulo al que pertenece y lleva directamente a la entrega para corregir.'
+      },
+      {
+        titulo: 'Riesgo agregado',
+        detalle:
+          'Los indicadores de riesgo son de módulo, no un listado de alumnado. Así ves qué módulos necesitan atención sin convertir el panel general en una vista de expedientes.'
+      }
+    ]
+  },
+  {
     id: 'dashboard',
-    titulo: 'Dashboard y navegación',
+    titulo: 'Dashboard del grupo',
     resumen:
       'El dashboard reúne la información importante del grupo y la barra superior permite saltar a cualquier sección.',
     explicacion: [

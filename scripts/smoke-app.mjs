@@ -441,6 +441,12 @@ async function principal() {
     /* --- Interfaz --------------------------------------------------- */
     win.webContents.reload()
     await new Promise((r) => setTimeout(r, 800))
+    const tituloCurso = await ev('document.querySelector(".vista__cabecera h2")?.textContent')
+    comprobar(
+      'la aplicación abre el dashboard del curso',
+      tituloCurso === 'Dashboard del curso',
+      String(tituloCurso)
+    )
     await ev(`location.hash = '#/grupo/${clase.id}'`)
     await new Promise((r) => setTimeout(r, 800))
     const tituloDashboard = await ev(

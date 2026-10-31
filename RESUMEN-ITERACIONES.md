@@ -49,7 +49,17 @@ Vite/electron-vite + Vitest**.
   desmatriculación.
 - Formación en empresa por alumno y periodo, con fechas y empresa. Las FCT no registran horas.
 
-### 2.2. Dashboard del grupo
+### 2.2. Dashboards: curso y grupo
+
+#### Dashboard del curso (punto de entrada)
+
+- Vista de conjunto de todos los módulos del curso académico activo, en tabla compacta agrupada por curso.
+- Totales de módulos, notas pendientes, módulos con riesgo y casos de riesgo agregados.
+- Calendario y próximas fechas de todos los módulos, con colores automáticos por módulo y modalidad.
+- Cola de trabajo agregada y riesgo por módulo, sin listados de alumnado.
+- Acceso directo al dashboard de cada módulo.
+
+#### Dashboard del grupo
 
 - Cabecera del grupo, criterios, RA/CE y accesos rápidos.
 - **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,
@@ -312,3 +322,4 @@ Al cerrar cada iteración:
 | 31/10/2026 | Pesos por trimestre     | Criterios permite pesos de categorías propios por avaluación; las categorías a 0 % no penalizan el trimestre.                           |
 | 31/10/2026 | Guía integrada          | Guía completa con capturas en Opciones globales y ayuda contextual por sección.                                                         |
 | 31/10/2026 | Dashboard operativo     | Resumen de hoy, cola de trabajo, alumnado en riesgo, agenda y bloque plegable de estado.                                                |
+| 31/10/2026 | Dashboard del curso     | Entrada de la aplicación: todos los módulos, calendario global, pendientes y riesgo agregado.                                           |
