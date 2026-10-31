@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **212 tests**
+- `npm test` ✅ **217 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -24,6 +24,11 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 - **Cursos académicos automáticos** por fecha (septiembre–julio); actualmente `2026/2027`.
 - **Grupos** por ciclo, nivel, modalidad y módulo, con nombre generado y curso académico
   asignado automáticamente.
+  - Catálogo oficial de **secuenciación y horarios 2026/2027** de Grado Básico, Medio y
+    Superior, cargado desde los PDFs de la Conselleria.
+  - Buscador de ciclos por nombre, siglas o familia profesional, con filtros por nivel y
+    familia.
+  - Selector de módulos filtrado por curso, con código, horas semanales y horas anuales.
 - **Horario semanal** de bloques de 55 minutos:
   - Mañana 08:00–14:00, recreo 10:45–11:15.
   - Tarde 14:40–21:05, recreo 18:00–18:20.
@@ -144,6 +149,7 @@ npm test           # tests unitarios
 npm run build      # typecheck + build de main, preload y renderer
 npm run smoke      # flujo renderer → preload → IPC → SQLite
 npm run smoke:boe  # lectura de los recursos del BOE
+npm run horarios:parse  # regenera el catálogo desde los PDFs de la Conselleria
 npm run format     # Prettier
 npm run lint       # ESLint
 ```

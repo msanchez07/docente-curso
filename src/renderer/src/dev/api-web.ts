@@ -67,6 +67,7 @@ import type {
   EventoEvaluacionEntrada,
   EvidenciaClase,
   EvidenciaClaseEntrada,
+  CicloCatalogo,
   GrupoClase,
   GrupoClaseEntrada,
   ModeloEvaluacion,
@@ -2012,6 +2013,27 @@ const api = {
       return ciclo.modulos.find((m) => m.codigo === codigo) ?? null
     },
     guardarPesosRa: async () => undefined
+  },
+  catalogo: {
+    listar: async (): Promise<CicloCatalogo[]> => {
+      const ciclo = await cicloDaw()
+      return [
+        {
+          id: ciclo.id,
+          denominacion: ciclo.denominacion,
+          nivel: 'GS',
+          familia_profesional: ciclo.familia_profesional,
+          abreviatura: 'DAW',
+          modulos: ciclo.modulos.map((m) => ({
+            curso: m.curso ?? '1',
+            codigo: m.codigo,
+            nombre: m.nombre,
+            horas_semanales: null,
+            horas_anuales: m.horas_minimas_boe
+          }))
+        }
+      ]
+    }
   },
   bd: {
     estado: async () => ({ ruta: 'localStorage', ciclos: 1, modulos: 13, ra: 86, ce: 665 }),

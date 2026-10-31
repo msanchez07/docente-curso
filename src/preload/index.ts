@@ -19,6 +19,9 @@ const api: Api = {
     obtenerModulo: (codigo) => ipcRenderer.invoke(CANALES.boeObtenerModulo, codigo),
     guardarPesosRa: (modulo, pesos) => ipcRenderer.invoke(CANALES.boeGuardarPesosRa, modulo, pesos)
   },
+  catalogo: {
+    listar: () => ipcRenderer.invoke(CANALES.catalogoListar)
+  },
   bd: {
     estado: () => ipcRenderer.invoke(CANALES.bdEstado),
     listarModulos: (cicloId) => ipcRenderer.invoke(CANALES.bdListarModulos, cicloId),

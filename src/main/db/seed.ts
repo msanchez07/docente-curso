@@ -5,15 +5,17 @@
  * datos oficiales (descripciones, códigos) se actualizan, pero los pesos puestos
  * a mano no se pisan.
  */
-import type { Ciclo } from '@shared/tipos'
+import type { CatalogoHorarios, Ciclo } from '@shared/tipos'
 import type { Bd } from './conexion'
 
 export function sembrarCiclos(db: Bd, ciclos: Ciclo[]): void {
   const upsertCiclo = db.prepare(`
     INSERT INTO ciclos (id, denominacion, nivel, familia_profesional, duracion_horas, ects,
-                        rd, rd_actualizacion, boe_url, boe_url_actualizacion)
+                        rd, rd_actualizacion, boe_url, boe_url_actualizacion,
+                        abreviatura, origen)
     VALUES (@id, @denominacion, @nivel, @familia_profesional, @duracion_horas, @ects,
-            @rd, @rd_actualizacion, @boe_url, @boe_url_actualizacion)
+            @rd, @rd_actualizacion, @boe_url, @boe_url_actualizacion,
+            @abreviatura, 'boe')
     ON CONFLICT(id) DO UPDATE SET
       denominacion          = excluded.denominacion,
       nivel                 = excluded.nivel,
@@ -23,7 +25,9 @@ export function sembrarCiclos(db: Bd, ciclos: Ciclo[]): void {
       rd                    = excluded.rd,
       rd_actualizacion      = excluded.rd_actualizacion,
       boe_url               = excluded.boe_url,
-      boe_url_actualizacion = excluded.boe_url_actualizacion
+      boe_url_actualizacion = excluded.boe_url_actualizacion,
+      abreviatura           = COALESCE(ciclos.abreviatura, excluded.abreviatura),
+      origen                = 'boe'
   `)
 
   const upsertModulo = db.prepare(`
@@ -69,7 +73,8 @@ export function sembrarCiclos(db: Bd, ciclos: Ciclo[]): void {
         rd: ciclo.rd ?? null,
         rd_actualizacion: ciclo.rd_actualizacion ?? null,
         boe_url: ciclo.boe_url ?? null,
-        boe_url_actualizacion: ciclo.boe_url_actualizacion ?? null
+        boe_url_actualizacion: ciclo.boe_url_actualizacion ?? null,
+        abreviatura: ciclo.abreviatura?.trim() || ciclo.id.toUpperCase()
       })
 
       for (const modulo of ciclo.modulos) {
@@ -118,4 +123,49 @@ export function contarBoe(db: Bd): RecuentoBoe {
     ra: uno('SELECT COUNT(*) AS n FROM resultados_aprendizaje'),
     ce: uno('SELECT COUNT(*) AS n FROM criterios_evaluacion')
   }
+}
+
+/**
+ * Siembra el catálogo de secuenciación y horarios.
+ *
+ * Se reemplaza entero en cada arranque para que una actualización de los PDFs
+ * no deje ciclos o módulos antiguos. No toca `ciclos` ni `modulos`: esos se
+ * materializan solo al crear un grupo.
+ */
+export function sembrarCatalogo(db: Bd, catalogo: CatalogoHorarios): void {
+  const insertarCiclo = db.prepare(`
+    INSERT INTO catalogo_ciclos
+      (id, denominacion, nivel, familia_profesional, abreviatura, curso_academico)
+    VALUES (@id, @denominacion, @nivel, @familia_profesional, @abreviatura, @curso_academico)
+  `)
+  const insertarModulo = db.prepare(`
+    INSERT INTO catalogo_modulos
+      (ciclo_id, curso, codigo, nombre, horas_semanales, horas_anuales)
+    VALUES (@ciclo_id, @curso, @codigo, @nombre, @horas_semanales, @horas_anuales)
+  `)
+
+  db.transaction(() => {
+    db.prepare('DELETE FROM catalogo_modulos').run()
+    db.prepare('DELETE FROM catalogo_ciclos').run()
+    for (const ciclo of catalogo.ciclos) {
+      insertarCiclo.run({
+        id: ciclo.id,
+        denominacion: ciclo.denominacion,
+        nivel: ciclo.nivel,
+        familia_profesional: ciclo.familia_profesional,
+        abreviatura: ciclo.abreviatura,
+        curso_academico: catalogo.curso_academico
+      })
+      for (const modulo of ciclo.modulos) {
+        insertarModulo.run({
+          ciclo_id: ciclo.id,
+          curso: modulo.curso,
+          codigo: modulo.codigo,
+          nombre: modulo.nombre,
+          horas_semanales: modulo.horas_semanales,
+          horas_anuales: modulo.horas_anuales
+        })
+      }
+    }
+  })()
 }

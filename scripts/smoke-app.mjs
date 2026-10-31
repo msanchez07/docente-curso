@@ -65,6 +65,13 @@ async function principal() {
     const ciclos = await ev('window.api.boe.listarCiclos()')
     comprobar('ciclo DAW con 13 módulos', ciclos.length === 1 && ciclos[0].modulos === 13)
 
+    const catalogo = await ev('window.api.catalogo.listar()')
+    comprobar(
+      'catálogo oficial de horarios cargado',
+      catalogo.length > 100 && catalogo.find((ciclo) => ciclo.id === 'daw')?.modulos.length === 17,
+      `${catalogo.length} ciclos`
+    )
+
     const estado = await ev('window.api.bd.estado()')
     comprobar('BD sembrada (86 RA, 665 CE)', estado.ra === 86 && estado.ce === 665)
     comprobar('BD aislada en directorio temporal', estado.ruta.startsWith(dirDatos))

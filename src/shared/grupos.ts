@@ -271,7 +271,9 @@ export function nombreGrupoClase(
   cicloId: string,
   curso: Curso,
   modalidad: Modalidad,
-  moduloSiglas: string
+  moduloSiglas: string,
+  cicloAbreviatura?: string
 ): string {
-  return `${curso}º ${cicloId.toUpperCase()} · ${moduloSiglas} · ${etiquetaModalidad(modalidad)}`
+  const abreviatura = (cicloAbreviatura ?? cicloId).trim().toUpperCase()
+  return `${curso}º ${abreviatura} · ${moduloSiglas} · ${etiquetaModalidad(modalidad)}`
 }

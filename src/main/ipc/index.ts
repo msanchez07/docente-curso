@@ -92,6 +92,7 @@ import {
   obtenerModulo,
   guardarPesosRa
 } from '../db/repositorios/boe'
+import { listarCatalogo } from '../db/repositorios/catalogo'
 import { coberturaModulo } from '../db/repositorios/cobertura'
 import {
   actualizarEntrega,
@@ -210,6 +211,9 @@ export function registrarIpc(): void {
   ipcMain.handle(CANALES.boeGuardarPesosRa, (_e, modulo: string, pesos: Record<string, number>) =>
     guardarPesosRa(bd(), modulo, pesos ?? {})
   )
+
+  // Catálogo oficial de ciclos y módulos para crear grupos.
+  ipcMain.handle(CANALES.catalogoListar, () => listarCatalogo(bd()))
 
   // Estado de la base de datos.
   ipcMain.handle(CANALES.bdEstado, () => ({ ruta: rutaBd(), ...contarBoe(bd()) }))

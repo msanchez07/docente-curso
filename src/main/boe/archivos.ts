@@ -6,7 +6,7 @@
 import { app } from 'electron'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import type { Ciclo } from '@shared/tipos'
+import type { CatalogoHorarios, Ciclo } from '@shared/tipos'
 
 export function directorioRecursos(): string {
   const candidatos = app.isPackaged
@@ -40,4 +40,11 @@ export function leerCiclosBoe(): Ciclo[] {
   return ficherosJson(directorioBoe())
     .map((ruta) => leerJson<Ciclo>(ruta))
     .filter((c): c is Ciclo => c !== null)
+}
+
+/** Catálogo de secuenciación y horarios; se usa el primer JSON disponible. */
+export function leerCatalogoHorarios(): CatalogoHorarios | null {
+  const rutas = ficherosJson(join(directorioRecursos(), 'horarios'))
+  if (rutas.length === 0) return null
+  return leerJson<CatalogoHorarios>(rutas[0])
 }

@@ -18,6 +18,7 @@ import {
   siglasDesdeNombre,
   tutoriasDesdeBloques
 } from '@shared/grupos'
+import { asegurarCicloYModulo } from './catalogo'
 import { asegurarCursoActual, obtenerCursoActual } from './cursos-academicos'
 import type {
   BloquesSemana,
@@ -129,10 +130,19 @@ function validar(db: Bd, entrada: GrupoClaseEntrada): Validado {
     .prepare('SELECT ciclo_id, nombre, siglas, curso FROM modulos WHERE codigo = ?')
     .get(entrada.modulo_codigo) as ModuloFila | undefined
   if (!modulo) throw new Error('El módulo indicado no existe.')
-  if (modulo.ciclo_id !== entrada.ciclo_id) {
+
+  // El catálogo de horarios manda sobre `modulos.ciclo_id`: un mismo código
+  // puede aparecer en varios ciclos y solo se guarda una fila por código.
+  const catalogo = db
+    .prepare(
+      `SELECT curso FROM catalogo_modulos
+        WHERE ciclo_id = ? AND curso = ? AND codigo = ?`
+    )
+    .get(entrada.ciclo_id, entrada.curso, entrada.modulo_codigo) as { curso: string } | undefined
+  if (!catalogo && modulo.ciclo_id !== entrada.ciclo_id) {
     throw new Error('El módulo no pertenece al ciclo indicado.')
   }
-  if (modulo.curso && modulo.curso !== entrada.curso) {
+  if (!catalogo && modulo.curso && modulo.curso !== entrada.curso) {
     throw new Error(`El módulo ${siglasDe(modulo)} es de ${modulo.curso}º curso.`)
   }
   const bloquesSemana = normalizarBloquesSemana(entrada.bloques_semana)
@@ -154,12 +164,16 @@ function validar(db: Bd, entrada: GrupoClaseEntrada): Validado {
   }
 }
 
-function nombreDe(validado: Validado): string {
+function nombreDe(db: Bd, validado: Validado): string {
+  const ciclo = db
+    .prepare('SELECT abreviatura FROM ciclos WHERE id = ?')
+    .get(validado.datos.ciclo_id) as { abreviatura: string | null } | undefined
   return nombreGrupoClase(
     validado.datos.ciclo_id,
     validado.datos.curso,
     validado.datos.modalidad,
-    siglasDe(validado.modulo)
+    siglasDe(validado.modulo),
+    ciclo?.abreviatura ?? undefined
   )
 }
 
@@ -203,9 +217,10 @@ function existeCombinacion(
 
 export function crearGrupoClase(db: Bd, entrada: GrupoClaseEntrada): GrupoClase {
   const curso = asegurarCursoActual(db)
+  asegurarCicloYModulo(db, entrada.ciclo_id, entrada.curso, entrada.modulo_codigo)
   const validado = validar(db, { ...entrada, curso_academico_id: curso.id })
   if (existeCombinacion(db, validado.datos)) {
-    throw new Error(`Ya existe el grupo «${nombreDe(validado)}».`)
+    throw new Error(`Ya existe el grupo «${nombreDe(db, validado)}».`)
   }
   const resultado = db
     .prepare(
@@ -217,7 +232,7 @@ export function crearGrupoClase(db: Bd, entrada: GrupoClaseEntrada): GrupoClase 
     )
     .run({
       ...validado.datos,
-      nombre: nombreDe(validado),
+      nombre: nombreDe(db, validado),
       dias_semana: JSON.stringify(validado.datos.dias_semana ?? {}),
       tutorias_semana: JSON.stringify(validado.datos.tutorias_semana ?? {}),
       bloques_semana: JSON.stringify(validado.datos.bloques_semana ?? {})
@@ -232,6 +247,7 @@ export function actualizarGrupoClase(
 ): GrupoClase | null {
   const grupoActual = obtenerGrupoClase(db, id)
   if (!grupoActual) return null
+  asegurarCicloYModulo(db, entrada.ciclo_id, entrada.curso, entrada.modulo_codigo)
   const validado = validar(db, {
     ...entrada,
     curso_academico_id: grupoActual.curso_academico_id,
@@ -240,7 +256,7 @@ export function actualizarGrupoClase(
       entrada.tutorias_semana === undefined ? grupoActual.tutorias_semana : entrada.tutorias_semana
   })
   if (existeCombinacion(db, validado.datos, id)) {
-    throw new Error(`Ya existe el grupo «${nombreDe(validado)}».`)
+    throw new Error(`Ya existe el grupo «${nombreDe(db, validado)}».`)
   }
   db.prepare(
     `UPDATE grupos_clase
@@ -252,7 +268,7 @@ export function actualizarGrupoClase(
       WHERE id = @id`
   ).run({
     ...validado.datos,
-    nombre: nombreDe(validado),
+    nombre: nombreDe(db, validado),
     dias_semana: JSON.stringify(validado.datos.dias_semana ?? {}),
     tutorias_semana: JSON.stringify(validado.datos.tutorias_semana ?? {}),
     bloques_semana: JSON.stringify(validado.datos.bloques_semana ?? {}),

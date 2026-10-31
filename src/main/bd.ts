@@ -6,9 +6,9 @@
  */
 import { app } from 'electron'
 import { join } from 'node:path'
-import { leerCiclosBoe } from './boe/archivos'
+import { leerCatalogoHorarios, leerCiclosBoe } from './boe/archivos'
 import { abrirBd, type Bd } from './db/conexion'
-import { sembrarCiclos } from './db/seed'
+import { sembrarCatalogo, sembrarCiclos } from './db/seed'
 
 let instancia: Bd | null = null
 
@@ -26,6 +26,8 @@ export function inicializarBd(): void {
   const db = obtenerBd()
   const ciclos = leerCiclosBoe()
   if (ciclos.length > 0) sembrarCiclos(db, ciclos)
+  const catalogo = leerCatalogoHorarios()
+  if (catalogo) sembrarCatalogo(db, catalogo)
 }
 
 export function cerrarBd(): void {

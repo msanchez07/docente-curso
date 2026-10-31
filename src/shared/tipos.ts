@@ -37,6 +37,8 @@ export interface Ciclo {
   familia_profesional: string
   duracion_horas: number
   ects: number
+  /** Abreviatura corta para el nombre del grupo (DAW, DAM…). */
+  abreviatura?: string
   rd: string
   rd_actualizacion?: string
   boe_url: string
@@ -62,6 +64,35 @@ export interface ResumenModulo {
   horas_minimas_boe: number | null
   ra: number
   ce: number
+}
+
+/** Catálogo oficial de secuenciación y horarios (PDFs de la Conselleria). */
+export type NivelCatalogo = 'GB' | 'GM' | 'GS'
+
+export interface ModuloCatalogo {
+  curso: Curso
+  codigo: string
+  nombre: string
+  horas_semanales: number | null
+  horas_anuales: number | null
+}
+
+export interface CicloCatalogo {
+  id: string
+  denominacion: string
+  nivel: NivelCatalogo
+  familia_profesional: string
+  /** Abreviatura corta usada en el nombre del grupo (DAW, AF, SMR…). */
+  abreviatura: string
+  modulos: ModuloCatalogo[]
+}
+
+export interface CatalogoHorarios {
+  curso_academico: string
+  fuente: string
+  actualizado: string
+  niveles: NivelCatalogo[]
+  ciclos: CicloCatalogo[]
 }
 
 /* --- Gestión ---------------------------------------------------------- */
@@ -1216,6 +1247,10 @@ export interface Api {
     obtenerModulo(codigo: string): Promise<Modulo | null>
     guardarPesosRa(modulo: string, pesos: Record<string, number>): Promise<void>
   }
+  catalogo: {
+    /** Ciclos y módulos oficiales de 1º y 2º curso para crear grupos. */
+    listar(): Promise<CicloCatalogo[]>
+  }
   bd: {
     estado(): Promise<{ ruta: string; ciclos: number; modulos: number; ra: number; ce: number }>
     listarModulos(cicloId: string): Promise<ResumenModulo[]>
@@ -1456,6 +1491,7 @@ export const CANALES = {
   boeObtenerCiclo: 'boe:obtenerCiclo',
   boeObtenerModulo: 'boe:obtenerModulo',
   boeGuardarPesosRa: 'boe:guardarPesosRa',
+  catalogoListar: 'catalogo:listar',
   bdEstado: 'bd:estado',
   bdListarModulos: 'bd:listarModulos',
   bdVaciar: 'bd:vaciar',

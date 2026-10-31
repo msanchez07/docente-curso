@@ -33,8 +33,9 @@ import type {
   Modulo,
   TipoBloqueHorario,
   ResultadoImportacionClase,
-  ResumenCiclo,
-  ResumenModulo
+  CicloCatalogo,
+  ModuloCatalogo,
+  NivelCatalogo
 } from '@shared/tipos'
 
 const gruposStore = useGruposClaseStore()
@@ -43,13 +44,22 @@ const cursosStore = useCursosAcademicosStore()
 const grupos = computed(() =>
   gruposStore.grupos.filter((grupo) => grupo.curso_academico_id === cursosStore.activoId)
 )
-const ciclos = ref<ResumenCiclo[]>([])
-const modulos = ref<ResumenModulo[]>([])
+const catalogo = ref<CicloCatalogo[]>([])
+const busquedaCiclo = ref('')
+const filtroNivel = ref<'todos' | NivelCatalogo>('todos')
+const filtroFamilia = ref('todas')
+const busquedaModulo = ref('')
 const cargando = ref(true)
 const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
 const router = useRouter()
 const route = useRoute()
+
+const NIVELES: { valor: NivelCatalogo; etiqueta: string }[] = [
+  { valor: 'GB', etiqueta: 'Grado Básico' },
+  { valor: 'GM', etiqueta: 'Grado Medio' },
+  { valor: 'GS', etiqueta: 'Grado Superior' }
+]
 
 const mostrarForm = ref(false)
 const formularioRef = ref<HTMLElement | null>(null)
@@ -110,48 +120,121 @@ const totalCe = computed(
   () => moduloRaCe.value?.ra.reduce((total, ra) => total + ra.ce.length, 0) ?? 0
 )
 
-const moduloSeleccionado = computed(() =>
-  modulos.value.find((m) => m.codigo === form.modulo_codigo)
+const familias = computed(() =>
+  [...new Set(catalogo.value.map((ciclo) => ciclo.familia_profesional))].sort((a, b) =>
+    a.localeCompare(b, 'es')
+  )
 )
+
+const cicloSeleccionado = computed(
+  () => catalogo.value.find((ciclo) => ciclo.id === form.ciclo_id) ?? null
+)
+
+const resultadosCiclos = computed(() => {
+  const termino = normalizar(busquedaCiclo.value)
+  return catalogo.value.filter((ciclo) => {
+    if (filtroNivel.value !== 'todos' && ciclo.nivel !== filtroNivel.value) return false
+    if (filtroFamilia.value !== 'todas' && ciclo.familia_profesional !== filtroFamilia.value) {
+      return false
+    }
+    if (!termino) return true
+    return normalizar(
+      `${ciclo.denominacion} ${ciclo.familia_profesional} ${ciclo.abreviatura} ${ciclo.nivel}`
+    ).includes(termino)
+  })
+})
+
+const cursosDisponibles = computed(() => {
+  if (!cicloSeleccionado.value) return CURSOS
+  return CURSOS.filter((curso) =>
+    cicloSeleccionado.value?.modulos.some((modulo) => modulo.curso === curso)
+  )
+})
 
 /** Solo los módulos que se imparten en el curso elegido. */
 const modulosDelCurso = computed(() =>
-  modulos.value.filter((m) => m.curso === null || m.curso === form.curso)
+  (cicloSeleccionado.value?.modulos ?? []).filter((modulo) => modulo.curso === form.curso)
+)
+
+const modulosFiltrados = computed(() => {
+  const termino = normalizar(busquedaModulo.value)
+  if (!termino) return modulosDelCurso.value
+  return modulosDelCurso.value.filter((modulo) =>
+    normalizar(`${modulo.codigo} ${modulo.nombre}`).includes(termino)
+  )
+})
+
+const totalHorasSemana = computed(() =>
+  modulosDelCurso.value.reduce((total, modulo) => total + (modulo.horas_semanales ?? 0), 0)
+)
+
+const moduloSeleccionado = computed(
+  () => modulosDelCurso.value.find((modulo) => modulo.codigo === form.modulo_codigo) ?? null
 )
 
 const nombrePreview = computed(() => {
   if (!form.ciclo_id || !moduloSeleccionado.value) return '—'
-  const siglas =
-    moduloSeleccionado.value.siglas ?? siglasDesdeNombre(moduloSeleccionado.value.nombre)
-  return nombreGrupoClase(form.ciclo_id, form.curso, form.modalidad, siglas)
+  return nombreGrupoClase(
+    form.ciclo_id,
+    form.curso,
+    form.modalidad,
+    siglasDesdeNombre(moduloSeleccionado.value.nombre),
+    cicloSeleccionado.value?.abreviatura
+  )
 })
 
 const moduloPreview = computed(() => moduloSeleccionado.value?.nombre ?? '')
 
-async function cargarModulos(cicloId: string): Promise<void> {
-  modulos.value = cicloId ? await window.api.bd.listarModulos(cicloId) : []
-  ajustarModulo()
+function normalizar(texto: string): string {
+  return texto
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
 }
 
-/** Mantiene seleccionado un módulo válido para el curso actual. */
-function ajustarModulo(): void {
-  if (!modulosDelCurso.value.some((m) => m.codigo === form.modulo_codigo)) {
-    form.modulo_codigo = modulosDelCurso.value[0]?.codigo ?? ''
-  }
+function nivelEtiqueta(nivel: NivelCatalogo): string {
+  return NIVELES.find((item) => item.valor === nivel)?.etiqueta ?? nivel
+}
+
+function resumenCiclo(ciclo: CicloCatalogo): string {
+  const primero = ciclo.modulos.filter((modulo) => modulo.curso === '1').length
+  const segundo = ciclo.modulos.filter((modulo) => modulo.curso === '2').length
+  return `${primero} mód. en 1º · ${segundo} en 2º`
+}
+
+function seleccionarCiclo(ciclo: CicloCatalogo): void {
+  form.ciclo_id = ciclo.id
+  const disponibles = CURSOS.filter((curso) =>
+    ciclo.modulos.some((modulo) => modulo.curso === curso)
+  )
+  if (!disponibles.includes(form.curso)) form.curso = disponibles[0] ?? '1'
+  form.modulo_codigo = ciclo.modulos.find((modulo) => modulo.curso === form.curso)?.codigo ?? ''
+  busquedaModulo.value = ''
+  errorFormulario.value = null
+}
+
+function cambiarCiclo(): void {
+  form.ciclo_id = ''
+  form.modulo_codigo = ''
+  busquedaModulo.value = ''
+  errorFormulario.value = null
+}
+
+function seleccionarModulo(modulo: ModuloCatalogo): void {
+  form.modulo_codigo = modulo.codigo
 }
 
 async function cargar(): Promise<void> {
   cargando.value = true
   error.value = null
   try {
-    const [listaCiclos] = await Promise.all([
-      window.api.boe.listarCiclos(),
+    const [listaCatalogo] = await Promise.all([
+      window.api.catalogo.listar(),
       gruposStore.cargar(true),
       cursosStore.cargar(true)
     ])
-    ciclos.value = listaCiclos
-    if (!form.ciclo_id) form.ciclo_id = listaCiclos[0]?.id ?? ''
-    await cargarModulos(form.ciclo_id)
+    catalogo.value = listaCatalogo
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -169,14 +252,17 @@ onMounted(async () => {
 
 async function nuevo(): Promise<void> {
   editando.value = null
-  form.ciclo_id = ciclos.value[0]?.id ?? ''
+  form.ciclo_id = ''
   form.curso = '1'
   form.modalidad = 'presencial'
   form.modulo_codigo = ''
   form.dias_semana = {}
   form.bloques_semana = {}
+  busquedaCiclo.value = ''
+  filtroNivel.value = 'todos'
+  filtroFamilia.value = 'todas'
+  busquedaModulo.value = ''
   errorFormulario.value = null
-  await cargarModulos(form.ciclo_id)
   mostrarForm.value = true
   void nextTick(() => formularioRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
 }
@@ -186,27 +272,26 @@ async function editar(grupo: GrupoClase): Promise<void> {
   form.ciclo_id = grupo.ciclo_id
   form.curso = grupo.curso
   form.modalidad = grupo.modalidad
-  form.modulo_codigo = ''
+  form.modulo_codigo = grupo.modulo_codigo
   form.dias_semana = { ...grupo.dias_semana }
   form.bloques_semana =
     Object.keys(grupo.bloques_semana).length > 0
       ? { ...grupo.bloques_semana }
       : bloquesDesdeConteos(grupo.dias_semana)
+  busquedaCiclo.value = ''
+  busquedaModulo.value = ''
   errorFormulario.value = null
-  await cargarModulos(grupo.ciclo_id)
-  form.modulo_codigo = grupo.modulo_codigo
+  if (!catalogo.value.some((ciclo) => ciclo.id === grupo.ciclo_id)) {
+    errorFormulario.value =
+      'Este grupo pertenece a un ciclo que no está en el catálogo de horarios. Se guardará con los datos actuales.'
+  }
   mostrarForm.value = true
   void nextTick(() => formularioRef.value?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
 }
 
-async function alCambiarCiclo(): Promise<void> {
-  form.modulo_codigo = ''
-  await cargarModulos(form.ciclo_id)
-}
-
 function alCambiarCurso(): void {
-  form.modulo_codigo = ''
-  ajustarModulo()
+  busquedaModulo.value = ''
+  form.modulo_codigo = modulosDelCurso.value[0]?.codigo ?? ''
 }
 
 const ORDEN_TIPOS: TipoBloqueHorario[] = ['sesion', 'colectiva', 'individual']
@@ -414,7 +499,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
       <button
         class="boton boton--principal"
         type="button"
-        :disabled="cargando || ciclos.length === 0"
+        :disabled="cargando || catalogo.length === 0"
         @click="nuevo"
       >
         Nuevo grupo
@@ -453,18 +538,84 @@ async function alElegirFichero(evento: Event): Promise<void> {
       </p>
 
       <div class="formulario">
-        <div class="campo">
-          <label for="grupo-ciclo">Ciclo *</label>
-          <select id="grupo-ciclo" v-model="form.ciclo_id" @change="alCambiarCiclo">
-            <option v-for="ciclo in ciclos" :key="ciclo.id" :value="ciclo.id">
-              {{ ciclo.denominacion }}
-            </option>
-          </select>
+        <div class="campo campo--ancho">
+          <span class="campo__etiqueta">Ciclo *</span>
+          <p class="tenue">
+            Secuenciación y horarios oficiales 2026/2027. Busca por nombre, familia o nivel; los
+            módulos se filtran por curso.
+          </p>
+
+          <div v-if="!cicloSeleccionado" class="selector-catalogo">
+            <div class="selector-catalogo__filtros">
+              <input
+                v-model="busquedaCiclo"
+                type="search"
+                placeholder="Buscar ciclo, siglas o familia…"
+                aria-label="Buscar ciclo"
+              />
+              <select v-model="filtroNivel" aria-label="Filtrar por nivel">
+                <option value="todos">Todos los niveles</option>
+                <option v-for="nivel in NIVELES" :key="nivel.valor" :value="nivel.valor">
+                  {{ nivel.etiqueta }}
+                </option>
+              </select>
+              <select v-model="filtroFamilia" aria-label="Filtrar por familia profesional">
+                <option value="todas">Todas las familias</option>
+                <option v-for="familia in familias" :key="familia" :value="familia">
+                  {{ familia }}
+                </option>
+              </select>
+            </div>
+            <p class="tenue selector-catalogo__resumen">
+              {{ resultadosCiclos.length }}
+              {{ resultadosCiclos.length === 1 ? 'ciclo' : 'ciclos' }} · elige uno para ver sus
+              módulos
+            </p>
+            <div class="selector-catalogo__lista" role="group" aria-label="Ciclos disponibles">
+              <button
+                v-for="ciclo in resultadosCiclos"
+                :key="ciclo.id"
+                type="button"
+                class="ciclo-opcion"
+                @click="seleccionarCiclo(ciclo)"
+              >
+                <span class="ciclo-opcion__nombre">{{ ciclo.denominacion }}</span>
+                <span class="ciclo-opcion__meta">
+                  {{ nivelEtiqueta(ciclo.nivel) }} · {{ ciclo.familia_profesional }}
+                </span>
+                <span class="ciclo-opcion__horas">{{ resumenCiclo(ciclo) }}</span>
+              </button>
+              <p v-if="resultadosCiclos.length === 0" class="vacio">
+                No hay ciclos con esos filtros.
+              </p>
+            </div>
+          </div>
+
+          <div v-else class="ciclo-elegido">
+            <div class="ciclo-elegido__datos">
+              <strong>{{ cicloSeleccionado.denominacion }}</strong>
+              <span class="tenue">
+                {{ nivelEtiqueta(cicloSeleccionado.nivel) }} ·
+                {{ cicloSeleccionado.familia_profesional }} · {{ cicloSeleccionado.abreviatura }}
+              </span>
+            </div>
+            <button class="boton boton--sutil" type="button" @click="cambiarCiclo">
+              Cambiar ciclo
+            </button>
+          </div>
         </div>
+
         <div class="campo">
           <label for="grupo-curso">Nivel *</label>
           <select id="grupo-curso" v-model="form.curso" @change="alCambiarCurso">
-            <option v-for="curso in CURSOS" :key="curso" :value="curso">{{ curso }}º</option>
+            <option
+              v-for="curso in CURSOS"
+              :key="curso"
+              :value="curso"
+              :disabled="!cursosDisponibles.includes(curso)"
+            >
+              {{ curso }}º
+            </option>
           </select>
         </div>
         <div class="campo">
@@ -485,14 +636,48 @@ async function alElegirFichero(evento: Event): Promise<void> {
             }}
           </p>
         </div>
-        <div class="campo campo--ancho">
-          <label for="grupo-modulo">Módulo *</label>
-          <select id="grupo-modulo" v-model="form.modulo_codigo">
-            <option v-for="modulo in modulosDelCurso" :key="modulo.codigo" :value="modulo.codigo">
-              {{ modulo.siglas ?? modulo.codigo }} · {{ modulo.nombre }}
-            </option>
-          </select>
+
+        <div v-if="cicloSeleccionado" class="campo campo--ancho">
+          <span class="campo__etiqueta">Módulo *</span>
+          <div class="modulo-cabecera">
+            <input
+              v-model="busquedaModulo"
+              type="search"
+              placeholder="Buscar módulo por código o nombre…"
+              aria-label="Buscar módulo"
+            />
+            <span class="chip">
+              {{ modulosDelCurso.length }} módulos · {{ totalHorasSemana }} h/semana en
+              {{ form.curso }}º
+            </span>
+          </div>
+          <div class="lista-modulos" role="group" aria-label="Módulos del ciclo">
+            <button
+              v-for="modulo in modulosFiltrados"
+              :key="modulo.codigo"
+              type="button"
+              class="modulo-opcion"
+              :class="{ 'modulo-opcion--activo': form.modulo_codigo === modulo.codigo }"
+              :aria-pressed="form.modulo_codigo === modulo.codigo"
+              @click="seleccionarModulo(modulo)"
+            >
+              <span class="modulo-opcion__codigo">{{ modulo.codigo }}</span>
+              <span class="modulo-opcion__nombre">{{ modulo.nombre }}</span>
+              <span class="modulo-opcion__horas">
+                {{ modulo.horas_semanales ?? '—' }} h/sem · {{ modulo.horas_anuales ?? '—' }}
+                h/año
+              </span>
+            </button>
+            <p v-if="modulosFiltrados.length === 0" class="vacio">
+              No hay módulos con ese filtro en {{ form.curso }}º.
+            </p>
+          </div>
         </div>
+        <div v-else class="campo campo--ancho">
+          <span class="campo__etiqueta">Módulo *</span>
+          <p class="tenue">Elige primero un ciclo para cargar sus módulos oficiales.</p>
+        </div>
+
         <div class="campo campo--ancho">
           <span class="campo__etiqueta">Calendario semanal · bloques de 55 minutos</span>
           <p class="tenue">
@@ -591,8 +776,8 @@ async function alElegirFichero(evento: Event): Promise<void> {
     </section>
 
     <div v-if="cargando" class="vacio">Cargando grupos…</div>
-    <div v-else-if="ciclos.length === 0" class="vacio">
-      No hay datos del BOE cargados. Revisa la siembra de la base de datos.
+    <div v-else-if="catalogo.length === 0" class="vacio">
+      No hay catálogo de horarios cargado. Revisa los recursos de secuenciación.
     </div>
     <div v-else-if="grupos.length === 0" class="vacio">
       Todavía no hay grupos en {{ cursosStore.activo?.nombre ?? 'este curso' }}. Crea el primero:
@@ -766,3 +951,167 @@ async function alElegirFichero(evento: Event): Promise<void> {
     </Confirmacion>
   </section>
 </template>
+
+<style scoped>
+.selector-catalogo {
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fbfcfd;
+}
+
+.selector-catalogo__filtros {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 180px 220px;
+  gap: 8px;
+}
+
+.selector-catalogo__resumen {
+  margin: 8px 0 6px;
+}
+
+.selector-catalogo__lista {
+  max-height: 310px;
+  overflow: auto;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.ciclo-opcion {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2px 12px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-bottom: 1px solid var(--borde);
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ciclo-opcion:last-child {
+  border-bottom: 0;
+}
+
+.ciclo-opcion:hover,
+.ciclo-opcion:focus-visible {
+  background: var(--acento-suave);
+}
+
+.ciclo-opcion__nombre {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.ciclo-opcion__meta {
+  color: var(--tenue);
+  font-size: 12px;
+}
+
+.ciclo-opcion__horas {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--tenue);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.ciclo-elegido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.ciclo-elegido__datos {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.modulo-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.modulo-cabecera input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.lista-modulos {
+  display: grid;
+  gap: 5px;
+  max-height: 300px;
+  overflow: auto;
+  padding: 5px;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #fbfcfd;
+}
+
+.modulo-opcion {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.modulo-opcion:hover {
+  border-color: var(--borde-fuerte);
+}
+
+.modulo-opcion--activo {
+  border-color: var(--acento);
+  background: var(--acento-suave);
+}
+
+.modulo-opcion__codigo {
+  color: var(--tenue);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}
+
+.modulo-opcion__nombre {
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.modulo-opcion__horas {
+  color: var(--tenue);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+@media (max-width: 820px) {
+  .selector-catalogo__filtros {
+    grid-template-columns: 1fr;
+  }
+
+  .ciclo-opcion,
+  .modulo-opcion {
+    grid-template-columns: 1fr;
+  }
+
+  .ciclo-opcion__horas {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+</style>

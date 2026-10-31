@@ -17,6 +17,7 @@ export function listarCiclos(db: Bd): ResumenCiclo[] {
                  JOIN modulos m3 ON m3.codigo = r2.modulo_codigo
                 WHERE m3.ciclo_id = c.id) AS ce
          FROM ciclos c
+        WHERE c.origen = 'boe'
         ORDER BY c.denominacion`
     )
     .all() as ResumenCiclo[]

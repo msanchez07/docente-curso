@@ -144,6 +144,10 @@ logo del instituto en PNG. Se guarda en la base de datos local.
 - El curso académico se calcula por fecha (septiembre–julio) y puede cambiarse desde la barra
   lateral.
 - Un grupo se crea con ciclo, módulo, curso y modalidad.
+- El ciclo se elige del **catálogo oficial de secuenciación y horarios 2026/2027**:
+  - buscador por nombre, siglas o familia profesional;
+  - filtros por nivel (Grado Básico, Medio o Superior) y familia;
+  - módulos filtrados por curso, con código y horas semanales/anuales.
 - El nombre se genera automáticamente, por ejemplo: `2º DAW · DWES · Presencial`.
 - El horario se define con bloques de 55 minutos:
   - mañana 08:00–14:00, recreo 10:45–11:15;

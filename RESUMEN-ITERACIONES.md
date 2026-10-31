@@ -7,7 +7,7 @@
 
 **Última actualización:** 31/10/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **212 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **217 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -288,7 +288,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual (31/10/2026): **212 tests**, 35 archivos de test, build y smoke correctos.
+Estado actual (31/10/2026): **217 tests**, 36 archivos de test, build y smoke correctos.
 
 ---
 
@@ -334,3 +334,4 @@ Al cerrar cada iteración:
 | 31/10/2026 | Calendario del curso    | Entrada de la aplicación con calendario global de todos los módulos y enlaces directos.                                                 |
 | 31/10/2026 | Configuración general   | Datos de profesorado y centro, logo PNG, guardado local y ayuda integrada.                                                              |
 | 31/10/2026 | Calendario del curso    | Filtros por módulo y tipo, detalle del día, enlaces directos y exportación PDF/.ics.                                                    |
+| 31/10/2026 | Catálogo de horarios    | PDFs 2026/2027 de la Conselleria para GB/GM/GS, buscador de ciclos por nivel/familia y selector de módulos por curso al crear grupos.   |
