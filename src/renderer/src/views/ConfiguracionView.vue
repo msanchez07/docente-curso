@@ -152,6 +152,15 @@ async function guardar(): Promise<void> {
             <label for="centro-nombre">Nombre del centro</label>
             <input id="centro-nombre" v-model="configuracion.centro.nombre" type="text" />
           </div>
+          <div class="campo">
+            <label for="centro-codigo">Código de centro</label>
+            <input
+              id="centro-codigo"
+              v-model="configuracion.centro.codigoCentro"
+              type="text"
+              placeholder="28000000"
+            />
+          </div>
           <div class="campo campo--ancho">
             <label for="centro-direccion">Dirección</label>
             <input id="centro-direccion" v-model="configuracion.centro.direccion" type="text" />

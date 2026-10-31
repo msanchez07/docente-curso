@@ -127,7 +127,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Centro educativo',
         detalle:
-          'Nombre, dirección, localidad, provincia, código postal, teléfono, correo y web del instituto. Se guardan para la identificación de la aplicación.'
+          'Nombre, código de centro, dirección, localidad, provincia, código postal, teléfono, correo y web del instituto. Se guardan para la identificación de la aplicación.'
       },
       {
         titulo: 'Logo PNG',

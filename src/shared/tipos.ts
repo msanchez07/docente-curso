@@ -1169,6 +1169,7 @@ export interface ConfiguracionGeneral {
   }
   centro: {
     nombre: string
+    codigoCentro: string
     direccion: string
     localidad: string
     provincia: string
@@ -1185,6 +1186,7 @@ export const CONFIGURACION_GENERAL_POR_DEFECTO: ConfiguracionGeneral = {
   profesor: { nombre: '', apellidos: '', email: '', telefono: '', departamento: '' },
   centro: {
     nombre: '',
+    codigoCentro: '',
     direccion: '',
     localidad: '',
     provincia: '',

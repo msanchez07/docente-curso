@@ -191,7 +191,7 @@ Vite/electron-vite + Vitest**.
 ### 2.10. Configuración general
 
 - Datos del profesorado: nombre, apellidos, correo, teléfono y departamento.
-- Datos del centro: nombre, dirección, localidad, provincia, código postal, teléfono, correo y web.
+- Datos del centro: nombre, código de centro, dirección, localidad, provincia, código postal, teléfono, correo y web.
 - Logo del centro en PNG, con vista previa y límite de 2 MB.
 - Guardado local en la tabla `config`; no se envía a ningún servicio externo.
 

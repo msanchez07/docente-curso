@@ -8950,3 +8950,16 @@ a:focus-visible {
   padding-top: 14px;
   border-top: 1px solid var(--borde);
 }
+
+.menu-global__titulo {
+  margin: 8px 12px 2px;
+  color: #8b99ad;
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.menu-global__titulo:first-child {
+  margin-top: 2px;
+}

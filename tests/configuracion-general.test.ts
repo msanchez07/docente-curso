@@ -28,6 +28,7 @@ describe('configuración general', () => {
       },
       centro: {
         nombre: 'IES Ejemplo',
+        codigoCentro: '28000000',
         direccion: 'Calle Mayor 1',
         localidad: 'Madrid',
         provincia: 'Madrid',

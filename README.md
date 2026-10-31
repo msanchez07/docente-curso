@@ -105,7 +105,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
 - **Menú de opciones globales** en la barra lateral (cursos, plantillas, copias, normativa y
   datos de prueba).
 - **Configuración general**:
-  - Datos del profesorado y del centro educativo.
+  - Datos del profesorado y del centro educativo, incluido el código de centro.
   - Logo del centro en PNG con vista previa y límite de tamaño.
   - Guardado local, sin servicios externos.
 - **Interfaz homogénea**:

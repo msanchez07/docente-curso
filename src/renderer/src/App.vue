@@ -242,6 +242,10 @@ async function importarNormativa(evento: Event): Promise<void> {
           </svg>
         </summary>
         <div class="menu-global__panel">
+          <div class="menu-global__titulo">Configuración</div>
+          <RouterLink to="/configuracion" class="menu__enlace" @click="cerrarMenuGlobal">
+            Configuración general
+          </RouterLink>
           <RouterLink to="/grupos" class="menu__enlace" @click="cerrarMenuGlobal">
             Gestionar grupos
           </RouterLink>
@@ -251,15 +255,18 @@ async function importarNormativa(evento: Event): Promise<void> {
           <RouterLink to="/plantillas" class="menu__enlace" @click="cerrarMenuGlobal">
             Plantillas
           </RouterLink>
+
+          <div class="menu-global__titulo">Trabajo diario</div>
           <RouterLink to="/faltas" class="menu__enlace" @click="cerrarMenuGlobal">
             Control de faltas
           </RouterLink>
+
+          <div class="menu-global__titulo">Sistema</div>
           <RouterLink to="/backups" class="menu__enlace" @click="cerrarMenuGlobal">
             Copias de seguridad
           </RouterLink>
-          <RouterLink to="/configuracion" class="menu__enlace" @click="cerrarMenuGlobal">
-            Configuración general
-          </RouterLink>
+
+          <div class="menu-global__titulo">Ayuda</div>
           <RouterLink to="/guia" class="menu__enlace" @click="cerrarMenuGlobal">
             Guía de uso
           </RouterLink>
@@ -274,7 +281,9 @@ async function importarNormativa(evento: Event): Promise<void> {
           >
             {{ importandoNormativa ? 'Importando normativa…' : 'Importar normativa' }}
           </button>
+
           <template v-if="puedeDemo">
+            <div class="menu-global__titulo">Previsualización</div>
             <button
               class="menu__enlace menu__enlace--boton"
               type="button"
