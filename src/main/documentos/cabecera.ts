@@ -24,11 +24,12 @@ async function dataUrl(ruta: string): Promise<string | null> {
 }
 
 async function logosDocumento(): Promise<LogosDocumento> {
-  const [conselleria, unionEuropea] = await Promise.all([
+  const [conselleria, unionEuropea, centro] = await Promise.all([
     dataUrl(rutaRecurso('plantillas', 'conselleria.png')),
-    dataUrl(rutaRecurso('plantillas', 'union-europea.png'))
+    dataUrl(rutaRecurso('plantillas', 'union-europea.png')),
+    dataUrl(rutaRecurso('plantillas', 'logo-centro.png'))
   ])
-  return { conselleria, unionEuropea }
+  return { conselleria, unionEuropea, centro }
 }
 
 /** Cabecera institucional común para PDFs y documentos imprimibles. */

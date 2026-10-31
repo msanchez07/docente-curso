@@ -31,6 +31,7 @@ import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
 import { generarCabeceraDocumento, generarPieDocumento } from '@shared/cabecera-documento'
 import conselleriaLogo from '@renderer/assets/plantillas/conselleria.png'
 import unionEuropeaLogo from '@renderer/assets/plantillas/union-europea.png'
+import centroLogo from '@renderer/assets/plantillas/logo-centro.png'
 import { normalizarPresentacion } from '@shared/presentacion'
 import JSZip from 'jszip'
 import type {
@@ -1805,11 +1806,13 @@ function htmlEntregasWeb(
     fecha: new Date(),
     cabeceraHtml: generarCabeceraDocumento(leerConfiguracionGeneral(), {
       conselleria: conselleriaLogo,
-      unionEuropea: unionEuropeaLogo
+      unionEuropea: unionEuropeaLogo,
+      centro: centroLogo
     }),
     pieHtml: generarPieDocumento({
       conselleria: conselleriaLogo,
-      unionEuropea: unionEuropeaLogo
+      unionEuropea: unionEuropeaLogo,
+      centro: centroLogo
     })
   })
 }
@@ -1977,12 +1980,14 @@ const api = {
     cabeceraDocumento: async (): Promise<string> =>
       generarCabeceraDocumento(leerConfiguracionGeneral(), {
         conselleria: conselleriaLogo,
-        unionEuropea: unionEuropeaLogo
+        unionEuropea: unionEuropeaLogo,
+        centro: centroLogo
       }),
     pieDocumento: async (): Promise<string> =>
       generarPieDocumento({
         conselleria: conselleriaLogo,
-        unionEuropea: unionEuropeaLogo
+        unionEuropea: unionEuropeaLogo,
+        centro: centroLogo
       })
   },
   boe: {

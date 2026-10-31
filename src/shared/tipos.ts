@@ -1185,14 +1185,14 @@ export interface ConfiguracionGeneral {
 export const CONFIGURACION_GENERAL_POR_DEFECTO: ConfiguracionGeneral = {
   profesor: { nombre: '', apellidos: '', email: '', telefono: '', departamento: '' },
   centro: {
-    nombre: '',
-    codigoCentro: '',
-    direccion: '',
-    localidad: '',
+    nombre: 'IES SANT VICENT FERRER',
+    codigoCentro: '46001199',
+    direccion: 'Parc Salvador Castell, 16',
+    localidad: 'Algemesí',
     provincia: '',
-    codigoPostal: '',
-    telefono: '',
-    email: '',
+    codigoPostal: '46680',
+    telefono: '96 245 78 20',
+    email: '46001199@edu.gva.es',
     web: ''
   },
   logo: null

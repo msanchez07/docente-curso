@@ -1,8 +1,9 @@
-import type { ConfiguracionGeneral } from './tipos'
+import { CONFIGURACION_GENERAL_POR_DEFECTO, type ConfiguracionGeneral } from './tipos'
 
 export interface LogosDocumento {
   conselleria?: string | null
   unionEuropea?: string | null
+  centro?: string | null
 }
 
 function escapar(texto: string | null | undefined): string {
@@ -24,7 +25,9 @@ export function generarCabeceraDocumento(
   configuracion: ConfiguracionGeneral | null | undefined,
   logos: LogosDocumento = {}
 ): string {
-  const centro = configuracion?.centro
+  const centro = configuracion?.centro?.nombre
+    ? configuracion.centro
+    : CONFIGURACION_GENERAL_POR_DEFECTO.centro
   const lineas = [
     centro?.nombre,
     centro?.codigoCentro,
@@ -41,9 +44,10 @@ export function generarCabeceraDocumento(
     )
     .join('')
 
-  const logoCentro = configuracion?.logo
-    ? `<img src="${configuracion.logo}" alt="Logo del centro" style="display:inline-block;max-width:150px;max-height:65px;object-fit:contain;">`
-    : ''
+  const logoCentro =
+    configuracion?.logo || logos.centro
+      ? `<img src="${configuracion?.logo || logos.centro}" alt="Logo del centro" style="display:inline-block;max-width:150px;max-height:65px;object-fit:contain;">`
+      : ''
 
   return `<header class="doc-cabecera" style="margin:0 0 18px;padding:0 0 11px;border-bottom:1px solid #dbe5ee;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
     <table style="width:100%;border-collapse:collapse;">
