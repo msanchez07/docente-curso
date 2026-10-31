@@ -19,9 +19,7 @@ jobs:
           - plataforma: macOS
             os: macos-latest
             objetivo: mac
-            archivos: |
-              dist/*.dmg
-              dist/*.zip
+            archivos: dist/*.dmg
           - plataforma: Windows
             os: windows-latest
             objetivo: win
@@ -60,7 +58,7 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          npx electron-builder --${{ matrix.objetivo }} 2>&1 | tee "$RUNNER_TEMP/empaquetado.log"
+          npx electron-builder --${{ matrix.objetivo }} --publish never 2>&1 | tee "$RUNNER_TEMP/empaquetado.log"
 
       - name: Resumen del error
         if: failure()
