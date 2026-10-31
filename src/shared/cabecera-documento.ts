@@ -68,7 +68,7 @@ export function generarCabeceraDocumento(
 
 export function generarPieDocumento(logos: LogosDocumento = {}): string {
   if (!logos.unionEuropea) return ''
-  return `<footer class="doc-pie" style="margin-top:20px;padding-top:8px;border-top:1px solid #dbe5ee;display:flex;justify-content:flex-end;">
+  return `<footer class="doc-pie" style="position:fixed;right:0;bottom:0;left:0;z-index:10;padding:6px 0 0;border-top:1px solid #dbe5ee;display:flex;justify-content:flex-end;background:#fff;">
     <img src="${logos.unionEuropea}" alt="Unió Europea" style="display:block;max-width:150px;max-height:34px;object-fit:contain;">
   </footer>`
 }

@@ -166,6 +166,7 @@ export function generarHtmlEntregas(datos: DatosExportacionEntregas): string {
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
     body {
+      padding-bottom: 26mm;
       color: #1c2a38;
       font: 11.5px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       -webkit-print-color-adjust: exact;
