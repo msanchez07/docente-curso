@@ -71,14 +71,28 @@ export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): strin
       </div>
     </header>
 
-    <table style="width:100%;border-collapse:collapse;margin:0 0 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:10.5px;color:#374151;">
-      <tr>
-        <td style="width:50%;padding:0 12px 0 0;border-bottom:1px solid #d1d5db;">Nombre y apellidos:</td>
-        <td style="width:25%;padding:0 12px 0 0;border-bottom:1px solid #d1d5db;">Grupo:</td>
-        <td style="width:25%;padding:0;border-bottom:1px solid #d1d5db;">Fecha:</td>
-      </tr>
-      <tr><td style="height:22px;"></td><td></td><td></td></tr>
-    </table>
+    <section style="border:1px solid #111827;background:#f8fafc;padding:10px 12px;margin:0 0 18px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
+      <table style="width:100%;border-collapse:collapse;font-size:10.5px;color:#374151;">
+        <tr>
+          <td style="width:40%;padding:0 14px 0 0;vertical-align:bottom;">
+            <div style="font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin-bottom:4px;">Nombre y apellidos</div>
+            <div style="height:19px;border-bottom:1px solid #9ca3af;"></div>
+          </td>
+          <td style="width:18%;padding:0 14px 0 0;vertical-align:bottom;">
+            <div style="font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin-bottom:4px;">DNI</div>
+            <div style="height:19px;border-bottom:1px solid #9ca3af;"></div>
+          </td>
+          <td style="width:25%;padding:0 14px 0 0;vertical-align:bottom;">
+            <div style="font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin-bottom:4px;">Grupo</div>
+            <div style="min-height:19px;font-weight:600;color:#111827;border-bottom:1px solid #d1d5db;">${escapar(grupo.nombre)}</div>
+          </td>
+          <td style="width:17%;padding:0;vertical-align:bottom;">
+            <div style="font-size:8.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7280;margin-bottom:4px;">Fecha</div>
+            <div style="min-height:19px;font-weight:600;color:#111827;border-bottom:1px solid #d1d5db;">${escapar(fechaCorta(entrega.fecha_limite))}</div>
+          </td>
+        </tr>
+      </table>
+    </section>
 
     <div style="border:1px solid #111827;background:#f8fafc;padding:11px 14px;margin:0 0 20px;">
       <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#111827;margin:0 0 6px;">
