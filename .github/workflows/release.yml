@@ -37,6 +37,7 @@ jobs:
     timeout-minutes: 60
     env:
       CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Descargar repositorio
@@ -71,6 +72,15 @@ jobs:
             tail -120 empaquetado.log 2>/dev/null || echo 'Sin log de empaquetado.'
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publicar log de error
+        if: failure()
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Aula Nova ${{ github.ref_name }} (log de error)
+          body: Log de empaquetado de la release.
+          files: empaquetado.log
 
       - name: Publicar artefactos
         uses: softprops/action-gh-release@v2
