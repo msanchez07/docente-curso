@@ -283,6 +283,9 @@ const html = `<!doctype html>
           <span>Versión 1.0</span>
           <span>Manuel Sánchez Gomis · Profesor de Ciclos Formativos de Informática</span>
           <a href="mailto:me.sanchezgomis@edu.gva.es">me.sanchezgomis@edu.gva.es</a>
+          <a href="https://github.com/msanchez07/docente-curso" target="_blank" rel="noreferrer">
+            Repositorio en GitHub ↗
+          </a>
         </div>
       </div>
     </header>
