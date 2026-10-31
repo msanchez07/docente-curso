@@ -104,16 +104,6 @@ function formato(nota: number | null): string {
   return nota === null ? '—' : nota.toFixed(2).replace('.', ',')
 }
 
-function cuando(fecha: string): string {
-  const dias = Math.round(
-    (new Date(`${fecha}T00:00:00`).getTime() - new Date(`${hoy}T00:00:00`).getTime()) / 86400000
-  )
-  if (dias === 0) return 'Hoy'
-  if (dias === 1) return 'Mañana'
-  if (dias > 1) return `En ${dias} días`
-  return ''
-}
-
 const proximasSesiones = computed(() =>
   programacion.value
     .filter((fila) => fila.fecha >= hoy)
@@ -122,20 +112,11 @@ const proximasSesiones = computed(() =>
     .slice(0, 5)
 )
 
-const proximasEntregas = computed(() =>
-  entregas.value
-    .filter((entrega) => entrega.fecha_limite && entrega.fecha_limite >= hoy)
+const sesionesHoy = computed(() =>
+  programacion.value
+    .filter((fila) => fila.fecha === hoy)
     .slice()
-    .sort((a, b) => (a.fecha_limite ?? '').localeCompare(b.fecha_limite ?? ''))
-    .slice(0, 3)
-)
-
-const proximoExamen = computed(
-  () => agendaItems.value.find((item) => item.tipo === 'examen' && item.fecha >= hoy) ?? null
-)
-
-const proximaEvaluacion = computed(
-  () => agendaItems.value.find((item) => item.tipo === 'evaluacion' && item.fecha >= hoy) ?? null
+    .sort((a, b) => (a.hora ?? '').localeCompare(b.hora ?? '') || a.id - b.id)
 )
 
 const agendaItems = computed<ItemAgenda[]>(() => {
@@ -304,10 +285,6 @@ const unidadesSinSesiones = computed(
   () => unidades.value.filter((unidad) => unidad.sesiones.length === 0).length
 )
 
-function unidadDeSesion(fila: ProgramacionAula): UnidadProgramacion | null {
-  return unidades.value.find((unidad) => unidad.id === fila.unidad_id) ?? null
-}
-
 const entregasSinRubrica = computed(
   () => entregas.value.filter((entrega) => !entrega.rubrica && !entrega.rubrica_archivo).length
 )
@@ -378,12 +355,6 @@ const progresoRa = computed(() => {
 
 const tareasPendientes = computed(() => {
   const tareas: { texto: string; ruta: string }[] = []
-  if (totalPendientes.value > 0) {
-    tareas.push({
-      texto: `${totalPendientes.value} notas por poner en ${pendientesCorreccion.value.length} entrega(s)`,
-      ruta: 'calificaciones'
-    })
-  }
   if (rasSinEvidencia.value.length > 0) {
     tareas.push({
       texto: `${rasSinEvidencia.value.length} RA sin evidencias`,
@@ -524,120 +495,55 @@ watch(id, cargar)
         </div>
       </header>
 
-      <section class="dashboard__stats">
-        <article class="tarjeta dashboard__stat">
-          <span class="dashboard__stat-icono dashboard__stat-icono--azul">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <rect x="3" y="4" width="18" height="18" rx="2" />
-              <path d="M16 2v4" />
-              <path d="M8 2v4" />
-              <path d="M3 10h18" />
-            </svg>
-          </span>
-          <div>
-            <span>Próxima sesión</span>
-            <strong>
-              {{ proximasSesiones[0] ? fechaCorta(proximasSesiones[0].fecha) : '—' }}
-            </strong>
-            <p v-if="proximasSesiones[0]">
-              <span class="dashboard__stat-cuando">{{ cuando(proximasSesiones[0].fecha) }}</span>
-              · {{ proximasSesiones[0].contenido || 'Sin contenido' }}
-            </p>
-            <p v-else>Sin programación próxima</p>
-          </div>
+      <section class="dashboard__hoy" aria-label="Resumen de hoy">
+        <article class="tarjeta dashboard__hoy-card">
+          <p class="dashboard__eyebrow">Hoy</p>
+          <strong>
+            {{ sesionesHoy.length }}
+            {{ sesionesHoy.length === 1 ? 'sesión' : 'sesiones' }}
+          </strong>
+          <p v-if="sesionesHoy[0]">
+            <template v-if="sesionesHoy[0].hora">{{ sesionesHoy[0].hora }} · </template>
+            {{ sesionesHoy[0].contenido || 'Sin contenido' }}
+          </p>
+          <p v-else-if="proximasSesiones[0]" class="tenue">
+            Próxima: {{ fechaCorta(proximasSesiones[0].fecha) }} ·
+            {{ proximasSesiones[0].contenido || 'Sin contenido' }}
+          </p>
+          <p v-else class="tenue">Sin sesiones programadas.</p>
+          <RouterLink
+            :to="{ name: 'programacion', params: { grupoId: grupo.id } }"
+            class="dashboard__enlace"
+          >
+            Ver programación
+          </RouterLink>
         </article>
 
-        <article class="tarjeta dashboard__stat">
-          <span class="dashboard__stat-icono dashboard__stat-icono--violeta">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
-            </svg>
-          </span>
-          <div>
-            <span>Próxima entrega</span>
-            <strong>
-              {{ proximasEntregas[0] ? fechaCorta(proximasEntregas[0].fecha_limite ?? '') : '—' }}
-            </strong>
-            <p v-if="proximasEntregas[0]">
-              <span class="dashboard__stat-cuando">
-                {{ cuando(proximasEntregas[0].fecha_limite ?? '') }}
-              </span>
-              · {{ proximasEntregas[0].titulo }}
-            </p>
-            <p v-else>Sin fechas próximas</p>
-          </div>
+        <article class="tarjeta dashboard__hoy-card">
+          <p class="dashboard__eyebrow">Pendiente de corregir</p>
+          <strong>{{ totalPendientes }} {{ totalPendientes === 1 ? 'nota' : 'notas' }}</strong>
+          <p>
+            {{ pendientesCorreccion.length }}
+            {{ pendientesCorreccion.length === 1 ? 'entrega' : 'entregas' }} sin completar
+          </p>
+          <RouterLink
+            :to="{ name: 'calificaciones', params: { grupoId: grupo.id } }"
+            class="dashboard__enlace"
+          >
+            Ir a calificaciones
+          </RouterLink>
         </article>
 
-        <article class="tarjeta dashboard__stat">
-          <span class="dashboard__stat-icono dashboard__stat-icono--ambar">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M9 2h6l4 4v16H5V2Z" />
-              <path d="M9 12h6" />
-              <path d="M9 16h4" />
-            </svg>
-          </span>
-          <div>
-            <span>Próximo examen</span>
-            <strong>{{ proximoExamen ? fechaCorta(proximoExamen.fecha) : '—' }}</strong>
-            <p v-if="proximoExamen">
-              <span class="dashboard__stat-cuando">{{ cuando(proximoExamen.fecha) }}</span>
-              <template v-if="proximoExamen.hora"> · {{ proximoExamen.hora }}</template>
-              · {{ proximoExamen.titulo }}
-            </p>
-            <p v-else>Sin exámenes programados</p>
-          </div>
-        </article>
-
-        <article class="tarjeta dashboard__stat">
-          <span class="dashboard__stat-icono dashboard__stat-icono--verde">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M9 11l3 3L22 4" />
-              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-            </svg>
-          </span>
-          <div>
-            <span>Próxima evaluación</span>
-            <strong>{{ proximaEvaluacion ? fechaCorta(proximaEvaluacion.fecha) : '—' }}</strong>
-            <p v-if="proximaEvaluacion">
-              <span class="dashboard__stat-cuando">{{ cuando(proximaEvaluacion.fecha) }}</span>
-              <template v-if="proximaEvaluacion.hora"> · {{ proximaEvaluacion.hora }}</template>
-              · {{ proximaEvaluacion.titulo }}
-            </p>
-            <p v-else>Sin evaluaciones programadas</p>
-          </div>
+        <article class="tarjeta dashboard__hoy-card">
+          <p class="dashboard__eyebrow">Alumnado en riesgo</p>
+          <strong>{{ totalRiesgo }} {{ totalRiesgo === 1 ? 'alumno' : 'alumnos' }}</strong>
+          <p>RA pendientes, notas incompletas o sin nota final.</p>
+          <RouterLink
+            :to="{ name: 'calificaciones', params: { grupoId: grupo.id } }"
+            class="dashboard__enlace"
+          >
+            Ver alumnado
+          </RouterLink>
         </article>
       </section>
 
@@ -646,38 +552,50 @@ watch(id, cargar)
           <section class="tarjeta">
             <header class="dashboard__tarjeta-cabecera">
               <div>
-                <h3>Próximas sesiones</h3>
-                <p class="tenue">Lo que toca en el aula</p>
+                <h3>Cola de trabajo</h3>
+                <p class="tenue">Lo que pide una acción ahora mismo</p>
               </div>
-              <RouterLink
-                :to="{ name: 'programacion', params: { grupoId: grupo.id } }"
-                class="dashboard__enlace"
-              >
-                Ver programación
-              </RouterLink>
             </header>
 
-            <p v-if="proximasSesiones.length === 0" class="tenue">
-              No hay sesiones programadas a partir de hoy.
-            </p>
-            <ul v-else class="dashboard__dias">
-              <li v-for="sesion in proximasSesiones" :key="sesion.id">
-                <span class="dashboard__fecha">{{ fechaCorta(sesion.fecha) }}</span>
-                <span class="dashboard__contenido">{{ sesion.contenido || 'Sin contenido' }}</span>
-                <span class="dashboard__dias-chips">
-                  <span
-                    v-if="sesion.desviacion && sesion.desviacion !== 'Sin desviación'"
-                    class="chip chip--aviso"
+            <div v-if="totalPendientes > 0" class="dashboard__cola">
+              <div class="dashboard__cola-cabecera">
+                <span>Notas por poner</span>
+                <strong>{{ totalPendientes }}</strong>
+              </div>
+              <ul class="dashboard__tareas">
+                <li v-for="item in pendientesCorreccion.slice(0, 4)" :key="item.entrega.id">
+                  <span class="dashboard__tarea-punto" aria-hidden="true"></span>
+                  <span>{{ item.entrega.titulo }}</span>
+                  <span class="chip chip--aviso">{{ item.pendientes }} pendientes</span>
+                  <RouterLink
+                    :to="{
+                      name: 'entrega-notas',
+                      params: { grupoId: grupo.id, entregaId: item.entrega.id }
+                    }"
+                    class="dashboard__enlace"
                   >
-                    {{ sesion.desviacion }}
-                  </span>
-                  <span v-if="sesion.hora" class="chip">{{ sesion.hora }}</span>
-                  <span v-if="unidadDeSesion(sesion)" class="chip">
-                    {{ unidadDeSesion(sesion)?.codigo ?? unidadDeSesion(sesion)?.nombre }}
-                  </span>
-                </span>
-              </li>
-            </ul>
+                    Corregir
+                  </RouterLink>
+                </li>
+              </ul>
+            </div>
+            <p v-else class="dashboard__ra-ok">No hay notas pendientes.</p>
+
+            <div v-if="tareasPendientes.length > 0" class="dashboard__revisar">
+              <h4>Revisar también</h4>
+              <ul class="dashboard__tareas">
+                <li v-for="tarea in tareasPendientes" :key="tarea.texto">
+                  <span class="dashboard__tarea-punto" aria-hidden="true"></span>
+                  <span>{{ tarea.texto }}</span>
+                  <RouterLink
+                    :to="{ name: tarea.ruta, params: { grupoId: grupo.id } }"
+                    class="dashboard__enlace"
+                  >
+                    Ir
+                  </RouterLink>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <section class="tarjeta">
@@ -751,37 +669,13 @@ watch(id, cargar)
               </table>
             </div>
           </section>
-
-          <section class="tarjeta">
-            <header class="dashboard__tarjeta-cabecera">
-              <div>
-                <h3>Tareas pendientes</h3>
-                <p class="tenue">Lo que pide atención ahora</p>
-              </div>
-            </header>
-            <p v-if="tareasPendientes.length === 0" class="dashboard__ra-ok">
-              Sin tareas pendientes.
-            </p>
-            <ul v-else class="dashboard__tareas">
-              <li v-for="tarea in tareasPendientes" :key="tarea.texto">
-                <span class="dashboard__tarea-punto" aria-hidden="true"></span>
-                <span>{{ tarea.texto }}</span>
-                <RouterLink
-                  :to="{ name: tarea.ruta, params: { grupoId: grupo.id } }"
-                  class="dashboard__enlace"
-                >
-                  Ir
-                </RouterLink>
-              </li>
-            </ul>
-          </section>
         </div>
 
         <aside class="dashboard__lateral">
           <section class="tarjeta">
             <header class="dashboard__tarjeta-cabecera">
               <div>
-                <h3>Agenda</h3>
+                <h3>Agenda y próximas fechas</h3>
                 <p class="tenue">Entregas, exámenes y calendario</p>
               </div>
               <RouterLink
@@ -882,8 +776,20 @@ watch(id, cargar)
               </span>
             </div>
           </section>
+        </aside>
+      </div>
 
-          <section class="tarjeta">
+      <details class="tarjeta dashboard__mas">
+        <summary class="dashboard__mas-resumen">
+          <span>
+            <strong>Más información del grupo</strong>
+            <small>Estado, formación en empresa y programación didáctica</small>
+          </span>
+          <span class="dashboard__mas-flecha" aria-hidden="true">⌄</span>
+        </summary>
+
+        <div class="dashboard__mas-grid">
+          <section>
             <header class="dashboard__tarjeta-cabecera">
               <div>
                 <h3>Estado del grupo</h3>
@@ -927,7 +833,7 @@ watch(id, cargar)
             </div>
           </section>
 
-          <section class="tarjeta">
+          <section>
             <header class="dashboard__tarjeta-cabecera">
               <div>
                 <h3>Formación en empresa</h3>
@@ -967,7 +873,7 @@ watch(id, cargar)
             <p v-else class="tenue">Sin periodos de formación registrados.</p>
           </section>
 
-          <section class="tarjeta">
+          <section>
             <header class="dashboard__tarjeta-cabecera">
               <div>
                 <h3>Programación didáctica</h3>
@@ -1001,8 +907,8 @@ watch(id, cargar)
               Todas las unidades tienen sesiones asignadas.
             </div>
           </section>
-        </aside>
-      </div>
+        </div>
+      </details>
     </template>
   </section>
 </template>

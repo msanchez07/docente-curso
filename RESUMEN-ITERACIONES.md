@@ -56,17 +56,18 @@ Vite/electron-vite + Vitest**.
   Faltas, Entregas, Calificaciones) y Consulta (Alumnado, Programación didáctica, Informes),
   separadas por barras verticales. Sustituye al botón «Volver» y a la antigua barra de acciones
   del dashboard.
-- Tarjetas de próxima sesión, notas pendientes, alumnado en riesgo y próxima entrega.
-- **Próximas sesiones** con fecha visible, contenido, unidad, hora y desviación.
-- **Agenda**:
+- **Resumen de hoy**: sesiones, notas pendientes y alumnado en riesgo.
+- **Cola de trabajo** con entregas por corregir y avisos accionables (RA sin evidencias, entregas
+  sin rúbrica, días sin contenido, etc.).
+- **Alumnado en riesgo** con nota final, estado y RA pendientes.
+- **Agenda y próximas fechas**:
   - Ordenada globalmente por fecha (entregas, exámenes, evaluaciones y no lectivos).
   - Minicalendario mensual con navegación y día actual resaltado.
   - Días coloreados por tipo: entrega (azul), examen (ámbar), evaluación (verde) y
     festivo/no lectivo/vacaciones (**rojo**).
   - Puntos de color y leyenda.
   - Lista de próximos hitos ordenada.
-- Alumnado en riesgo, tareas pendientes, estado del grupo, formación en empresa y estado de la
-  programación didáctica.
+- **Más información del grupo** plegable: estado, formación en empresa y programación didáctica.
 
 ### 2.3. Programación de aula y programación didáctica
 
@@ -310,3 +311,4 @@ Al cerrar cada iteración:
 | 30/10/2026 | Control de faltas       | Contexto compacto, configuración con interruptor, tarjetas de módulos, historial plegable y tabla con faltas/porcentaje diferenciados.  |
 | 31/10/2026 | Pesos por trimestre     | Criterios permite pesos de categorías propios por avaluación; las categorías a 0 % no penalizan el trimestre.                           |
 | 31/10/2026 | Guía integrada          | Guía completa con capturas en Opciones globales y ayuda contextual por sección.                                                         |
+| 31/10/2026 | Dashboard operativo     | Resumen de hoy, cola de trabajo, alumnado en riesgo, agenda y bloque plegable de estado.                                                |

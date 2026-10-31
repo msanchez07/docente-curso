@@ -30,10 +30,14 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - En semipresencial se marcan sesiones, tutorías colectivas y tutorías individuales, con
     varias posibles por día y colores distintos.
   - Vista independiente de horario desde el dashboard.
-- **Dashboard** con agenda ordenada por fechas y minicalendario mensual:
+- **Dashboard** centrado en la acción y el calendario:
   - **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,
     Faltas, Entregas, Calificaciones) y Consulta (Alumnado, Programación didáctica, Informes),
     con separadores verticales. Sustituye al botón «Volver» en las vistas de grupo.
+  - Resumen de **hoy**, **notas pendientes** y **alumnado en riesgo**.
+  - **Cola de trabajo** con entregas por corregir y avisos accionables.
+  - Agenda con minicalendario y próximas fechas.
+  - Estado del grupo, formación y programación didáctica en un bloque plegable.
   - Días coloreados por entregas, exámenes, evaluaciones y festivos/no lectivos.
   - Festivos y no lectivos con fondo rojo, sin indicar unidad didáctica.
   - Unidades didácticas visibles por día con colores estables.

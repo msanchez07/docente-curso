@@ -43,7 +43,7 @@ export const seccionesGuia: SeccionGuia[] = [
       'El dashboard reúne la información importante del grupo y la barra superior permite saltar a cualquier sección.',
     explicacion: [
       'El dashboard es el punto de partida de un grupo. Arriba tienes la barra de navegación común: Dashboard, Día a día y Consulta. La opción activa aparece resaltada y el botón Ayuda abre la explicación de la pantalla en la que estás.',
-      'Las tarjetas superiores resumen lo próximo: sesión, entrega, examen y evaluación. Debajo se muestran las próximas sesiones, el alumnado que necesita atención y la agenda. La agenda mezcla entregas, exámenes, evaluaciones y días no lectivos, y el minicalendario usa colores para que puedas localizar cada tipo de fecha de un vistazo.'
+      'La primera fila responde a tres preguntas: qué pasa hoy, cuántas notas quedan por poner y cuánto alumnado está en riesgo. Debajo, la cola de trabajo muestra las entregas pendientes de corregir y los avisos que requieren una acción. La agenda y las próximas fechas quedan a la derecha, y el estado del grupo, la formación y la programación didáctica se consultan en «Más información del grupo».'
     ],
     imagen: dashboard,
     ruta: '/grupo/:grupoId',
@@ -55,14 +55,14 @@ export const seccionesGuia: SeccionGuia[] = [
           'La barra cambia de sección sin usar el botón Volver: Dashboard, Día a día y Consulta. La opción activa queda resaltada y el botón Ayuda abre la explicación de la pantalla actual.'
       },
       {
-        titulo: 'Tarjetas de resumen',
+        titulo: 'Resumen de hoy',
         detalle:
-          'Muestran la próxima sesión, entrega, examen y evaluación, con la fecha y una indicación de urgencia. Sirven para saber qué requiere atención antes de entrar en el detalle.'
+          'Las tres tarjetas superiores muestran las sesiones de hoy, las notas que quedan por poner y el alumnado en riesgo. Son accesos directos: cada tarjeta enlaza con la pantalla donde se resuelve.'
       },
       {
-        titulo: 'Agenda y minicalendario',
+        titulo: 'Cola de trabajo',
         detalle:
-          'La agenda ordena los hitos por fecha y el calendario los colorea por tipo: entregas, exámenes, evaluaciones y días no lectivos. Puedes cambiar de mes y volver al mes actual con el botón Hoy.'
+          'Agrupa lo que pide una acción inmediata: entregas con notas pendientes y avisos como RA sin evidencias, entregas sin rúbrica o días de programación sin contenido.'
       },
       {
         titulo: 'Alumnado que necesita atención',
@@ -70,9 +70,14 @@ export const seccionesGuia: SeccionGuia[] = [
           'La tabla muestra la nota final, el estado y los RA pendientes de cada alumno. Se actualiza con las notas, los criterios y las entregas, y permite detectar rápidamente quién va a convocatoria.'
       },
       {
-        titulo: 'Accesos rápidos',
+        titulo: 'Agenda y próximas fechas',
         detalle:
-          'Desde las tarjetas y los enlaces «Ver programación», «Ver calificaciones» o «Ver planificación» puedes saltar directamente a la sección relacionada sin pasar por el menú.'
+          'El calendario colorea entregas, exámenes, evaluaciones y días no lectivos. Debajo aparecen los próximos hitos y los días no lectivos, con navegación mensual y botón Hoy.'
+      },
+      {
+        titulo: 'Más información del grupo',
+        detalle:
+          'El bloque plegable reúne el estado del grupo, la formación en empresa y la programación didáctica. Se abre solo cuando necesitas consultar esos datos, para no llenar el dashboard de información pasiva.'
       }
     ]
   },

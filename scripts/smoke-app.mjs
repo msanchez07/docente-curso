@@ -452,8 +452,10 @@ async function principal() {
       String(tituloDashboard)
     )
     comprobar(
-      'el dashboard muestra las próximas sesiones',
-      await ev('document.body.textContent.includes("Próximas sesiones")')
+      'el dashboard muestra la cola de trabajo y la agenda',
+      await ev(
+        'document.body.textContent.includes("Cola de trabajo") && document.body.textContent.includes("Agenda y próximas fechas")'
+      )
     )
 
     clearTimeout(rescate)

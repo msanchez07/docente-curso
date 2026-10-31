@@ -151,18 +151,21 @@ El menú **Opciones globales** de la barra lateral reúne:
 
 ## 5. Dashboard del grupo
 
+El dashboard responde a tres preguntas:
+
+1. **¿Qué pasa hoy?** Sesiones del día.
+2. **¿Qué tengo que hacer?** Notas por poner y avisos de la cola de trabajo.
+3. **¿Quién necesita atención?** Alumnado en riesgo.
+
 Incluye:
 
 - cabecera del grupo;
-- próxima sesión;
-- alumnado en riesgo;
-- notas pendientes;
-- próxima entrega;
-- agenda ordenada por fechas;
-- minicalendario mensual con colores para entregas, exámenes, evaluaciones y días no lectivos;
-- próximas sesiones;
-- estado de formación en empresa;
-- estado de la programación didáctica.
+- resumen de hoy, pendiente de corregir y alumnado en riesgo;
+- cola de trabajo con entregas pendientes y avisos;
+- tabla de alumnado en riesgo;
+- agenda con minicalendario mensual y próximas fechas;
+- bloque plegable **Más información del grupo** con estado, formación en empresa y programación
+  didáctica.
 
 Los días festivos, no lectivos y vacaciones tienen prioridad visual roja. Las unidades didácticas
 visibles por día usan colores estables.
