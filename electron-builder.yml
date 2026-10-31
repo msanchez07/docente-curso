@@ -80,3 +80,8 @@ appImage:
 deb:
   artifactName: aula-nova_${arch}.${ext}
 npmRebuild: false
+
+publish:
+  provider: github
+  owner: msanchez07
+  repo: docente-curso

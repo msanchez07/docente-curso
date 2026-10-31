@@ -280,7 +280,7 @@ const html = `<!doctype html>
         <h1>Guía de uso</h1>
         <p>La misma guía que encontrarás dentro de la aplicación, con capturas reales de cada pantalla.</p>
         <div class="hero__meta">
-          <span>Versión 1.0.2</span>
+          <span>Versión 1.0.3</span>
           <span>Manuel Sánchez Gomis · Profesor de Ciclos Formativos de Informática</span>
           <a href="mailto:me.sanchezgomis@edu.gva.es">me.sanchezgomis@edu.gva.es</a>
           <a href="https://github.com/msanchez07/docente-curso" target="_blank" rel="noreferrer">
@@ -338,7 +338,7 @@ const html = `<!doctype html>
 
     <footer class="pie">
       <div class="pie__interior">
-        <span>Aula Nova · Guía de uso · v1.0.2</span>
+        <span>Aula Nova · Guía de uso · v1.0.3</span>
         <span>Manuel Sánchez Gomis · me.sanchezgomis@edu.gva.es</span>
       </div>
     </footer>

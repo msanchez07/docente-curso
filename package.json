@@ -1,6 +1,6 @@
 {
   "name": "gestion-entregas",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Aula Nova · Gestión de cursos académicos, entregas y calificaciones de FP",
   "main": "./out/main/index.js",
   "author": "Manuel Sánchez Gomis <me.sanchezgomis@edu.gva.es>",
@@ -35,6 +35,7 @@
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
     "better-sqlite3": "^13.0.3",
+    "electron-updater": "^6.8.11",
     "jszip": "^3.10.2",
     "pdfjs-dist": "^5.4.149",
     "pinia": "^3.0.3",

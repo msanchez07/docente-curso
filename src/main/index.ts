@@ -8,6 +8,7 @@ import { registrarIpc } from './ipc'
 import { registrarEsquemaNormativa, registrarProtocoloNormativa } from './normativa-fpt'
 import { backupAutomatico } from './backup/servicio'
 import { guardarEstadoVentana, leerEstadoVentana } from './ventana/estado'
+import { iniciarActualizaciones } from './actualizaciones'
 
 // Nombre fijo de la aplicación: determina el directorio de datos del usuario
 // (`userData`), donde vive la base de datos. Sin esto dependería de cómo se
@@ -95,6 +96,8 @@ function crearVentana(): void {
   } else {
     ventana.loadFile(join(__dirname, '../renderer/index.html'))
   }
+
+  iniciarActualizaciones(ventana)
 }
 
 app.whenReady().then(() => {
