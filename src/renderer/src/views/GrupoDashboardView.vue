@@ -2,7 +2,6 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
-import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
 import { DIAS_SEMANA, etiquetaModalidad } from '@shared/grupos'
 import type {
@@ -455,6 +454,7 @@ async function cargar(): Promise<void> {
     // En la previsualización, si el grupo no tiene programación se muestra el
     // ejemplo para que el dashboard no quede vacío. No se guarda.
     if (import.meta.env.DEV && programacion.value.length === 0) {
+      const { diasProgramacionDemo } = await import('@shared/demo-programacion')
       programacion.value = diasProgramacionDemo().map((dia, indice) => ({
         id: -(indice + 1),
         grupo_clase_id: id.value,

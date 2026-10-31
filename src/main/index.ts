@@ -2,6 +2,7 @@ import { app, shell, BrowserWindow } from 'electron'
 import { join } from 'path'
 import { electronApp, optimizer, is } from '@electron-toolkit/utils'
 import icon from '../../resources/icon.png?asset'
+import { APP, AUTOR } from '@shared/autor'
 import { cerrarBd, inicializarBd } from './bd'
 import { registrarIpc } from './ipc'
 import { registrarEsquemaNormativa, registrarProtocoloNormativa } from './normativa-fpt'
@@ -26,7 +27,7 @@ function crearVentana(): void {
     minHeight: 640,
     show: false,
     autoHideMenuBar: true,
-    title: 'Gestión de entregas',
+    title: `${APP.nombre} · ${APP.subtitulo}`,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -57,7 +58,13 @@ function crearVentana(): void {
 }
 
 app.whenReady().then(() => {
-  electronApp.setAppUserModelId('es.msanchez07.gestion-entregas')
+  electronApp.setAppUserModelId('es.manuelsanchez.aulanova')
+  app.setAboutPanelOptions({
+    applicationName: APP.nombre,
+    applicationVersion: app.getVersion(),
+    copyright: `© 2026 ${AUTOR.nombre}`,
+    credits: `${AUTOR.rol}\n${AUTOR.email}`
+  })
 
   app.on('browser-window-created', (_, window) => {
     optimizer.watchWindowShortcuts(window)

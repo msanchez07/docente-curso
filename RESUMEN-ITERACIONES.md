@@ -1,4 +1,4 @@
-# Docente Curso · resumen de iteraciones
+# Aula Nova · resumen de iteraciones
 
 > Documento vivo. Debe actualizarse al cerrar cada iteración con lo construido, las decisiones
 > tomadas, las verificaciones ejecutadas y lo que queda pendiente. La versión corta de producto
@@ -335,3 +335,4 @@ Al cerrar cada iteración:
 | 31/10/2026 | Configuración general   | Datos de profesorado y centro, logo PNG, guardado local y ayuda integrada.                                                              |
 | 31/10/2026 | Calendario del curso    | Filtros por módulo y tipo, detalle del día, enlaces directos y exportación PDF/.ics.                                                    |
 | 31/10/2026 | Catálogo de horarios    | PDFs 2026/2027 de la Conselleria para GB/GM/GS, buscador de ciclos por nivel/familia y selector de módulos por curso al crear grupos.   |
+| 31/10/2026 | Release 1.0            | Identidad Aula Nova, autoría visible, iconos, empaquetado macOS/Windows/Linux y exclusión de datos de prueba en producción.                                             |

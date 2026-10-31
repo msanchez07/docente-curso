@@ -62,9 +62,18 @@ body {
 
 .marca {
   margin: 0;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.marca__sub {
+  margin: 2px 0 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: #8ea3bb;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .menu {
@@ -338,9 +347,29 @@ body {
 .pie {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
   font-size: 11.5px;
   color: #8494a8;
+}
+
+.pie__autor {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 7px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: #a9bbcf;
+}
+
+.pie__autor a {
+  color: #c9d8e8;
+  text-decoration: none;
+}
+
+.pie__autor a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .contenido {

@@ -61,6 +61,10 @@ async function principal() {
 
     /* --- Canal IPC y datos del BOE --------------------------------- */
     comprobar('window.api disponible', (await ev('typeof window.api')) === 'object')
+    comprobar(
+      'sin carga de datos de prueba en la aplicación',
+      (await ev('typeof window.api.demo')) === 'undefined'
+    )
 
     const ciclos = await ev('window.api.boe.listarCiclos()')
     comprobar('ciclo DAW con 13 módulos', ciclos.length === 1 && ciclos[0].modulos === 13)

@@ -1,10 +1,16 @@
-# Docente Curso · gestión de entregas y calificaciones
+# Aula Nova · gestión de cursos académicos, entregas y calificaciones
 
 Aplicación de escritorio **local** para organizar la docencia de FP alrededor de **grupos de
 clase**: programación, alumnado, entregas con rúbrica, evidencias, calificaciones, formación en
 empresa e informes trazables al BOE.
 
-> **Repositorio:** [git@github.com:msanchez07/docente-curso.git](https://github.com/msanchez07/docente-curso)
+> **📘 [Guía de uso completa](./GUIA-APLICACION.md)** — empieza aquí para ver cómo se organiza la
+> aplicación, cómo crear un grupo y cómo funciona el día a día.
+
+> **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
+>
+> **Autor:** Manuel Sánchez Gomis · Profesor de Ciclos Formativos de Informática
+> · [me.sanchezgomis@edu.gva.es](mailto:me.sanchezgomis@edu.gva.es)
 >
 > El detalle de lo construido, las decisiones y el historial de iteraciones están en
 > [`RESUMEN-ITERACIONES.md`](./RESUMEN-ITERACIONES.md). Ese documento es el que debe actualizarse
@@ -12,12 +18,41 @@ empresa e informes trazables al BOE.
 
 ## Estado
 
-Aplicación funcional en desarrollo activo. Verificación actual:
+Aplicación funcional en **versión 1.0**. Verificación actual:
 
 - `npm run typecheck` ✅
 - `npm test` ✅ **217 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
+
+## Release 1.0
+
+Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/`:
+
+| Plataforma                | Artefacto                              |
+| ------------------------- | -------------------------------------- |
+| macOS Apple Silicon       | `AulaNova-1.0.0-mac-arm64.dmg`         |
+| macOS Intel               | `AulaNova-1.0.0-mac-x64.dmg`           |
+| Windows x64               | `AulaNova-1.0.0-win-x64-setup.exe`     |
+| Linux x64 (AppImage)      | `AulaNova-1.0.0-linux-x86_64.AppImage` |
+| Linux x64 (Debian/Ubuntu) | `aula-nova_1.0.0_amd64.deb`            |
+
+```bash
+npm run dist:mac    # DMG + ZIP (arm64 y x64)
+npm run dist:win    # instalador NSIS x64
+npm run dist:linux  # AppImage + .deb x64
+npm run dist:all    # las tres plataformas
+```
+
+Las compilaciones de esta release **no están firmadas ni notarizadas**. macOS puede pedir abrir la
+aplicación con clic derecho → Abrir; Windows puede mostrar el aviso de SmartScreen. Para
+distribución pública conviene configurar certificados de firma.
+
+La release **no carga datos de prueba**: la aplicación arranca vacía y solo incluye los datos
+oficiales del BOE y el catálogo de secuenciación y horarios. Los datos de ejemplo quedan
+restringidos a la previsualización web de desarrollo.
+
+---
 
 ## Funcionalidad principal
 

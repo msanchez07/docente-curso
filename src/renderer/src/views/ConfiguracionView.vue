@@ -2,6 +2,7 @@
 import { onMounted, ref } from 'vue'
 import { notificar } from '@renderer/composables/notificaciones'
 import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
+import { APP, AUTOR } from '@shared/autor'
 import type { ConfiguracionGeneral } from '@shared/tipos'
 
 const configuracion = ref<ConfiguracionGeneral>({
@@ -13,6 +14,7 @@ const cargando = ref(true)
 const guardando = ref(false)
 const error = ref<string | null>(null)
 const ficheroLogo = ref<HTMLInputElement | null>(null)
+const version = ref('')
 
 function copiar(config: ConfiguracionGeneral): ConfiguracionGeneral {
   return {
@@ -34,7 +36,10 @@ async function cargar(): Promise<void> {
   }
 }
 
-onMounted(cargar)
+onMounted(async () => {
+  await cargar()
+  version.value = await window.api.app.version()
+})
 
 function elegirLogo(): void {
   ficheroLogo.value?.click()
@@ -232,6 +237,25 @@ async function guardar(): Promise<void> {
         </div>
       </section>
 
+      <section class="tarjeta">
+        <header class="cabecera-criterios">
+          <div class="cabecera-criterios__titulo">
+            <h3>Acerca de {{ APP.nombre }}</h3>
+            <span class="tenue">{{ APP.subtitulo }} · v{{ version || '1.0.0' }}</span>
+          </div>
+        </header>
+        <div class="configuracion__autor">
+          <div>
+            <strong>{{ AUTOR.nombre }}</strong>
+            <p class="tenue">{{ AUTOR.rol }}</p>
+          </div>
+          <a :href="`mailto:${AUTOR.email}`" target="_blank" rel="noreferrer">{{ AUTOR.email }}</a>
+          <p class="tenue">
+            Datos oficiales del BOE y del catálogo de secuenciación y horarios de la Conselleria.
+          </p>
+        </div>
+      </section>
+
       <div class="configuracion__acciones">
         <button class="boton boton--principal" type="button" :disabled="guardando" @click="guardar">
           {{ guardando ? 'Guardando…' : 'Guardar configuración' }}
@@ -240,3 +264,25 @@ async function guardar(): Promise<void> {
     </template>
   </section>
 </template>
+
+<style scoped>
+.configuracion__autor {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13.5px;
+}
+
+.configuracion__autor p {
+  margin: 2px 0 0;
+}
+
+.configuracion__autor a {
+  color: var(--acento);
+  text-decoration: none;
+}
+
+.configuracion__autor a:hover {
+  text-decoration: underline;
+}
+</style>

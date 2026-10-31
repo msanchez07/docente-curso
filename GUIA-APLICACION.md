@@ -1,10 +1,10 @@
-# Guía de uso · Docente Curso
+# Guía de uso · Aula Nova
 
 > Guía viva de la aplicación. Debe actualizarse siempre que se añada, cambie o elimine una
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
 
 **Última actualización:** 31/10/2026  
-**Versión verificada:** 212 tests, `typecheck`, `build` y `smoke` en verde.
+**Versión verificada:** 1.0 · 217 tests, `typecheck`, `build` y `smoke` en verde.
 
 ---
 
@@ -32,7 +32,7 @@
 
 ## 1. Qué es y cómo se organiza
 
-Aplicación local para gestionar el día a día de un curso de FP:
+Aplicación local para gestionar el día a día de uno o varios cursos de FP:
 
 - grupos de clase;
 - programación;

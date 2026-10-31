@@ -416,7 +416,7 @@ function descargarIcs(): void {
   const lineas = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Docente Curso//Calendario//ES',
+    'PRODID:-//Aula Nova//Calendario//ES',
     'CALSCALE:GREGORIAN'
   ]
   const sello = `${new Date()

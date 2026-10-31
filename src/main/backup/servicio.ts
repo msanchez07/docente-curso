@@ -11,6 +11,7 @@ import { createHash } from 'node:crypto'
 import { existsSync } from 'node:fs'
 import { mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
+import { APP } from '@shared/autor'
 import type { ArchivoBackup, EstadoBackup, ResultadoBackup } from '@shared/tipos'
 import { obtenerBd } from '../bd'
 import type { Bd } from '../db/conexion'
@@ -102,7 +103,7 @@ function escribirConfig(db: Bd, clave: string, valor: string): void {
 }
 
 function carpetaRecomendada(): string {
-  return join(app.getPath('documents'), 'Docente Curso Backups')
+  return join(app.getPath('documents'), `${APP.nombre} Backups`)
 }
 
 function carpetaConfigurada(db: Bd): string | null {
@@ -502,7 +503,7 @@ export async function importarBackupDesdeRuta(ruta: string): Promise<ResultadoBa
     return { ok: false, mensaje: 'No se ha podido leer el archivo de copia.' }
   }
   if (datos.formato !== FORMATO || datos.version !== VERSION) {
-    return { ok: false, mensaje: 'El archivo no es una copia compatible de Docente Curso.' }
+    return { ok: false, mensaje: 'El archivo no es una copia compatible de Aula Nova.' }
   }
   if (!datos.curso || !datos.grupo) {
     return { ok: false, mensaje: 'La copia no contiene los datos mínimos del grupo.' }
@@ -737,7 +738,7 @@ export async function importarBackupConDialogo(ruta?: string): Promise<Resultado
     title: 'Importar copia de seguridad de un grupo',
     defaultPath: carpeta,
     properties: ['openFile'],
-    filters: [{ name: 'Copias de Docente Curso', extensions: ['json'] }]
+    filters: [{ name: 'Copias de Aula Nova', extensions: ['json'] }]
   })
   if (resultado.canceled || !resultado.filePaths[0]) {
     return { ok: false, mensaje: 'Importación cancelada.' }

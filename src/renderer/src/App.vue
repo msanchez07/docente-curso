@@ -5,6 +5,7 @@ import Confirmacion from '@renderer/components/Confirmacion.vue'
 import NotificacionesGlobales from '@renderer/components/NotificacionesGlobales.vue'
 import NavegacionGrupo from '@renderer/components/NavegacionGrupo.vue'
 import { EVENTO_NORMATIVA_ACTUALIZADA } from '@shared/normativa'
+import { APP, AUTOR } from '@shared/autor'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
 
@@ -16,7 +17,8 @@ const confirmarDemo = ref(false)
 const confirmarEliminarDemo = ref(false)
 const restaurando = ref(false)
 const eliminandoDemo = ref(false)
-const puedeDemo = Boolean(window.api.demo)
+const puedeDemo = import.meta.env.DEV && Boolean(window.api.demo)
+const version = ref('')
 const esNormativa = computed(() => route.name === 'normativa')
 const ficheroNormativa = ref<HTMLInputElement | null>(null)
 const menuGlobal = ref<HTMLDetailsElement | null>(null)
@@ -37,6 +39,7 @@ async function comprobarBackup(): Promise<void> {
 
 onMounted(async () => {
   await Promise.all([grupos.cargar(), cursos.cargar()])
+  version.value = await window.api.app.version()
   await comprobarBackup()
   window.addEventListener('backup-configurado', comprobarBackup)
   window.addEventListener('focus', comprobarBackup)
@@ -160,7 +163,8 @@ async function importarNormativa(evento: Event): Promise<void> {
 <template>
   <div class="app">
     <aside class="lateral">
-      <h1 class="marca">Curso DAW</h1>
+      <h1 class="marca">{{ APP.nombre }}</h1>
+      <p class="marca__sub">{{ APP.subtitulo }}</p>
 
       <div class="menu__curso">
         <label for="curso-academico">Curso académico</label>
@@ -311,8 +315,13 @@ async function importarNormativa(evento: Event): Promise<void> {
       />
 
       <footer class="pie">
-        <div>Gestión del curso</div>
-        <div>Datos: BOE · v0.1.0</div>
+        <div>{{ APP.nombre }} · v{{ version || '1.0.0' }}</div>
+        <div class="pie__autor">
+          <span>{{ AUTOR.nombre }}</span>
+          <span>{{ AUTOR.rol }}</span>
+          <a :href="`mailto:${AUTOR.email}`" target="_blank" rel="noreferrer">{{ AUTOR.email }}</a>
+        </div>
+        <div>Datos: BOE y catálogo oficial de horarios</div>
       </footer>
     </aside>
 
