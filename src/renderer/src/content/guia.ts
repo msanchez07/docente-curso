@@ -480,6 +480,11 @@ export const seccionesGuia: SeccionGuia[] = [
         titulo: 'Exportación',
         detalle:
           'Puedes exportar una entrega, una avaluación o el curso completo. Si solo hay texto/rúbrica se genera PDF; si hay archivos, ZIP; si hay ambos, ZIP con el PDF y los archivos.'
+      },
+      {
+        titulo: 'Cabecera institucional',
+        detalle:
+          'Los PDF de entregas y exámenes usan la cabecera configurada: datos y logo del centro, logo de Conselleria y logo de la Unión Europea.'
       }
     ]
   },

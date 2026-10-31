@@ -25,6 +25,7 @@ import { listarEvidenciasClase } from '../db/repositorios/evidencias-clase'
 import { obtenerCriterios } from '../db/repositorios/criterios-grupo'
 import { obtenerGrupoClase } from '../db/repositorios/grupos-clase'
 import { generarHtmlEntregas, type DatosExportacionEntregas } from '@shared/entregas-documento'
+import { cabeceraDocumentoHtml } from '../documentos/cabecera'
 
 function seleccionarEntregas(
   grupoId: number,
@@ -54,12 +55,12 @@ function seleccionarEntregas(
   return { entregas: todas, titulo: 'Curso completo' }
 }
 
-function datosDe(
+async function datosDe(
   grupoId: number,
   entregas: EntregaClase[],
   tituloAmbito: string,
   ambito: AmbitoExportacionEntregas
-): DatosExportacionEntregas {
+): Promise<DatosExportacionEntregas> {
   const db = obtenerBd()
   const grupo = obtenerGrupoClase(db, grupoId)
   if (!grupo) throw new Error('El grupo no existe.')
@@ -83,7 +84,8 @@ function datosDe(
     })),
     ambito,
     tituloAmbito,
-    fecha: new Date()
+    fecha: new Date(),
+    cabeceraHtml: await cabeceraDocumentoHtml()
   }
 }
 
@@ -135,13 +137,13 @@ function tieneTexto(datos: DatosExportacionEntregas): boolean {
 }
 
 /** Genera el HTML de previsualización sin abrir ningún diálogo ni escribir nada. */
-export function vistaPreviaEntregas(
+export async function vistaPreviaEntregas(
   grupoClaseId: number,
   opciones: OpcionesExportacionEntregas
-): VistaPreviaEntregas {
+): Promise<VistaPreviaEntregas> {
   const { entregas, titulo } = seleccionarEntregas(grupoClaseId, opciones)
   if (entregas.length === 0) throw new Error('No hay entregas que exportar en este ámbito.')
-  const datos = datosDe(grupoClaseId, entregas, titulo, opciones.ambito)
+  const datos = await datosDe(grupoClaseId, entregas, titulo, opciones.ambito)
   return {
     html: generarHtmlEntregas(datos),
     titulo,
@@ -160,7 +162,7 @@ export async function exportarEntregas(
     return { ok: false, mensaje: 'No hay entregas que exportar en este ámbito.' }
   }
 
-  const datos = datosDe(grupoClaseId, entregas, titulo, opciones.ambito)
+  const datos = await datosDe(grupoClaseId, entregas, titulo, opciones.ambito)
   const conArchivos = tieneArchivos(datos)
   const conTexto = tieneTexto(datos)
   const extension = conArchivos ? 'zip' : 'pdf'

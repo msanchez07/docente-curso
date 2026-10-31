@@ -7,7 +7,7 @@
 
 **Última actualización:** 31/10/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **211 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **212 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -129,6 +129,8 @@ Vite/electron-vite + Vitest**.
 - Si hay ambos: **ZIP con el PDF y los archivos**.
 - El archivo de una sola entrega usa el **nombre de la entrega**.
 - Los archivos se organizan por entrega, rúbrica y evidencias.
+- Los PDF de entregas incluyen la cabecera institucional configurada: datos y logo del centro,
+  logo de Conselleria y logo de la Unión Europea.
 
 ### 2.6. Copias de seguridad
 
@@ -284,7 +286,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual (31/10/2026): **211 tests**, 34 archivos de test, build y smoke correctos.
+Estado actual (31/10/2026): **212 tests**, 35 archivos de test, build y smoke correctos.
 
 ---
 

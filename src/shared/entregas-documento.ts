@@ -22,6 +22,8 @@ export interface DatosExportacionEntregas {
   ambito: AmbitoExportacionEntregas
   tituloAmbito: string
   fecha: Date
+  /** Cabecera institucional ya generada, opcional. */
+  cabeceraHtml?: string
 }
 
 const TIPOS: Record<string, string> = {
@@ -226,9 +228,21 @@ export function generarHtmlEntregas(datos: DatosExportacionEntregas): string {
     .codigo { color: #0d5c8c; font-weight: 600; }
     .vacio { color: #667085; }
     .pie { margin-top: 24px; padding-top: 11px; border-top: 1px solid #dbe5ee; color: #7a8898; font-size: 8.5px; }
+    .doc-cabecera { margin: 0 0 22px; padding: 0 0 12px; border-bottom: 1px solid #dbe5ee; }
+    .doc-cabecera__tabla { width: 100%; border-collapse: collapse; }
+    .doc-cabecera__tabla td { vertical-align: middle; padding: 0; }
+    .doc-cabecera__institucional { width: 25%; }
+    .doc-cabecera__institucional img { display: block; max-width: 150px; max-height: 48px; margin-bottom: 5px; object-fit: contain; }
+    .doc-cabecera__institucional .doc-cabecera__ue { max-height: 34px; }
+    .doc-cabecera__centro { text-align: center; color: #475467; font-size: 9px; line-height: 1.35; }
+    .doc-cabecera__centro span { display: block; }
+    .doc-cabecera__centro span:first-child { color: #1f2937; font-size: 11px; font-weight: 700; }
+    .doc-cabecera__propio { width: 25%; text-align: right; }
+    .doc-cabecera__logo-centro { display: inline-block; max-width: 150px; max-height: 65px; object-fit: contain; }
   </style>
 </head>
 <body>
+  ${datos.cabeceraHtml ?? ''}
   <section class="portada">
     <p class="portada__eyebrow">Gestión de entregas</p>
     <h1>Entregas</h1>

@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **211 tests**
+- `npm test` ✅ **212 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -64,6 +64,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Rúbrica en texto y/o archivo, evidencias y mapeo a RA/CE.
   - Bloqueo/desbloqueo y notas por alumno.
   - Exportación PDF/ZIP por entrega o curso completo, con dossier y archivos cuando corresponde.
+  - Los PDF usan la cabecera institucional: datos y logo del centro, logo de Conselleria y logo de la Unión Europea.
 - **Calificaciones**:
   - Vista de consulta: la nota final no se edita aquí, se calcula desde las entregas.
   - Pestañas por evaluación, **Ordinaria**, **Extraordinaria** y **Nota final**.

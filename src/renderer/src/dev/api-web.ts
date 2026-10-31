@@ -28,6 +28,9 @@ import { validarHtmlNormativa } from '@shared/normativa'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto, REQUISITOS_POR_DEFECTO } from '@shared/modelo'
 import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
+import { generarCabeceraDocumento } from '@shared/cabecera-documento'
+import conselleriaLogo from '@renderer/assets/plantillas/conselleria.png'
+import unionEuropeaLogo from '@renderer/assets/plantillas/union-europea.png'
 import { normalizarPresentacion } from '@shared/presentacion'
 import JSZip from 'jszip'
 import type {
@@ -1799,7 +1802,11 @@ function htmlEntregasWeb(
     })),
     ambito,
     tituloAmbito: titulo,
-    fecha: new Date()
+    fecha: new Date(),
+    cabeceraHtml: generarCabeceraDocumento(leerConfiguracionGeneral(), {
+      conselleria: conselleriaLogo,
+      unionEuropea: unionEuropeaLogo
+    })
   })
 }
 

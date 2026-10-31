@@ -4,7 +4,7 @@
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
 
 **Última actualización:** 31/10/2026  
-**Versión verificada:** 211 tests, `typecheck`, `build` y `smoke` en verde.
+**Versión verificada:** 212 tests, `typecheck`, `build` y `smoke` en verde.
 
 ---
 
@@ -264,7 +264,8 @@ Otras funciones:
 - exportación por entrega, avaluación o curso;
 - PDF si solo hay texto/rúbrica;
 - ZIP si hay archivos o PDF + archivos;
-- previsualización en ventana propia antes de exportar.
+- previsualización en ventana propia antes de exportar;
+- cabecera institucional en los PDF: datos y logo del centro, Conselleria y Unión Europea.
 
 ---
 
