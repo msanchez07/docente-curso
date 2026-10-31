@@ -159,7 +159,7 @@ calendario con todos los módulos del curso activo:
 - entregas, exámenes, evaluaciones y días no lectivos;
 - etiquetas por módulo dentro de cada día, con enlace al dashboard del módulo;
 - colores estables por módulo y leyenda de modalidad;
-- filtro por módulo y detalle del día seleccionado;
+- filtros por módulo y tipo, detalle del día seleccionado y exportación a PDF/.ics;
 - navegación mensual y botón Hoy;
 - sin tablas de alumnado, colas de trabajo ni listados de módulos.
 

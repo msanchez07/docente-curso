@@ -2,6 +2,8 @@
 import { computed, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
+import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
+import { notificar } from '@renderer/composables/notificaciones'
 import { DIAS_SEMANA } from '@shared/grupos'
 import type { EntregaClase, EventoEvaluacionClase, GrupoClase } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
@@ -19,6 +21,7 @@ interface HitoGeneral {
   grupoNombre: string
   moduloSiglas: string
   modalidad: GrupoClase['modalidad'] | null
+  entregaId: number | null
 }
 
 interface ModuloCalendario {
@@ -34,6 +37,14 @@ const cargando = ref(true)
 const error = ref<string | null>(null)
 const mesAgenda = ref(new Date(new Date().getFullYear(), new Date().getMonth(), 1))
 const filtroModulo = ref<number | null>(null)
+const filtroTipo = ref<TipoHito | null>(null)
+
+const TIPOS_CALENDARIO = [
+  { id: 'entrega', etiqueta: 'Entregas' },
+  { id: 'examen', etiqueta: 'Exámenes' },
+  { id: 'evaluacion', etiqueta: 'Evaluaciones' },
+  { id: 'no_lectivo', etiqueta: 'No lectivos' }
+] as const
 
 const PALETA_MODULOS = [
   '#2563eb',
@@ -83,11 +94,14 @@ const agendaGeneral = computed(() =>
 )
 
 const agendaFiltrada = computed(() =>
-  filtroModulo.value === null
-    ? agendaGeneral.value
-    : agendaGeneral.value.filter(
-        (item) => item.tipo === 'no_lectivo' || item.grupoId === filtroModulo.value
-      )
+  agendaGeneral.value.filter((item) => {
+    const moduloOk =
+      filtroModulo.value === null ||
+      item.tipo === 'no_lectivo' ||
+      item.grupoId === filtroModulo.value
+    const tipoOk = filtroTipo.value === null || item.tipo === filtroTipo.value
+    return moduloOk && tipoOk
+  })
 )
 
 const hitosDelDia = computed(() =>
@@ -149,6 +163,20 @@ function fechaLarga(fecha: string): string {
   })
 }
 
+function destinoHito(item: HitoGeneral): { name: string; params: Record<string, number> } {
+  if (item.grupoId === null) return { name: 'dashboard-curso', params: {} }
+  if (item.tipo === 'entrega' && item.entregaId !== null) {
+    return {
+      name: 'entrega-notas',
+      params: { grupoId: item.grupoId, entregaId: item.entregaId }
+    }
+  }
+  if (item.tipo === 'examen' || item.tipo === 'evaluacion') {
+    return { name: 'evaluaciones', params: { grupoId: item.grupoId } }
+  }
+  return { name: 'grupo', params: { id: item.grupoId } }
+}
+
 function cambiarMes(delta: number): void {
   const nuevo = new Date(mesAgenda.value.getFullYear(), mesAgenda.value.getMonth() + delta, 1)
   mesAgenda.value = nuevo
@@ -182,7 +210,8 @@ function hitosDeGrupo(
       grupoId: grupo.id,
       grupoNombre: grupo.nombre,
       moduloSiglas: grupo.modulo_siglas,
-      modalidad: grupo.modalidad
+      modalidad: grupo.modalidad,
+      entregaId: null
     })
   }
 
@@ -199,7 +228,8 @@ function hitosDeGrupo(
       grupoId: grupo.id,
       grupoNombre: grupo.nombre,
       moduloSiglas: grupo.modulo_siglas,
-      modalidad: grupo.modalidad
+      modalidad: grupo.modalidad,
+      entregaId: entrega.id
     })
   }
 
@@ -209,6 +239,116 @@ function hitosDeGrupo(
       (a.hora ?? '99:99').localeCompare(b.hora ?? '99:99') ||
       a.titulo.localeCompare(b.titulo)
   )
+}
+
+function accionesCalendario(): AccionMenu[] {
+  return [
+    { id: 'imprimir', etiqueta: 'Imprimir / PDF', icono: 'descargar' },
+    { id: 'ics', etiqueta: 'Descargar .ics', icono: 'descargar' }
+  ]
+}
+
+function ejecutarAccionCalendario(accion: string): void {
+  if (accion === 'imprimir') imprimirCalendario()
+  else if (accion === 'ics') descargarIcs()
+}
+
+function escapar(texto: string): string {
+  return texto
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+}
+
+function imprimirCalendario(): void {
+  const filas: string[] = []
+  for (let i = 0; i < celdasAgenda.value.length; i += 7) {
+    const dias = celdasAgenda.value.slice(i, i + 7)
+    filas.push(
+      `<tr>${dias
+        .map((celda) => {
+          const eventos = celda.esMes
+            ? celda.items
+                .map(
+                  (item) =>
+                    `<div class="evento evento--${item.tipo}">${escapar(item.moduloSiglas)} · ${escapar(item.titulo)}</div>`
+                )
+                .join('')
+            : ''
+          return `<td class="${celda.esMes ? '' : 'fuera'}"><strong>${celda.dia}</strong>${eventos}</td>`
+        })
+        .join('')}</tr>`
+    )
+  }
+  const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Calendario · ${escapar(mesAgendaTexto.value)}</title>
+  <style>@page{size:A4 landscape;margin:10mm}body{font:10px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d2939}h1{font-size:18px;margin:0 0 3px}p{margin:0 0 10px;color:#667085}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{border:1px solid #dbe5ee;vertical-align:top;padding:5px;height:78px}th{background:#eef4f8;color:#36536b;font-size:8px;text-transform:uppercase}td{font-size:9px}td.fuera{background:#f8fafc;color:#98a2b3}td>strong{display:block;margin-bottom:4px;font-size:11px}.evento{margin:2px 0;padding:2px 4px;border-left:3px solid #2563eb;background:#f5f9ff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.evento--examen{border-color:#d98a2b;background:#fffbf0}.evento--evaluacion{border-color:#067647;background:#f4fdf8}.evento--no_lectivo{border-color:#b42318;background:#fef3f2}</style></head><body>
+  <h1>Calendario del curso · ${escapar(mesAgendaTexto.value)}</h1>
+  <p>${modulos.value.map((modulo) => `${escapar(modulo.grupo.modulo_siglas)} (${escapar(modulo.grupo.modalidad)})`).join(' · ')}</p>
+  <table><thead><tr>${DIAS_SEMANA.map((dia) => `<th>${dia.corto}</th>`).join('')}</tr></thead><tbody>${filas.join('')}</tbody></table>
+  </body></html>`
+  const ventana = window.open('', 'calendario-curso', 'width=1200,height=900')
+  if (!ventana) return
+  ventana.document.open()
+  ventana.document.write(html)
+  ventana.document.close()
+  ventana.focus()
+  window.setTimeout(() => ventana.print(), 250)
+}
+
+function escaparIcs(texto: string): string {
+  return texto
+    .replaceAll('\\', '\\\\')
+    .replaceAll(';', '\\;')
+    .replaceAll(',', '\\,')
+    .replaceAll('\n', '\\n')
+}
+
+function fechaIcs(fecha: string, hora?: string | null): string {
+  const base = fecha.replaceAll('-', '')
+  return hora ? `${base}T${hora.replace(':', '')}00` : base
+}
+
+function descargarIcs(): void {
+  const lineas = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Docente Curso//Calendario//ES',
+    'CALSCALE:GREGORIAN'
+  ]
+  const sello = `${new Date()
+    .toISOString()
+    .replace(/[-:]/g, '')
+    .replace(/\.\d{3}/, '')}`
+  for (const item of agendaFiltrada.value) {
+    lineas.push('BEGIN:VEVENT')
+    lineas.push(`UID:${item.id}@docente-curso`)
+    lineas.push(`DTSTAMP:${sello}`)
+    if (item.hora) {
+      const inicio = new Date(`${item.fecha}T${item.hora}:00`)
+      const fin = new Date(inicio.getTime() + 60 * 60 * 1000)
+      const finFecha = isoLocal(fin)
+      const finHora = `${String(fin.getHours()).padStart(2, '0')}:${String(fin.getMinutes()).padStart(2, '0')}`
+      lineas.push(`DTSTART:${fechaIcs(item.fecha, item.hora)}`)
+      lineas.push(`DTEND:${fechaIcs(finFecha, finHora)}`)
+    } else {
+      const fin = sumarDias(new Date(`${item.fecha}T00:00:00`), 1)
+      lineas.push(`DTSTART;VALUE=DATE:${fechaIcs(item.fecha)}`)
+      lineas.push(`DTEND;VALUE=DATE:${fechaIcs(isoLocal(fin))}`)
+    }
+    lineas.push(`SUMMARY:${escaparIcs(`${item.moduloSiglas} · ${item.titulo}`)}`)
+    lineas.push(`DESCRIPTION:${escaparIcs(item.grupoNombre)}`)
+    lineas.push('END:VEVENT')
+  }
+  lineas.push('END:VCALENDAR')
+  const blob = new Blob([lineas.join('\r\n')], { type: 'text/calendar;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const enlace = document.createElement('a')
+  enlace.href = url
+  enlace.download = 'calendario-curso.ics'
+  enlace.click()
+  URL.revokeObjectURL(url)
+  notificar('Calendario descargado en formato .ics.')
 }
 
 async function cargar(): Promise<void> {
@@ -253,7 +393,8 @@ async function cargar(): Promise<void> {
         grupoId: null,
         grupoNombre: 'Calendario',
         moduloSiglas: 'Curso',
-        modalidad: null
+        modalidad: null,
+        entregaId: null
       }))
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -288,15 +429,22 @@ onMounted(cargar)
             entregas, exámenes, evaluaciones y no lectivos
           </p>
         </div>
-        <div class="dashboard__leyenda-modalidad" aria-label="Modalidad de los módulos">
-          <span>
-            <i class="dashboard__punto-modalidad dashboard__punto-modalidad--presencial"></i>
-            Presencial
-          </span>
-          <span>
-            <i class="dashboard__punto-modalidad dashboard__punto-modalidad--semipresencial"></i>
-            Semipresencial
-          </span>
+        <div class="dashboard__calendario-acciones">
+          <div class="dashboard__leyenda-modalidad" aria-label="Modalidad de los módulos">
+            <span>
+              <i class="dashboard__punto-modalidad dashboard__punto-modalidad--presencial"></i>
+              Presencial
+            </span>
+            <span>
+              <i class="dashboard__punto-modalidad dashboard__punto-modalidad--semipresencial"></i>
+              Semipresencial
+            </span>
+          </div>
+          <MenuAcciones
+            texto="Acciones"
+            :acciones="accionesCalendario()"
+            @accion="ejecutarAccionCalendario"
+          />
         </div>
       </header>
 
@@ -320,6 +468,32 @@ onMounted(cargar)
         >
           <i :style="{ background: colorModulo(modulo.grupo.id) }"></i>
           {{ modulo.grupo.modulo_siglas }}
+        </button>
+      </div>
+
+      <div class="dashboard__filtros-tipo" aria-label="Filtrar por tipo de hito">
+        <span class="tenue">Ver:</span>
+        <button
+          type="button"
+          class="dashboard__filtro-tipo"
+          :class="{ 'dashboard__filtro-tipo--activo': filtroTipo === null }"
+          @click="filtroTipo = null"
+        >
+          Todos
+        </button>
+        <button
+          v-for="tipo in TIPOS_CALENDARIO"
+          :key="tipo.id"
+          type="button"
+          class="dashboard__filtro-tipo"
+          :class="{ 'dashboard__filtro-tipo--activo': filtroTipo === tipo.id }"
+          @click="filtroTipo = filtroTipo === tipo.id ? null : tipo.id"
+        >
+          <i
+            class="agenda-mini__muestra"
+            :class="`agenda-mini__muestra--${tipo.id.replace('_', '-')}`"
+          ></i>
+          {{ tipo.etiqueta }}
         </button>
       </div>
 
@@ -363,7 +537,7 @@ onMounted(cargar)
               <template v-for="(item, indice) in celda.items.slice(0, 2)" :key="item.id">
                 <RouterLink
                   v-if="item.grupoId"
-                  :to="{ name: 'grupo', params: { id: item.grupoId } }"
+                  :to="destinoHito(item)"
                   class="calendario-general__evento"
                   :style="{ borderLeftColor: colorModulo(item.grupoId) }"
                   :title="`${item.grupoNombre}: ${item.titulo}`"
@@ -419,12 +593,8 @@ onMounted(cargar)
               <strong>{{ item.titulo }}</strong>
               <span class="tenue">{{ item.grupoNombre }}</span>
             </span>
-            <RouterLink
-              v-if="item.grupoId"
-              :to="{ name: 'grupo', params: { id: item.grupoId } }"
-              class="dashboard__enlace"
-            >
-              Abrir módulo
+            <RouterLink v-if="item.grupoId" :to="destinoHito(item)" class="dashboard__enlace">
+              Abrir
             </RouterLink>
           </li>
         </ul>

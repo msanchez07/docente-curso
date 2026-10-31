@@ -56,7 +56,7 @@ Vite/electron-vite + Vitest**.
 - Calendario único de todos los módulos del curso académico activo.
 - Entregas, exámenes, evaluaciones y días no lectivos, con etiquetas por módulo.
 - Colores automáticos por módulo y leyenda de modalidad presencial/semipresencial.
-- Filtro por módulo y detalle del día seleccionado.
+- Filtros por módulo y tipo, detalle del día seleccionado, impresión/PDF y exportación .ics.
 - Enlace al dashboard de cada módulo desde las etiquetas y la leyenda.
 - Sin tablas de alumnado, colas de trabajo ni listados de módulos.
 
@@ -324,3 +324,4 @@ Al cerrar cada iteración:
 | 31/10/2026 | Guía integrada          | Guía completa con capturas en Opciones globales y ayuda contextual por sección.                                                         |
 | 31/10/2026 | Dashboard operativo     | Resumen de hoy, cola de trabajo, alumnado en riesgo, agenda y bloque plegable de estado.                                                |
 | 31/10/2026 | Dashboard del curso     | Entrada de la aplicación: todos los módulos, calendario global, pendientes y riesgo agregado.                                           |
+| 31/10/2026 | Calendario del curso    | Filtros por módulo y tipo, detalle del día, enlaces directos y exportación PDF/.ics.                                                    |

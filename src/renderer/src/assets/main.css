@@ -8876,3 +8876,40 @@ a:focus-visible {
     justify-self: start;
   }
 }
+
+.dashboard__calendario-acciones {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dashboard__filtros-tipo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin: 10px 0 4px;
+}
+
+.dashboard__filtro-tipo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  color: var(--tenue);
+  font: inherit;
+  font-size: 10.5px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.dashboard__filtro-tipo:hover,
+.dashboard__filtro-tipo--activo {
+  color: var(--acento);
+  background: var(--acento-suave);
+  border-color: #c7d7fe;
+}
