@@ -60,7 +60,7 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          npx electron-builder --${{ matrix.objetivo }} 2>&1 | tee empaquetado.log
+          npx electron-builder --${{ matrix.objetivo }} 2>&1 | tee "$RUNNER_TEMP/empaquetado.log"
 
       - name: Resumen del error
         if: failure()
@@ -69,7 +69,7 @@ jobs:
           {
             echo '### Error de empaquetado'
             echo '```text'
-            tail -120 empaquetado.log 2>/dev/null || echo 'Sin log de empaquetado.'
+            tail -120 "$RUNNER_TEMP/empaquetado.log" 2>/dev/null || echo 'Sin log de empaquetado.'
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -80,7 +80,7 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: Aula Nova ${{ github.ref_name }} (log de error)
           body: Log de empaquetado de la release.
-          files: empaquetado.log
+          files: ${{ runner.temp }}/empaquetado.log
 
       - name: Publicar artefactos
         uses: softprops/action-gh-release@v2
