@@ -323,7 +323,8 @@ const html = `<!doctype html>
         </a>
       </div>
       <p class="descargas__nota">
-        Estos enlaces apuntan siempre a la última release publicada en GitHub.
+        Estos enlaces apuntan siempre a la última release publicada en GitHub. En macOS, si aparece
+        el aviso «Apple no ha podido verificar…», abre la app con clic derecho → <strong>Abrir</strong>.
       </p>
     </section>
 

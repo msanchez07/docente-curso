@@ -23,15 +23,17 @@ También se generan los ZIP de macOS en `dist/`.
 
 ## Notas de instalación
 
-- **macOS:** la aplicación va firmada **ad-hoc**, pero no notarizada. Si macOS dice que está
-  «dañada», ejecuta en Terminal:
+- **macOS:** la aplicación va firmada **ad-hoc**, pero no notarizada. Si aparece el aviso
+  «Apple no ha podido verificar que Aula Nova no contenga software malicioso», no significa que
+  tenga malware: es el aviso normal de una app sin notarización. Ábrela con **clic derecho →
+  Abrir → Abrir**, o ejecuta:
 
   ```bash
   xattr -cr "/Applications/Aula Nova.app"
   open "/Applications/Aula Nova.app"
   ```
 
-  También puedes abrirla con clic derecho → **Abrir**.
+  También puedes ir a **Ajustes del Sistema → Privacidad y seguridad** y pulsar **Abrir igualmente**.
 
 - **Windows:** el instalador no está firmado; SmartScreen puede mostrar un aviso.
 - **Linux:** el AppImage se ejecuta con `chmod +x` y doble clic. El `.deb` se instala con
