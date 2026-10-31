@@ -26,8 +26,7 @@ export function inicializarBd(): void {
   const db = obtenerBd()
   const ciclos = leerCiclosBoe()
   if (ciclos.length > 0) sembrarCiclos(db, ciclos)
-  const catalogo = leerCatalogoHorarios()
-  if (catalogo) sembrarCatalogo(db, catalogo)
+  sembrarCatalogo(db, leerCatalogoHorarios())
 }
 
 export function cerrarBd(): void {

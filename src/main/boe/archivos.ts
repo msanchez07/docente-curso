@@ -7,6 +7,7 @@ import { app } from 'electron'
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { CatalogoHorarios, Ciclo } from '@shared/tipos'
+import catalogoHorarios from '../../../resources/horarios/catalogo-2026-27.json'
 
 export function directorioRecursos(): string {
   const candidatos = app.isPackaged
@@ -42,9 +43,12 @@ export function leerCiclosBoe(): Ciclo[] {
     .filter((c): c is Ciclo => c !== null)
 }
 
-/** Catálogo de secuenciación y horarios; se usa el primer JSON disponible. */
-export function leerCatalogoHorarios(): CatalogoHorarios | null {
-  const rutas = ficherosJson(join(directorioRecursos(), 'horarios'))
-  if (rutas.length === 0) return null
-  return leerJson<CatalogoHorarios>(rutas[0])
+/**
+ * Catálogo de secuenciación y horarios.
+ *
+ * Se importa en el bundle para que forme parte de la aplicación y no dependa
+ * de que el directorio de recursos esté presente en una instalación concreta.
+ */
+export function leerCatalogoHorarios(): CatalogoHorarios {
+  return catalogoHorarios as CatalogoHorarios
 }

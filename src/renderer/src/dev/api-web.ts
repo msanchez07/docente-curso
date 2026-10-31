@@ -28,6 +28,7 @@ import { validarHtmlNormativa } from '@shared/normativa'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto, REQUISITOS_POR_DEFECTO } from '@shared/modelo'
 import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
+import catalogoHorarios from '../../../../resources/horarios/catalogo-2026-27.json'
 import { generarCabeceraDocumento, generarPieDocumento } from '@shared/cabecera-documento'
 import conselleriaLogo from '@renderer/assets/plantillas/conselleria.png'
 import unionEuropeaLogo from '@renderer/assets/plantillas/union-europea.png'
@@ -67,6 +68,7 @@ import type {
   EventoEvaluacionEntrada,
   EvidenciaClase,
   EvidenciaClaseEntrada,
+  CatalogoHorarios,
   CicloCatalogo,
   GrupoClase,
   GrupoClaseEntrada,
@@ -2015,25 +2017,7 @@ const api = {
     guardarPesosRa: async () => undefined
   },
   catalogo: {
-    listar: async (): Promise<CicloCatalogo[]> => {
-      const ciclo = await cicloDaw()
-      return [
-        {
-          id: ciclo.id,
-          denominacion: ciclo.denominacion,
-          nivel: 'GS',
-          familia_profesional: ciclo.familia_profesional,
-          abreviatura: 'DAW',
-          modulos: ciclo.modulos.map((m) => ({
-            curso: m.curso ?? '1',
-            codigo: m.codigo,
-            nombre: m.nombre,
-            horas_semanales: null,
-            horas_anuales: m.horas_minimas_boe
-          }))
-        }
-      ]
-    }
+    listar: async (): Promise<CicloCatalogo[]> => (catalogoHorarios as CatalogoHorarios).ciclos
   },
   bd: {
     estado: async () => ({ ruta: 'localStorage', ciclos: 1, modulos: 13, ra: 86, ce: 665 }),
