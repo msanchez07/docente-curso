@@ -66,7 +66,7 @@ const fichaHtml = computed(() => {
 
 const fichaDocumento = computed(
   () =>
-    `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>html,body{margin:0;padding:0;background:#f4f6f9}body{padding:0}*{box-sizing:border-box}@media print{html,body{background:#fff}body{padding:0}}</style></head><body>${fichaHtml.value}</body></html>`
+    `<!doctype html><html lang="es"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><style>@page{size:A4 portrait;margin:14mm 12mm}html,body{margin:0;padding:0;background:#f4f6f9}body{padding:0}*{box-sizing:border-box}@media print{html,body{background:#fff}body{padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}}</style></head><body>${fichaHtml.value}</body></html>`
 )
 
 const bloqueada = computed(() => entrega.value?.bloqueada ?? false)
