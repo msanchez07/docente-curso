@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import NotificacionesGlobales from '@renderer/components/NotificacionesGlobales.vue'
+import BarraVentana from '@renderer/components/BarraVentana.vue'
 import NavegacionGrupo from '@renderer/components/NavegacionGrupo.vue'
 import { EVENTO_NORMATIVA_ACTUALIZADA } from '@shared/normativa'
 import { APP, AUTOR } from '@shared/autor'
@@ -162,10 +163,8 @@ async function importarNormativa(evento: Event): Promise<void> {
 
 <template>
   <div class="app">
+    <BarraVentana />
     <aside class="lateral">
-      <h1 class="marca">{{ APP.nombre }}</h1>
-      <p class="marca__sub">{{ APP.subtitulo }}</p>
-
       <div class="menu__curso">
         <label for="curso-academico">Curso académico</label>
         <div class="menu__curso-select">
@@ -315,7 +314,7 @@ async function importarNormativa(evento: Event): Promise<void> {
       />
 
       <footer class="pie">
-        <div>{{ APP.nombre }} · v{{ version || '1.0.1' }}</div>
+        <div>{{ APP.nombre }} · v{{ version || '1.0.2' }}</div>
         <div class="pie__autor">
           <span>{{ AUTOR.nombre }}</span>
           <span>{{ AUTOR.rol }}</span>

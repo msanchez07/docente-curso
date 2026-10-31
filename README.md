@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.0.1](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.1)** —
+> **📦 [Descargar Aula Nova 1.0.2](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.2)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -30,10 +30,10 @@ Aplicación funcional en **versión 1.0**. Verificación actual:
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.0.1
+## Release 1.0.2
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.0.1](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.1)**:
+**[GitHub Releases v1.0.2](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.2)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -173,8 +173,8 @@ La guía completa, con todas las capturas y explicaciones, está en
   - Logo del centro en PNG con vista previa y límite de tamaño.
   - Guardado local, sin servicios externos.
 - **Ventana adaptable**:
-  - La primera vez se abre a pantalla completa.
-  - Recuerda tamaño, posición, maximizado y pantalla completa para el siguiente arranque.
+  - La primera vez se abre maximizada, con la barra de ventana integrada.
+  - Recuerda tamaño, posición y estado maximizado para el siguiente arranque.
 - **Interfaz homogénea**:
   - Menús **Acciones** desplegables con iconos para las operaciones secundarias.
   - Notificaciones emergentes de guardado, error y aviso, en lugar de mensajes perdidos en la

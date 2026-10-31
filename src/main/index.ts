@@ -22,18 +22,32 @@ const VENTANA_OCULTA = process.env.GE_VENTANA_OCULTA === '1'
 
 function crearVentana(): void {
   const estado = VENTANA_OCULTA
-    ? { width: 1200, height: 800, maximized: false, fullscreen: false }
+    ? { width: 1200, height: 800, maximized: false }
     : leerEstadoVentana()
+  const esMac = process.platform === 'darwin'
   const ventana = new BrowserWindow({
     width: estado.width,
     height: estado.height,
     ...(estado.x !== undefined && estado.y !== undefined ? { x: estado.x, y: estado.y } : {}),
     minWidth: 940,
     minHeight: 640,
-    fullscreen: estado.fullscreen,
     show: false,
     autoHideMenuBar: true,
+    backgroundColor: '#101a2b',
     title: `${APP.nombre} · ${APP.subtitulo}`,
+    ...(esMac
+      ? {
+          titleBarStyle: 'hiddenInset',
+          trafficLightPosition: { x: 16, y: 12 }
+        }
+      : {
+          titleBarStyle: 'hidden',
+          titleBarOverlay: {
+            color: '#101a2b',
+            symbolColor: '#e8edf6',
+            height: 40
+          }
+        }),
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
@@ -44,7 +58,7 @@ function crearVentana(): void {
     }
   })
 
-  if (!VENTANA_OCULTA && estado.maximized && !estado.fullscreen) ventana.maximize()
+  if (!VENTANA_OCULTA && estado.maximized) ventana.maximize()
 
   ventana.on('ready-to-show', () => {
     if (!VENTANA_OCULTA) ventana.show()

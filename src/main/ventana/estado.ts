@@ -1,9 +1,10 @@
 /**
  * Persistencia del tamaño y estado de la ventana principal.
  *
- * La primera vez se abre en pantalla completa. A partir de ahí se recuerda la
- * última configuración del usuario: tamaño, posición, maximizada o pantalla
- * completa. El fichero vive en `userData`, junto a la base de datos.
+ * La primera vez se abre maximizada. A partir de ahí se recuerda la última
+ * configuración del usuario: tamaño, posición y si estaba maximizada. La
+ * pantalla completa nativa no se persiste: al volver a abrir se restaura como
+ * ventana maximizada, con los botones de la ventana visibles.
  */
 import { app, screen, type BrowserWindow, type Rectangle } from 'electron'
 import { existsSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
@@ -15,14 +16,12 @@ export interface EstadoVentana {
   x?: number
   y?: number
   maximized: boolean
-  fullscreen: boolean
 }
 
 export const ESTADO_VENTANA_POR_DEFECTO: EstadoVentana = {
   width: 1200,
   height: 800,
-  maximized: false,
-  fullscreen: true
+  maximized: true
 }
 
 function rutaEstadoVentana(): string {
@@ -65,8 +64,8 @@ export function normalizarEstadoVentana(valor: unknown): EstadoVentana {
   const estado: EstadoVentana = {
     width: numero(datos.width, ESTADO_VENTANA_POR_DEFECTO.width, 940, 10000),
     height: numero(datos.height, ESTADO_VENTANA_POR_DEFECTO.height, 640, 10000),
-    maximized: datos.maximized === true,
-    fullscreen: datos.fullscreen === true
+    // Los estados antiguos guardaban `fullscreen`; se migran a maximizada.
+    maximized: datos.maximized === true || datos.fullscreen === true
   }
   const x = posicion(datos.x)
   const y = posicion(datos.y)
@@ -98,8 +97,7 @@ export function guardarEstadoVentana(ventana: BrowserWindow): void {
     height: Math.max(640, Math.round(bounds.height)),
     x: Math.round(bounds.x),
     y: Math.round(bounds.y),
-    maximized: ventana.isMaximized(),
-    fullscreen: ventana.isFullScreen()
+    maximized: ventana.isMaximized() || ventana.isFullScreen()
   }
   const ruta = rutaEstadoVentana()
   const temporal = `${ruta}.tmp`

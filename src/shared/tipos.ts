@@ -1232,6 +1232,8 @@ export const CONFIGURACION_GENERAL_POR_DEFECTO: ConfiguracionGeneral = {
 export interface Api {
   app: {
     version(): Promise<string>
+    /** Plataforma de Electron: darwin, win32, linux o web. */
+    plataforma: string
   }
   configuracion: {
     obtener(): Promise<ConfiguracionGeneral>

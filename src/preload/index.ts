@@ -5,7 +5,8 @@ import { CANALES, type Api } from '@shared/tipos'
 // Contrato IPC tipado: única vía por la que el renderer llega al proceso principal.
 const api: Api = {
   app: {
-    version: () => ipcRenderer.invoke(CANALES.appVersion)
+    version: () => ipcRenderer.invoke(CANALES.appVersion),
+    plataforma: process.platform
   },
   configuracion: {
     obtener: () => ipcRenderer.invoke(CANALES.configuracionObtener),
