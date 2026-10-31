@@ -4191,6 +4191,95 @@ a:focus-visible {
   margin-top: 12px;
 }
 
+.criterios__trimestres {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.criterios__trimestre {
+  padding: 13px 14px;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #fbfcfe;
+}
+
+.criterios__trimestre-cabecera {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.criterios__trimestre-cabecera > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.criterios__trimestre-cabecera strong {
+  font-size: 13.5px;
+}
+
+.criterios__trimestre-cabecera .tenue {
+  font-size: 11.5px;
+}
+
+.criterios__trimestre-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #475467;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.criterios__trimestre-switch input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--acento);
+}
+
+.criterios__pesos-trimestre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px 16px;
+  margin-top: 12px;
+}
+
+.criterios__peso-trimestre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eef1f5;
+  font-size: 12.5px;
+}
+
+.criterios__peso-trimestre:last-child {
+  border-bottom: 0;
+}
+
+.criterios__peso-trimestre .entrada-peso {
+  flex: 0 0 88px;
+}
+
+.criterios__trimestre-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.criterios__trimestre-pie .tenue {
+  font-size: 11.5px;
+}
+
 .requisito-fila {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 110px;

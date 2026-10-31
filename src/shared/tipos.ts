@@ -818,6 +818,12 @@ export interface Avaluacion {
   id: string
   nombre: string
   peso: number
+  /**
+   * Pesos de categorías propios de este trimestre. Si están definidos, sustituyen
+   * a los pesos generales de `ModeloEvaluacion.categorias` en esta avaluación.
+   * Las categorías omitidas cuentan 0.
+   */
+  pesosCategorias?: Record<string, number>
 }
 
 export interface RequisitoEvaluacion {

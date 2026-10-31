@@ -122,5 +122,26 @@ export function validarModelo(modelo: ModeloEvaluacion): ValidacionModelo {
     errores.push('Hay avaluaciones repetidas.')
   }
 
+  const idsCategorias = new Set(modelo.categorias.map((c) => c.id))
+  for (const avaluacion of modelo.avaluaciones) {
+    const pesos = avaluacion.pesosCategorias
+    if (!pesos || Object.keys(pesos).length === 0) continue
+    const desconocidas = Object.keys(pesos).filter((id) => !idsCategorias.has(id))
+    if (desconocidas.length > 0) {
+      errores.push(
+        `La avaluación «${avaluacion.nombre}» tiene categorías desconocidas: ${desconocidas.join(', ')}.`
+      )
+    }
+    if (Object.values(pesos).some((peso) => Number(peso) < 0)) {
+      errores.push(`La avaluación «${avaluacion.nombre}» tiene pesos negativos.`)
+    }
+    const suma = Object.values(pesos).reduce((total, peso) => total + (Number(peso) || 0), 0)
+    if (!sumanCien(suma)) {
+      errores.push(
+        `Los pesos de la avaluación «${avaluacion.nombre}» suman ${redondear2(suma).toFixed(2)} %; deben sumar exactamente 100 %.`
+      )
+    }
+  }
+
   return { ok: errores.length === 0, sumaCategorias, sumaAvaluaciones, errores }
 }

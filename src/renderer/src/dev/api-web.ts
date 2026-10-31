@@ -1343,6 +1343,27 @@ function validarModeloWeb(modelo: ModeloEvaluacion): void {
       `Los pesos de las avaluaciones suman ${redondear2(sumaAvaluaciones)} %; deben sumar exactamente 100 %.`
     )
   }
+
+  const idsCategorias = new Set(modelo.categorias.map((categoria) => categoria.id))
+  for (const avaluacion of modelo.avaluaciones) {
+    const pesos = avaluacion.pesosCategorias
+    if (!pesos || Object.keys(pesos).length === 0) continue
+    const desconocidas = Object.keys(pesos).filter((id) => !idsCategorias.has(id))
+    if (desconocidas.length > 0) {
+      throw new Error(
+        `La avaluación «${avaluacion.nombre}» tiene categorías desconocidas: ${desconocidas.join(', ')}.`
+      )
+    }
+    if (Object.values(pesos).some((peso) => Number(peso) < 0)) {
+      throw new Error(`La avaluación «${avaluacion.nombre}» tiene pesos negativos.`)
+    }
+    const suma = Object.values(pesos).reduce((total, peso) => total + (Number(peso) || 0), 0)
+    if (Math.abs(redondear2(suma) - 100) > 1e-9) {
+      throw new Error(
+        `Los pesos de la avaluación «${avaluacion.nombre}» suman ${redondear2(suma)} %; deben sumar exactamente 100 %.`
+      )
+    }
+  }
 }
 
 function nombreArchivoWeb(texto: string): string {

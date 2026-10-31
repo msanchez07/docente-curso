@@ -54,6 +54,10 @@ export function evaluarAlumno(
   const avisos: string[] = []
 
   const avaluaciones: EvaluacionAvaluacion[] = modelo.avaluaciones.map((avaluacion) => {
+    const pesosPropios =
+      avaluacion.pesosCategorias && Object.keys(avaluacion.pesosCategorias).length > 0
+        ? avaluacion.pesosCategorias
+        : null
     const categorias: EvaluacionCategoria[] = modelo.categorias.map((categoria) => {
       const deCategoria = entregas.filter(
         (e) => e.avaluacion === avaluacion.id && e.categoria === categoria.id
@@ -80,12 +84,15 @@ export function evaluarAlumno(
         }
       }
 
+      const peso = pesosPropios
+        ? Number(pesosPropios[categoria.id] ?? 0)
+        : Number(categoria.peso) || 0
       return {
         categoriaId: categoria.id,
         nombre: categoria.nombre,
-        peso: categoria.peso,
+        peso,
         media,
-        suspensa: items.length > 0 && motivos.length > 0,
+        suspensa: peso > 0 && items.length > 0 && motivos.length > 0,
         motivos,
         entregas: items
       }

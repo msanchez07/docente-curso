@@ -184,6 +184,30 @@ describe('cálculo de calificaciones por grupo', () => {
     expect(pendiente.vaAConvocatoria).toBe(true)
   })
 
+  it('aplica pesos de categoría propios de un trimestre', () => {
+    const modelo = modeloPorDefecto('presencial')
+    modelo.avaluaciones = modelo.avaluaciones.map((avaluacion) =>
+      avaluacion.id === 'AV1'
+        ? {
+            ...avaluacion,
+            pesosCategorias: { examenes: 50, actividades: 0, proyectos: 50 }
+          }
+        : avaluacion
+    )
+
+    const fila = calcularResumenClase(
+      grupo,
+      modelo,
+      entregas,
+      [alumno],
+      notas({ 1: 8, 2: 3, 3: 7 })
+    ).alumnos[0]
+
+    expect(fila.avaluaciones[0].categorias.map((categoria) => categoria.peso)).toEqual([50, 0])
+    expect(fila.avaluaciones[0].nota).toBe(8)
+    expect(fila.avaluaciones[0].suspensa).toBe(false)
+  })
+
   it('no cuenta la avaluación sin entregas en la nota final', () => {
     const resumen = calcularResumenClase(
       grupo,

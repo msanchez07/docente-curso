@@ -2,11 +2,12 @@
 
 > Documento vivo. Debe actualizarse al cerrar cada iteración con lo construido, las decisiones
 > tomadas, las verificaciones ejecutadas y lo que queda pendiente. La versión corta de producto
-> está en [`README.md`](./README.md).
+> está en [`README.md`](./README.md) y la guía de uso completa en
+> [`GUIA-APLICACION.md`](./GUIA-APLICACION.md).
 
-**Última actualización:** 30/10/2026
+**Última actualización:** 31/10/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **205 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **208 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -92,6 +93,9 @@ Vite/electron-vite + Vitest**.
 - Bloqueo/desbloqueo de entregas; las bloqueadas no admiten cambios hasta desbloquearlas.
 - Calificaciones:
   - Notas decimales por entrega y anotaciones.
+  - Pesos de categorías generales y, opcionalmente, **pesos propios por trimestre** (por ejemplo,
+    50 % examen + 50 % proyecto, actividades a 0 %). El cálculo propio se aplica a la nota del
+    trimestre; la nota final sigue ponderándose por RA.
   - Cálculo de categoría, avaluación, RA y nota final.
   - Desbloqueo directo desde Calificaciones si una entrega está bloqueada.
   - Botón **Editar notas** y **Informe PDF** por alumno.
@@ -220,6 +224,9 @@ Vite/electron-vite + Vitest**.
 - La calificación se organiza con instrumentos/categorías; **cada RA tiene un peso en la nota
   final** y por defecto se reparte el 100 % a partes iguales entre los RA. La nota final es la
   media ponderada de las notas de los RA.
+- Los pesos de categorías son generales por defecto, pero un trimestre puede definir **pesos
+  propios** (por ejemplo, 50 % examen y 50 % proyecto, actividades a 0 %). Las categorías con
+  peso 0 no penalizan la nota del trimestre. La nota final sigue calculándose por RA.
 - Las unidades organizan contenidos y sesiones; las entregas se asocian a una unidad.
 - Las entregas incluyen un enunciado, una descripción del problema y restricciones. Su ficha
   HTML autocontenida se puede copiar, descargar o imprimir; al abrir una entrega se muestra la
@@ -259,7 +266,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual (30/10/2026): **205 tests**, 33 archivos de test, build y smoke correctos.
+Estado actual (31/10/2026): **208 tests**, 33 archivos de test, build y smoke correctos.
 
 ---
 
@@ -281,7 +288,8 @@ Al cerrar cada iteración:
 2. Actualiza las secciones de funcionalidad afectadas; no dupliques información en README.
 3. Anota decisiones nuevas y limitaciones conocidas.
 4. Actualiza el recuento de tests y el resultado de `typecheck`, `build` y `smoke`.
-5. Mueve a “Pendiente” lo que siga abierto y elimina lo ya resuelto.
+5. Actualiza [`GUIA-APLICACION.md`](./GUIA-APLICACION.md) con los cambios de uso.
+6. Mueve a “Pendiente” lo que siga abierto y elimina lo ya resuelto.
 
 ### Registro de iteraciones
 
@@ -298,3 +306,4 @@ Al cerrar cada iteración:
 | 30/10/2026 | Navegación y UI         | Barra superior de grupo con Dashboard/Día a día/Consulta, menús Acciones, notificaciones emergentes y retirada del botón Volver.        |
 | 30/10/2026 | Programación e informes | Calendario escolar como pestaña y acciones de informes agrupadas.                                                                       |
 | 30/10/2026 | Control de faltas       | Contexto compacto, configuración con interruptor, tarjetas de módulos, historial plegable y tabla con faltas/porcentaje diferenciados.  |
+| 31/10/2026 | Pesos por trimestre     | Criterios permite pesos de categorías propios por avaluación; las categorías a 0 % no penalizan el trimestre.                           |

@@ -25,7 +25,9 @@ const ciclo: Ciclo = {
       nombre: 'Módulo uno',
       ects: 10,
       horas_minimas_boe: 100,
-      ra: [{ codigo: 'RA1', numero: 1, descripcion: 'RA', ce: [{ codigo: 'a', descripcion: 'CE' }] }]
+      ra: [
+        { codigo: 'RA1', numero: 1, descripcion: 'RA', ce: [{ codigo: 'a', descripcion: 'CE' }] }
+      ]
     }
   ]
 }
@@ -94,6 +96,31 @@ describe('modelo de evaluación por grupo', () => {
       'examenes',
       'actividades'
     ])
+  })
+
+  it('guarda pesos de categoría propios de un trimestre', () => {
+    const modelo = modeloPorDefecto('presencial')
+    modelo.avaluaciones[0] = {
+      ...modelo.avaluaciones[0],
+      pesosCategorias: { examenes: 50, actividades: 0, proyectos: 50 }
+    }
+    guardarModeloDeGrupo(db, presencial.id, modelo)
+    expect(obtenerModelo(db, presencial.id).avaluaciones[0].pesosCategorias).toEqual({
+      examenes: 50,
+      actividades: 0,
+      proyectos: 50
+    })
+  })
+
+  it('rechaza pesos propios de un trimestre que no suman 100', () => {
+    const invalido = modeloPorDefecto('presencial')
+    invalido.avaluaciones[0] = {
+      ...invalido.avaluaciones[0],
+      pesosCategorias: { examenes: 50, actividades: 20, proyectos: 0 }
+    }
+    expect(() => guardarModeloDeGrupo(db, presencial.id, invalido)).toThrow(
+      /pesos de la avaluación/i
+    )
   })
 
   it('rechaza un modelo con pesos que no suman 100', () => {

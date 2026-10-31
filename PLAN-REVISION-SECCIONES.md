@@ -201,6 +201,7 @@ Ficha completa en `PROPUESTA-ALUMNADO.md`.
 | 27 oct 2026 | Cada cambio se revisa en el **navegador**; Electron se valida más adelante.                                     |
 | 30 oct 2026 | **Navegación de grupo**: barra superior Dashboard + Día a día + Consulta; sin botón Volver en vistas de grupo.  |
 | 30 oct 2026 | **Acciones**: menús desplegables con iconos; guardados con notificaciones emergentes de color.                  |
+| 31 oct 2026 | **Criterios**: pesos de categorías generales y pesos propios optativos por trimestre.                           |
 
 ## Curso académico (transversal)
 

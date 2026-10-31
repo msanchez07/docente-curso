@@ -79,6 +79,10 @@ export function calcularResumenClase(
     const avaluaciones: AvaluacionCalificacion[] = modelo.avaluaciones.map((avaluacion) => {
       const categorias: CategoriaCalificacion[] = []
       const motivos: string[] = []
+      const pesosPropios =
+        avaluacion.pesosCategorias && Object.keys(avaluacion.pesosCategorias).length > 0
+          ? avaluacion.pesosCategorias
+          : null
 
       for (const categoria of modelo.categorias) {
         const entregasCategoria = entregas.filter(
@@ -106,12 +110,15 @@ export function calcularResumenClase(
           detalle.reduce((total, entrega) => total + (entrega.nota ?? 0), 0) / detalle.length
         )
         const suspensa = detalle.some((entrega) => entrega.suspensa) || media < minCategoria
-        if (suspensa) motivos.push(`Categoría «${categoria.nombre}» suspensa`)
+        const peso = pesosPropios
+          ? Number(pesosPropios[categoria.id] ?? 0)
+          : Number(categoria.peso) || 0
+        if (suspensa && peso > 0) motivos.push(`Categoría «${categoria.nombre}» suspensa`)
 
         categorias.push({
           categoriaId: categoria.id,
           nombre: categoria.nombre,
-          peso: categoria.peso,
+          peso,
           media,
           suspensa,
           entregas: detalle
@@ -122,7 +129,7 @@ export function calcularResumenClase(
         categorias.map((categoria) => ({ peso: categoria.peso, valor: categoria.media ?? 0 }))
       )
       const suspensa =
-        categorias.some((categoria) => categoria.suspensa) ||
+        categorias.some((categoria) => categoria.peso > 0 && categoria.suspensa) ||
         (nota !== null && nota < minAvaluacion)
       if (nota !== null && nota < minAvaluacion) {
         motivos.push(`Nota de la avaluación inferior a ${minAvaluacion}`)

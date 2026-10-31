@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import Pestanas from '@renderer/components/Pestanas.vue'
-import type { ModeloEvaluacion } from '@shared/tipos'
+import type { Avaluacion, ModeloEvaluacion } from '@shared/tipos'
 
 const props = defineProps<{
   modelo: ModeloEvaluacion
@@ -16,6 +16,7 @@ const pestana = ref('avaluaciones')
 const pestanas = [
   { id: 'avaluaciones', etiqueta: 'Avaluaciones' },
   { id: 'categorias', etiqueta: 'Categorías' },
+  { id: 'trimestres', etiqueta: 'Trimestres' },
   { id: 'ra', etiqueta: 'RA' },
   { id: 'minimos', etiqueta: 'Mínimos' },
   { id: 'resumen', etiqueta: 'Resumen' }
@@ -44,6 +45,59 @@ const pesosRaOk = computed(
 
 const categoriasOk = computed(() => Math.abs(redondear2(sumaCategorias.value) - 100) < 1e-9)
 const avaluacionesOk = computed(() => Math.abs(redondear2(sumaAvaluaciones.value) - 100) < 1e-9)
+
+function usaPesosPropios(avaluacion: Avaluacion): boolean {
+  return Boolean(avaluacion.pesosCategorias && Object.keys(avaluacion.pesosCategorias).length > 0)
+}
+
+function sumaPesosAvaluacion(avaluacion: Avaluacion): number {
+  if (!avaluacion.pesosCategorias) return 0
+  return Object.values(avaluacion.pesosCategorias).reduce(
+    (total, peso) => total + (Number(peso) || 0),
+    0
+  )
+}
+
+function pesosAvaluacionOk(avaluacion: Avaluacion): boolean {
+  return (
+    !usaPesosPropios(avaluacion) ||
+    Math.abs(redondear2(sumaPesosAvaluacion(avaluacion)) - 100) < 1e-9
+  )
+}
+
+const pesosAvaluacionesOk = computed(() =>
+  props.modelo.avaluaciones.every((avaluacion) => pesosAvaluacionOk(avaluacion))
+)
+
+function alternarPesosPropios(avaluacion: Avaluacion): void {
+  if (usaPesosPropios(avaluacion)) {
+    delete avaluacion.pesosCategorias
+    return
+  }
+  const pesos: Record<string, number> = {}
+  for (const categoria of props.modelo.categorias) {
+    pesos[categoria.id] = Number(categoria.peso) || 0
+  }
+  avaluacion.pesosCategorias = pesos
+}
+
+function formulaCategoriasGenerales(): string {
+  const categorias = props.modelo.categorias.filter((categoria) => Number(categoria.peso) > 0)
+  return categorias.length === 0
+    ? '—'
+    : categorias.map((categoria) => `${categoria.peso} % ${categoria.nombre}`).join(' + ')
+}
+
+function formulaCategoriasAvaluacion(avaluacion: Avaluacion): string {
+  const peso = (id: string): number =>
+    avaluacion.pesosCategorias
+      ? Number(avaluacion.pesosCategorias[id] ?? 0)
+      : Number(props.modelo.categorias.find((categoria) => categoria.id === id)?.peso ?? 0)
+  const categorias = props.modelo.categorias.filter((categoria) => peso(categoria.id) > 0)
+  return categorias.length === 0
+    ? '—'
+    : categorias.map((categoria) => `${peso(categoria.id)} % ${categoria.nombre}`).join(' + ')
+}
 const nombresOk = computed(
   () =>
     props.modelo.categorias.every((c) => c.nombre.trim().length > 0) &&
@@ -55,6 +109,7 @@ const valido = computed(
     props.modelo.avaluaciones.length > 0 &&
     categoriasOk.value &&
     avaluacionesOk.value &&
+    pesosAvaluacionesOk.value &&
     pesosRaOk.value &&
     nombresOk.value
 )
@@ -102,15 +157,24 @@ function quitarAvaluacion(indice: number): void {
 
 function anadirCategoria(): void {
   const ids = props.modelo.categorias.map((c) => c.id)
+  const id = idDesde('categoria', ids)
   props.modelo.categorias.push({
-    id: idDesde('categoria', ids),
+    id,
     nombre: 'Nueva categoría',
     peso: 0
   })
+  for (const avaluacion of props.modelo.avaluaciones) {
+    if (avaluacion.pesosCategorias) avaluacion.pesosCategorias[id] = 0
+  }
 }
 
 function quitarCategoria(indice: number): void {
+  const categoria = props.modelo.categorias[indice]
   props.modelo.categorias.splice(indice, 1)
+  if (!categoria) return
+  for (const avaluacion of props.modelo.avaluaciones) {
+    if (avaluacion.pesosCategorias) delete avaluacion.pesosCategorias[categoria.id]
+  }
 }
 </script>
 
@@ -123,7 +187,7 @@ function quitarCategoria(indice: number): void {
     </p>
 
     <p
-      v-if="!categoriasOk || !avaluacionesOk || !pesosRaOk || !nombresOk"
+      v-if="!categoriasOk || !avaluacionesOk || !pesosAvaluacionesOk || !pesosRaOk || !nombresOk"
       class="aviso aviso--error"
       role="alert"
     >
@@ -134,6 +198,9 @@ function quitarCategoria(indice: number): void {
       <template v-if="!categoriasOk">
         Los pesos de las categorías suman {{ porcentaje(sumaCategorias) }} %; deben sumar
         exactamente 100 %.
+      </template>
+      <template v-if="!pesosAvaluacionesOk">
+        Los pesos propios de algún trimestre no suman exactamente 100 %.
       </template>
       <template v-if="!pesosRaOk">
         Los pesos de los RA suman {{ porcentaje(sumaPesosRa) }} %; deben sumar exactamente 100 %.
@@ -223,8 +290,9 @@ function quitarCategoria(indice: number): void {
           tabindex="0"
         >
           <p class="tenue">
-            Categorías de entrega. Los mismos pesos se aplican a las tres avaluaciones; si una
-            categoría no tiene entregas, su peso se reparte entre las demás.
+            Categorías de entrega. Estos son los pesos generales; en «Trimestres» puedes dar a un
+            trimestre concreto un cálculo propio. Si una categoría no tiene entregas, su peso se
+            reparte entre las demás.
           </p>
           <table class="tabla">
             <thead>
@@ -282,6 +350,82 @@ function quitarCategoria(indice: number): void {
             <span class="chip" :class="categoriasOk ? 'chip--ok' : 'chip--aviso'">
               Suma: {{ porcentaje(sumaCategorias) }} %
             </span>
+          </div>
+        </div>
+
+        <div
+          v-else-if="pestana === 'trimestres'"
+          id="panel-trimestres"
+          role="tabpanel"
+          aria-labelledby="pestana-trimestres"
+          tabindex="0"
+        >
+          <p class="tenue">
+            Por defecto, todos los trimestres usan los pesos generales de Categorías. Activa «Pesos
+            propios» en el trimestre que quieras calcular de otra forma; por ejemplo, 50 % examen y
+            50 % proyecto, dejando actividades a 0 %. Este cálculo se usa para la nota del
+            trimestre; la nota final sigue ponderándose por RA.
+          </p>
+
+          <div class="criterios__trimestres">
+            <article
+              v-for="avaluacion in modelo.avaluaciones"
+              :key="avaluacion.id"
+              class="criterios__trimestre"
+            >
+              <header class="criterios__trimestre-cabecera">
+                <div>
+                  <strong>{{ avaluacion.nombre }}</strong>
+                  <span class="tenue">{{ avaluacion.peso }} % de la nota final</span>
+                </div>
+                <label class="criterios__trimestre-switch">
+                  <input
+                    type="checkbox"
+                    :checked="usaPesosPropios(avaluacion)"
+                    @change="alternarPesosPropios(avaluacion)"
+                  />
+                  Pesos propios
+                </label>
+              </header>
+
+              <p v-if="!usaPesosPropios(avaluacion)" class="tenue">
+                Usa los pesos generales: {{ formulaCategoriasGenerales() }}
+              </p>
+
+              <template v-else>
+                <div class="criterios__pesos-trimestre">
+                  <div
+                    v-for="categoria in modelo.categorias"
+                    :key="categoria.id"
+                    class="criterios__peso-trimestre"
+                  >
+                    <span>{{ categoria.nombre }}</span>
+                    <span class="entrada-peso">
+                      <input
+                        v-model.number="avaluacion.pesosCategorias![categoria.id]"
+                        type="number"
+                        min="0"
+                        max="100"
+                        step="0.1"
+                        :aria-label="`Peso de ${categoria.nombre} en ${avaluacion.nombre}`"
+                      />
+                      <span aria-hidden="true">%</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="criterios__trimestre-pie">
+                  <span class="tenue">
+                    Resultado: {{ formulaCategoriasAvaluacion(avaluacion) }}
+                  </span>
+                  <span
+                    class="chip"
+                    :class="pesosAvaluacionOk(avaluacion) ? 'chip--ok' : 'chip--aviso'"
+                  >
+                    Suma: {{ porcentaje(sumaPesosAvaluacion(avaluacion)) }} %
+                  </span>
+                </div>
+              </template>
+            </article>
           </div>
         </div>
 

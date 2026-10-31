@@ -213,6 +213,11 @@ async function exportarInformeAlumno(): Promise<void> {
   }
 }
 
+function tienePesosPropios(avaluacionId: string): boolean {
+  const avaluacion = resumen.value?.modelo.avaluaciones.find((item) => item.id === avaluacionId)
+  return Boolean(avaluacion?.pesosCategorias && Object.keys(avaluacion.pesosCategorias).length > 0)
+}
+
 function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
   if (avaluacion.motivos.length > 0) return avaluacion.motivos.join(' · ')
   if (avaluacion.nota === null) return 'Sin entregas en esta avaluación'
@@ -331,7 +336,12 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
           <section v-if="avaluacionSeleccionada" class="tarjeta calificaciones__avaluacion">
             <header class="calificaciones__avaluacion-cabecera">
               <div>
-                <h3>{{ avaluacionSeleccionada.nombre }}</h3>
+                <h3>
+                  {{ avaluacionSeleccionada.nombre }}
+                  <span v-if="tienePesosPropios(avaluacionSeleccionada.avaluacionId)" class="chip">
+                    Cálculo propio
+                  </span>
+                </h3>
                 <p class="tenue">{{ motivoAvaluacion(avaluacionSeleccionada) }}</p>
               </div>
               <strong

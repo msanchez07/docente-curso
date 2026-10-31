@@ -15,7 +15,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en desarrollo activo. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **205 tests**
+- `npm test` ✅ **208 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -57,6 +57,9 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Vista de consulta: la nota final no se edita aquí, se calcula desde las entregas.
   - Pestañas por evaluación, **Ordinaria**, **Extraordinaria** y **Nota final**.
   - Instrumentos de calificación: categorías y pesos.
+  - **Pesos de categorías por trimestre**: cada trimestre puede usar los pesos generales o un
+    cálculo propio (por ejemplo, 50 % examen y 50 % proyecto, con actividades a 0 %). El cálculo
+    propio afecta a la nota del trimestre; la final sigue ponderándose por RA.
   - **Cada RA tiene su peso en la nota final**; por defecto se reparten a partes iguales entre los RA.
   - La nota final es la media ponderada de las notas de los RA.
   - Informe PDF por alumno y acceso a su informe completo.
@@ -169,6 +172,7 @@ con `localStorage`. Las exportaciones se generan localmente.
 
 ## Documentación
 
+- [`GUIA-APLICACION.md`](./GUIA-APLICACION.md) — guía completa de uso y mantenimiento.
 - [`RESUMEN-ITERACIONES.md`](./RESUMEN-ITERACIONES.md) — estado vivo, decisiones, historial y
   pendientes.
 - [`PLAN.md`](./PLAN.md) — plan original por fases.
