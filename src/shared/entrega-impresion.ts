@@ -43,16 +43,27 @@ function parrafos(texto: string | null, vacio = 'Sin contenido.'): string {
  * pie institucionales.
  */
 export function generarHtmlImpresionEntrega(datos: DatosImpresionEntrega): string {
-  const { entrega } = datos
+  const { entrega, grupo } = datos
 
   return `<article style="width:100%;max-width:100%;box-sizing:border-box;margin:0;background:#fff;color:#1f2937;font-family:Georgia,'Times New Roman',serif;line-height:1.65;">
     <section style="border:1px solid #cfd9e5;border-radius:10px;overflow:hidden;margin:0 0 22px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;">
       <div style="height:5px;background:#1e3a5f;"></div>
       <div style="padding:20px 22px 18px;background:#f8fafc;">
-        <h1 style="font-family:Georgia,'Times New Roman',serif;color:#102a43;font-size:26px;line-height:1.2;margin:0;font-weight:700;">
-          ${escapar(entrega.titulo)}
-        </h1>
-        <div style="width:46px;height:2px;background:#b7791f;margin:12px 0 0;"></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;">
+          <div style="min-width:0;">
+            <h1 style="font-family:Georgia,'Times New Roman',serif;color:#102a43;font-size:26px;line-height:1.2;margin:0;font-weight:700;">
+              ${escapar(entrega.titulo)}
+            </h1>
+            <div style="margin-top:6px;color:#52657a;font-size:11px;line-height:1.4;">
+              ${escapar(grupo.modulo_nombre)}
+            </div>
+            <div style="width:46px;height:2px;background:#b7791f;margin:12px 0 0;"></div>
+          </div>
+          <div style="flex:0 0 82px;padding:6px 7px 5px;border:1px solid #cfd9e5;border-radius:6px;background:#fff;text-align:center;">
+            <div style="font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7c93;">Nota</div>
+            <div style="height:34px;"></div>
+          </div>
+        </div>
       </div>
 
       <div style="border-top:1px solid #dbe3ec;padding:12px 22px 15px;background:#fff;">
