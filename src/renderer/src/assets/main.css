@@ -7858,3 +7858,240 @@ a:focus-visible {
     transform: translateY(0);
   }
 }
+
+/* --- Guía integrada -------------------------------------------------- */
+
+.guia__portada {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.guia__portada > div {
+  flex: 1 1 360px;
+  min-width: 0;
+}
+
+.guia__portada h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+}
+
+.guia__pasos {
+  flex: 1 1 380px;
+  margin: 0;
+  padding-left: 20px;
+  color: #475467;
+  font-size: 12.5px;
+  line-height: 1.65;
+}
+
+.guia__layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.guia__indice {
+  position: sticky;
+  top: 18px;
+  padding: 10px;
+}
+
+.guia__indice-titulo {
+  display: block;
+  padding: 2px 8px 8px;
+  color: var(--tenue);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.guia__indice-boton {
+  display: block;
+  width: 100%;
+  padding: 9px 11px;
+  color: var(--texto);
+  font: inherit;
+  font-size: 12.5px;
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.guia__indice-boton:hover {
+  background: #f7f9fc;
+  border-color: var(--borde);
+}
+
+.guia__indice-boton--activo {
+  color: var(--acento);
+  background: var(--acento-suave);
+  border-color: #c7d7fe;
+  font-weight: 600;
+}
+
+.guia__detalle {
+  padding: 18px;
+}
+
+.guia__detalle-cabecera {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.guia__detalle-cabecera h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.guia__detalle-cabecera .tenue {
+  max-width: 720px;
+}
+
+.guia__ruta {
+  display: inline-block;
+  max-width: 100%;
+  padding: 5px 8px;
+  overflow-wrap: anywhere;
+  color: var(--tenue);
+  font-size: 10.5px;
+  background: #f8fafc;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+}
+
+.guia__captura {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 16px 0 18px;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.guia__puntos h4 {
+  margin: 0 0 8px;
+  font-size: 13.5px;
+}
+
+.guia__puntos ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 19px;
+  color: #475467;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.guia__pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--borde);
+}
+
+.navegacion-grupo__ayuda {
+  margin-left: auto;
+}
+
+.ayuda-seccion__captura {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 14px 0;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+}
+
+.ayuda-seccion__puntos {
+  margin: 0;
+  padding-left: 19px;
+  color: #475467;
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+.ayuda-seccion__puntos li + li {
+  margin-top: 6px;
+}
+
+.ayuda-seccion__pie {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .guia__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .guia__indice {
+    position: static;
+  }
+
+  .guia__indice-boton {
+    display: inline-block;
+    width: auto;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 720px) {
+  .navegacion-grupo__ayuda {
+    margin-left: 0;
+  }
+}
+
+.guia__explicacion {
+  margin-top: 12px;
+  color: #475467;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.guia__explicacion p {
+  margin: 0 0 10px;
+}
+
+.guia__explicacion p:last-child {
+  margin-bottom: 0;
+}
+
+.ayuda-seccion__explicacion {
+  margin-top: 12px;
+  color: #475467;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+.ayuda-seccion__explicacion p {
+  margin: 0 0 9px;
+}
+
+.ayuda-seccion__explicacion p:last-child {
+  margin-bottom: 0;
+}
+
+.ayuda-seccion__captura {
+  max-height: 48vh;
+  object-fit: contain;
+  object-position: top;
+}

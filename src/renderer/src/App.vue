@@ -55,9 +55,15 @@ const grupoIdContexto = computed(() => {
 const mostrarNavegacionGrupo = computed(() => {
   const nombre = String(route.name ?? '')
   if (!nombre) return false
-  return !['grupos', 'cursos', 'plantillas', 'plantilla-editar', 'backups', 'normativa'].includes(
-    nombre
-  )
+  return ![
+    'grupos',
+    'cursos',
+    'plantillas',
+    'plantilla-editar',
+    'backups',
+    'normativa',
+    'guia'
+  ].includes(nombre)
 })
 
 function grupoActivo(grupoId: number): boolean {
@@ -245,6 +251,9 @@ async function importarNormativa(evento: Event): Promise<void> {
           </RouterLink>
           <RouterLink to="/backups" class="menu__enlace" @click="cerrarMenuGlobal">
             Copias de seguridad
+          </RouterLink>
+          <RouterLink to="/guia" class="menu__enlace" @click="cerrarMenuGlobal">
+            Guía de uso
           </RouterLink>
           <RouterLink to="/normativa" class="menu__enlace" @click="cerrarMenuGlobal">
             Normativa FP

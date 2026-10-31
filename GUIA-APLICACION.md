@@ -107,10 +107,31 @@ Los grupos se separan con barras verticales finas. La opción activa queda resal
 Las operaciones que no son principales se agrupan en menús **Acciones** con iconos. Las acciones
 principales (guardar, exportar PDF, nueva unidad, etc.) permanecen visibles.
 
+### Guía integrada y ayuda contextual
+
+- En **Opciones globales → Guía de uso** hay una guía completa con capturas reales de cada
+  sección.
+- En la barra superior de grupo, el botón **Ayuda** abre una explicación de la sección actual,
+  con su captura y sus acciones principales.
+- La guía completa y la ayuda usan el mismo contenido, así que se actualizan juntas.
+
 ### Avisos
 
 Los guardados, errores y avisos aparecen como **notificaciones emergentes** en la parte superior
 derecha. Se cierran solas o con la aspita.
+
+### Opciones globales
+
+El menú **Opciones globales** de la barra lateral reúne:
+
+- **Gestionar grupos**.
+- **Cursos académicos**.
+- **Plantillas**.
+- **Control de faltas**.
+- **Copias de seguridad**.
+- **Guía de uso**.
+- **Normativa FP** e **Importar normativa**.
+- **Restaurar/Eliminar datos de prueba**, solo en la previsualización web.
 
 ---
 
@@ -425,4 +446,9 @@ Siempre que se haga un cambio relevante:
 2. Actualizar `README.md` si cambia la funcionalidad principal.
 3. Actualizar `RESUMEN-ITERACIONES.md` con la entrada de iteración y el recuento de tests.
 4. Revisar que los nombres de menús, pestañas y botones coinciden con la interfaz real.
-5. Ejecutar `typecheck`, `test`, `build` y `smoke`.
+5. Regenerar las capturas si cambió la interfaz:
+   ```bash
+   npm run dev:web
+   npm run capturar:guia
+   ```
+6. Ejecutar `typecheck`, `test`, `build` y `smoke`.

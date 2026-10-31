@@ -97,6 +97,8 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Menús **Acciones** desplegables con iconos para las operaciones secundarias.
   - Notificaciones emergentes de guardado, error y aviso, en lugar de mensajes perdidos en la
     página.
+  - **Guía integrada** con capturas reales en **Opciones globales → Guía de uso** y ayuda
+    contextual por sección desde el botón **Ayuda** de la barra superior.
 
 ## Stack
 

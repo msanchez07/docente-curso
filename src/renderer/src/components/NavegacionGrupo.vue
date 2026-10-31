@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { RouterLink, useRoute, type RouteLocationRaw } from 'vue-router'
+import AyudaSeccion from '@renderer/components/AyudaSeccion.vue'
 
 const props = defineProps<{ grupoId?: number | null }>()
 const route = useRoute()
@@ -189,5 +190,7 @@ const destinoDashboard = computed(() =>
         </RouterLink>
       </div>
     </template>
+
+    <AyudaSeccion />
   </nav>
 </template>

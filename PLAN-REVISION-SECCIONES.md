@@ -202,6 +202,7 @@ Ficha completa en `PROPUESTA-ALUMNADO.md`.
 | 30 oct 2026 | **Navegación de grupo**: barra superior Dashboard + Día a día + Consulta; sin botón Volver en vistas de grupo.  |
 | 30 oct 2026 | **Acciones**: menús desplegables con iconos; guardados con notificaciones emergentes de color.                  |
 | 31 oct 2026 | **Criterios**: pesos de categorías generales y pesos propios optativos por trimestre.                           |
+| 31 oct 2026 | **Guía**: completa con capturas en Opciones globales y ayuda contextual por sección en la barra superior.       |
 
 ## Curso académico (transversal)
 

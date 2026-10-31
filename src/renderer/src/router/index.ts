@@ -24,6 +24,7 @@ import ProgramacionDidacticaView from '@renderer/views/ProgramacionDidacticaView
 import PlantillasView from '@renderer/views/PlantillasView.vue'
 import PlantillaFormView from '@renderer/views/PlantillaFormView.vue'
 import BackupsView from '@renderer/views/BackupsView.vue'
+import GuiaView from '@renderer/views/GuiaView.vue'
 import { registrarNavegacion } from '@renderer/composables/volver'
 
 // Solo Grupos por ahora. Las demás vistas siguen en `views/` y se irán
@@ -36,6 +37,7 @@ const router = createRouter({
     { path: '/cursos', name: 'cursos', component: CursosView },
     { path: '/plantillas', name: 'plantillas', component: PlantillasView },
     { path: '/backups', name: 'backups', component: BackupsView },
+    { path: '/guia', name: 'guia', component: GuiaView },
     {
       path: '/plantillas/:plantillaId',
       name: 'plantilla-editar',

@@ -176,6 +176,8 @@ Vite/electron-vite + Vitest**.
 - Guardados, errores y avisos se muestran con **notificaciones emergentes** superiores, no como
   mensajes perdidos dentro de la página.
 - El botón «Volver» se conserva solo en páginas globales sin contexto de grupo.
+- **Guía integrada** en Opciones globales, con capturas reales de cada sección, y **Ayuda
+  contextual** en la barra superior de grupo.
 
 ### 2.10. Persistencia y migraciones
 
@@ -307,3 +309,4 @@ Al cerrar cada iteración:
 | 30/10/2026 | Programación e informes | Calendario escolar como pestaña y acciones de informes agrupadas.                                                                       |
 | 30/10/2026 | Control de faltas       | Contexto compacto, configuración con interruptor, tarjetas de módulos, historial plegable y tabla con faltas/porcentaje diferenciados.  |
 | 31/10/2026 | Pesos por trimestre     | Criterios permite pesos de categorías propios por avaluación; las categorías a 0 % no penalizan el trimestre.                           |
+| 31/10/2026 | Guía integrada          | Guía completa con capturas en Opciones globales y ayuda contextual por sección.                                                         |
