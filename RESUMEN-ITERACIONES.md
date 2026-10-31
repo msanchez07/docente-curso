@@ -56,6 +56,7 @@ Vite/electron-vite + Vitest**.
 - Calendario único de todos los módulos del curso académico activo.
 - Entregas, exámenes, evaluaciones y días no lectivos, con etiquetas por módulo.
 - Colores automáticos por módulo y leyenda de modalidad presencial/semipresencial.
+- Filtro por módulo y detalle del día seleccionado.
 - Enlace al dashboard de cada módulo desde las etiquetas y la leyenda.
 - Sin tablas de alumnado, colas de trabajo ni listados de módulos.
 

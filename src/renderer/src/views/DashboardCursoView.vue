@@ -33,6 +33,7 @@ const calendario = ref<HitoGeneral[]>([])
 const cargando = ref(true)
 const error = ref<string | null>(null)
 const mesAgenda = ref(new Date(new Date().getFullYear(), new Date().getMonth(), 1))
+const filtroModulo = ref<number | null>(null)
 
 const PALETA_MODULOS = [
   '#2563eb',
@@ -63,6 +64,7 @@ function sumarDias(fecha: Date, dias: number): Date {
 }
 
 const hoy = isoLocal(new Date())
+const diaSeleccionado = ref(hoy)
 
 const grupos = computed(() =>
   grupoStore.grupos.filter((grupo) => grupo.curso_academico_id === cursos.activoId)
@@ -79,6 +81,23 @@ const agendaGeneral = computed(() =>
         a.titulo.localeCompare(b.titulo)
     )
 )
+
+const agendaFiltrada = computed(() =>
+  filtroModulo.value === null
+    ? agendaGeneral.value
+    : agendaGeneral.value.filter(
+        (item) => item.tipo === 'no_lectivo' || item.grupoId === filtroModulo.value
+      )
+)
+
+const hitosDelDia = computed(() =>
+  agendaFiltrada.value.filter((item) => item.fecha === diaSeleccionado.value)
+)
+
+const hitosDelMes = computed(() => {
+  const prefijo = `${mesAgenda.value.getFullYear()}-${String(mesAgenda.value.getMonth() + 1).padStart(2, '0')}`
+  return agendaFiltrada.value.filter((item) => item.fecha.startsWith(prefijo)).length
+})
 
 const mesAgendaTexto = computed(() => {
   const texto = mesAgenda.value.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
@@ -99,7 +118,7 @@ const celdasAgenda = computed(() => {
       dia: fecha.getDate(),
       esMes: fecha.getMonth() === mes,
       esHoy: iso === hoy,
-      items: agendaGeneral.value.filter((item) => item.fecha === iso)
+      items: agendaFiltrada.value.filter((item) => item.fecha === iso)
     }
   })
 })
@@ -117,13 +136,31 @@ function claseDia(items: HitoGeneral[]): string {
   return ''
 }
 
+function seleccionarDia(fecha: string): void {
+  diaSeleccionado.value = fecha
+}
+
+function fechaLarga(fecha: string): string {
+  const [anio, mes, dia] = fecha.split('-').map(Number)
+  return new Date(anio, mes - 1, dia).toLocaleDateString('es-ES', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long'
+  })
+}
+
 function cambiarMes(delta: number): void {
-  mesAgenda.value = new Date(mesAgenda.value.getFullYear(), mesAgenda.value.getMonth() + delta, 1)
+  const nuevo = new Date(mesAgenda.value.getFullYear(), mesAgenda.value.getMonth() + delta, 1)
+  mesAgenda.value = nuevo
+  const prefijo = `${nuevo.getFullYear()}-${String(nuevo.getMonth() + 1).padStart(2, '0')}`
+  diaSeleccionado.value =
+    agendaFiltrada.value.find((item) => item.fecha.startsWith(prefijo))?.fecha ?? isoLocal(nuevo)
 }
 
 function irMesActual(): void {
   const ahora = new Date()
   mesAgenda.value = new Date(ahora.getFullYear(), ahora.getMonth(), 1)
+  diaSeleccionado.value = hoy
 }
 
 function hitosDeGrupo(
@@ -246,7 +283,10 @@ onMounted(cargar)
       <header class="dashboard__tarjeta-cabecera">
         <div>
           <h3>Calendario del curso</h3>
-          <p class="tenue">Entregas, exámenes, evaluaciones y no lectivos de todos los módulos</p>
+          <p class="tenue">
+            {{ hitosDelMes }} {{ hitosDelMes === 1 ? 'hito' : 'hitos' }} en {{ mesAgendaTexto }} ·
+            entregas, exámenes, evaluaciones y no lectivos
+          </p>
         </div>
         <div class="dashboard__leyenda-modalidad" aria-label="Modalidad de los módulos">
           <span>
@@ -260,17 +300,27 @@ onMounted(cargar)
         </div>
       </header>
 
-      <div class="dashboard__modulos-leyenda">
+      <div class="dashboard__modulos-leyenda" aria-label="Filtrar por módulo">
         <strong>Módulos:</strong>
-        <RouterLink
+        <button
+          type="button"
+          class="dashboard__modulo-leyenda"
+          :class="{ 'dashboard__modulo-leyenda--activo': filtroModulo === null }"
+          @click="filtroModulo = null"
+        >
+          Todos
+        </button>
+        <button
           v-for="modulo in modulos"
           :key="modulo.grupo.id"
-          :to="{ name: 'grupo', params: { id: modulo.grupo.id } }"
+          type="button"
           class="dashboard__modulo-leyenda"
+          :class="{ 'dashboard__modulo-leyenda--activo': filtroModulo === modulo.grupo.id }"
+          @click="filtroModulo = filtroModulo === modulo.grupo.id ? null : modulo.grupo.id"
         >
           <i :style="{ background: colorModulo(modulo.grupo.id) }"></i>
           {{ modulo.grupo.modulo_siglas }}
-        </RouterLink>
+        </button>
       </div>
 
       <div class="agenda-mini calendario-general">
@@ -298,10 +348,15 @@ onMounted(cargar)
               claseDia(celda.items),
               {
                 'agenda-mini__celda--fuera': !celda.esMes,
-                'agenda-mini__celda--hoy': celda.esHoy
+                'agenda-mini__celda--hoy': celda.esHoy,
+                'calendario-general__celda--seleccionada': celda.fecha === diaSeleccionado
               }
             ]"
             :aria-current="celda.esHoy ? 'date' : undefined"
+            tabindex="0"
+            @click="seleccionarDia(celda.fecha)"
+            @keydown.enter.prevent="seleccionarDia(celda.fecha)"
+            @keydown.space.prevent="seleccionarDia(celda.fecha)"
           >
             <span class="agenda-mini__numero calendario-general__numero">{{ celda.dia }}</span>
             <span class="calendario-general__eventos">
@@ -340,6 +395,40 @@ onMounted(cargar)
           </span>
         </div>
       </div>
+
+      <section class="dashboard__dia-seleccionado" aria-live="polite">
+        <header class="dashboard__dia-cabecera">
+          <div>
+            <p class="dashboard__eyebrow">Día seleccionado</p>
+            <h4>{{ fechaLarga(diaSeleccionado) }}</h4>
+          </div>
+          <span class="chip">
+            {{ hitosDelDia.length }} {{ hitosDelDia.length === 1 ? 'hito' : 'hitos' }}
+          </span>
+        </header>
+
+        <p v-if="hitosDelDia.length === 0" class="tenue">
+          No hay entregas, exámenes, evaluaciones ni días no lectivos.
+        </p>
+        <ul v-else class="dashboard__dia-lista">
+          <li v-for="item in hitosDelDia" :key="item.id">
+            <span class="dashboard__fecha" :class="`dashboard__fecha--${item.tipo}`">
+              {{ item.hora || 'Todo el día' }}
+            </span>
+            <span class="dashboard__contenido">
+              <strong>{{ item.titulo }}</strong>
+              <span class="tenue">{{ item.grupoNombre }}</span>
+            </span>
+            <RouterLink
+              v-if="item.grupoId"
+              :to="{ name: 'grupo', params: { id: item.grupoId } }"
+              class="dashboard__enlace"
+            >
+              Abrir módulo
+            </RouterLink>
+          </li>
+        </ul>
+      </section>
     </section>
   </section>
 </template>

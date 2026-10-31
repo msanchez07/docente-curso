@@ -34,6 +34,7 @@ Aplicación funcional en desarrollo activo. Verificación actual:
   - Calendario único con entregas, exámenes, evaluaciones y no lectivos de todos los módulos.
   - Etiquetas por módulo dentro de cada día, con enlace al dashboard del módulo.
   - Colores automáticos por módulo y leyenda de modalidad presencial/semipresencial.
+  - Filtro por módulo y panel del día seleccionado.
   - Sin tablas de alumnado, colas de trabajo ni listados de módulos.
 - **Dashboard del grupo** centrado en la acción y el calendario:
   - **Barra superior de navegación de grupo**: Dashboard, Día a día (Programación, Horario,

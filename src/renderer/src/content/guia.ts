@@ -60,6 +60,16 @@ export const seccionesGuia: SeccionGuia[] = [
           'Cada día muestra hasta dos etiquetas con las siglas del módulo y el título del hito. Si hay más, aparece un contador; la etiqueta abre el dashboard del módulo.'
       },
       {
+        titulo: 'Filtrar por módulo',
+        detalle:
+          'La fila de módulos funciona como filtro: pulsa Todos para ver el curso completo o un módulo concreto para quedarte solo con sus hitos. El filtro también actualiza el contador de hitos del mes.'
+      },
+      {
+        titulo: 'Día seleccionado',
+        detalle:
+          'Al pulsar un día, debajo del calendario se muestran todos sus hitos, con hora, módulo y enlace para abrir el módulo. Así no se pierde ningún evento cuando un día tiene más de dos etiquetas.'
+      },
+      {
         titulo: 'Colores estables',
         detalle:
           'La aplicación asigna automáticamente un color a cada módulo. La leyenda superior permite identificar los módulos y el color no cambia al navegar entre meses.'
