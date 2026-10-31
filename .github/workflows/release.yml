@@ -57,7 +57,20 @@ jobs:
 
       - name: Empaquetar
         shell: bash
-        run: npx electron-builder --${{ matrix.objetivo }}
+        run: |
+          set -o pipefail
+          npx electron-builder --${{ matrix.objetivo }} 2>&1 | tee empaquetado.log
+
+      - name: Resumen del error
+        if: failure()
+        shell: bash
+        run: |
+          {
+            echo '### Error de empaquetado'
+            echo '```text'
+            tail -120 empaquetado.log 2>/dev/null || echo 'Sin log de empaquetado.'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Publicar artefactos
         uses: softprops/action-gh-release@v2
