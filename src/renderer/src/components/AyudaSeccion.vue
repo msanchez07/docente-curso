@@ -47,7 +47,10 @@ const seccion = computed(() => guiaParaRuta(String(route.name ?? '')))
         :alt="`Captura de ${seccion.titulo}`"
       />
       <ul class="ayuda-seccion__puntos">
-        <li v-for="punto in seccion.puntos" :key="punto">{{ punto }}</li>
+        <li v-for="punto in seccion.puntos" :key="punto.titulo">
+          <strong>{{ punto.titulo }}</strong>
+          <span>{{ punto.detalle }}</span>
+        </li>
       </ul>
       <div class="ayuda-seccion__pie">
         <RouterLink class="boton boton--principal" to="/guia" @click="abierto = false">

@@ -74,7 +74,10 @@ const seccion = computed(
         <div class="guia__puntos">
           <h4>Qué puedes hacer aquí</h4>
           <ul>
-            <li v-for="punto in seccion.puntos" :key="punto">{{ punto }}</li>
+            <li v-for="punto in seccion.puntos" :key="punto.titulo">
+              <strong>{{ punto.titulo }}</strong>
+              <span>{{ punto.detalle }}</span>
+            </li>
           </ul>
         </div>
 

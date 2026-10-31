@@ -8095,3 +8095,27 @@ a:focus-visible {
   object-fit: contain;
   object-position: top;
 }
+
+.guia__puntos li strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--texto);
+  font-size: 12.5px;
+}
+
+.guia__puntos li span {
+  display: block;
+  color: #667085;
+}
+
+.ayuda-seccion__puntos li strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--texto);
+  font-size: 12.5px;
+}
+
+.ayuda-seccion__puntos li span {
+  display: block;
+  color: #667085;
+}
