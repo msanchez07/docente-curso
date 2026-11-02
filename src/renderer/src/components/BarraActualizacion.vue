@@ -65,7 +65,9 @@ onBeforeUnmount(() => desuscribir?.())
           Nueva versión disponible{{ evento.version ? `: ${evento.version}` : '' }}
         </strong>
         <strong v-else-if="evento.estado === 'descargando'">Descargando actualización…</strong>
-        <strong v-else-if="evento.estado === 'lista'">Actualización preparada</strong>
+        <strong v-else-if="evento.estado === 'lista'">
+          {{ evento.manual ? 'Instalador descargado' : 'Actualización preparada' }}
+        </strong>
         <strong v-else>No se pudo actualizar</strong>
 
         <span v-if="evento.estado === 'disponible'" class="actualizacion__detalle">
@@ -76,7 +78,11 @@ onBeforeUnmount(() => desuscribir?.())
           {{ formatearBytes(evento.total) }}
         </span>
         <span v-else-if="evento.estado === 'lista'" class="actualizacion__detalle">
-          Reinicia la aplicación para terminar de instalarla.
+          {{
+            evento.manual
+              ? 'Abre el DMG y arrastra Aula Nova a Aplicaciones para terminar.'
+              : 'Reinicia la aplicación para terminar de instalarla.'
+          }}
         </span>
         <span v-else class="actualizacion__detalle">{{ evento.mensaje }}</span>
       </div>
@@ -105,7 +111,7 @@ onBeforeUnmount(() => desuscribir?.())
       </template>
       <template v-else-if="evento.estado === 'lista'">
         <button class="boton boton--principal" type="button" @click="reiniciar">
-          Reiniciar e instalar
+          {{ evento.manual ? 'Abrir instalador' : 'Reiniciar e instalar' }}
         </button>
         <button class="boton" type="button" @click="descartado = true">Más tarde</button>
       </template>

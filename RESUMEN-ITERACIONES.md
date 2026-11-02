@@ -341,3 +341,4 @@ Al cerrar cada iteración:
 | 02/11/2026 | Corrección IPC          | Evita el error «An object could not be cloned» al guardar configuración, criterios y programación desde formularios reactivos.          |
 | 02/11/2026 | Actualizador visible    | Barra de progreso, errores y descarga manual si la instalación automática falla.                                                        |
 | 02/11/2026 | Esquema calendario      | El diálogo de importación permite descargar el esquema para rellenarlo antes de importar.                                               |
+| 02/11/2026 | Actualización macOS     | Descarga del DMG con progreso y apertura del instalador para evitar el fallo de firma de Squirrel.Mac.                                  |

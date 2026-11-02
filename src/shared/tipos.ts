@@ -107,6 +107,8 @@ export interface EventoActualizacion {
   total?: number
   bytesPorSegundo?: number
   mensaje?: string
+  /** En macOS el instalador se abre en Finder para arrastrarlo a Aplicaciones. */
+  manual?: boolean
 }
 
 /* --- Gestión ---------------------------------------------------------- */
