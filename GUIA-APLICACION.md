@@ -180,7 +180,7 @@ calendario con todos los módulos del curso activo:
 - etiquetas por módulo dentro de cada día, con enlace al dashboard del módulo;
 - colores estables por módulo y leyenda de modalidad;
 - filtros por módulo y tipo, detalle del día seleccionado y exportación a PDF/.ics;
-- importación del calendario escolar y definición manual de días no lectivos;
+- importación del calendario escolar, con descarga previa del esquema, y definición manual de días no lectivos;
 - navegación mensual y botón Hoy;
 - sin tablas de alumnado, colas de trabajo ni listados de módulos.
 

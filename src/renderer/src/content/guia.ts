@@ -83,7 +83,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Calendario escolar',
         detalle:
-          'Desde Acciones puedes importar el calendario escolar completo o definir un día no lectivo con fecha, tipo y descripción. Los festivos importados aparecen en el mismo calendario.'
+          'Desde Acciones puedes importar el calendario escolar completo o definir un día no lectivo con fecha, tipo y descripción. En el diálogo de importación puedes descargar primero el esquema, rellenarlo y volver a importarlo. Los festivos importados aparecen en el mismo calendario.'
       },
       {
         titulo: 'Exportar',

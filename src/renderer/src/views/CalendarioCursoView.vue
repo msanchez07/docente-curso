@@ -7,6 +7,8 @@ import Modal from '@renderer/components/Modal.vue'
 import AyudaSeccion from '@renderer/components/AyudaSeccion.vue'
 import { notificar } from '@renderer/composables/notificaciones'
 import { DIAS_SEMANA } from '@shared/grupos'
+import { ESQUEMA_CALENDARIO } from '@shared/esquemas-importacion'
+import { descargarJson } from '@renderer/utils/descargar-json'
 import type {
   EntregaClase,
   EventoEvaluacionClase,
@@ -281,6 +283,10 @@ function abrirImportar(): void {
   textoImportar.value = ''
   errorImportar.value = null
   mostrarImportar.value = true
+}
+
+function exportarEsquemaCalendario(): void {
+  descargarJson('esquema-calendario-escolar.json', ESQUEMA_CALENDARIO)
 }
 
 function abrirDefinir(): void {
@@ -720,10 +726,14 @@ onMounted(cargar)
       @cerrar="mostrarImportar = false"
     >
       <p class="tenue">
-        Acepta un array de días, <span class="monospace">{ "dias": [...] }</span> o listas por tipo.
-        Al importar se sustituye el calendario del curso.
+        Descarga primero el esquema, rellena los días y vuelve a importarlo. Acepta un array de
+        días, <span class="monospace">{ "dias": [...] }</span> o listas por tipo. Al importar se
+        sustituye el calendario del curso.
       </p>
       <div class="barra">
+        <button class="boton" type="button" @click="exportarEsquemaCalendario">
+          Descargar esquema
+        </button>
         <button class="boton" type="button" @click="ficheroCalendario?.click()">
           Elegir fichero…
         </button>

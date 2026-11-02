@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.0.5](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.5)** —
+> **📦 [Descargar Aula Nova 1.0.6](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.6)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -30,10 +30,10 @@ Aplicación funcional en **versión 1.0**. Verificación actual:
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.0.5
+## Release 1.0.6
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.0.5](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.5)**:
+**[GitHub Releases v1.0.6](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.6)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |

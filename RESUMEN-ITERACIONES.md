@@ -340,3 +340,4 @@ Al cerrar cada iteración:
 | 31/10/2026 | Actualizaciones         | Comprobación de nuevas versiones en GitHub Releases, aviso de instalación y descarga/instalación desde la propia aplicación.            |
 | 02/11/2026 | Corrección IPC          | Evita el error «An object could not be cloned» al guardar configuración, criterios y programación desde formularios reactivos.          |
 | 02/11/2026 | Actualizador visible    | Barra de progreso, errores y descarga manual si la instalación automática falla.                                                        |
+| 02/11/2026 | Esquema calendario      | El diálogo de importación permite descargar el esquema para rellenarlo antes de importar.                                               |
