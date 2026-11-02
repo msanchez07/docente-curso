@@ -8,6 +8,7 @@ import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones
 import { notificar } from '@renderer/composables/notificaciones'
 import { paraIpc } from '@renderer/utils/ipc'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
+import { cursoAcademicoActual } from '@shared/curso-academico'
 import { ESQUEMA_PROGRAMACION } from '@shared/esquemas-importacion'
 import { parsearDiasProgramacion } from '@shared/importar-programacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
@@ -31,7 +32,6 @@ const exportandoPdf = ref(false)
 const error = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
 const original = ref('')
-const verTodo = ref(false)
 const modo = ref('tarjetas')
 const opcionesModo = [
   { value: 'tarjetas', label: 'Tarjetas' },
@@ -39,16 +39,12 @@ const opcionesModo = [
   { value: 'calendario', label: 'Calendario' },
   { value: 'unidades', label: 'Unidades' }
 ]
+const vista = ref<'pendientes' | 'quincena' | 'todo'>('pendientes')
 const opcionesVista = [
+  { value: 'pendientes', label: 'Pendientes hasta hoy' },
   { value: 'quincena', label: 'Quincena' },
   { value: 'todo', label: 'Ver todo' }
 ]
-const vista = computed({
-  get: () => (verTodo.value ? 'todo' : 'quincena'),
-  set: (valor: string) => {
-    verTodo.value = valor === 'todo'
-  }
-})
 const DIAS_SEMANA = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom']
 const mesCalendario = ref(new Date(new Date().getFullYear(), new Date().getMonth(), 1))
 const editando = ref<ProgramacionAula | null>(null)
@@ -86,6 +82,68 @@ function sumarDias(fecha: Date, dias: number): Date {
 const hoy = isoLocal(new Date())
 const inicioQuincena = hoy
 const limite = isoLocal(sumarDias(new Date(), 15))
+
+/** Días de clase del grupo (1 = lunes … 0 = domingo). */
+const diasDeClase = computed(() => {
+  const dias = Object.keys(props.grupo.dias_semana)
+    .map(Number)
+    .filter((dia) => (props.grupo.dias_semana[dia] ?? 0) > 0)
+  return dias.length > 0 ? new Set(dias) : new Set([1, 2, 3, 4, 5])
+})
+
+function inicioDelCurso(): string {
+  const anio = Number(props.grupo.curso_academico_nombre.slice(0, 4))
+  const inicio = Number.isFinite(anio) && anio > 2000 ? anio : cursoAcademicoActual().inicio
+  return `${inicio}-09-01`
+}
+
+function filaVacia(fecha: string): ProgramacionAula {
+  return {
+    id: 0,
+    grupo_clase_id: props.grupo.id,
+    unidad_id: null,
+    fecha,
+    hora: null,
+    orden: 0,
+    contenido: '',
+    desviacion: '',
+    observaciones: '',
+    creado_en: '',
+    actualizado_en: ''
+  }
+}
+
+/**
+ * Días con clase hasta hoy que todavía no tienen contenido. Si existe una fila
+ * vacía se reutiliza; si no, se crea una fila provisional que se guardará en
+ * cuanto se empiece a editar.
+ */
+const filasPendientes = computed<ProgramacionAula[]>(() => {
+  const porFecha = new Map<string, ProgramacionAula[]>()
+  for (const fila of filas.value) {
+    const lista = porFecha.get(fila.fecha) ?? []
+    lista.push(fila)
+    porFecha.set(fila.fecha, lista)
+  }
+
+  const pendientes: ProgramacionAula[] = []
+  const fin = new Date(`${hoy}T00:00:00`)
+  let fecha = new Date(`${inicioDelCurso()}T00:00:00`)
+  while (fecha <= fin) {
+    if (diasDeClase.value.has(fecha.getDay())) {
+      const iso = isoLocal(fecha)
+      const existentes = porFecha.get(iso) ?? []
+      const rellenos = existentes.some(
+        (fila) => fila.contenido.trim() || fila.desviacion.trim() || fila.observaciones.trim()
+      )
+      if (!rellenos) {
+        pendientes.push(...(existentes.length > 0 ? existentes : [filaVacia(iso)]))
+      }
+    }
+    fecha = sumarDias(fecha, 1)
+  }
+  return pendientes
+})
 
 function fechaSugerida(): string {
   const ocupadas = new Set(filas.value.map((fila) => fila.fecha))
@@ -130,11 +188,13 @@ function serializar(lista: ProgramacionAula[]): string {
 
 const hayCambios = computed(() => serializar(filas.value) !== original.value)
 
-const filasVisibles = computed(() =>
-  verTodo.value
-    ? filas.value
-    : filas.value.filter((fila) => fila.fecha >= inicioQuincena && fila.fecha <= limite)
-)
+const filasVisibles = computed(() => {
+  if (vista.value === 'todo') return filas.value
+  if (vista.value === 'quincena') {
+    return filas.value.filter((fila) => fila.fecha >= inicioQuincena && fila.fecha <= limite)
+  }
+  return filasPendientes.value
+})
 
 const sinContenido = computed(() => filas.value.filter((fila) => !fila.contenido.trim()).length)
 
@@ -295,12 +355,14 @@ function guardarDia(): void {
   const fechaGuardada = form.fecha
 
   if (editando.value) {
+    const estabaEnFilas = filas.value.includes(editando.value)
     editando.value.fecha = form.fecha
     editando.value.hora = form.hora || null
     editando.value.unidad_id = form.unidad_id
     editando.value.contenido = form.contenido
     editando.value.desviacion = form.desviacion
     editando.value.observaciones = form.observaciones
+    if (!estabaEnFilas) filas.value.push(editando.value)
   } else {
     filas.value.push({
       id: 0,
@@ -324,6 +386,13 @@ function guardarDia(): void {
     : `Día ${fechaCorta(fechaGuardada)} añadido. Guarda la programación para conservarlo.`
 }
 
+function asegurarFila(fila: ProgramacionAula): void {
+  if (!fila.id && !filas.value.includes(fila)) {
+    filas.value.push(fila)
+    filas.value.sort(ordenarFilas)
+  }
+}
+
 function nuevaFilaTabla(): void {
   const fecha = fechaSugerida()
   filas.value.push({
@@ -339,7 +408,7 @@ function nuevaFilaTabla(): void {
     creado_en: '',
     actualizado_en: ''
   })
-  verTodo.value = true
+  vista.value = 'todo'
   error.value = null
   mensaje.value = `Fila del ${fechaCorta(fecha)} añadida. Escribe el contenido y guarda.`
 }
@@ -440,7 +509,7 @@ async function importarTexto(texto: string): Promise<void> {
   errorImportar.value = null
   error.value = errores.length > 0 ? errores.slice(0, 6).join(' · ') : null
   mostrarImportar.value = false
-  if (!verTodo.value && filasVisibles.value.length === 0) verTodo.value = true
+  if (vista.value !== 'todo' && filasVisibles.value.length === 0) vista.value = 'todo'
 }
 
 async function importarPegado(): Promise<void> {
@@ -524,7 +593,10 @@ async function exportarPdf(): Promise<void> {
             compacto
           />
           <span class="tenue programacion__rango">
-            <template v-if="verTodo">Mostrando todos los días.</template>
+            <template v-if="vista === 'todo'">Mostrando todos los días.</template>
+            <template v-else-if="vista === 'pendientes'">
+              {{ filasPendientes.length }} días pendientes hasta hoy.
+            </template>
             <template v-else>
               Del {{ fechaCorta(inicioQuincena) }} al {{ fechaCorta(limite) }}
             </template>
@@ -636,10 +708,11 @@ async function exportarPdf(): Promise<void> {
               </p>
             </div>
             <div v-else-if="filasVisibles.length === 0" class="vacio">
-              <p>
+              <p v-if="vista === 'pendientes'">No hay días pendientes hasta hoy.</p>
+              <p v-else>
                 No hay días entre el {{ fechaCorta(inicioQuincena) }} y el {{ fechaCorta(limite) }}.
               </p>
-              <button class="boton" type="button" @click="verTodo = true">Ver todo</button>
+              <button class="boton" type="button" @click="vista = 'todo'">Ver todo</button>
             </div>
 
             <div v-else class="programacion__lista">
@@ -695,6 +768,7 @@ async function exportarPdf(): Promise<void> {
                     </svg>
                   </button>
                   <button
+                    v-if="fila.id || filas.includes(fila)"
                     class="icono-accion icono-accion--peligro"
                     type="button"
                     aria-label="Quitar día"
@@ -727,7 +801,10 @@ async function exportarPdf(): Promise<void> {
               </button>
               <span class="barra__espacio"></span>
               <span class="tenue">
-                <template v-if="verTodo">{{ filas.length }} días</template>
+                <template v-if="vista === 'todo'">{{ filas.length }} días</template>
+                <template v-else-if="vista === 'pendientes'">
+                  {{ filasVisibles.length }} pendientes
+                </template>
                 <template v-else>{{ filasVisibles.length }} de {{ filas.length }} días</template>
               </span>
             </div>
@@ -765,10 +842,28 @@ async function exportarPdf(): Promise<void> {
                     v-for="(fila, indiceFila) in filasVisibles"
                     :key="fila.id || `${fila.fecha}-${indiceFila}`"
                   >
-                    <td><input v-model="fila.fecha" type="date" /></td>
-                    <td><input v-model="fila.hora" type="time" /></td>
                     <td>
-                      <select v-model="fila.unidad_id">
+                      <input
+                        v-model="fila.fecha"
+                        type="date"
+                        @focus="asegurarFila(fila)"
+                        @input="asegurarFila(fila)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        v-model="fila.hora"
+                        type="time"
+                        @focus="asegurarFila(fila)"
+                        @input="asegurarFila(fila)"
+                      />
+                    </td>
+                    <td>
+                      <select
+                        v-model="fila.unidad_id"
+                        @focus="asegurarFila(fila)"
+                        @change="asegurarFila(fila)"
+                      >
                         <option :value="null">Sin asignar</option>
                         <option v-for="unidad in unidades" :key="unidad.id" :value="unidad.id">
                           {{ unidad.codigo ?? unidad.nombre }}
@@ -778,6 +873,8 @@ async function exportarPdf(): Promise<void> {
                     <td>
                       <textarea
                         v-model="fila.contenido"
+                        @focus="asegurarFila(fila)"
+                        @input="asegurarFila(fila)"
                         rows="2"
                         placeholder="Lo que se trabajó"
                       ></textarea>
@@ -785,6 +882,8 @@ async function exportarPdf(): Promise<void> {
                     <td>
                       <textarea
                         v-model="fila.desviacion"
+                        @focus="asegurarFila(fila)"
+                        @input="asegurarFila(fila)"
                         rows="2"
                         placeholder="Sin desviación"
                       ></textarea>
@@ -792,12 +891,15 @@ async function exportarPdf(): Promise<void> {
                     <td>
                       <textarea
                         v-model="fila.observaciones"
+                        @focus="asegurarFila(fila)"
+                        @input="asegurarFila(fila)"
                         rows="2"
                         placeholder="Notas"
                       ></textarea>
                     </td>
                     <td class="acciones">
                       <button
+                        v-if="fila.id || filas.includes(fila)"
                         class="icono-accion icono-accion--peligro"
                         type="button"
                         aria-label="Quitar fila"

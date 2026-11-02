@@ -209,6 +209,10 @@ visibles por día usan colores estables.
 
 ## 6. Programación de aula
 
+La vista por defecto, **Pendientes hasta hoy**, muestra los días de clase que aún no tienen
+contenido desde el inicio del curso hasta hoy. Así solo hay que rellenar esos días; con
+**Quincena** o **Ver todo** se consulta la programación ya registrada.
+
 ![Programación de aula](./docs/guia/programacion.png)
 
 - Sesiones por fecha y hora, con varias sesiones por día.

@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.0.7](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.7)** —
+> **📦 [Descargar Aula Nova 1.0.8](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.8)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -30,10 +30,10 @@ Aplicación funcional en **versión 1.0**. Verificación actual:
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.0.7
+## Release 1.0.8
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.0.7](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.7)**:
+**[GitHub Releases v1.0.8](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.8)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -114,6 +114,8 @@ La guía completa, con todas las capturas y explicaciones, está en
 - **Programación de aula**: sesiones por fecha y hora, varias por día, unidades, desviaciones y
   observaciones. El calendario escolar se gestiona de forma centralizada desde el **Calendario
   del curso**.
+  - Vista por defecto **Pendientes hasta hoy**: muestra solo los días de clase sin contenido
+    desde el inicio del curso hasta la fecha actual.
 - **Programación didáctica**: unidades, fechas, criterios y RA/CE.
   - **Presentación del módulo**: plantilla HTML editable, con datos reales del grupo, vista
     previa, copia para Aules, descarga e impresión/PDF.
