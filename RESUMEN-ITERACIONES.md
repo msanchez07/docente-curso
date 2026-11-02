@@ -339,3 +339,4 @@ Al cerrar cada iteración:
 | 31/10/2026 | Ventana y release 1.0.2 | Barra de ventana integrada, primer arranque maximizado, persistencia de tamaño/posición y release corregida.                            |
 | 31/10/2026 | Actualizaciones         | Comprobación de nuevas versiones en GitHub Releases, aviso de instalación y descarga/instalación desde la propia aplicación.            |
 | 02/11/2026 | Corrección IPC          | Evita el error «An object could not be cloned» al guardar configuración, criterios y programación desde formularios reactivos.          |
+| 02/11/2026 | Actualizador visible    | Barra de progreso, errores y descarga manual si la instalación automática falla.                                                        |

@@ -95,6 +95,20 @@ export interface CatalogoHorarios {
   ciclos: CicloCatalogo[]
 }
 
+/** Eventos del actualizador que se muestran en la barra de la aplicación. */
+export type EstadoActualizacion =
+  'comprobando' | 'disponible' | 'descargando' | 'lista' | 'error' | 'no-disponible'
+
+export interface EventoActualizacion {
+  estado: EstadoActualizacion
+  version?: string
+  porcentaje?: number
+  transferido?: number
+  total?: number
+  bytesPorSegundo?: number
+  mensaje?: string
+}
+
 /* --- Gestión ---------------------------------------------------------- */
 
 export interface Alumno {
@@ -1476,6 +1490,14 @@ export interface Api {
       datos: InformeFaltasDatos
     ): Promise<InformeFaltas>
   }
+  actualizaciones: {
+    /** Suscribe a los eventos del actualizador; devuelve la función para desuscribirse. */
+    onEvento(callback: (evento: EventoActualizacion) => void): () => void
+    descargar(): Promise<void>
+    instalar(): Promise<void>
+    reintentar(): Promise<void>
+    abrirDescarga(): Promise<void>
+  }
   /** Solo en la previsualización web: carga el curso de ejemplo. */
   demo?: {
     cargar(): Promise<void>
@@ -1488,6 +1510,11 @@ export interface Api {
 
 /** Nombres de los canales IPC, en un único sitio para evitar erratas. */
 export const CANALES = {
+  actualizacionEvento: 'actualizaciones:evento',
+  actualizacionDescargar: 'actualizaciones:descargar',
+  actualizacionInstalar: 'actualizaciones:instalar',
+  actualizacionReintentar: 'actualizaciones:reintentar',
+  actualizacionAbrirDescarga: 'actualizaciones:abrirDescarga',
   appVersion: 'app:version',
   boeListarCiclos: 'boe:listarCiclos',
   boeObtenerCiclo: 'boe:obtenerCiclo',

@@ -23,6 +23,17 @@ const api: Api = {
   catalogo: {
     listar: () => ipcRenderer.invoke(CANALES.catalogoListar)
   },
+  actualizaciones: {
+    onEvento: (callback) => {
+      const listener = (_evento, datos) => callback(datos)
+      ipcRenderer.on(CANALES.actualizacionEvento, listener)
+      return () => ipcRenderer.removeListener(CANALES.actualizacionEvento, listener)
+    },
+    descargar: () => ipcRenderer.invoke(CANALES.actualizacionDescargar),
+    instalar: () => ipcRenderer.invoke(CANALES.actualizacionInstalar),
+    reintentar: () => ipcRenderer.invoke(CANALES.actualizacionReintentar),
+    abrirDescarga: () => ipcRenderer.invoke(CANALES.actualizacionAbrirDescarga)
+  },
   bd: {
     estado: () => ipcRenderer.invoke(CANALES.bdEstado),
     listarModulos: (cicloId) => ipcRenderer.invoke(CANALES.bdListarModulos, cicloId),

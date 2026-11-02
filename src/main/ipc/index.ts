@@ -190,6 +190,12 @@ import {
   obtenerConfiguracionGeneral
 } from '../db/repositorios/configuracion-general'
 import { cabeceraDocumentoHtml, pieDocumentoHtml } from '../documentos/cabecera'
+import {
+  abrirDescargaManual,
+  descargarActualizacion,
+  instalarActualizacion,
+  reintentarActualizacion
+} from '../actualizaciones'
 
 export function registrarIpc(): void {
   const bd = (): ReturnType<typeof obtenerBd> => obtenerBd()
@@ -214,6 +220,12 @@ export function registrarIpc(): void {
 
   // Catálogo oficial de ciclos y módulos para crear grupos.
   ipcMain.handle(CANALES.catalogoListar, () => listarCatalogo(bd()))
+
+  // Actualizaciones de la aplicación.
+  ipcMain.handle(CANALES.actualizacionDescargar, () => descargarActualizacion())
+  ipcMain.handle(CANALES.actualizacionInstalar, () => instalarActualizacion())
+  ipcMain.handle(CANALES.actualizacionReintentar, () => reintentarActualizacion())
+  ipcMain.handle(CANALES.actualizacionAbrirDescarga, () => abrirDescargaManual())
 
   // Estado de la base de datos.
   ipcMain.handle(CANALES.bdEstado, () => ({ ruta: rutaBd(), ...contarBoe(bd()) }))

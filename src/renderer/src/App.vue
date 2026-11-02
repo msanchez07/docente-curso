@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
 import NotificacionesGlobales from '@renderer/components/NotificacionesGlobales.vue'
+import BarraActualizacion from '@renderer/components/BarraActualizacion.vue'
 import BarraVentana from '@renderer/components/BarraVentana.vue'
 import NavegacionGrupo from '@renderer/components/NavegacionGrupo.vue'
 import { EVENTO_NORMATIVA_ACTUALIZADA } from '@shared/normativa'
@@ -314,7 +315,7 @@ async function importarNormativa(evento: Event): Promise<void> {
       />
 
       <footer class="pie">
-        <div>{{ APP.nombre }} · v{{ version || '1.0.4' }}</div>
+        <div>{{ APP.nombre }} · v{{ version || '1.0.5' }}</div>
         <div class="pie__autor">
           <span>{{ AUTOR.nombre }}</span>
           <span>{{ AUTOR.rol }}</span>
@@ -366,6 +367,7 @@ async function importarNormativa(evento: Event): Promise<void> {
         de prueba con «Restaurar datos de prueba».
       </p>
     </Confirmacion>
+    <BarraActualizacion />
     <NotificacionesGlobales />
   </div>
 </template>

@@ -1,71 +1,29 @@
 /**
- * Comprobación de actualizaciones desde GitHub Releases.
+ * Comprobación y descarga de actualizaciones desde GitHub Releases.
  *
- * Solo se ejecuta en la aplicación empaquetada. No descarga nada hasta que la
- * persona usuaria acepta, y avisa de nuevo antes de reiniciar para instalar.
+ * La descarga no empieza hasta que la persona usuaria pulsa «Instalar ahora».
+ * El progreso y los errores se envían a la barra de actualización del renderer.
  */
-import { app, dialog, type BrowserWindow, type MessageBoxOptions } from 'electron'
+import { app, shell, type BrowserWindow } from 'electron'
 import { autoUpdater } from 'electron-updater'
+import type { EventoActualizacion } from '@shared/tipos'
+
+const URL_DESCARGA = 'https://github.com/msanchez07/docente-curso/releases/latest'
 
 let ventanaPrincipal: BrowserWindow | null = null
 let iniciada = false
-let dialogoAbierto = false
+let descargaSolicitada = false
 
-function mostrarDialogo(opciones: MessageBoxOptions): Promise<number> {
+function enviar(evento: EventoActualizacion): void {
   const ventana = ventanaPrincipal
-  if (ventana && !ventana.isDestroyed()) {
-    return dialog.showMessageBox(ventana, opciones).then((resultado) => resultado.response)
-  }
-  return dialog.showMessageBox(opciones).then((resultado) => resultado.response)
+  if (!ventana || ventana.isDestroyed()) return
+  ventana.webContents.send('actualizaciones:evento', evento)
 }
 
-async function preguntarInstalar(version: string): Promise<void> {
-  if (dialogoAbierto) return
-  dialogoAbierto = true
-  try {
-    const respuesta = await mostrarDialogo({
-      type: 'info',
-      title: 'Actualización disponible',
-      message: `Hay una nueva versión de Aula Nova: ${version}`,
-      detail:
-        '¿Quieres descargarla e instalarla ahora? La aplicación se reiniciará cuando termine la descarga.',
-      buttons: ['Instalar ahora', 'Más tarde'],
-      defaultId: 0,
-      cancelId: 1,
-      noLink: true
-    })
-    if (respuesta === 0) await autoUpdater.downloadUpdate()
-  } catch (error) {
-    console.error('[actualizaciones] No se pudo descargar la actualización:', error)
-  } finally {
-    dialogoAbierto = false
-  }
+function enviarError(mensaje: string): void {
+  enviar({ estado: 'error', mensaje })
 }
 
-async function preguntarReiniciar(): Promise<void> {
-  if (dialogoAbierto) return
-  dialogoAbierto = true
-  try {
-    const respuesta = await mostrarDialogo({
-      type: 'info',
-      title: 'Actualización preparada',
-      message: 'La nueva versión de Aula Nova ya está descargada.',
-      detail: 'Reinicia la aplicación para terminar de instalarla.',
-      buttons: ['Reiniciar e instalar', 'Más tarde'],
-      defaultId: 0,
-      cancelId: 1,
-      noLink: true
-    })
-    if (respuesta === 0) autoUpdater.quitAndInstall()
-  } finally {
-    dialogoAbierto = false
-  }
-}
-
-/**
- * Arranca la comprobación automática. Es idempotente: si se vuelve a crear la
- * ventana, solo se actualiza la referencia para los diálogos.
- */
 export function iniciarActualizaciones(ventana: BrowserWindow): void {
   ventanaPrincipal = ventana
   if (iniciada || !app.isPackaged || process.env.GE_VENTANA_OCULTA === '1') return
@@ -74,20 +32,73 @@ export function iniciarActualizaciones(ventana: BrowserWindow): void {
   autoUpdater.autoDownload = false
   autoUpdater.autoInstallOnAppQuit = true
 
-  autoUpdater.on('update-available', (info) => {
-    void preguntarInstalar(info.version)
+  autoUpdater.on('checking-for-update', () => {
+    enviar({ estado: 'comprobando' })
   })
-  autoUpdater.on('update-downloaded', () => {
-    void preguntarReiniciar()
+  autoUpdater.on('update-available', (info) => {
+    enviar({ estado: 'disponible', version: info.version })
+  })
+  autoUpdater.on('update-not-available', () => {
+    enviar({ estado: 'no-disponible' })
+  })
+  autoUpdater.on('download-progress', (progreso) => {
+    enviar({
+      estado: 'descargando',
+      porcentaje: progreso.percent,
+      transferido: progreso.transferred,
+      total: progreso.total,
+      bytesPorSegundo: progreso.bytesPerSecond
+    })
+  })
+  autoUpdater.on('update-downloaded', (info) => {
+    enviar({ estado: 'lista', version: info.version })
   })
   autoUpdater.on('error', (error) => {
-    console.error('[actualizaciones] Error al comprobar la actualización:', error)
+    if (descargaSolicitada) {
+      enviarError(error.message)
+    } else {
+      console.error('[actualizaciones] Error al comprobar la actualización:', error)
+    }
   })
 
-  // Deja terminar de arrancar la aplicación antes de consultar GitHub.
   setTimeout(() => {
     autoUpdater.checkForUpdates().catch((error) => {
       console.error('[actualizaciones] No se pudo comprobar la actualización:', error)
     })
   }, 6000)
+}
+
+export async function descargarActualizacion(): Promise<void> {
+  descargaSolicitada = true
+  try {
+    enviar({ estado: 'descargando', porcentaje: 0 })
+    await autoUpdater.downloadUpdate()
+  } catch (error) {
+    enviarError((error as Error).message ?? String(error))
+  }
+}
+
+export function instalarActualizacion(): void {
+  autoUpdater.quitAndInstall()
+  // Si Squirrel no puede reiniciar (por ejemplo, por la firma ad-hoc de macOS),
+  // la app sigue viva: se avisa y se ofrece la descarga manual.
+  setTimeout(() => {
+    if (ventanaPrincipal && !ventanaPrincipal.isDestroyed()) {
+      enviarError(
+        'No se ha podido reiniciar automáticamente para instalar la actualización. Descarga el instalador manualmente.'
+      )
+    }
+  }, 6000)
+}
+
+export function reintentarActualizacion(): void {
+  descargaSolicitada = false
+  enviar({ estado: 'comprobando' })
+  autoUpdater.checkForUpdates().catch((error) => {
+    enviarError((error as Error).message ?? String(error))
+  })
+}
+
+export function abrirDescargaManual(): void {
+  void shell.openExternal(URL_DESCARGA)
 }
