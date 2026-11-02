@@ -1974,8 +1974,11 @@ function escribirConfiguracionGeneral(configuracion: ConfiguracionGeneral): void
 
 const api = {
   app: {
-    version: async () => '1.0.8-web',
+    version: async () => '1.0.9-web',
     plataforma: 'web'
+  },
+  archivos: {
+    guardarJson: async () => ({ ok: false })
   },
   configuracion: {
     obtener: async (): Promise<ConfiguracionGeneral> => leerConfiguracionGeneral(),

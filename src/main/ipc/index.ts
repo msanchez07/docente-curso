@@ -5,7 +5,8 @@
  * de comunicación entre la interfaz y el proceso principal.
  */
 import { app, dialog, ipcMain } from 'electron'
-import { readFile } from 'node:fs/promises'
+import { readFile, writeFile } from 'node:fs/promises'
+import { basename, join } from 'node:path'
 import { CANALES } from '@shared/tipos'
 import type {
   AlumnoEntrada,
@@ -201,6 +202,21 @@ export function registrarIpc(): void {
   const bd = (): ReturnType<typeof obtenerBd> => obtenerBd()
 
   ipcMain.handle(CANALES.appVersion, () => app.getVersion())
+
+  ipcMain.handle(CANALES.archivosGuardarJson, async (_e, nombre: string, datos: unknown) => {
+    const resultado = await dialog.showSaveDialog({
+      title: 'Guardar esquema',
+      defaultPath: join(app.getPath('documents'), basename(nombre)),
+      filters: [{ name: 'JSON', extensions: ['json'] }]
+    })
+    if (resultado.canceled || !resultado.filePath) return { ok: false, cancelado: true }
+    try {
+      await writeFile(resultado.filePath, JSON.stringify(datos, null, 2), 'utf-8')
+      return { ok: true, ruta: resultado.filePath }
+    } catch (error) {
+      return { ok: false, error: (error as Error).message }
+    }
+  })
 
   // Configuración general de la aplicación.
   ipcMain.handle(CANALES.configuracionObtener, () => obtenerConfiguracionGeneral(bd()))

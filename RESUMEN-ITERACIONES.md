@@ -343,3 +343,4 @@ Al cerrar cada iteración:
 | 02/11/2026 | Esquema calendario      | El diálogo de importación permite descargar el esquema para rellenarlo antes de importar.                                               |
 | 02/11/2026 | Actualización macOS     | Descarga del DMG con progreso y apertura del instalador para evitar el fallo de firma de Squirrel.Mac.                                  |
 | 02/11/2026 | Pendientes de aula      | Vista por defecto con los días de clase sin contenido hasta hoy para rellenar solo esos días.                                           |
+| 02/11/2026 | Guardar esquemas        | Los esquemas JSON se guardan con el diálogo nativo de Electron en lugar de la descarga Blob.                                            |

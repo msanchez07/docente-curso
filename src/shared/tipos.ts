@@ -1251,6 +1251,13 @@ export interface Api {
     /** Plataforma de Electron: darwin, win32, linux o web. */
     plataforma: string
   }
+  archivos: {
+    /** Guarda un JSON con el diálogo nativo de «Guardar como». */
+    guardarJson(
+      nombre: string,
+      datos: unknown
+    ): Promise<{ ok: boolean; ruta?: string; cancelado?: boolean; error?: string }>
+  }
   configuracion: {
     obtener(): Promise<ConfiguracionGeneral>
     guardar(configuracion: ConfiguracionGeneral): Promise<ConfiguracionGeneral>
@@ -1517,6 +1524,7 @@ export const CANALES = {
   actualizacionInstalar: 'actualizaciones:instalar',
   actualizacionReintentar: 'actualizaciones:reintentar',
   actualizacionAbrirDescarga: 'actualizaciones:abrirDescarga',
+  archivosGuardarJson: 'archivos:guardarJson',
   appVersion: 'app:version',
   boeListarCiclos: 'boe:listarCiclos',
   boeObtenerCiclo: 'boe:obtenerCiclo',

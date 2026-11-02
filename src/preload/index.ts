@@ -8,6 +8,9 @@ const api: Api = {
     version: () => ipcRenderer.invoke(CANALES.appVersion),
     plataforma: process.platform
   },
+  archivos: {
+    guardarJson: (nombre, datos) => ipcRenderer.invoke(CANALES.archivosGuardarJson, nombre, datos)
+  },
   configuracion: {
     obtener: () => ipcRenderer.invoke(CANALES.configuracionObtener),
     guardar: (configuracion) => ipcRenderer.invoke(CANALES.configuracionGuardar, configuracion),
