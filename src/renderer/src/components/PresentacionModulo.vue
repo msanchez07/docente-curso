@@ -13,6 +13,7 @@ import type {
   PresentacionConfig,
   UnidadProgramacion
 } from '@shared/tipos'
+import { paraIpc } from '@renderer/utils/ipc'
 
 const props = defineProps<{ grupo: GrupoClase }>()
 
@@ -78,7 +79,7 @@ async function guardar(): Promise<void> {
   error.value = null
   mensaje.value = null
   try {
-    config.value = await window.api.presentacion.guardar(config.value)
+    config.value = await window.api.presentacion.guardar(paraIpc(config.value))
     mensaje.value = 'Plantilla y datos de la presentación guardados.'
   } catch (e) {
     error.value = (e as Error).message ?? String(e)

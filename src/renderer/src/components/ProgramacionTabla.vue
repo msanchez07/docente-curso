@@ -6,6 +6,7 @@ import UnidadesProgramacion from '@renderer/components/UnidadesProgramacion.vue'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones.vue'
 import { notificar } from '@renderer/composables/notificaciones'
+import { paraIpc } from '@renderer/utils/ipc'
 import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { ESQUEMA_PROGRAMACION } from '@shared/esquemas-importacion'
 import { parsearDiasProgramacion } from '@shared/importar-programacion'
@@ -471,7 +472,7 @@ async function guardar(): Promise<boolean> {
   error.value = null
   mensaje.value = null
   try {
-    filas.value = await window.api.programacion.guardar(props.grupo.id, filas.value)
+    filas.value = await window.api.programacion.guardar(props.grupo.id, paraIpc(filas.value))
     original.value = serializar(filas.value)
     mensaje.value = 'Programación guardada.'
     notificar(mensaje.value)

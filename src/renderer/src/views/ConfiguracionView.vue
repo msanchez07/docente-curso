@@ -80,7 +80,9 @@ async function guardar(): Promise<void> {
   guardando.value = true
   error.value = null
   try {
-    configuracion.value = copiar(await window.api.configuracion.guardar(configuracion.value))
+    configuracion.value = copiar(
+      await window.api.configuracion.guardar(copiar(configuracion.value))
+    )
     notificar('Configuración general guardada.')
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -241,7 +243,7 @@ async function guardar(): Promise<void> {
         <header class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
             <h3>Acerca de {{ APP.nombre }}</h3>
-            <span class="tenue">{{ APP.subtitulo }} · v{{ version || '1.0.3' }}</span>
+            <span class="tenue">{{ APP.subtitulo }} · v{{ version || '1.0.4' }}</span>
           </div>
         </header>
         <div class="configuracion__autor">

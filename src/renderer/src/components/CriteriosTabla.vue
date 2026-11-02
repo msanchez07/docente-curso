@@ -3,6 +3,7 @@ import { computed, onMounted, ref } from 'vue'
 import EditorCriterios from '@renderer/components/EditorCriterios.vue'
 import { etiquetaModalidad } from '@shared/grupos'
 import { notificar } from '@renderer/composables/notificaciones'
+import { paraIpc } from '@renderer/utils/ipc'
 import type { CriterioDisponible, GrupoClase, ModeloEvaluacion } from '@shared/tipos'
 
 const props = defineProps<{ grupo: GrupoClase }>()
@@ -67,7 +68,7 @@ async function guardar(): Promise<void> {
   error.value = null
   mensaje.value = null
   try {
-    modelo.value = await window.api.criterios.guardar(props.grupo.id, modelo.value)
+    modelo.value = await window.api.criterios.guardar(props.grupo.id, paraIpc(modelo.value))
     guardado.value = true
     mensaje.value = 'Criterios guardados.'
     notificar(mensaje.value)
@@ -84,9 +85,12 @@ async function crearPlantilla(): Promise<void> {
   error.value = null
   mensaje.value = null
   try {
-    modelo.value = await window.api.criterios.guardar(props.grupo.id, modelo.value)
+    modelo.value = await window.api.criterios.guardar(props.grupo.id, paraIpc(modelo.value))
     guardado.value = true
-    const creada = await window.api.criterios.crearPlantillaDesdeGrupo(props.grupo.id, modelo.value)
+    const creada = await window.api.criterios.crearPlantillaDesdeGrupo(
+      props.grupo.id,
+      paraIpc(modelo.value)
+    )
     plantilla.value = creada.nombre
     mensaje.value = `Plantilla «${creada.nombre}» guardada. Se aplicará a los grupos nuevos con el mismo módulo y modalidad.`
     notificar(mensaje.value)
@@ -103,7 +107,7 @@ async function copiar(): Promise<void> {
   error.value = null
   mensaje.value = null
   try {
-    modelo.value = await window.api.criterios.guardar(props.grupo.id, modelo.value)
+    modelo.value = await window.api.criterios.guardar(props.grupo.id, paraIpc(modelo.value))
     guardado.value = true
     const copiados = await window.api.criterios.copiar(props.grupo.id)
     mensaje.value =

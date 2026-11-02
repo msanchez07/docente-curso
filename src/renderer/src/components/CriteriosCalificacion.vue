@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { REQUISITOS_CONOCIDOS, type Modalidad, type ModeloEvaluacion } from '@shared/tipos'
 import SelectorGrupo from '@renderer/components/SelectorGrupo.vue'
 import { useAppStore } from '@renderer/stores/app'
+import { paraIpc } from '@renderer/utils/ipc'
 
 const store = useAppStore()
 
@@ -26,8 +27,11 @@ const valido = computed(
     avaluacionesOk.value
 )
 
-const formulaAvaluacion = computed(() => {  const categorias = modelo.value?.categorias.filter((c) => Number(c.peso) > 0) ?? []
-  return categorias.length === 0 ? '—' : categorias.map((c) => `${c.peso} % ${c.nombre}`).join(' + ')
+const formulaAvaluacion = computed(() => {
+  const categorias = modelo.value?.categorias.filter((c) => Number(c.peso) > 0) ?? []
+  return categorias.length === 0
+    ? '—'
+    : categorias.map((c) => `${c.peso} % ${c.nombre}`).join(' + ')
 })
 
 const formulaFinal = computed(() => {
@@ -125,7 +129,10 @@ async function guardar(): Promise<void> {
     for (const categoria of modelo.value.categorias) {
       if (!categoria.id) categoria.id = idDesde(categoria.nombre, [])
     }
-    modelo.value = await window.api.evaluacion.guardarModelo(store.grupoActivo, modelo.value)
+    modelo.value = await window.api.evaluacion.guardarModelo(
+      store.grupoActivo,
+      paraIpc(modelo.value)
+    )
     mensaje.value = `Criterios guardados para «${store.grupo?.nombre}».`
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -142,7 +149,10 @@ async function aplicarATodos(): Promise<void> {
   error.value = null
   mensaje.value = null
   try {
-    const total = await window.api.evaluacion.aplicarATodos(store.ciclos[0].id, modelo.value)
+    const total = await window.api.evaluacion.aplicarATodos(
+      store.ciclos[0].id,
+      paraIpc(modelo.value)
+    )
     mensaje.value = `Criterios aplicados a ${total} grupos del ciclo.`
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -159,7 +169,9 @@ async function aplicarATodos(): Promise<void> {
       </div>
       <div class="cabecera-criterios__acciones">
         <SelectorGrupo />
-        <span class="tenue">Modalidad: <strong>{{ etiquetaModalidad }}</strong></span>
+        <span class="tenue"
+          >Modalidad: <strong>{{ etiquetaModalidad }}</strong></span
+        >
         <button class="boton" :disabled="!modelo" @click="cargarPorDefecto">
           Valores por defecto
         </button>

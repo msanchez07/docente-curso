@@ -4,6 +4,7 @@ import { useRoute } from 'vue-router'
 import BotonVolver from '@renderer/components/BotonVolver.vue'
 import EditorCriterios from '@renderer/components/EditorCriterios.vue'
 import type { ModeloEvaluacion, PlantillaCriterios } from '@shared/tipos'
+import { paraIpc } from '@renderer/utils/ipc'
 
 const route = useRoute()
 const plantilla = ref<PlantillaCriterios | null>(null)
@@ -43,7 +44,7 @@ async function guardar(): Promise<void> {
   error.value = null
   mensaje.value = null
   try {
-    await window.api.criterios.guardarPlantilla(plantilla.value.id, modelo.value)
+    await window.api.criterios.guardarPlantilla(plantilla.value.id, paraIpc(modelo.value))
     mensaje.value = 'Plantilla guardada.'
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -64,9 +65,7 @@ async function guardar(): Promise<void> {
       <header class="vista__cabecera criterios__cabecera">
         <div>
           <h2>{{ plantilla.nombre }}</h2>
-          <p class="tenue">
-            Módulo {{ plantilla.modulo_codigo }} · {{ plantilla.modalidad }}
-          </p>
+          <p class="tenue">Módulo {{ plantilla.modulo_codigo }} · {{ plantilla.modalidad }}</p>
         </div>
         <button
           class="boton boton--principal"
