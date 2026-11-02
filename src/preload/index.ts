@@ -23,6 +23,9 @@ const api: Api = {
     obtenerModulo: (codigo) => ipcRenderer.invoke(CANALES.boeObtenerModulo, codigo),
     guardarPesosRa: (modulo, pesos) => ipcRenderer.invoke(CANALES.boeGuardarPesosRa, modulo, pesos)
   },
+  curriculos: {
+    importar: (texto) => ipcRenderer.invoke(CANALES.curriculosImportar, texto)
+  },
   catalogo: {
     listar: () => ipcRenderer.invoke(CANALES.catalogoListar)
   },
@@ -183,6 +186,7 @@ const api: Api = {
     actualizar: (id, entrada) =>
       ipcRenderer.invoke(CANALES.unidadesProgramacionActualizar, id, entrada),
     borrar: (id) => ipcRenderer.invoke(CANALES.unidadesProgramacionBorrar, id),
+    vaciar: (grupoClaseId) => ipcRenderer.invoke(CANALES.unidadesProgramacionVaciar, grupoClaseId),
     importar: (grupoClaseId, texto) =>
       ipcRenderer.invoke(CANALES.unidadesProgramacionImportar, grupoClaseId, texto)
   },

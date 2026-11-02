@@ -12,7 +12,8 @@ import {
   borrarUnidadProgramacion,
   crearUnidadProgramacion,
   importarUnidadesProgramacion,
-  listarUnidadesProgramacion
+  listarUnidadesProgramacion,
+  vaciarUnidadesProgramacion
 } from '../src/main/db/repositorios/unidades-programacion'
 import {
   importarCalendarioEscolar,
@@ -159,6 +160,57 @@ describe('unidades de programación', () => {
     const unidad = listarUnidadesProgramacion(db, grupoId)[0]
     expect(unidad.sesiones).toHaveLength(1)
     expect(unidad.sesiones[0].contenido).toBe('Sesión importada')
+  })
+
+  it('importa las válidas y explica cuál falla', () => {
+    const resultado = importarUnidadesProgramacion(
+      db,
+      grupoId,
+      JSON.stringify({
+        unidades: [
+          { nombre: 'Válida', ra_codigos: ['RA1'] },
+          {
+            nombre: 'Inválida',
+            criterios: [{ raCodigo: 'RA9', ceCodigo: 'z' }]
+          }
+        ]
+      })
+    )
+    expect(resultado.creados).toBe(1)
+    expect(resultado.errores).toHaveLength(1)
+    expect(resultado.errores[0]).toContain('Inválida')
+    expect(resultado.errores[0]).toContain('no pertenece')
+  })
+
+  it('borra todas las unidades y deja las sesiones sin asignar', () => {
+    const primera = crearUnidadProgramacion(db, grupoId, {
+      nombre: 'UD1',
+      ra_codigos: ['RA1']
+    })
+    const segunda = crearUnidadProgramacion(db, grupoId, {
+      nombre: 'UD2',
+      ra_codigos: ['RA2']
+    })
+    guardarProgramacion(db, grupoId, [
+      {
+        fecha: '2026-09-16',
+        contenido: 'Sesión de UD1',
+        desviacion: '',
+        observaciones: '',
+        unidad_id: primera.id
+      },
+      {
+        fecha: '2026-09-17',
+        contenido: 'Sesión de UD2',
+        desviacion: '',
+        observaciones: '',
+        unidad_id: segunda.id
+      }
+    ])
+
+    expect(vaciarUnidadesProgramacion(db, grupoId)).toBe(2)
+    expect(listarUnidadesProgramacion(db, grupoId)).toEqual([])
+    expect(listarProgramacion(db, grupoId).map((sesion) => sesion.unidad_id)).toEqual([null, null])
   })
 
   it('actualiza y borra la unidad sin perder la sesión', () => {

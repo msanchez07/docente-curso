@@ -325,6 +325,34 @@ export function borrarUnidadProgramacion(db: Bd, id: number): boolean {
   return true
 }
 
+/**
+ * Borra todas las unidades de programación del grupo.
+ *
+ * Las sesiones de la programación de aula se conservan, pero quedan sin
+ * unidad asignada. Devuelve cuántas unidades se han borrado.
+ */
+export function vaciarUnidadesProgramacion(db: Bd, grupoClaseId: number): number {
+  if (!obtenerGrupoClase(db, grupoClaseId)) throw new Error('El grupo no existe.')
+  const total = (
+    db
+      .prepare('SELECT COUNT(*) AS n FROM unidades_programacion WHERE grupo_clase_id = ?')
+      .get(grupoClaseId) as { n: number }
+  ).n
+  if (total === 0) return 0
+
+  db.transaction(() => {
+    db.prepare(
+      `UPDATE programacion_aula
+          SET unidad_id = NULL
+        WHERE unidad_id IN (
+          SELECT id FROM unidades_programacion WHERE grupo_clase_id = ?
+        )`
+    ).run(grupoClaseId)
+    db.prepare('DELETE FROM unidades_programacion WHERE grupo_clase_id = ?').run(grupoClaseId)
+  })()
+  return total
+}
+
 export function importarUnidadesProgramacion(
   db: Bd,
   grupoClaseId: number,
@@ -349,7 +377,7 @@ export function importarUnidadesProgramacion(
      VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
   )
 
-  for (const unidadImportada of unidades) {
+  for (const [indice, unidadImportada] of unidades.entries()) {
     try {
       const unidad = crearUnidadProgramacion(db, grupoClaseId, unidadImportada)
       for (const sesion of unidadImportada.sesiones ?? []) {
@@ -379,7 +407,7 @@ export function importarUnidadesProgramacion(
       }
       creados += 1
     } catch (e) {
-      errores.push((e as Error).message)
+      errores.push(`Unidad ${indice + 1} «${unidadImportada.nombre}»: ${(e as Error).message}`)
     }
   }
 

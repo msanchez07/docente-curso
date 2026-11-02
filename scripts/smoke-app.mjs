@@ -80,6 +80,45 @@ async function principal() {
     comprobar('BD sembrada (86 RA, 665 CE)', estado.ra === 86 && estado.ce === 665)
     comprobar('BD aislada en directorio temporal', estado.ruta.startsWith(dirDatos))
 
+    /* --- Importación de currículos con esquema ---------------------- */
+    const curriculoPrueba = JSON.stringify({
+      id: 'smoke-test',
+      denominacion: 'Ciclo de prueba de importación',
+      nivel: 'Formación Profesional de Grado Superior',
+      familia_profesional: 'Informática y Comunicaciones',
+      abreviatura: 'SMK',
+      modulos: [
+        {
+          codigo: 'T999',
+          nombre: 'Módulo de prueba',
+          curso: '1',
+          ra: [
+            {
+              codigo: 'RA1',
+              numero: 1,
+              descripcion: 'RA de prueba',
+              ce: [{ codigo: 'a', descripcion: 'CE de prueba' }]
+            }
+          ]
+        }
+      ]
+    })
+    const importado = await ev(`window.api.curriculos.importar(${JSON.stringify(curriculoPrueba)})`)
+    comprobar(
+      'importa un currículo con el esquema',
+      importado.ciclos === 1 &&
+        importado.modulos === 1 &&
+        importado.ra === 1 &&
+        importado.ce === 1 &&
+        importado.errores.length === 0,
+      JSON.stringify(importado)
+    )
+    const importadoCiclo = await ev(`window.api.boe.obtenerCiclo('smoke-test')`)
+    comprobar(
+      'el currículo importado se puede consultar',
+      importadoCiclo?.modulos?.[0]?.ra?.[0]?.ce?.[0]?.descripcion === 'CE de prueba'
+    )
+
     /* --- Grupos: el mismo módulo en dos modalidades ---------------- */
     const presencial = await ev(
       `window.api.grupos.crear({ modulo_codigo: '0613', nombre: 'Presencial', modalidad: 'presencial' })`

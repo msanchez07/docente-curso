@@ -44,6 +44,37 @@ describe('importación de unidades de programación', () => {
     ])
   })
 
+  it('acepta fechas ISO completas y criterios separados por comas', () => {
+    const resultado = parsearUnidadesProgramacion(
+      JSON.stringify([
+        {
+          nombre: 'UD con fechas completas',
+          fecha_inicio: '2026-09-15T00:00:00.000Z',
+          fecha_fin: '2026-10-15T23:59:59+02:00',
+          criterios: 'RA1.a, RA1.b; RA2.c'
+        }
+      ])
+    )
+    expect(resultado.errores).toEqual([])
+    expect(resultado.unidades[0].fecha_inicio).toBe('2026-09-15')
+    expect(resultado.unidades[0].fecha_fin).toBe('2026-10-15')
+    expect(resultado.unidades[0].criterios).toEqual([
+      { raCodigo: 'RA1', ceCodigo: 'a' },
+      { raCodigo: 'RA1', ceCodigo: 'b' },
+      { raCodigo: 'RA2', ceCodigo: 'c' }
+    ])
+  })
+
+  it('acepta criterios con claves ra_codigo y ce_codigo', () => {
+    const resultado = parsearUnidadesProgramacion(
+      JSON.stringify([
+        { nombre: 'UD snake_case', criterios: [{ ra_codigo: 'RA1', ce_codigo: 'a' }] }
+      ])
+    )
+    expect(resultado.errores).toEqual([])
+    expect(resultado.unidades[0].criterios).toEqual([{ raCodigo: 'RA1', ceCodigo: 'a' }])
+  })
+
   it('acepta { unidades: [...] } y valida fechas', () => {
     const resultado = parsearUnidadesProgramacion(
       JSON.stringify({
@@ -51,5 +82,12 @@ describe('importación de unidades de programación', () => {
       })
     )
     expect(resultado.errores[0]).toMatch(/posterior/)
+  })
+
+  it('rechaza fechas imposibles', () => {
+    const resultado = parsearUnidadesProgramacion(
+      JSON.stringify([{ nombre: 'UD imposible', fecha_inicio: '2026-02-30' }])
+    )
+    expect(resultado.errores[0]).toMatch(/fecha de inicio no válida/)
   })
 })

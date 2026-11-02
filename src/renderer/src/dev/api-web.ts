@@ -2020,6 +2020,13 @@ const api = {
     },
     guardarPesosRa: async () => undefined
   },
+  curriculos: {
+    importar: async () => {
+      throw new Error(
+        'La importación de currículos solo está disponible en la aplicación de escritorio.'
+      )
+    }
+  },
   catalogo: {
     listar: async (): Promise<CicloCatalogo[]> => (catalogoHorarios as CatalogoHorarios).ciclos
   },
@@ -3364,6 +3371,27 @@ const api = {
       escribirProgramacion(programacion)
       escribirUnidades(unidades.filter((unidad) => unidad.id !== id))
       return true
+    },
+    vaciar: async (grupoClaseId: number): Promise<number> => {
+      if (!leer().some((grupo) => grupo.id === grupoClaseId)) {
+        throw new Error('El grupo no existe.')
+      }
+      const unidades = leerUnidades()
+      const ids = new Set(
+        unidades
+          .filter((unidad) => unidad.grupo_clase_id === grupoClaseId)
+          .map((unidad) => unidad.id)
+      )
+      if (ids.size === 0) return 0
+      const programacion = leerProgramacion()
+      for (const [grupoId, filas] of Object.entries(programacion)) {
+        programacion[grupoId] = filas.map((fila) =>
+          fila.unidad_id !== null && ids.has(fila.unidad_id) ? { ...fila, unidad_id: null } : fila
+        )
+      }
+      escribirProgramacion(programacion)
+      escribirUnidades(unidades.filter((unidad) => unidad.grupo_clase_id !== grupoClaseId))
+      return ids.size
     },
     importar: async (grupoClaseId: number, texto: string) => {
       if (!leer().some((grupo) => grupo.id === grupoClaseId)) {

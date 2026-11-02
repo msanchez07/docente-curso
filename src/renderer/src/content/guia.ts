@@ -283,6 +283,11 @@ export const seccionesGuia: SeccionGuia[] = [
           'Cada unidad reúne sus sesiones, contenidos, RA/CE y criterios. Puedes crear unidades, ordenarlas y consultar qué parte del módulo cubre cada una.'
       },
       {
+        titulo: 'Borrar todas las unidades',
+        detalle:
+          'Desde Acciones puedes borrar todas las unidades del grupo. Las sesiones de la programación se conservan, pero quedan sin unidad asignada.'
+      },
+      {
         titulo: 'Fechas de evaluación y exámenes',
         detalle:
           'Las fechas se pueden crear a mano o importar. Se usan para la agenda del dashboard y para organizar los bloques de las convocatorias.'
@@ -770,6 +775,7 @@ export const seccionesGuia: SeccionGuia[] = [
       'El menú inferior de la barra lateral reúne las herramientas que no pertenecen a un único grupo.',
     explicacion: [
       'Opciones globales está al final de la barra lateral. Desde ahí se gestionan los grupos, los cursos académicos, las plantillas, el control de faltas, las copias de seguridad, la guía, la normativa y la importación de normativa.',
+      'En Ajustes, la pestaña Currículo permite importar módulos, RA y CE desde JSON con un esquema descargable. Es útil para completar ciclos que aún no tengan datos oficiales cargados.',
       'En la previsualización web aparecen además dos acciones de datos de prueba: restaurar los datos de ejemplo y eliminarlos. Estas acciones no afectan a la aplicación de escritorio. La guía de uso también está en este menú para poder consultarla sin perder la pantalla en la que estás.'
     ],
     imagen: globalMenu,
@@ -810,6 +816,11 @@ export const seccionesGuia: SeccionGuia[] = [
         titulo: 'Normativa FP e Importar normativa',
         detalle:
           'La primera abre la consulta; la segunda importa un nuevo contenido. La importación no cambia por sí sola las notas ni los criterios.'
+      },
+      {
+        titulo: 'Currículo y RA/CE',
+        detalle:
+          'Ajustes → Currículo importa un ciclo completo o un array de ciclos desde JSON. Puedes descargar el esquema, rellenarlo y volver a importarlo; los pesos ya configurados se conservan.'
       },
       {
         titulo: 'Datos de prueba',

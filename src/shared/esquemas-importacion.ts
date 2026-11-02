@@ -260,3 +260,140 @@ export const ESQUEMA_EVENTOS = {
     }
   ]
 } as const
+
+export const ESQUEMA_CICLO = {
+  $schema: 'https://json-schema.org/draft/2020-12/schema',
+  title: 'Importación de currículo: ciclo, módulos, RA y CE',
+  description:
+    'Objeto de un ciclo, array de ciclos o { "ciclos": [...] }. Cada ciclo incluye sus módulos y, dentro de cada módulo, los resultados de aprendizaje (RA) y criterios de evaluación (CE). El id debería coincidir con el id del catálogo para que los grupos existentes enlacen automáticamente.',
+  oneOf: [
+    { $ref: '#/$defs/ciclo' },
+    { type: 'array', minItems: 1, items: { $ref: '#/$defs/ciclo' } },
+    {
+      type: 'object',
+      properties: {
+        ciclos: { type: 'array', minItems: 1, items: { $ref: '#/$defs/ciclo' } }
+      },
+      required: ['ciclos'],
+      additionalProperties: true
+    }
+  ],
+  $defs: {
+    ciclo: {
+      type: 'object',
+      properties: {
+        id: {
+          type: 'string',
+          minLength: 1,
+          description:
+            'Identificador del ciclo. Si coincide con catalogo_ciclos.id, los grupos y módulos se enlazan con el catálogo.'
+        },
+        denominacion: { type: 'string', minLength: 1 },
+        nivel: {
+          type: 'string',
+          description: 'Por ejemplo: Formación Profesional de Grado Superior.'
+        },
+        familia_profesional: { type: 'string' },
+        duracion_horas: { type: 'integer', minimum: 0, default: 0 },
+        ects: { type: 'integer', minimum: 0, default: 0 },
+        abreviatura: {
+          type: 'string',
+          description: 'Abreviatura corta para el nombre del grupo (DAW, DAM, ASIR…).'
+        },
+        rd: { type: 'string', description: 'Real Decreto o norma de referencia.' },
+        rd_actualizacion: { type: 'string' },
+        boe_url: { type: 'string', description: 'Enlace al BOE.' },
+        boe_url_actualizacion: { type: 'string' },
+        modulos: { type: 'array', minItems: 1, items: { $ref: '#/$defs/modulo' } }
+      },
+      required: ['id', 'denominacion', 'modulos'],
+      additionalProperties: true
+    },
+    modulo: {
+      type: 'object',
+      properties: {
+        codigo: {
+          type: 'string',
+          minLength: 1,
+          description: 'Código oficial del módulo, por ejemplo 0484.'
+        },
+        nombre: { type: 'string', minLength: 1 },
+        siglas: { type: 'string', description: 'Siglas cortas del módulo (BD, PROG…).' },
+        curso: { type: 'string', enum: ['1', '2'] },
+        ects: { type: ['integer', 'null'], minimum: 0 },
+        horas_minimas_boe: { type: ['integer', 'null'], minimum: 0 },
+        ra: { type: 'array', items: { $ref: '#/$defs/ra' } }
+      },
+      required: ['codigo', 'nombre'],
+      additionalProperties: true
+    },
+    ra: {
+      type: 'object',
+      properties: {
+        codigo: {
+          type: 'string',
+          description: 'Código del RA, por ejemplo RA1. Si falta, se genera a partir de numero.'
+        },
+        numero: {
+          type: 'integer',
+          minimum: 1,
+          description:
+            'Número del RA dentro del módulo. Si falta, se deduce del código o del orden.'
+        },
+        descripcion: { type: 'string', minLength: 1 },
+        ce: { type: 'array', items: { $ref: '#/$defs/ce' } }
+      },
+      required: ['descripcion'],
+      additionalProperties: true
+    },
+    ce: {
+      type: 'object',
+      properties: {
+        codigo: {
+          type: 'string',
+          description: 'Código del CE, normalmente a, b, c… Si falta, se genera por orden.'
+        },
+        descripcion: { type: 'string', minLength: 1 }
+      },
+      required: ['descripcion'],
+      additionalProperties: true
+    }
+  },
+  examples: [
+    {
+      id: 'gs-desarrollo-de-aplicaciones-multiplataforma',
+      denominacion: 'Desarrollo de Aplicaciones Multiplataforma',
+      nivel: 'Formación Profesional de Grado Superior',
+      familia_profesional: 'Informática y Comunicaciones',
+      duracion_horas: 2000,
+      ects: 120,
+      abreviatura: 'DAM',
+      rd: 'Real Decreto 450/2010',
+      boe_url: 'https://www.boe.es/',
+      modulos: [
+        {
+          codigo: '0484',
+          nombre: 'Bases de Datos',
+          siglas: 'BD',
+          curso: '1',
+          ects: 10,
+          horas_minimas_boe: 160,
+          ra: [
+            {
+              codigo: 'RA1',
+              numero: 1,
+              descripcion: 'Reconoce los elementos de las bases de datos relacionales.',
+              ce: [
+                {
+                  codigo: 'a',
+                  descripcion: 'Se han identificado las características de las bases de datos.'
+                },
+                { codigo: 'b', descripcion: 'Se han distinguido los modelos de datos.' }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} as const

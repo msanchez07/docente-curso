@@ -9,6 +9,8 @@ import type { CatalogoHorarios, Ciclo } from '@shared/tipos'
 import type { Bd } from './conexion'
 
 export function sembrarCiclos(db: Bd, ciclos: Ciclo[]): void {
+  const abreviaturaCatalogo = db.prepare('SELECT abreviatura FROM catalogo_ciclos WHERE id = ?')
+
   const upsertCiclo = db.prepare(`
     INSERT INTO ciclos (id, denominacion, nivel, familia_profesional, duracion_horas, ects,
                         rd, rd_actualizacion, boe_url, boe_url_actualizacion,
@@ -74,7 +76,10 @@ export function sembrarCiclos(db: Bd, ciclos: Ciclo[]): void {
         rd_actualizacion: ciclo.rd_actualizacion ?? null,
         boe_url: ciclo.boe_url ?? null,
         boe_url_actualizacion: ciclo.boe_url_actualizacion ?? null,
-        abreviatura: ciclo.abreviatura?.trim() || ciclo.id.toUpperCase()
+        abreviatura:
+          ciclo.abreviatura?.trim() ||
+          (abreviaturaCatalogo.get(ciclo.id) as { abreviatura: string } | undefined)?.abreviatura ||
+          ciclo.id.toUpperCase()
       })
 
       for (const modulo of ciclo.modulos) {

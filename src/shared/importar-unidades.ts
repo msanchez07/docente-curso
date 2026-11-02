@@ -12,24 +12,27 @@ export interface ResultadoUnidadesImportadas {
   errores: string[]
 }
 
-const RE_ISO = /^\d{4}-\d{2}-\d{2}$/
-const RE_DMA = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/
+const RE_ISO = /^(\d{4})-(\d{1,2})-(\d{1,2})(?:[T\s].*)?$/
+const RE_DMA = /^(\d{1,2})[./-](\d{1,2})[./-](\d{4})(?:[T\s].*)?$/
+
+function fechaDesdePartes(anio: string, mes: string, dia: string): string | null {
+  const a = Number(anio)
+  const m = Number(mes)
+  const d = Number(dia)
+  if (!Number.isInteger(a) || !Number.isInteger(m) || !Number.isInteger(d)) return null
+  const fecha = new Date(Date.UTC(a, m - 1, d))
+  if (fecha.getUTCFullYear() !== a || fecha.getUTCMonth() !== m - 1 || fecha.getUTCDate() !== d) {
+    return null
+  }
+  return `${String(a).padStart(4, '0')}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`
+}
 
 function normalizarFecha(valor: string): string | null {
   const texto = valor.trim()
-  if (RE_ISO.test(texto)) {
-    const fecha = new Date(`${texto}T00:00:00Z`)
-    return !Number.isNaN(fecha.getTime()) && fecha.toISOString().slice(0, 10) === texto
-      ? texto
-      : null
-  }
-  const coincidencia = RE_DMA.exec(texto)
-  if (coincidencia) {
-    const [, dia, mes, anio] = coincidencia
-    const iso = `${anio}-${mes.padStart(2, '0')}-${dia.padStart(2, '0')}`
-    const fecha = new Date(`${iso}T00:00:00Z`)
-    return !Number.isNaN(fecha.getTime()) && fecha.toISOString().slice(0, 10) === iso ? iso : null
-  }
+  const iso = RE_ISO.exec(texto)
+  if (iso) return fechaDesdePartes(iso[1], iso[2], iso[3])
+  const dma = RE_DMA.exec(texto)
+  if (dma) return fechaDesdePartes(dma[3], dma[2], dma[1])
   return null
 }
 
@@ -81,16 +84,16 @@ function listaCriterios(valor: unknown): CriterioUnidad[] {
   }
   const procesar = (item: unknown): void => {
     if (typeof item === 'string') {
-      const coincidencia = /^([A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)\s*[.:|]\s*(.+)$/.exec(item.trim())
-      if (coincidencia) agregar(coincidencia[1], coincidencia[2])
+      for (const trozo of item.split(/[;,]/)) {
+        const coincidencia = /^([A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+)\s*[.:|]\s*(.+)$/.exec(trozo.trim())
+        if (coincidencia) agregar(coincidencia[1], coincidencia[2])
+      }
       return
     }
     if (!item || typeof item !== 'object') return
     const objeto = item as Record<string, unknown>
-    const ra = texto(
-      objeto.raCodigo ?? objeto.ra ?? objeto.resultado ?? objeto.resultadoAprendizaje
-    )
-    const ce = texto(objeto.ceCodigo ?? objeto.ce ?? objeto.criterio ?? objeto.criterioEvaluacion)
+    const ra = texto(buscar(objeto, [/^racodigo/, /^ra$/, /^resultado/, /^resultadoaprendizaje/]))
+    const ce = texto(buscar(objeto, [/^cecodigo/, /^ce$/, /^criterio/, /^criterioevaluacion/]))
     if (ra && ce) agregar(ra, ce)
   }
   if (Array.isArray(valor)) {
@@ -182,7 +185,7 @@ export function parsearUnidadesProgramacion(textoImportado: string): ResultadoUn
 
     const sesionesCrudas = buscar(objeto, [/^sesiones/, /^dias/])
     const sesiones: ProgramacionEntrada[] = []
-    if (sesionesCrudas !== undefined) {
+    if (sesionesCrudas !== undefined && sesionesCrudas !== null) {
       if (!Array.isArray(sesionesCrudas)) {
         errores.push(`Unidad ${indice + 1}: «sesiones» debe ser un array.`)
         return

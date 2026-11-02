@@ -30,6 +30,8 @@ const mostrarForm = ref(false)
 const editando = ref<UnidadProgramacion | null>(null)
 const unidadABorrar = ref<UnidadProgramacion | null>(null)
 const borrando = ref(false)
+const mostrarBorrarTodas = ref(false)
+const borrandoTodas = ref(false)
 const unidadSeleccionada = ref<number | null>(null)
 const mostrarImportar = ref(false)
 const textoImportar = ref('')
@@ -169,13 +171,24 @@ function resetFormulario(): void {
 function accionesCabecera(): AccionMenu[] {
   return [
     { id: 'importar', etiqueta: 'Importar unidades', icono: 'importar' },
-    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' }
+    { id: 'esquema', etiqueta: 'Descargar esquema', icono: 'descargar' },
+    ...(unidades.value.length > 0
+      ? [
+          {
+            id: 'vaciar',
+            etiqueta: 'Borrar todas las unidades',
+            icono: 'borrar' as const,
+            peligro: true
+          }
+        ]
+      : [])
   ]
 }
 
 function ejecutarAccionCabecera(accion: string): void {
   if (accion === 'importar') abrirImportar()
   else if (accion === 'esquema') exportarEsquema()
+  else if (accion === 'vaciar') mostrarBorrarTodas.value = true
 }
 
 function abrirImportar(): void {
@@ -199,9 +212,9 @@ async function importarTexto(texto: string): Promise<void> {
     emit('actualizado')
     mensaje.value = `${resultado.creados} unidad(es) importada(s).`
     notificar(mensaje.value)
-    errorImportar.value =
-      resultado.errores.length > 0 ? resultado.errores.slice(0, 6).join(' · ') : null
-    if (resultado.creados > 0) mostrarImportar.value = false
+    errorImportar.value = resultado.errores.length > 0 ? resultado.errores.join(' · ') : null
+    // Si hay unidades rechazadas, deja el panel abierto para que se pueda leer el motivo.
+    if (resultado.creados > 0 && resultado.errores.length === 0) mostrarImportar.value = false
   } catch (e) {
     errorImportar.value = (e as Error).message ?? String(e)
   } finally {
@@ -455,6 +468,28 @@ async function guardar(): Promise<void> {
     error.value = (e as Error).message ?? String(e)
   } finally {
     guardando.value = false
+  }
+}
+
+async function vaciarTodas(): Promise<void> {
+  if (unidades.value.length === 0) return
+  borrandoTodas.value = true
+  error.value = null
+  try {
+    const total = await window.api.unidadesProgramacion.vaciar(props.grupo.id)
+    mensaje.value =
+      total === 1
+        ? 'Unidad borrada. Sus sesiones quedan sin asignar.'
+        : `${total} unidades borradas. Sus sesiones quedan sin asignar.`
+    notificar(mensaje.value)
+    mostrarBorrarTodas.value = false
+    unidadSeleccionada.value = null
+    await cargar()
+    emit('actualizado')
+  } catch (e) {
+    error.value = (e as Error).message ?? String(e)
+  } finally {
+    borrandoTodas.value = false
   }
 }
 
@@ -931,6 +966,21 @@ async function borrar(): Promise<void> {
         </div>
       </section>
     </div>
+
+    <Confirmacion
+      v-if="mostrarBorrarTodas"
+      titulo="¿Borrar todas las unidades?"
+      etiqueta-confirmar="Sí, borrar todas"
+      peligro
+      :ocupado="borrandoTodas"
+      @cancelar="mostrarBorrarTodas = false"
+      @confirmar="vaciarTodas"
+    >
+      <p>
+        Se borrarán <strong>{{ unidades.length }}</strong> unidades de este grupo. Las sesiones de
+        la programación se conservarán, pero quedarán sin unidad asignada.
+      </p>
+    </Confirmacion>
 
     <Confirmacion
       v-if="unidadABorrar"

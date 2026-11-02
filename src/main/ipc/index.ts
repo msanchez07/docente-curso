@@ -94,6 +94,7 @@ import {
   guardarPesosRa
 } from '../db/repositorios/boe'
 import { listarCatalogo } from '../db/repositorios/catalogo'
+import { importarCurriculo } from '../db/repositorios/curriculos'
 import { coberturaModulo } from '../db/repositorios/cobertura'
 import {
   actualizarEntrega,
@@ -150,6 +151,7 @@ import { guardarProgramacion, listarProgramacion } from '../db/repositorios/prog
 import {
   actualizarUnidadProgramacion,
   borrarUnidadProgramacion,
+  vaciarUnidadesProgramacion,
   crearUnidadProgramacion,
   importarUnidadesProgramacion,
   listarUnidadesProgramacion
@@ -233,6 +235,7 @@ export function registrarIpc(): void {
   ipcMain.handle(CANALES.boeGuardarPesosRa, (_e, modulo: string, pesos: Record<string, number>) =>
     guardarPesosRa(bd(), modulo, pesos ?? {})
   )
+  ipcMain.handle(CANALES.curriculosImportar, (_e, texto: string) => importarCurriculo(bd(), texto))
 
   // Catálogo oficial de ciclos y módulos para crear grupos.
   ipcMain.handle(CANALES.catalogoListar, () => listarCatalogo(bd()))
@@ -573,6 +576,9 @@ export function registrarIpc(): void {
   )
   ipcMain.handle(CANALES.unidadesProgramacionBorrar, (_e, id: number) =>
     borrarUnidadProgramacion(bd(), id)
+  )
+  ipcMain.handle(CANALES.unidadesProgramacionVaciar, (_e, grupoClaseId: number) =>
+    vaciarUnidadesProgramacion(bd(), grupoClaseId)
   )
   ipcMain.handle(CANALES.unidadesProgramacionImportar, (_e, grupoClaseId: number, texto: string) =>
     importarUnidadesProgramacion(bd(), grupoClaseId, texto)

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref, watch } from 'vue'
 import CriteriosCalificacion from '@renderer/components/CriteriosCalificacion.vue'
+import CurriculoPanel from '@renderer/components/CurriculoPanel.vue'
 import GestionAlumnos from '@renderer/components/GestionAlumnos.vue'
 import Pestanas from '@renderer/components/Pestanas.vue'
 import { useAppStore } from '@renderer/stores/app'
@@ -12,7 +13,8 @@ const pestana = ref('grupos')
 const pestanas = [
   { id: 'grupos', etiqueta: 'Grupos' },
   { id: 'alumnos', etiqueta: 'Alumnos' },
-  { id: 'criterios', etiqueta: 'Criterios de calificación' }
+  { id: 'criterios', etiqueta: 'Criterios de calificación' },
+  { id: 'curriculo', etiqueta: 'Currículo' }
 ]
 
 const error = ref<string | null>(null)
@@ -110,7 +112,7 @@ async function vaciarBaseDeDatos(): Promise<void> {
   <section class="vista">
     <header class="vista__cabecera">
       <h2>Ajustes</h2>
-      <p class="tenue">Grupos, alumnado y criterios de calificación.</p>
+      <p class="tenue">Grupos, alumnado, criterios de calificación y currículo.</p>
     </header>
 
     <p v-if="mensaje" class="aviso" style="background: #ecfdf3; color: #067647" role="status">
@@ -217,13 +219,24 @@ async function vaciarBaseDeDatos(): Promise<void> {
 
     <!-- Criterios de calificación -->
     <div
-      v-else
+      v-else-if="pestana === 'criterios'"
       id="panel-criterios"
       role="tabpanel"
       aria-labelledby="pestana-criterios"
       tabindex="0"
     >
       <CriteriosCalificacion />
+    </div>
+
+    <!-- Currículo -->
+    <div
+      v-else
+      id="panel-curriculo"
+      role="tabpanel"
+      aria-labelledby="pestana-curriculo"
+      tabindex="0"
+    >
+      <CurriculoPanel />
     </div>
 
     <!-- Alta / edición de grupo -->

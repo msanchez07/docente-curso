@@ -849,6 +849,19 @@ export interface ResultadoImportacionClase {
   errores: string[]
 }
 
+/** Resultado de importar uno o varios currículos completos (ciclo, módulos, RA y CE). */
+export interface ResultadoImportacionCurriculo {
+  ciclos: number
+  modulos: number
+  ra: number
+  ce: number
+  /** Identificadores de los ciclos importados. */
+  ids: string[]
+  /** Avisos no bloqueantes, por ejemplo si el id no coincide con el catálogo. */
+  avisos: string[]
+  errores: string[]
+}
+
 /* --- Modelo de evaluación --------------------------------------------- */
 
 export type Modalidad = 'presencial' | 'semipresencial'
@@ -1272,6 +1285,10 @@ export interface Api {
     obtenerModulo(codigo: string): Promise<Modulo | null>
     guardarPesosRa(modulo: string, pesos: Record<string, number>): Promise<void>
   }
+  curriculos: {
+    /** Importa un ciclo o un array de ciclos con sus módulos, RA y CE. */
+    importar(texto: string): Promise<ResultadoImportacionCurriculo>
+  }
   catalogo: {
     /** Ciclos y módulos oficiales de 1º y 2º curso para crear grupos. */
     listar(): Promise<CicloCatalogo[]>
@@ -1438,6 +1455,8 @@ export interface Api {
     crear(grupoClaseId: number, entrada: UnidadProgramacionEntrada): Promise<UnidadProgramacion>
     actualizar(id: number, entrada: UnidadProgramacionEntrada): Promise<UnidadProgramacion | null>
     borrar(id: number): Promise<boolean>
+    /** Borra todas las unidades del grupo y deja sus sesiones sin unidad. */
+    vaciar(grupoClaseId: number): Promise<number>
     importar(grupoClaseId: number, texto: string): Promise<ResultadoImportacionUnidades>
   }
   calendarioEscolar: {
@@ -1530,6 +1549,7 @@ export const CANALES = {
   boeObtenerCiclo: 'boe:obtenerCiclo',
   boeObtenerModulo: 'boe:obtenerModulo',
   boeGuardarPesosRa: 'boe:guardarPesosRa',
+  curriculosImportar: 'curriculos:importar',
   catalogoListar: 'catalogo:listar',
   bdEstado: 'bd:estado',
   bdListarModulos: 'bd:listarModulos',
@@ -1614,6 +1634,7 @@ export const CANALES = {
   unidadesProgramacionCrear: 'unidadesProgramacion:crear',
   unidadesProgramacionActualizar: 'unidadesProgramacion:actualizar',
   unidadesProgramacionBorrar: 'unidadesProgramacion:borrar',
+  unidadesProgramacionVaciar: 'unidadesProgramacion:vaciar',
   unidadesProgramacionImportar: 'unidadesProgramacion:importar',
   calendarioEscolarListar: 'calendarioEscolar:listar',
   calendarioEscolarImportar: 'calendarioEscolar:importar',
