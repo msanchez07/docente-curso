@@ -8,6 +8,7 @@ import BarraVentana from '@renderer/components/BarraVentana.vue'
 import NavegacionGrupo from '@renderer/components/NavegacionGrupo.vue'
 import { EVENTO_NORMATIVA_ACTUALIZADA } from '@shared/normativa'
 import { APP, AUTOR } from '@shared/autor'
+import { notificar } from '@renderer/composables/notificaciones'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
 
@@ -101,8 +102,14 @@ async function restaurarDemo(): Promise<void> {
   restaurando.value = true
   try {
     await window.api.demo.cargar()
+    // Refresca el estado antes de navegar: evita que el dashboard se monte
+    // con los grupos vacíos que había antes de restaurar.
+    await Promise.all([grupos.cargar(true), cursos.cargar(true)])
     window.location.hash = '#/grupo/1'
     window.location.reload()
+  } catch (e) {
+    console.error('No se pudieron restaurar los datos de prueba:', e)
+    notificar(`No se pudieron restaurar los datos de prueba: ${String(e)}`, 'error')
   } finally {
     restaurando.value = false
   }
@@ -113,8 +120,12 @@ async function eliminarDemo(): Promise<void> {
   eliminandoDemo.value = true
   try {
     await window.api.demo.eliminar()
+    await Promise.all([grupos.cargar(true), cursos.cargar(true)])
     window.location.hash = '#/grupos'
     window.location.reload()
+  } catch (e) {
+    console.error('No se pudieron eliminar los datos de prueba:', e)
+    notificar(`No se pudieron eliminar los datos de prueba: ${String(e)}`, 'error')
   } finally {
     eliminandoDemo.value = false
   }
