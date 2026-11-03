@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.1.2](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.2)** —
+> **📦 [Descargar Aula Nova 1.1.3](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.3)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -30,10 +30,10 @@ Aplicación funcional en **versión 1.1**. Verificación actual:
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.1.2
+## Release 1.1.3
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.1.2](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.2)**:
+**[GitHub Releases v1.1.3](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.3)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -73,6 +73,8 @@ restringidos a la previsualización web de desarrollo.
   de DAW desde el RD 405/2023.
 - **1.1.2:** mejora la vista de RA en Criterios y el índice de RA/CE, con descripciones más
   legibles y el peso separado.
+- **1.1.3:** permite guardar unidades con fechas y sin reparto de pesos; los pesos ocultos ya no
+  bloquean el guardado.
 
 ---
 
