@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.0.9](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.9)** —
+> **📦 [Descargar Aula Nova 1.1.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.0)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -23,17 +23,17 @@ empresa e informes trazables al BOE.
 
 ## Estado
 
-Aplicación funcional en **versión 1.0**. Verificación actual:
+Aplicación funcional en **versión 1.1**. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **217 tests**
+- `npm test` ✅ **235 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.0.9
+## Release 1.1.0
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.0.9](https://github.com/msanchez07/docente-curso/releases/tag/v1.0.9)**:
+**[GitHub Releases v1.1.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.0)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -57,6 +57,18 @@ distribución pública conviene configurar certificados de firma.
 La release **no carga datos de prueba**: la aplicación arranca vacía y solo incluye los datos
 oficiales del BOE y el catálogo de secuenciación y horarios. Los datos de ejemplo quedan
 restringidos a la previsualización web de desarrollo.
+
+### Novedades de 1.1.0
+
+- **Currículos completos:** 181 ciclos del catálogo con RA/CE, generados desde el dosier de la
+  Conselleria, los RDs del BOE y los decretos autonómicos del DOGV.
+- **36 cursos de especialización:** módulos, RA/CE y catálogo propio para crear grupos.
+- **Importador de currículos con esquema JSON:** permite cargar o completar ciclos desde
+  `Ajustes → Currículo`.
+- **Módulos compartidos:** tabla `modulo_ciclos` para que un mismo módulo aparezca en todos sus
+  ciclos sin duplicar RA/CE.
+- **Unidades de programación:** importación con fechas ISO completas, criterios alternativos y
+  borrado masivo conservando las sesiones.
 
 ---
 

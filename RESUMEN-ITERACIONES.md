@@ -5,9 +5,9 @@
 > está en [`README.md`](./README.md) y la guía de uso completa en
 > [`GUIA-APLICACION.md`](./GUIA-APLICACION.md).
 
-**Última actualización:** 31/10/2026
+**Última actualización:** 03/11/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **217 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **235 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -288,7 +288,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual (31/10/2026): **217 tests**, 36 archivos de test, build y smoke correctos.
+Estado actual (03/11/2026): **235 tests**, 40 archivos de test, build y smoke correctos.
 
 ---
 
@@ -338,6 +338,7 @@ Al cerrar cada iteración:
 | 31/10/2026 | Release 1.0             | Identidad Aula Nova, autoría visible, iconos, empaquetado macOS/Windows/Linux y exclusión de datos de prueba en producción.             |
 | 31/10/2026 | Ventana y release 1.0.2 | Barra de ventana integrada, primer arranque maximizado, persistencia de tamaño/posición y release corregida.                            |
 | 31/10/2026 | Actualizaciones         | Comprobación de nuevas versiones en GitHub Releases, aviso de instalación y descarga/instalación desde la propia aplicación.            |
+| 03/11/2026 | Currículos completos    | 181 ciclos y 36 cursos de especialización con RA/CE; importador con esquema, módulos compartidos y catálogo CE.                         |
 | 02/11/2026 | Corrección IPC          | Evita el error «An object could not be cloned» al guardar configuración, criterios y programación desde formularios reactivos.          |
 | 02/11/2026 | Actualizador visible    | Barra de progreso, errores y descarga manual si la instalación automática falla.                                                        |
 | 02/11/2026 | Esquema calendario      | El diálogo de importación permite descargar el esquema para rellenarlo antes de importar.                                               |
