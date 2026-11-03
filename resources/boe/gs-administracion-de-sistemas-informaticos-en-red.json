@@ -1,0 +1,4283 @@
+{
+  "id": "gs-administracion-de-sistemas-informaticos-en-red",
+  "denominacion": "Administración de Sistemas Informáticos en Red",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Informática y Comunicaciones",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "ANSI",
+  "rd": "RD 1629/2009, de 30 de octubre",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-18355",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional, académica y cotidiana, contenida en todo tipo de discursos orales, emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de mensajes en lengua estándar relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes directos o emitidos en cualquier soporte en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica contenida en distintos discursos orales en lengua estándar, relacionada con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el punto de vista y la actitud del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en dichos mensajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprendido adecuadamente mensajes en lengua estándar en ambientes con contaminación acústica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional, lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende mensajes escritos, de naturaleza profesional, académica y cotidiana, de relativa dificultad, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de textos específicos de su ámbito social, profesional o académico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica de textos, de diferente naturaleza, relativos a su profesión, y contenidos en distintos soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un texto sin entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han leído y comprendido, de manera autónoma, textos relacionados con el sector con la velocidad y estilo de lectura propia del nivel competencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado textos extensos, y de cierta complejidad, relacionados o no con su especialidad, pudiendo realizar varias lecturas del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado instrucciones, con distintos niveles de dificultad, y mensajes técnicos recibidos a través de soportes digitales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han traducido textos de cierta complejidad, utilizando material de apoyo en caso necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han emitido mensajes generales propios de sector y de la vida cotidiana, utilizando nexos y estrategias de interacción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha intercambiado con fluidez información específica y detallada utilizando estructuras de una complejidad acorde al nivel competencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y aplicado los registros adecuados para la emisión del mensaje, así como protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado presentaciones, bien estructuradas, sobre temas de su ámbito profesional, haciendo uso de los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito y secuenciado oralmente un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interaccionado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha respondido a preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta documentos e informes, propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito textos claros y detallados sobre una variedad de temas relacionados con su profesión, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, utilizando vocabulario específico y protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información con corrección, precisión, con cohesión y coherencia, solicitando y/o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado textos mediante apoyos visuales y claves lingüísticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito cartas, formales e informales, empleando las fórmulas de cortesía establecidas y el vocabulario específico para la elaboración de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resumido diferentes tipos de documentos escritos, utilizando sus propios recursos lingüísticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Implantación de sistemas operativos",
+      "codigo": "0369",
+      "ects": 15,
+      "horas_minimas_boe": 140,
+      "siglas": "ISO",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Instala sistemas operativos, analizando sus características e interpretando la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los elementos funcionales de un sistema informático."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características, funciones y arquitectura de un sistema operativo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comparado diferentes sistemas operativos, sus versiones y licencias de uso, en función de sus requisitos, características y campos de aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado instalaciones de diferentes sistemas operativos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto y aplicado técnicas de actualización y recuperación del sistema."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han solucionado incidencias del sistema y del proceso de inicio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado herramientas para conocer el software instalado en el sistema y su origen."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado documentación de soporte relativa a las instalaciones efectuadas y a las incidencias detectadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura el software de base, analizando las necesidades de explotación del sistema informático.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han planificado, creado y configurado cuentas de usuario, grupos, perfiles y políticas de contraseñas locales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha asegurado el acceso al sistema mediante el uso de directivas de cuenta y directivas de contraseñas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha actuado sobre los servicios y procesos en función de las necesidades del sistema."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado, configurado y verificado protocolos de red."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado y configurado los diferentes métodos de resolución de nombres."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha optimizado el uso de los sistemas operativos para sistemas portátiles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado máquinas virtuales para realizar tareas de configuración de sistemas operativos y analizar sus resultados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado las tareas de configuración del software de base."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Asegura la información del sistema, describiendo los procedimientos y utilizando copias de seguridad y sistemas tolerantes a fallos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han comparado diversos sistemas de archivos y analizado sus diferencias y ventajas de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la estructura de directorios del sistema operativo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los directorios contenedores de los archivos de configuración del sistema (binarios, órdenes y librerías)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado herramientas de administración de discos para crear particiones, unidades lógicas, volúmenes simples y volúmenes distribuidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han implantado sistemas de almacenamiento redundante (RAID)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han implementado y automatizado planes de copias de seguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han administrado cuotas de disco."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado las operaciones realizadas y los métodos a seguir para la recuperación ante desastres."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Centraliza la información en servidores administrando estructuras de dominios y analizando sus ventajas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han implementado dominios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han administrado cuentas de usuario y cuentas de equipo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha centralizado la información personal de los usuarios del dominio mediante el uso de perfiles móviles y carpetas personales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado y administrado grupos de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado plantillas que faciliten la administración de usuarios con características similares."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han organizado los objetos del dominio para facilitar su administración."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado máquinas virtuales para administrar dominios y verificar su funcionamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha documentado la estructura del dominio y las tareas realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Administra el acceso a dominios analizando y respetando requerimientos de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han incorporado equipos al dominio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han previsto bloqueos de accesos no autorizados al dominio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha administrado el acceso a recursos locales y recursos de red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tenido en cuenta los requerimientos de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han implementado y verificado directivas de grupo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han asignado directivas de grupo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han documentado las tareas y las incidencias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Detecta problemas de rendimiento, monitorizando el sistema con las herramientas adecuadas y documentando el procedimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetos monitorizables en un sistema informático."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los tipos de sucesos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado herramientas de monitorización en tiempo real."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha monitorizado el rendimiento mediante registros de contador y de seguimiento del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han planificado y configurado alertas de rendimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han interpretado los registros de rendimiento almacenados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el sistema mediante técnicas de simulación para optimizar el rendimiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado documentación de soporte y de incidencias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Audita la utilización y acceso a recursos, identificando y respetando las necesidades de seguridad del sistema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han administrado derechos de usuario y directivas de seguridad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los objetos y sucesos auditables."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado un plan de auditorías."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las repercusiones de las auditorías en el rendimiento del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han auditado sucesos correctos y erróneos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han auditado los intentos de acceso y los accesos a recursos del sistema."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han gestionado los registros de auditoría."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha documentado el proceso de auditoría y sus resultados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Implanta software específico con estructura cliente/servidor dando respuesta a los requisitos funcionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha instalado software específico según la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado instalaciones desatendidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado y utilizado un servidor de actualizaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han planificado protocolos de actuación para resolver incidencias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seguido los protocolos de actuación para resolver incidencias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha dado asistencia técnica a través de la red documentando las incidencias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado guías visuales y manuales para instruir en el uso de sistemas operativos o aplicaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado las tareas realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Planificación y administración de redes",
+      "codigo": "0370",
+      "ects": 12,
+      "horas_minimas_boe": 110,
+      "siglas": "PAR",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce la estructura de las redes de datos identificando sus elementos y principios de funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los factores que impulsan la continua expansión y evolución de las redes de datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado los distintos medios de transmisión utilizados en las redes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los distintos tipos de red y sus topologías."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las arquitecturas de red y los niveles que las componen."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el concepto de protocolo de comunicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el funcionamiento de las pilas de protocolos en las distintas arquitecturas de red."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han presentado y descrito los elementos funcionales, físicos y lógicos, de las redes de datos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han diferenciado los dispositivos de interconexión de redes atendiendo al nivel funcional en el que se encuadran."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Integra ordenadores y periféricos en redes cableadas e inalámbricas, evaluando su funcionamiento y prestaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los estándares para redes cableadas e inalámbricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han montado cables directos, cruzados y de consola."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado comprobadores para verificar la conectividad de distintos tipos de cables."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado el sistema de direccionamiento lógico IP para asignar direcciones de red y máscaras de subred."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado adaptadores de red cableados e inalámbricos bajo distintos sistemas operativos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han integrado dispositivos en redes cableadas e inalámbricas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la conectividad entre diversos dispositivos y adaptadores inalámbricos sobre distintas configuraciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado aplicaciones para representar el mapa físico y lógico de una red."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha monitorizado la red mediante aplicaciones basadas en el protocolo SNMP."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Administra conmutadores estableciendo opciones de configuración para su integración en la red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han conectado conmutadores entre sí y con las estaciones de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado la información que proporcionan los «leds» del conmutador."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado distintos métodos para acceder al modo de configuración del conmutador."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los archivos que guardan la configuración del conmutador."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha administrado la tabla de direcciones MAC del conmutador."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha configurado la seguridad del puerto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha actualizado el sistema operativo del conmutador."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado los comandos proporcionados por el sistema operativo del conmutador que permiten hacer el seguimiento de posibles incidencias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha verificado el funcionamiento del Spanning Tree Protocol en un conmutador."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han modificado los parámetros que determinan el proceso de selección del puente raíz."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Administra las funciones básicas de un «router» estableciendo opciones de configuración para su integración en la red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la información que proporcionan los «leds» del «router»."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado distintos métodos para acceder al modo de configuración del «router»."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las etapas de la secuencia de arranque del «router»."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los comandos para la configuración y administración básica del «router»."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los archivos que guardan la configuración del «router» y se han gestionado mediante los comandos correspondientes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado rutas estáticas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado los comandos proporcionados por el sistema operativo del «router» que permiten hacer el seguimiento de posibles incidencias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha configurado el «router» como servidor de direcciones IP dinámicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito las capacidades de filtrado de tráfico del «router»."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han utilizado comandos para gestionar listas de control de acceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Configura redes locales virtuales identificando su campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las ventajas que presenta la utilización de redes locales virtuales (VLANs)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado VLANs."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el diagnóstico de incidencias en VLANs."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado enlaces troncales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado un router para interconectar diversas VLANs."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las ventajas que aporta el uso de protocolos de administración centralizada de VLANs."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado los conmutadores para trabajar de acuerdo con los protocolos de administración centralizada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza tareas avanzadas de administración de red analizando y utilizando protocolos dinámicos de encaminamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha configurado el protocolo de enrutamiento RIPv1."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado redes con el protocolo RIPv2."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el diagnóstico de fallos en una red que utiliza RIP."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la necesidad de utilizar máscaras de longitud variable en IPv4."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha dividido una red principal en subredes de distintos tamaños con VLSM."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado agrupaciones de redes con CIDR."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha habilitado y configurado OSPF en un «router»."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha establecido y propagado una ruta por defecto usando OSPF."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Conecta redes privadas a redes públicas identificando y aplicando diferentes tecnologías.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las ventajas e inconvenientes del uso de la traducción de direcciones de red (NAT)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha utilizado NAT para realizar la traducción estática de direcciones de red."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha utilizado NAT para realizar la traducción dinámica de direcciones de red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características de las tecnologías «Frame Relay», RDSI y ADSL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las analogías y diferencias entre las tecnologías «Wifi» y «Wimax»."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las características de las tecnologías UMTS y HSDPA."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Fundamentos de hardware",
+      "codigo": "0371",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": "FH",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Configura equipos microinformáticos, componentes y periféricos, analizando sus características y relación con el conjunto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y caracterizado los dispositivos que constituyen los bloques funcionales de un equipo microinformático."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el papel de los elementos físicos y lógicos que intervienen en el proceso de puesta en marcha de un equipo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado la arquitectura general de un equipo y los mecanismos de conexión entre dispositivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los parámetros de configuración (hardware y software) de un equipo microinformático con las utilidades específicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha evaluado las prestaciones del equipo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han ejecutado utilidades de chequeo y diagnóstico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado averías y sus causas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los dispositivos periféricos y sus mecanismos de comunicación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado protocolos estándar de comunicación inalámbrica entre dispositivos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Instala software de propósito general evaluando sus características y entornos de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han catalogado los tipos de software según su licencia, distribución y propósito."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las necesidades específicas de software asociadas al uso de sistemas informáticos en diferentes entornos productivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado y evaluado utilidades para la gestión de archivos, recuperación de datos, mantenimiento y optimización del sistema."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado y evaluado utilidades de seguridad básica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha instalado y evaluado software ofimático y de utilidad general."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha consultado la documentación y las ayudas interactivas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado la repercusión de la eliminación, modificación y/o actualización de las utilidades instaladas en el sistema."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han probado y comparado aplicaciones portables y no portables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado inventarios del software instalado y las características de su licencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Ejecuta procedimientos para recuperar el software base de un equipo, analizándolos y utilizando imágenes almacenadas en memoria auxiliar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los soportes de memoria auxiliar adecuados para el almacenaje y restauración de imágenes de software."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la diferencia entre una instalación estándar y una preinstalación o imagen de software."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y probado las distintas secuencias de arranque configurables en un equipo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado herramientas para el particionado de discos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han empleado distintas utilidades y soportes para realizar imágenes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han restaurado imágenes desde distintas ubicaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Implanta hardware específico de centros de proceso de datos (CPD), analizando sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las diferencias entre las configuraciones hardware de tipo personal y empresarial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado entornos que requieren implantar soluciones hardware específicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detallado componentes hardware específicos para soluciones empresariales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los requerimientos básicos de seguridad física, organización y condiciones ambientales de un CPD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han implantado sistemas de alimentación ininterrumpida y estabilizadores de tensión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manipulado correctamente dispositivos hardware para almacenamiento y alimentación con conexión en caliente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han documentado procedimientos, incidencias y parámetros utilizados en la instalación y configuración de dispositivos hardware."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado herramientas de inventariado, registrando las características de los dispositivos hardware."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha clasificado y organizado la documentación técnica, controladores, utilidades y accesorios del hardware."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles, máquinas y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han operado las máquinas respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales y herramientas, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, y pasos de emergencia, entre otros) de las máquinas y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de bases de datos",
+      "codigo": "0372",
+      "ects": 11,
+      "horas_minimas_boe": 105,
+      "siglas": "GBD",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los elementos de las bases de datos analizando sus funciones y valorando la utilidad de sistemas gestores.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los distintos sistemas lógicos de almacenamiento y sus funciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los distintos tipos de bases de datos según el modelo de datos utilizado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los distintos tipos de bases de datos en función de la ubicación de la información."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido la utilidad de un sistema gestor de bases de datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la función de cada uno de los elementos de un sistema gestor de bases de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado los sistemas gestores de bases de datos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña modelos lógicos normalizados interpretando diagramas entidad/relación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el significado de la simbología propia de los diagramas entidad/relación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado herramientas gráficas para representar el diseño lógico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las tablas del diseño lógico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los campos que forman parte de las tablas del diseño lógico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las relaciones entre las tablas del diseño lógico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido los campos clave."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las reglas de integridad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las reglas de normalización hasta un nivel adecuado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado y documentado las restricciones que no pueden plasmarse en el diseño lógico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza el diseño físico de bases de datos utilizando asistentes, herramientas gráficas y el lenguaje de definición de datos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las estructuras físicas de almacenamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han creado tablas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los tipos de datos adecuados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los campos clave en las tablas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han implantado todas las restricciones reflejadas en el diseño lógico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado mediante un conjunto de datos de prueba que la implementación se ajusta al modelo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado asistentes y herramientas gráficas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha utilizado el lenguaje de definición de datos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha definido y documentado el diccionario de datos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Consulta la información almacenada manejando asistentes, herramientas gráficas y el lenguaje de manipulación de datos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las herramientas y sentencias para realizar consultas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado consultas simples sobre una tabla."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado consultas que generan valores de resumen."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado consultas sobre el contenido de varias tablas mediante composiciones internas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado consultas sobre el contenido de varias tablas mediante composiciones externas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado consultas con subconsultas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de las distintas opciones válidas para llevar a cabo una consulta determinada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Modifica la información almacenada utilizando asistentes, herramientas gráficas y el lenguaje de manipulación de datos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las herramientas y sentencias para modificar el contenido de la base de datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han insertado, borrado y actualizado datos en las tablas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha incluido en una tabla la información resultante de la ejecución de una consulta."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han adoptado medidas para mantener la integridad y consistencia de la información."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han diseñado guiones de sentencias para llevar a cabo tareas complejas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido el funcionamiento de las transacciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han anulado parcial o totalmente los cambios producidos por una transacción."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los efectos de las distintas políticas de bloqueo de registros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Ejecuta tareas de aseguramiento de la información, analizándolas y aplicando mecanismos de salvaguarda y transferencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado herramientas gráficas y en línea de comandos para la administración de copias de seguridad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado copias de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han restaurado copias de seguridad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las herramientas para importar y exportar datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han exportado datos a diversos formatos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han importado datos con distintos formatos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado correctamente la información suministrada por los mensajes de error y los ficheros de registro."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha transferido información entre sistemas gestores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Lenguajes de marcas y sistemas de gestión de información",
+      "codigo": "0373",
+      "ects": 7,
+      "horas_minimas_boe": 70,
+      "siglas": "LMSGI",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce las características de lenguajes de marcas analizando e interpretando fragmentos de código.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características generales de los lenguajes de marcas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las ventajas que proporcionan en el tratamiento de la información."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los lenguajes de marcas e identificado los más relevantes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diferenciado sus ámbitos de aplicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido la necesidad y los ámbitos específicos de aplicación de un lenguaje de marcas de propósito general."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las características propias del lenguaje XML."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha identificado la estructura de un documento XML y sus reglas sintácticas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha contrastado la necesidad de crear documentos XML bien formados y la influencia en su procesamiento."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las ventajas que aportan los espacios de nombres."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Utiliza lenguajes de marcas para la transmisión de información a través de la Web analizando la estructura de los documentos e identificando sus elementos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y clasificado los lenguajes de marcas relacionados con la Web y sus diferentes versiones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la estructura de un documento HTML e identificado las secciones que lo componen."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la funcionalidad de las principales etiquetas y atributos del lenguaje HTML."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido las semejanzas y diferencias entre los lenguajes HTML y XHTML."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido la utilidad de XHTML en los sistemas de gestión de información."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado herramientas en la creación documentos Web."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las ventajas que aporta la utilización de hojas de estilo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado hojas de estilo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Genera canales de contenidos analizando y utilizando tecnologías de sindicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las ventajas que aporta la sindicación de contenidos en la gestión y transmisión de la información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido sus ámbitos de aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las tecnologías en que se basa la sindicación de contenidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la estructura y la sintaxis de un canal de contenidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado y validado canales de contenidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la funcionalidad y el acceso a los canales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado herramientas específicas como agregadores y directorios de canales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Establece mecanismos de validación para documentos XML utilizando métodos para definir su sintaxis y estructura.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la necesidad de describir la información transmitida en los documentos XML y sus reglas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las tecnologías relacionadas con la definición de documentos XML."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado la estructura y sintaxis específica utilizada en la descripción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado descripciones de documentos XML."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado descripciones en la elaboración y validación de documentos XML."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han asociado las descripciones con los documentos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado herramientas específicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado las descripciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza conversiones sobre documentos XML utilizando técnicas y herramientas de procesamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la necesidad de la conversión de documentos XML."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido ámbitos de aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las tecnologías implicadas y su modo de funcionamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la sintaxis específica utilizada en la conversión y adaptación de documentos XML."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado especificaciones de conversión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y caracterizado herramientas específicas relacionadas con la conversión de documentos XML."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado conversiones con distintos formatos de salida."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado y depurado las especificaciones de conversión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Gestiona información en formato XML analizando y utilizando tecnologías de almacenamiento y lenguajes de consulta.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales métodos de almacenamiento de la información usada en documentos XML."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los inconvenientes de almacenar información en formato XML."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido tecnologías eficientes de almacenamiento de información en función de sus características."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado sistemas gestores de bases de datos relacionales en el almacenamiento de información en formato XML."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado técnicas específicas para crear documentos XML a partir de información almacenada en bases de datos relacionales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las características de los sistemas gestores de bases de datos nativas XML."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han instalado y analizado sistemas gestores de bases de datos nativas XML."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado técnicas para gestionar la información almacenada en bases de datos nativas XML."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado lenguajes y herramientas para el tratamiento y almacenamiento de información y su inclusión en documentos XML."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Trabaja con sistemas empresariales de gestión de información realizando tareas de importación, integración, aseguramiento y extracción de la información.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las ventajas de los sistemas de gestión y planificación de recursos empresariales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han evaluado las características de las principales aplicaciones de gestión empresarial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado aplicaciones de gestión empresarial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado y adaptado las aplicaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido y verificado el acceso seguro a la información."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han generado informes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado tareas de integración con aplicaciones ofimáticas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado procedimientos de extracción de información para su tratamiento e incorporación a diversos sistemas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado tareas de asistencia y resolución de incidencias."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han elaborado documentos relativos a la explotación de la aplicación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de Administración de Sistemas Informáticos en Red",
+      "codigo": "0379p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": "PROY",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizar el proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la puesta en funcionamiento o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades, ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la ejecución."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Administración de sistemas operativos",
+      "codigo": "0374",
+      "ects": 8,
+      "horas_minimas_boe": 75,
+      "siglas": "ASO",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Administra el servicio de directorio interpretando especificaciones e integrándolo en una red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado la función, los elementos y las estructuras lógicas del servicio de directorio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado y creado el esquema del servicio de directorio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la instalación del servicio de directorio en el servidor."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la configuración y personalización del servicio de directorio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha integrado el servicio de directorio con otros servicios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado filtros de búsqueda en el servicio de directorio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha utilizado el servicio de directorio como mecanismo de acreditación centralizada de los usuarios en una red."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la configuración del cliente para su integración en el servicio de directorio."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado herramientas gráficas y comandos para la administración del servicio de directorio."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha documentado la estructura e implantación del servicio de directorio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Administra procesos del sistema describiéndolos y aplicando criterios de seguridad y eficiencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito el concepto de proceso del sistema, tipos, estados y ciclo de vida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado interrupciones y excepciones para describir los eventos internos del procesador."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diferenciado entre proceso, hilo y trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado tareas de creación, manipulación y terminación de procesos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado el sistema de archivos como medio lógico para el registro e identificación de los procesos del sistema."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado herramientas gráficas y comandos para el control y seguimiento de los procesos del sistema."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la secuencia de arranque del sistema, los procesos implicados y la relación entre ellos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tomado medidas de seguridad ante la aparición de procesos no identificados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han documentado los procesos habituales del sistema, su función y relación entre ellos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Gestiona la automatización de tareas del sistema, aplicando criterios de eficiencia y utilizando comandos y herramientas gráficas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las ventajas de la automatización de las tareas repetitivas en el sistema."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado los comandos del sistema para la planificación de tareas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido restricciones de seguridad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado planificaciones de tareas repetitivas o puntuales relacionadas con la administración del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha automatizado la administración de cuentas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han instalado y configurado herramientas gráficas para la planificación de tareas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado herramientas gráficas para la planificación de tareas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado los procesos programados como tareas automáticas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Administra de forma remota el sistema operativo en red valorando su importancia y aplicando criterios de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito métodos de acceso y administración remota de sistemas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha diferenciado entre los servicios orientados a sesión y los no orientados a sesión."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado herramientas de administración remota suministradas por el propio sistema operativo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado servicios de acceso y administración remota."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado comandos y herramientas gráficas para gestionar los servicios de acceso y administración remota."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han creado cuentas de usuario para el acceso remoto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado pruebas de acceso y administración remota entre sistemas heterogéneos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado mecanismos de encriptación de la información transferida."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han documentado los procesos y servicios del sistema administrados de forma remota."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Administra servidores de impresión describiendo sus funciones e integrándolos en una red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la funcionalidad de los sistemas y servidores de impresión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los puertos y los protocolos utilizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado las herramientas para la gestión de impresoras integradas en el sistema operativo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha instalado y configurado un servidor de impresión en entorno Web."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado y clasificado impresoras lógicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han creado grupos de impresión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han gestionado impresoras y colas de trabajos mediante comandos y herramientas gráficas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han compartido impresoras en red entre sistemas operativos diferentes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha documentado la configuración del servidor de impresión y de las impresoras creadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Integra sistemas operativos libres y propietarios, justificando y garantizando su interoperabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la necesidad de compartir recursos en red entre diferentes sistemas operativos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido niveles de seguridad para controlar el acceso del cliente a los recursos compartidos en red."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la conectividad de la red en un escenario heterogéneo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la funcionalidad de los servicios que permiten compartir recursos en red."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han instalado y configurado servicios para compartir recursos en red."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el funcionamiento de los servicios instalados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha trabajado en grupo para acceder a sistemas de archivos e impresoras en red desde equipos con diferentes sistemas operativos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha documentado la configuración de los servicios instalados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Utiliza lenguajes de guiones en sistemas operativos, describiendo su aplicación y administrando servicios del sistema operativo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han utilizado y combinado las estructuras del lenguaje para crear guiones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado herramientas para depurar errores sintácticos y de ejecución."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado guiones de configuración del sistema operativo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado cambios y adaptaciones de guiones del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado y probado guiones de administración de servicios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han creado y probado guiones de automatización de tareas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implantado guiones en sistemas libres y propietarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han consultado y utilizado librerías de funciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han documentado los guiones creados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Servicios de red e internet",
+      "codigo": "0375",
+      "ects": 8,
+      "horas_minimas_boe": 75,
+      "siglas": "SRI",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Administra servicios de resolución de nombres, analizándolos y garantizando la seguridad del servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y descrito escenarios en los que surge la necesidad de un servicio de resolución de nombres."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los principales mecanismos de resolución de nombres."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la estructura, nomenclatura y funcionalidad de los sistemas de nombres jerárquicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado y configurado servicios jerárquicos de resolución de nombres."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha preparado el servicio para reenviar consultas de recursos externos a otro servidor de nombres."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha preparado el servicio para almacenar y distribuir las respuestas procedentes de otros servidores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han añadido registros de nombres correspondientes a una zona nueva, con opciones relativas a servidores de correo y alias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han implementado soluciones de servidores de nombres en direcciones «ip» dinámicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado transferencias de zona entre dos o más servidores."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los procedimientos de instalación y configuración."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Administra servicios de configuración automática, identificándolos y verificando la correcta asignación de los parámetros.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los mecanismos automatizados de configuración de los parámetros de red y las ventajas que proporcionan."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ilustrado los procedimientos y pautas que intervienen en una solicitud de configuración de los parámetros de red."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado servidores de configuración de los parámetros de red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado el servicio para asignar la configuración básica a los equipos de una red local."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado asignaciones estáticas y dinámicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han integrado en el servicio opciones adicionales de configuración."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han documentado los procedimientos realizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Administra servidores Web aplicando criterios de configuración y asegurando el funcionamiento del servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los fundamentos y protocolos en los que se basa el funcionamiento de un servidor Web."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han instalado y configurado servidores Web."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha ampliado la funcionalidad del servidor mediante la activación y configuración de módulos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado y configurado sitios virtuales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado los mecanismos de autenticación y control de acceso del servidor."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido e instalado certificados digitales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido mecanismos para asegurar las comunicaciones entre el cliente y el servidor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado pruebas de monitorización del servicio."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han analizado los registros del servicio para la elaboración de estadísticas y la resolución de incidencias."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación, configuración y recomendaciones de uso del servicio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Administra servicios de transferencia de archivos asegurando y limitando el acceso a la información.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la utilidad y modo de operación del servicio de transferencia de archivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han instalado y configurado servidores de transferencia de archivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han creado usuarios y grupos para acceso remoto al servidor."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado el acceso anónimo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido límites en los distintos modos de acceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el acceso al servidor, tanto en modo activo como en modo pasivo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado pruebas con clientes en línea de comandos y con clientes en modo gráfico."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha utilizado el navegador como cliente del servicio de transferencia de archivos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación, configuración y recomendaciones de uso del servicio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Administra servidores de correo electrónico, aplicando criterios de configuración y garantizando la seguridad del servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los diferentes protocolos que intervienen en el envío y recogida del correo electrónico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha instalado y configurado un servidor de correo electrónico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han creado cuentas de usuario y verificado el acceso de las mismas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido y aplicado métodos para impedir usos indebidos del servidor de correo electrónico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han instalado servicios para permitir la recogida remota del correo existente en los buzones de usuario."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han usado clientes de correo electrónico para enviar y recibir correo desde las cuentas creadas en el servidor."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado la firma digital y el correo cifrado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha configurado el servidor de correo como un servicio seguro."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación, configuración y recomendaciones de uso del servicio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Administra servicios de mensajería instantánea, noticias y listas de distribución, verificando y asegurando el acceso de los usuarios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los servicios de mensajería instantánea, noticias y listas de distribución."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha instalado y configurado el servicio de mensajería instantánea."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado clientes gráficos y de texto de mensajería instantánea."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha instalado y configurado el servicio de noticias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha instalado y configurado el servicio de listas de distribución."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado el tipo de lista y los modos de acceso permitidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han creado cuentas de usuario y verificado el acceso a los servicios de mensajería instantánea, noticias y listas de distribución."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación, configuración y recomendaciones de uso de los servicios de mensajería instantánea, noticias y listas de distribución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Administra servicios de audio identificando las necesidades de distribución y adaptando los formatos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la funcionalidad del servicio de audio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha instalado y configurado un servidor de distribución de audio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha instalado y configurado el cliente para el acceso al servidor de audio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido y utilizado formatos de audio digital."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado herramientas de reproducción de audio en el cliente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado servicios de audio a través del navegador."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado técnicas de sindicación y suscripción de audio."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación y administración del servidor de audio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Administra servicios de vídeo identificando las necesidades de distribución y adaptando los formatos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la funcionalidad del servicio de vídeo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha instalado y configurado un servidor de vídeo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado el cliente para el acceso al servidor de vídeo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido y utilizado formatos de compresión de vídeo digital."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado técnicas de sindicación y suscripción de vídeo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las características y protocolos utilizados en el servicio de videoconferencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han instalado y configurado herramientas gráficas para realizar videoconferencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado herramientas gráficas y navegadores para realizar videoconferencias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación y administración del servidor de vídeo y del servicio de videoconferencia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Implantación de aplicaciones web",
+      "codigo": "0376",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": "IAW",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara el entorno de desarrollo y los servidores de aplicaciones Web instalando e integrando las funcionalidades necesarias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el software necesario para su funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes tecnologías empleadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado y configurado servidores Web y de bases de datos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las posibilidades de procesamiento en los entornos cliente y servidor."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han añadido y configurado los componentes y módulos necesarios para el procesamiento de código en el servidor."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha instalado y configurado el acceso a bases de datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido y verificado la seguridad en los accesos al servidor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado plataformas integradas orientadas a la prueba y desarrollo de aplicaciones Web."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han documentado los procedimientos realizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Implanta gestores de contenidos seleccionándolos y estableciendo la configuración de sus parámetros.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado el uso y utilidad de los gestores de contenidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado según la funcionalidad principal del sitio Web que permiten gestionar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado diferentes tipos de gestores de contenidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diferenciado sus características (uso, licencia, entre otras)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han personalizado y configurado los gestores de contenidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado y configurado los mecanismos de seguridad proporcionados por los propios gestores de contenidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado pruebas de funcionamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han publicado los gestores de contenidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Administra gestores de contenidos adaptándolos a los requerimientos y garantizando la integridad de la información.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han adaptado y configurado los módulos del gestor de contenidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han creado y gestionado usuarios con distintos perfiles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han integrado módulos atendiendo a requerimientos de funcionalidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado copias de seguridad de los contenidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han importado y exportado contenidos en distintos formatos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han gestionado plantillas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han integrado funcionalidades de sindicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado actualizaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han obtenido informes de acceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona aplicaciones de ofimática Web integrando funcionalidades y asegurando el acceso a la información.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la utilidad de las aplicaciones de ofimática Web."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado según su funcionalidad y prestaciones específicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado aplicaciones de ofimática Web."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado las aplicaciones para integrarlas en una intranet."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han gestionado las cuentas de usuario."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado criterios de seguridad en el acceso de los usuarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las aplicaciones de forma cooperativa."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado documentación relativa al uso y gestión de las aplicaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Genera documentos Web utilizando lenguajes de guiones de servidor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los lenguajes de guiones de servidor más relevantes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la relación entre los lenguajes de guiones de servidor y los lenguajes de marcas utilizados en los clientes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la sintaxis básica de un lenguaje de guiones concreto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado estructuras de control del lenguaje."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y utilizado funciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado formularios para introducir información."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido y utilizado mecanismos para asegurar la persistencia de la información entre distintos documentos Web relacionados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado y asegurado a los usuarios que acceden al documento Web."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha verificado el aislamiento del entorno específico de cada usuario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Genera documentos Web con acceso a bases de datos utilizando lenguajes de guiones de servidor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sistemas gestores de bases de datos más utilizados en entornos Web."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado la integración de los sistemas gestores de bases de datos con el lenguaje de guiones de servidor."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado en el lenguaje de guiones la conexión para el acceso al sistema gestor de base de datos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado bases de datos y tablas en el gestor utilizando el lenguaje de guiones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha obtenido y actualizado la información almacenada en bases de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado criterios de seguridad en el acceso de los usuarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado el funcionamiento y el rendimiento del sistema."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Realiza modificaciones en gestores de contenidos adaptando su apariencia y funcionalidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la estructura de directorios del gestor de contenidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la funcionalidad de los ficheros que utiliza y su naturaleza (código, imágenes, configuración, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las funcionalidades que hay que adaptar e incorporar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los recursos afectados por las modificaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha modificado el código de la aplicación para incorporar nuevas funcionalidades y adaptar otras existentes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado el correcto funcionamiento de los cambios realizados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han documentado los cambios realizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Administración de sistemas gestores de bases de datos",
+      "codigo": "0377",
+      "ects": 5,
+      "horas_minimas_boe": 30,
+      "siglas": "ASGBD",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Implanta sistemas gestores de bases de datos analizando sus características y ajustándose a los requerimientos del sistema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la utilidad y función de cada uno de los elementos de un sistema gestor de bases de datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las características de los principales sistemas gestores de bases de datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el sistema gestor de bases de datos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el software necesario para llevar a cabo la instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el cumplimiento de los requisitos hardware."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han instalado sistemas gestores de bases de datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha documentado el proceso de instalación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interpretado la información suministrada por los mensajes de error y ficheros de registro."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han resuelto las incidencias de la instalación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha verificado el funcionamiento del sistema gestor de bases de datos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura el sistema gestor de bases de datos interpretando las especificaciones técnicas y los requisitos de explotación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las condiciones de inicio y parada del sistema gestor."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el motor de base de datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han asegurado las cuentas de administración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado las herramientas y software cliente del sistema gestor."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha configurado la conectividad en red del sistema gestor."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las características por defecto de las bases de datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los parámetros relativos a las conexiones (tiempos de espera, número máximo de conexiones, entre otros)."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha documentado el proceso de configuración."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Implanta métodos de control de acceso utilizando asistentes, herramientas gráficas y comandos del lenguaje del sistema gestor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han creado vistas personalizadas para cada tipo de usuario."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han creado sinónimos de tablas y vistas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido y eliminado cuentas de usuario."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los privilegios sobre las bases de datos y sus elementos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han agrupado y desagrupado privilegios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han asignado y eliminado privilegios a usuarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han asignado y eliminado grupos de privilegios a usuarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha garantizando el cumplimiento de los requisitos de seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Automatiza tareas de administración del gestor describiéndolas y utilizando guiones de sentencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la importancia de automatizar tareas administrativas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los distintos métodos de ejecución de guiones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las herramientas disponibles para redactar guiones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido y utilizado guiones para automatizar tareas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los eventos susceptibles de activar disparadores."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido disparadores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado estructuras de control de flujo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han adoptado medidas para mantener la integridad y consistencia de la información."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Optimiza el rendimiento del sistema aplicando técnicas de monitorización y realizando adaptaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las herramientas de monitorización disponibles para el sistema gestor."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las ventajas e inconvenientes de la creación de índices."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han creado índices en tablas y vistas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha optimizado la estructura de la base de datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han optimizado los recursos del sistema gestor."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha obtenido información sobre el rendimiento de las consultas para su optimización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han programado alertas de rendimiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado modificaciones en la configuración del sistema operativo para mejorar el rendimiento del gestor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica criterios de disponibilidad analizándolos y ajustando la configuración del sistema gestor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la utilidad de las bases de datos distribuidas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las distintas políticas de fragmentación de la información."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha implantado una base de datos distribuida homogénea."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha creado una base de datos distribuida mediante la integración de un conjunto de bases de datos preexistentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha configurado un «nodo» maestro y varios «esclavos» para llevar a cabo la replicación del primero."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha configurado un sistema de replicación en cadena."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado el efecto de la parada de determinados nodos sobre los sistemas distribuidos y replicados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Seguridad y alta disponibilidad",
+      "codigo": "0378",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": "SAD",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Adopta pautas y prácticas de tratamiento seguro de la información, reconociendo las vulnerabilidades de un sistema informático y la necesidad de asegurarlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de asegurar la privacidad, coherencia y disponibilidad de la información en los sistemas informáticos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las diferencias entre seguridad física y lógica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado las principales vulnerabilidades de un sistema informático, según su tipología y origen."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha contrastado la incidencia de las técnicas de ingeniería social en los fraudes informáticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han adoptado políticas de contraseñas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han valorado las ventajas que supone la utilización de sistemas biométricos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado técnicas criptográficas en el almacenamiento y transmisión de la información."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la necesidad de establecer un plan integral de protección perimetral, especialmente en sistemas conectados a redes públicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las fases del análisis forense ante ataques a un sistema."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Implanta mecanismos de seguridad activa, seleccionando y ejecutando contramedidas ante amenazas o ataques al sistema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los principales tipos de amenazas lógicas contra un sistema informático."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado el origen y la autenticidad de las aplicaciones instaladas en un equipo, así como el estado de actualización del sistema operativo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado la anatomía de los ataques más habituales, así como las medidas preventivas y paliativas disponibles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado diversos tipos de amenazas, ataques y software malicioso, en entornos de ejecución controlados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han implantado aplicaciones específicas para la detección de amenazas y la eliminación de software malicioso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado técnicas de cifrado, firmas y certificados digitales en un entorno de trabajo basado en el uso de redes públicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han evaluado las medidas de seguridad de los protocolos usados en redes inalámbricas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la necesidad de inventariar y controlar los servicios de red que se ejecutan en un sistema."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito los tipos y características de los sistemas de detección de intrusiones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Implanta técnicas seguras de acceso remoto a un sistema informático, interpretando y aplicando el plan de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito escenarios típicos de sistemas con conexión a redes públicas en los que se precisa fortificar la red interna."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las zonas de riesgo de un sistema, según criterios de seguridad perimetral."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los protocolos seguros de comunicación y sus ámbitos de utilización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado redes privadas virtuales mediante protocolos seguros a distintos niveles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha implantado un servidor como pasarela de acceso a la red interna desde ubicaciones remotas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y configurado los posibles métodos de autenticación en el acceso de usuarios remotos a través de la pasarela."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha instalado, configurado e integrado en la pasarela un servidor remoto de autenticación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Implanta cortafuegos para asegurar un sistema informático, analizando sus prestaciones y controlando el tráfico hacia la red interna.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características, tipos y funciones de los cortafuegos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los niveles en los que se realiza el filtrado de tráfico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha planificado la instalación de cortafuegos para limitar los accesos a determinadas zonas de la red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado filtros en un cortafuegos a partir de un listado de reglas de filtrado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han revisado los registros de sucesos de cortafuegos, para verificar que las reglas se aplican correctamente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han probado distintas opciones para implementar cortafuegos, tanto software como hardware."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han diagnosticado problemas de conectividad en los clientes provocados por los cortafuegos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación, configuración y uso de cortafuegos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Implanta servidores «proxy», aplicando criterios de configuración que garanticen el funcionamiento seguro del servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de «proxy», sus características y funciones principales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha instalado y configurado un servidor «proxy-cache»."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado los métodos de autenticación en el «proxy»."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado un «proxy» en modo transparente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado el servidor «proxy» para establecer restricciones de acceso Web."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han solucionado problemas de acceso desde los clientes al «proxy»."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado pruebas de funcionamiento del «proxy», monitorizando su actividad con herramientas gráficas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha configurado un servidor «proxy» en modo inverso."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado documentación relativa a la instalación, configuración y uso de servidores «proxy»."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Implanta soluciones de alta disponibilidad empleando técnicas de virtualización y configurando los entornos de prueba.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado supuestos y situaciones en las que se hace necesario implementar soluciones de alta disponibilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado soluciones hardware para asegurar la continuidad en el funcionamiento de un sistema."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han evaluado las posibilidades de la virtualización de sistemas para implementar soluciones de alta disponibilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha implantado un servidor redundante que garantice la continuidad de servicios en casos de caída del servidor principal."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha implantado un balanceador de carga a la entrada de la red interna."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han implantado sistemas de almacenamiento redundante sobre servidores y dispositivos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha evaluado la utilidad de los sistemas de «clusters» para aumentar la fiabilidad y productividad del sistema."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado soluciones de futuro para un sistema con demanda creciente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han esquematizado y documentado soluciones para diferentes supuestos con necesidades de alta disponibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Reconoce la legislación y normativa sobre seguridad y protección de datos valorando su importancia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la legislación sobre protección de datos de carácter personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la necesidad de controlar el acceso a la información personal almacenada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las figuras legales que intervienen en el tratamiento y mantenimiento de los ficheros de datos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha contrastado el deber de poner a disposición de las personas los datos personales que les conciernen."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la legislación actual sobre los servicios de la sociedad de la información y comercio electrónico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han contrastado las normas sobre gestión de seguridad de la información."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprendido la necesidad de conocer y respetar la normativa legal aplicable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de Administración de Sistemas Informáticos en Red",
+      "codigo": "0379",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": "PROY",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizar el proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la puesta en funcionamiento o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades, ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la ejecución."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665190",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708190",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS190",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

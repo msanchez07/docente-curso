@@ -1,0 +1,1403 @@
+{
+  "id": "gb-informatica-de-oficina",
+  "denominacion": "Informática de Oficina",
+  "nivel": "Formación Profesional de Grado Básico",
+  "familia_profesional": "Administración y Gestión",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "ITO",
+  "rd": "RD 356/2014, de 16 de mayo; RD 127/2014, de 28 de febrero",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-5591",
+  "modulos": [
+    {
+      "nombre": "Montaje y mantenimiento de sistemas y componentes informáticos",
+      "codigo": "3029",
+      "ects": null,
+      "horas_minimas_boe": 180,
+      "siglas": "MMS",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona los componentes y herramientas para la realización del montaje y mantenimiento de sistemas microinformáticos, describiéndolos y relacionándolos con su función y aplicación en la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características de los elementos eléctricos y electrónicos utilizados en el montaje de sistemas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las operaciones y comprobaciones previas a la manipulación segura de componentes eléctricos y/o electrónicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los dispositivos y herramientas necesarios en la manipulación segura de sistemas electrónicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado las herramientas necesarias para el procedimiento de montaje, sustitución o conexión de componentes hardware de un sistema microinformático."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado funcionalmente los componentes hardware para el ensamblado y/o mantenimiento de un equipo microinformático."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las características técnicas de cada uno de los componentes hardware (internos y externos) utilizados en el montaje y/o mantenimiento de un equipo microinformático."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han localizado los bloques funcionales en placas bases utilizadas en los sistemas microinformáticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los tipos de puertos, bahías internas y cables de conexión (de datos y eléctricos, entre otros) existentes de un equipo microinformático."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han seguido las instrucciones recibidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Ensambla los componentes hardware de un equipo microinformático, interpretando guías e instrucciones y aplicando técnicas de montaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado cada componente antes de su utilización, siguiendo las normas de seguridad establecidas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado las guías de instrucciones referentes a los procedimientos de integración o ensamblado, sustitución y conexión del componente hardware de un sistema microinformático."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido en distintas placas base cada uno de los zócalos de conexión de microprocesadores y los disipadores, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ensamblado los componentes hardware internos (memoria, procesador, tarjeta de video, pila, entre otros) en la placa base del sistema microinformático."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha fijado cada dispositivo o tarjeta en la ranura o bahía correspondiente, según guías detalladas de instalación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han conectado adecuadamente aquellos componentes hardware internos (disco duro, DVD, CD-ROM, entre otros) que necesiten cables de conexión para su integración en el sistema microinformático."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Instala sistemas operativos monopuesto identificando las fases del proceso y relacionándolas con la funcionalidad de la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los pasos a seguir para la instalación o actualización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado la ausencia de errores durante el proceso de carga del sistema operativo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado las herramientas de control para la estructura de directorios y la gestión de permisos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado actualizaciones y parches del sistema operativo según las instrucciones recibidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado copias de seguridad de los datos"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han anotado los posibles fallos producidos en la fase de arranque del equipo microinformático."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las funciones de replicación física («clonación») de discos y particiones en sistemas microinformáticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado herramientas software para la instalación de imágenes de discos o particiones señalando las restricciones de aplicación de las mismas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha verificado la funcionalidad de la imagen instalada, teniendo en cuenta el tipo de «clonación» realizada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Comprueba la funcionalidad de los sistemas, soportes y periféricos instalados relacionando las intervenciones con los resultados a conseguir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha aplicado a cada componente hardware y periférico el procedimiento de testeo adecuado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado que el equipo microinformático realiza el procedimiento de encendido y de POST (Power On Self Test), identificando el origen de los problemas, en su caso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la funcionalidad de los soportes para almacenamiento de información."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la funcionalidad en la conexión entre componentes del equipo microinformático y con los periféricos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado herramientas de configuración, testeo y comprobación para verificar el funcionamiento del sistema."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado las herramientas y guías de uso para comprobar el estado de los soportes y de la información contenida en los mismos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado los resultados y las incidencias producidas en los procesos de comprobación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza el mantenimiento básico de sistemas informáticos, soportes y periféricos, relacionando las intervenciones con los resultados que hay que conseguir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado por medio de indicadores luminosos, que los periféricos conectados tienen alimentación eléctrica y las conexiones de datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los elementos consumibles necesarios para ser utilizados en los periféricos de sistemas microinformáticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado las guías técnicas detalladas para sustituir elementos consumibles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características de los componentes, de los soportes y de los periféricos para conocer los aspectos que afecten a su mantenimiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado las guías de los fabricantes para identificar los procedimientos de limpieza de componentes, soportes y periféricos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la limpieza de componentes, soportes y periféricos respetando las disposiciones técnicas establecidas por el fabricante manteniendo su funcionalidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han recogido los residuos y elementos desechables de manera adecuada para su eliminación o reciclaje."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Almacena equipos, periféricos y consumibles, describiendo las condiciones de conservación y etiquetado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las condiciones para manipular, transportar y almacenar componentes y periféricos de un sistema microinformático."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los tipos de embalaje para el transporte y/o almacenaje de cada dispositivo, periférico y consumible."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado las herramientas necesarias para realizar las tareas de etiquetado previas al embalaje y/o almacenamiento de sistemas, periféricos y consumibles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los medios auxiliares adecuados a los elementos a transportar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las normas de seguridad en la manipulación y el transporte de elementos y equipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado que los componentes recepcionados se corresponden con el albarán de entrega y que se encuentran en buen estado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado las operaciones realizadas siguiendo los formatos establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido los elementos desechables para su eliminación o reciclaje."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Ofimática y archivo de documentos",
+      "codigo": "3031",
+      "ects": null,
+      "horas_minimas_boe": 140,
+      "siglas": "OAD",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Tramita información en línea aplicando herramientas de Internet, intranet y otras redes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las distintas redes informáticas a las que podemos acceder."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado distintos métodos de búsqueda de información en redes informáticas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha accedido a información a través de Internet, intranet, y otras redes de área local."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han localizado documentos utilizando herramientas de Internet."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han situado y recuperado archivos almacenados en servicios de alojamiento de archivos compartidos («la nube»)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la veracidad de la información localizada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la utilidad de páginas institucionales y de Internet en general para la realización de trámites administrativos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza comunicaciones internas y externas mediante las utilidades de correo electrónico siguiendo las pautas marcadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes procedimientos de trasmisión y recepción de mensajes internos y externos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha utilizado el correo electrónico para enviar y recibir mensajes, tanto internos como externos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han anexado documentos, vínculos, entre otros en mensajes de correo electrónico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han empleado las utilidades del correo electrónico para clasificar contactos y listas de distribución de información entre otras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado criterios de prioridad, importancia y seguimiento entre otros en el envío de mensajes siguiendo las instrucciones recibidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado las medidas de seguridad y confidencialidad en la custodia o envío de información siguiendo pautas prefijadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha organizado la agenda incluyendo tareas, avisos y otras herramientas de planificación del trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Elabora documentos utilizando las funciones básicas del procesador de texto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las funciones básicas, prestaciones y procedimientos simples de los procesadores de textos y autoedición."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las funciones y utilidades que garanticen las normas de seguridad, integridad y confidencialidad de la información."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha localizado el documento, abierto y guardado posteriormente el documento en el formato y dirección facilitados, nombrándolos significativamente para su posterior acceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "-Se han configurado las distintas páginas del documento ciñéndose a los originales o indicaciones propuestas: márgenes, dimensiones y orientación, tablas, encabezados y pies de página, encolumnados, bordes, sombreados u otros-."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha trabajado con la opción de tablas han elaborado los documentos con exactitud y con la destreza adecuada, aplicando los formatos y estilos de texto, tablas indicadas, o sobre las plantillas predefinidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han corregido los posibles errores cometidos al reutilizar o introducir la información. Se han integrado objetos simples en el texto, en el lugar y forma adecuados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado las diferentes opciones de impresión en función de la información facilitada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la impresión de los documentos elaborados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado las funciones y utilidades del procesador de textos que garanticen la seguridad, integridad y confidencialidad de la información de acuerdo con las indicaciones recibidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Elabora documentos utilizando las aplicaciones básicas de hojas de cálculo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han utilizado los diversos tipos de datos y referencia para celdas, rangos, hojas y libros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado fórmulas y funciones básicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado y modificado gráficos de diferentes tipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado la hoja de cálculo como base de datos sencillos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado aplicaciones y periféricos para introducir textos, números, códigos e imágenes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las reglas de ergonomía y salud en el desarrollo de las actividades."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora presentaciones gráficas utilizando aplicaciones informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las opciones básicas de las aplicaciones de presentaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se reconocen los distintos tipos de vista asociados a una presentación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado y reconocido las distintas tipografías y normas básicas de composición, diseño y utilización del color."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado presentaciones sencillas incorporando texto, gráficos, objetos y archivos multimedia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han diseñado plantillas de presentaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado periféricos para ejecutar presentaciones asegurando el correcto funcionamiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Utilizar los equipos de reproducción, informáticos y de encuadernación funcional ‒fotocopiadoras, impresoras, escáneres, reproductoras, perforadoras, encuadernadoras u otros‒, en función del trabajo a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales componentes y necesidades de mantenimiento, identificando las incidencias elementales, de acuerdo con los manuales de uso y sistemas de ayuda."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de las fotocopiadoras, impresoras, escáneres, reproductoras, perforadoras, encuadernadoras u otros"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las posibles incidencias básicas de equipos de reproducción e informáticos, describiendo posibles actuaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las tareas de limpieza y mantenimiento de útiles de encuadernación, y los ajustes pertinentes para un"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "adecuado funcionamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los distintos recursos consumibles —tintas y líquidos, papel, cintas y cartuchos de impresión, tóner u otros— relacionándoles con los equipos de reproducción e informáticos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha manejado los equipos, asumiendo el compromiso de mantener y cuidar éstos, y obteniendo el máximo provecho a los medios utilizados en el proceso, evitando costes y desgastes innecesarios:"
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado las siguientes consideraciones durante la actividad: ‒ Poner a punto y limpiar las máquinas. ‒ Detectar pequeñas averías mecánicas solucionando, si es posible, las contingencias observadas. ‒ Aprovisionar con los materiales necesarios las máquinas. ‒ Realizar las pruebas de funcionamiento básico de los equipos informáticos y de reproducción. ‒ Realizar labores de mantenimiento básico de los equipos informáticos y de oficina. ‒ Sustituir consumibles, de entre diversos tipos facilitados, en el equipo que corresponda. ‒ Tomar las medidas de seguridad necesarias para comprobar el funcionamiento básico en modo seguro. ‒ Utilizar los equipos de protección de acuerdo con los conectores y terminales implicados"
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Obtener encuadernaciones funcionales utilizando los útiles y medios apropiados en función de las características de los documentos tipo",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la documentación a encuadernar describiendo las características para su encuadernación, y los criterios de ordenación más apropiados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los distintos útiles y herramientas empleados en las operaciones de encuadernación funcional —guillotina, máquinas de perforar de papel, cizallas, u otras—, describiendo sus mecanismos, funciones y utilización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los distintos tipos de materiales —canutillos, grapas, espirales, anillas, cubiertas u otros— utilizados en la encuadernación funcional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los sistemas de reciclaje en función de la naturaleza de los residuos producidos en la encuadernación funcional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se identificado y descrito los riesgos profesionales derivados de la utilización de las máquinas y herramientas de encuadernación funcional y sus equipos de protección."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha identificado y comprobado el estado de funcionamiento de las herramientas de encuadernación funcional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha organizado la documentación a encuadernar, ordenándola de acuerdo con los criterios establecidos y la correcta utilización de los medios disponibles."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha utilizado la cizalla u otros útiles análogos realizando distintos cortes de papel con precisión, observando las medidas de seguridad correspondientes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha utilizado la máquina de perforar papel de forma correcta."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado encuadernaciones en sus diversas formas —encanutado, grapado, espiralado, anillado u otras—asignando el tipo de cubiertas en función de las características del documento y de acuerdo con la información facilitada."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han desechado los residuos en distintos envases de reciclado conforme a su naturaleza."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han aplicado las precauciones y equipos de protección necesarios para realizar con seguridad la encuadernación funcional."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha comprobado que la encuadernación funcional realizada cumple con los criterios de calidad facilitados e inherentes al tipo de encuadernación"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad 1º",
+      "codigo": "3159p",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales I",
+      "codigo": "3161",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias Aplicadas I",
+      "codigo": "3163",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Primero",
+      "codigo": "TU01CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Instalación y mantenimiento de redes para transmisión de datos",
+      "codigo": "3016",
+      "ects": null,
+      "horas_minimas_boe": 115,
+      "siglas": "IMR",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona los elementos que configuran las redes para la transmisión de voz y datos, describiendo sus principales características y funcionalidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de instalaciones relacionados con las redes de transmisión de voz y datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos (canalizaciones, cableados, antenas, armarios, «racks» y cajas, entre otros) de una red de transmisión de datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los tipos de conductores (par de cobre, cable coaxial, fibra óptica, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la tipología de las diferentes cajas (registros, armarios, «racks», cajas de superficie, de empotrar, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los tipos de fijaciones (tacos, bridas, tornillos, tuercas, grapas, entre otros) de canalizaciones y sistemas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las fijaciones con el elemento a sujetar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta canalizaciones, soportes y armarios en redes de transmisión de voz y datos, identificando los elementos en el plano de la instalación y aplicando técnicas de montaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las técnicas y herramientas empleadas para la instalación de canalizaciones y su adaptación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han tenido en cuenta las fases típicas para el montaje de un «rack»."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado en un croquis del edificio o parte del edificio los lugares de ubicación de los elementos de la instalación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado la ubicación de cajas y canalizaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado y/o mecanizado las canalizaciones y cajas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado los armarios («racks») interpretando el plano."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han montado canalizaciones, cajas y tubos, entre otros, asegurando su fijación mecánica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado normas de seguridad en el uso de herramientas y sistemas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Despliega el cableado de una red de voz y datos analizando su trazado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han diferenciado los medios de transmisión empleados para voz y datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los detalles del cableado de la instalación y su despliegue (categoría del cableado, espacios por los que discurre, soporte para las canalizaciones, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado los tipos de guías pasacables, indicando la forma óptima de sujetar cables y guía."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cortado y etiquetado el cable."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han montado los armarios de comunicaciones y sus accesorios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado y conexionado las tomas de usuario y paneles de parcheo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha trabajado con la calidad y seguridad requeridas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Instala elementos y sistemas de transmisión de voz y datos, reconociendo y aplicando las diferentes técnicas de montaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ensamblado los elementos que consten de varias piezas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado el cableado en función de su etiquetado o colores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han colocado los sistemas o elementos (antenas, amplificadores, entre otros) en su lugar de ubicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado herramientas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han fijado los sistemas o elementos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha conectado el cableado con los sistemas y elementos, asegurando un buen contacto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han colocado los embellecedores, tapas y elementos decorativos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado normas de seguridad, en el uso de herramientas y sistemas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza operaciones básicas de configuración en redes locales cableadas relacionándolas con sus aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principios de funcionamiento de las redes locales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los distintos tipos de redes y sus estructuras alternativas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los elementos de la red local identificándolos con su función."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los medios de transmisión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado el mapa físico de la red local."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha representado el mapa físico de la red local."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado aplicaciones informáticas para representar el mapa físico de la red local."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y sistemas para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles, máquinas y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han operado las máquinas respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas de corte y conformado, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, pasos de emergencia, entre otros) de las máquinas y los sistemas de protección individual (calzado, protección ocular, indumentaria, entre otros) que se deben emplear en las operaciones de montaje y mantenimiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y sistemas como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Operaciones auxiliares para la configuración y la explotación",
+      "codigo": "3030",
+      "ects": null,
+      "horas_minimas_boe": 115,
+      "siglas": "OAC",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Configura equipos informáticos para su funcionamiento en un entorno monousuario, identificando la funcionalidad de la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado los parámetros básicos de la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado las preferencias en la configuración del entorno personal."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado los elementos de la interfaz de usuario para preparar el entorno de trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los atributos y los permisos en el sistema de archivos y directorios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las funcionalidades para el manejo del sistema de archivos y periféricos"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado las herramientas del sistema operativo para explorar los soportes de almacenamiento de datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado operaciones básicas de protección (instalación de antivirus, realización de copias de seguridad, entre otras)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura equipos informáticos para su funcionamiento en un entorno de red, identificando los permisos del usuario.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado preferencias en la configuración del entorno personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado y gestionado cuentas de usuario."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la conectividad del servidor con los equipos del cliente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los servicios para compartir recurso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han asignado permisos a los recursos del sistema que se van a compartir."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha accedido a los recursos compartidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado normas básicas de seguridad sobre recursos compartidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Utiliza aplicaciones de un paquete ofimático, relacionándolas con sus aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las funciones y características de un procesador de textos relacionándolas con los tipos de documentos a elaborar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado los procedimientos de creación, modificación y manipulación de documentos utilizando las herramientas del procesador de textos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha formateado un texto mejorando su presentación utilizando distintos tipos de letras y alineaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado las funciones para guardar e imprimir documentos elaborados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado operaciones básicas para el uso de aplicaciones ofimáticas de hoja de cálculo y base de datos, sobre documentos previamente elaborados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las funciones básicas una aplicación para presentaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado presentaciones multimedia aplicando normas básicas de composición y diseño."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Emplea utilidades proporcionadas por Internet, configurándolas e identificando su funcionalidad y prestaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han utilizado las herramientas para la navegación por páginas web reconociendo la estructura de Internet."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha personalizado el navegador adecuándolo a las necesidades establecidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha transferido información utilizando los recursos de Internet para descargar, enviar y almacenar ficheros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los medios y procedimientos de seguridad durante el acceso a páginas web describiendo los riesgos y fraudes posibles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las funcionalidades que ofrecen las herramientas de correo electrónico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha creado una cuenta de correo a través de un servidor web que proporcione el servicio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado otros servicios disponibles en Internet (foro, mensajería instantánea, redes p2p, videoconferencia; entre otros)."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han configurado las opciones básicas de las aplicaciones."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad",
+      "codigo": "3159",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de aprendizaje colaborativo",
+      "codigo": "3160972",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales II",
+      "codigo": "3162",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias aplicadas II",
+      "codigo": "3164",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Segundo",
+      "codigo": "TU02CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

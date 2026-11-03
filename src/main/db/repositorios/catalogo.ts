@@ -121,6 +121,12 @@ export function asegurarCicloYModulo(
     .prepare('SELECT codigo, curso FROM modulos WHERE codigo = ?')
     .get(moduloCodigo) as { codigo: string; curso: string | null } | undefined
 
+  const asegurarMapa = db.prepare(
+    `INSERT INTO modulo_ciclos (ciclo_id, modulo_codigo)
+     VALUES (?, ?)
+     ON CONFLICT(ciclo_id, modulo_codigo) DO NOTHING`
+  )
+
   if (!existente) {
     db.prepare(
       `INSERT INTO modulos (codigo, ciclo_id, nombre, siglas, curso, ects, horas_minimas_boe)
@@ -132,6 +138,7 @@ export function asegurarCicloYModulo(
       siglasDesdeNombre(modulo.nombre),
       curso === '2' ? '2' : '1'
     )
+    asegurarMapa.run(cicloId, moduloCodigo)
     return
   }
 
@@ -141,4 +148,5 @@ export function asegurarCicloYModulo(
       moduloCodigo
     )
   }
+  asegurarMapa.run(cicloId, moduloCodigo)
 }

@@ -169,6 +169,18 @@ describe('repositorio del BOE', () => {
   it('devuelve null para un ciclo inexistente', () => {
     expect(obtenerCiclo(db, 'no-existe')).toBeNull()
   })
+
+  it('muestra un módulo compartido en todos sus ciclos', () => {
+    sembrarCiclos(db, [{ ...cicloPrueba, id: 'otro', denominacion: 'Otro ciclo' }])
+    const ciclos = listarCiclos(db)
+    expect(ciclos).toHaveLength(2)
+    expect(ciclos.every((ciclo) => ciclo.modulos === 1 && ciclo.ra === 2 && ciclo.ce === 3)).toBe(
+      true
+    )
+    expect(listarModulos(db, 'test')).toHaveLength(1)
+    expect(listarModulos(db, 'otro')).toHaveLength(1)
+    expect(obtenerCiclo(db, 'otro')?.modulos[0].codigo).toBe('0001')
+  })
 })
 
 describe('repositorio de alumnos', () => {

@@ -44,6 +44,12 @@ export function sembrarCiclos(db: Bd, ciclos: Ciclo[]): void {
       horas_minimas_boe = excluded.horas_minimas_boe
   `)
 
+  const insertarModuloCiclo = db.prepare(`
+    INSERT INTO modulo_ciclos (ciclo_id, modulo_codigo)
+    VALUES (?, ?)
+    ON CONFLICT(ciclo_id, modulo_codigo) DO NOTHING
+  `)
+
   const upsertRa = db.prepare(`
     INSERT INTO resultados_aprendizaje (modulo_codigo, codigo, numero, descripcion)
     VALUES (@modulo_codigo, @codigo, @numero, @descripcion)
@@ -92,6 +98,7 @@ export function sembrarCiclos(db: Bd, ciclos: Ciclo[]): void {
           ects: modulo.ects ?? null,
           horas_minimas_boe: modulo.horas_minimas_boe ?? null
         })
+        insertarModuloCiclo.run(ciclo.id, modulo.codigo)
 
         for (const ra of modulo.ra) {
           upsertRa.run({

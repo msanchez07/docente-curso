@@ -1,76 +1,55 @@
-# Datos del BOE (ciclo DAW)
+# Datos del BOE (ciclos de Informática)
 
-Fuentes oficiales descargadas y usadas para generar los datos del ciclo.
+Datos oficiales de los ciclos de la familia **Informática y Comunicaciones**
+incluidos en el catálogo de horarios 2026-27 de la Comunitat Valenciana.
 
-## Ficheros
+Fuente de los enlaces: [Dosier de ciclos de FP](https://ceice.gva.es/es/web/formacion-profesional/dossier-cicles)
+de la Conselleria.
 
-| Fichero | Qué es |
-|---|---|
-| `BOE-A-2023-13221.html` / `.xml` | RD 405/2023, de 29 de mayo, que **actualiza** los títulos de DAM y DAW. |
-| `BOE-A-2010-9269-consolidado.html` / `.xml` | RD 686/2010, de 20 de mayo (**texto consolidado**), que establece el título de Técnico Superior en Desarrollo de Aplicaciones Web. Ya incorpora la actualización del RD 405/2023. |
-| `daw.json` | Datos extraídos: ciclo DAW completo (13 módulos) con RA y CE. |
+## Ficheros JSON
 
-## URLs oficiales
+| Fichero                                                  | Ciclo                                          | Norma principal           |
+| -------------------------------------------------------- | ---------------------------------------------- | ------------------------- |
+| `daw.json`                                               | Desarrollo de Aplicaciones Web                 | RD 686/2010 + RD 405/2023 |
+| `gs-desarrollo-de-aplicaciones-multiplataforma.json`     | Desarrollo de Aplicaciones Multiplataforma     | RD 450/2010               |
+| `gs-administracion-de-sistemas-informaticos-en-red.json` | Administración de Sistemas Informáticos en Red | RD 1629/2009              |
+| `gm-sistemas-microinformaticos-y-redes.json`             | Sistemas Microinformáticos y Redes             | RD 1691/2007              |
+| `gb-informatica-de-oficina.json`                         | Informática de Oficina                         | RD 356/2014 + RD 127/2014 |
+| `gb-informatica-y-comunicaciones.json`                   | Informática y Comunicaciones                   | RD 127/2014 + RD 356/2014 |
 
-- RD 405/2023 (original): <https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-13221>
-- RD 686/2010 (consolidado): <https://www.boe.es/buscar/act.php?id=BOE-A-2010-9269>
+## Enlaces oficiales
 
-## Por qué dos normas
+- [RD 450/2010 (DAM)](https://www.boe.es/buscar/act.php?id=BOE-A-2010-8067)
+- [RD 1629/2009 (ASIR)](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18355)
+- [RD 1691/2007 (SMR)](https://www.boe.es/buscar/act.php?id=BOE-A-2008-819)
+- [RD 127/2014 (FP Básica)](https://www.boe.es/buscar/act.php?id=BOE-A-2014-2360)
+- [RD 356/2014 (FP Básica)](https://www.boe.es/buscar/act.php?id=BOE-A-2014-5591)
 
-El RD 405/2023 **no redefine el título entero**: solo sustituye el articulado y el
-anexo I (módulos profesionales) de dos títulos ya existentes. Para el ciclo DAW
-redefine 9 módulos (0483, 0484, 0485, 0373, 0487, 0612, 0613, 0614, 0615). Los
-restantes (0616 Proyecto, 0617 FOL, 0618 EIE, 0619 FCT) siguen vigentes desde el
-RD 686/2010. Por eso la fuente del ciclo completo es el **texto consolidado del
-RD 686/2010**, que ya integra ambos.
+Módulos transversales de GM/GS: [Decreto 114/2025 (DOGV)](https://dogv.gva.es/datos/2025/08/04/pdf/2025_29742_es.pdf).
+Itinerario personal para la empleabilidad de FP Básica: [Decreto 117/2025 (DOGV)](https://dogv.gva.es/datos/2025/08/13/pdf/2025_32763_es.pdf).
 
-## Regenerar `daw.json`
+## Cobertura
 
-```bash
-python3 scripts/boe_parse.py \
-  resources/boe/BOE-A-2010-9269-consolidado.xml \
-  resources/boe/daw.json
-```
-
-## Estructura de `daw.json`
-
-```jsonc
-{
-  "id": "daw",
-  "denominacion": "Desarrollo de Aplicaciones Web",
-  "nivel": "Formación Profesional de Grado Superior",
-  "familia_profesional": "Informática y Comunicaciones",
-  "duracion_horas": 2000,
-  "ects": 120,
-  "rd": "RD 686/2010, de 20 de mayo",
-  "rd_actualizacion": "RD 405/2023, de 29 de mayo",
-  "boe_url": "…",
-  "boe_url_actualizacion": "…",
-  "modulos": [
-    {
-      "codigo": "0613",
-      "nombre": "Desarrollo Web en entorno servidor",
-      "ects": 12,
-      "horas_minimas_boe": 100,
-      "ra": [
-        {
-          "codigo": "RA1",
-          "numero": 1,
-          "descripcion": "…",
-          "ce": [{ "codigo": "a", "descripcion": "…" }]
-        }
-      ]
-    }
-  ]
-}
-```
-
-La estructura es **genérica**: admite varios ciclos (un fichero JSON por ciclo, o un
-array de ciclos) sin cambiar el modelo de datos.
+- Los módulos profesionales de los títulos LOE (DAM, ASIR, SMR) tienen RA/CE
+  completos.
+- Los módulos transversales (Inglés, IPE, Digitalización, Sostenibilidad) se
+  incorporan desde los anexos del Decreto 114/2025.
+- En FP Básica se incorporan los módulos profesionales de los RD de 2014 y el
+  IPE del Decreto 117/2025. Los ámbitos `3161`–`3164` y el proyecto intermodular
+  no tienen RA/CE en los enlaces oficiales del dosier; quedan sin datos.
+- Los módulos optativos y el proyecto de 1º sin norma estatal específica se
+  mantienen en el ciclo con `ra: []`.
 
 ## Nota sobre las horas
 
-`horas_minimas_boe` es la `Duración` que fija el BOE para cada módulo. **No suma el
-total del ciclo** (1100 h frente a las 2000 h del título): el BOE fija las
-*enseñanzas mínimas* y cada comunidad autónoma amplía la carga horaria hasta el
-total. Si la app necesita las horas reales de un centro, deben cargarse aparte.
+`horas_minimas_boe` es la `Duración` que fija el BOE para cada módulo. No suma el
+total del ciclo: el BOE fija las enseñanzas mínimas y cada comunidad autónoma
+amplía la carga horaria hasta el total. Las horas reales del catálogo están en
+`resources/horarios/catalogo-2026-27.json`.
+
+## Estructura
+
+La estructura es la misma que la del importador de currículos: un fichero JSON
+por ciclo con `id`, `denominacion`, `nivel`, `familia_profesional`,
+`duracion_horas`, `ects`, `rd`, `boe_url` y `modulos[]`; cada módulo contiene
+`ra[]` y cada RA contiene `ce[]`.

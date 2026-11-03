@@ -8,14 +8,15 @@ export function listarCiclos(db: Bd): ResumenCiclo[] {
   return db
     .prepare(
       `SELECT c.id, c.denominacion, c.nivel,
-              (SELECT COUNT(*) FROM modulos m WHERE m.ciclo_id = c.id) AS modulos,
+              (SELECT COUNT(*) FROM modulo_ciclos mc
+                WHERE mc.ciclo_id = c.id) AS modulos,
               (SELECT COUNT(*) FROM resultados_aprendizaje r
-                 JOIN modulos m2 ON m2.codigo = r.modulo_codigo
-                WHERE m2.ciclo_id = c.id) AS ra,
+                 JOIN modulo_ciclos mc ON mc.modulo_codigo = r.modulo_codigo
+                WHERE mc.ciclo_id = c.id) AS ra,
               (SELECT COUNT(*) FROM criterios_evaluacion ce
                  JOIN resultados_aprendizaje r2 ON r2.id = ce.ra_id
-                 JOIN modulos m3 ON m3.codigo = r2.modulo_codigo
-                WHERE m3.ciclo_id = c.id) AS ce
+                 JOIN modulo_ciclos mc ON mc.modulo_codigo = r2.modulo_codigo
+                WHERE mc.ciclo_id = c.id) AS ce
          FROM ciclos c
         WHERE c.origen = 'boe'
         ORDER BY c.denominacion`
@@ -33,8 +34,9 @@ export function listarModulos(db: Bd, cicloId: string): ResumenModulo[] {
                  JOIN resultados_aprendizaje r2 ON r2.id = ce.ra_id
                 WHERE r2.modulo_codigo = m.codigo) AS ce
          FROM modulos m
-        WHERE m.ciclo_id = ?
-        ORDER BY m.codigo`
+         JOIN modulo_ciclos mc ON mc.modulo_codigo = m.codigo
+        WHERE mc.ciclo_id = ?
+        ORDER BY m.curso, m.codigo`
     )
     .all(cicloId) as ResumenModulo[]
 }
@@ -51,8 +53,11 @@ export function obtenerCiclo(db: Bd, id: string): Ciclo | null {
 
   const modulos = db
     .prepare(
-      `SELECT codigo, nombre, siglas, curso, ects, horas_minimas_boe
-         FROM modulos WHERE ciclo_id = ? ORDER BY codigo`
+      `SELECT m.codigo, m.nombre, m.siglas, m.curso, m.ects, m.horas_minimas_boe
+         FROM modulos m
+         JOIN modulo_ciclos mc ON mc.modulo_codigo = m.codigo
+        WHERE mc.ciclo_id = ?
+        ORDER BY m.curso, m.codigo`
     )
     .all(id) as Omit<Modulo, 'ra'>[]
 
@@ -60,8 +65,8 @@ export function obtenerCiclo(db: Bd, id: string): Ciclo | null {
     .prepare(
       `SELECT r.id, r.modulo_codigo, r.codigo, r.numero, r.descripcion
          FROM resultados_aprendizaje r
-         JOIN modulos m ON m.codigo = r.modulo_codigo
-        WHERE m.ciclo_id = ?
+         JOIN modulo_ciclos mc ON mc.modulo_codigo = r.modulo_codigo
+        WHERE mc.ciclo_id = ?
         ORDER BY r.modulo_codigo, r.numero`
     )
     .all(id) as {
@@ -77,8 +82,8 @@ export function obtenerCiclo(db: Bd, id: string): Ciclo | null {
       `SELECT ce.ra_id, ce.codigo, ce.descripcion
          FROM criterios_evaluacion ce
          JOIN resultados_aprendizaje r ON r.id = ce.ra_id
-         JOIN modulos m ON m.codigo = r.modulo_codigo
-        WHERE m.ciclo_id = ?
+         JOIN modulo_ciclos mc ON mc.modulo_codigo = r.modulo_codigo
+        WHERE mc.ciclo_id = ?
         ORDER BY ce.ra_id, ce.codigo`
     )
     .all(id) as { ra_id: number; codigo: string; descripcion: string }[]
