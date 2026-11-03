@@ -26,6 +26,7 @@ import type {
   BloqueConvocatoriaEntrada,
   ConvocatoriaEntrada,
   PeriodoFormacionEmpresaEntrada,
+  RaFormacionEmpresa,
   PresentacionConfig,
   ProgramacionEntrada,
   UnidadProgramacionEntrada
@@ -44,6 +45,7 @@ import {
   crearAlumnoEnGrupoClase,
   desmatricularDeGrupoClase,
   listarAlumnosDeGrupoClase,
+  marcarPerdidaEvaluacionContinua,
   obtenerAlumnoClase
 } from '../db/repositorios/alumnos-clase'
 import {
@@ -76,7 +78,9 @@ import {
   actualizarFormacionEmpresa,
   borrarFormacionEmpresa,
   crearFormacionEmpresa,
-  listarFormacionEmpresa
+  guardarRasFormacionEmpresa,
+  listarFormacionEmpresa,
+  listarRasFormacionEmpresa
 } from '../db/repositorios/formacion-empresa'
 import {
   actualizarEventoEvaluacion,
@@ -308,6 +312,11 @@ export function registrarIpc(): void {
   ipcMain.handle(CANALES.alumnosClaseActivar, (_e, id: number, activo: boolean) =>
     activarAlumnoClase(bd(), id, activo)
   )
+  ipcMain.handle(
+    CANALES.alumnosClasePerdidaContinua,
+    (_e, grupoClaseId: number, alumnoId: number, perdida: boolean) =>
+      marcarPerdidaEvaluacionContinua(bd(), grupoClaseId, alumnoId, perdida)
+  )
   ipcMain.handle(CANALES.alumnosClaseDesmatricular, (_e, grupoClaseId: number, alumnoId: number) =>
     desmatricularDeGrupoClase(bd(), grupoClaseId, alumnoId)
   )
@@ -412,6 +421,14 @@ export function registrarIpc(): void {
   // Formación en empresa por alumno.
   ipcMain.handle(CANALES.formacionEmpresaListar, (_e, grupoClaseId: number, alumnoId?: number) =>
     listarFormacionEmpresa(bd(), grupoClaseId, alumnoId)
+  )
+  ipcMain.handle(CANALES.formacionEmpresaListarRas, (_e, grupoClaseId: number, alumnoId: number) =>
+    listarRasFormacionEmpresa(bd(), grupoClaseId, alumnoId)
+  )
+  ipcMain.handle(
+    CANALES.formacionEmpresaGuardarRas,
+    (_e, grupoClaseId: number, alumnoId: number, ras: RaFormacionEmpresa[]) =>
+      guardarRasFormacionEmpresa(bd(), grupoClaseId, alumnoId, ras)
   )
   ipcMain.handle(
     CANALES.formacionEmpresaCrear,

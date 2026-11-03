@@ -3116,10 +3116,10 @@ a:focus-visible {
 }
 
 .calificaciones__final-evaluacion {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  gap: 2px 8px;
   padding: 8px 10px;
   color: var(--texto);
   font: inherit;
@@ -3140,6 +3140,39 @@ a:focus-visible {
 
 .calificaciones__final-evaluacion strong {
   font-size: 14px;
+}
+
+.calificaciones__final-evaluacion small {
+  grid-column: 1 / -1;
+  color: var(--tenue);
+  font-size: 10.5px;
+  line-height: 1.3;
+}
+
+.calificaciones__final-pesos {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.calificaciones__final-pesos h4 {
+  margin: 0 0 6px;
+  font-size: 12px;
+}
+
+.calificaciones__final-peso {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 3px 0;
+  font-size: 11.5px;
+}
+
+.calificaciones__final-peso span {
+  color: var(--tenue);
+  text-align: right;
 }
 
 .calificaciones__final-formula {

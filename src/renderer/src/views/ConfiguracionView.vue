@@ -265,7 +265,7 @@ async function guardar(): Promise<void> {
         <header class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
             <h3>Acerca de {{ APP.nombre }}</h3>
-            <span class="tenue">{{ APP.subtitulo }} · v{{ version || '1.1.5' }}</span>
+            <span class="tenue">{{ APP.subtitulo }} · v{{ version || '1.1.6' }}</span>
           </div>
         </header>
         <div class="configuracion__autor">

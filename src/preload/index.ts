@@ -62,6 +62,8 @@ const api: Api = {
       ipcRenderer.invoke(CANALES.alumnosClaseCrear, grupoClaseId, entrada),
     actualizar: (id, entrada) => ipcRenderer.invoke(CANALES.alumnosClaseActualizar, id, entrada),
     activar: (id, activo) => ipcRenderer.invoke(CANALES.alumnosClaseActivar, id, activo),
+    marcarPerdidaContinua: (grupoClaseId, alumnoId, perdida) =>
+      ipcRenderer.invoke(CANALES.alumnosClasePerdidaContinua, grupoClaseId, alumnoId, perdida),
     desmatricular: (grupoClaseId, alumnoId) =>
       ipcRenderer.invoke(CANALES.alumnosClaseDesmatricular, grupoClaseId, alumnoId)
   },
@@ -91,6 +93,10 @@ const api: Api = {
   formacionEmpresa: {
     listar: (grupoClaseId, alumnoId) =>
       ipcRenderer.invoke(CANALES.formacionEmpresaListar, grupoClaseId, alumnoId),
+    listarRas: (grupoClaseId, alumnoId) =>
+      ipcRenderer.invoke(CANALES.formacionEmpresaListarRas, grupoClaseId, alumnoId),
+    guardarRas: (grupoClaseId, alumnoId, ras) =>
+      ipcRenderer.invoke(CANALES.formacionEmpresaGuardarRas, grupoClaseId, alumnoId, ras),
     crear: (grupoClaseId, alumnoId, entrada) =>
       ipcRenderer.invoke(CANALES.formacionEmpresaCrear, grupoClaseId, alumnoId, entrada),
     actualizar: (id, entrada) =>

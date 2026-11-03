@@ -8,7 +8,9 @@ import {
   actualizarFormacionEmpresa,
   borrarFormacionEmpresa,
   crearFormacionEmpresa,
-  listarFormacionEmpresa
+  guardarRasFormacionEmpresa,
+  listarFormacionEmpresa,
+  listarRasFormacionEmpresa
 } from '../src/main/db/repositorios/formacion-empresa'
 
 const cicloPrueba: Ciclo = {
@@ -28,7 +30,10 @@ const cicloPrueba: Ciclo = {
       curso: '2',
       ects: 12,
       horas_minimas_boe: 100,
-      ra: []
+      ra: [
+        { codigo: 'RA1', numero: 1, descripcion: 'RA uno', ce: [] },
+        { codigo: 'RA2', numero: 2, descripcion: 'RA dos', ce: [] }
+      ]
     }
   ]
 }
@@ -103,6 +108,22 @@ describe('formación en empresa', () => {
 
     expect(borrarFormacionEmpresa(db, periodo.id)).toBe(true)
     expect(listarFormacionEmpresa(db, grupoId, alumnoId)).toHaveLength(0)
+  })
+
+  it('guarda los RA totales o parciales de la formación en empresa', () => {
+    expect(listarRasFormacionEmpresa(db, grupoId, alumnoId)).toEqual([])
+    const guardados = guardarRasFormacionEmpresa(db, grupoId, alumnoId, [
+      { ra_codigo: 'RA1', tipo: 'total' },
+      { ra_codigo: 'RA2', tipo: 'parcial' }
+    ])
+    expect(guardados).toEqual([
+      { ra_codigo: 'RA1', tipo: 'total' },
+      { ra_codigo: 'RA2', tipo: 'parcial' }
+    ])
+    expect(
+      guardarRasFormacionEmpresa(db, grupoId, alumnoId, [{ ra_codigo: 'RA2', tipo: 'total' }])
+    ).toEqual([{ ra_codigo: 'RA2', tipo: 'total' }])
+    expect(listarRasFormacionEmpresa(db, grupoId, otroAlumnoId)).toEqual([])
   })
 
   it('no permite solapar periodos del mismo alumno', () => {

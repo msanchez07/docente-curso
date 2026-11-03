@@ -287,6 +287,13 @@ export interface PeriodoFormacionEmpresa {
   actualizado_en: string
 }
 
+export type TipoRaFormacionEmpresa = 'total' | 'parcial'
+
+export interface RaFormacionEmpresa {
+  ra_codigo: string
+  tipo: TipoRaFormacionEmpresa
+}
+
 export interface PeriodoFormacionEmpresaEntrada {
   fecha_inicio: string
   fecha_fin: string
@@ -648,6 +655,8 @@ export interface AlumnoClase {
   activo: boolean
   /** Grupos de clase en los que está matriculado. */
   grupos_clase: number[]
+  /** Marca de pérdida de evaluación continua en el grupo consultado. */
+  perdida_evaluacion_continua?: boolean
 }
 
 export interface ResultadoAltaAlumnoClase {
@@ -1314,6 +1323,12 @@ export interface Api {
     crear(grupoClaseId: number, entrada: AlumnoEntrada): Promise<ResultadoAltaAlumnoClase>
     actualizar(id: number, entrada: AlumnoEntrada): Promise<AlumnoClase | null>
     activar(id: number, activo: boolean): Promise<AlumnoClase | null>
+    /** Marca o retira la pérdida de evaluación continua en este grupo. */
+    marcarPerdidaContinua(
+      grupoClaseId: number,
+      alumnoId: number,
+      perdida: boolean
+    ): Promise<AlumnoClase | null>
     desmatricular(grupoClaseId: number, alumnoId: number): Promise<boolean>
   }
   entregasClase: {
@@ -1342,6 +1357,13 @@ export interface Api {
   }
   formacionEmpresa: {
     listar(grupoClaseId: number, alumnoId?: number): Promise<PeriodoFormacionEmpresa[]>
+    /** RA que el alumno trabaja en la formación en empresa. */
+    listarRas(grupoClaseId: number, alumnoId: number): Promise<RaFormacionEmpresa[]>
+    guardarRas(
+      grupoClaseId: number,
+      alumnoId: number,
+      ras: RaFormacionEmpresa[]
+    ): Promise<RaFormacionEmpresa[]>
     crear(
       grupoClaseId: number,
       alumnoId: number,
@@ -1568,6 +1590,7 @@ export const CANALES = {
   alumnosClaseCrear: 'alumnosClase:crear',
   alumnosClaseActualizar: 'alumnosClase:actualizar',
   alumnosClaseActivar: 'alumnosClase:activar',
+  alumnosClasePerdidaContinua: 'alumnosClase:perdidaContinua',
   alumnosClaseDesmatricular: 'alumnosClase:desmatricular',
   entregasClaseListar: 'entregasClase:listar',
   entregasClaseCrear: 'entregasClase:crear',
@@ -1583,6 +1606,8 @@ export const CANALES = {
   eventosEvaluacionBorrar: 'eventosEvaluacion:borrar',
   eventosEvaluacionImportar: 'eventosEvaluacion:importar',
   formacionEmpresaListar: 'formacionEmpresa:listar',
+  formacionEmpresaListarRas: 'formacionEmpresa:listarRas',
+  formacionEmpresaGuardarRas: 'formacionEmpresa:guardarRas',
   formacionEmpresaCrear: 'formacionEmpresa:crear',
   formacionEmpresaActualizar: 'formacionEmpresa:actualizar',
   formacionEmpresaBorrar: 'formacionEmpresa:borrar',

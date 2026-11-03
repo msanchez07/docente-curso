@@ -7,7 +7,7 @@
 
 **Última actualización:** 03/11/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **238 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **241 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -288,7 +288,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual (03/11/2026): **238 tests**, 40 archivos de test, build y smoke correctos.
+Estado actual (03/11/2026): **241 tests**, 40 archivos de test, build y smoke correctos.
 
 ---
 

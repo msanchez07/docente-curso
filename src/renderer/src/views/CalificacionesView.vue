@@ -2,10 +2,12 @@
 import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
+import { notaConvocatoriaAlumno } from '@shared/nota-convocatoria'
 import SelectButton from '@renderer/components/SelectButton.vue'
 import ConvocatoriasView from '@renderer/views/ConvocatoriasView.vue'
 import type {
   AvaluacionCalificacion,
+  ConvocatoriaDetalle,
   FilaCalificacionClase,
   GrupoClase,
   ResumenCalificacionesClase
@@ -25,6 +27,10 @@ const avaluacionActiva = ref('')
 const exportandoInforme = ref(false)
 const errorGuardado = ref<string | null>(null)
 const mensaje = ref<string | null>(null)
+const detallesConvocatorias = ref<{
+  ordinaria: ConvocatoriaDetalle | null
+  extraordinaria: ConvocatoriaDetalle | null
+}>({ ordinaria: null, extraordinaria: null })
 
 const id = computed(() => Number(route.params.grupoId))
 
@@ -59,6 +65,13 @@ const filaSeleccionada = computed<FilaCalificacionClase | null>(() => {
     null
   )
 })
+
+const notaFinalVisible = computed(() =>
+  filaSeleccionada.value ? notaFinalDe(filaSeleccionada.value) : null
+)
+const aprobadoVisible = computed(() =>
+  filaSeleccionada.value ? aprobadoDe(filaSeleccionada.value) : false
+)
 
 const avaluacionSeleccionada = computed<AvaluacionCalificacion | null>(() => {
   const fila = filaSeleccionada.value
@@ -109,6 +122,20 @@ const formulaFinal = computed(() => {
     .join(' + ')
 })
 
+const evaluacionesConPesosPropios = computed(
+  () =>
+    filaSeleccionada.value?.avaluaciones.filter((avaluacion) =>
+      tienePesosPropios(avaluacion.avaluacionId)
+    ) ?? []
+)
+
+function formulaAvaluacion(avaluacion: AvaluacionCalificacion): string {
+  return avaluacion.categorias
+    .filter((categoria) => categoria.peso > 0)
+    .map((categoria) => `${categoria.nombre} ${categoria.peso} %`)
+    .join(' + ')
+}
+
 function primeraPestana(fila: FilaCalificacionClase | null): string {
   if (!fila) return 'final'
   if (modoUnidades.value) return fila.unidades[0] ? `u:${fila.unidades[0].unidadId}` : 'final'
@@ -128,8 +155,31 @@ function formato(nota: number | null): string {
   return nota === null ? '—' : nota.toFixed(2).replace('.', ',')
 }
 
+function notaConvocatoriaDe(fila: FilaCalificacionClase): { nota: number; tipo: string } | null {
+  if (!fila.alumno.perdida_evaluacion_continua) return null
+  for (const tipo of ['extraordinaria', 'ordinaria'] as const) {
+    const detalle = detallesConvocatorias.value[tipo]
+    if (!detalle) continue
+    const nota = notaConvocatoriaAlumno(fila.alumno.id, detalle.bloques, detalle.asignaciones)
+    if (nota !== null) return { nota, tipo }
+  }
+  return null
+}
+
+function notaFinalDe(fila: FilaCalificacionClase): number | null {
+  return notaConvocatoriaDe(fila)?.nota ?? fila.notaFinal
+}
+
+function aprobadoDe(fila: FilaCalificacionClase): boolean {
+  const convocatoria = notaConvocatoriaDe(fila)
+  return convocatoria ? convocatoria.nota >= 5 : fila.aprobado
+}
+
 function estado(fila: FilaCalificacionClase): string {
-  return fila.aprobado ? 'Apto' : fila.vaAConvocatoria ? 'A convocatoria' : 'No apto'
+  if (fila.alumno.perdida_evaluacion_continua && notaConvocatoriaDe(fila) === null) {
+    return 'A convocatoria'
+  }
+  return aprobadoDe(fila) ? 'Apto' : fila.vaAConvocatoria ? 'A convocatoria' : 'No apto'
 }
 
 function seleccionar(fila: FilaCalificacionClase): void {
@@ -170,6 +220,16 @@ async function cargar(): Promise<void> {
       criteriosDisponibles,
       unidades
     )
+    const listaConvocatorias = await window.api.convocatorias.listar(grupo.value.id)
+    const cargarDetalle = async (tipo: 'ordinaria' | 'extraordinaria') => {
+      const convocatoria = listaConvocatorias.find((item) => item.tipo === tipo)
+      return convocatoria ? await window.api.convocatorias.obtener(convocatoria.id) : null
+    }
+    const [ordinaria, extraordinaria] = await Promise.all([
+      cargarDetalle('ordinaria'),
+      cargarDetalle('extraordinaria')
+    ])
+    detallesConvocatorias.value = { ordinaria, extraordinaria }
     const solicitado = Number(route.query.alumno)
     const anterior =
       Number.isFinite(solicitado) && solicitado > 0 ? solicitado : seleccionadoId.value
@@ -302,15 +362,18 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
               {{ fila.alumno.apellidos }}, {{ fila.alumno.nombre }}
             </span>
             <span class="calificaciones__alumno-meta">
-              <span>Final {{ formato(fila.notaFinal) }}</span>
+              <span>Final {{ formato(notaFinalDe(fila)) }}</span>
               <span
                 class="calificaciones__estado"
-                :class="fila.aprobado ? 'nota-aprobado' : 'nota-suspendido'"
+                :class="aprobadoDe(fila) ? 'nota-aprobado' : 'nota-suspendido'"
               >
                 {{ estado(fila) }}
               </span>
             </span>
             <span v-if="fila.incompleta" class="chip chip--aviso">incompleta</span>
+            <span v-if="fila.alumno.perdida_evaluacion_continua" class="chip chip--aviso">
+              pierde continua
+            </span>
             <span v-if="fila.rasNoSuperados.length > 0" class="chip chip--aviso">
               {{ fila.rasNoSuperados.length }} RA pendientes
             </span>
@@ -322,7 +385,7 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
             <h3>{{ filaSeleccionada.alumno.apellidos }}, {{ filaSeleccionada.alumno.nombre }}</h3>
             <span
               class="calificaciones__estado"
-              :class="filaSeleccionada.aprobado ? 'nota-aprobado' : 'nota-suspendido'"
+              :class="aprobadoVisible ? 'nota-aprobado' : 'nota-suspendido'"
             >
               {{ estado(filaSeleccionada) }}
             </span>
@@ -452,12 +515,24 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
                 </p>
               </div>
               <div class="calificaciones__final-nota">
-                <strong>{{ formato(filaSeleccionada.notaFinal) }}</strong>
-                <span :class="filaSeleccionada.aprobado ? 'nota-aprobado' : 'nota-suspendido'">
+                <strong>{{ formato(notaFinalVisible) }}</strong>
+                <span :class="aprobadoVisible ? 'nota-aprobado' : 'nota-suspendido'">
                   {{ estado(filaSeleccionada) }}
                 </span>
               </div>
             </header>
+
+            <p
+              v-if="filaSeleccionada.alumno.perdida_evaluacion_continua"
+              class="aviso aviso--aviso"
+            >
+              Este alumno ha perdido la evaluación continua.
+              <template v-if="notaConvocatoriaDe(filaSeleccionada)">
+                Su nota final es la de la convocatoria
+                {{ notaConvocatoriaDe(filaSeleccionada)?.tipo }}.
+              </template>
+              <template v-else> No hay nota de convocatoria registrada. </template>
+            </p>
 
             <div class="calificaciones__final-evaluaciones">
               <template v-if="modoUnidades">
@@ -481,9 +556,24 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
                   @click="avaluacionActiva = avaluacion.avaluacionId"
                 >
                   <span>{{ avaluacion.nombre }}</span>
+                  <small v-if="tienePesosPropios(avaluacion.avaluacionId)" class="tenue">
+                    {{ formulaAvaluacion(avaluacion) }}
+                  </small>
                   <strong>{{ formato(avaluacion.nota) }}</strong>
                 </button>
               </template>
+            </div>
+
+            <div v-if="evaluacionesConPesosPropios.length > 0" class="calificaciones__final-pesos">
+              <h4>Pesos propios por evaluación</h4>
+              <div
+                v-for="avaluacion in evaluacionesConPesosPropios"
+                :key="avaluacion.avaluacionId"
+                class="calificaciones__final-peso"
+              >
+                <strong>{{ avaluacion.nombre }}</strong>
+                <span>{{ formulaAvaluacion(avaluacion) }}</span>
+              </div>
             </div>
 
             <div class="calificaciones__final-formula">

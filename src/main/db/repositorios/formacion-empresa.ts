@@ -5,7 +5,11 @@
  * tener varios periodos, pero no pueden solaparse entre sí.
  */
 import type { Bd } from '../conexion'
-import type { PeriodoFormacionEmpresa, PeriodoFormacionEmpresaEntrada } from '@shared/tipos'
+import type {
+  PeriodoFormacionEmpresa,
+  PeriodoFormacionEmpresaEntrada,
+  RaFormacionEmpresa
+} from '@shared/tipos'
 import { obtenerGrupoClase } from './grupos-clase'
 
 const CAMPOS = `id, grupo_clase_id, alumno_id, fecha_inicio, fecha_fin,
@@ -167,4 +171,63 @@ export function actualizarFormacionEmpresa(
 
 export function borrarFormacionEmpresa(db: Bd, id: number): boolean {
   return db.prepare('DELETE FROM formacion_empresa WHERE id = ?').run(id).changes > 0
+}
+
+/** RA que el alumno trabaja en la formación en empresa, con su intensidad. */
+export function listarRasFormacionEmpresa(
+  db: Bd,
+  grupoClaseId: number,
+  alumnoId: number
+): RaFormacionEmpresa[] {
+  comprobarMatricula(db, grupoClaseId, alumnoId)
+  return db
+    .prepare(
+      `SELECT ra_codigo, tipo
+         FROM formacion_empresa_ra
+        WHERE grupo_clase_id = ? AND alumno_id = ?
+        ORDER BY ra_codigo`
+    )
+    .all(grupoClaseId, alumnoId) as RaFormacionEmpresa[]
+}
+
+export function guardarRasFormacionEmpresa(
+  db: Bd,
+  grupoClaseId: number,
+  alumnoId: number,
+  ras: RaFormacionEmpresa[]
+): RaFormacionEmpresa[] {
+  comprobarMatricula(db, grupoClaseId, alumnoId)
+  const validarRa = db.prepare(
+    `SELECT 1
+       FROM resultados_aprendizaje r
+       JOIN grupos_clase gc ON gc.modulo_codigo = r.modulo_codigo
+      WHERE gc.id = ? AND r.codigo = ?`
+  )
+  const unicos = new Map<string, RaFormacionEmpresa>()
+  for (const ra of ras) {
+    const codigo = ra.ra_codigo?.trim().toUpperCase()
+    if (!codigo) continue
+    if (ra.tipo !== 'total' && ra.tipo !== 'parcial') {
+      throw new Error('El tipo de RA debe ser total o parcial.')
+    }
+    if (!validarRa.get(grupoClaseId, codigo)) {
+      throw new Error(`El RA ${codigo} no pertenece al módulo del grupo.`)
+    }
+    unicos.set(codigo, { ra_codigo: codigo, tipo: ra.tipo })
+  }
+
+  db.transaction(() => {
+    db.prepare('DELETE FROM formacion_empresa_ra WHERE grupo_clase_id = ? AND alumno_id = ?').run(
+      grupoClaseId,
+      alumnoId
+    )
+    const insertar = db.prepare(
+      `INSERT INTO formacion_empresa_ra (grupo_clase_id, alumno_id, ra_codigo, tipo)
+       VALUES (?, ?, ?, ?)`
+    )
+    for (const ra of unicos.values()) {
+      insertar.run(grupoClaseId, alumnoId, ra.ra_codigo, ra.tipo)
+    }
+  })()
+  return listarRasFormacionEmpresa(db, grupoClaseId, alumnoId)
 }

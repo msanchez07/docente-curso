@@ -98,6 +98,7 @@ const CLAVE = 'gestion-entregas:grupos-clase'
 const CLAVE_CURSOS = 'gestion-entregas:cursos-academicos'
 const CLAVE_ALUMNOS = 'gestion-entregas:alumnos-clase'
 const CLAVE_MATRICULAS = 'gestion-entregas:matriculas-clase'
+const CLAVE_PERDIDA_CONTINUA = 'gestion-entregas:perdida-continua'
 const CLAVE_CRITERIOS = 'gestion-entregas:criterios-clase'
 const CLAVE_PLANTILLAS = 'gestion-entregas:plantillas-criterios'
 const CLAVE_PROGRAMACION = 'gestion-entregas:programacion-clase'
@@ -105,6 +106,7 @@ const CLAVE_ENTREGAS = 'gestion-entregas:entregas-clase'
 const CLAVE_NOTAS = 'gestion-entregas:notas-clase'
 const CLAVE_EVIDENCIAS = 'gestion-entregas:evidencias-clase'
 const CLAVE_FORMACION = 'gestion-entregas:formacion-empresa'
+const CLAVE_FORMACION_RA = 'gestion-entregas:formacion-empresa-ra'
 const CLAVE_EVENTOS = 'gestion-entregas:eventos-evaluacion'
 const CLAVE_UNIDADES = 'gestion-entregas:unidades-programacion'
 const CLAVE_CALENDARIO = 'gestion-entregas:calendario-escolar'
@@ -417,13 +419,30 @@ function escribirMatriculas(matriculas: Matriculas): void {
   localStorage.setItem(CLAVE_MATRICULAS, JSON.stringify(matriculas))
 }
 
+function leerPerdidaContinua(): Record<string, boolean> {
+  try {
+    const crudo = localStorage.getItem(CLAVE_PERDIDA_CONTINUA)
+    return crudo ? (JSON.parse(crudo) as Record<string, boolean>) : {}
+  } catch {
+    return {}
+  }
+}
+
+function escribirPerdidaContinua(valores: Record<string, boolean>): void {
+  localStorage.setItem(CLAVE_PERDIDA_CONTINUA, JSON.stringify(valores))
+}
+
+function clavePerdidaContinua(grupoClaseId: number, alumnoId: number): string {
+  return `${grupoClaseId}:${alumnoId}`
+}
+
 function gruposDeAlumno(alumnoId: number): number[] {
   return Object.entries(leerMatriculas())
     .filter(([, ids]) => ids.includes(alumnoId))
     .map(([grupoId]) => Number(grupoId))
 }
 
-function aAlumnoClase(alumno: AlumnoGuardado): AlumnoClase {
+function aAlumnoClase(alumno: AlumnoGuardado, grupoClaseId?: number): AlumnoClase {
   return {
     id: alumno.id,
     nombre: alumno.nombre,
@@ -431,7 +450,11 @@ function aAlumnoClase(alumno: AlumnoGuardado): AlumnoClase {
     dni: alumno.dni,
     email: alumno.email,
     activo: alumno.activo !== false,
-    grupos_clase: gruposDeAlumno(alumno.id)
+    grupos_clase: gruposDeAlumno(alumno.id),
+    perdida_evaluacion_continua:
+      grupoClaseId !== undefined
+        ? Boolean(leerPerdidaContinua()[clavePerdidaContinua(grupoClaseId, alumno.id)])
+        : false
   }
 }
 
@@ -1975,7 +1998,7 @@ function escribirConfiguracionGeneral(configuracion: ConfiguracionGeneral): void
 
 const api = {
   app: {
-    version: async () => '1.1.5-web',
+    version: async () => '1.1.6-web',
     plataforma: 'web'
   },
   archivos: {
@@ -2270,7 +2293,7 @@ const api = {
       const ids = new Set(leerMatriculas()[String(grupoClaseId)] ?? [])
       return leerAlumnos()
         .filter((alumno) => ids.has(alumno.id))
-        .map(aAlumnoClase)
+        .map((alumno) => aAlumnoClase(alumno, grupoClaseId))
         .sort(
           (a, b) =>
             a.apellidos.localeCompare(b.apellidos, 'es') || a.nombre.localeCompare(b.nombre, 'es')
@@ -2311,7 +2334,7 @@ const api = {
           [String(grupoClaseId)]: [...ids, alumno.id]
         })
       }
-      return { alumno: aAlumnoClase(alumno), creado: !previo }
+      return { alumno: aAlumnoClase(alumno, grupoClaseId), creado: !previo }
     },
     actualizar: async (id: number, entrada: AlumnoEntrada): Promise<AlumnoClase | null> => {
       const alumnos = leerAlumnos()
@@ -2338,6 +2361,21 @@ const api = {
       alumnos[indice] = { ...alumnos[indice], activo }
       escribirAlumnos(alumnos)
       return aAlumnoClase(alumnos[indice])
+    },
+    marcarPerdidaContinua: async (
+      grupoClaseId: number,
+      alumnoId: number,
+      perdida: boolean
+    ): Promise<AlumnoClase | null> => {
+      const ids = new Set(leerMatriculas()[String(grupoClaseId)] ?? [])
+      if (!ids.has(alumnoId)) return null
+      const valores = leerPerdidaContinua()
+      const clave = clavePerdidaContinua(grupoClaseId, alumnoId)
+      if (perdida) valores[clave] = true
+      else delete valores[clave]
+      escribirPerdidaContinua(valores)
+      const alumno = leerAlumnos().find((item) => item.id === alumnoId)
+      return alumno ? aAlumnoClase(alumno, grupoClaseId) : null
     },
     desmatricular: async (grupoClaseId: number, alumnoId: number): Promise<boolean> => {
       const matriculas = leerMatriculas()
@@ -2738,6 +2776,25 @@ const api = {
   formacionEmpresa: {
     listar: async (grupoClaseId: number, alumnoId?: number): Promise<PeriodoFormacionEmpresa[]> =>
       formacionDeGrupo(grupoClaseId, alumnoId),
+    listarRas: async (grupoClaseId: number, alumnoId: number) => {
+      const crudo = localStorage.getItem(CLAVE_FORMACION_RA)
+      const todos = crudo ? (JSON.parse(crudo) as Record<string, unknown[]>) : {}
+      return (todos[`${grupoClaseId}:${alumnoId}`] ?? []) as {
+        ra_codigo: string
+        tipo: 'total' | 'parcial'
+      }[]
+    },
+    guardarRas: async (
+      grupoClaseId: number,
+      alumnoId: number,
+      ras: { ra_codigo: string; tipo: 'total' | 'parcial' }[]
+    ) => {
+      const crudo = localStorage.getItem(CLAVE_FORMACION_RA)
+      const todos = crudo ? (JSON.parse(crudo) as Record<string, unknown[]>) : {}
+      todos[`${grupoClaseId}:${alumnoId}`] = ras
+      localStorage.setItem(CLAVE_FORMACION_RA, JSON.stringify(todos))
+      return ras
+    },
     crear: async (
       grupoClaseId: number,
       alumnoId: number,

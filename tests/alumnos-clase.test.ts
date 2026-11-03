@@ -8,6 +8,7 @@ import {
   crearAlumnoEnGrupoClase,
   desmatricularDeGrupoClase,
   listarAlumnosDeGrupoClase,
+  marcarPerdidaEvaluacionContinua,
   obtenerAlumnoClase
 } from '../src/main/db/repositorios/alumnos-clase'
 
@@ -118,6 +119,25 @@ describe('alumnado por grupo de clase', () => {
 
     const activo = activarAlumnoClase(db, alta.alumno.id, true)
     expect(activo?.activo).toBe(true)
+  })
+
+  it('marca la pérdida de evaluación continua solo en ese grupo', () => {
+    const alta = crearAlumnoEnGrupoClase(db, presencial, {
+      nombre: 'Ana',
+      apellidos: 'García'
+    })
+    crearAlumnoEnGrupoClase(db, semipresencial, {
+      nombre: 'Ana',
+      apellidos: 'García'
+    })
+
+    const marcada = marcarPerdidaEvaluacionContinua(db, presencial, alta.alumno.id, true)
+    expect(marcada?.perdida_evaluacion_continua).toBe(true)
+    expect(listarAlumnosDeGrupoClase(db, presencial)[0].perdida_evaluacion_continua).toBe(true)
+    expect(listarAlumnosDeGrupoClase(db, semipresencial)[0].perdida_evaluacion_continua).toBe(false)
+
+    const retirada = marcarPerdidaEvaluacionContinua(db, presencial, alta.alumno.id, false)
+    expect(retirada?.perdida_evaluacion_continua).toBe(false)
   })
 
   it('quita del grupo sin borrar al alumno', () => {

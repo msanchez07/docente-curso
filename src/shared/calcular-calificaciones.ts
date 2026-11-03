@@ -271,6 +271,7 @@ export function calcularResumenClase(
 
     const rasNoSuperados = ras.filter((ra) => !ra.superado).map((ra) => ra.codigo)
     const todosRasSuperados = ras.length === 0 || rasNoSuperados.length === 0
+    const perdidaContinua = Boolean(alumno.perdida_evaluacion_continua)
 
     const usaPesosRa = ras.length > 0
     const notaFinal = usaPesosRa
@@ -290,11 +291,13 @@ export function calcularResumenClase(
         )
 
     const avaluacionesSuspensas = avaluaciones.some((avaluacion) => avaluacion.suspensa)
-    const vaAConvocatoria = usaPesosRa
-      ? (notaFinal !== null && notaFinal < minAprobado) || !todosRasSuperados
-      : avaluacionesSuspensas ||
-        (notaFinal !== null && notaFinal < minAprobado) ||
-        !todosRasSuperados
+    const vaAConvocatoria =
+      perdidaContinua ||
+      (usaPesosRa
+        ? (notaFinal !== null && notaFinal < minAprobado) || !todosRasSuperados
+        : avaluacionesSuspensas ||
+          (notaFinal !== null && notaFinal < minAprobado) ||
+          !todosRasSuperados)
 
     return {
       alumno,
@@ -305,7 +308,8 @@ export function calcularResumenClase(
       rasNoSuperados,
       todosRasSuperados,
       notaFinal,
-      aprobado: notaFinal !== null && notaFinal >= minAprobado && !vaAConvocatoria,
+      aprobado:
+        !perdidaContinua && notaFinal !== null && notaFinal >= minAprobado && !vaAConvocatoria,
       vaAConvocatoria,
       incompleta
     }

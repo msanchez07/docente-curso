@@ -23,6 +23,7 @@ interface FilaAlumnoClase {
   email: string | null
   activo: number
   grupos_clase: string | null
+  perdida_evaluacion_continua?: number
 }
 
 function aAlumnoClase(fila: FilaAlumnoClase): AlumnoClase {
@@ -33,17 +34,22 @@ function aAlumnoClase(fila: FilaAlumnoClase): AlumnoClase {
     dni: fila.dni,
     email: fila.email,
     activo: fila.activo === 1,
-    grupos_clase: fila.grupos_clase ? fila.grupos_clase.split(',').map(Number) : []
+    grupos_clase: fila.grupos_clase ? fila.grupos_clase.split(',').map(Number) : [],
+    perdida_evaluacion_continua: fila.perdida_evaluacion_continua === 1
   }
 }
 
 export function listarAlumnosDeGrupoClase(db: Bd, grupoClaseId: number): AlumnoClase[] {
   const filas = db
     .prepare(
-      `${SELECT}
-        JOIN matriculas_clase m ON m.alumno_id = a.id
-       WHERE m.grupo_clase_id = ?
-       ORDER BY a.apellidos, a.nombre`
+      `SELECT a.id, a.nombre, a.apellidos, a.dni, a.email, a.activo,
+              (SELECT GROUP_CONCAT(mc.grupo_clase_id)
+                 FROM matriculas_clase mc WHERE mc.alumno_id = a.id) AS grupos_clase,
+              m.perdida_evaluacion_continua
+         FROM alumnos a
+         JOIN matriculas_clase m ON m.alumno_id = a.id
+        WHERE m.grupo_clase_id = ?
+        ORDER BY a.apellidos, a.nombre`
     )
     .all(grupoClaseId) as FilaAlumnoClase[]
   return filas.map(aAlumnoClase)
@@ -95,6 +101,25 @@ export function crearAlumnoEnGrupoClase(
     alumno: obtenerAlumnoClase(db, alumnoId)!,
     creado: !previo
   }
+}
+
+export function marcarPerdidaEvaluacionContinua(
+  db: Bd,
+  grupoClaseId: number,
+  alumnoId: number,
+  perdida: boolean
+): AlumnoClase | null {
+  const resultado = db
+    .prepare(
+      `UPDATE matriculas_clase
+          SET perdida_evaluacion_continua = ?
+        WHERE grupo_clase_id = ? AND alumno_id = ?`
+    )
+    .run(perdida ? 1 : 0, grupoClaseId, alumnoId)
+  if (resultado.changes === 0) return null
+  return (
+    listarAlumnosDeGrupoClase(db, grupoClaseId).find((alumno) => alumno.id === alumnoId) ?? null
+  )
 }
 
 export function activarAlumnoClase(db: Bd, alumnoId: number, activo: boolean): AlumnoClase | null {

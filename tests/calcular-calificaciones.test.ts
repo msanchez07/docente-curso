@@ -114,6 +114,19 @@ describe('cálculo de calificaciones por grupo', () => {
     expect(fila.vaAConvocatoria).toBe(true)
   })
 
+  it('marca a convocatoria si pierde la evaluación continua', () => {
+    const resumen = calcularResumenClase(
+      grupo,
+      modeloPorDefecto('presencial'),
+      entregas,
+      [{ ...alumno, perdida_evaluacion_continua: true }],
+      notas({ 1: 8, 2: 6, 3: 7 })
+    )
+    const fila = resumen.alumnos[0]
+    expect(fila.vaAConvocatoria).toBe(true)
+    expect(fila.aprobado).toBe(false)
+  })
+
   it('suspende la categoría si una entrega no llega al mínimo', () => {
     const resumen = calcularResumenClase(
       grupo,

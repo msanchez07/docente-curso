@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.1.5](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.5)** —
+> **📦 [Descargar Aula Nova 1.1.6](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.6)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -26,14 +26,14 @@ empresa e informes trazables al BOE.
 Aplicación funcional en **versión 1.1**. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **238 tests**
+- `npm test` ✅ **241 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.1.5
+## Release 1.1.6
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.1.5](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.5)**:
+**[GitHub Releases v1.1.6](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.6)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -79,6 +79,8 @@ restringidos a la previsualización web de desarrollo.
   unidades y muestra los días de clase de la quincena también en la vista de tabla.
 - **1.1.5:** añade fechas de tipo «Otras» en programación didáctica, unifica la terminología
   «Evaluación» y elimina el aviso de calificación por unidades que sobraba en Criterios.
+- **1.1.6:** añade la pérdida de evaluación continua por alumno, los RA totales/parciales de
+  formación en empresa, los pesos propios en el resumen de calificaciones y la tabla de «Ver todo».
 
 ---
 

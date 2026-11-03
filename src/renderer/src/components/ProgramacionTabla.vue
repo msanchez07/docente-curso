@@ -839,12 +839,7 @@ async function exportarPdf(): Promise<void> {
               </div>
             </div>
 
-            <div v-if="filasVisibles.length === 0" class="vacio">
-              <p>No hay días en esta vista.</p>
-              <button class="boton" type="button" @click="nuevaFilaTabla">Añadir fila</button>
-            </div>
-
-            <div v-else class="tabla-scroll">
+            <div class="tabla-scroll">
               <table class="tabla programacion__tabla">
                 <thead>
                   <tr>
@@ -858,6 +853,9 @@ async function exportarPdf(): Promise<void> {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr v-if="filasVisibles.length === 0">
+                    <td colspan="7" class="vacio">No hay días en esta vista.</td>
+                  </tr>
                   <tr
                     v-for="(fila, indiceFila) in filasVisibles"
                     :key="fila.id || `${fila.fecha}-${indiceFila}`"

@@ -55,6 +55,13 @@ function accionesAlumno(alumno: AlumnoClase): AccionMenu[] {
     { id: 'formacion', etiqueta: 'Formación en empresa', icono: 'formacion' },
     { id: 'editar', etiqueta: 'Editar alumno', icono: 'editar' },
     {
+      id: 'continua',
+      etiqueta: alumno.perdida_evaluacion_continua
+        ? 'Retirar pérdida de evaluación continua'
+        : 'Marcar pérdida de evaluación continua',
+      icono: 'rae'
+    },
+    {
       id: 'estado',
       etiqueta: alumno.activo ? 'Desactivar en el grupo' : 'Reactivar en el grupo',
       icono: alumno.activo ? 'desactivar' : 'reactivar'
@@ -78,6 +85,8 @@ function ejecutarAccionAlumno(alumno: AlumnoClase, accion: string): void {
     })
   } else if (accion === 'editar') {
     editar(alumno)
+  } else if (accion === 'continua') {
+    void alternarPerdidaContinua(alumno)
   } else if (accion === 'estado') {
     void alternarActivo(alumno)
   } else if (accion === 'quitar') {
@@ -229,6 +238,22 @@ async function guardar(): Promise<void> {
     errorFormulario.value = (e as Error).message ?? String(e)
   } finally {
     guardando.value = false
+  }
+}
+
+async function alternarPerdidaContinua(alumno: AlumnoClase): Promise<void> {
+  if (!grupo.value) return
+  error.value = null
+  try {
+    const perdida = !alumno.perdida_evaluacion_continua
+    await window.api.alumnosClase.marcarPerdidaContinua(grupo.value.id, alumno.id, perdida)
+    mensaje.value = perdida
+      ? `«${alumno.apellidos}, ${alumno.nombre}» marcado con pérdida de evaluación continua.`
+      : `«${alumno.apellidos}, ${alumno.nombre}» vuelve a evaluación continua.`
+    notificar(mensaje.value)
+    await refrescar()
+  } catch (e) {
+    error.value = (e as Error).message ?? String(e)
   }
 }
 
@@ -496,6 +521,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
                   <th scope="col">Alumno</th>
                   <th scope="col">Correo</th>
                   <th scope="col">Estado</th>
+                  <th scope="col">Evaluación continua</th>
                   <th scope="col" class="acciones">Acciones</th>
                 </tr>
               </thead>
@@ -530,6 +556,14 @@ async function alElegirFichero(evento: Event): Promise<void> {
                   <td>
                     <span class="chip" :class="alumno.activo ? 'chip--ok' : ''">
                       {{ alumno.activo ? 'Activo' : 'Inactivo' }}
+                    </span>
+                  </td>
+                  <td>
+                    <span
+                      class="chip"
+                      :class="alumno.perdida_evaluacion_continua ? 'chip--aviso' : 'chip--ok'"
+                    >
+                      {{ alumno.perdida_evaluacion_continua ? 'Pierde continua' : 'Continua' }}
                     </span>
                   </td>
                   <td class="acciones">

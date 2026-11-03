@@ -2,7 +2,13 @@
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
-import type { AlumnoClase, GrupoClase, PeriodoFormacionEmpresa } from '@shared/tipos'
+import type {
+  AlumnoClase,
+  CriterioDisponible,
+  GrupoClase,
+  PeriodoFormacionEmpresa,
+  TipoRaFormacionEmpresa
+} from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 
 interface FormFormacion {
@@ -26,6 +32,10 @@ const mensaje = ref<string | null>(null)
 const editando = ref<PeriodoFormacionEmpresa | null>(null)
 const periodoABorrar = ref<PeriodoFormacionEmpresa | null>(null)
 const borrando = ref(false)
+const rasFormacion = ref<
+  { codigo: string; descripcion: string; tipo: 'no' | TipoRaFormacionEmpresa }[]
+>([])
+const guardandoRas = ref(false)
 
 const form = reactive<FormFormacion>({
   fecha_inicio: '',
@@ -112,7 +122,22 @@ async function cargar(): Promise<void> {
       error.value = 'No se ha encontrado el alumno en este grupo.'
       return
     }
-    periodos.value = await window.api.formacionEmpresa.listar(grupo.value.id, alumno.value.id)
+    const [listaPeriodos, criterios, rasGuardados] = await Promise.all([
+      window.api.formacionEmpresa.listar(grupo.value.id, alumno.value.id),
+      window.api.entregasClase.criterios(grupo.value.id),
+      window.api.formacionEmpresa.listarRas(grupo.value.id, alumno.value.id)
+    ])
+    periodos.value = listaPeriodos
+    const unicos = new Map<string, CriterioDisponible>()
+    for (const criterio of criterios) {
+      if (!unicos.has(criterio.raCodigo)) unicos.set(criterio.raCodigo, criterio)
+    }
+    const guardado = new Map(rasGuardados.map((ra) => [ra.ra_codigo, ra.tipo]))
+    rasFormacion.value = [...unicos.values()].map((ra) => ({
+      codigo: ra.raCodigo,
+      descripcion: ra.raDescripcion,
+      tipo: guardado.get(ra.raCodigo) ?? 'no'
+    }))
     resetFormulario()
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
@@ -148,6 +173,26 @@ async function guardar(): Promise<void> {
     errorFormulario.value = (e as Error).message ?? String(e)
   } finally {
     guardando.value = false
+  }
+}
+
+async function guardarRas(): Promise<void> {
+  if (!grupo.value || !alumno.value) return
+  guardandoRas.value = true
+  error.value = null
+  try {
+    await window.api.formacionEmpresa.guardarRas(
+      grupo.value.id,
+      alumno.value.id,
+      rasFormacion.value
+        .filter((ra) => ra.tipo !== 'no')
+        .map((ra) => ({ ra_codigo: ra.codigo, tipo: ra.tipo as TipoRaFormacionEmpresa }))
+    )
+    mensaje.value = 'RA de formación en empresa guardados.'
+  } catch (e) {
+    error.value = (e as Error).message ?? String(e)
+  } finally {
+    guardandoRas.value = false
   }
 }
 
@@ -358,6 +403,56 @@ async function borrar(): Promise<void> {
           </form>
         </aside>
       </div>
+
+      <section class="tarjeta" style="margin-top: 16px">
+        <header class="entrega-form__seccion-cabecera">
+          <div>
+            <h3>RA en la formación en empresa</h3>
+            <p class="tenue">
+              Indica qué resultados de aprendizaje se trabajan en la empresa y si se desarrollan de
+              forma total o parcial.
+            </p>
+          </div>
+          <button
+            class="boton boton--principal"
+            type="button"
+            :disabled="guardandoRas"
+            @click="guardarRas"
+          >
+            {{ guardandoRas ? 'Guardando…' : 'Guardar RA' }}
+          </button>
+        </header>
+
+        <div v-if="rasFormacion.length === 0" class="vacio">
+          No hay RA cargados para este módulo.
+        </div>
+        <div v-else class="tabla-scroll">
+          <table class="tabla tabla--compacta">
+            <thead>
+              <tr>
+                <th>RA</th>
+                <th>Descripción</th>
+                <th>Trabajo en empresa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="ra in rasFormacion" :key="ra.codigo">
+                <td>
+                  <span class="chip">{{ ra.codigo }}</span>
+                </td>
+                <td>{{ ra.descripcion }}</td>
+                <td>
+                  <select v-model="ra.tipo" :aria-label="`Tipo de ${ra.codigo}`">
+                    <option value="no">No va</option>
+                    <option value="parcial">Parcial</option>
+                    <option value="total">Total</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       <Confirmacion
         v-if="periodoABorrar"
