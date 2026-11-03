@@ -177,7 +177,9 @@ watch(id, cargar)
               @click="seleccionarRa(ra.raCodigo)"
             >
               <span class="boe__ra-codigo">{{ ra.raCodigo }}</span>
-              <span class="boe__ra-descripcion">{{ ra.raDescripcion }}</span>
+              <span class="boe__ra-descripcion" :title="ra.raDescripcion">{{
+                ra.raDescripcion
+              }}</span>
               <span class="boe__ra-meta">
                 <span>{{ ra.ce.length }} CE</span>
                 <span

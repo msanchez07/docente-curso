@@ -440,32 +440,26 @@ function quitarCategoria(indice: number): void {
             Peso de cada resultado de aprendizaje en la nota final. Por defecto se reparte el 100 %
             a partes iguales.
           </p>
-          <table class="tabla">
-            <thead>
-              <tr>
-                <th>Resultado de aprendizaje</th>
-                <th class="num">Peso</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="ra in ras ?? []" :key="ra.codigo">
-                <td>
-                  <strong>{{ ra.codigo }}</strong>
-                  <span class="tenue">{{ ra.descripcion }}</span>
-                </td>
-                <td class="num">
-                  <input
-                    v-model.number="modelo.pesosRa![ra.codigo]"
-                    type="number"
-                    min="0"
-                    max="100"
-                    step="0.01"
-                    class="editor-criterios__peso"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="criterios__ra-lista">
+            <div v-for="ra in ras ?? []" :key="ra.codigo" class="criterios__ra-fila">
+              <div class="criterios__ra-datos">
+                <span class="chip">{{ ra.codigo }}</span>
+                <p class="criterios__ra-descripcion">{{ ra.descripcion }}</p>
+              </div>
+              <label class="criterios__ra-peso">
+                <span class="visualmente-oculto">Peso de {{ ra.codigo }}</span>
+                <input
+                  v-model.number="modelo.pesosRa![ra.codigo]"
+                  type="number"
+                  min="0"
+                  max="100"
+                  step="0.01"
+                  class="editor-criterios__peso"
+                />
+                <span>%</span>
+              </label>
+            </div>
+          </div>
           <div class="criterios__pie-fila">
             <span class="barra__espacio"></span>
             <span class="chip" :class="pesosRaOk ? 'chip--ok' : 'chip--aviso'">
