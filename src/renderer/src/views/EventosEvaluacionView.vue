@@ -49,7 +49,8 @@ const grupoId = computed(() => Number(route.params.grupoId))
 const hoy = new Date().toISOString().slice(0, 10)
 const opcionesTipo = [
   { value: 'evaluacion', label: 'Evaluación' },
-  { value: 'examen', label: 'Examen' }
+  { value: 'examen', label: 'Examen' },
+  { value: 'otro', label: 'Otras' }
 ]
 
 const proximo = computed(() => eventos.value.find((evento) => evento.fecha >= hoy) ?? null)
@@ -59,6 +60,7 @@ const totalEvaluaciones = computed(
 const totalExamenes = computed(
   () => eventos.value.filter((evento) => evento.tipo === 'examen').length
 )
+const totalOtras = computed(() => eventos.value.filter((evento) => evento.tipo === 'otro').length)
 
 function fechaCorta(fecha: string): string {
   const [anio, mes, dia] = fecha.split('-')
@@ -66,7 +68,9 @@ function fechaCorta(fecha: string): string {
 }
 
 function etiquetaTipo(tipo: string): string {
-  return tipo === 'evaluacion' ? 'Evaluación' : 'Examen'
+  if (tipo === 'evaluacion') return 'Evaluación'
+  if (tipo === 'examen') return 'Examen'
+  return 'Otras'
 }
 
 function nombreAvaluacion(id: string | null): string {
@@ -236,14 +240,14 @@ async function alElegirFichero(evento: Event): Promise<void> {
 <template>
   <section class="vista vista--ancha">
     <header v-if="!embebido" class="vista__cabecera">
-      <h2>Evaluaciones y exámenes</h2>
+      <h2>Evaluaciones, exámenes y otras fechas</h2>
       <p v-if="grupo" class="tenue">
         Curso {{ grupo.curso_academico_nombre }} · {{ grupo.nombre }}
       </p>
     </header>
     <header v-else class="seccion__cabecera">
       <div>
-        <h3>Evaluaciones y exámenes</h3>
+        <h3>Evaluaciones, exámenes y otras fechas</h3>
         <p class="tenue">Fechas clave del grupo ordenadas por día.</p>
       </div>
     </header>
@@ -268,6 +272,10 @@ async function alElegirFichero(evento: Event): Promise<void> {
           <span class="tenue">Exámenes</span>
           <strong>{{ totalExamenes }}</strong>
         </div>
+        <div class="tarjeta">
+          <span class="tenue">Otras</span>
+          <strong>{{ totalOtras }}</strong>
+        </div>
       </section>
 
       <div class="barra">
@@ -288,8 +296,8 @@ async function alElegirFichero(evento: Event): Promise<void> {
             <h3>Importar fechas</h3>
             <p class="tenue">
               Acepta un array de objetos o
-              <span class="monospace">{ "eventos": [...] }</span>. Campos: tipo (evaluacion/examen),
-              titulo, fecha, hora, avaluacion y observaciones.
+              <span class="monospace">{ "eventos": [...] }</span>. Campos: tipo
+              (evaluacion/examen/otro), titulo, fecha, hora, avaluacion y observaciones.
             </p>
           </div>
         </div>
@@ -337,7 +345,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
           <header class="entrega-form__seccion-cabecera">
             <div>
               <h3>Calendario</h3>
-              <p class="tenue">Evaluaciones y exámenes ordenados por fecha.</p>
+              <p class="tenue">Evaluaciones, exámenes y otras fechas ordenadas por día.</p>
             </div>
           </header>
 
@@ -352,7 +360,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
                   <th>Fecha</th>
                   <th>Tipo</th>
                   <th>Título</th>
-                  <th>Avaluación</th>
+                  <th>Evaluación</th>
                   <th>Hora</th>
                   <th>Observaciones</th>
                   <th class="acciones">Acciones</th>
@@ -364,7 +372,13 @@ async function alElegirFichero(evento: Event): Promise<void> {
                   <td>
                     <span
                       class="chip"
-                      :class="evento.tipo === 'examen' ? 'chip--aviso' : 'chip--ok'"
+                      :class="
+                        evento.tipo === 'examen'
+                          ? 'chip--aviso'
+                          : evento.tipo === 'evaluacion'
+                            ? 'chip--ok'
+                            : ''
+                      "
                     >
                       {{ etiquetaTipo(evento.tipo) }}
                     </span>
@@ -391,7 +405,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
           <header class="entrega-form__seccion-cabecera">
             <div>
               <h3>{{ editando ? 'Editar fecha' : 'Añadir fecha' }}</h3>
-              <p class="tenue">Evaluación o examen del grupo.</p>
+              <p class="tenue">Evaluación, examen u otra fecha del grupo.</p>
             </div>
             <span v-if="editando" class="chip chip--aviso">editando</span>
           </header>
@@ -414,7 +428,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
               <input
                 id="evento-titulo"
                 v-model="form.titulo"
-                placeholder="Examen AV1 / Sesión de evaluación"
+                placeholder="Examen AV1 / Sesión de evaluación / Nota"
                 required
               />
             </div>
@@ -427,7 +441,7 @@ async function alElegirFichero(evento: Event): Promise<void> {
               <input id="evento-hora" v-model="form.hora" type="time" />
             </div>
             <div class="campo campo--ancho">
-              <label for="evento-avaluacion">Avaluación</label>
+              <label for="evento-avaluacion">Evaluación</label>
               <select id="evento-avaluacion" v-model="form.avaluacion_id">
                 <option value="">Sin asignar</option>
                 <option

@@ -198,7 +198,7 @@ async function aplicarATodos(): Promise<void> {
               {{ categoriasOk ? '✓' : '⚠' }} {{ sumaCategorias }} %
             </span>
           </header>
-          <p class="tenue">Peso de cada tipo de entrega dentro de la avaluación.</p>
+          <p class="tenue">Peso de cada tipo de entrega dentro de la evaluación.</p>
 
           <div class="lista-pesos">
             <div class="fila-peso fila-peso--cabecera" aria-hidden="true">
@@ -241,7 +241,7 @@ async function aplicarATodos(): Promise<void> {
 
         <section class="tarjeta" aria-labelledby="titulo-avaluaciones">
           <header class="cabecera-criterios">
-            <h3 id="titulo-avaluaciones">Avaluaciones</h3>
+            <h3 id="titulo-avaluaciones">Evaluaciones</h3>
             <span class="barra__espacio"></span>
             <span :class="avaluacionesOk ? 'chip chip--ok' : 'chip chip--aviso'" aria-live="polite">
               {{ avaluacionesOk ? '✓' : '⚠' }} {{ sumaAvaluaciones }} %
@@ -264,12 +264,12 @@ async function aplicarATodos(): Promise<void> {
               <input
                 v-model="av.id"
                 class="monospace"
-                :aria-label="`Código de la avaluación ${i + 1}`"
+                :aria-label="`Código de la evaluación ${i + 1}`"
                 placeholder="AV1"
               />
               <input
                 v-model="av.nombre"
-                :aria-label="`Nombre de la avaluación ${i + 1}`"
+                :aria-label="`Nombre de la evaluación ${i + 1}`"
                 placeholder="1ª evaluación"
               />
               <span class="entrada-peso">
@@ -279,13 +279,13 @@ async function aplicarATodos(): Promise<void> {
                   min="0"
                   max="100"
                   step="0.1"
-                  :aria-label="`Peso de ${av.nombre || `la avaluación ${i + 1}`}, en porcentaje`"
+                  :aria-label="`Peso de ${av.nombre || `la evaluación ${i + 1}`}, en porcentaje`"
                 />
                 <span aria-hidden="true">%</span>
               </span>
               <button
                 class="icono-boton"
-                :aria-label="`Quitar ${av.nombre || `la avaluación ${i + 1}`}`"
+                :aria-label="`Quitar ${av.nombre || `la evaluación ${i + 1}`}`"
                 title="Quitar"
                 @click="quitarAvaluacion(i)"
               >
@@ -295,7 +295,7 @@ async function aplicarATodos(): Promise<void> {
           </div>
 
           <button class="boton boton--sutil" style="margin-top: 16px" @click="anadirAvaluacion">
-            + Añadir avaluación
+            + Añadir evaluación
           </button>
         </section>
       </div>

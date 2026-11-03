@@ -74,6 +74,17 @@ describe('fechas de evaluaciones y exámenes', () => {
     expect(listarEventosEvaluacion(db, grupoId)).toHaveLength(0)
   })
 
+  it('crea una fecha de tipo otras', () => {
+    const evento = crearEventoEvaluacion(db, grupoId, {
+      tipo: 'otro',
+      titulo: 'Reunión de departamento',
+      fecha: '2026-11-20',
+      observaciones: 'Llevar acta'
+    })
+    expect(evento.tipo).toBe('otro')
+    expect(listarEventosEvaluacion(db, grupoId)[0].titulo).toBe('Reunión de departamento')
+  })
+
   it('importa eventos válidos y conserva los errores', () => {
     const resultado = importarEventosEvaluacion(
       db,

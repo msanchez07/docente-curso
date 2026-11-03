@@ -218,7 +218,8 @@ export const ESQUEMA_EVENTOS = {
       properties: {
         eventos: { type: 'array', items: { $ref: '#/$defs/evento' } },
         evaluaciones: { type: 'array', items: { $ref: '#/$defs/evento' } },
-        examenes: { type: 'array', items: { $ref: '#/$defs/evento' } }
+        examenes: { type: 'array', items: { $ref: '#/$defs/evento' } },
+        otras: { type: 'array', items: { $ref: '#/$defs/evento' } }
       },
       additionalProperties: false
     }
@@ -229,13 +230,14 @@ export const ESQUEMA_EVENTOS = {
       properties: {
         tipo: {
           type: 'string',
-          enum: ['evaluacion', 'examen'],
-          description: 'Obligatorio salvo cuando el evento va dentro de evaluaciones o examenes.'
+          enum: ['evaluacion', 'examen', 'otro'],
+          description:
+            'Obligatorio salvo cuando el evento va dentro de evaluaciones, examenes u otras.'
         },
         titulo: { type: 'string', description: 'Título visible de la fecha.' },
         fecha: { type: 'string', description: 'Fecha ISO (2026-11-19) o dd/mm/aaaa.' },
         hora: { type: 'string', pattern: '^([01]?\\d|2[0-3]):[0-5]\\d$', description: 'HH:MM.' },
-        avaluacion: { type: ['string', 'null'], description: 'Id de la avaluación (AV1, AV2…).' },
+        avaluacion: { type: ['string', 'null'], description: 'Id de la evaluación (AV1, AV2…).' },
         observaciones: {
           type: ['string', 'null'],
           description: 'Aula, instrucciones, incidencias…'

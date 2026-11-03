@@ -18,7 +18,7 @@ import type {
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
 
-type TipoHito = 'entrega' | 'examen' | 'evaluacion' | 'no_lectivo'
+type TipoHito = 'entrega' | 'examen' | 'evaluacion' | 'otro' | 'no_lectivo'
 
 interface HitoGeneral {
   id: string
@@ -65,6 +65,7 @@ const TIPOS_CALENDARIO = [
   { id: 'entrega', etiqueta: 'Entregas' },
   { id: 'examen', etiqueta: 'Exámenes' },
   { id: 'evaluacion', etiqueta: 'Evaluaciones' },
+  { id: 'otro', etiqueta: 'Otras' },
   { id: 'no_lectivo', etiqueta: 'No lectivos' }
 ] as const
 
@@ -193,7 +194,7 @@ function destinoHito(item: HitoGeneral): { name: string; params: Record<string, 
       params: { grupoId: item.grupoId, entregaId: item.entregaId }
     }
   }
-  if (item.tipo === 'examen' || item.tipo === 'evaluacion') {
+  if (item.tipo === 'examen' || item.tipo === 'evaluacion' || item.tipo === 'otro') {
     return { name: 'evaluaciones', params: { grupoId: item.grupoId } }
   }
   return { name: 'grupo', params: { id: item.grupoId } }
@@ -222,7 +223,7 @@ function hitosDeGrupo(
   const clave = (fecha: string, titulo: string): string => `${fecha}|${titulo.toLowerCase()}`
 
   for (const evento of eventos) {
-    const tipo: TipoHito = evento.tipo === 'examen' ? 'examen' : 'evaluacion'
+    const tipo: TipoHito = evento.tipo
     items.set(clave(evento.fecha, evento.titulo), {
       id: `evento-${evento.id}-${grupo.id}`,
       fecha: evento.fecha,
@@ -391,7 +392,7 @@ function imprimirCalendario(): void {
     )
   }
   const html = `<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Calendario · ${escapar(mesAgendaTexto.value)}</title>
-  <style>@page{size:A4 landscape;margin:10mm}body{font:10px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d2939}h1{font-size:18px;margin:0 0 3px}p{margin:0 0 10px;color:#667085}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{border:1px solid #dbe5ee;vertical-align:top;padding:5px;height:78px}th{background:#eef4f8;color:#36536b;font-size:8px;text-transform:uppercase}td{font-size:9px}td.fuera{background:#f8fafc;color:#98a2b3}td>strong{display:block;margin-bottom:4px;font-size:11px}.evento{margin:2px 0;padding:2px 4px;border-left:3px solid #2563eb;background:#f5f9ff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.evento--examen{border-color:#d98a2b;background:#fffbf0}.evento--evaluacion{border-color:#067647;background:#f4fdf8}.evento--no_lectivo{border-color:#b42318;background:#fef3f2}</style></head><body>
+  <style>@page{size:A4 landscape;margin:10mm}body{font:10px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1d2939}h1{font-size:18px;margin:0 0 3px}p{margin:0 0 10px;color:#667085}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{border:1px solid #dbe5ee;vertical-align:top;padding:5px;height:78px}th{background:#eef4f8;color:#36536b;font-size:8px;text-transform:uppercase}td{font-size:9px}td.fuera{background:#f8fafc;color:#98a2b3}td>strong{display:block;margin-bottom:4px;font-size:11px}.evento{margin:2px 0;padding:2px 4px;border-left:3px solid #2563eb;background:#f5f9ff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.evento--examen{border-color:#d98a2b;background:#fffbf0}.evento--evaluacion{border-color:#067647;background:#f4fdf8}.evento--otro{border-color:#667085;background:#f8fafc}.evento--no_lectivo{border-color:#b42318;background:#fef3f2}</style></head><body>
   <h1>Calendario del curso · ${escapar(mesAgendaTexto.value)}</h1>
   <p>${modulos.value.map((modulo) => `${escapar(modulo.grupo.modulo_siglas)} (${escapar(modulo.grupo.modalidad)})`).join(' · ')}</p>
   <table><thead><tr>${DIAS_SEMANA.map((dia) => `<th>${dia.corto}</th>`).join('')}</tr></thead><tbody>${filas.join('')}</tbody></table>

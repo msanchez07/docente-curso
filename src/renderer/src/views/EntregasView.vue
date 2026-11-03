@@ -502,7 +502,7 @@ async function confirmarBloqueo(): Promise<void> {
     <div v-else-if="grupo && !criterios" class="tarjeta">
       <h3>Primero, los criterios</h3>
       <p class="tenue">
-        Las entregas se ubican en una avaluación y una categoría. Define los criterios de
+        Las entregas se ubican en una evaluación y una categoría. Define los criterios de
         calificación del grupo antes de crearlas.
       </p>
       <RouterLink
@@ -589,7 +589,7 @@ async function confirmarBloqueo(): Promise<void> {
                 <button class="boton" type="button" @click="limpiarFiltros">Limpiar filtros</button>
               </div>
             </template>
-            <template v-else>No hay entregas en esta avaluación.</template>
+            <template v-else>No hay entregas en esta evaluación.</template>
           </div>
 
           <div v-else class="tabla-scroll">

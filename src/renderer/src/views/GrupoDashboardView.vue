@@ -56,7 +56,7 @@ const hoy = isoLocal(new Date())
 const limite = isoLocal(sumarDias(new Date(), 15))
 const mesAgenda = ref(new Date(new Date().getFullYear(), new Date().getMonth(), 1))
 
-type TipoAgenda = 'entrega' | 'examen' | 'evaluacion' | 'no_lectivo'
+type TipoAgenda = 'entrega' | 'examen' | 'evaluacion' | 'otro' | 'no_lectivo'
 
 interface ItemAgenda {
   id: string
@@ -123,7 +123,7 @@ const agendaItems = computed<ItemAgenda[]>(() => {
   const clave = (fecha: string, titulo: string): string => `${fecha}|${titulo.toLowerCase()}`
 
   for (const evento of eventos.value) {
-    const tipo: TipoAgenda = evento.tipo === 'examen' ? 'examen' : 'evaluacion'
+    const tipo: TipoAgenda = evento.tipo
     items.set(clave(evento.fecha, evento.titulo), {
       id: `evento-${evento.id}`,
       fecha: evento.fecha,

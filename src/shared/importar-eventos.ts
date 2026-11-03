@@ -28,9 +28,7 @@ function normalizarFecha(valor: string): string | null {
     const [, dia, mes, anio] = coincidencia
     const iso = `${anio}-${mes.padStart(2, '0')}-${dia.padStart(2, '0')}`
     const fecha = new Date(`${iso}T00:00:00Z`)
-    return !Number.isNaN(fecha.getTime()) && fecha.toISOString().slice(0, 10) === iso
-      ? iso
-      : null
+    return !Number.isNaN(fecha.getTime()) && fecha.toISOString().slice(0, 10) === iso ? iso : null
   }
   return null
 }
@@ -57,10 +55,15 @@ function normalizarTipo(valor: string): TipoEventoEvaluacion | null {
   const tipo = normalizarClave(valor)
   if (tipo.startsWith('evaluacion') || tipo === 'evaluaciones') return 'evaluacion'
   if (tipo.startsWith('examen') || tipo === 'examenes') return 'examen'
+  if (tipo.startsWith('otro') || tipo.startsWith('otra') || tipo === 'otras' || tipo === 'notas') {
+    return 'otro'
+  }
   return null
 }
 
-function extraerLista(datos: unknown): { elementos: unknown[]; tipoFijo?: TipoEventoEvaluacion } | null {
+function extraerLista(
+  datos: unknown
+): { elementos: unknown[]; tipoFijo?: TipoEventoEvaluacion } | null {
   if (Array.isArray(datos)) return { elementos: datos }
   if (datos !== null && typeof datos === 'object') {
     const objeto = datos as Record<string, unknown>
@@ -146,12 +149,13 @@ export function parsearEventosEvaluacion(texto: string): ResultadoEventosImporta
       titulo,
       fecha,
       hora,
-      avaluacion_id:
-        buscar(objeto, [/^avaluacion/, /^evaluacion/, /^trimestre/]) || null,
+      avaluacion_id: buscar(objeto, [/^avaluacion/, /^evaluacion/, /^trimestre/]) || null,
       observaciones: buscar(objeto, [/^observacion/, /^notas?/, /^comentario/]) || null
     })
   })
 
-  eventos.sort((a, b) => a.fecha.localeCompare(b.fecha) || (a.hora ?? '').localeCompare(b.hora ?? ''))
+  eventos.sort(
+    (a, b) => a.fecha.localeCompare(b.fecha) || (a.hora ?? '').localeCompare(b.hora ?? '')
+  )
   return { eventos, errores }
 }

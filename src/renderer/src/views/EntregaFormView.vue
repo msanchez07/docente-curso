@@ -363,7 +363,7 @@ async function guardar(): Promise<void> {
     <div v-else-if="sinCriterios" class="tarjeta">
       <h3>Primero, los criterios</h3>
       <p class="tenue">
-        Las entregas se ubican en una avaluación y una categoría. Define los criterios de
+        Las entregas se ubican en una evaluación y una categoría. Define los criterios de
         calificación del grupo antes de crearlas.
       </p>
       <RouterLink
@@ -658,7 +658,7 @@ async function guardar(): Promise<void> {
                 <dd>{{ cursoFormulario }}</dd>
               </div>
               <div>
-                <dt>Avaluación</dt>
+                <dt>Evaluación</dt>
                 <dd>{{ avaluacionSeleccionada }}</dd>
               </div>
               <div>

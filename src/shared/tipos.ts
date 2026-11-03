@@ -244,7 +244,7 @@ export interface VistaPreviaEntregas {
 }
 
 /** Fecha de evaluación o examen de un grupo. */
-export type TipoEventoEvaluacion = 'evaluacion' | 'examen'
+export type TipoEventoEvaluacion = 'evaluacion' | 'examen' | 'otro'
 
 export interface EventoEvaluacionClase {
   id: number

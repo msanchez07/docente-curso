@@ -352,7 +352,8 @@ export function construirDatosPresentacion(
       trimestre: evento.avaluacion_id ?? '',
       fecha: fechaCorta(evento.fecha),
       hora: evento.hora ?? '',
-      tipo: evento.tipo === 'examen' ? 'Examen' : 'Evaluación'
+      tipo:
+        evento.tipo === 'examen' ? 'Examen' : evento.tipo === 'evaluacion' ? 'Evaluación' : 'Otras'
     }))
 
   const pesos = (modelo?.avaluaciones ?? []).map((avaluacion) => ({

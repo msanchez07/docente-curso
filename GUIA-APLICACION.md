@@ -6,7 +6,7 @@
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
 
 **Última actualización:** 31/10/2026  
-**Versión verificada:** 1.1 · 237 tests, `typecheck`, `build` y `smoke` en verde.
+**Versión verificada:** 1.1 · 238 tests, `typecheck`, `build` y `smoke` en verde.
 
 ---
 
@@ -269,7 +269,7 @@ Las FCT no registran faltas en el control de faltas.
 Cada entrega se asocia obligatoriamente a:
 
 - una unidad didáctica;
-- una avaluación;
+- una evaluación;
 - una categoría;
 - uno o varios RA/CE.
 
@@ -287,7 +287,7 @@ Otras funciones:
 - evidencias clasificadas por tipo;
 - bloqueo/desbloqueo de la entrega;
 - notas decimales y anotaciones por alumno;
-- exportación por entrega, avaluación o curso;
+- exportación por entrega, evaluación o curso;
 - PDF si solo hay texto/rúbrica;
 - ZIP si hay archivos o PDF + archivos;
 - previsualización en ventana propia antes de exportar;
@@ -342,7 +342,7 @@ Se pueden configurar mínimos bloqueantes para:
 
 - nota mínima de cada entrega;
 - media mínima de cada categoría;
-- nota mínima de cada avaluación;
+- nota mínima de cada evaluación;
 - aprobado del módulo.
 
 ---

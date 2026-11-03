@@ -14,7 +14,7 @@ if (!props.modelo.pesosRa) props.modelo.pesosRa = {}
 
 const pestana = ref('avaluaciones')
 const pestanas = [
-  { id: 'avaluaciones', etiqueta: 'Avaluaciones' },
+  { id: 'avaluaciones', etiqueta: 'Evaluaciones' },
   { id: 'categorias', etiqueta: 'Categorías' },
   { id: 'trimestres', etiqueta: 'Trimestres' },
   { id: 'ra', etiqueta: 'RA' },
@@ -180,19 +180,13 @@ function quitarCategoria(indice: number): void {
 
 <template>
   <div class="criterios">
-    <p class="aviso aviso--aviso" role="status">
-      La calificación final se organiza por unidades didácticas. La plantilla de cada unidad se
-      importa desde su formulario; las categorías y evaluaciones de esta pantalla solo se usan como
-      valores por defecto cuando una unidad no tiene plantilla propia.
-    </p>
-
     <p
       v-if="!categoriasOk || !avaluacionesOk || !pesosAvaluacionesOk || !pesosRaOk || !nombresOk"
       class="aviso aviso--error"
       role="alert"
     >
       <template v-if="!avaluacionesOk">
-        Los pesos de las avaluaciones suman {{ porcentaje(sumaAvaluaciones) }} %; deben sumar
+        Los pesos de las evaluaciones suman {{ porcentaje(sumaAvaluaciones) }} %; deben sumar
         exactamente 100 %.
       </template>
       <template v-if="!categoriasOk">
@@ -222,11 +216,11 @@ function quitarCategoria(indice: number): void {
           aria-labelledby="pestana-avaluaciones"
           tabindex="0"
         >
-          <p class="tenue">Cada avaluación pesa en la nota final. La suma debe ser 100 %.</p>
+          <p class="tenue">Cada evaluación pesa en la nota final. La suma debe ser 100 %.</p>
           <table class="tabla">
             <thead>
               <tr>
-                <th>Avaluación</th>
+                <th>Evaluación</th>
                 <th class="num">Peso</th>
                 <th class="acciones"></th>
               </tr>
@@ -247,8 +241,8 @@ function quitarCategoria(indice: number): void {
                   <button
                     class="icono-accion icono-accion--peligro"
                     type="button"
-                    aria-label="Quitar avaluación"
-                    data-tooltip="Quitar avaluación"
+                    aria-label="Quitar evaluación"
+                    data-tooltip="Quitar evaluación"
                     @click="quitarAvaluacion(indice)"
                   >
                     <svg
@@ -273,7 +267,7 @@ function quitarCategoria(indice: number): void {
           </table>
           <div class="criterios__pie-fila">
             <button class="boton boton--sutil" type="button" @click="anadirAvaluacion">
-              Añadir avaluación
+              Añadir evaluación
             </button>
             <span class="barra__espacio"></span>
             <span class="chip" :class="avaluacionesOk ? 'chip--ok' : 'chip--aviso'">
@@ -476,7 +470,7 @@ function quitarCategoria(indice: number): void {
           tabindex="0"
         >
           <p class="tenue">
-            Los mínimos son bloqueantes: si no se cumplen, la categoría, la avaluación o el módulo
+            Los mínimos son bloqueantes: si no se cumplen, la categoría, la evaluación o el módulo
             quedan suspensos.
           </p>
           <div class="criterios__minimos">
@@ -499,7 +493,7 @@ function quitarCategoria(indice: number): void {
         >
           <div class="formula">
             <p class="formula__linea">
-              <span class="formula__etiqueta">Nota de avaluación</span>
+              <span class="formula__etiqueta">Nota de evaluación</span>
               <span class="formula__valor">{{ formulaAvaluacion }}</span>
             </p>
             <p class="formula__linea">

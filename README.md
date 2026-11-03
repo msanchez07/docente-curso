@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.1.4](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.4)** —
+> **📦 [Descargar Aula Nova 1.1.5](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.5)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -26,14 +26,14 @@ empresa e informes trazables al BOE.
 Aplicación funcional en **versión 1.1**. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **237 tests**
+- `npm test` ✅ **238 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.1.4
+## Release 1.1.5
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.1.4](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.4)**:
+**[GitHub Releases v1.1.5](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.5)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -77,6 +77,8 @@ restringidos a la previsualización web de desarrollo.
   bloquean el guardado.
 - **1.1.4:** añade el botón «Buscar actualizaciones», corrige el error de clonación al guardar
   unidades y muestra los días de clase de la quincena también en la vista de tabla.
+- **1.1.5:** añade fechas de tipo «Otras» en programación didáctica, unifica la terminología
+  «Evaluación» y elimina el aviso de calificación por unidades que sobraba en Criterios.
 
 ---
 

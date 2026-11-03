@@ -318,9 +318,9 @@ export const seccionesGuia: SeccionGuia[] = [
     id: 'criterios',
     titulo: 'Criterios de calificación',
     resumen:
-      'Define cómo se calcula la nota: categorías, avaluaciones, RA, mínimos y pesos por trimestre.',
+      'Define cómo se calcula la nota: categorías, evaluaciones, RA, mínimos y pesos por trimestre.',
     explicacion: [
-      'Los criterios son la base de todos los cálculos. Las categorías agrupan instrumentos de evaluación (exámenes, actividades, proyectos, etc.) y tienen un peso. Las avaluaciones o trimestres también tienen su peso en la nota final. Todas las sumas deben ser exactamente 100 %.',
+      'Los criterios son la base de todos los cálculos. Las categorías agrupan instrumentos de evaluación (exámenes, actividades, proyectos, etc.) y tienen un peso. Las evaluaciones o trimestres también tienen su peso en la nota final. Todas las sumas deben ser exactamente 100 %.',
       'La pestaña RA reparte el peso de cada resultado de aprendizaje en la nota final; por defecto se reparte a partes iguales. La pestaña Mínimos permite configurar notas mínimas bloqueantes. La pestaña Trimestres permite que un trimestre use pesos de categorías distintos a los generales, por ejemplo 50 % examen y 50 % proyecto con actividades a 0 %.'
     ],
     imagen: criterios,
@@ -335,7 +335,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Peso de cada trimestre',
         detalle:
-          'Los trimestres o avaluaciones también ponderan en la nota final. La suma de todos los pesos debe ser exactamente 100 %; si no, no se puede guardar.'
+          'Los trimestres o evaluaciones también ponderan en la nota final. La suma de todos los pesos debe ser exactamente 100 %; si no, no se puede guardar.'
       },
       {
         titulo: 'Peso de cada RA',
@@ -345,7 +345,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Mínimos bloqueantes',
         detalle:
-          'Puedes fijar una nota mínima por entrega, por categoría, por avaluación y para aprobar el módulo. Si no se cumple, la categoría o el trimestre quedan suspensos aunque la media sea alta.'
+          'Puedes fijar una nota mínima por entrega, por categoría, por evaluación y para aprobar el módulo. Si no se cumple, la categoría o el trimestre quedan suspensos aunque la media sea alta.'
       },
       {
         titulo: 'Pesos propios por trimestre',
@@ -452,9 +452,9 @@ export const seccionesGuia: SeccionGuia[] = [
   {
     id: 'entregas',
     titulo: 'Entregas y evidencias',
-    resumen: 'Cada entrega se asocia a una unidad, una avaluación, una categoría y sus RA/CE.',
+    resumen: 'Cada entrega se asocia a una unidad, una evaluación, una categoría y sus RA/CE.',
     explicacion: [
-      'Las entregas son las tareas evaluables del grupo. Cada una debe pertenecer a una unidad, una avaluación y una categoría, y puede mapearse a uno o varios RA/CE. La ficha de la entrega contiene el enunciado, la descripción del problema y las restricciones.',
+      'Las entregas son las tareas evaluables del grupo. Cada una debe pertenecer a una unidad, una evaluación y una categoría, y puede mapearse a uno o varios RA/CE. La ficha de la entrega contiene el enunciado, la descripción del problema y las restricciones.',
       'Al abrir una entrega se muestra primero la pestaña Ficha y después Notas. La ficha HTML se puede copiar para Aules, descargar o imprimir. También puedes añadir rúbrica, evidencias y bloquear la entrega para que no admita cambios. La exportación genera PDF, ZIP o un ZIP con PDF y archivos según el contenido.'
     ],
     imagen: entregas,
@@ -464,7 +464,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Asociaciones obligatorias',
         detalle:
-          'Cada entrega debe tener unidad, avaluación, categoría y al menos un RA/CE. Estas asociaciones permiten calcular la nota del trimestre y la nota por RA.'
+          'Cada entrega debe tener unidad, evaluación, categoría y al menos un RA/CE. Estas asociaciones permiten calcular la nota del trimestre y la nota por RA.'
       },
       {
         titulo: 'Ficha de la entrega',
@@ -484,7 +484,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Exportación',
         detalle:
-          'Puedes exportar una entrega, una avaluación o el curso completo. Si solo hay texto/rúbrica se genera PDF; si hay archivos, ZIP; si hay ambos, ZIP con el PDF y los archivos.'
+          'Puedes exportar una entrega, una evaluación o el curso completo. Si solo hay texto/rúbrica se genera PDF; si hay archivos, ZIP; si hay ambos, ZIP con el PDF y los archivos.'
       },
       {
         titulo: 'Cabecera institucional',
@@ -676,7 +676,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Qué guarda una plantilla',
         detalle:
-          'Guarda categorías, pesos, avaluaciones, RA, mínimos y pesos propios por trimestre. Es el modelo completo de cálculo, no solo una lista de nombres.'
+          'Guarda categorías, pesos, evaluaciones, RA, mínimos y pesos propios por trimestre. Es el modelo completo de cálculo, no solo una lista de nombres.'
       },
       {
         titulo: 'Cuándo se aplica',

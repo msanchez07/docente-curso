@@ -16,15 +16,15 @@ const RE_FECHA = /^\d{4}-\d{2}-\d{2}$/
 const RE_HORA = /^([01]?\d|2[0-3]):([0-5]\d)$/
 
 function validar(entrada: EventoEvaluacionEntrada): {
-  tipo: 'evaluacion' | 'examen'
+  tipo: 'evaluacion' | 'examen' | 'otro'
   titulo: string
   fecha: string
   hora: string | null
   avaluacion_id: string | null
   observaciones: string | null
 } {
-  if (entrada.tipo !== 'evaluacion' && entrada.tipo !== 'examen') {
-    throw new Error('El tipo debe ser evaluación o examen.')
+  if (entrada.tipo !== 'evaluacion' && entrada.tipo !== 'examen' && entrada.tipo !== 'otro') {
+    throw new Error('El tipo debe ser evaluación, examen u otras.')
   }
   const titulo = entrada.titulo?.trim()
   if (!titulo) throw new Error('El título es obligatorio.')
@@ -34,10 +34,7 @@ function validar(entrada: EventoEvaluacionEntrada): {
     throw new Error('La fecha no es válida.')
   }
   const interpretada = new Date(`${fecha}T00:00:00Z`)
-  if (
-    Number.isNaN(interpretada.getTime()) ||
-    interpretada.toISOString().slice(0, 10) !== fecha
-  ) {
+  if (Number.isNaN(interpretada.getTime()) || interpretada.toISOString().slice(0, 10) !== fecha) {
     throw new Error('La fecha no es válida.')
   }
 
@@ -56,10 +53,7 @@ function validar(entrada: EventoEvaluacionEntrada): {
   }
 }
 
-export function listarEventosEvaluacion(
-  db: Bd,
-  grupoClaseId: number
-): EventoEvaluacionClase[] {
+export function listarEventosEvaluacion(db: Bd, grupoClaseId: number): EventoEvaluacionClase[] {
   return db
     .prepare(
       `SELECT ${CAMPOS}
@@ -94,9 +88,7 @@ export function actualizarEventoEvaluacion(
   id: number,
   entrada: EventoEvaluacionEntrada
 ): EventoEvaluacionClase | null {
-  const actual = db
-    .prepare('SELECT 1 FROM eventos_evaluacion_clase WHERE id = ?')
-    .get(id)
+  const actual = db.prepare('SELECT 1 FROM eventos_evaluacion_clase WHERE id = ?').get(id)
   if (!actual) return null
   const datos = validar(entrada)
   db.prepare(
