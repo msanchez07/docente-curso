@@ -148,6 +148,10 @@ const agendaItems = computed<ItemAgenda[]>(() => {
 
   for (const dia of calendario.value) {
     if (dia.tipo === 'lectivo') continue
+    // El calendario escolar puede marcar sábados y domingos como no lectivos;
+    // en el dashboard no aportan información y ensucian la agenda.
+    const fechaDia = new Date(`${dia.fecha}T00:00:00`)
+    if (fechaDia.getDay() === 0 || fechaDia.getDay() === 6) continue
     const titulo =
       dia.descripcion ||
       (dia.tipo === 'vacaciones'

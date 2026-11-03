@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.1.6](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.6)** —
+> **📦 [Descargar Aula Nova 1.1.7](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.7)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -30,10 +30,10 @@ Aplicación funcional en **versión 1.1**. Verificación actual:
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.1.6
+## Release 1.1.7
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.1.6](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.6)**:
+**[GitHub Releases v1.1.7](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.7)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -81,6 +81,8 @@ restringidos a la previsualización web de desarrollo.
   «Evaluación» y elimina el aviso de calificación por unidades que sobraba en Criterios.
 - **1.1.6:** añade la pérdida de evaluación continua por alumno, los RA totales/parciales de
   formación en empresa, los pesos propios en el resumen de calificaciones y la tabla de «Ver todo».
+- **1.1.7:** oculta los fines de semana del dashboard cuando el calendario escolar los marca como
+  no lectivos; en el calendario general se siguen mostrando.
 
 ---
 

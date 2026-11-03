@@ -1998,7 +1998,7 @@ function escribirConfiguracionGeneral(configuracion: ConfiguracionGeneral): void
 
 const api = {
   app: {
-    version: async () => '1.1.6-web',
+    version: async () => '1.1.7-web',
     plataforma: 'web'
   },
   archivos: {
