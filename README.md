@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.1.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.0)** —
+> **📦 [Descargar Aula Nova 1.1.1](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.1)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -26,14 +26,14 @@ empresa e informes trazables al BOE.
 Aplicación funcional en **versión 1.1**. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **235 tests**
+- `npm test` ✅ **237 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.1.0
+## Release 1.1.1
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.1.0](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.0)**:
+**[GitHub Releases v1.1.1](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.1)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -58,7 +58,7 @@ La release **no carga datos de prueba**: la aplicación arranca vacía y solo in
 oficiales del BOE y el catálogo de secuenciación y horarios. Los datos de ejemplo quedan
 restringidos a la previsualización web de desarrollo.
 
-### Novedades de 1.1.0
+### Novedades de 1.1
 
 - **Currículos completos:** 181 ciclos del catálogo con RA/CE, generados desde el dosier de la
   Conselleria, los RDs del BOE y los decretos autonómicos del DOGV.
@@ -69,6 +69,8 @@ restringidos a la previsualización web de desarrollo.
   ciclos sin duplicar RA/CE.
 - **Unidades de programación:** importación con fechas ISO completas, criterios alternativos y
   borrado masivo conservando las sesiones.
+- **1.1.1:** corrige los CE `RA7.h` y `RA9.h` de DWES en segundo de DAW, actualizando los módulos
+  de DAW desde el RD 405/2023.
 
 ---
 

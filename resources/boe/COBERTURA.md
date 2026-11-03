@@ -113,7 +113,7 @@
 | gs-construcciones-metalicas | 16 | 15 | 77 | 607 | ok |
 | gs-coordinacion-de-emergencias-y-proteccion-civil | 18 | 17 | 89 | 678 | ok |
 | gs-desarrollo-de-aplicaciones-multiplataforma | 18 | 17 | 102 | 775 | ok |
-| daw | 20 | 19 | 119 | 907 | ok |
+| daw | 20 | 19 | 119 | 926 | ok |
 | gs-desarrollo-de-proyectos-de-instalaciones-termicas-y-de-fluidos | 17 | 16 | 90 | 676 | ok |
 | gs-desarrollo-y-fabricacion-de-productos-ceramicos | 17 | 16 | 88 | 695 | ok |
 | gs-direccion-de-cocina | 18 | 16 | 78 | 595 | ok |

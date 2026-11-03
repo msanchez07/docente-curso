@@ -236,7 +236,7 @@
         {
           "codigo": "RA1",
           "numero": 1,
-          "descripcion": "Reconoce las características de lenguajes de marcas, analizando e interpretando fragmentos de código.",
+          "descripcion": "Reconoce las características de lenguajes de marcas analizando e interpretando fragmentos de código.",
           "ce": [
             {
               "codigo": "a",
@@ -260,15 +260,15 @@
             },
             {
               "codigo": "f",
-              "descripcion": "Se han analizado las características propias del lenguaje XML."
+              "descripcion": "Se han analizado las características propias de diferentes lenguajes de marcas."
             },
             {
               "codigo": "g",
-              "descripcion": "Se han identificado la estructura de un documento XML y sus reglas sintácticas."
+              "descripcion": "Se ha identificado la estructura de un documento y sus reglas sintácticas."
             },
             {
               "codigo": "h",
-              "descripcion": "Se han contrastado la necesidad de crear documentos XML bien formados y la influencia en su procesamiento."
+              "descripcion": "Se ha contrastado la necesidad de crear documentos bien formados y la influencia en su procesamiento."
             },
             {
               "codigo": "i",
@@ -279,89 +279,93 @@
         {
           "codigo": "RA2",
           "numero": 2,
-          "descripcion": "Utiliza lenguajes de marcas para la transmisión de información a través de la web, analizando la estructura de los documentos e identificando sus elementos.",
+          "descripcion": "Utiliza lenguajes de marcas para la transmisión y presentación de información a través de la web analizando la estructura de los documentos e identificando sus elementos.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han identificado y clasificado los lenguajes de marcas relacionados con la web y sus diferentes versiones."
+              "descripcion": "Se han identificado y clasificado los lenguajes de marcas relacionados con la web y sus diferentes versiones y estándares."
             },
             {
               "codigo": "b",
-              "descripcion": "Se ha analizado la estructura de un documento HTML y se han identificado las secciones que lo componen."
+              "descripcion": "Se ha analizado la estructura de un documento HTML e identificado las secciones que lo componen."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han reconocido la funcionalidad de las principales etiquetas y los atributos del lenguaje HTML."
+              "descripcion": "Se ha reconocido la funcionalidad de las principales etiquetas y los atributos del lenguaje HTML."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han establecido las semejanzas y diferencias entre los lenguajes HTML y XHTML."
+              "descripcion": "Se han establecido las semejanzas y diferencias entre las diferentes versiones de HTML."
             },
             {
               "codigo": "e",
-              "descripcion": "Se ha reconocido la utilidad de XHTML en los sistemas de gestión de información."
-            },
-            {
-              "codigo": "f",
               "descripcion": "Se han utilizado herramientas en la creación de documentos web."
             },
             {
-              "codigo": "g",
+              "codigo": "f",
               "descripcion": "Se han identificado las ventajas que aporta la utilización de hojas de estilo."
             },
             {
-              "codigo": "h",
+              "codigo": "g",
               "descripcion": "Se han aplicado hojas de estilo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han validado documentos HTML y CSS."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las tecnologías en que se basa la sindicación de contenidos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han reconocido los ámbitos de aplicación de la sindicación de contenidos."
             }
           ]
         },
         {
           "codigo": "RA3",
           "numero": 3,
-          "descripcion": "Genera canales de contenidos analizando y utilizando tecnologías de sindicación.",
+          "descripcion": "Accede y manipula documentos web utilizando lenguajes de script de cliente.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han identificado las ventajas que aporta la sindicación de contenidos en la gestión y transmisión de la información."
+              "descripcion": "Se han identificado y clasificado los lenguajes de script de cliente relacionados con la web y sus diferentes versiones y estándares."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han definido sus ámbitos de aplicación."
+              "descripcion": "Se ha identificado la sintaxis básica de los lenguajes de script de cliente."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han analizado las tecnologías en que se basa la sindicación de contenidos."
+              "descripcion": "Se han utilizado métodos para la selección y acceso de los diferentes elementos de un documento web."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han identificado la estructura y la sintaxis de un canal de contenidos."
+              "descripcion": "Se han creado y modificado elementos de documentos web."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han creado y validado canales de contenidos."
+              "descripcion": "Se han eliminado elementos de documentos web."
             },
             {
               "codigo": "f",
-              "descripcion": "Se ha comprobado la funcionalidad y el acceso a los canales."
-            },
-            {
-              "codigo": "g",
-              "descripcion": "Se han utilizado herramientas específicas como agregadores y directorios de canales."
+              "descripcion": "Se han realizado modificaciones sobre los estilos de un documento web."
             }
           ]
         },
         {
           "codigo": "RA4",
           "numero": 4,
-          "descripcion": "Establece mecanismos de validación para documentos XML utilizando métodos para definir su sintaxis y estructura.",
+          "descripcion": "Establece mecanismos de validación de documentos para el intercambio de información utilizando métodos para definir su sintaxis y estructura.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se ha establecido la necesidad de describir la información transmitida en los documentos XML y sus reglas."
+              "descripcion": "Se ha establecido la necesidad de describir la información transmitida en los documentos y sus reglas."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han identificado las tecnologías relacionadas con la definición de documentos XML."
+              "descripcion": "Se han identificado las tecnologías relacionadas con la definición de documentos."
             },
             {
               "codigo": "c",
@@ -369,11 +373,11 @@
             },
             {
               "codigo": "d",
-              "descripcion": "Se han creado descripciones de documentos XML."
+              "descripcion": "Se han creado descripciones de documentos."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han utilizado descripciones en la elaboración y validación de documentos XML."
+              "descripcion": "Se han utilizado descripciones en la elaboración y validación de documentos."
             },
             {
               "codigo": "f",
@@ -382,21 +386,17 @@
             {
               "codigo": "g",
               "descripcion": "Se han utilizado herramientas específicas."
-            },
-            {
-              "codigo": "h",
-              "descripcion": "Se han documentado las descripciones."
             }
           ]
         },
         {
           "codigo": "RA5",
           "numero": 5,
-          "descripcion": "Realiza conversiones sobre documentos XML utilizando técnicas y herramientas de procesamiento.",
+          "descripcion": "Realiza conversiones sobre documentos para el intercambio de información utilizando técnicas, lenguajes y herramientas de procesamiento.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se ha identificado la necesidad de la conversión de documentos XML."
+              "descripcion": "Se ha identificado la necesidad de la conversión de documentos para el intercambio de la información."
             },
             {
               "codigo": "b",
@@ -408,7 +408,7 @@
             },
             {
               "codigo": "d",
-              "descripcion": "Se ha descrito la sintaxis específica utilizada en la conversión y adaptación de documentos XML."
+              "descripcion": "Se ha descrito la sintaxis específica utilizada en la conversión y adaptación de documentos para el intercambio de información."
             },
             {
               "codigo": "e",
@@ -416,30 +416,26 @@
             },
             {
               "codigo": "f",
-              "descripcion": "Se han identificado y caracterizado herramientas específicas relacionadas con la conversión de documentos XML."
+              "descripcion": "Se han identificado y caracterizado herramientas específicas relacionadas con la conversión de documentos para el intercambio de información."
             },
             {
               "codigo": "g",
-              "descripcion": "Se han realizado conversiones con distintos formatos de salida."
-            },
-            {
-              "codigo": "h",
-              "descripcion": "Se han documentado y depurado las especificaciones de conversión."
+              "descripcion": "Se han realizado conversiones sobre documentos para el intercambio de información."
             }
           ]
         },
         {
           "codigo": "RA6",
           "numero": 6,
-          "descripcion": "Gestiona información en formato XML analizando y utilizando tecnologías de almacenamiento y lenguajes de consulta.",
+          "descripcion": "Gestiona la información en formatos de intercambio de datos analizando y utilizando tecnologías de almacenamiento y lenguajes de consulta.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han identificado los principales métodos de almacenamiento de la información usada en documentos XML."
+              "descripcion": "Se han identificado los principales métodos de almacenamiento de la información utilizados en documentos de intercambio de datos."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han identificado los inconvenientes de almacenar información en formato XML."
+              "descripcion": "Se han identificado las ventajas e inconvenientes de almacenar información en formatos de intercambio de datos."
             },
             {
               "codigo": "c",
@@ -447,27 +443,27 @@
             },
             {
               "codigo": "d",
-              "descripcion": "Se han utilizado sistemas gestores de bases de datos relacionales en el almacenamiento de información en formato XML."
+              "descripcion": "Se han identificado lenguajes y herramientas para el tratamiento y almacenamiento de información y su inclusión en documentos de intercambio de datos."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han utilizado técnicas específicas para crear documentos XML a partir de información almacenada en bases de datos relacionales."
+              "descripcion": "Se han utilizado lenguajes de consulta y manipulación en documentos de intercambio de datos."
             },
             {
               "codigo": "f",
-              "descripcion": "Se han identificado las características de los sistemas gestores de bases de datos nativas XML."
+              "descripcion": "Se han utilizado sistemas gestores de bases de datos relacionales en el almacenamiento de información en formatos de intercambio de datos."
             },
             {
               "codigo": "g",
-              "descripcion": "Se han instalado y analizado sistemas gestores de bases de datos nativas XML."
+              "descripcion": "Se han utilizado técnicas específicas para crear documentos de intercambio de datos a partir de información almacenada en bases de datos relacionales."
             },
             {
               "codigo": "h",
-              "descripcion": "Se han utilizado técnicas para gestionar la información almacenada en bases de datos nativas XML."
+              "descripcion": "Se han identificado las características de los sistemas."
             },
             {
               "codigo": "i",
-              "descripcion": "Se han identificado lenguajes y herramientas para el tratamiento y almacenamiento de información y su inclusión en documentos XML."
+              "descripcion": "Se han utilizado herramientas para gestionar la información almacenada en bases de datos nativas."
             }
           ]
         },
@@ -478,31 +474,31 @@
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han reconocido las ventajas de los sistemas de gestión y planificación de recursos empresariales."
+              "descripcion": "Se han identificado los principales sistemas de gestión empresarial."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han evaluado las características de las principales aplicaciones de gestión empresarial."
+              "descripcion": "Se han reconocido las ventajas de los sistemas de gestión de información empresariales."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han instalado aplicaciones de gestión empresarial."
+              "descripcion": "Se han evaluado las características de las principales aplicaciones de gestión empresarial."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han configurado y adaptado las aplicaciones."
+              "descripcion": "Se han instalado aplicaciones de gestión de la información empresarial."
             },
             {
               "codigo": "e",
-              "descripcion": "Se ha establecido y verificado el acceso seguro a la información."
+              "descripcion": "Se han configurado y administrado las aplicaciones."
             },
             {
               "codigo": "f",
-              "descripcion": "Se han generado informes."
+              "descripcion": "Se han establecido y verificado mecanismos de acceso seguro a la información."
             },
             {
               "codigo": "g",
-              "descripcion": "Se han realizado tareas de integración con aplicaciones ofimáticas."
+              "descripcion": "Se han generado informes."
             },
             {
               "codigo": "h",
@@ -510,10 +506,6 @@
             },
             {
               "codigo": "i",
-              "descripcion": "Se han realizado tareas de asistencia y resolución de incidencias."
-            },
-            {
-              "codigo": "j",
               "descripcion": "Se han elaborado documentos relativos a la explotación de la aplicación."
             }
           ]
@@ -531,7 +523,7 @@
         {
           "codigo": "RA1",
           "numero": 1,
-          "descripcion": "Evalúa sistemas informáticos identificando sus componentes y características.",
+          "descripcion": "Evalúa sistemas informáticos, identificando sus componentes y características.",
           "ce": [
             {
               "codigo": "a",
@@ -539,23 +531,31 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se ha verificado el proceso de puesta en marcha de un equipo."
+              "descripcion": "Se han clasificado los tipos de memorias, señalando sus características e identifcando sus prestaciones y la función que desarrollan en el conjunto del sistema."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han clasificado, instalado y configurado diferentes tipos de dispositivos periféricos."
+              "descripcion": "Se ha verificado el proceso de puesta en marcha de un equipo."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han identificado los tipos de redes y sistemas de comunicación."
+              "descripcion": "Se han clasificado, instalado y configurado diferentes tipos de dispositivos periféricos."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han identificado los componentes de una red informática."
+              "descripcion": "Se han identificado los tipos de redes y sistemas de comunicación."
             },
             {
               "codigo": "f",
+              "descripcion": "Se han identificado los componentes de una red informática."
+            },
+            {
+              "codigo": "g",
               "descripcion": "Se han interpretado mapas físicos y lógicos de una red informática."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido las normas de seguridad y prevención de riesgos laborales en el uso de los sistemas informáticos."
             }
           ]
         },
@@ -574,22 +574,30 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se han comparado sistemas operativos en lo que se refiere a sus requisitos, características, campos de aplicación y licencias de uso."
+              "descripcion": "Se han comparado sistemas operativos en base a sus requisitos, características, campos de aplicación y licencias de uso."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han instalado diferentes sistemas operativos."
+              "descripcion": "Se ha planificado el proceso de la instalación de sistemas operativos."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han aplicado técnicas de actualización y recuperación del sistema."
+              "descripcion": "Se han instalado y actualizado sistemas operativos libres y propietarios."
             },
             {
               "codigo": "f",
-              "descripcion": "Se han utilizado máquinas virtuales para instalar y probar sistemas operativos."
+              "descripcion": "Se han aplicado técnicas de actualización y recuperación del sistema."
             },
             {
               "codigo": "g",
+              "descripcion": "Se han utilizado tecnologías de virtualización para instalar y probar sistemas operativos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han instalado, desinstalado y actualizado aplicaciones."
+            },
+            {
+              "codigo": "i",
               "descripcion": "Se han documentado los procesos realizados."
             }
           ]
@@ -597,7 +605,7 @@
         {
           "codigo": "RA3",
           "numero": 3,
-          "descripcion": "Gestiona la información del sistema, identificando las estructuras de almacenamiento y aplicando medidas para asegurar la integridad de los datos.",
+          "descripcion": "Gestiona la información del sistema identificando las estructuras de almacenamiento y aplicando medidas para asegurar la integridad de los datos.",
           "ce": [
             {
               "codigo": "a",
@@ -605,26 +613,30 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se ha identificado la estructura y función de los directorios del sistema operativo."
+              "descripcion": "Se ha identificado la estructura y función de los directorios del sistema"
             },
             {
               "codigo": "c",
-              "descripcion": "Se han utilizado herramientas en entorno gráfico y comandos para localizar información en el sistema de archivos."
+              "descripcion": "operativo."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han creado diferentes tipos de particiones y unidades lógicas."
+              "descripcion": "Se han utilizado herramientas en entorno gráfico y comandos para localizar información en el sistema de archivos."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han realizado copias de seguridad."
+              "descripcion": "Se han creado diferentes tipos de particiones y unidades lógicas."
             },
             {
               "codigo": "f",
-              "descripcion": "Se han automatizado tareas."
+              "descripcion": "Se han realizado y restaurado copias de seguridad."
             },
             {
               "codigo": "g",
+              "descripcion": "Se han planificado y automatizado tareas."
+            },
+            {
+              "codigo": "h",
               "descripcion": "Se han instalado y evaluado utilidades relacionadas con la gestión de información."
             }
           ]
@@ -636,11 +648,11 @@
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han configurado cuentas de usuario locales y de grupos."
+              "descripcion": "Se han configurado cuentas de usuario locales y grupos."
             },
             {
               "codigo": "b",
-              "descripcion": "Se ha asegurado el acceso al sistema mediante el uso de directivas  de cuenta y directivas de contraseñas."
+              "descripcion": "Se ha asegurado el acceso al sistema mediante el uso de directivas de cuenta y directivas de contraseñas."
             },
             {
               "codigo": "c",
@@ -648,11 +660,11 @@
             },
             {
               "codigo": "d",
-              "descripcion": "Se ha protegido el acceso a la información mediante el uso de permisos locales."
+              "descripcion": "Se ha protegido el acceso a la información mediante el uso de permisos locales y listas de control de acceso."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han utilizado comandos para realizar las tareas básicas de configuración del sistema."
+              "descripcion": "Se han utilizado comandos para realizar las tareas básicas de configuración y administración del sistema."
             },
             {
               "codigo": "f",
@@ -718,7 +730,7 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se han identificado los derechos de usuario y directivas de seguridad."
+              "descripcion": "Se han identificado y configurado los derechos de usuario y directivas de seguridad."
             },
             {
               "codigo": "c",
@@ -735,6 +747,10 @@
             {
               "codigo": "f",
               "descripcion": "Se han instalado y evaluado utilidades de seguridad básica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado y explotado dominios."
             }
           ]
         },
@@ -753,7 +769,7 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se han realizado tareas de documentación mediante el uso de herramientas ofimáticas."
+              "descripcion": "Se han realizado tareas de documentación mediante el uso de herramientas ofimáticas y de trabajo colaborativo."
             },
             {
               "codigo": "d",
@@ -766,6 +782,10 @@
             {
               "codigo": "f",
               "descripcion": "Se han utilizado métodos de búsqueda de documentación técnica mediante el uso de servicios de Internet."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado herramientas de propósito general."
             }
           ]
         }
@@ -815,6 +835,14 @@
             {
               "codigo": "h",
               "descripcion": "Se han analizado las políticas de fragmentación de la información."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha identificado la legislación vigente sobre protección de datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han reconocido los conceptos de Big Data y de la inteligencia de negocios."
             }
           ]
         },
@@ -853,14 +881,14 @@
             },
             {
               "codigo": "h",
-              "descripcion": "Se han utilizando asistentes, herramientas gráficas y los lenguajes de definición y control de datos."
+              "descripcion": "Se han utilizado asistentes, herramientas gráficas y los lenguajes de definición y control de datos."
             }
           ]
         },
         {
           "codigo": "RA3",
           "numero": 3,
-          "descripcion": "Consulta la información almacenada  en una base de datos empleando asistentes, herramientas gráficas y el lenguaje de manipulación de datos.",
+          "descripcion": "Consulta la información almacenada en una base de datos empleando asistentes, herramientas gráficas y el lenguaje de manipulación de datos.",
           "ce": [
             {
               "codigo": "a",
@@ -885,6 +913,14 @@
             {
               "codigo": "f",
               "descripcion": "Se han realizado consultas con subconsultas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado consultas que implican múltiples selecciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado criterios de optimización de consultas."
             }
           ]
         },
@@ -930,7 +966,7 @@
         {
           "codigo": "RA5",
           "numero": 5,
-          "descripcion": "Desarrolla procedimientos almacenados, evaluando y utilizando las sentencias del lenguaje incorporado en el sistema gestor de bases de datos.",
+          "descripcion": "Desarrolla procedimientos almacenados evaluando y utilizando las sentencias del lenguaje incorporado en el sistema gestor de bases de datos.",
           "ce": [
             {
               "codigo": "a",
@@ -954,7 +990,7 @@
             },
             {
               "codigo": "f",
-              "descripcion": "Se han definido funciones de usuario."
+              "descripcion": "Se han definido procedimientos y funciones de usuario."
             },
             {
               "codigo": "g",
@@ -962,11 +998,15 @@
             },
             {
               "codigo": "h",
-              "descripcion": "Se han definido disparadores."
+              "descripcion": "Se han definido eventos y disparadores."
             },
             {
               "codigo": "i",
               "descripcion": "Se han utilizado cursores."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han utilizado excepciones."
             }
           ]
         },
@@ -1012,31 +1052,27 @@
         {
           "codigo": "RA7",
           "numero": 7,
-          "descripcion": "Gestiona la información almacenada en bases de datos objeto-relacionales, evaluando y utilizando las posibilidades que proporciona el sistema gestor.",
+          "descripcion": "Gestiona la información almacenada en bases de datos no relacionales, evaluando y utilizando las posibilidades que proporciona el sistema gestor.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han identificado las características de las bases de datos objeto- relacionales."
+              "descripcion": "Se han caracterizado las bases de datos no relacionales."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han creado tipos de datos objeto, sus atributos y métodos."
+              "descripcion": "Se han evaluado los principales tipos de bases de datos no relacionales."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han creado tablas de objetos y tablas de columnas tipo objeto."
+              "descripcion": "Se han identificado los elementos utilizados en estas bases de datos."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han creado tipos de datos colección."
+              "descripcion": "Se han identificado distintas formas de gestión de la información según el tipo de base de datos no relacionales."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han realizado consultas."
-            },
-            {
-              "codigo": "f",
-              "descripcion": "Se ha modificado la información almacenada manteniendo la integridad y consistencia de los datos."
+              "descripcion": "Se han utilizado las herramientas del sistema gestor para la gestión de la información almacenada."
             }
           ]
         }
@@ -1061,7 +1097,7 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se han creado proyectos de desarrollo de aplicaciones"
+              "descripcion": "Se han creado proyectos de desarrollo de aplicaciones."
             },
             {
               "codigo": "c",
@@ -1168,6 +1204,14 @@
             {
               "codigo": "g",
               "descripcion": "Se ha comentado y documentado el código."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han creado excepciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado aserciones para la detección y corrección de errores durante la fase de desarrollo."
             }
           ]
         },
@@ -1210,10 +1254,6 @@
             },
             {
               "codigo": "i",
-              "descripcion": "Se han definido y utilizado interfaces."
-            },
-            {
-              "codigo": "j",
               "descripcion": "Se han creado y utilizado conjuntos y librerías de clases."
             }
           ]
@@ -1260,11 +1300,11 @@
         {
           "codigo": "RA6",
           "numero": 6,
-          "descripcion": "Escribe programas que manipulen información, seleccionando y utilizando tipos avanzados de datos.",
+          "descripcion": "Escribe programas que manipulen información seleccionando y utilizando tipos avanzados de datos.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han escrito programas que utilicen arrays."
+              "descripcion": "Se han escrito programas que utilicen matrices (arrays)."
             },
             {
               "codigo": "b",
@@ -1280,7 +1320,7 @@
             },
             {
               "codigo": "e",
-              "descripcion": "Se han reconocido las características y ventajas de cada una de la colecciones de datos disponibles."
+              "descripcion": "Se han reconocido las características y ventajas de cada una de las colecciones de datos disponibles."
             },
             {
               "codigo": "f",
@@ -1292,18 +1332,22 @@
             },
             {
               "codigo": "h",
-              "descripcion": "Se han identificado las clases relacionadas con el tratamiento de documentos XML."
+              "descripcion": "Se han identificado las clases relacionadas con el tratamiento de documentos escritos en diferentes lenguajes de intercambio de datos."
             },
             {
               "codigo": "i",
-              "descripcion": "Se han realizado programas que realicen manipulaciones sobre documentos XML."
+              "descripcion": "Se han realizado programas que realicen manipulaciones sobre documentos escritos en diferentes lenguajes de intercambio de datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han utilizado operaciones agregadas para el manejo de información almacenada en colecciones."
             }
           ]
         },
         {
           "codigo": "RA7",
           "numero": 7,
-          "descripcion": "Desarrolla programas, aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.",
+          "descripcion": "Desarrolla programas aplicando características avanzadas de los lenguajes orientados a objetos y del entorno de programación.",
           "ce": [
             {
               "codigo": "a",
@@ -1319,7 +1363,7 @@
             },
             {
               "codigo": "d",
-              "descripcion": "Se han creado clases heredadas que sobrescriban la implementación de métodos de la superclase."
+              "descripcion": "Se han creado clases heredadas que sobrescriben la implementación de métodos de la superclase."
             },
             {
               "codigo": "e",
@@ -1336,6 +1380,14 @@
             {
               "codigo": "h",
               "descripcion": "Se ha comentado y documentado el código."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado y evaluado los escenarios de uso de interfaces."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado y evaluado los escenarios de utilización de la herencia y la composición."
             }
           ]
         },
@@ -1381,11 +1433,11 @@
         {
           "codigo": "RA9",
           "numero": 9,
-          "descripcion": "Gestiona información almacenada en bases de datos relacionales manteniendo la integridad y la consistencia de los datos.",
+          "descripcion": "Gestiona información almacenada en bases de datos manteniendo la integridad y consistencia de los datos.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han identificado las características y métodos de acceso a sistemas gestores de bases de datos relacionales."
+              "descripcion": "Se han identificado las características y métodos de acceso a sistemas gestores de bases de datos."
             },
             {
               "codigo": "b",
@@ -1405,11 +1457,11 @@
             },
             {
               "codigo": "f",
-              "descripcion": "Se han creado aplicaciones que ejecuten consultas sobre bases de datos."
+              "descripcion": "Se han creado aplicaciones que muestren la información almacenada en bases de datos."
             },
             {
               "codigo": "g",
-              "descripcion": "Se han creado aplicaciones para posibilitar la gestión de información presente en bases de datos relacionales."
+              "descripcion": "Se han creado aplicaciones para gestionar la información presente en bases de datos."
             }
           ]
         }
@@ -1430,7 +1482,7 @@
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se ha reconocido la relación de los programas con los componentes del sistema informático: memoria, procesador y periféricos, entre otros."
+              "descripcion": "Se ha reconocido la relación de los programas con los componentes del sistema informático: memoria, procesador, periféricos, entre otros."
             },
             {
               "codigo": "b",
@@ -1438,7 +1490,7 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se han diferenciado los conceptos de código fuente, código objeto y código ejecutable."
+              "descripcion": "Se han diferenciado los conceptos de código fuente, objeto y ejecutable."
             },
             {
               "codigo": "d",
@@ -1446,18 +1498,22 @@
             },
             {
               "codigo": "e",
-              "descripcion": "Se han clasificado los lenguajes de programación."
+              "descripcion": "Se han clasificado los lenguajes de programación, identificando sus características."
             },
             {
               "codigo": "f",
-              "descripcion": "Se ha evaluado la funcionalidad ofrecida por las herramientas utilizadas en programación."
+              "descripcion": "Se ha evaluado la funcionalidad ofrecida por las herramientas utilizadas en el desarrollo de software."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las características y escenarios de uso de las metodologías ágiles de desarrollo de software."
             }
           ]
         },
         {
           "codigo": "RA2",
           "numero": 2,
-          "descripcion": "Evalúa entornos integrados de desarrollo, analizando, sus características para editar código fuente y generar ejecutables.",
+          "descripcion": "Evalúa entornos integrados de desarrollo analizando sus características para editar código fuente y generar ejecutables.",
           "ce": [
             {
               "codigo": "a",
@@ -1492,7 +1548,7 @@
         {
           "codigo": "RA3",
           "numero": 3,
-          "descripcion": "Verifica el funcionamiento de programas, diseñando y realizando pruebas.",
+          "descripcion": "Verifica el funcionamiento de programas diseñando y realizando pruebas.",
           "ce": [
             {
               "codigo": "a",
@@ -1525,6 +1581,10 @@
             {
               "codigo": "h",
               "descripcion": "Se han documentado las incidencias detectadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado dobles de prueba para aislar los componentes durante las pruebas."
             }
           ]
         },
@@ -1560,13 +1620,21 @@
             {
               "codigo": "g",
               "descripcion": "Se han utilizado herramientas del entorno de desarrollo para documentar las clases."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado repositorios remotos para el desarrollo de código colaborativo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado herramientas para la integración continua del código."
             }
           ]
         },
         {
           "codigo": "RA5",
           "numero": 5,
-          "descripcion": "Genera diagramas de clases valorando su importancia en el desarrollo de aplicaciones y empleando las herramientas disponibles en el entorno.",
+          "descripcion": "Genera diagramas de clases valorando su importancia en el desarrollo de aplicaciones y empleando herramientas específicas.",
           "ce": [
             {
               "codigo": "a",
@@ -1574,26 +1642,22 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se ha instalado el módulo del entorno integrado de desarrollo que permite la utilización de diagramas de clases."
+              "descripcion": "Se han utilizado herramientas para la elaboración de diagramas de clases."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han identificado las herramientas para la elaboración de diagramas de clases."
-            },
-            {
-              "codigo": "d",
               "descripcion": "Se ha interpretado el significado de diagramas de clases."
             },
             {
-              "codigo": "e",
+              "codigo": "d",
               "descripcion": "Se han trazado diagramas de clases a partir de las especificaciones de las mismas."
             },
             {
-              "codigo": "f",
+              "codigo": "e",
               "descripcion": "Se ha generado código a partir de un diagrama de clases."
             },
             {
-              "codigo": "g",
+              "codigo": "f",
               "descripcion": "Se ha generado un diagrama de clases mediante ingeniería inversa."
             }
           ]
@@ -1601,7 +1665,7 @@
         {
           "codigo": "RA6",
           "numero": 6,
-          "descripcion": "Genera diagramas de comportamiento valorando su importancia en el desarrollo de aplicaciones y empleando las herramientas disponibles en el entorno.",
+          "descripcion": "Genera diagramas de comportamiento valorando su importancia en el desarrollo de aplicaciones y empleando herramientas específicas.",
           "ce": [
             {
               "codigo": "a",
@@ -2602,27 +2666,27 @@
         {
           "codigo": "RA1",
           "numero": 1,
-          "descripcion": "Selecciona las arquitecturas y tecnologías de programación Web en entorno servidor, analizando sus capacidades y características propias.",
+          "descripcion": "Selecciona las arquitecturas y tecnologías de programación web en entorno servidor, analizando sus capacidades y características propias.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han caracterizado y diferenciado los modelos de ejecución de código en el servidor y en el cliente Web."
+              "descripcion": "Se han caracterizado y diferenciado los modelos de ejecución de código en el servidor y en el cliente web."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han reconocido las ventajas que proporciona la generación dinámica de páginas Web y sus diferencias con la inclusión de sentencias de guiones en el interior de las páginas Web."
+              "descripcion": "Se han reconocido las ventajas que proporciona la generación dinámica de páginas."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han identificado los mecanismos de ejecución de código en los servidores Web."
+              "descripcion": "Se han identificado los mecanismos de ejecución de código en los servidores web."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han reconocido las funcionalidades que aportan los servidores de aplicaciones y su integración con los servidores Web."
+              "descripcion": "Se han reconocido las funcionalidades que aportan los servidores de aplicaciones y su integración con los servidores web."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han identificado y caracterizado los principales lenguajes y tecnologías relacionados con la programación Web en entorno servidor."
+              "descripcion": "Se han identificado y caracterizado los principales lenguajes y tecnologías relacionados con la programación web en entorno servidor."
             },
             {
               "codigo": "f",
@@ -2630,18 +2694,18 @@
             },
             {
               "codigo": "g",
-              "descripcion": "Se han reconocido y evaluado las herramientas de programación en entorno servidor."
+              "descripcion": "Se han reconocido y evaluado las herramientas y frameworks de programación en entorno servidor."
             }
           ]
         },
         {
           "codigo": "RA2",
           "numero": 2,
-          "descripcion": "Escribe sentencias ejecutables por un servidor Web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas.",
+          "descripcion": "Escribe sentencias ejecutables por un servidor web reconociendo y aplicando procedimientos de integración del código en lenguajes de marcas.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han reconocido los mecanismos de generación de páginas Web a partir de lenguajes de marcas con código embebido."
+              "descripcion": "Se han reconocido los mecanismos de generación de páginas web a partir de lenguajes de marcas con código embebido."
             },
             {
               "codigo": "b",
@@ -2688,7 +2752,7 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se han utilizado “arrays” para almacenar y recuperar conjuntos de datos."
+              "descripcion": "Se han utilizado matrices (arrays) para almacenar y recuperar conjuntos de datos."
             },
             {
               "codigo": "d",
@@ -2711,7 +2775,7 @@
         {
           "codigo": "RA4",
           "numero": 4,
-          "descripcion": "Desarrolla aplicaciones Web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.",
+          "descripcion": "Desarrolla aplicaciones web embebidas en lenguajes de marcas analizando e incorporando funcionalidades según especificaciones.",
           "ce": [
             {
               "codigo": "a",
@@ -2719,11 +2783,11 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se han utilizado sesiones para mantener el estado de las aplicaciones Web."
+              "descripcion": "Se han utilizado mecanismos para mantener el estado de las aplicaciones web."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han utilizado “cookies” para almacenar información en el cliente Web y para recuperar su contenido."
+              "descripcion": "Se han utilizado mecanismos para almacenar información en el cliente web y para recuperar su contenido."
             },
             {
               "codigo": "d",
@@ -2735,10 +2799,6 @@
             },
             {
               "codigo": "f",
-              "descripcion": "Se han realizado adaptaciones a aplicaciones Web existentes como gestores de contenidos u otras."
-            },
-            {
-              "codigo": "g",
               "descripcion": "Se han utilizado herramientas y entornos para facilitar la programación, prueba y depuración del código."
             }
           ]
@@ -2746,7 +2806,7 @@
         {
           "codigo": "RA5",
           "numero": 5,
-          "descripcion": "Desarrolla aplicaciones Web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.",
+          "descripcion": "Desarrolla aplicaciones web identificando y aplicando mecanismos para separar el código de presentación de la lógica de negocio.",
           "ce": [
             {
               "codigo": "a",
@@ -2754,7 +2814,7 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se han analizado tecnologías y mecanismos que permiten realizar esta separación y sus características principales."
+              "descripcion": "Se han analizado y utilizado mecanismos y frameworks que permiten realizar esta separación y sus características principales."
             },
             {
               "codigo": "c",
@@ -2762,19 +2822,19 @@
             },
             {
               "codigo": "d",
-              "descripcion": "Se han utilizado formularios generados de forma dinámica para responder a los eventos de la aplicación Web."
+              "descripcion": "Se han utilizado formularios generados de forma dinámica para responder a los eventos de la aplicación web."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han identificado y aplicado los parámetros relativos a la configuración de la aplicación Web."
+              "descripcion": "Se han identificado y aplicado los parámetros relativos a la configuración de la aplicación web."
             },
             {
               "codigo": "f",
-              "descripcion": "Se han escrito aplicaciones Web con mantenimiento de estado y separación de la lógica de negocio."
+              "descripcion": "Se han escrito aplicaciones web con mantenimiento de estado y separación de la lógica de negocio."
             },
             {
               "codigo": "g",
-              "descripcion": "Se han aplicado los principios de la programación orientada a objetos."
+              "descripcion": "Se han aplicado los principios y patrones de diseño de la programación orientada a objetos."
             },
             {
               "codigo": "h",
@@ -2785,7 +2845,7 @@
         {
           "codigo": "RA6",
           "numero": 6,
-          "descripcion": "Desarrolla aplicaciones de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.",
+          "descripcion": "Desarrolla aplicaciones web de acceso a almacenes de datos, aplicando medidas para mantener la seguridad y la integridad de la información.",
           "ce": [
             {
               "codigo": "a",
@@ -2813,57 +2873,57 @@
             },
             {
               "codigo": "g",
-              "descripcion": "Se han utilizado transacciones para mantener la consistencia de la información."
-            },
-            {
-              "codigo": "h",
-              "descripcion": "Se han probado y documentado las aplicaciones."
+              "descripcion": "Se han probado y documentado las aplicaciones web."
             }
           ]
         },
         {
           "codigo": "RA7",
           "numero": 7,
-          "descripcion": "Desarrolla servicios Web analizando su funcionamiento e implantando la estructura de sus componentes.",
+          "descripcion": "Desarrolla servicios web reutilizables y accesibles mediante protocolos web, verificando su funcionamiento.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han reconocido las características propias y el ámbito de aplicación de los servicios Web."
+              "descripcion": "Se han reconocido las características propias y el ámbito de aplicación de los servicios web."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han reconocido las ventajas de utilizar servicios Web para proporcionar acceso a funcionalidades incorporadas a la lógica de negocio de una aplicación."
+              "descripcion": "Se han reconocido las ventajas de utilizar servicios web para proporcionar acceso a funcionalidades incorporadas a la lógica de negocio de una aplicación."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han identificado las tecnologías y los protocolos implicados en la publicación y utilización de servicios Web."
+              "descripcion": "Se han identificado las tecnologías y los protocolos implicados en el consumo de servicios web."
             },
             {
               "codigo": "d",
-              "descripcion": "Se ha programado un servicio Web."
+              "descripcion": "Se han utilizado los estándares y arquitecturas más difundidos e implicados en el desarrollo de servicios web."
             },
             {
               "codigo": "e",
-              "descripcion": "Se ha creado el documento de descripción del servicio Web."
+              "descripcion": "Se ha programado un servicio web."
             },
             {
               "codigo": "f",
-              "descripcion": "Se ha verificado el funcionamiento del servicio Web."
+              "descripcion": "Se ha verificado el funcionamiento del servicio web."
             },
             {
               "codigo": "g",
-              "descripcion": "Se ha consumido el servicio Web."
+              "descripcion": "Se ha consumido el servicio web."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha documentado un servicio web."
             }
           ]
         },
         {
           "codigo": "RA8",
           "numero": 8,
-          "descripcion": "Genera páginas Web dinámicas analizando y utilizando tecnologías del servidor Web que añadan código al lenguaje de marcas.",
+          "descripcion": "Genera páginas web dinámicas analizando y utilizando tecnologías y frameworks del servidor web que añadan código al lenguaje de marcas.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han identificado las diferencias entre la ejecución de código en el servidor y en el cliente Web."
+              "descripcion": "Se han identificado las diferencias entre la ejecución de código en el servidor y en el cliente web."
             },
             {
               "codigo": "b",
@@ -2871,30 +2931,30 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se han identificado las librerías y las tecnologías relacionadas con la generación por parte del servidor de páginas Web con guiones embebidos."
+              "descripcion": "Se han identificado las tecnologías y frameworks relacionadas con la generación por parte del servidor de páginas web con guiones embebidos."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han utilizado estas tecnologías para generar páginas Web que incluyan interacción con el usuario en forma de advertencias y peticiones de confirmación."
+              "descripcion": "Se han utilizado estas tecnologías y frameworks para generar páginas web que incluyan interacción con el usuario."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han utilizado estas tecnologías, para generar páginas Web que incluyan verificación de formularios."
+              "descripcion": "Se han utilizado estas tecnologías y frameworks, para generar páginas web que incluyan verificación de formularios."
             },
             {
               "codigo": "f",
-              "descripcion": "Se han utilizado estas tecnologías para generar páginas web que incluyan modificación dinámica de su contenido y su estructura."
+              "descripcion": "Se han utilizado estas tecnologías y frameworks para generar páginas web que incluyan modificación dinámica de su contenido y su estructura."
             },
             {
               "codigo": "g",
-              "descripcion": "Se han aplicado estas tecnologías en la programación de aplicaciones Web."
+              "descripcion": "Se han aplicado estas tecnologías y frameworks en la programación de aplicaciones web."
             }
           ]
         },
         {
           "codigo": "RA9",
           "numero": 9,
-          "descripcion": "Desarrolla aplicaciones Web híbridas seleccionando y utilizando librerías de código y repositorios heterogéneos de información.",
+          "descripcion": "Desarrolla aplicaciones web híbridas seleccionando y utilizando tecnologías, frameworks servidor y repositorios heterogéneos de información.",
           "ce": [
             {
               "codigo": "a",
@@ -2902,7 +2962,7 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se han identificado librerías de código y tecnologías aplicables en la creación de aplicaciones web híbridas."
+              "descripcion": "Se han identificado tecnologías y frameworks aplicables en la creación de aplicaciones web híbridas."
             },
             {
               "codigo": "c",
@@ -2910,11 +2970,11 @@
             },
             {
               "codigo": "d",
-              "descripcion": "Se han creado repositorios específicos a partir de información existente en Internet y en almacenes de información."
+              "descripcion": "Se han creado repositorios específicos a partir de información existente en almacenes de información."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han utilizado librerías de código para incorporar funcionalidades específicas a una aplicación web."
+              "descripcion": "Se han utilizado librerías de código y frameworks para incorporar funcionalidades específicas a una aplicación web."
             },
             {
               "codigo": "f",
@@ -2922,6 +2982,10 @@
             },
             {
               "codigo": "g",
+              "descripcion": "Se han analizado y utilizado librerías de código relacionadas con Big Data e inteligencia de negocios, para incorporar análisis e inteligencia de datos proveniente de repositorios."
+            },
+            {
+              "codigo": "h",
               "descripcion": "Se han probado, depurado y documentado las aplicaciones generadas."
             }
           ]
@@ -2939,54 +3003,54 @@
         {
           "codigo": "RA1",
           "numero": 1,
-          "descripcion": "Implanta arquitecturas Web analizando y aplicando criterios de funcionalidad.",
+          "descripcion": "Implanta arquitecturas web analizando y aplicando criterios de funcionalidad.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han analizado aspectos generales de arquitecturas Web, sus características, ventajas e inconvenientes."
+              "descripcion": "Se han analizado aspectos generales de arquitecturas web, sus características, ventajas e inconvenientes."
             },
             {
               "codigo": "b",
-              "descripcion": "Se han descrito los fundamentos y protocolos en los que se basa el funcionamiento de un servidor Web."
+              "descripcion": "Se han descrito los fundamentos y protocolos en los que se basa el funcionamiento de un servidor web."
             },
             {
               "codigo": "c",
-              "descripcion": "Se ha realizado la instalación y configuración básica de servidores Web."
+              "descripcion": "Se ha realizado la instalación y configuración básica de servidores web."
             },
             {
               "codigo": "d",
-              "descripcion": "Se han clasificado y descrito los principales servidores de aplicaciones."
-            },
-            {
-              "codigo": "e",
               "descripcion": "Se ha realizado la instalación y configuración básica de servidores de aplicaciones."
             },
             {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la instalación y configuración básica de tecnologías de virtualización de servidores en la nube y en contenedores."
+            },
+            {
               "codigo": "f",
-              "descripcion": "Se han realizado pruebas de funcionamiento de los servidores web y de aplicaciones."
+              "descripcion": "Se han realizado pruebas de funcionamiento de los servidores web y de aplicaciones. y de tecnologías de virtualización en la nube y en contenedores."
             },
             {
               "codigo": "g",
-              "descripcion": "Se ha analizado la estructura y recursos que componen una aplicación Web."
+              "descripcion": "Se ha analizado la estructura y recursos que componen una aplicación web."
             },
             {
               "codigo": "h",
-              "descripcion": "Se han descrito los requerimientos del proceso de implantación de una aplicación Web."
+              "descripcion": "Se han descrito los requerimientos del proceso de implantación de una aplicación web."
             },
             {
               "codigo": "i",
-              "descripcion": "Se han documentado los procesos de instalación y configuración realizados sobre los servidores Web y sobre las aplicaciones."
+              "descripcion": "Se han documentado los procesos de instalación y configuración realizados sobre los servidores web, de aplicaciones. y sobre tecnologías de virtualización en la nube y en contenedores."
             }
           ]
         },
         {
           "codigo": "RA2",
           "numero": 2,
-          "descripcion": "Gestiona servidores Web, evaluando y aplicando criterios de configuración para el acceso seguro a los servicios.",
+          "descripcion": "Implanta aplicaciones web en servidores web, evaluando y aplicando criterios de configuración para su funcionamiento seguro.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se han reconocido los parámetros de administración más importantes del servidor Web."
+              "descripcion": "Se han reconocido los parámetros de administración más importantes del servidor web."
             },
             {
               "codigo": "b",
@@ -3010,22 +3074,26 @@
             },
             {
               "codigo": "g",
-              "descripcion": "Se han realizado pruebas de funcionamiento y rendimiento del servidor Web."
-            },
-            {
-              "codigo": "h",
               "descripcion": "Se ha elaborado documentación relativa a la configuración, administración segura y recomendaciones de uso del servidor."
             },
             {
+              "codigo": "h",
+              "descripcion": "Se han realizado los ajustes necesarios para la implantación de aplicaciones en el servidor web."
+            },
+            {
               "codigo": "i",
-              "descripcion": "Se han realizado los ajustes necesarios para la implantación de aplicaciones en el servidor Web."
+              "descripcion": "Se han utilizado tecnologías de virtualización en el despliegue de servidores web en la nube y en contenedores."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han instalado, configurado y utilizado conjuntos de herramientas de gestión de logs, permitiendo su monitorización, consolidación y análisis en tiempo real."
             }
           ]
         },
         {
           "codigo": "RA3",
           "numero": 3,
-          "descripcion": "Implanta aplicaciones Web en servidores de aplicaciones, evaluando y aplicando criterios de configuración para su funcionamiento seguro.",
+          "descripcion": "Implanta aplicaciones web en servidores de aplicaciones, evaluando y aplicando criterios de configuración para su funcionamiento seguro.",
           "ce": [
             {
               "codigo": "a",
@@ -3037,7 +3105,7 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se ha configurado el servidor de aplicaciones para cooperar con el servidor Web."
+              "descripcion": "Se ha configurado el servidor de aplicaciones para cooperar con el servidor web."
             },
             {
               "codigo": "d",
@@ -3053,7 +3121,7 @@
             },
             {
               "codigo": "g",
-              "descripcion": "Se han realizado pruebas de funcionamiento y rendimiento de la aplicación Web desplegada."
+              "descripcion": "Se han realizado pruebas de funcionamiento y rendimiento de la aplicación web desplegada."
             },
             {
               "codigo": "h",
@@ -3061,7 +3129,7 @@
             },
             {
               "codigo": "i",
-              "descripcion": "Se ha elaborado documentación relativa al despliegue de aplicaciones sobre el servidor de aplicaciones."
+              "descripcion": "Se han utilizado tecnologías de virtualización en el despliegue de servidores de aplicaciones en la nube y en contenedores."
             }
           ]
         },
@@ -3080,38 +3148,34 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se ha configurado el acceso anónimo."
-            },
-            {
-              "codigo": "d",
               "descripcion": "Se ha comprobado el acceso al servidor, tanto en modo activo como en modo pasivo."
             },
             {
-              "codigo": "e",
+              "codigo": "d",
               "descripcion": "Se han realizado pruebas con clientes en línea de comandos y clientes en modo gráfico."
             },
             {
-              "codigo": "f",
+              "codigo": "e",
               "descripcion": "Se ha utilizado el protocolo seguro de transferencia de archivos."
             },
             {
-              "codigo": "g",
+              "codigo": "f",
               "descripcion": "Se han configurado y utilizado servicios de transferencia de archivos integrados en servidores web."
             },
             {
-              "codigo": "h",
-              "descripcion": "Se ha utilizado el navegador como cliente del servicio de transferencia de archivos."
+              "codigo": "g",
+              "descripcion": "Se ha elaborado documentación relativa a la configuración y administración del servicio de transferencia de archivos."
             },
             {
-              "codigo": "i",
-              "descripcion": "Se ha elaborado documentación relativa a la configuración y administración del servicio de transferencia de archivos."
+              "codigo": "h",
+              "descripcion": "Se han utilizado tecnologías de virtualización en el despliegue de servidores de transferencia de archivos en la nube y en contenedores."
             }
           ]
         },
         {
           "codigo": "RA5",
           "numero": 5,
-          "descripcion": "Verifica la ejecución de aplicaciones Web comprobando los parámetros de configuración de servicios de red.",
+          "descripcion": "Verifica la ejecución de aplicaciones web comprobando los parámetros de configuración de servicios de red.",
           "ce": [
             {
               "codigo": "a",
@@ -3119,7 +3183,7 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se han identificado las necesidades de configuración del servidor de nombres en función de los requerimientos de ejecución de las aplicaciones Web desplegadas."
+              "descripcion": "Se han identificado las necesidades de configuración del servidor de nombres en función de los requerimientos de ejecución de las aplicaciones web desplegadas."
             },
             {
               "codigo": "c",
@@ -3135,18 +3199,22 @@
             },
             {
               "codigo": "f",
-              "descripcion": "Se han especificado los parámetros de configuración en el servicio de directorios adecuados para el proceso de validación de usuarios de la aplicación Web."
+              "descripcion": "Se han especificado los parámetros de configuración en el servicio de directorios adecuados para el proceso de validación de usuarios de la aplicación web."
             },
             {
               "codigo": "g",
               "descripcion": "Se ha elaborado documentación relativa a las adaptaciones realizadas en los servicios de red."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado tecnologías de virtualización en el despliegue de servidores de directorios en la nube y en contenedores."
             }
           ]
         },
         {
           "codigo": "RA6",
           "numero": 6,
-          "descripcion": "Elabora la documentación de la aplicación Web evaluando y seleccionando herramientas de generación de documentación y control de versiones.",
+          "descripcion": "Elabora la documentación de la aplicación web evaluando y seleccionando herramientas de generación de documentación, control de versiones y de integración continua.",
           "ce": [
             {
               "codigo": "a",
@@ -3170,11 +3238,15 @@
             },
             {
               "codigo": "f",
-              "descripcion": "Se ha garantizado la accesibilidad y seguridad de la documentación almacenada por el sistema de control de versiones."
+              "descripcion": "Se ha garantizado la accesibilidad y seguridad de la información y código almacenada por el sistema de control de versiones."
             },
             {
               "codigo": "g",
               "descripcion": "Se ha documentado la instalación, configuración y uso del sistema de control de versiones utilizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado herramientas para la integración continua del código."
             }
           ]
         }
@@ -3203,22 +3275,18 @@
             },
             {
               "codigo": "c",
-              "descripcion": "Se han analizado alternativas para la presentación de la información en documentos Web."
+              "descripcion": "Se han analizado alternativas para la presentación de la información en documentos web."
             },
             {
               "codigo": "d",
-              "descripcion": "Se ha valorado la importancia de definir y aplicar la guía de estilo en el desarrollo de una aplicación Web."
+              "descripcion": "Se ha valorado la importancia de definir y aplicar la guía de estilo en el desarrollo de una aplicación web."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han utilizado y valorado distintas aplicaciones para el diseño de documentos Web."
+              "descripcion": "Se han utilizado y valorado distintas tecnologías para el diseño de documentos web."
             },
             {
               "codigo": "f",
-              "descripcion": "Se han utilizado marcos, tablas y capas para presentar la información de manera ordenada."
-            },
-            {
-              "codigo": "g",
               "descripcion": "Se han creado y utilizado plantillas de diseño."
             }
           ]
@@ -3226,7 +3294,7 @@
         {
           "codigo": "RA2",
           "numero": 2,
-          "descripcion": "Crea interfaces Web homogéneos definiendo y aplicando estilos.",
+          "descripcion": "Crea interfaces web homogéneos definiendo y aplicando estilos.",
           "ce": [
             {
               "codigo": "a",
@@ -3262,14 +3330,18 @@
             },
             {
               "codigo": "i",
-              "descripcion": "Se ha utilizado y actualizado la guía de estilo."
+              "descripcion": "Se han analizado y utilizado tecnologías y frameworks para la creación de interfaces web con un diseño responsive."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han analizado y utilizado preprocesadores de estilos para traducir estilos comunes a un código estándar y reconocible por los navegadores."
             }
           ]
         },
         {
           "codigo": "RA3",
           "numero": 3,
-          "descripcion": "Prepara archivos multimedia para la Web, analizando sus características y manejando herramientas especificas.",
+          "descripcion": "Prepara archivos multimedia para la web, analizando sus características y manejando herramientas específicas.",
           "ce": [
             {
               "codigo": "a",
@@ -3308,7 +3380,7 @@
         {
           "codigo": "RA4",
           "numero": 4,
-          "descripcion": "Integra contenido multimedia en documentos Web valorando su aportación y seleccionando adecuadamente los elementos interactivos.",
+          "descripcion": "Integra contenido multimedia en documentos web valorando su aportación y seleccionando adecuadamente los elementos interactivos.",
           "ce": [
             {
               "codigo": "a",
@@ -3316,7 +3388,7 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se han identificado las necesidades específicas de configuración de los navegadores Web para soportar contenido multimedia e interactivo."
+              "descripcion": "Se han identificado las necesidades específicas de configuración de los navegadores web para soportar contenido multimedia e interactivo."
             },
             {
               "codigo": "c",
@@ -3328,22 +3400,22 @@
             },
             {
               "codigo": "e",
-              "descripcion": "Se han agregado elementos multimedia a documentos Web."
+              "descripcion": "Se han agregado elementos multimedia a documentos web."
             },
             {
               "codigo": "f",
-              "descripcion": "Se ha añadido interactividad a elementos de un documento Web."
+              "descripcion": "Se ha añadido interactividad a elementos de un documento web."
             },
             {
               "codigo": "g",
-              "descripcion": "Se ha verificado el funcionamiento de los elementos multimedia e interactivos en distintos navegadores."
+              "descripcion": "Se ha verificado el funcionamiento de los elementos multimedia e interactivos en distintos navegadores y dispositivos."
             }
           ]
         },
         {
           "codigo": "RA5",
           "numero": 5,
-          "descripcion": "Desarrolla interfaces Web accesibles, analizando las pautas establecidas y aplicando técnicas de verificación.",
+          "descripcion": "Desarrolla interfaces web accesibles, analizando las pautas establecidas y aplicando técnicas de verificación.",
           "ce": [
             {
               "codigo": "a",
@@ -3351,11 +3423,11 @@
             },
             {
               "codigo": "b",
-              "descripcion": "Se ha analizado la accesibilidad de diferentes documentos Web."
+              "descripcion": "Se ha analizado la accesibilidad de diferentes documentos web."
             },
             {
               "codigo": "c",
-              "descripcion": "Se han identificado las principales pautas de accesibilidad al contenido."
+              "descripcion": "Se han analizado los principios y pautas de accesibilidad al contenido, así como los niveles de conformidad."
             },
             {
               "codigo": "d",
@@ -3372,37 +3444,41 @@
             {
               "codigo": "g",
               "descripcion": "Se ha verificado la visualización del interfaz con diferentes navegadores y tecnologías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado y utilizado herramientas y estrategias que mejoren la visibilidad y la accesibilidad de los sitios y páginas web en los resultados de los buscadores."
             }
           ]
         },
         {
           "codigo": "RA6",
           "numero": 6,
-          "descripcion": "Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas.",
+          "descripcion": "Desarrolla interfaces web amigables analizando y aplicando las pautas de usabilidad establecidas.",
           "ce": [
             {
               "codigo": "a",
-              "descripcion": "Se ha analizado la usabilidad de diferentes documentos Web."
+              "descripcion": "Se ha analizado la usabilidad de diferentes documentos web."
             },
             {
               "codigo": "b",
-              "descripcion": "Se ha valorado la importancia del uso de estándares en la creación de documentos Web."
+              "descripcion": "Se ha valorado la importancia del uso de estándares en la creación de documentos web."
             },
             {
               "codigo": "c",
-              "descripcion": "Se ha modificado el interfaz Web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido."
+              "descripcion": "Se ha modificado el interfaz web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido."
             },
             {
               "codigo": "d",
-              "descripcion": "Se ha verificado la facilidad de navegación de un documento Web mediante distintos periféricos."
+              "descripcion": "Se ha verificado la facilidad de navegación de un documento web mediante distintos periféricos."
             },
             {
               "codigo": "e",
-              "descripcion": "Se han analizado diferentes técnicas para verificar la usabilidad de un documento Web."
+              "descripcion": "Se han analizado diferentes técnicas para verificar la usabilidad de un documento web."
             },
             {
               "codigo": "f",
-              "descripcion": "Se ha verificado la usabilidad del interfaz Web creado en diferentes navegadores y tecnologías."
+              "descripcion": "Se ha verificado la usabilidad de la interfaz web creado en diferentes navegadores y tecnologías."
             }
           ]
         }

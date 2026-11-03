@@ -26,7 +26,7 @@ podido extraer.
 
 - 181 ciclos con al menos parte de sus RA/CE.
 - 2.467 de 2.991 módulos con RA/CE (82,5 %).
-- 14.282 RA y 105.927 CE en los ficheros por ciclo.
+- 14.282 RA y 105.946 CE en los ficheros por ciclo.
 - La tabla completa está en [`COBERTURA.md`](./COBERTURA.md).
 - **36 cursos de especialización** con 855 RA y 5.695 CE; la tabla está en
   [`COBERTURA-ESPECIALIZACION.md`](./COBERTURA-ESPECIALIZACION.md).

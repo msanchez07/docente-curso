@@ -19,6 +19,21 @@ describe('datos BOE empaquetados', () => {
     }
   })
 
+  it('DWES de segundo de DAW incluye los CE h de RA7 y RA9', () => {
+    const datos = JSON.parse(readFileSync(join(DIRECTORIO, 'daw.json'), 'utf-8')) as {
+      modulos: { codigo: string; ra: { codigo: string; ce: { codigo: string }[] }[] }[]
+    }
+    const dwes = datos.modulos.find((modulo) => modulo.codigo === '0613')
+    expect(dwes).toBeDefined()
+    for (const codigo of ['RA7', 'RA9']) {
+      const ra = dwes!.ra.find((resultado) => resultado.codigo === codigo)
+      expect(
+        ra?.ce.map((ce) => ce.codigo),
+        codigo
+      ).toContain('h')
+    }
+  })
+
   it('los ciclos de DAM, ASIR y SMR tienen RA/CE en sus módulos profesionales', () => {
     const esperados: Record<string, number> = {
       'gs-desarrollo-de-aplicaciones-multiplataforma': 100,
