@@ -439,10 +439,6 @@ async function importarPlantillaCalificacion(evento: Event): Promise<void> {
 }
 
 async function guardar(): Promise<void> {
-  if (!pesosAvaluacionOk.value) {
-    error.value = `Los pesos de las unidades de este trimestre suman ${totalPesosAvaluacion.value} %; deben sumar exactamente 100 %.`
-    return
-  }
   guardando.value = true
   error.value = null
   mensaje.value = null
