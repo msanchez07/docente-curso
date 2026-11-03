@@ -195,6 +195,7 @@ import {
 import { cabeceraDocumentoHtml, pieDocumentoHtml } from '../documentos/cabecera'
 import {
   abrirDescargaManual,
+  comprobarActualizacion,
   descargarActualizacion,
   instalarActualizacion,
   reintentarActualizacion
@@ -241,6 +242,7 @@ export function registrarIpc(): void {
   ipcMain.handle(CANALES.catalogoListar, () => listarCatalogo(bd()))
 
   // Actualizaciones de la aplicación.
+  ipcMain.handle(CANALES.actualizacionComprobar, () => comprobarActualizacion())
   ipcMain.handle(CANALES.actualizacionDescargar, () => descargarActualizacion())
   ipcMain.handle(CANALES.actualizacionInstalar, () => instalarActualizacion())
   ipcMain.handle(CANALES.actualizacionReintentar, () => reintentarActualizacion())

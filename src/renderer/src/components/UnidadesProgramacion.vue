@@ -5,6 +5,7 @@ import MenuAcciones, { type AccionMenu } from '@renderer/components/MenuAcciones
 import { notificar } from '@renderer/composables/notificaciones'
 import { ESQUEMA_UNIDADES } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
+import { paraIpc } from '@renderer/utils/ipc'
 import { REQUISITOS_POR_DEFECTO } from '@shared/modelo'
 import type {
   CategoriaEvaluacion,
@@ -445,13 +446,14 @@ async function guardar(): Promise<void> {
   try {
     let guardada: UnidadProgramacion
     if (editando.value) {
-      guardada = (await window.api.unidadesProgramacion.actualizar(editando.value.id, {
-        ...form
-      }))!
+      guardada = (await window.api.unidadesProgramacion.actualizar(
+        editando.value.id,
+        paraIpc(form)
+      ))!
       mensaje.value = 'Unidad actualizada.'
       notificar(mensaje.value)
     } else {
-      guardada = await window.api.unidadesProgramacion.crear(props.grupo.id, { ...form })
+      guardada = await window.api.unidadesProgramacion.crear(props.grupo.id, paraIpc(form))
       mensaje.value = 'Unidad creada.'
       notificar(mensaje.value)
     }

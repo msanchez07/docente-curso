@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onBeforeUnmount, onMounted, ref } from 'vue'
 import { notificar } from '@renderer/composables/notificaciones'
 import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
 import { APP, AUTOR } from '@shared/autor'
-import type { ConfiguracionGeneral } from '@shared/tipos'
+import type { ConfiguracionGeneral, EventoActualizacion } from '@shared/tipos'
 
 const configuracion = ref<ConfiguracionGeneral>({
   ...CONFIGURACION_GENERAL_POR_DEFECTO,
@@ -15,6 +15,9 @@ const guardando = ref(false)
 const error = ref<string | null>(null)
 const ficheroLogo = ref<HTMLInputElement | null>(null)
 const version = ref('')
+const actualizacion = ref<EventoActualizacion | null>(null)
+const buscandoActualizacion = ref(false)
+let desuscribirActualizacion: (() => void) | undefined
 
 function copiar(config: ConfiguracionGeneral): ConfiguracionGeneral {
   return {
@@ -37,9 +40,28 @@ async function cargar(): Promise<void> {
 }
 
 onMounted(async () => {
+  desuscribirActualizacion = window.api.actualizaciones.onEvento((evento) => {
+    actualizacion.value = evento
+    if (evento.estado !== 'comprobando') buscandoActualizacion.value = false
+    if (evento.estado === 'no-disponible') notificar('Ya tienes la última versión de Aula Nova.')
+  })
   await cargar()
   version.value = await window.api.app.version()
 })
+
+onBeforeUnmount(() => desuscribirActualizacion?.())
+
+function buscarActualizaciones(): void {
+  buscandoActualizacion.value = true
+  actualizacion.value = { estado: 'comprobando' }
+  window.api.actualizaciones.comprobar().catch((e) => {
+    buscandoActualizacion.value = false
+    actualizacion.value = {
+      estado: 'error',
+      mensaje: (e as Error).message ?? String(e)
+    }
+  })
+}
 
 function elegirLogo(): void {
   ficheroLogo.value?.click()
@@ -243,7 +265,7 @@ async function guardar(): Promise<void> {
         <header class="cabecera-criterios">
           <div class="cabecera-criterios__titulo">
             <h3>Acerca de {{ APP.nombre }}</h3>
-            <span class="tenue">{{ APP.subtitulo }} · v{{ version || '1.1.3' }}</span>
+            <span class="tenue">{{ APP.subtitulo }} · v{{ version || '1.1.4' }}</span>
           </div>
         </header>
         <div class="configuracion__autor">
@@ -255,6 +277,34 @@ async function guardar(): Promise<void> {
           <p class="tenue">
             Datos oficiales del BOE y del catálogo de secuenciación y horarios de la Conselleria.
           </p>
+          <div class="configuracion__actualizacion">
+            <button
+              class="boton"
+              type="button"
+              :disabled="buscandoActualizacion"
+              @click="buscarActualizaciones"
+            >
+              {{ buscandoActualizacion ? 'Buscando…' : 'Buscar actualizaciones' }}
+            </button>
+            <span v-if="actualizacion" class="tenue" role="status">
+              <template v-if="actualizacion.estado === 'comprobando'">Buscando…</template>
+              <template v-else-if="actualizacion.estado === 'no-disponible'">
+                Ya tienes la última versión.
+              </template>
+              <template v-else-if="actualizacion.estado === 'disponible'">
+                Nueva versión {{ actualizacion.version }} disponible.
+              </template>
+              <template v-else-if="actualizacion.estado === 'lista'">
+                Actualización preparada.
+              </template>
+              <template v-else-if="actualizacion.estado === 'descargando'">
+                Descargando actualización…
+              </template>
+              <template v-else-if="actualizacion.estado === 'error'">
+                {{ actualizacion.mensaje }}
+              </template>
+            </span>
+          </div>
         </div>
       </section>
 
@@ -286,5 +336,14 @@ async function guardar(): Promise<void> {
 
 .configuracion__autor a:hover {
   text-decoration: underline;
+}
+.configuracion__actualizacion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--borde);
 }
 </style>

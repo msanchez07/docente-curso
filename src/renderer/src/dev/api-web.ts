@@ -1975,7 +1975,7 @@ function escribirConfiguracionGeneral(configuracion: ConfiguracionGeneral): void
 
 const api = {
   app: {
-    version: async () => '1.1.3-web',
+    version: async () => '1.1.4-web',
     plataforma: 'web'
   },
   archivos: {
@@ -2036,6 +2036,11 @@ const api = {
   },
   actualizaciones: {
     onEvento: () => () => undefined,
+    comprobar: async () => {
+      throw new Error(
+        'La comprobación de actualizaciones solo está disponible en la aplicación de escritorio.'
+      )
+    },
     descargar: async () => undefined,
     instalar: async () => undefined,
     reintentar: async () => undefined,

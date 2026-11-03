@@ -1521,6 +1521,8 @@ export interface Api {
   actualizaciones: {
     /** Suscribe a los eventos del actualizador; devuelve la función para desuscribirse. */
     onEvento(callback: (evento: EventoActualizacion) => void): () => void
+    /** Busca actualizaciones manualmente. */
+    comprobar(): Promise<void>
     descargar(): Promise<void>
     instalar(): Promise<void>
     reintentar(): Promise<void>
@@ -1539,6 +1541,7 @@ export interface Api {
 /** Nombres de los canales IPC, en un único sitio para evitar erratas. */
 export const CANALES = {
   actualizacionEvento: 'actualizaciones:evento',
+  actualizacionComprobar: 'actualizaciones:comprobar',
   actualizacionDescargar: 'actualizaciones:descargar',
   actualizacionInstalar: 'actualizaciones:instalar',
   actualizacionReintentar: 'actualizaciones:reintentar',

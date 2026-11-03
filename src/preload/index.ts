@@ -35,6 +35,7 @@ const api: Api = {
       ipcRenderer.on(CANALES.actualizacionEvento, listener)
       return () => ipcRenderer.removeListener(CANALES.actualizacionEvento, listener)
     },
+    comprobar: () => ipcRenderer.invoke(CANALES.actualizacionComprobar),
     descargar: () => ipcRenderer.invoke(CANALES.actualizacionDescargar),
     instalar: () => ipcRenderer.invoke(CANALES.actualizacionInstalar),
     reintentar: () => ipcRenderer.invoke(CANALES.actualizacionReintentar),

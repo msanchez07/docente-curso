@@ -170,6 +170,18 @@ export function instalarActualizacion(): void {
   }, 6000)
 }
 
+/** Comprobación manual desde Configuración. */
+export function comprobarActualizacion(): void {
+  if (!app.isPackaged || process.env.GE_VENTANA_OCULTA === '1') {
+    enviar({
+      estado: 'no-disponible',
+      mensaje: 'La comprobación de actualizaciones solo está disponible en la aplicación instalada.'
+    })
+    return
+  }
+  reintentarActualizacion()
+}
+
 export function reintentarActualizacion(): void {
   descargaSolicitada = false
   rutaDmgMac = null

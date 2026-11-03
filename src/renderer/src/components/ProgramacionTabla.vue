@@ -188,11 +188,31 @@ function serializar(lista: ProgramacionAula[]): string {
 
 const hayCambios = computed(() => serializar(filas.value) !== original.value)
 
+const filasQuincena = computed<ProgramacionAula[]>(() => {
+  const porFecha = new Map<string, ProgramacionAula[]>()
+  for (const fila of filas.value) {
+    const lista = porFecha.get(fila.fecha) ?? []
+    lista.push(fila)
+    porFecha.set(fila.fecha, lista)
+  }
+
+  const resultado: ProgramacionAula[] = []
+  const fin = new Date(`${limite}T00:00:00`)
+  let fecha = new Date(`${inicioQuincena}T00:00:00`)
+  while (fecha <= fin) {
+    const iso = isoLocal(fecha)
+    const existentes = porFecha.get(iso) ?? []
+    if (existentes.length > 0 || diasDeClase.value.has(fecha.getDay())) {
+      resultado.push(...(existentes.length > 0 ? existentes : [filaVacia(iso)]))
+    }
+    fecha = sumarDias(fecha, 1)
+  }
+  return resultado
+})
+
 const filasVisibles = computed(() => {
   if (vista.value === 'todo') return filas.value
-  if (vista.value === 'quincena') {
-    return filas.value.filter((fila) => fila.fecha >= inicioQuincena && fila.fecha <= limite)
-  }
+  if (vista.value === 'quincena') return filasQuincena.value
   return filasPendientes.value
 })
 
