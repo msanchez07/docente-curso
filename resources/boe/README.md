@@ -14,6 +14,7 @@ módulos, RA y CE, y los cruza con `resources/horarios/catalogo-2026-27.json`.
 ```bash
 python3 scripts/importar_curriculos.py
 python3 scripts/importar_curriculos.py --ids gm-gestion-administrativa --force
+python3 scripts/importar_especializacion.py
 ```
 
 El script cachea las descargas en el directorio temporal del sistema. Para los
@@ -27,6 +28,8 @@ podido extraer.
 - 2.467 de 2.991 módulos con RA/CE (82,5 %).
 - 14.282 RA y 105.927 CE en los ficheros por ciclo.
 - La tabla completa está en [`COBERTURA.md`](./COBERTURA.md).
+- **36 cursos de especialización** con 855 RA y 5.695 CE; la tabla está en
+  [`COBERTURA-ESPECIALIZACION.md`](./COBERTURA-ESPECIALIZACION.md).
 
 Los ciclos de FP Básica y algunos títulos antiguos tienen cobertura parcial:
 los ámbitos `3161`–`3164`, el proyecto intermodular de FP Básica y algunos
@@ -35,7 +38,10 @@ módulos optativos no tienen RA/CE en los enlaces publicados en el dosier.
 ## Ficheros
 
 - Un JSON por ciclo: `resources/boe/<id>.json`.
-- `COBERTURA.md`: módulos con y sin RA/CE por ciclo.
+- Un JSON por curso de especialización: `resources/boe/ce-<slug>.json`.
+- `COBERTURA.md` y `COBERTURA-ESPECIALIZACION.md`: cobertura de RA/CE.
+- `resources/horarios/cursos-especializacion-2026-27.json`: catálogo de estos
+  cursos para crear grupos.
 - `daw.json`: se conserva el fichero original, ampliado con los módulos
   transversales y el proyecto de 1º.
 

@@ -29,6 +29,7 @@ import { diasProgramacionDemo } from '@shared/demo-programacion'
 import { modeloPorDefecto, REQUISITOS_POR_DEFECTO } from '@shared/modelo'
 import { CONFIGURACION_GENERAL_POR_DEFECTO } from '@shared/tipos'
 import catalogoHorarios from '../../../../resources/horarios/catalogo-2026-27.json'
+import cursosEspecializacion from '../../../../resources/horarios/cursos-especializacion-2026-27.json'
 import { generarCabeceraDocumento, generarPieDocumento } from '@shared/cabecera-documento'
 import conselleriaLogo from '@renderer/assets/plantillas/conselleria.png'
 import unionEuropeaLogo from '@renderer/assets/plantillas/union-europea.png'
@@ -2028,7 +2029,10 @@ const api = {
     }
   },
   catalogo: {
-    listar: async (): Promise<CicloCatalogo[]> => (catalogoHorarios as CatalogoHorarios).ciclos
+    listar: async (): Promise<CicloCatalogo[]> => [
+      ...(catalogoHorarios as CatalogoHorarios).ciclos,
+      ...(cursosEspecializacion as CatalogoHorarios).ciclos
+    ]
   },
   actualizaciones: {
     onEvento: () => () => undefined,

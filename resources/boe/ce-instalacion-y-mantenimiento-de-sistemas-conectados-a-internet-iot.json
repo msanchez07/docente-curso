@@ -1,0 +1,501 @@
+{
+  "id": "ce-instalacion-y-mantenimiento-de-sistemas-conectados-a-internet-iot",
+  "denominacion": "Instalación y mantenimiento de sistemas conectados a internet (IoT)",
+  "nivel": "Curso de Especialización de Grado Medio",
+  "familia_profesional": "Electricidad y Electrónica",
+  "duracion_horas": 360,
+  "ects": 0,
+  "abreviatura": "IMSCII",
+  "rd": "Real Decreto 206/2022, de 22 de marzo, por el que se establece el Curso de Especialización en Instalación y mantenimiento de sistemas conectados a internet (IoT) y se fijan los aspectos básicos del currículo, y se modifica el Real Decreto 280/2021, de 20 de abril, por el que se establece el Curso de Especialización en Fabricación aditiva y se fijan los aspectos básicos del currículo, en el marco del Plan de Recuperación, Transformación y Resiliencia.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5596",
+  "modulos": [
+    {
+      "nombre": "Instalación de dispositivos y sistemas conectados, IoT.",
+      "codigo": "5081",
+      "ects": null,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los sistemas conectados a internet y los elementos que los componen analizando su impacto en los sectores productivos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sistemas y componentes susceptibles de ser conectados a internet."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido la diferencia entre Internet de las cosas, IoT, e Internet de las cosas industrial, en adelante IIoT."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han evaluado plataformas que facilitan la creación de proyectos IoT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la utilidad de IoT en distintos escenarios de aplicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha diferenciado entre edge computing y cloud computing."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado tecnologías asociadas a IoT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado ejemplos de aplicación en diferentes sectores productivos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado consideraciones sociales, legales, éticas y protección de datos de los agentes implicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Obtiene información de la documentación técnica, planos y esquemas, entre otros verificando su adecuación al proyecto de IoT.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha elaborado un informe con la situación actual de las instalaciones en las que se va a desarrollar el proyecto IoT."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado la adecuación del proyecto de IoT con las instalaciones existentes interpretando planos, esquemas y documentación técnica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detectado las inconsistencias de proyecto de IoT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado replanteos del proyecto de IoT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado simulaciones de entornos IoT."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado la tecnología, tipos de conectividad y coberturas a utilizar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha tenido en cuenta la normativa de seguridad medio ambiental, sistemas de seguridad y estándares de calidad establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Determina los recursos humanos y materiales para implementar un proyecto de IoT de acuerdo al plan de logística y documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las fases del proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado materiales y herramientas para el desarrollo de las operaciones de montaje de dispositivos de IoT."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha tenido en cuenta las características de equipos y elementos de acuerdo a las necesidades (conectividad, funcionalidad, operatividad y ciberseguridad, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las tareas a realizar en cada fase de la implementación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los recursos humanos del proyecto para la realización de las tareas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han tenido en cuenta los planes de calidad y seguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han documentado los procedimientos y las actuaciones realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Configura dispositivos de sistemas IoT de acuerdo a los requerimientos indicados en la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los parámetros funcionales a configurar de cada dispositivo de la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las consignas de los parámetros más adecuados para el proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado los parámetros funcionales, a través de su interfaz específico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han verificado las conexiones entre los componentes de la instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha asegurado la funcionalidad de los dispositivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seguido la secuenciación establecida en el protocolo de la configuración."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seguido el plan de seguridad y confidencialidad de datos del proyecto IoT establecido."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tenido en cuenta la documentación técnica y la normativa de seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Instala dispositivos y sistemas conectados a internet integrando elementos, instalaciones y equipos para su puesta en servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las operaciones y los protocolos de instalación en el plan de montaje de dispositivos IoT."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las prescripciones en materia de seguridad física de elementos y personas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado los equipos, sensores, dispositivos auxiliares de IoT, a partir del plan de montaje."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han conectado equipos y elementos al suministro eléctrico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado los elementos y equipos de acuerdo a las especificaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado pruebas de operatividad, conectividad y funcionamiento de dispositivos IoT de la instalación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado pruebas de obtención de datos y su transferencia, en el momento adecuado, a los destinos correspondientes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han subsanado los errores encontrados y realizado los ajustes pertinentes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha respetado el plan de gestión de residuos establecido para cada componente."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado las actuaciones realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Pone en servicio sistemas IoT o áreas de los mismos de acuerdo a los requisitos de la instalación y verificando su funcionamiento y prestaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado técnicas de monitorización de la red y de dispositivos local o remoto, optimizando los parámetros de configuración, teniendo en cuenta la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha evaluado el rendimiento de las comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado el correcto flujo de datos entre los dispositivos conectados a internet."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la efectividad de las medidas de seguridad y protecciones implementadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado el nivel de carga de las baterías."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la operatividad de la instalación IoT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído y analizado los datos de funcionamiento de dispositivos y sistemas conectados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado técnicas de diagnóstico y localización de averías y disfunciones según tipologías y características de cada dispositivo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han subsanado los errores encontrados."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han efectuado los ajustes necesarios para el restablecimiento del sistema."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han documentado las averías y disfunciones y los procesos de verificación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Aplica normas de prevención de riesgos laborales en sistemas IoT, identificando los riesgos laborales asociados a la instalación, montaje y puesta en servicio y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos laborales y el nivel de peligrosidad que supone la manipulación de materiales, equipos y herramientas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha tenido en cuenta el proyecto o simulación del proyecto utilizando planos, replanteos e instrucciones de ejecución, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas y equipamiento en los equipos de trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha tenido en cuenta la normativa de seguridad digital y protección de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Mantenimiento de dispositivos y sistemas conectados, IoT.",
+      "codigo": "5082",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Efectúa el mantenimiento predictivo en los sistemas y dispositivos conectados a internet utilizando herramientas software e instrumentación electrónica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la normativa relativa al mantenimiento de los equipos y sistemas conectados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los datos generados por las pasarelas y dispositivos desde el servidor remoto para determinar posibles averías y disfunciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detectado las desviaciones con respecto al normal funcionamiento de los sistemas y equipos conectados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado remotamente el nivel de carga de las baterías y, en su caso, se ha reemplazado el dispositivo o la batería."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha actualizado el firmware de las pasarelas y dispositivos de forma remota."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado los informes del mantenimiento realizado que permitirán conocer las causas de un fallo con carácter predictivo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza el mantenimiento preventivo de los sistemas de comunicaciones de acuerdo a los planes de mantenimiento e instrucciones de los fabricantes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las operaciones a realizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado analizadores de espectros para la medición de los parámetros que garanticen las comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado analizadores de redes para verificar la calidad de transmisión entre dispositivos inalámbricos y las pasarelas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado analizadores de protocolos para verificar la calidad de transmisión entre pasarelas inalámbricas y los servidores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la calidad de la red cableada y sistemas inalámbricos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la seguridad en el sistema de comunicaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cumplimentado informes de mantenimiento preventivo registrando las pruebas y las soluciones adoptadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones de mantenimiento preventivo de dispositivos conectados (IoT) siguiendo el plan de mantenimiento establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han localizado los dispositivos averiados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han revisado los sistemas de recarga de baterías de los dispositivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el mantenimiento de los paneles solares para garantizar el máximo rendimiento en la generación de energía."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado la necesidad de instalar filtros supresores de sobreintensidades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calibrado los sensores de los dispositivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han verificado la estanqueidad de las cajas y los sistemas de sujeción mecánica de dispositivos y pasarela."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado el consumo eléctrico eficiente de los dispositivos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha completado el informe de mantenimiento preventivo registrando las pruebas y las soluciones adoptadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han comprobado las medidas de seguridad en los dispositivos conectados a internet."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza el mantenimiento correctivo en sistemas y equipos conectados (IoT) relacionando las disfunciones detectadas con las causas que las producen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha obtenido la información de los sistemas de alertas y alarmas para la localización de averías y disfunciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las disfunciones o averías detectadas, elaborando un informe preliminar de las mismas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han sustituido las baterías recargables deterioradas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reemplazado las antenas de dispositivos y pasarelas defectuosas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han sustituido las juntas de estanqueidad de dispositivos en caso de falta de estanqueidad de los mismos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reemplazado los módulos y fuentes de alimentación eléctrica por nuevas unidades de acuerdo con la documentación técnica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reemplazado los cables de comunicación para garantizar su operatividad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han sustituido los sensores dañados siguiendo el protocolo establecido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han implantado nuevas medidas de seguridad."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los procesos de comprobación y verificación con el fin de registrar las tareas realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos laborales asociados al mantenimiento predictivo, preventivo y correctivo de los sistemas y equipos conectados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos laborales y el nivel de peligrosidad que supone la manipulación de los materiales, equipos y herramientas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y los equipos de protección individual que se deben emplear."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en el mantenimiento y reparación de los sistemas y equipos conectados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha tenido en cuenta la normativa de seguridad digital y de protección de datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

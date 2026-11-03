@@ -1,0 +1,694 @@
+{
+  "id": "ce-desarrollo-de-aplicaciones-en-lenguaje-python",
+  "denominacion": "Desarrollo de aplicaciones en lenguaje Python",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Informática y Comunicaciones",
+  "duracion_horas": 430,
+  "ects": 0,
+  "abreviatura": "DALP",
+  "rd": "Real Decreto 566/2024, de 18 de junio, por el que se establece el Curso de especialización de Formación Profesional de Grado Superior en Desarrollo de aplicaciones en lenguaje Python y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-12503",
+  "modulos": [
+    {
+      "nombre": "Entornos y sintaxis en Python",
+      "codigo": "5098",
+      "ects": 3,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza los problemas planteados, identificando los entornos de aplicación y proponiendo estrategias para su resolución.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características principales de los entornos de aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido estrategias conducentes a la resolución del problema."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las dificultades que puedan presentarse."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado diagramas de flujo de las soluciones propuestas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado el diagrama de flujo considerado óptimo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado que la solución propuesta es susceptible de ser implementada en Python."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza elementos de la programación en Python, identificando los bloques fundamentales de construcción de un programa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los aspectos fundamentales de la programación de alto nivel."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las diferencias entre lenguajes compilados e interpretados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los bloques principales en la construcción de un programa en Python."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido las diferencias entre diferentes versiones de Python."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los errores más frecuentes en la programación en Python."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia de la depuración de código."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado segmentos de código, antes y después de la depuración."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Evalúa entornos de trabajo para el desarrollo de aplicaciones en Python, indicando sus diferencias y áreas específicas de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los IDE´s (Integrated Development Environment) (entornos de desarrollo integrado) más habituales usados en la programación en Python."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado IDE´s, en función del desarrollo a realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las ventajas del uso de frameworks (marcos, esquemas) en el desarrollo de software con Python."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comparado diversos editores de código en Python relacionándolos con desarrollos de aplicaciones concretas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha puesto de manifiesto la utilidad del uso de IDLE´s (Integrated Development and Learning Environment) y frameworks mediante el análisis de software real."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Utiliza el IDLE básico de Python y la ventana Shell, introduciendo los principios de la escritura de software en Python.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito instrucciones elementales para visualizar el funcionamiento básico del lenguaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha escrito una instrucción en una sola línea."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha razonado la mala praxis de escribir varías instrucciones en una línea."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha escrito una instrucción en varias líneas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han escrito en consola las instrucciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado sangrados explicando su utilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han escrito comentarios en Python."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han instalado y probado editores de texto no integrados en el entorno."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica la sintaxis y operadores y tipos simples y complejos en Python, escribiendo instrucciones básicas y verificando sus resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha escrito código con sintaxis básica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se conocen y distinguen los distintos tipos de operadores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han escrito instrucciones básicas con cada tipo de operador."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se distinguen y utilizan los distintos tipos de datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado los distintos tipos de operadores en un código básico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han hecho operaciones entre iguales y distintos tipos de datos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Estructuras de control en Python",
+      "codigo": "5099",
+      "ects": 5,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica las estructuras de control en Python relacionándolas con aplicaciones reales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las estructuras de control que permiten modificar el flujo de las instrucciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han representado en un diagrama de flujo gráfico las estructuras de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado la importancia de las condiciones en cada estructura de control."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tenido en cuenta la importancia de los sangrados en las estructuras de control."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han escrito bloques de control secuencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito bloques de control de selección."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han escrito bloques de control de repetición."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reconoce las sentencias condicionales en Python aplicándolas a la resolución de problemas que impliquen toma de decisiones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado el concepto de sentencia condicional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las partes de las que consta una sentencia condicional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado correctamente el sangrado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha aplicado la ejecución condicional y control de variables."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han interpretado el funcionamiento de las sentencias condicionales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado correctamente las sentencias condicionales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado y aplicado correctamente las anidaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se aplica correctamente la sintaxis a aplicar en estructuras compactas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han escrito bloques de programas utilizando sentencias condicionales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han escrito bloques de programas utilizando sentencias condicionales anidadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Utiliza sentencias iterativas analizando las necesidades del código para resolver un problema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado el concepto de sentencia iterativa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha diferenciado entre estructuras condicionales e iterativas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado el funcionamiento de las sentencias iterativas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las sentencias iterativas de acuerdo a las necesidades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han escrito bloques de programas utilizando los bucles «for» y «while»."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han interpretado y aplicado los anidamientos de estructuras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica funciones de Python de distintos tipos mejorando la eficiencia del programa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se comprende la necesidad de usar funciones de Python y sus ventajas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha escrito código que incluya funciones Build-in de Python."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha escrito un programa con funciones definidas por la propia persona usuaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se aplican correctamente las funciones lambda en un programa de Python."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado funciones recursivas partiendo de funciones definidas anteriormente por la persona usuaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Crea arquitectura de código de forma eficiente y escribe código robusto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha diferenciado entre el concepto de excepción y los errores de sintaxis."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha escrito instrucciones de captura de excepciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han capturado y tratado excepciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tratado excepciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado depuraciones de excepciones correctamente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito bloques de código robusto utilizando las sentencias adecuadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Programación orientada a objetos",
+      "codigo": "5100",
+      "ects": 9,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza la programación orientada a objetos organizándolos y relacionándolos con el código para manejarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto de objeto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido la forma de agrupar datos (atributos)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito las operaciones a ejecutar sobre los datos (métodos)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las clases y las instancias de los objetos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha caracterizado el concepto de constructor."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado el concepto de destructor."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha definido el concepto de ortogonalidad de los métodos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha caracterizado los tipos de métodos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica la programación orientada a objetos para generar código eficiente y correctamente estructurado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha escrito una clase que se pueda reutilizar con herencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha escrito una clase nueva en base de una clase ya creada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha escrito un programa usando objetos y atributos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han escrito instrucciones self en métodos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha escrito un programa usando las propiedades de polimorfismo y encapsulación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito programas que incluyan constructores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han escrito programas que incluyan destructores."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han escrito módulos y paquetes y se han usado en un programa de forma correcta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Gestiona y maneja la creación de ficheros usando código Python.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito líneas de código que permiten la apertura de ficheros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado distintos métodos del objeto File."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se conocen propiedades del objeto File y se han usado correctamente en el código."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha escrito código para tratar ficheros JSON."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha escrito código permite cambiar objetos a cadenas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Conecta y gestiona bases de datos partiendo de entradas de datos desde aplicaciones Web.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha conectado con éxito una base de datos usando código Python."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha creado una nueva base de datos usando código Python."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado consultas contra la base de datos conectada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han incluido nuevos registros en la base de datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han eliminado registros en bloque de la base de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha creado un interfaz web usando Python."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha conectado la base de datos a una web y se permite escribir nuevos registros usando entrada de texto desde la web."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se conocen los requisitos de seguridad web en Python."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han verificado los requisitos de seguridad mínimos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Escribe programas en Python dando respuesta a problemas reales en diferentes campos de aplicación y teniendo en cuenta el contexto de uso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el problema a resolver documentándolo de forma rigurosa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han indicado posibles soluciones al problema."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la solución considerada más adecuada de acuerdo al contexto y al posible costo de la implementación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha escrito la solución en Python, documentándola debidamente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado el depurador."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han diseñado pruebas para cada una de las partes del programa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han ejecutado las pruebas y documentado los resultados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado que los resultados son los esperados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado cambios en caso de ser necesarios, documentándolos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha probado el programa en su conjunto."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han documentado cambios en caso de producirse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Análisis de datos con Python",
+      "codigo": "5101",
+      "ects": 9,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Manejo, limpieza y normalización de distintos tipos de datos en función del problema a resolver.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se conocen y se importan las librerías usadas en ciencia de datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha escrito código que permite leer datos de distintos orígenes (csv, xlsx, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha escrito código que permite exportar datos previamente leídos en ficheros de distinto formato (csv, xlsx, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha escrito código que permite acceder a bases de datos usando librerías de ciencia de datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se manejan selecciones, actualizaciones, adiciones y eliminaciones de datos de una base de datos usando las librerías de Python aplicadas en ciencia de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado pruebas intermedias de verificación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Limpia y estandariza lotes de datos de forma lógica y eficiente para su tratamiento posterior de acuerdo al problema a resolver.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los datos leídos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han deducido las operaciones para normalizar y estandarizar datos en Python."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha escrito código que permite limpiar y estandarizar datos basándose en el problema que hay que resolver."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado intervalos en series de datos para realizar agrupaciones de forma coherente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los datos a convertir de categóricos a numéricos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha escrito código que modifica variables categóricas en variables cuantitativas en Python."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza análisis exploratorios en datos teniendo en función del alcance del problema a resolver.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha resumido grandes cantidades de datos para toma decisiones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha sido capaz de responder preguntas relevantes relativos a los datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido patrones en los datos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha escrito código en Python que permita conocer la correlación entre variables."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla modelos en lenguaje Python dando solución al problema planteado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la relación entre una variable continua y una o más variables independientes mediante el ajuste de una ecuación lineal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha modelado una relación no lineal entre variables independientes y dependientes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado correctamente la muestra en la que se ensayará el procedimiento a evaluar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado una predicción y se ha comprobado su precisión y validez usando una muestra de datos válida. ANEXO II Espacios y equipamientos mínimos Espacios: Equipamientos mínimos: – Sistemas de proyección. – Ordenadores en red y con acceso a internet. – Medios audiovisuales. – Sistemas de reprografía. – Acceso a plataformas. – Licencias de los programas. – Programas informáticos específicos del curso de especialización. ANEXO III Especialidades del profesorado con atribución docente en los módulos profesionales del curso de especialización en Desarrollo de aplicaciones en lenguaje Python – Informática. – Sistemas Electrotécnicos y Automáticos. – Sistemas Electrónicos. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Sistemas y Aplicaciones Informáticas. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Informática. – Sistemas Electrónicos. – Sistemas Electrotécnicos y Automáticos. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Sistemas y Aplicaciones Informáticas. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Informática. – Sistemas Electrónicos. – Sistemas Electrotécnicos y Automáticos. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Sistemas y Aplicaciones Informáticas. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Informática. – Sistemas Electrónicos. – Sistemas Electrotécnicos y Automáticos. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Sistemas y Aplicaciones Informáticas. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

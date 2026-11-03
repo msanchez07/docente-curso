@@ -1,0 +1,931 @@
+{
+  "id": "ce-desarrollo-de-videojuegos-y-realidad-virtual",
+  "denominacion": "Desarrollo de videojuegos y realidad virtual",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Informática y Comunicaciones",
+  "duracion_horas": 600,
+  "ects": 0,
+  "abreviatura": "DVRV",
+  "rd": "Real Decreto 261/2021, de 13 de abril, por el que se establece el Curso de especialización en Desarrollo de videojuegos y realidad virtual y se fijan los aspectos básicos del currículo, se modifican diversos reales decretos por los que se establecen cursos de especialización y los aspectos básicos del currículo y se corrigen errores del Real Decreto 283/2019, de 22 de abril y del Real Decreto 402/2020, de 25 de febrero, por los que establecen los títulos y los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-7555",
+  "modulos": [
+    {
+      "nombre": "Programación y motores de videojuegos",
+      "codigo": "5048",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los principales referentes de la historia y la cultura del videojuego valorando su incidencia en la sociedad actual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales hitos en la historia del videojuego."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el carácter popular y lúdico del videojuego."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha evaluado el potencial económico de la industria del videojuego."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha estimado su potencial creativo e innovador."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el impacto del videojuego en la cultura y sociedad contemporánea."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las necesidades actuales de la industria del videojuego."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica los conceptos fundamentales de programación orientada a objetos, teniendo en cuenta el lenguaje de programación utilizado en el motor de videojuegos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la sintaxis, estructura y componentes de clase, propiedades, métodos y constructores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado mecanismos para controlar la visibilidad de las clases y de sus miembros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido y utilizado clases heredadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado y utilizado métodos estáticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y utilizado interfaces."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han creado y utilizado librerías de clases."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han escrito programas que manipulan información seleccionando y utilizando tipos avanzados de datos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han creado y utilizado patrones de diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha definido y utilizado la concurrencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura entornos de desarrollo, herramientas y motores de desarrollo de videojuegos, aplicando las técnicas necesarias y teniendo en cuenta los avances tecnológicos en el sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha instalado y configurado el motor de desarrollo de videojuegos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y conectado todos los tipos de recursos disponibles y necesarios para la elaboración del videojuego."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido y analizado las características del editor del motor de desarrollo de videojuegos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido la estructura de un proyecto de videojuego."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado y asociado las escenas del videojuego."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manejado las cámaras y reconocido sus funcionalidades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han creado diferentes objetos del videojuego y componentes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han configurado las interacciones entre los diferentes elementos y los conceptos básicos de iluminación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las herramientas de audio y se las ha asociado al videojuego."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han utilizado los elementos físicos integrados en el motor de desarrollo de videojuegos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han analizado y creado las diferentes interacciones del usuario con el videojuego."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Establece la arquitectura interna de videojuegos determinando la programación de scripts del motor de desarrollo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han manejado conceptos esenciales del lenguaje de programación, utilizado en el motor de desarrollo de videojuego."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los diferentes elementos que intervienen en la mecánica del videojuego."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han creado y usado scripts para la programación de los objetos del videojuego."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado funciones de eventos que ocurren durante el juego."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han administrado el tiempo de los eventos y acciones y el orden de ejecución."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la gestión automática de memoria del motor de videojuego."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado el proceso de compilación dependiente de la plataforma."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han verificado las herramientas de ayuda a la programación de scripts que permiten la depuración, testeo y desarrollo de los mismos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha supervisado el sistema de eventos para comunicación entre los objetos de la aplicación basados en la entrada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Crea efectos de aceleración, colisiones, gravedad y otras fuerzas inherentes a los objetos del juego, controlando fundamentos del sistema de física relacionado con los videojuegos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los componentes del sistema de física disponible en el motor de videojuegos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características que permiten el comportamiento físico para un objeto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado la fuerza de gravedad y colisiones aplicadas a los objetos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha modificado la posición y rotación de los objetos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha controlado la activación y desactivación mediante el adormecimiento y despertar de los objetos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha dotado a los objetos de características similares a los materiales físicos y se han definido sus comportamientos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado los disparadores de eventos según las interacciones de las colisiones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado y configurado las articulaciones asociadas a los objetos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han creado escenarios con objetos cuyas características y efectos son similares al mundo real."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Define el interfaz de usuario del videojuego teniendo en cuenta su rapidez y la facilidad de utilización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el funcionamiento del contenedor que alberga todos los objetos del juego."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el orden de visualización de todos los objetos que contiene el juego."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han ajustado los modos de renderizado de los objetos en la pantalla o contenedor del juego."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han posicionado y establecido los tamaños y rotaciones de los elementos de la interfaz de usuario en la pantalla."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado elementos visuales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha proporcionado a los elementos del interfaz la interacción asociada a las acciones del videojuego."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado las animaciones del interfaz de usuario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han configurado los distintos tipos de fuentes de textos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Diseño gráfico 2D y 3D",
+      "codigo": "5049",
+      "ects": 9,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Desarrolla los principios del proceso creativo del arte conceptual del proyecto del videojuego.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los conceptos fundamentales del arte conceptual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las etapas del proceso creativo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las técnicas para el desarrollo del arte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diseñado personajes y objetos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han diseñado fondos y escenarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado qué estilo artístico usar para el juego."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha identificado las técnicas de creación de personajes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Genera composiciones avanzadas aplicando herramientas profesionales de ilustración digital y dibujo vectorial.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado las funcionalidades y el entorno de trabajo de las herramientas de ilustración digital y dibujo vectorial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha manejado y aplicado el concepto de capas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han cumplimentado las diferentes técnicas de selección."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado composiciones avanzadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han exportado e importado imágenes en diferentes formatos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido la escala y optimización de las imágenes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han generado fuentes de texto mediante imágenes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tenido en cuenta la perspectiva de género en el proceso creativo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Diseña elementos gráficos y animaciones en 2D teniendo en cuenta las características de los personajes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han creado personajes 2D partiendo de la descripción y/o boceto inicial del personaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes técnicas de diseño artístico estableciendo sus diferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido la secuencia de los tipos de movimientos de personajes y objetos del juego."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado animaciones de los movimientos de los personajes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han generado conjuntos de patrones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manejado herramientas de creación de niveles 2D mapa de patrones partiendo del conjunto de patrones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado los conceptos de perspectiva."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han diseñado y creado fondos aplicando diferentes técnicas de diseño 2D."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Diseña elementos gráficos y animaciones en 3D siguiendo el guion establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han representado vectorialmente objetos en el espacio tridimensional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han manejado y aplicado texturas y materiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elaborado personajes y objetos mediante representación tridimensional utilizando las técnicas de modelado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han distribuido los diferentes elementos (objetos, luces, cámaras) en una escena."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el funcionamiento del sistema de animaciones 3D."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han transformado modelos mediante las tuberías de renderizado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha configurado la herramienta de importación y exportación de modelos 3D."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha añadido textura a objetos 3D."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado la interpolación en una escena 3D."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha generado un conjunto de animaciones para un objeto del juego."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha configurado la herramienta de importación de modelos 3D."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Define y configura movimientos de cámara e iluminación 3D aplicando los parámetros técnicos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los conceptos fundamentales de iluminación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han manejado los diferentes elementos de iluminación y sombra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han resuelto problemas de rendimiento de luces."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el posicionamiento y el movimiento de objetos en el espacio tridimensional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han visionado objetos del juego mediante cámaras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado múltiples cámaras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las diferencias entre iluminación dinámica y estática."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado diferentes configuraciones según el tipo de juego."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Programación en red e inteligencia artificial",
+      "codigo": "5050",
+      "ects": 5,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Desarrolla videojuegos multijugador identificando y relacionando los fundamentos de programación en red cliente-servidor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha controlado el estado de red del juego utilizando un administrador de red."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado juegos multijugador alojados en el cliente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha utilizado un serializador de datos con propósito general."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han remitido y recibido mensajes de red."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han enviado comandos de red de clientes a servidores."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han cumplimentado procedimientos remotos de servidores a clientes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han enviado eventos de red de servidores a clientes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha diseñado el modelo cliente y sus características."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Verifica la ejecución de motores de videojuegos comprobando los parámetros de configuración de la programación en red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido el componente para objetos en red."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado los comportamientos mediante scripts en red."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la sincronización automática configurable de las transformaciones de los objetos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado la sincronización automática de variables de script."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido el soporte para posicionar objetos en red en escenas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han asignado los componentes de red."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han adaptado los códigos a dispositivos con diferentes tipos de conexión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Diseña y desarrolla partidas utilizando procedimientos de servicios de internet para videojuegos en línea.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado servicios para establecer partidas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha generado publicidad de partidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido listas de partidas disponibles y proporcionado mecanismos para unirse a las mismas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado un servidor de retransmisión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han enrutado mensajes para participantes de partidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica conceptos básicos de inteligencia artificial en el diseño de videojuegos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los conceptos fundamentales de inteligencia artificial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los conceptos del aprendizaje computacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los diferentes tipos de elementos de aprendizaje por refuerzo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado entornos basados en entornos reales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han asociado los diferentes conceptos de inteligencia artificial a los elementos del videojuego."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica y relaciona elementos propios de la inteligencia artificial y el aprendizaje automático en el desarrollo de videojuegos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han generado personajes permitiendo su movimiento automático en el mundo del videojuego."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detectado obstáculos y atajos, evitado colisiones entre personajes y tomado decisiones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado sistemas de navegación automática con representación de áreas para el mapeo de ubicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado y utilizado procedimientos de inteligencia artificial integrados en el motor de videojuegos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido y utilizado comportamientos complejos de contenido visual y física realista."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado agentes para ajustar el nivel de dificultad de un juego de manera dinámica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han generado escenarios de entrenamiento aplicando la función de recompensas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Realidad virtual y realidad aumentada",
+      "codigo": "5051",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Gestión, publicación y producción",
+      "codigo": "5052",
+      "ects": 8,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Verifica los documentos del videojuego con descripción de todas las fases y aspectos relacionados con la creación del videojuego.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han documentado las diferentes fases por las que pasa el videojuego desde su concepción hasta el producto final."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los datos principales del videojuego: título, concepto, características, género, jugabilidad, público, estilo, categoría y otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha cumplimentado el guión del videojuego desglosando la historia de cada personaje (principal o secundario), el mundo, los enemigos y misiones, adaptando la trama creada a las mecánicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido con detalle las mecánicas del juego, identificando todas las opciones posibles del videojuego y la experiencia del jugador."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los diferentes estados del videojuego que se identifican con las diferentes pantallas o escenas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el interfaz del videojuego asociándolo a cada uno de los estados y al diseño interactivo de los mismos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado la música, voces y efectos de sonido relacionándolos entre sí en cada una de las escenas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los aspectos de producción, publicación y gestión."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha determinado la arquitectura de un proyecto software de videojuegos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Gestiona proyectos de videojuegos definiendo e implementando todas las etapas de los diferentes perfiles profesionales que forman parte de su desarrollo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las tareas y, en función de ellas, se establecen los diferentes perfiles profesionales que forman parte del equipo de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido e implementado metodologías de gestión de proyectos de videojuego."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han coordinado herramientas colaborativas de gestión de proyectos software."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido y relacionado repositorios de proyectos software y sus usuarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido las herramientas de comunicación de equipos de trabajo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado automatizaciones para informar de los eventos entre herramientas de trabajo de equipo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el control de versiones integrado en el entorno de desarrollo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Verifica el funcionamiento de los proyectos de videojuegos aplicando procesos de pruebas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado diferentes herramientas y técnicas de pruebas de videojuegos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido y documentado el plan de pruebas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han planificado pruebas de optimización de los recursos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han verificado pruebas de red."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado pruebas de nivel de dificultad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido pruebas de compatibilidad en los diferentes dispositivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han controlado pruebas en las diferentes plataformas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han elaborado pruebas de evaluación de jugabilidad y de caracterización de experiencia interactiva del jugador teniendo en cuenta los distintos perfiles existentes y el contexto de ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Publica videojuegos teniendo en cuenta las características de las plataformas y dispositivos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las características de las diferentes plataformas y dispositivos de videojuegos existentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las guías de clasificaciones de los videojuegos por edades y por género."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los requisitos para realizar compatibilidades entre diferentes dispositivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado procesos de conversiones desde el motor de videojuegos a las diferentes plataformas existentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han registrado y publicado los ficheros en las diferentes plataformas de videojuego."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha configurado e implementado la monetización del videojuego."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido e implementado los ingresos por publicidad del videojuego."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Caracteriza los distintos segmentos de mercado a los que puede ir destinado el videojuego.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la segmentación global del mercado de videojuegos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características demográficas, sociales y económicas del público objetivo del mercado de videojuegos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha detectado el potencial de ventas del videojuego según los tipos de público objetivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los segmentos del mercado a los que pueden ir destinados los videojuegos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido los parámetros de juego más adecuados para el segmento de mercado seleccionado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las posibles acciones de comunicación para posicionarse en los segmentos escogidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han previsto estrategias de fidelización de usuarios de cada videojuego."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido los parámetros de la experiencia interactiva del juego más adecuados para el segmento de mercado seleccionado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Diseña planes de difusión de videojuegos teniendo en cuenta las características y particularidades de los diferentes canales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han generado productos de acuerdo con los conceptos básicos de mercadotecnia asociada a los videojuegos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha diseñado una página web del videojuego con sus características principales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han planificado campañas de lanzamiento de videojuegos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido y utilizado canales de videojuegos de las redes sociales y comunidades de usuarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales eventos y festivales de videojuegos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Diseña el plan de negocio del proyecto del videojuego identificando los segmentos del mercado y las características de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los objetivos de producción y operación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el diseño del producto final mediante una estrategia y modelo de negocio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado la viabilidad del proyecto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los riesgos del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han valorado los tiempos asociados a recursos y costes de producción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado búsquedas de fuentes de financiación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado la gestión de calidad del proyecto."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

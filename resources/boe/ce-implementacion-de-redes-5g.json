@@ -1,0 +1,363 @@
+{
+  "id": "ce-implementacion-de-redes-5g",
+  "denominacion": "Implementación de redes 5G",
+  "nivel": "Curso de Especialización de Grado Medio",
+  "familia_profesional": "Electricidad y Electrónica",
+  "duracion_horas": 300,
+  "ects": 0,
+  "abreviatura": "IR5",
+  "rd": "Real Decreto 262/2021, de 13 de abril, por el que se establece el Curso de especialización en Implementación de redes 5G y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-7556",
+  "modulos": [
+    {
+      "nombre": "Implementación de redes 5G",
+      "codigo": "5053",
+      "ects": null,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Instala elementos de infraestructuras de redes 5G siguiendo procedimientos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas del proceso de instalación de los componentes de una red 5G según las especificaciones de la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el acopio de recursos y medios necesarios para acometer el montaje de la infraestructura de una red 5G."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el replanteo de la instalación que garantice la viabilidad del montaje."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado operaciones de montaje de mástiles, antenas, radioenlaces, soporte lógico, entre otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha tendido el cableado de la infraestructura de una red 5G."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado los parámetros correspondientes a la alimentación eléctrica, sujeción mecánica y otros que aseguren la prestación del servicio de comunicaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado la normativa de seguridad en el proceso de instalación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han configurado los interfaces de los elementos del soporte lógico que permitan la gestión de forma remota."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Verifica el montaje de las instalaciones y equipos cumpliendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha documentado el trabajo de instalación según protocolos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Instala nodos de interconexión de redes 5G asegurando la conexión entre la parte pública y la privada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la compatibilidad de los dispositivos según la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han instalado y verificado los interfaces y módulos de adaptación de las líneas de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado que el dispositivo cumple con los parámetros correspondientes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las conexiones entre las líneas de comunicaciones y el dispositivo que permite la comunicación entre la red pública y privada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha documentado el trabajo de instalación realizado de acuerdo con los procedimientos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura dispositivos de comunicaciones de redes 5G ajustando los servicios de conectividad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han habilitado los servicios de conectividad para configurar el equipo de comunicaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado los parámetros funcionales de los dispositivos de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comprobado los Indicadores Clave de Rendimiento (KPI) para la toma de decisiones en cuanto a los umbrales de funcionamiento y mejoras del rendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido alarmas y alertas para asegurar la prestación de los servicios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado herramientas de gestión remota para cargar y modificar los parámetros de configuración de los dispositivos de comunicaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado pruebas finales de los dispositivos para verificar los servicios y los parámetros de funcionamiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han documentado los procesos de configuración y de prueba de los dispositivos de comunicaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Configura y verifica protocolos de comunicaciones de nodos de interconexión de redes 5G asegurando su funcionalidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado los protocolos de comunicación de los enrutadores de conexión con redes externas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado los protocolos de comunicación que permiten la interconexión de redes locales virtuales a través de redes públicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha proporcionado conectividad con el exterior según indicaciones de la empresa operadora de comunicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la funcionalidad de los dispositivos de interconexión mediante pruebas de los servicios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las tareas realizadas de acuerdo con los procedimientos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza operaciones de ajuste y puesta en servicio de instalaciones y equipos de redes 5G aplicando procedimientos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han comprobado las rutas alternativas y los elementos redundantes verificando la disponibilidad de las mismas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado la capacidad de las líneas y los parámetros funcionales de los servicios ajustándolos a los niveles prefijados según normativa de calidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido los parámetros de seguridad física y las restricciones de acceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la conectividad y el estado de los equipos según normativa y parámetros de prestación del servicio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado los procesos de comprobación y verificación con el fin de registrar las tareas realizadas de acuerdo con los procedimientos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y los equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles, y máquinas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han manejado las máquinas respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales y herramientas, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, pasos de emergencia, entre otros) de las máquinas y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y de protección personal requeridas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de montaje y mantenimiento de las instalaciones de una red 5G, así como de sus instalaciones asociadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Mantenimiento de infraestructuras y redes 5G",
+      "codigo": "5054",
+      "ects": null,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza operaciones de mantenimiento preventivo de instalaciones y equipos de redes 5G aplicando planes establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los planes de mantenimiento preventivo establecidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las fases a ejecutar para realizar el mantenimiento de la infraestructura, equipos y servicios a mantener."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las medidas a realizar en los equipos e instalaciones y las operaciones de mantenimiento indicadas en la normativa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han documentado las tareas y valores obtenidos en las distintas fases de aplicación de los planes de mantenimiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado propuestas de mejora en el rendimiento de la red 5G."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Repara averías en infraestructuras y equipos de redes 5G relacionando las disfunciones detectadas con las causas que las producen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha obtenido la información de los sistemas de alertas y alarmas para la localización de averías y disfunciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la causa de la avería o disfunción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reparado la avería o disfunción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado pruebas funcionales para verificar la conectividad de los dispositivos a las redes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han recogido los resultados de las inspecciones realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Resuelve incidencias en elementos de infraestructuras y equipos de redes 5G aplicando procedimientos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado un diagnóstico y localización de la incidencia y/o alerta."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado las medidas de los parámetros de funcionamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado herramientas medios y equipos de gestión remota de incidencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tenido en cuenta la documentación técnica y normativa."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha resuelto la incidencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha documentado la detección, diagnóstico y solución de la incidencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Comprueba las instalaciones afectadas por averías e incidencias, manteniendo la conectividad de las redes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las instalaciones afectadas por las averías, disfunciones e incidencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado herramientas, medios y equipos de comprobación de acceso remoto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado que se cumplen los requisitos de conectividad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado que la capacidad de las líneas cumple con los niveles prefijados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado que se mantienen los parámetros funcionales de los servicios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado que se cumplen los valores de los parámetros de seguridad física y restricciones de acceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado la puesta en servicio de las instalaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado los procesos de comprobación y verificación con el fin de registrar las tareas realizadas."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

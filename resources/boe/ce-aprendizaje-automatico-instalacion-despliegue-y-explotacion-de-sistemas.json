@@ -1,0 +1,570 @@
+{
+  "id": "ce-aprendizaje-automatico-instalacion-despliegue-y-explotacion-de-sistemas",
+  "denominacion": "Aprendizaje automático: instalación, despliegue y explotación de sistemas",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Inteligencia artificial y Data",
+  "duracion_horas": 540,
+  "ects": 0,
+  "abreviatura": "AAIDES",
+  "rd": "Real Decreto 184/2026, de 11 de marzo, por el que se establece el Curso de especialización de Formación Profesional de Grado Superior en Aprendizaje automático: instalación, despliegue y explotación de sistemas y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-5870",
+  "modulos": [
+    {
+      "nombre": "Inteligencia artificial y aprendizaje automático",
+      "codigo": "5144",
+      "ects": 5,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza sistemas de Inteligencia Artificial, relacionándolos con las aplicaciones más comunes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principios fundamentales de los sistemas inteligentes, recopilando información sobre campos donde se aplica la Inteligencia Artificial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado modelos de Inteligencia Artificial, caracterizando modelos de automatización de tareas, de razonamiento impreciso y de sistemas basados en reglas, identificando las técnicas básicas que se van a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha caracterizado el procesamiento de lenguaje natural relacionándolo con sus aplicaciones, determinando su potencial e identificando sus limitaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina la aplicación de principios legales y éticos al desarrollo de la Inteligencia Artificial, integrándolos como parte del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han argumentado los posibles riesgos legales y éticos de la aplicación de Inteligencia Artificial, reconociendo la necesidad de respetar la privacidad y confidencialidad de los datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los posibles sesgos de género, sociales, políticos y éticos, en el desarrollo y aplicaciones de Inteligencia Artificial y Big Data, valorando su importancia."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado situaciones que plantean dilemas éticos en su resolución, cara a la toma de decisiones, proponiendo soluciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza la Inteligencia Artificial fuerte y débil, determinando usos y posibilidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las especificidades de Inteligencia Artificial fuerte y débil, valorando sus características y posibilidad de aplicación con las tecnologías actuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la tecnología del aprendizaje automático (Machine Learning), situándola en el contexto de la Inteligencia Artificial y contraponiéndola al aprendizaje profundo o deep learning."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enumerado ámbitos de aplicación de la Inteligencia Artificial fuerte y débil diferenciándolos e identificando los problemas a los que puede hacer frente cada una, sus ventajas e inconvenientes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Reconoce técnicas y herramientas de sistemas de aprendizaje automático (Machine Learning), valorando su aplicabilidad para la resolución de problemas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha clasificado los tipos y usos de sistemas de aprendizaje automático, diferenciándolos y explicando la aplicación de cada uno y las fases en su desarrollo, enumerando y explicando los algoritmos que hay que aplicar: – Aprendizaje supervisado versus no supervisado. – Aprendizaje semi-supervisado. – Aprendizaje por refuerzo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Instalación y mantenimiento de sistemas de aprendizaje automático",
+      "codigo": "5170",
+      "ects": 8,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza un inventario de los componentes hardware en sistemas de Inteligencia Artificial, manteniéndolo actualizado para asegurar su localización y disponibilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los componentes hardware del sistema (cámaras multiespectrales, plataformas IoT, robots, sistemas de audio, sistemas «Supervisión, Control y Adquisición de Datos» (SCADA) industriales, entre otros), identificando su funcionalidad, tipología, características y procedimientos de instalación y configuración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha elaborado un inventario del hardware, describiéndolo y clasificándolo a partir de las características, la configuración, la situación exacta y el estado de cada componente hardware."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha mantenido actualizado el inventario, añadiendo nuevas adquisiciones y cambios realizados en los componentes hardware o en su configuración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha generado una documentación de la instalación física, identificando y describiendo los componentes hardware, su tipología y características, las incidencias de instalación y uso y la fecha."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han inventariado los componentes software en sistemas de Inteligencia Artificial, manteniendo actualizado dicho inventario, incluyendo denominación, características y versiones de: – Sistemas operativos y software de base. – Componentes software específicos: software para la extracción de patrones, lenguajes de modelado, herramientas de aplicación de modelos de aprendizaje automático."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha registrado la configuración actual de los componentes software, indicando su versión, licencia, sistema operativo y requerimientos de instalación, facilitando las labores de recuperación en caso de fallos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han controlado las licencias del software, el número de instalaciones, la situación e identificación de cada componente software, cumpliendo la normativa aplicable sobre propiedad industrial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Instala los componentes software y hardware en sistemas de Inteligencia Artificial, configurándolos para su explotación posterior por parte de las personas usuarias, siguiendo especificaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los componentes hardware, identificando sus características, para decidir la versión y el tipo de instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los componentes software, identificando sus características, para decidir la versión y el tipo de instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comprobado los requisitos de instalación de los componentes software y hardware verificando que hay suficientes recursos y compatibilidad entre ellos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado los componentes hardware y software, configurándolos mediante los parámetros indicados en la documentación técnica y siguiendo especificaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha documentado la instalación, incluyendo estándares y protocolos, parámetros de configuración e incidencias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Actualiza los componentes software y hardware en sistemas de Inteligencia Artificial, instalando las últimas versiones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las versiones obsoletas de los componentes hardware del sistema de Inteligencia Artificial, partiendo del análisis y evaluación de aquellos disponibles en el mercado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las versiones obsoletas de los componentes software del sistema de Inteligencia Artificial, partiendo del análisis y evaluación de aquellos disponibles en el mercado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado los complementos y actualizaciones de corrección, mejora y reparación, efectuándolo con la periodicidad requerida y configurándolos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la actualización, probando la funcionalidad de la plataforma mediante pruebas de arranque y parada y comprobación de parámetros de su estado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado la documentación de los procesos realizados, indicando los datos necesarios (momento, actuación realizada, identificación de la actuación, entre otros) y archivándose para su uso posterior."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Resuelve las incidencias que se presentan en la explotación de plataformas de Inteligencia Artificial, identificando su naturaleza, en el tiempo y nivel de calidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado la incidencia, reproduciendo el comportamiento indicado en el parte al efecto y precisando el efecto de la misma."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha localizado la incidencia, diagnosticándola mediante la comprobación de los registros (logs), la utilización de la documentación técnica de la plataforma y el software de diagnóstico especializado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han resuelto las incidencias de instalación y configuración de los componentes software y hardware, consultando la documentación, los manuales de instalación y de persona usuaria y los servicios de asistencia técnica de fábrica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha efectuado la gestión de la reparación o sustitución de los componentes hardware averiados, de acuerdo con las especificaciones técnicas del sistema y el procedimiento establecido en la documentación técnica del fabricante y del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado la gestión de las incidencias relacionadas con la reinstalación, actualización o configuración de los componentes software, siguiendo los manuales de instalación y usuario del proveedor de software y la arquitectura del sistema de Inteligencia Artificial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las pruebas finales y de fiabilidad, a partir de conjuntos de datos de entrada al efecto, verificando las salidas, reconfigurando parámetros en caso necesario y de forma sistemática."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Despliegue de sistemas de aprendizaje automático",
+      "codigo": "5171",
+      "ects": 8,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara el despliegue de la infraestructura de sistemas de Inteligencia Artificial, interpretando las especificaciones y manteniendo la integridad y continuidad de servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han probado los componentes del sistema, ensayando y comprobando el funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diagnosticado los problemas surgidos directamente vinculados al componente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han probado los componentes del sistema, ensayando y comprobando el funcionamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diagnosticado los problemas debidos a un planteamiento inadecuado del banco de prueba."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado mecanismos de monitorización y alarma del sistema, parametrizándolos para detectar condiciones de funcionamiento anómalas, siguiendo un protocolo de actuación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Despliega sistemas de Inteligencia Artificial en el entorno de desarrollo y/o producción, bien sea en modalidad de «infraestructura como servicio» o bien en instalaciones propias, aplicando el plan de aprovisionamiento, instalación y configuración de la infraestructura de hardware.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han montado materiales y herramientas necesarias para las infraestructuras propias, previo aprovisionamiento, instalando los sistemas para su puesta en servicio tales como sistemas operativos, bootloader/firmware o imágenes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han incluido en la infraestructura del sistema de Inteligencia Artificial recursos contratados en el caso de «infraestructuras como servicio» tales como servidores, imágenes y sistemas de almacenamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado el autoescalado y las comunicaciones de los recursos contratados, parametrizándolos según requerimientos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han documentado las intervenciones realizadas mediante informe, orden de trabajo o software de seguimiento de proyectos, incluyendo fecha, hardware afectado, resumen de la intervención y registros (logs) generados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Instala las aplicaciones indicadas en un plan de aprovisionamiento y despliegue, configurándolas, para desplegar sistemas de Inteligencia Artificial en el entorno de desarrollo y/o producción, bien sea en modalidad de «plataforma como servicio» o bien sobre infraestructura propia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han instalado las aplicaciones y sistemas de gestión en infraestructura propia o «infraestructura como servicio» (orquestadores de contenedores o microservicios, sistemas de monitorización y alarma o balanceadores de carga, entre otros), incluyendo las dependencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han contratado las aplicaciones y sistemas de gestión en despliegues sobre «plataforma como servicio» (orquestadores de contenedores o microservicios, sistemas de monitorización y alarma o balanceadores de carga entre otros), ajustándose a las características del servicio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado las aplicaciones y las relaciones entre ellas, estableciendo elementos (clave de acceso a través de API o volúmenes compartidos, entre otros) y creando los permisos, reglas, políticas, usuarios y grupos de acceso a la infraestructura y a las aplicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado el funcionamiento de las aplicaciones y su rendimiento, comprobando que se respetan los márgenes indicados en el plan de despliegue."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las intervenciones realizadas, elaborando bien un informe, o una orden de trabajo o bien a través de un software de seguimiento de proyectos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha incluido en la documentación los datos tales como fecha, software afectado y resumen de la intervención, adjuntando los registros (logs) de los procesos de instalación y ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Integra sistemas de Inteligencia Artificial dentro de un flujo productivo, usando APIs, flujos (streaming) o protocolos industriales de más bajo nivel (de aplicaciones máquina a máquina (M2M), de Internet de las Cosas (IoT) y de robótica, entre otros), para obtener las entradas y producir las salidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han habilitado las entradas de datos del flujo productivo al sistema de Inteligencia Artificial, garantizando el formato y la latencia requeridos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado los accesos a la API del sistema donde se despliega, parametrizando bien suscripciones a flujos (streams) de un sistema de intermediación de mensajes, integraciones con sistemas «Supervisión, Control y Adquisición de Datos» (SCADA) industriales o bien conexiones en sistemas embebidos, robóticos o IoT."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han habilitado las salidas al sistema de Inteligencia Artificial permitiendo que se inyecten los datos una vez procesados en el flujo productivo, en el formato y con la latencia requeridos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado el funcionamiento de las integraciones de entrada y salida y su rendimiento, garantizando que son acordes a los ensayos y márgenes establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las intervenciones realizadas, elaborando un informe, una orden de trabajo o usando software de seguimiento de proyectos, incluyendo entre otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha incluido en la documentación los datos de fecha de la intervención, subsistemas afectados y el resumen de la intervención, adjuntando los registros (logs) de los procesos de integración y ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Pone en servicio sistemas de Inteligencia Artificial aplicando un plan de despliegue en el entorno de desarrollo y/o producción, bien sea en modalidad de «software como servicio» o bien en la propia plataforma donde se produce el despliegue.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha instalado el sistema en el flujo de desarrollo y/o producción de la plataforma donde se produce el despliegue, configurándolo según el escenario concreto: − Como aplicación o contenedor. − Grabación de un firmware en un dispositivo embebido. − Transmisión inalámbrica del sistema (Over The Air)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha elegido la estrategia de despliegue en función del escenario, escogiendo entre: − Integración y despliegue continuos (CI/CD). − Reemplazo completo (recreación). − Implantación en la sombra (Shadow deployment). − Despliegue incremental selectivo (Blue/Green, A/B, Canary, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado el funcionamiento del sistema de Inteligencia Artificial, ensayando el rendimiento, carga y diferenciales y mediante detección de anomalías."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en servicio el sistema de Inteligencia Artificial, conectándolo a las entradas y/o salidas del flujo de desarrollo o productivo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las intervenciones realizadas, elaborando un informe, orden de trabajo o mediante software de seguimiento de proyectos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha incluido en la documentación los datos de fecha de la intervención, los subsistemas afectados y el resumen de la intervención entre otros, adjuntando los registros (logs) de los procesos de puesta en servicio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Implanta la monitorización y el mantenimiento del sistema de Inteligencia Artificial en el entorno de desarrollo y/o producción, garantizando la calidad y disponibilidad del servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado el funcionamiento de los sistemas de notificación de alarmas, monitorización/supervisión y respaldo de seguridad, comprobando su operatividad mediante prueba."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detectado anomalías en el sistema analizando los registros generados y comprobando parámetros tales como degradación de rendimiento o calidad de las predicciones, brechas de seguridad, o uso ineficiente de recursos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha corregido manualmente el error que provocó la alarma o anomalía detectada en el análisis de los registros, en caso de no estar automatizadas en el sistema."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha supervisado la corrección del error en el caso de estar automatizadas, verificando el resultado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las intervenciones realizadas elaborando un informe, una orden de trabajo o mediante software de seguimiento de proyectos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incluido en la documentación, los datos de fecha de la intervención, subsistemas afectados y resumen de la intervención, entre otros, adjuntando los registros (logs), tanto los que propiciaron la intervención, como los de los ensayos que verifican su resolución."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Explotación de servicios de procesamiento y analítica de datos",
+      "codigo": "5172",
+      "ects": 11,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara plataformas de servicios de Inteligencia Artificial, registrando, autentificando, instalando las herramientas de desarrollo y asignando los recursos requeridos para iniciar su explotación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han habilitado servicios y usuarios entre otros recursos, asignándolos al centro de coste o proyecto fijados en el plan de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha habilitado el espacio de almacenamiento, asignándolo al centro de coste o proyecto fijados en el plan de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha habilitado la capacidad de computación, asignándola al centro de coste o proyecto fijados en el plan de trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han verificado los prerrequisitos técnicos para desarrollar y explotar soluciones en la plataforma (software cliente, mecanismos de autentificación, puertos de conexión y herramientas de desarrollo, entre otros), comprobando su funcionamiento mediante el plan de pruebas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado los pasos completados y la información asociada, incluyendo inventario de recursos, fecha de aprovisionamiento y límites de consumo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Obtener conclusiones preliminares sobre la calidad y capacidad predictiva de un conjunto de datos estructurados, utilizando la herramienta de aplicación de modelos de aprendizaje automático disponible en la plataforma.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han preprocesado los datos, extrayendo, alimentando y etiquetando tanto las variables especiales (objetivo del análisis u otras), como los subconjuntos de datos (entrenamiento, validación y prueba)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ejecutado experimentos, configurando hiperparámetros, (modelo a aplicar, variables a descartar, tamaño de lote, número de pasadas, entre otros) activando los procesos de análisis."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han documentado los resultados obtenidos de la herramienta tras cada experimento, incluyendo elementos tales como conclusiones, predicciones y fiabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han asociado los resultados a subconjuntos de entrada, avisos técnicos de la plataforma y tiempo de computación empleado, entre otros, anotándolos en la documentación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha integrado el modelo seleccionado en una herramienta en la nube para despliegue de flujos de datos (pipeline), configurando el flujo completo de preprocesamiento, la aplicación de modelo y el postprocesamiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza conjuntos de datos en serie temporal mediante la herramienta de pronóstico disponible en una plataforma, elaborando un modelo predictivo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han preprocesado series temporales, extrayéndolas vía mecanismos de flujo (streaming) (API, interfaz IoT, websockets u otros), cargándolas en la herramienta y segmentando los conjuntos de entrenamiento, validación y prueba."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ejecutado experimentos, configurando los distintos filtros e hiperparámetros, (modelo que hay que aplicar, periodos y horizontes temporales, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han documentado los resultados obtenidos tras cada experimento, incluyendo elementos tales como predicciones, fiabilidad y varianza, asociándolos a subconjuntos de entrada, avisos técnicos de la herramienta y tiempo de computación empleado, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha desplegado el modelo seleccionado para su producción, integrando sus entradas y salidas según los mecanismos establecidos en el manual de la herramienta (APIs, websockets, Bases de Datos, ficheros planos, interfaces con dispositivos dedicados, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el correcto funcionamiento del sistema, analizando los resultados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Procesa conjuntos o secuencias de imágenes o vídeos, usando las herramientas de visión artificial de la plataforma, para obtener información sobre su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han preprocesado imágenes, utilizando mecanismos tales como bases de datos y/o APIs de streaming, decodificando, homogeneizando, alimentando, segmentando y anotando los conjuntos de entrenamiento, validación y prueba, según objetivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ejecutado experimentos, configurando los filtros e hiperparámetros, (modelo a aplicar, tamaño de núcleo (kernel), tamaño de lotes y número de pasadas, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han documentado los resultados obtenidos, incluyendo elementos tales como conclusiones, fiabilidad y varianza, asociándolos a subconjuntos de entrada, avisos técnicos de la plataforma y tiempo de computación empleado, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha desplegado el modelo seleccionado para su producción, integrando sus entradas y salidas según el manual de la herramienta (APIs, interfaces con cámaras u otros dispositivos dedicados)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el correcto funcionamiento del sistema, analizando los resultados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Procesa documentos de lenguaje natural, en formato sonoro o escrito, usando la herramienta de transcripción y procesamiento de lenguaje natural disponible en la plataforma para extraer el conocimiento detallado según objetivos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han preprocesado las grabaciones, extrayéndolas, utilizando mecanismos tales como bases de datos o APIs de streaming, segmentando y alimentando la herramienta."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha explotado el servicio de transcripción automática, configurando los parámetros, alimentándolo y recogiendo los resultados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado a los textos obtenidos de la transcripción los modelos de entendimiento de lenguaje natural disponibles en la plataforma ejecutando las funcionalidades tales como asuntos (topics), agrupación (clustering), sentimiento o resumen, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han almacenado los resultados de los procesos para su explotación, documentando los detalles de los pasos aplicados, según objetivos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla asistentes virtuales en la herramienta conversacional basada en reglas disponible en la plataforma, según las especificaciones y dependencias detalladas en el plan de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han enumerado las reglas que hay que configurar, partiendo del flujo de conversación y de los parámetros según objetivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha configurado el motor de intenciones, alimentando las reglas enumeradas y configurando las variables especificadas según objetivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado el generador de respuestas, integrando con los sistemas operacionales (back end) según interfaces especificados a partir de los objetivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha desplegado el sistema, integrándolo con el canal de comunicación establecido en el manual de la herramienta (página web, red social u otros) e incluyendo los mecanismos de prueba, cambio de entorno (preproducción), identificación de usuario, monitorización y derivación a un agente humano."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado los pasos seguidos, incluyendo y resultados de las pruebas por el medio que se determine. ANEXO II Espacios y equipamientos mínimos Espacios: Equipamientos mínimos: Aplicaciones de ofimática de escritorio en local y en la nube. Conectores o pasarelas estándares de accesos a fuentes de datos según tipología y origen. Entornos de desarrollo y programación (IDE) y complementos (plugin). Equipos y sistemas cliente y servidor conectados. Gestores de datos para entorno de pruebas. Herramientas cliente específicas para sistemas gestores de bases de datos. Herramientas de comunicación y colaboración en equipo. Herramientas de gestión y control de cambios, incidencias y configuración. Herramientas gráficas, de línea de comandos, librerías de cliente y API de las plataformas de datos. Lenguajes de programación, herramientas software y plataformas de desarrollo de Inteligencia Artificial para el tratamiento, análisis, visualización y transformación de los datos. Lenguajes específicos de acceso a sistemas gestores de bases de datos. Servicios de transferencia de ficheros y conexión remota. Servicios distribuidos de información. Servidores Web. Sistemas gestores de repositorios de código fuente. Software y herramientas de exploración y análisis estadístico de datos, lenguajes de programación específicos. Soporte hardware para almacenamiento de información y/o almacenamiento de la misma en local y en la nube. Componentes hardware específicos de sistemas de Inteligencia Artificial, incluyendo cámaras multiespectrales para la captación de secuencias de imágenes o vídeos, plataformas IoT, robots, sistemas de audio para el desarrollo de herramientas conversacionales o sistemas «Supervisión, Control y Adquisición de Datos» (SCADA) industriales. Herramientas software para control de inventarios. ANEXO III Especialidades del profesorado con atribución docente en los módulos profesionales del curso de especialización en Aprendizaje automático: instalación, despliegue y explotación de sistemas – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. ANEXO IV A) Correspondencia de los estándares de competencias profesionales acreditados con los módulos profesionales para su convalidación ANEXO IV B) Correspondencia de los módulos profesionales y los estándares de competencias profesionales para su acreditación"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

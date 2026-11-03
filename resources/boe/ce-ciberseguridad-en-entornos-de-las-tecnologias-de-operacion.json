@@ -1,0 +1,1048 @@
+{
+  "id": "ce-ciberseguridad-en-entornos-de-las-tecnologias-de-operacion",
+  "denominacion": "Ciberseguridad en entornos de las tecnologías de operación",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Electricidad y electrónica",
+  "duracion_horas": 720,
+  "ects": 0,
+  "abreviatura": "CETO",
+  "rd": "Real Decreto 478/2020, de 7 de abril, por el que se establece el Curso de especialización en ciberseguridad en entornos de las tecnologías de operación y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4962",
+  "modulos": [
+    {
+      "nombre": "Ciberseguridad en proyectos industriales",
+      "codigo": "5027",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina los elementos de ciberseguridad a incluir en el diseño de un proyecto industrial analizando la seguridad ya implantada en la organización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha evaluado el diseño del proyecto industrial: alcance, estudios de viabilidad financiera y requisitos técnicos, organizativos y procedimentales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los actores y responsables involucrados en el proyecto, así como sus funciones y competencias en materia de ciberseguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las amenazas e identificado las vulnerabilidades de los componentes de las tecnologías de automatización del proyecto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han desarrollado los estudios que contemplen la ciberseguridad desde los diferentes actores involucrados (cliente, ingeniería y fabricantes)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido requisitos de ciberseguridad para los niveles de automatización del proyecto, así como sus flujos e interacciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Establece planes de gestión de compras determinando los requisitos de ciberseguridad a cumplir por los proveedores.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido el proceso de gestión de compras a los proveedores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado los documentos básicos del proceso de gestión de compras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el análisis y gestión de los riesgos asociados a la cadena de suministro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los requisitos de ciberseguridad en el proceso de gestión de compras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece las medidas de ciberseguridad en la ejecución y puesta en marcha de un proyecto industrial cumpliendo con los requisitos de calidad exigidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado un análisis de funciones y responsabilidades de ciberseguridad en la ejecución y puesta en marcha del proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado un análisis preliminar de impacto para identificar medidas de ciberseguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido el plan detallado de medidas de ciberseguridad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tenido en cuenta los principios de economía circular."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han incorporado criterios de ciberseguridad en las pruebas de aceptación en fábrica (FAT)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado criterios de seguridad en las pruebas de aceptación"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los planes de control de calidad y las auditorías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha contemplado la evaluación de ciberseguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Implementa las actividades de ciberseguridad de la fase de operación y mantenimiento de un proyecto industrial documentando las actividades realizadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado mejoras de ciberseguridad sobre la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado mejoras de ciberseguridad sobre la instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha implantado un proceso de gestión de cambio para introducir las mejoras operacionales que puedan afectar a la gestión de la ciberseguridad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han implementado actividades de ciberseguridad correspondientes a la fase de operación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han implementado actividades de ciberseguridad correspondientes a la fase de mantenimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado los procedimientos de ciberseguridad para la fase de operación y mantenimiento de un proyecto industrial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implementado planes de concienciación y formación de ciberseguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Implementa las actividades de ciberseguridad en el desmantelamiento de las instalaciones cumpliendo con los requisitos establecidos en destrucción y/o conservación de los sistemas de una manera segura.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las actividades de ciberseguridad en el desmontaje, descontaminación, desclasificación, demolición y reposición de las instalaciones del proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado las medidas de destrucción de los sistemas"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han verificado las medidas de destrucción de los sistemas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han implementado las medidas de conservación de los sistemas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado las medidas de conservación de los sistemas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado las incidencias detectada en el proceso de verificación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas de control industrial seguros",
+      "codigo": "5028",
+      "ects": null,
+      "horas_minimas_boe": 65,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina los cambios para la convergencia de las tecnologías IT (Tecnologías de la información) y OT (Tecnologías de la operación) analizando la situación de dichos entornos en organizaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los procesos de transformación digital en la industria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y diferenciado los conceptos de tecnologías de la información (IT), y las tecnologías de la operación (OT)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detectado las necesidades tecnológicas en los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado tecnologías avanzadas de aplicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los retos para que conlleva para los departamentos de IT y OT en lo relativo al trabajo con las tecnologías avanzadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado un análisis de convergencia a nivel de prácticas de trabajo, de organización y de compartición de datos con IT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los cambios relevantes que exigirán una alta profesionalización, visión de futuro, liderazgo y eficiencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa escenarios de riesgo tecnológico en sistemas de control de instalaciones industriales aplicando metodologías reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes tipos de activos que componen una instalación industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado diferentes tipos de amenazas para los diferentes activos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han localizado datos de interés sobre vulnerabilidades conocidas en sistemas de control industrial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comparado diferentes herramientas de diagnóstico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado y evaluado la seguridad de credenciales y los medios de control de acceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha evaluado el firmware y/o configuración de un dispositivo mediante procedimientos de ingeniería inversa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han automatizado acciones de verificación de la configuración de dispositivos y sistemas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha creado un testbed gemelo de un sistema de control industrial significativo imitando su configuración."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado y ordenado una lista de riesgos asociados a los sistemas de control de una instalación industrial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Documenta los procesos de diagnósticos, análisis y otros relativos a sistemas de una instalación industrial con relación a la ciberseguridad, generando informes de distintos niveles de complejidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los elementos de los informes dirigidos a personal técnico y directivo, estableciendo las diferencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha elaborado un informe técnico de diagnóstico de ciberseguridad destinado a personal directivo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado un informe técnico de diagnóstico de ciberseguridad destinado a personal técnico de operación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los instrumentos, herramientas y técnicas de comunicación del informe técnico de acuerdo al destinatario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han desarrollado las formas de gestionar conflictos y reticencias a la hora de presentar informes de resultados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los informes técnicos de diagnóstico para obtener propuestas de mejora."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Diseña políticas de seguridad para sistemas de control industrial teniendo en cuenta los análisis realizados, estándares del sector y la normativa de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado diferentes mecanismos de autenticación de personas, dispositivos y sistemas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los procedimientos necesarios en cuanto al alta, mantenimiento y baja de credenciales de acceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado procesos de gestión de usuarios de una instalación industrial siguiendo las políticas de una organización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han elaborado y justificado políticas de seguridad física y control de acceso a las diferentes zonas de una instalación industrial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Configura sistemas de control industrial minimizando los posibles escenarios de riesgo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los requisitos de seguridad para la actualización y el parcheado de los sistemas de control industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los requisitos de seguridad para la gestión de antivirus de los sistemas de control industrial basados en PC’s."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los requisitos de seguridad para las copias de seguridad de las configuraciones e información de los sistemas de control industrial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado y parametrizado los sistemas de control industrial de acuerdo a los requisitos de protección establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado y parametrizado los sistemas de control industrial de acuerdo a los controles de auditoría establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Detecta anomalías en sistemas de control industrial utilizando herramientas de monitorización y procedimientos de análisis.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y caracterizado herramientas de monitorización de eventos de seguridad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado las herramientas de monitorización para el descubrimiento automático de sistemas de control industrial conectados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las reglas de actuación sobre las herramientas de monitorización para establecer los eventos a monitorizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los principios fundamentales de comportamiento de un gestor de eventos de seguridad (SIEM, Security Information and Event Management)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detectado comportamientos sospechosos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado las anomalías encontradas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Redes de comunicaciones industriales seguras",
+      "codigo": "5029",
+      "ects": null,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina los niveles de seguridad en un entorno industrial automatizado analizando las características de los protocolos y comunicaciones utilizados y proponiendo soluciones a nuevos requerimientos de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado dispositivos de control en un entorno de automatización industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los diferentes elementos de supervisión y sistemas SCADA."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los diferentes sistemas de optimización y gestión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han especificado los niveles de seguridad en los diferentes campos de automatización industrial (campo, control, supervisión, optimización y gestión)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido las diferencias entre el sistema analizado y el sistema futuro en términos de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado las propuestas de adaptación en términos de seguridad de acuerdo a los nuevos requerimientos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa escenarios de riesgo tecnológico en redes industriales aplicando metodologías reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes tipos de dispositivos que componen la red de una instalación industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha caracterizado la arquitectura de red física y lógica de una instalación industrial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes zonas de seguridad que deberían existir en la red de una instalación industrial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los riesgos asociados a la red de una instalación industrial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha evaluado el nivel de riesgo asociado a la red de una instalación industrial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Implementa redes industriales aplicando técnicas de switching y de enrutamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el switching en redes industriales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado topologías en Ethernet industrial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han implementado topologías en anillo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha implementado acoplamientos de segmentos entre anillos de forma redundante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han interconectado redes OT a redes IT."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha examinado el tráfico de red con los analizadores de red."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha caracterizado el enrutamiento en las redes industriales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha implementado conexiones simples con redes ofimáticas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han implementado conexiones redundantes con redes ofimáticas"
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han implementado conexiones a redes legacy."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han implementado conexiones a redes con detección automática de camino."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han implementado restricciones de enrutado por medio de ACL´s."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Implementa redes industriales inalámbricas aplicando los estándares del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las tecnologías inalámbricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado métodos de acceso y organización de las células."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha implementado roaming."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la localización de los puntos de acceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las antenas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han diseñado redes wifi para instalaciones industriales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implementado redes wifis para instalaciones industriales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Implementa accesos remotos en entornos industriales garantizando la seguridad de las comunicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las comunicaciones remotas más utilizadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado comunicaciones seguras a través de comunicaciones no seguras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han conectado redes privadas industriales a redes públicas aplicando diferentes tecnologías."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han implementado accesos remotos basándose en el principio de mínima superficie."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Diseña la red de automatización aplicando la segmentación necesaria en las redes de la organización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha implementado la segmentación en redes de automatización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha implementado VLAN´s para la estructuración de las redes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han asignado equipos en VLAN´s estáticas y dinámicas"
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han priorizado VLAN´s."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado segmentaciones de células de automatización mediante cortafuegos industriales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado segmentaciones entre IT y OT mediante NGF (Next Generation Firewall)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Identifica vulnerabilidades en dispositivos de redes industriales proponiendo contramedidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado vulnerabilidades conocidas en dispositivos y redes industriales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado el alcance de las vulnerabilidades."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado diferentes herramientas de diagnóstico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las herramientas de diagnóstico con su aplicación a las diversas situaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han automatizado acciones de verificación de la configuración de dispositivos y redes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha creado un testbed gemelo de un segmento significativo de una red industrial imitando la configuración tanto de los dispositivos como de la red."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado tests de penetración exhaustivos en un testbed gemelo de una instalación industrial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Detecta incidentes en tiempo real en redes industriales aplicando procedimientos de análisis y utilizando las herramientas adecuadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado diferentes herramientas de análisis de tráfico en entornos industriales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las herramientas en función de sus prestaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado y configurado un sistema de detección de intrusiones (IDS, Intrusion Detection System) para sistemas de control industrial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han detectado e investigado comportamientos sospechosos en una infraestructura mediante el análisis del tráfico de red."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado los comportamientos anómalos observados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Define procedimientos de verificación y supervisión obteniendo métricas de cumplimiento de las políticas de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado métricas de cumplimiento de políticas de seguridad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado diferentes registros de sistemas de control industrial para detectar cambios no autorizados en las políticas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado diferentes herramientas de monitorización de redes de automatización industrial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado herramientas de monitorización de red."
+            }
+          ]
+        },
+        {
+          "codigo": "RA10",
+          "numero": 10,
+          "descripcion": "Configura dispositivos de redes industriales minimizando los posibles escenarios de riesgo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los parámetros de protección de los dispositivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado dispositivos de red para poder ser auditados a posteriori."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los requisitos de seguridad para las actualizaciones del firmware de los dispositivos de red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los requisitos de seguridad para las copias de seguridad de las configuraciones de los dispositivos de red."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado los dispositivos de red acorde a los parámetros de protección definidos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Análisis forense en ciberseguridad industrial",
+      "codigo": "5030",
+      "ects": null,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Desarrolla procesos de análisis forense en sistemas de control industrial aplicando metodologías reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los dispositivos a analizar para garantizar la preservación de evidencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado mecanismos y herramientas adecuadas para la adquisición y extracción de las evidencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado análisis de las evidencias de manera manual."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado análisis de las evidencias mediante herramientas automáticas para dar respuesta a la investigación forense."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha documentado el proceso de análisis realizado de manera metódica y detallada para garantizar la reproducción de todos los pasos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha considerado la línea temporal de las evidencias, el mantenimiento de la cadena de custodia y la elaboración de conclusiones a nivel técnico y ejecutivo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han comunicado las conclusiones del análisis forense realizado a los interlocutores pertinentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Desarrolla el proceso de análisis forense en sistemas de control y controladores lógicos programables aplicando metodologías reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sistemas de control de supervisión y adquisición de datos (SCADA), sistemas de control distribuido (DCS), y controladores lógicos programables (PLC) a analizar para garantizar la preservación de las evidencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han empleado mecanismos y herramientas adecuadas para la adquisición y extracción de evidencias que garanticen su autenticidad, completitud, fiabilidad y legalidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las evidencias de manera manual y mediante herramientas automáticas para dar respuesta a investigaciones forenses."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha documentado el proceso de análisis realizado para garantizar la reproducción de todos los pasos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha considerado la línea temporal de las evidencias, el mantenimiento de la cadena de custodia y la elaboración de conclusiones a nivel técnico y ejecutivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comunicado formalmente las conclusiones del análisis forense realizado a los interlocutores pertinentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Desarrolla el proceso de análisis forense en robótica industrial aplicando metodologías reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los dispositivos industriales a analizar para garantizar la preservación de las evidencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado los mecanismos y las herramientas necesarias para la adquisición y extracción de evidencias adecuadas que garantizan su autenticidad, completitud, fiabilidad y legalidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado análisis de evidencias de manera manual y mediante herramientas automáticas para dar respuesta a investigaciones forenses."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha documentado el proceso de análisis realizado de manera metódica y detallada para garantizar la reproducción de todos los pasos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha considerado la línea temporal de las evidencias, el mantenimiento de la cadena de custodia y la elaboración de conclusiones a nivel técnico y ejecutivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comunicado formalmente las conclusiones del análisis forense realizado a los interlocutores pertinentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla el proceso de análisis forense en dispositivos del Internet de las cosas (IoT), de sectores industriales y otros como los de transporte, salud, construcción etc, aplicando metodologías reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los dispositivos a analizar para garantizar la preservación de las evidencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado los mecanismos y las herramientas necesarias para la adquisición y extracción de evidencias adecuadas que garanticen su autenticidad, completitud, fiabilidad y legalidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado análisis de evidencias de manera manual y mediante herramientas automáticas para permitir dar respuesta a investigaciones forenses."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha documentado el proceso de análisis para garantizar la reproducción de todos los pasos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha considerado la línea temporal de las evidencias, el mantenimiento de la cadena de custodia y la elaboración de conclusiones a nivel técnico y ejecutivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comunicado formalmente las conclusiones del análisis forense realizado a los interlocutores pertinentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Responde ante un incidente de ciberseguridad que afecta a la organización tomando las medidas necesarias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han desarrollado procedimientos de actuación para dar respuesta, mitigar, eliminar o contener los tipos de incidentes de ciberseguridad más habituales en sistemas de control industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado respuestas ciberresilientes para intervenir inmediatamente ante incidentes de ciberseguridad que permitan seguir prestando los servicios de la organización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido un flujo de toma de decisiones y escalado interno y/o externo adecuados al incidente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han llevado a cabo las tareas de restablecimiento de los servicios afectados por el incidente, hasta confirmar la vuelta a la normalidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las acciones realizadas incluyendo las conclusiones que permitan mantener un registro de lecciones aprendidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha notificado el incidente formalmente a todos los involucrados o afectados: clientes, proveedores, personal interno, medios de comunicación y autoridades competentes en los tiempos adecuados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado un seguimiento adecuado del incidente para evitar que una situación similar se vuelva a repetir."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Seguridad integral",
+      "codigo": "5031",
+      "ects": null,
+      "horas_minimas_boe": 95,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Integra las normas y procedimientos de seguridad física en la ciberseguridad en entornos OT identificando los posibles riesgos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el riesgo físico y la seguridad física."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los fundamentos y herramientas básicas de un esquema de seguridad física."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los conceptos básicos de normas de seguridad física para entornos OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado las normas de seguridad física aplicables en función de la actividad que hay que desarrollar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los procedimientos de seguridad física en entornos OT que son de aplicación conforme a las normas aplicables."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han implementado los procedimientos de seguridad física determinados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado que la integración de las normas y procedimientos de seguridad física cumplen con los requisitos de ciberseguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Integra las normas y procedimientos de seguridad operacional en la ciberseguridad en entornos OT identificando los posibles riesgos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el riesgo operacional y la seguridad operacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los fundamentos y herramientas básicas de un esquema de seguridad operacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los conceptos básicos de normas de seguridad operacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado las normas de seguridad operacional aplicables en función de la actividad que hay que desarrollar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los procedimientos de seguridad operacional que son de aplicación al entorno conforme a las normas aplicables."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han implementado los procedimientos de seguridad operacional determinados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado que la integración de las normas y procedimientos de seguridad operacional cumplen con los requisitos de ciberseguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Integra las normas y procedimientos de calidad en la ciberseguridad en entornos OT identificando los posibles riesgos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto de riesgo y pérdida que afecta a la calidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los fundamentos y herramientas básicas de un esquema de calidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los conceptos básicos relativos a normas de calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado las normas de calidad aplicables en función de la actividad que hay que desarrollar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los procedimientos de calidad que son de aplicación al entorno conforme a las normas aplicables."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han implementado los procedimientos de calidad determinados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado que la integración de las normas y procedimientos de calidad cumplen con los requisitos de ciberseguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica medidas de ciberseguridad en los sistemas instrumentados de seguridad (SIS) ajustándose a las normas aplicables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los tipos de fallos y de sistemas instrumentados de seguridad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha discriminado entre las diferentes plataformas de tecnologías SIS, seleccionando aquellas que se adecúen a la realidad industrial de la organización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las normas aplicables en función de la actividad que hay que desarrollar (IEC 61508 o las que eventualmente la sustituyan)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los niveles de integridad de seguridad de aplicación al entorno conforme a la norma aplicable (IEC 61508 o las que eventualmente la sustituyan)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las técnicas y medidas de seguridad de los SIS."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado que los SIS cumplen con los requisitos de ciberseguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Gestiona de forma integral los riesgos de seguridad aplicando metodologías reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado la gestión integral de riesgos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las normas, marcos y metodologías de la gestión integral de los riesgos de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha implementado un marco de gestión de riesgos de acuerdo con la normativa aplicable (ISO 31000 o las que, eventualmente, la sustituyan)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado y evaluado el riesgo de acuerdo con la normativa aplicable (ISO 31000 o las que, eventualmente, la sustituyan)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha tratado, aceptado y comunicado el riesgo según la normativa aplicable (ISO 31000 o las que, eventualmente, la sustituyan)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -67,7 +67,7 @@ export interface ResumenModulo {
 }
 
 /** Catálogo oficial de secuenciación y horarios (PDFs de la Conselleria). */
-export type NivelCatalogo = 'GB' | 'GM' | 'GS'
+export type NivelCatalogo = 'GB' | 'GM' | 'GS' | 'CE'
 
 export interface ModuloCatalogo {
   curso: Curso

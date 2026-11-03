@@ -58,7 +58,8 @@ const route = useRoute()
 const NIVELES: { valor: NivelCatalogo; etiqueta: string }[] = [
   { valor: 'GB', etiqueta: 'Grado Básico' },
   { valor: 'GM', etiqueta: 'Grado Medio' },
-  { valor: 'GS', etiqueta: 'Grado Superior' }
+  { valor: 'GS', etiqueta: 'Grado Superior' },
+  { valor: 'CE', etiqueta: 'Curso de especialización' }
 ]
 
 const mostrarForm = ref(false)
@@ -198,6 +199,7 @@ function nivelEtiqueta(nivel: NivelCatalogo): string {
 }
 
 function resumenCiclo(ciclo: CicloCatalogo): string {
+  if (ciclo.nivel === 'CE') return `${ciclo.modulos.length} módulos · 1 curso`
   const primero = ciclo.modulos.filter((modulo) => modulo.curso === '1').length
   const segundo = ciclo.modulos.filter((modulo) => modulo.curso === '2').length
   return `${primero} mód. en 1º · ${segundo} en 2º`

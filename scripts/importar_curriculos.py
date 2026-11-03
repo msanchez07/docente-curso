@@ -264,12 +264,13 @@ def parsear_xml(archivo: Path) -> dict[str, dict]:
     actual = None
     en_ra_ce = False
     ra = None
+    ce_sin_letra = False
 
     def cerrar():
-        nonlocal actual, ra, en_ra_ce
+        nonlocal actual, ra, en_ra_ce, ce_sin_letra
         if actual and actual.get("codigo"):
             modulos.append(actual)
-        actual, ra, en_ra_ce = None, None, False
+        actual, ra, en_ra_ce, ce_sin_letra = None, None, False, False
 
     for texto in parrafos_xml(archivo):
         coincidencia = RE_MODULO.match(texto)
@@ -282,6 +283,7 @@ def parsear_xml(archivo: Path) -> dict[str, dict]:
                 "nombre": nombre, "codigo": coincidencia.group(2), "ects": None,
                 "horas_minimas_boe": None, "ra": [],
             }
+            ra, ce_sin_letra = None, False
             continue
         if actual is None:
             continue
@@ -306,10 +308,12 @@ def parsear_xml(archivo: Path) -> dict[str, dict]:
                 en_ra_ce = False
                 continue
             if texto.lower().startswith("criterios de evaluación"):
+                ce_sin_letra = True
                 continue
             coincidencia = RE_CE.match(texto)
             if coincidencia and ra is not None:
                 ra["ce"].append({"codigo": coincidencia.group(1), "descripcion": coincidencia.group(2).strip()})
+                ce_sin_letra = False
                 continue
             coincidencia = RE_RA.match(texto)
             if coincidencia:
@@ -320,8 +324,11 @@ def parsear_xml(archivo: Path) -> dict[str, dict]:
                     "ce": [],
                 }
                 actual["ra"].append(ra)
+                ce_sin_letra = False
                 continue
-            if ra is not None and ra["ce"]:
+            if ra is not None and ce_sin_letra:
+                ra["ce"].append({"codigo": letra(len(ra["ce"])), "descripcion": texto})
+            elif ra is not None and ra["ce"]:
                 ra["ce"][-1]["descripcion"] = limpiar(ra["ce"][-1]["descripcion"] + " " + texto)
             elif ra is not None:
                 ra["descripcion"] = limpiar(ra["descripcion"] + " " + texto)
@@ -366,13 +373,14 @@ def parsear_texto_pdf(archivo: Path) -> dict[str, dict]:
     actual = None
     en_ra_ce = False
     ra = None
+    ce_sin_letra = False
     esperando_nombre = False
 
     def cerrar():
-        nonlocal actual, ra, en_ra_ce, esperando_nombre
+        nonlocal actual, ra, en_ra_ce, ce_sin_letra, esperando_nombre
         if actual and actual.get("codigo"):
             modulos.append(actual)
-        actual, ra, en_ra_ce, esperando_nombre = None, None, False, False
+        actual, ra, en_ra_ce, ce_sin_letra, esperando_nombre = None, None, False, False, False
 
     for linea in archivo.read_text(encoding="utf-8", errors="replace").splitlines():
         texto = limpiar(linea)
@@ -416,10 +424,12 @@ def parsear_texto_pdf(archivo: Path) -> dict[str, dict]:
                 en_ra_ce = False
                 continue
             if texto.lower().startswith("criterios de evaluación"):
+                ce_sin_letra = True
                 continue
             coincidencia = RE_CE.match(texto)
             if coincidencia and ra is not None:
                 ra["ce"].append({"codigo": coincidencia.group(1), "descripcion": coincidencia.group(2).strip()})
+                ce_sin_letra = False
                 continue
             coincidencia = RE_RA.match(texto)
             if coincidencia:
@@ -430,8 +440,11 @@ def parsear_texto_pdf(archivo: Path) -> dict[str, dict]:
                     "ce": [],
                 }
                 actual["ra"].append(ra)
+                ce_sin_letra = False
                 continue
-            if ra is not None and ra["ce"]:
+            if ra is not None and ce_sin_letra:
+                ra["ce"].append({"codigo": letra(len(ra["ce"])), "descripcion": texto})
+            elif ra is not None and ra["ce"]:
                 ra["ce"][-1]["descripcion"] = limpiar(ra["ce"][-1]["descripcion"] + " " + texto)
             elif ra is not None:
                 ra["descripcion"] = limpiar(ra["descripcion"] + " " + texto)

@@ -10,7 +10,7 @@ const FICHEROS = readdirSync(DIRECTORIO)
 
 describe('datos BOE empaquetados', () => {
   it('todos los ciclos del catálogo son válidos para el importador', () => {
-    expect(FICHEROS).toHaveLength(181)
+    expect(FICHEROS).toHaveLength(217)
     for (const fichero of FICHEROS) {
       const datos = JSON.parse(readFileSync(join(DIRECTORIO, fichero), 'utf-8')) as unknown
       const resultado = parsearCurriculos(JSON.stringify(datos))

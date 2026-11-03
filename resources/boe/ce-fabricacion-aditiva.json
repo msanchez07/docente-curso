@@ -1,0 +1,1097 @@
+{
+  "id": "ce-fabricacion-aditiva",
+  "denominacion": "Fabricación aditiva",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Fabricación Mecánica",
+  "duracion_horas": 600,
+  "ects": 0,
+  "abreviatura": "FA",
+  "rd": "Real Decreto 280/2021, de 20 de abril, por el que se establece el Curso de especialización en Fabricación aditiva y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-8974",
+  "modulos": [
+    {
+      "nombre": "Tecnologías de fabricación aditiva",
+      "codigo": "5065",
+      "ects": 5,
+      "horas_minimas_boe": 45,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los principios básicos de la fabricación aditiva analizando las ventajas e inconvenientes de la misma.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto y alcance de la fabricación aditiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los sectores de aplicación de la fabricación aditiva."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido el valor añadido que aporta la fabricación aditiva en cada uno de los sectores de aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fases comunes a todos los procesos de impresión 3D."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido las ventajas que representa la creación de estructuras complejas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han previsto los límites y dificultades propias de la tecnología aditiva."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reconoce las diferentes técnicas de impresión 3D existentes, describiendo las características específicas de cada una de ellas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las diferentes técnicas de impresión 3D."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características específicas de cada técnica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las cualidades y los defectos de cada técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comparado las diferentes tecnologías de impresión 3D en función de su capacidad estructural."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comparado las diferentes tecnologías de impresión 3D en función de su resultado estético."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Determina los materiales de impresión adecuados, asociándolos a la técnica de impresión 3D más conveniente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los materiales habitualmente empleados en las diferentes tecnologías de impresión 3D."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las posibilidades de uso de materiales afines a cada una de las técnicas de impresión 3D."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los diferentes materiales y sus tecnologías asociadas con las necesidades estructurales exigidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los diferentes materiales y sus tecnologías asociadas con las necesidades estéticas y de acabado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica las demandas características de los diferentes sectores económicos relacionándolas con las técnicas de impresión 3D.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los sectores en los que la fabricación aditiva genera productos elaborados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los sectores en los que la fabricación aditiva genera herramientas o elementos auxiliares a la producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las técnicas de fabricación aditiva y los materiales empleados atendiendo a los sectores de aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las necesidades estéticas y estructurales con las técnicas de impresión necesarias en los principales sectores industriales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han valorado las diferentes tecnologías de impresión 3D en razón de su coste económico de implantación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han tenido en cuenta criterios de calidad, seguridad y medioambiente de cada una de las diferentes tecnologías de impresión 3D, para poder incorporarlos a los sistemas de gestión de la producción de las empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Genera objetos prediseñados aplicando tecnologías FDM y SLA.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado programas para realizar el laminado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han tenido en cuenta las posibilidades de orientación del objeto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha previsto el comportamiento anisotrópico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tenido en cuenta las características de relleno, recubrimientos y soporte en la realización del laminado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha trabajado con las tecnologías FDM y SLA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha previsto el uso estético o funcional del objeto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han comparado los objetos generados con las diferentes tecnologías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la resistencia y acabado de cada uno de los objetos generados con las distintas tecnologías."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Diseño de estructuras aligeradas y optimización topológica en fabricación",
+      "codigo": "5066",
+      "ects": 5,
+      "horas_minimas_boe": 45,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Relaciona objetos fabricados mediante impresión 3D analizando su estructura y funciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales funciones de una estructura."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los esfuerzos estructurales simples y combinados que actúan sobre una estructura."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las propiedades mecánicas de los materiales más habituales, empleados en fabricación aditiva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el comportamiento anisotrópico de objetos modelados mediante técnicas de impresión 3D."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el posicionamiento de piezas durante el proceso de fabricación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha previsto el comportamiento estructural de los objetos impresos mediante modelado por deposición fundida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Calcula la resistencia de objetos fabricados mediante impresiones 3D realizando ensayos físicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los procesos de control de calidad ligados a la fabricación aditiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado los estándares europeos en los procedimientos de ensayo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las máquinas habituales para la realización de ensayos físicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las principales normas españolas UNE-EN en relación a la fabricación aditiva."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado ensayos físicos (tracción, compresión y absorción de humedad) con probetas de diferentes materiales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Genera diferentes tipologías de estructuras aligeradas mediante impresión 3D utilizando softwares específicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes tipologías de estructuras aligeradas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado programas propietarios o de código abierto para la transformación de modelos STL en estructura aligerada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado piezas con estructura aligerada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han generado piezas con diferentes tipologías de rellenos atendiendo a la funcionalidad de la pieza impresa."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha calculado el tiempo de impresión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido el uso de los materiales a utilizar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define el proceso de topoligización estructural relacionándolo con la fabricación aditiva.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto de topologización estructural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la creación de estructuras complejas con la topologización estructural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los sectores industriales en los que la topologización estructural es un elemento importante del diseño."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado casos reales de topologización estructural."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han planificado los pasos necesarios para transformar un diseño preexistente en un diseño topologizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras y ahorros derivados de la transformación de un diseño preexistente mediante topologización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han generado piezas impresas estándar y su versión topologizada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha calculado la variación del peso y el comportamiento estructural de las piezas topologizadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta en el diseño criterios de calidad, seguridad y medioambiente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Modelado, laminado e impresión 3D",
+      "codigo": "5067",
+      "ects": 11,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Diseña o redefine objetos utilizando software de diseño paramétrico para realizar impresión 3D.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales programas de diseño paramétrico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha planificado el diseño de las partes y del conjunto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado objetos digitales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado ensamblajes de elementos articulando movimientos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el funcionamiento del diseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han rediseñado objetos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han editado los planos de los objetos diseñados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han migrado los diseños a soportes aptos para la manipulación en programas laminadores."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tenido en cuenta en el diseño criterios de calidad, seguridad y medioambiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Pone a punto la maquinaria de fabricación aditiva realizando comprobaciones de calidad dimensional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales herramientas analógicas y digitales de medición y calibración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado medidas con el nonio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los procedimientos de tarado de las diferentes herramientas de medición y calibración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tomado medidas con herramientas de precisión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calculado coeficientes de deformación dimensional en piezas impresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza la reconstrucción volumétrica de objetos 3D partiendo de imágenes fotográficas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los programas específicos de reconstrucción 3D a partir de imágenes fotográficas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las fases de creación de objetos 3D a partir de fotografías."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado reconstrucciones volumétricas a partir de retratos fotográficos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la reconstrucción volumétrica de un objeto a partir de varias fotografías tomadas desde distintos ángulos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha generado un archivo STL con la volumetría creada a partir de fotografías."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Genera códigos G-code a través de programas laminadores permitiendo la fabricación aditiva del objeto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los programas específicos de laminado 3D."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los diferentes elementos que influyen en la generación de los códigos G-code."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido como afectan los códigos G-code al modelo impreso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los elementos que pueden causar problemas en la impresión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las posibles soluciones a los problemas de impresión 3D."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado el funcionamiento del laminado para optimizar sus resultados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Determina la estructura y edición de archivos G-code favoreciendo la mejora del proceso de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la estructura de un código G-code."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los diferentes comandos que aparecen en el G-code."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los modificadores que se pueden añadir al G-code para realizar funciones específicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido modificaciones en un código G-code para añadir cambios de filamentos a mitad de impresión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado modificaciones en un código G-code para recuperar una impresión fallida."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Escaneado y reparación de mallas 3D",
+      "codigo": "5068",
+      "ects": 4,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica en función de las necesidades específicas los tipos de escáneres relacionándolos con las aplicaciones para los que están destinados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado tipologías de escaneado 3D."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado los principios físicos que intervienen en las diferentes tecnologías aplicadas al escaneo 3D."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado diferentes aplicaciones de escaneado 3D."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las diferentes tipologías de escaneado con sus ventajas y limitaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado cada tipología de escáner 3D con las aplicaciones a las que se destina."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado tipologías de escáneres 3D con necesidades industriales específicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Controla el escaneado y sus aplicaciones asimilando los conceptos propios del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el proceso de escaneado en los diferentes sistemas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los problemas derivados de la gestión de nubes de puntos y los procesos matemáticos para definir superficies por triangulación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los mecanismos necesarios para escanear en 3D la geometría, la textura y el color de los objetos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los términos propios de la técnica de escaneado 3D."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido el concepto de ingeniería inversa y sus aplicaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia del escaneado en procesos de ingeniería inversa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Escanea objetos para impresión en 3D utilizando un escáner estándar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha generado una nube de puntos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha generado una malla 3D a partir de la nube de puntos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han corregido, reparado y ensamblado las mallas 3D obteniendo un modelo tridimensional del objeto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha convertido la malla en un objeto sólido digital."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha recogido información de la geometría y las características del objeto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha generado un archivo STL."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Escanea objetos para impresión en 3D utilizando aplicaciones para teléfonos móviles y software específico de fotogrametría.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha escaneado un objeto mediante de fotogrametría."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha escaneado el mismo objeto mediante aplicaciones fotográficas para teléfonos móviles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han manipulado las mallas 3D, corrigiéndolas, depurándolas y enlazándolas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha generado un modelo tridimensional de cada malla."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han planificado los modelos en el formato adecuado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comparado la calidad en la geometría y en las texturas obtenidas en los escaneos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Repara ficheros STL utilizando software libre específico para permitir el aprovechamiento de archivos dañados o incompletos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la morfología de una malla STL."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido una malla STL en busca de errores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha eliminado malla corrupta reparándola con nuevos triángulos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han unido varias mallas para generar un nuevo modelo STL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han invertido polígonos en una malla STL para orientarla hacia un mismo lado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Post procesado",
+      "codigo": "5069",
+      "ects": 5,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Diseña y construye piezas de grandes dimensiones con impresoras de pequeño formato utilizando software específico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha separado una pieza en elementos menores con un software de diseño específico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado el tipo de ensamblaje entre piezas para asegurar una unión correcta y duradera."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado las partes impresas del modelo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ensamblado y encolado las partes de acuerdo al diseño inicial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado un suavizado de los encuentros y superficies teniendo en cuenta los materiales y métodos de impresión utilizados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado el acabado adecuado del modelo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica y genera tratamientos superficiales mecánicos post impresión, comparándolos con los acabados primarios del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado posibles tratamientos superficiales mecánicos y sus compatibilidades con los materiales usuales de impresión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado procedimientos de acabado manual básicos de acuerdo con las medidas adecuadas de seguridad y salud."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado procesos de acabado con equipos especializados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los procedimientos mecánicos de post impresión con las calidades superficiales del objeto tratado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la calidad obtenida comparándolo con el objeto primario teniendo en cuenta el material empleado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los principales riesgos de seguridad e higiene en los procesos mecánicos de post impresión tomando las medidas de protección individuales y colectivas necesarias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica y realiza tratamientos superficiales térmicos y químicos post impresión comparándolos con los acabados primarios del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los posibles tratamientos superficiales químicos y su compatibilidad con los materiales usuales de impresión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los posibles tratamientos superficiales térmicos y su compatibilidad con los materiales usuales de impresión."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado procedimientos térmicos de soldadura, suavizado superficial y termoformado sobre piezas impresas cumpliendo las necesarias medidas de seguridad y salud."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado procedimientos químicos de suavizado superficial y encolado de piezas impresas reconociendo los riesgos de seguridad e higiene y observando las medidas de seguridad y salud necesarias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comparado los resultados de los procesos de post procesado superficial, térmico y químico con las superficies primarias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica las diferentes tipologías de post-procesado, alcanzando resistencias óptimas en los materiales de impresión empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las tipologías de post procesado y curado con los procesos industriales que los requieren."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el proceso de post procesado de acabado y endurecimiento de las resinas fotopoliméricas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha generado un elemento impreso en resinas fotopoliméricas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado un post procesado de endurecimiento de un objeto impreso en resinas fotopoliméricas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido el proceso de manipulado de polvos poliméricos en el post procesado de piezas impresas en SLS."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido el post procesado de los objetos metálicos fabricados mediante sinterización directa de metal."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los principales riesgos de seguridad e higiene en los procesos de post procesado tomando las medidas de protección individuales y colectivas necesarias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Reconoce los procedimientos de pegado y acabado de piezas impresas atendiendo al material y la técnica de impresión utilizada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes colas y adhesivos relacionándolos con los materiales para los que están destinados y sus posibles incompatibilidades químicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los diferentes acabados, relacionándolos con los materiales a los que están destinados y sus posibles incompatibilidades químicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado piezas encoladas a partir de objetos impresos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han generado diferentes acabados en objetos impresos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las incompatibilidades químicas en los diferentes acabados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, e identifica los riesgos laborales asociados, las medidas y los equipamientos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos laborales y peligros que supone la manipulación de los materiales, las herramientas, los utensilios y las máquinas de post procesado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han respetado las normas de seguridad al operar con máquinas y herramientas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de productos químicos, herramientas, máquinas de corte y conformación, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los elementos de seguridad y los equipamientos de protección individual y colectiva (calzado, protección ocular e indumentaria, entre otras) necesarias en las operaciones de post procesado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el uso correcto de los elementos de seguridad y de los equipamientos de protección individual y colectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado la manipulación de productos químicos, herramientas y máquinas con las medidas de seguridad y protección individual requeridas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las posibles fuentes de contaminación del contorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado el orden y la limpieza de las instalaciones y de los equipamientos como primer factor de prevención de riesgos laborales. Duración : 40 horas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Manejo, reparación y costes de la fabricación aditiva",
+      "codigo": "5070",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los principios básicos de funcionamiento de la fabricación aditiva y sus procesos, identificando las partes críticas y planificando el mantenimiento de la maquinaria.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los elementos particulares de cada tecnología de fabricación aditiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido los elementos comunes a todas las tecnologías de fabricación aditiva."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los elementos críticos de cada tecnología de fabricación aditiva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado una planificación del mantenimiento de una impresora 3D."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado un supuesto de planificación del mantenimiento de un proceso de fabricación aditiva profesional."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el coste de la planificación de mantenimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Desmonta, repara y sustituye los elementos de una impresora estándar identificando sus partes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las partes de una impresora de modelado por deposición fundida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desmontado y montado los elementos críticos de una impresora de modelado por deposición fundida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el mantenimiento, limpieza, puesta a punto, calibrado y comprobación de funcionamiento de partes críticas de una impresora de modelado por deposición fundida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha impreso un modelo estándar para comprobar la calidad de impresión en una impresora de modelado por deposición fundida."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las partes de una impresora estereolitográfica (resinas foto poliméricas)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desmontado y montado los elementos críticos de una impresora estereolitográfica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento, limpieza, puesta a punto, calibrado y comprobación de funcionamiento de partes críticas de una impresora estereolitográfica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha impreso en la impresora estereolitográfica un modelo estándar de comprobación de la calidad de impresión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Edita y modifica los principales firmwares de trabajo en función de las necesidades específicas de cada impresión optimizando los resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los firmwares más habituales en impresión 3D."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado las ventajas y desventajas de los diferentes firmwares de código abierto en función de las impresoras 3D existentes en el taller."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el proceso de actualización del firmware de código abierto en función de las impresoras 3D existentes en el taller."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han editado los códigos de los diferentes firmwares de las máquinas de impresión 3D del taller."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha modificado el firmware de código abierto de las diferentes tipologías de máquinas de impresión 3D del taller."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha impreso un modelo estándar para comprobar la calidad de impresión en una impresora 3D con firmware actualizado o modificado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica los problemas de calibrado en procesos de impresión optimizando la calidad de las piezas obtenidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detectado los mecanismos críticos con necesidad de calibración de las diferentes tecnologías de fabricación aditiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los problemas de calibrado de las diferentes tipologías de máquinas de impresión 3D existentes en el taller."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el funcionamiento de las herramientas habituales para la realización de mediciones y calibración de precisión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado la metodología de calibración propia de las impresoras 3D existentes en el taller."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calibrado y ajustado las diferentes impresoras 3D existentes en el taller."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha impreso un modelo estándar en impresoras 3D calibradas y ajustadas para comprobar la calidad de impresión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Genera objetos en 3D de acuerdo con la calidad y velocidad de impresión adecuadas optimizando el consumo de recursos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha obtenido un modelo tridimensional del objeto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha preparado el modelo en el formato adecuado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha recogido información de la geometría y las características del objeto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha laminado el objeto mediante el empleo de software privativo o de código abierto específicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha configurado el laminado del objeto atendiendo a su funcionalidad, calidad de acabado, tiempo de impresión y características específicas del material empleado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha orientado el objeto atendiendo a su funcionalidad, las características anisotrópicas propias del proceso y la optimización del consumo de material."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha generado un objeto impreso con la configuración deseada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Planifica y determina los costes de la fabricación aditiva comparando las diferentes opciones tecnológicas para su implantación optimizada en la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los costes del diseño de un proceso de fabricación aditiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han calculado los costes de producción de un proceso de fabricación aditiva."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los costes de post producción de un proceso de fabricación aditiva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han calculado los costes de los sistemas de control de calidad en una producción de fabricación aditiva."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido los gastos generales y de consumibles de una producción de fabricación aditiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha generado un supuesto de implantación de una tecnología específica de fabricación aditiva en una línea de fabricación industrial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental identificando los riesgos laborales asociados, las medidas y los equipamientos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos laborales y el nivel de peligro que supone la manipulación de los materiales, las herramientas, los utensilios y las máquinas, incluidas las de impresión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con máquinas de impresión y herramientas respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas de corte y conformación, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los elementos de seguridad y los equipamientos de protección individual y colectiva (calzado, protección ocular e indumentaria, entre otras.) que cumpla emplear en las operaciones de impresión y reparación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el uso correcto de los elementos de seguridad y de los equipamientos de protección individual y colectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección individual requeridas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del contorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado el orden y la limpieza de las instalaciones y de los equipamientos como primero factor de prevención de riesgos laborales."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import type { CatalogoHorarios, Ciclo } from '@shared/tipos'
 import catalogoHorarios from '../../../resources/horarios/catalogo-2026-27.json'
+import cursosEspecializacion from '../../../resources/horarios/cursos-especializacion-2026-27.json'
 
 export function directorioRecursos(): string {
   const candidatos = app.isPackaged
@@ -50,5 +51,11 @@ export function leerCiclosBoe(): Ciclo[] {
  * de que el directorio de recursos esté presente en una instalación concreta.
  */
 export function leerCatalogoHorarios(): CatalogoHorarios {
-  return catalogoHorarios as CatalogoHorarios
+  const base = catalogoHorarios as CatalogoHorarios
+  const especializacion = cursosEspecializacion as CatalogoHorarios
+  return {
+    ...base,
+    niveles: [...new Set([...base.niveles, ...especializacion.niveles])],
+    ciclos: [...base.ciclos, ...especializacion.ciclos]
+  }
 }

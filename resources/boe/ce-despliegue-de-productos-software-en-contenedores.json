@@ -1,0 +1,800 @@
+{
+  "id": "ce-despliegue-de-productos-software-en-contenedores",
+  "denominacion": "Despliegue de productos software en contenedores",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Informática y Comunicaciones",
+  "duracion_horas": 630,
+  "ects": 0,
+  "abreviatura": "DPSC",
+  "rd": "Real Decreto 144/2026, de 25 de febrero, por el que se establece el Curso de especialización de Formación Profesional de Grado Superior en Despliegue de productos software en contenedores y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-4672",
+  "modulos": [
+    {
+      "nombre": "Metodología Devops: preparación de entornos de desplieguedel arte floral",
+      "codigo": "5165",
+      "ects": 7,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce las metodologías de desarrollo de software, contraponiendo las metodologías tradicionales y las ágiles.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la metodología de desarrollo en cascada (Waterfall), describiendo su organización y fases."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales metodologías ágiles de desarrollo, describiendo su filosofía y organización, en contraposición a las metodologías tradicionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito diferentes herramientas de gestión de proyectos de desarrollo, en aplicación de las metodologías tradicionales y ágiles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido el uso y aplicación de la integración y despliegue continuos propios de Devops como parte de las metodologías ágiles de desarrollo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el proceso de despliegue en contenedores de aplicaciones, explicando el desarrollo e integración continuas (CI/CD) como parte de una metodología."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa la localización de la infraestructura física de tecnologías de la información (TI), diferenciando entre su ubicación en instalaciones propias (on premise) y en la nube (cloud).",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto de infraestructura de nube, diferenciándolo del de infraestructura propia (on premise)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de la infraestructura de nube, vinculándolo con su modelo de negocio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los beneficios de la infraestructura de nube con respecto a la infraestructura propia (on premise)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha diferenciado entre la infraestructura de nube y la arquitectura de nube, relacionándolos con los recursos de computación y la ejecución de aplicaciones web."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el conjunto de componentes hardware y software básico de la infraestructura en la nube, relacionándolo con el aprovisionamiento de recursos virtuales y la implementación de cargas de trabajo en la nube."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los componentes de la infraestructura de nube, especificando lo relativo a servidores, redes, almacenamiento y software."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Selecciona el modelo de implementación o despliegue de infraestructura de nube más apropiado en función de las necesidades de funcionalidad, seguridad digital, escalabilidad o costes, valorando las opciones disponibles en el mercado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el modelo de nube pública, esquematizándolo y relacionándolo con la propiedad de los recursos y su uso compartido."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el modelo de nube privada, esquematizándolo y relacionándolo con la propiedad de los recursos y su uso compartido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el modelo de nube híbrida, esquematizándolo y relacionándolo con la propiedad de los recursos y su uso compartido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha diferenciado entre nubes públicas y privadas, valorando la configuración más adecuada en función de las necesidades de una organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha diferenciado entre servicios de nube híbrida y entornos multinube, identificando requisitos y casos de uso específicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado entornos híbridos y de multinube, identificando sus respectivas necesidades de administración y gobernanza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Reconoce los principales modelos de servicio en la arquitectura de nube en función de los recursos requeridos para alcanzar objetivos y necesidades a cubrir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el software como servicio (Software as a Service, en adelante SaaS), identificando su estructura y explicando su funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la Plataforma como servicio (Plattform as a Service, en adelante PaaS), identificando su estructura y explicando su funcionamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la Infraestructura como servicio (Infraestructure as a Service, en adelante IaaS), identificando su estructura y explicando su funcionamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito el servicio de arquitectura sin servidor (en adelante, Serverless), identificando su estructura y explicando su funcionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comparado los principales servicios en la arquitectura de nube, identificando el alcance de cada uno de ellos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Crea el acceso a los repositorios de código de infraestructura y/o servicios, comprobando las herramientas de gestión y de validación de la calidad y seguridad de las modificaciones de código fuente previas al despliegue.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han enumerado herramientas relacionadas con el despliegue en contenedores, describiendo sus objetivos, características y funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las herramientas de validación de calidad y seguridad del código y dependencias de librerías externas o integraciones, describiendo sus características y aplicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha habilitado el acceso a los recursos y herramientas para desplegar y/o gestionar los entornos de producción definidos en la arquitectura, definiendo personas usuarias y perfiles que permitan y limiten."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado el acceso a un código fuente para ser gestionado a través de herramientas, identificando los parámetros de seguridad y políticas de acceso, a través de las personas usuarias y/o grupos asignados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han validado unas modificaciones del código fuente, ejecutando pruebas de calidad mediante herramientas específicas y documentándolas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han ejecutado comprobaciones de parámetros de seguridad del código, mediante herramientas específicas y de forma periódica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han validado, con anterioridad al despliegue, las dependencias del código de librerías externas o integraciones, usando herramientas de comprobación para verificar la seguridad y funcionalidad e integración con el resto de los componentes del aplicativo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Crea o, en su caso, configura entornos de revisión y/o producción, mediante ficheros de parámetros y creando flujos de trabajo, siguiendo procedimientos, estándares y políticas de seguridad digital, para validar el despliegue.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han creado ficheros de definición de infraestructura como código y SDH (Software Define Hardware), usando el lenguaje propio de la plataforma de despliegue."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han creado flujos de trabajo para el despliegue del entorno hardware, usando las credenciales proporcionadas y aplicando las configuraciones definidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado unas definiciones técnicas de uso de control y de seguridad digital para cada entorno, especificando roles de acceso del usuario, roles de acceso del código, acceso al almacenamiento, acceso a las API (Application Programming Interface), entre otros recursos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha creado la infraestructura definida en los ficheros al efecto dentro de la plataforma, usando las credenciales facilitadas, para su posterior integración en los flujos de trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la infraestructura creada después del despliegue, comprobando que se obtiene acceso a todos los recursos de infraestructura."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Instala en su caso el software de automatización y gestión de paquetes y dependencias, y de administración de la configuración del software, creando flujos de mantenimiento y despliegue sobre las plataformas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han instalado herramientas de automatización y gestión de paquetes y dependencias en la infraestructura seleccionada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han creado los flujos para mantenimiento, usando las herramientas para la automatización de la administración de la configuración del software y servicios de los sistemas desarrollados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han verificado los flujos para mantenimiento, probando que las acciones automatizadas generan los resultados esperados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado reglas de seguridad digital, niveles de servicio y consumo definidas en el proyecto, como configuraciones dentro de las herramientas de despliegue, para parametrizar la ejecución de los contenedores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han recogido en las herramientas de monitorización las métricas para elaborar informes de rendimiento y planificación (capacity plan), anticipar el crecimiento y facilitar la gestión de los recursos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha redactado documentación sobre el uso de los despliegues de código e imágenes de contenedores, almacenándola en los repositorios de código."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han incorporado en las herramientas desplegadas acciones automáticas basadas en eventos disparados por errores tales como fallos de trabajo y acceso y estado de finalización."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Despliegue de plataformas de ejecución de contenedores",
+      "codigo": "5166",
+      "ects": 7,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Crea las nubes virtuales privadas (Virtual Private Cloud –VPC–) donde se desplegará la infraestructura, mediante un hipervisor, configurando comunicaciones y seguridad tecnológica, para permitir la gestión de la virtualización en todos sus niveles.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha instalado un hipervisor, configurándolo con las opciones que permiten la virtualización de sistemas, teniendo en cuenta sus limitaciones y capacidades de configuración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha creado una VPC, usando la consola del hipervisor, diferenciando las VPC de los entornos y realizando aislamientos y capacidades de configuración."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han asignado parámetros tales como IP, zona de disponibilidad en su caso y DNS, configurando las comunicaciones entre las zonas de un mismo entorno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado la seguridad tecnológica, desplegando capas de seguridad digital dependiendo de la exposición DMZ externa, DMZ interna y entorno interno y ejecutando pruebas de seguridad, aislamiento y separación de clientes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara los interfaces de acceso y uso en caso de nube pública, configurándolos para acceder a los servicios de la plataforma en la nube.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han efectuado conexiones a plataformas en la nube para el uso de interfaces gráficas mediante un navegador, autenticándose para acceder a los servicios de la plataforma."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado elementos tales como el idioma, aspecto gráfico y preferencias, entre otros, en la interfaz gráfica de la plataforma en la nube."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descargado e instalado interfaces de líneas de comandos en el entorno que se va a utilizar (en local, en un servidor o en una plataforma administrada), inicializando la interfaz y autenticándose."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han administrado las configuraciones almacenadas en plataforma a través de la interfaz de línea de comandos previamente instalada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descargado librerías de cliente para los lenguajes de computación a utilizar, usando los gestores de dependencias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Crea la infraestructura como código (IaC), seleccionando la infraestructura a desplegar y creando los códigos de despliegue, para permitir la automatización mediante procesos y adaptar las aplicaciones y servicios con mayor rapidez.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado una infraestructura a desplegar tal como almacenamiento, capacidad de cómputo, memoria, entre otros, recogiendo los requerimientos para el servicio que va a alojar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha creado un código que automatice el despliegue de la infraestructura seleccionada, usando un editor y el lenguaje fijado por la plataforma, en base a los requerimientos del servicio donde se va a alojar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha ejecutado el código para el despliegue de la infraestructura, lanzando pruebas de servicio y chequeo de configuración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han verificado las configuraciones de seguridad digital, comprobando si el despliegue automatizado de IaC cumple con unos requisitos y recomendaciones de seguridad en el entorno."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Despliega el orquestador y la monitorización del entorno, configurando primero proyecto y tareas y creando el pipeline, ayudando a realizar las funciones de integración continua y a la automatización y seleccionando y configurando el gestor de ingesta de datos y la seguridad digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado un software de orquestador, escogiendo aquel con capacidad de llevar a cabo las pruebas de control de las variables o limitaciones del CI."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha instalado el software de orquestador o bien se ha configurado, parametrizando permisos, accesos, certificados y opciones de despliegue, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado unos plugin o complementos del orquestador, configurándolos para incorporar las necesidades de integración del orquestador con las tecnologías del entorno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha creado un proyecto, definiendo las configuraciones base del orquestador de tareas, así como las credenciales para el acceso al repositorio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado unas tareas a realizar dentro del proyecto, parametrizando las opciones tales como nombre de la tarea, máquinas en las que se procesan los trabajos del despliegue, direccionamiento, y condiciones de ejecución del despliegue."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha creado un pipeline, parametrizándolo para encadenar procesos, definiendo las etapas, secuencias y script que marquen los estados del proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha probado el pipeline, ejecutando los caminos posibles dentro del mismo y verificando que se gestionan los errores y salidas no esperadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha configurado la seguridad digital, asignando los permisos que garanticen la ejecución de las tareas planificadas, siguiendo el principio de «mínimo privilegio»."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha seleccionado un gestor de ingesta de datos, escogiendo un software con capacidad de recolección de datos y posterior visualización de estos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha configurado el software de gestión de datos y métricas, seleccionando el visualizador de métricas, configurando los paneles, alertas y envíos de los indicadores clave de rendimiento (Key Performance Indicator –KPI–)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha configurado la seguridad digital, parametrizando comunicaciones, accesos y repositorios de datos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Definición de flujos de procesos en integración continua",
+      "codigo": "5167",
+      "ects": 9,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Gestiona los repositorios de código fuente del software y de los servicios asociados a las aplicaciones de los sistemas, según las necesidades de uso, directivas de calidad y seguridad digital, facilitando su mantenimiento, recuperación y permitiendo la trazabilidad del sistema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han organizado unos orígenes de código fuente con una estructura que permite su uso de forma consistente, definiendo ramas de código estable y validado y otras donde se recojan los cambios que están en proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado los parámetros del sistema que afectan a la autenticación y autorización, ajustándolos a las necesidades de acceso e integración con herramientas y seguridad digital."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han validado unas modificaciones sobre el código fuente, evaluando de manera automatizada la sintaxis y la semántica del código, comprobando versiones de librerías externas y/o genéricas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la seguridad del código, verificando mediante software específico que no contenga código malicioso y que no contenga vulnerabilidades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ejecutado de forma periódica los procesos de copia de seguridad y recuperación del código fuente, gestionando repositorios de gran tamaño."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Modifica el código fuente de integración y plantillas responsables de la creación de los servicios, definiendo los parámetros de los artefactos, cumpliendo directivas de operación, calidad y seguridad digital y validando el resultado de los procesos de integración continua (CI) del código fuente de las aplicaciones desarrolladas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han creado de forma automatizada unos servicios requeridos para las aplicaciones, modificándolos, en su caso, empleando línea de comandos (CLI), API (Application Programming Interface) y automatismos mediante lenguajes de programación, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los parámetros de los artefactos para el automatismo del ciclo de vida de los servicios, considerando el despliegue de las versiones de los datos de las aplicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los parámetros de los artefactos para el automatismo del ciclo de vida de los servicios relacionados con las aplicaciones, considerando la integración de las versiones del software, tales como la gestión de la configuración de las aplicaciones, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los parámetros de los artefactos para el automatismo del ciclo de vida de los servicios relacionados con infraestructura, considerando la integración de las versiones del código fuente de las aplicaciones, tales como contenedores, máquinas virtuales, máquinas físicas, scripts, código binario, entre otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido los parámetros de los artefactos para el automatismo del ciclo de vida de los servicios, considerando elementos que permitan su reutilización futura, tales como nombre del servicio, región geográfica, recursos asignados, permisos, confirmando que son únicos en su caso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado que sea idempotente el código fuente de la integración, plantillas declarativas del servicio o cualquier proceso responsable de esta tarea."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resuelto los fallos de ejecución, calidad, seguridad digital y rendimiento de las aplicaciones del sistema mediante automatización y pruebas de diagnóstico con las herramientas integradas, proporcionando información sobre resultados y acciones a los fallos diagnosticados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han verificado los parámetros del sistema que afectan a la integración con dependencias externas en el proceso de compilación del código fuente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha publicado el código fuente validado en la rama estable, solucionando los conflictos que se notifiquen en el proceso, comprobando las fechas de modificación y contenidos modificados."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha cerrado el caso o incidencia en la herramienta de seguimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura los servicios de comunicación y colaboración del grupo de personas del proyecto, según las necesidades de uso y directivas de comunicación del equipo de desarrollo, para automatizar las interacciones con los repositorios de código fuente y las herramientas de gestión de proyectos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han empleado unas plataformas de comunicación y herramientas de gestión de proyectos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interconectado las plataformas de comunicación y herramientas de gestión de proyectos con los repositorios de código fuente para la recepción automática de cambios de estado y contenido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado unas plataformas de comunicación empleadas para notificar al personal responsable de los sistemas afectados acerca de métricas, alertas o reglas definidas en los repositorios de código fuente, estados de tareas, peticiones de cambios al sistema, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado unas plataformas de comunicación, documentación y herramientas de gestión de proyectos empleadas, conectándolas con los repositorios de código fuente, de tal modo que permitan relacionar errores (bugs) con modificaciones de código fuente, entre otras."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Definición de flujos de procesos de despliegue continuo",
+      "codigo": "5168",
+      "ects": 9,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Crea el paquete de software que se va a desplegar, utilizando la versión estable del código fuente, según las necesidades de uso, directivas de calidad y seguridad digital, facilitando su despliegue y permitiendo la trazabilidad del sistema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha obtenido un código fuente de la rama de trabajo del repositorio, utilizando unos procesos de acceso, gestión y trazabilidad definidos para el desarrollo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha validado la calidad del código, usando herramientas de comprobación semántica, sintáctica y de seguridad sobre el código desarrollado y librerías de terceros asociadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha creado un paquete de software, incluyendo los elementos requeridos tales como aplicaciones, librerías y/o script de instalación, entre otros, utilizando herramientas de arquitectura, versionado, entornos y trazabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el paquete de software, verificando que contiene los elementos, tales como versión anterior de la aplicación, los scripts de instalación y los scripts para el ajuste de datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado el paquete de software a desplegar, verificando que incluye elementos para la ejecución de pruebas funcionales y no funcionales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han almacenado los resultados de las pruebas de software a desplegarse en un aplicativo para su posterior reutilización, seguimiento y cualquier otra actividad acerca del versionado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha almacenado el paquete de software en el aplicativo para su posterior reutilización, seguimiento y cualquier actividad acerca del versionado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara el entorno validando, creando o modificando las variables de entorno requeridas en el despliegue del paquete creado para cada aplicativo o servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha configurado el pipeline para la validación de forma automática de la existencia de los parámetros requeridos para desplegar en cada entorno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han recopilado los valores de los parámetros a utilizar en cada entorno, obteniéndolos de la aplicación durante la creación de la infraestructura."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado que los parámetros de los entornos recopilados se han incluido en el software a desplegar, ejecutando el despliegue y comprobando la ausencia de errores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han recopilado los errores detectados durante el despliegue, deteniendo el pipeline y destruyendo todos los objetos intermedios creados hasta el instante de la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Despliega la nueva versión del software en el entorno definido por la persona responsable de versiones, utilizando el paquete creado por el pipeline, para que se pueda validar antes de la puesta en funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han instalado como parte del paquete las aplicaciones adicionales relacionadas y previas al despliegue o, en caso de ser algo estático, de modo que se pueda acceder al repositorio del software para proceder a su instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha instalado la nueva versión del software y aquellos artefactos que se requieran para realizar las tareas de integración con otros sistemas, ejecutando script de validación de la instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado el software desplegado, ejecutado los scripts de prueba que realizan la tarea, garantizando que se integra de manera automática con el resto de las aplicaciones de la solución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Valida el nuevo software instalado, comprobando que cumple todos los requerimientos sobre pruebas no funcionales, funcionales y rendimiento, resolviendo los fallos detectados y actualizando los repositorios de versiones para garantizar un despliegue libre de errores.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha validado un software automáticamente, utilizando bien las herramientas definidas en el paquete, o bien el software de pruebas en caso de que dicho software esté predefinido."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado el pipeline, verificando que accede a los flujos de trabajo y datos de prueba de cada uno de los entornos de ejecución."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han almacenado los resultados de las pruebas, guardándolos en las aplicaciones definidas, para su acceso y posterior uso en la toma de decisiones de versionado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han resuelto los fallos de validación del nuevo código, mediante la actualización del entorno con la versión estable anterior, efectuándola de manera automática tanto para código fuente como para datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha actualizado el paquete de software en el repositorio de versiones de los entornos, en caso de no detectarse fallos, incorporándolo según la operativa que disponga la herramienta de versiones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han actualizado las dependencias entre aplicaciones y versiones de manera automática, según la operativa que disponga la herramienta de versiones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la información que produce el software desplegado, garantizando que se envía al sistema de monitorización existente, revisándolo en el propio software de monitorización."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Mantenimiento del sistema de contenedores desplegado",
+      "codigo": "5169",
+      "ects": 6,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Integra la conectividad a través de la red de datos entre el contenedor y los sistemas de monitorización y alarmas asociados, asegurando el flujo de información y cumpliendo las especificaciones y criterios de seguridad digital para permitir su interconexión.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado la integración de un contenedor con el sistema de monitorización, probando las comunicaciones y comprobando la integridad de los datos enviados y recibidos y que dichos datos son almacenados en el sistema remoto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado los umbrales de los contadores y las cadenas de texto requeridas en los eventos, especificando valores recogidos en la documentación para generar diferentes tipos de indicadores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado unas reglas de agregado y correlación de contadores, aplicando una parametrización según objetivos, para crear nuevos indicadores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han integrado los eventos generados en el contenedor en el sistema de gestión de alarmas, comprobando su activación y/o recuperación, probando las comunicaciones y verificando que se almacenan en el sistema remoto para su gestión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han categorizado los eventos recibidos en el sistema de gestión de alarmas, agrupándolos, usando parámetros tales como fecha de creación, origen, criticidad, entre otros, para la posterior notificación y tratamiento de la alarma."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han auditado las comunicaciones entre el contenedor y los sistemas de monitorización y alarmas, verificando que sólo los protocolos y puertos requeridos para dicha comunicación están habilitados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado las reglas de protección y seguridad tecnológica entre el contenedor y el entorno de monitorización y alarmas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Valida el sistema desplegado, comprobando su estado, indicadores y el rendimiento esperado, según especificaciones para monitorizar su funcionalidad y calidad de servicio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han documentado las métricas proporcionadas por una aplicación, explicando cada contador y su referencia asociada y verificando que se incluyen tanto indicadores de capacidad como de rendimiento y calidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implementado unos indicadores, realizando las fórmulas y cálculos sobre los contadores proporcionados por el sistema, especificando los umbrales para cada tipo de indicador."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han documentado las posibles alarmas generadas por el sistema, indicando el origen, posible fallo e impacto, adjuntando los pasos a seguir para el análisis y resolución de las mismas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ejecutado las pruebas del aplicativo o componente, incluyendo pruebas funcionales, de aseguramiento de calidad del servicio, de rendimiento y de seguridad digital de la aplicación y de estrés, verificando los resultados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las pruebas ejecutadas, almacenando los resultados y evidencias de ejecución de cada caso, junto con los indicadores y archivos de registro."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han monitorizado los indicadores y su evolución, usando el sistema de monitorización, revisándolas periódicamente, comprobando que el rendimiento de la aplicación no se excede de los umbrales marcados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Extrae datos e información, ejecutándolo manualmente o previa programación del proceso en su caso, para el control y toma de decisiones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han observado periódicamente los archivos de registro de una aplicación, chequeando que no existen errores o salidas inesperadas de la aplicación, reportando dichos fallos en caso de ocurrir."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han monitorizado los accesos al sistema, detectando intentos con contraseña equivocada y alertando de conexiones por fuerza bruta, bloqueando los no permitidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han revisado periódicamente los datos generados por fallos o reinicios de la aplicación tales como volcados de memoria (crashdumps), registros de error (log), entre otros, para corregir el origen del fallo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el rendimiento del equipo, evaluando y comparando indicadores tales como uso de CPU, ocupación de memoria, acceso a disco y otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Ejecuta procesos de seguridad digital tales como backup, programándolos y ejecutándolos, garantizando integridad y disponibilidad de la aplicación o instalación de actualizaciones de nuevas versiones de software o parches de mantenimiento y de corrección de posibles vulnerabilidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han programado las copias de seguridad de una aplicación, configurándolos para que sean ejecutados periódicamente, verificando su ejecución para que se asegure la recuperación del sistema en caso de fallo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han exportado a un medio externo los ficheros de backup producidos por la aplicación, comprobando que son almacenados de acuerdo con las políticas de almacenamiento, rotación y limpieza."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el mantenimiento preventivo de las copias de seguridad de forma periódica, asegurando que la última copia de seguridad puede ser restaurada, instanciando y verificando el despliegue en una plataforma de pruebas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha mantenido el software de base de la aplicación, revisando en el repositorio la aparición de nuevas versiones e instalándolas en su caso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han examinado las vulnerabilidades sobre los componentes usados internamente por el contenedor o la aplicación, a partir de escaneados de código, binarios y librerías o buscando información en foros de programación del componente, implementando posibles soluciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la actualización de paquetes de software de forma periódica, descargando de un repositorio propio o externo, instalando los cambios y verificando que no se produce pérdida de los datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resuelto los problemas que aparezcan durante el proceso de actualización software, en entornos previos, realizando un análisis del problema, identificando su naturaleza, en los márgenes de tiempo y el nivel de calidad requerido y reportando al profesional del diseño de la aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha chequeado el funcionamiento de la aplicación y la integridad de los datos una vez actualizada o corregida, ejecutando pruebas en entornos previos y producción."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha documentado la actualización de las versiones software, actualizando el repositorio de incidencias y garantizando la trazabilidad de los procesos, con el fin de facilitar su seguimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Ejecuta tareas de terminación del contenedor, eliminando programas y datos relacionados en condiciones de ciberseguridad, para reutilizar el almacenamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha terminado la aplicación software desplegada en contenedor cuando no va a ser usada, verificando que todos los recursos usados por el contenedor en la infraestructura han quedado liberados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han eliminado las copias de seguridad digital (backup) y los archivos de registro almacenados en servidores externos, asegurando que no es posible ya su restauración mediante técnicas de recuperación de datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han borrado los datos en posibles bases de datos internas de la aplicación que contengan información confidencial o sensible."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha desconfigurado la conectividad e integración del contenedor con el entorno de monitorización y alarmas, eliminando la conectividad a través de la red de datos y todas las referencias introducidas en los sistemas de monitorización y alarmas. ANEXO II Espacios y equipamientos mínimos Espacios: Equipamientos mínimos: Ordenadores instalados en red. Plataformas de nube pública y privada. Conexión a plataformas de nube pública y a infraestructuras de nube híbrida y privada. Software de navegación. Herramientas gráficas, de línea de comandos, librerías de cliente y API de la plataforma de nube. Herramientas de infraestructura como código. Herramientas de comunicación y colaboración en equipo. Sistemas gestores de repositorios de código fuente. Herramientas de gestión y control de cambios, incidencias y configuración. Repositorio de artefactos/imágenes. Servidor de despliegues. Sistema de monitorización. Sistema de orquestación de contenedores. Servicios de transferencia de ficheros y conexión remota. Medios audiovisuales. Sistemas de reprografía. Almacenamiento de archivos en servidores accesibles. Aplicaciones de ofimática de escritorio en local y en la nube. ANEXO III Especialidades del profesorado con atribución docente en los módulos profesionales del curso de especialización en Despliegue de productos software en contenedores – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. ANEXO IV A) Correspondencia de los estándares de competencias profesionales acreditados con los módulos profesionales para su convalidación"
+            }
+          ]
+        },
+        {
+          "codigo": "RA5165",
+          "numero": 5165,
+          "descripcion": "Metodología Devops: preparación de entornos de despliegue.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5167",
+          "numero": 5167,
+          "descripcion": "Definición de flujos de procesos en integración continua.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5168",
+          "numero": 5168,
+          "descripcion": "Definición de flujos de procesos de despliegue continuo. ANEXO IV B) Correspondencia de los módulos profesionales y los estándares de competencias profesionales para su acreditación",
+          "ce": []
+        },
+        {
+          "codigo": "RA5169",
+          "numero": 5169,
+          "descripcion": "Metodología Devops: preparación de entornos de despliegue.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5170",
+          "numero": 5170,
+          "descripcion": "Definición de flujos de procesos en integración continua.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5171",
+          "numero": 5171,
+          "descripcion": "Definición de flujos de procesos de despliegue continuo.",
+          "ce": []
+        }
+      ]
+    }
+  ]
+}

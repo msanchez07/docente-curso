@@ -69,15 +69,16 @@ async function principal() {
     const ciclos = await ev('window.api.boe.listarCiclos()')
     const daw = ciclos.find((ciclo) => ciclo.id === 'daw')
     comprobar(
-      'catálogo completo, DAW con 20 módulos',
-      ciclos.length === 181 && daw?.modulos === 20,
+      'catálogo completo con especializaciones, DAW con 20 módulos',
+      ciclos.length === 217 && daw?.modulos === 20,
       `${ciclos.length} ciclos · DAW ${daw?.modulos ?? 0} módulos`
     )
 
     const catalogo = await ev('window.api.catalogo.listar()')
     comprobar(
-      'catálogo oficial de horarios cargado',
-      catalogo.length > 100 && catalogo.find((ciclo) => ciclo.id === 'daw')?.modulos.length === 17,
+      'catálogo oficial de horarios y especializaciones cargado',
+      catalogo.length === 217 &&
+        catalogo.find((ciclo) => ciclo.id === 'daw')?.modulos.length === 17,
       `${catalogo.length} ciclos`
     )
 

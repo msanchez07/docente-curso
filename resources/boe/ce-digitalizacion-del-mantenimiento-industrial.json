@@ -1,0 +1,859 @@
+{
+  "id": "ce-digitalizacion-del-mantenimiento-industrial",
+  "denominacion": "Digitalización del mantenimiento industrial",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Instalación y Mantenimiento",
+  "duracion_horas": 600,
+  "ects": 0,
+  "abreviatura": "DMI",
+  "rd": "Real Decreto 480/2020, de 7 de abril, por el que se establece el Curso de especialización en digitalización del mantenimiento industrial y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4964",
+  "modulos": [
+    {
+      "nombre": "Metrología e instrumentación inteligente",
+      "codigo": "5012",
+      "ects": null,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina los requisitos de captación de datos y su medida en cada etapa del proceso aplicando criterios de optimización y eficiencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han especificado los puntos para la sensorización con criterios de optimización de las operaciones a realizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las tecnologías de captación de datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las tecnologías de medición de datos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las especificaciones metrológicas de cada elemento de campo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las condiciones de compensación frente a parámetros secundarios que son de aplicación a cada elemento de campo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado la cadencia de medición y el tiempo de respuesta necesario para elementos de campo a emplear."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Especifica los requisitos de conectividad de los elementos de campo inteligentes analizando las tecnologías de comunicaciones implantadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las necesidades de sensorización en función del grado de automatización e integración óptimo, así como de su relación coste/beneficio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha especificado el tipo de conectividad adecuado para los elementos de campo inteligentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado tanto el elemento de campo, como el sistema de control para una comunicación óptima."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado que la comunicación del elemento de campo con el sistema de control del proceso se produce según los requisitos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Integra elementos de campo con el sistema de control determinando su funcionamiento autónomo o su aportación al sistema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la información a intercambiar entre el sistema de control y elemento de campo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el elemento de campo según las tecnologías de comunicaciones existentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha instalado el elemento de campo y se han configurado los diversos parámetros de comunicaciones y funcionamiento autónomo en su caso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado el correcto funcionamiento del elemento de campo según los requisitos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina la aplicación de los sistemas de visión artificial, láser y luz estructurada integrándolos en el proceso de mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los puntos del sistema en los que serían de aplicación los sistemas de visión artificial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado los sistemas/aplicaciones de visión artificial, láser y luz estructurada existentes en el mercado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha propuesto una solución óptima y eficiente para dar respuesta a las necesidades del sistema en cuanto a la aplicación de sistemas de visión artificial, láser y luz estructurada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado y configurado los sistemas de visión artificial, láser y luz estructurada seleccionados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el correcto funcionamiento de los sistemas implantados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la mejora en los parámetros de funcionamiento del sistema que suponen los sistemas de visión artificial, láser y luz estructurada aplicados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Estrategias del mantenimiento industrial",
+      "codigo": "5032",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los tipos, niveles y procedimientos del mantenimiento industrial referenciándolos a la normativa vigente y relacionándolos con los perfiles y cualificaciones del personal de mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el objeto, campo de aplicación y términos fundamentales del mantenimiento industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los tipos de fallos, eventos, averías y estados de un elemento o máquina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han especificado las actividades de mantenimiento según el entorno industrial de referencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los principios aplicables a la gestión de los repuestos y consumibles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la utilidad de los indicadores de mantenimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los distintos perfiles y cualificaciones que corresponden al personal de mantenimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado las diferentes tareas de mantenimiento con los perfiles del personal y sus cualificaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los atributos e indicadores de mantenibilidad de dispositivos industriales, relacionándolos con los niveles de mantenimiento y estableciendo indicadores de rendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los atributos de mantenibilidad, clasificándolos según su dimensión global o variable y atendiendo al nivel de intervención."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los indicadores primarios u operacionales (fiabilidad, disponibilidad, mantenibilidad y seguridad)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los indicadores secundarios, con aportación de información de otros departamentos en su caso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los indicadores clave de rendimiento KPI (key performance indicator) aplicados al mantenimiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha medido el rendimiento de las intervenciones, en función de los objetivos de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado los índices de disponibilidad, de coste, de proporción de tiempos de mantenimiento, de gestión de almacenes y compras, de gestión de órdenes de trabajo, de seguridad y medio ambiente y de formación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado y evaluado los indicadores de mantenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Implanta metodologías y estrategias para la gestión del mantenimiento industrial analizando sus características específicas y aplicando tecnologías digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la metodología AMFE (Análisis Modal de Fallos y Efectos), para la definición y evaluación de las actividades de mantenimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la metodología “lean” de mejora continua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado la metodología 5s aplicada a las actividades de mantenimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido las herramientas estadísticas de la metodología seis sigma."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido las características del TPM (Mantenimiento Productivo Total)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han diseñado experimentos con las metodologías y estrategias analizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implantado una organización TPM (Mantenimiento Productivo Total)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Diseña el plan de mantenimiento de la organización determinando los tipos y niveles de mantenimiento a aplicar según las necesidades de la producción y la optimización de los recursos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado el inventario técnico de la maquinaria y equipos que componen la instalación y son susceptibles de recibir mantenimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la información disponible de todas las máquinas y equipos de la instalación desde el punto de vista de sus necesidades de mantenimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado para cada máquina y equipo una relación de actividades de mantenimiento clasificadas por tipos, niveles y periodicidades, en su caso, a implementar en el plan de mantenimiento de la organización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado, dimensionado y asignado los recursos materiales (herramientas, fungibles y repuestos entre otros) para cada actividad determinada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado para cada máquina y equipo, la relación de recursos materiales (fungibles y repuestos entre otros), que deben estar disponibles permanentemente en el almacén para las intervenciones de mantenimiento más urgentes y/o frecuentes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado, dimensionado y asignado los recursos humanos, propios y externos, para cada actividad determinada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado los materiales y acciones formativos necesarios para instruir al diverso personal de mantenimiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado e implantado el plan general de mantenimiento de la organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Planifica y realiza el seguimiento de las actividades de mantenimiento recuperativo y/o reformas sobre la instalación anticipando los recursos humanos y materiales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los registros de mantenimiento correctivo e intervenciones sobre máquinas y equipos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han propuesto acciones de mantenimiento recuperativo y/o reformas sobre las máquinas y equipos en base a los registros analizados y a las aportaciones de otros departamentos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha estimado la necesidad de tiempo de parada de las instalaciones y coordinado con el resto de departamentos de la organización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las necesidades de materiales asociadas a las actividades a realizar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ejecutado los pedidos de materiales (repuestos, herramientas, fungibles y otros), con la suficiente antelación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las necesidades de personal y/o contratación de servicios externos necesarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha ejecutado el control y seguimiento de las actividades."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han informado todas las actividades realizadas con detalle y se han analizado en su conjunto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Seguridad en el mantenimiento industrial",
+      "codigo": "5033",
+      "ects": null,
+      "horas_minimas_boe": 65,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina la estrategia de seguridad en las actividades de mantenimiento industrial digitalizado aplicando las normativas de uso en el sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el objeto, campo de aplicación y términos fundamentales de la seguridad industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los tipos de riesgos asociados a elementos, máquinas o sistemas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los indicadores específicos de mantenimiento ligados a la seguridad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la normativa de seguridad aplicable a la organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha caracterizado e integrado la normativa de seguridad aplicable en los procedimientos de mantenimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los mecanismos existentes para paliar los riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los puntos a tener en cuenta en un expediente de nueva maquinaria o modificación de las mismas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido la estrategia a seguir en la reducción de riesgos en la organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Optimiza la seguridad en las operaciones de mantenimiento de la organización en entornos digitalizados integrando los métodos de evitación de accidentes y riesgos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los métodos de evitación de accidentes según un enfoque analítico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los métodos de evitación de accidentes según un enfoque de ingeniería."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comparado los métodos y se han establecido sus ventajas e inconvenientes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado los métodos disponibles de evitación de accidentes más adecuados para la organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han integrado los métodos seleccionados en la cultura de seguridad de la organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Optimiza la seguridad en las actividades y procedimientos de mantenimiento en entornos digitalizados identificando riesgos inherentes a cada tipo de industria.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los tipos de riesgo asociados a industrias concretas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el histórico de eventos de riesgo de la organización ligados al tipo de industria."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado un catálogo de patrones de riesgo, en las actividades de mantenimiento de la organización o en organizaciones de similar naturaleza."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los procedimientos y los pasos de las actividades de mantenimiento que presentan mayor propensión al riesgo debido a factores inherentes a cada tipo de industria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los métodos de evitación de accidentes de aplicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto mejoras en las actividades de mantenimiento para mitigar los niveles de riesgo ligados a la industria concreta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implantado las mejoras propuestas en las actividades de mantenimiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha evaluado la mejora en base al seguimiento de las métricas de los indicadores de mantenimiento ligados a la seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Relaciona las inspecciones, revisiones y demás tipo de actividades asegurando el cumplimiento normativo de las operaciones de mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sectores de actividad normalizados a los que pertenece la organización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las actividades de la organización desde un punto de vista técnico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y analizado la normativa y las reglamentaciones de seguridad que aplican a los sectores de actividad a los que pertenece la organización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado aquellas inspecciones, revisiones y otras actividades que sean de aplicación a la organización, según la normativa y la reglamentación de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado a los agentes y organizaciones autorizadas para realizar cada una de estas actividades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las periodicidades y condiciones técnicas y operativas para realizar cada una de estas actividades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han integrado todas aquellas inspecciones, revisiones y otras actividades de seguridad que sean de obligado cumplimiento desde el punto de vista de la seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Configura sistemas y redes de soporte al mantenimiento minimizando los posibles escenarios de riesgo en ciberseguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado diferentes tipos de amenazas para los sistemas y redes de soporte al mantenimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y evaluado la seguridad de credenciales y los medios de control de acceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado y ordenado una lista de riesgos asociados a los sistemas y redes de soporte al mantenimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado y parametrizado los sistemas y redes de soporte al mantenimiento de acuerdo a los requisitos de protección establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los requisitos de seguridad para la actualización y el parcheado de los sistemas y redes de soporte al mantenimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los requisitos de seguridad para la gestión de antivirus y cortafuegos de los sistemas y redes de soporte al mantenimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los requisitos de seguridad para las copias de seguridad de las configuraciones e información de los sistemas y redes de soporte al mantenimiento."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Monitorización de maquinaria, sistemas y equipos",
+      "codigo": "5034",
+      "ects": null,
+      "horas_minimas_boe": 45,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina la tecnología de almacenamiento de la información, teniendo en cuenta los requisitos de seguridad y accesibilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han especificado los procesos productivos y/o máquinas, sistemas y equipos adecuados con criterios de optimización y eficiencia que transmiten información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las tecnologías de almacenamiento adecuadas en función de los requisitos adecuados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las herramientas de monitorización y supervisión adecuadas en función de cada requisito."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las especificaciones de la conectividad y accesibilidad de cada elemento de campo de forma segura."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Garantiza transmisiones seguras aplicando soluciones de comunicaciones avanzadas que permitan la encriptación, firma y autentificación de la información OPC UA, (tecnología de comunicación industrial multiplataforma, abierta, orientada a servicios).",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han especificado las comunicaciones avanzadas que permiten encriptación, firma y autentificación de la información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido cada elemento y ámbito donde aplicar las soluciones de comunicaciones industriales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las soluciones de comunicaciones industriales avanzadas, en función de cada requisito."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la correcta configuración de la comunicación OPC UA para la transmisión de datos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Integra las comunicaciones avanzadas y los sistemas de almacenamiento de datos en entornos inteligentes y a lo largo de la cadena de valor, aplicando los formatos adecuados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han integrado las comunicaciones industriales avanzadas de forma eficiente y segura."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han integrado sistemas de almacenamiento de datos en entornos industriales inteligentes de forma eficiente y segura."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han almacenado, procesado y transferido los datos del entorno industrial inteligente de forma segura."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han conectado las máquinas, equipos y sistemas industriales con los sistemas IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado una transferencia segura hacia los sistemas IT superiores."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Optimiza la monitorización y el estado de funcionamiento de la maquinaria existente en la instalación analizando y proponiendo soluciones de actualización tecnológica de equipos (retrofitting).",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha elaborado un catálogo de la maquinaria existente en la instalación que sea crítica para el mantenimiento y/o la producción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las necesidades y los objetivos de actualización tecnológica de los equipos de la instalación en función de su historial de mantenimiento y de su índice de productividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y priorizado los equipos de la instalación que presentan un mayor potencial de mejora en cuanto a actualización tecnológica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las posibilidades técnicas de actualización tecnológica de los equipos seleccionados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han propuesto las acciones concretas de actualización tecnológica sobre los equipos seleccionados, de forma priorizada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado actividades de actualización tecnológica sobre equipos sencillos y se han solicitado ofertas a empresas del sector para los equipos de mayor entidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han integrado los equipos reformados en los sistemas digitales de producción y mantenimiento de la organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica técnicas de Smart Data (Datos Inteligentes: recaba y analiza grandes volúmenes de datos) al análisis de los datos almacenados optimizando los procesos de mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el concepto de Smart Data como el encargado de transformar los grandes volúmenes de datos en información disponible y accionable en tiempo real."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y comparado las aplicaciones industriales existentes en el mercado de análisis de datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han evaluado las ventajas para el mantenimiento y operación de los procesos industriales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado a través del Smart Data el conjunto de acciones a realizar para alargar la vida útil de la máquina, sistema y/o equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han optimizado y depurado las técnicas de mantenimiento preventivo y predictivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha diseñado un plan de mantenimiento en base a los datos inteligentes obtenidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha supervisado el plan de mantenimiento, evitando posibles incidencias o errores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas avanzados de ayuda al mantenimiento",
+      "codigo": "5035",
+      "ects": null,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Implanta aplicaciones de Gestión del Mantenimiento Asistida por Ordenador (GMAO), atendiendo a las necesidades de la organización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las necesidades de la organización y su potencial de mejora con respecto a la implantación de una solución GMAO."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado sistemas GMAO en cuanto a prestaciones y costes y a su adecuación a las necesidades de la organización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado e instalado la solución óptima de GMAO."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha volcado al sistema GMAO toda la información relevante en cuanto a equipos, repuestos, personal y otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las metodologías de mantenimiento necesarias, disponibles en la aplicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido los niveles de acceso al sistema GMAO, los usuarios, los privilegios, las responsabilidades en cada actividad definida y la metodología para la creación, emisión y realimentación de órdenes de trabajo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido las gamas de mantenimiento a realizar, con su descripción de actividades, periodicidades, herramientas, fungibles, repuestos y demás."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realimentado a la aplicación toda la información relevante en cuanto a órdenes de trabajo y actividades terminadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído de la aplicación la información relevante de seguimiento del mantenimiento para la realización de informes."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha conectado el sistema GMAO con niveles superiores de supervisión de la organización, como los sistemas de planificación de recursos (ERP)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Optimiza los procesos y las operaciones de mantenimiento aplicando técnicas de realidad aumentada y/o realidad virtual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y caracterizado los equipos a los que aplicar técnicas de realidad aumentada y/o virtual por su complejidad o criticidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las aplicaciones de realidad aumentada y/o virtual de entre las disponibles en el mercado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han implementado las aplicaciones de realidad aumentada y/o virtual en la organización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los puntos de los equipos sobre los que implementar las técnicas de realidad aumentada y/o virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han alimentado a las aplicaciones la información relevante para el mantenimiento de cada punto de cada equipo que se considere (planos, repuestos, órdenes de trabajo, históricos, características técnicas, entre otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han conectado las aplicaciones de realidad aumentada y/o virtual con los sistemas SCADA y/o GMAO de la organización para ofrecer información de los equipos y procesos en tiempo real."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido e implementado las acciones a realizar desde la aplicación de realidad aumentada y/o virtual en el sistema SCADA, tanto simuladas como actuaciones reales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han elaborado materiales formativos para el nuevo personal y/o para nuevos procesos de mantenimiento."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han integrado los materiales formativos elaborados en las aplicaciones de realidad aumentada y/o virtual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Optimiza el estado de funcionamiento de los equipos aplicando técnicas de mantenimiento predictivo de medición y análisis de vibraciones en máquinas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los fundamentos físicos que dan soporte a las técnicas de análisis de vibraciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los sensores que se aplican al análisis de vibraciones en función de sus características y costes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los distintos tipos de fallos que se pueden producir en máquinas sometidas a vibraciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han catalogado y analizado las diferentes causas que pueden producir vibraciones inusuales en máquinas en funcionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las causas que producen vibraciones inusuales en máquinas concretas en base a los registros históricos y al análisis de las causas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han corregido las causas que provocan un nivel inusual de vibraciones: desalineamientos, desequilibrios, resonancias a determinadas frecuencias de giro, partes deterioradas o desgastadas, y otros."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han integrado los sistemas automáticos de supervisión continua de vibraciones en los sistemas de control y supervisión de la organización (SCADA)."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido los avisos y las acciones automáticas a tomar por el sistema de control y supervisión en base a niveles preestablecidos de vibraciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han programado en el sistema GMAO las gamas de análisis de vibraciones con sus periodicidades y puntos de toma de medición."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Optimiza el estado de funcionamiento de los equipos aplicando técnicas de mantenimiento predictivo de análisis de aceites y partículas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los fundamentos que dan soporte a las técnicas de análisis de aceites y partículas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado un inventario de aplicaciones de las técnicas de análisis de aceites y partículas a los equipos de la organización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han catalogado y analizado las diferentes causas que pueden producir los resultados anómalos en los análisis de aceites y partículas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los niveles de aviso y de actuación frente a los resultados de los análisis de aceites y partículas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han programado en el sistema GMAO las gamas de análisis de aceites y partículas con sus periodicidades y puntos de toma de medición."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Optimiza el estado de funcionamiento de los equipos aplicando técnicas de mantenimiento predictivo de termografía por infrarrojos y de ultrasonidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los fundamentos que dan soporte a las técnicas de termografía por infrarrojos y de ultrasonidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado un inventario de aplicaciones de las técnicas de termografía por infrarrojos y de ultrasonidos a los equipos de la organización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han catalogado y analizado las diferentes causas que pueden producir lecturas anómalas en las mediciones realizadas en base a termografía por infrarrojos y ultrasonidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los niveles de aviso y de actuación frente a los resultados de las mediciones realizadas en base a termografía por infrarrojos y ultrasonidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha programado en el GMAO las gamas de predictivo basadas en termografía por infrarrojos y ultrasonidos."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

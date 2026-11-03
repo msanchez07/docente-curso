@@ -13,7 +13,8 @@ import { sembrarCiclos } from '../seed'
 const NIVEL_COMPLETO: Record<NivelCatalogo, string> = {
   GB: 'Formación Profesional de Grado Básico',
   GM: 'Formación Profesional de Grado Medio',
-  GS: 'Formación Profesional de Grado Superior'
+  GS: 'Formación Profesional de Grado Superior',
+  CE: 'Curso de Especialización'
 }
 
 interface FilaCatalogo {

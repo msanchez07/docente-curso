@@ -1,0 +1,606 @@
+{
+  "id": "ce-fabricacion-inteligente",
+  "denominacion": "Fabricación inteligente",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Instalación y Mantenimiento",
+  "duracion_horas": 600,
+  "ects": 0,
+  "abreviatura": "FI",
+  "rd": "Real Decreto 481/2020, de 7 de abril, por el que se establece el Curso de especialización en fabricación inteligente y se fijan los aspectos básicos del currículo, y se modifican el Real Decreto 93/2019, de 1 de marzo, y el Real Decreto 94/2019, de 1 de marzo, por los que se establecen dos cursos de especialización y los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4965",
+  "modulos": [
+    {
+      "nombre": "Procesos productivos inteligentes",
+      "codigo": "5011",
+      "ects": 12,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza sistemas de fabricación inteligente determinando los principios de ingeniería de producción y tecnologías avanzadas que optimicen los procesos productivos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido los objetivos de producción del sistema."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las etapas de producción según los objetivos establecidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los indicadores clave de rendimiento (KPIs), para cada etapa de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado la tecnología adecuada para cada etapa analizando las ofertas de los OEMs (Original Equipment Manufacturer – Fabricante Original de Equipamiento), del sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los medidores, captadores y sensores, entre otros, teniendo en cuenta los aspectos metrológicos que aplican a los diferentes procesos y/o tecnologías."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha considerado la interacción de los parámetros del sistema en su optimización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado la incorporación de tecnologías inteligentes que faciliten la consecución de los KPIs del proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Establece parámetros de seguridad en el diseño del proceso productivo inteligente, aplicando los principios desarrollados en las diferentes normas europeas y normativas nacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la normativa vigente aplicable, tanto europea como nacional, relativa a la seguridad en los procesos productivos y en las máquinas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de seguridad establecidos por la normativa que son de aplicación en el proceso productivo y en las máquinas de la instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha caracterizado el estado actual de los procesos y de las máquinas de la instalación a la luz de los principios de seguridad identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los estudios de casos de seguridad (Safety Cases), necesarios para justificar que los sistemas son seguros para las aplicaciones y los entornos operativos específicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la evaluación de riesgos necesaria para identificar y valorar los riesgos más probables asociados a los procesos y a las máquinas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido los parámetros relativos a la seguridad más importantes a tener en cuenta en el diseño o modificación de los procesos productivos inteligentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece parámetros de eficiencia y sostenibilidad en el diseño del proceso productivo inteligente aplicando los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los aspectos básicos de la economía circular que son de aplicación al proceso productivo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los parámetros de eficiencia y sostenibilidad en función de las características de cada proceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado criterios de eficiencia energética."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tenido en cuenta las dimensiones económica, social y medioambiental."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los aspectos de la normativa vigente que son de aplicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado los aspectos seleccionados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los parámetros con rigor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Caracteriza sistemas de control de la producción y sistemas digitales de gestión de la organización, proponiendo el nivel óptimo de integración de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sistemas digitales de control de la producción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado su adecuación a las necesidades de los objetivos de producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han propuesto las mejoras de los sistemas digitales de control de la producción para su adaptación a la producción inteligente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sistemas digitales de gestión de la empresa, proponiendo su actualización y/o implantación en caso necesario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha propuesto el nivel óptimo de integración según las necesidades."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Asegura el cumplimiento de las especificaciones de funcionamiento participando en equipos multidisciplinares para la integración del sistema de control digital de la producción con los sistemas de gestión inteligente de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han almacenado los datos obtenidos por los sistemas de control de la producción en bases de datos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implantado los sistemas digitales de control de la producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la utilidad de alimentar con estos datos los sistemas MES y ERP."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han alimentado ambos sistemas con estos datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha alimentado con los datos de gestión de la empresa a los sistemas de control de la producción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han integrado los sistemas de control de la producción de la empresa con los sistemas digitales de gestión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la respuesta a las especificaciones de funcionamiento de la integración de ambos sistemas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Asegura la sostenibilidad del ciclo de vida del producto diseñando programas de gestión del mismo según los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los principios de la economía circular pertinentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los parámetros de mercado necesarios para poder realizar el lanzamiento de un producto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las necesidades de colaboración con otras empresas para la comercialización del producto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las necesidades internas que la empresa puede cubrir para la fabricación del producto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han incorporado los datos recogidos del proceso en la aplicación de gestión de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha diseñado un diagrama de PLM (Product Lifecycle Management - Gestión de ciclo de vida del producto) completo desde la materia prima hasta la estrategia de sostenibilidad del producto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Metrología e instrumentación inteligente",
+      "codigo": "5012",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina requisitos de captación y medida en cada etapa del proceso aplicando criterios de optimización y eficiencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han especificado los puntos para la sensorización con criterios de optimización de las operaciones a realizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las tecnologías de captación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las tecnologías de medición."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las especificaciones metrológicas de cada elemento de campo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las condiciones de compensación frente a parámetros secundarios que son de aplicación a cada elemento de campo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado la cadencia de medición y el tiempo de respuesta necesario para elementos de campo a emplear."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Especifica requisitos de conectividad de los elementos de campo inteligentes analizando las tecnologías de comunicaciones implantadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las necesidades de sensorización en función del grado de automatización e integración óptimo, así como de su relación coste/beneficio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha especificado el tipo de conectividad adecuado para los elementos de campo inteligentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado tanto el elemento de campo, como el sistema de control para una comunicación óptima."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado que la comunicación del elemento de campo con el sistema de control del proceso se produce según los requisitos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Integra elementos de campo con el sistema de control determinando su funcionamiento autónomo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la información a intercambiar entre el sistema de control y el elemento de campo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el elemento de campo según las tecnologías de comunicaciones existentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha instalado el elemento de campo y se han configurado los diversos parámetros de comunicaciones y funcionamiento autónomo en su caso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado el correcto funcionamiento del elemento de campo según los requisitos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina la utilidad de los sistemas de visión artificial, láser y luz estructurada integrándolos en el proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los puntos del sistema en los que serían de aplicación los sistemas de visión artificial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado los sistemas/aplicaciones de visión artificial, láser y luz estructurada existentes en el mercado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha propuesto una solución óptima y eficiente para dar respuesta a las necesidades del sistema en cuanto a la aplicación de sistemas de visión artificial, láser y luz estructurada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado y configurado los sistemas de visión artificial, láser y luz estructurada seleccionados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el correcto funcionamiento de los sistemas implantados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la mejora en los parámetros de funcionamiento del sistema que suponen los sistemas de visión artificial, láser y luz estructurada aplicados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Entornos conectados a red e Internet de las cosas",
+      "codigo": "5013",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Almacena datos del proceso productivo aplicando los requerimientos de seguridad y accesibilidad establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los medios de almacenamiento en función de los requerimientos del proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado la tecnología de grabación y acceso a los datos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las bases de datos disponibles con las tecnologías implementadas de control de la producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han almacenado los datos necesarios del proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado fuentes externas de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han almacenado los datos externos en las bases de datos internas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las estructuras de comunicación seguras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Implementa soluciones de comunicaciones avanzadas aplicando la encriptación, firma y autentificación de la información.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha discriminado entre las diferentes soluciones hardware, seleccionando aquellas que se adecúen a la realidad industrial de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han integrado los diferentes sensores y elementos de telemetría en la red mediante protocolos de comunicación robustos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha integrado la red industrial con otras redes empresariales, asegurando la accesibilidad a quienes tengan el nivel de acceso requerido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los mecanismos y precauciones necesarios para prevenir el uso no deseado de información mediante la encriptación de la misma dentro de la red empresarial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado redes de comunicaciones móviles de última generación para la transferencia de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han integrado los protocolos de comunicación e interacción con un sistema MES o ERP."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Integra sistemas de almacenamiento de datos en entornos inteligentes aplicándolos a lo largo de la cadena de valor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha hecho uso de los datos disponibles en las bases de datos y se han mostrado de una manera eficaz y eficiente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han empleado diferentes formatos de información y se han integrado en un único sistema de gestión de la empresa."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha ordenado y clasificado la información necesaria y se han generado mecanismos de limpieza de la información no necesaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha empleado un protocolo de comunicación hombre-máquina."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Genera entornos seguros de trabajo analizando posibles amenazas a nivel de puesto de trabajo, de planta o proceso y de red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los puntos de conflicto en la red de la empresa, así como las debilidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado e integrado las herramientas hardware necesarias para evitar accesos no deseados y usos indebidos de la información."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado entornos monitorizados en tiempo real."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha programado de forma segura y se han utilizado herramientas de encriptación y certificación de los datos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Virtualización de máquinas y procesos productivos",
+      "codigo": "5014",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina el modelo virtual de un proceso productivo y/o máquina aplicando la información obtenida de los elementos de campo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han especificado los procesos productivos y/o máquinas adecuados con criterios de optimización y eficiencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las tecnologías de virtualización adecuadas en función de cada requerimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las especificaciones de la virtualización de cada elemento de campo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado medidas de mejora a través de la virtualización en los procesos productivos y/o máquina."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido las diferentes etapas de virtualización conforme a los objetivos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Especifica los requisitos del modelo virtual de un proceso productivo y/o máquina planificando las diferentes etapas del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han planificado, definido y analizado las diferentes etapas del proceso productivo y/o máquina a virtualizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito de manera exacta los componentes del proceso productivo y/o máquina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el proceso productivo y/o máquina y se han considerado todas las suposiciones posibles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado y enumerado todas las posibles soluciones alternativas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha propuesto el modelo optimizado considerando las restricciones funcionales, técnicas y económicas del proceso productivo y/o máquina."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Valida modelos virtuales verificando su funcionamiento mediante la ejecución de modelos de simulación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha ejecutado mediante un modelo de simulación, eventos con velocidad y temporización variable respecto del modelo real."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado tecnologías con una interfaz gráfica que permite modelar y visualizar sistemas virtuales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado todas las suposiciones de funcionamiento en el proceso productivo y/o máquina."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprendido cómo un proceso productivo y/o máquina existente se desempeña en el caso de modificaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha optimizado el proceso productivo y/o máquina a través del modelo virtual."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha validado y verificado el modelo virtual del proceso productivo y/o máquina."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Comprueba la eficacia de funcionamiento de procesos productivos ejecutando los modelos virtuales de forma previa al lanzamiento de la producción real.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han conexionado los elementos y variables entre el sistema virtual y el sistema productivo y/o máquina real."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha validado de forma virtual el rendimiento del proceso productivo y/o máquina real."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha validado la eficacia de funcionamiento de un proceso productivo previo a ser lanzado a la producción real."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha creado una metodología productiva para mantener la eficiencia en diferentes escenarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado datos de diferentes fuentes del proceso productivo y/o máquina, para evitar tiempos de inactividad y realizar un mantenimiento preventivo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Optimiza los procesos de puesta en marcha de la máquina o proceso productivo ejecutando modelos virtuales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han simulado en tiempo real procesos productivos y/o máquinas para diseñar y evaluar su rendimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los problemas de puesta en marcha de forma virtual."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han rectificado los problemas testeados de forma virtual y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reducido los tiempos de puesta en servicio, riesgos y errores humanos en puestas en marcha de procesos productivos y/o máquinas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado el funcionamiento previsto de manera virtual para reducir costes de instalación y tiempo de puesta en marcha del proceso productivo y/o máquina."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

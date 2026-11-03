@@ -30,7 +30,8 @@ interface FilaModulo {
 const NIVEL_COMPLETO: Record<NivelCatalogo, string> = {
   GB: 'Formación Profesional de Grado Básico',
   GM: 'Formación Profesional de Grado Medio',
-  GS: 'Formación Profesional de Grado Superior'
+  GS: 'Formación Profesional de Grado Superior',
+  CE: 'Curso de Especialización'
 }
 
 /** Devuelve todos los ciclos del catálogo con sus módulos de 1º y 2º. */
@@ -39,7 +40,7 @@ export function listarCatalogo(db: Bd): CicloCatalogo[] {
     .prepare(
       `SELECT id, denominacion, nivel, familia_profesional, abreviatura
          FROM catalogo_ciclos
-        ORDER BY CASE nivel WHEN 'GB' THEN 1 WHEN 'GM' THEN 2 ELSE 3 END,
+        ORDER BY CASE nivel WHEN 'GB' THEN 1 WHEN 'GM' THEN 2 WHEN 'GS' THEN 3 ELSE 4 END,
                  denominacion`
     )
     .all() as FilaCiclo[]

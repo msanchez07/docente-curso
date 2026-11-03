@@ -1,0 +1,774 @@
+{
+  "id": "ce-robotica-colaborativa",
+  "denominacion": "Robótica colaborativa",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Electricidad y Electrónica",
+  "duracion_horas": 400,
+  "ects": 0,
+  "abreviatura": "RC",
+  "rd": "Real Decreto 904/2022, de 25 de octubre, por el que se establece el Curso de especialización de Formación Profesional de Grado Superior en Robótica colaborativa y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-18596",
+  "modulos": [
+    {
+      "nombre": "Robótica colaborativa",
+      "codigo": "5087",
+      "ects": 5,
+      "horas_minimas_boe": 40,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza diferentes tipos de robots, identificando los componentes que los forman y determinando sus aplicaciones en entornos productivos automatizados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la tipología y las características de los robots y manipuladores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado robots y manipuladores en función de la aplicación requerida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los sistemas mecánicos utilizados en las articulaciones de robots y manipuladores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los elementos que conforman la unidad de control de robot."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los elementos que conforman la unidad de programación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Analiza la estructura de brazos robóticos colaborativos, identificando sus ventajas y determinando sus aplicaciones en entornos productivos automatizados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características morfológicas del brazo robótico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las características funcionales del brazo robótico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han evaluado las ventajas del brazo robótico colaborativo respecto del brazo robótico clásico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado aplicaciones en entornos productivos en las que se justifica el uso del brazo robótico colaborativo y sus elementos necesarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha caracterizado su aplicación en distintos sectores de importancia económica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza periféricos en entornos productivos, identificando su función y conexionado al robot.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los tipos de sensores y su conexionado al robot."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los tipos de efectores finales y su conexionado al robot."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los tipos de intercambiadores de herramientas y su conexionado al robot."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los tipos de pulsadores e interruptores y su conexionado al robot."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los tipos de cintas transportadoras y su conexionado al robot."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los tipos de sistemas neumáticos y su conexionado al robot."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado los tipos de sistemas hidráulicos y su conexionado al robot."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han caracterizado los tipos de automatismos eléctricos y su conexionado al robot."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Configura aplicaciones basadas en visión artificial identificando sus aplicaciones y calibrando las cámaras.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de cámaras de visión artificial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los tipos de detección."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las aplicaciones de cada tipo de detección."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha razonado la necesidad de calibrar cámara con robot."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el proceso de calibración de la cámara."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha configurado un sistema basado en detección por visión artificial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Automatiza procesos manuales integrando robots colaborativos mejorando los indicadores clave.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han calculado los indicadores clave de desempeño del proceso manual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha dividido el proceso manual en tareas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha razonado cómo pueden mejorarse los indicadores clave de desempeño del proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado el proceso de entrada de las piezas, su presentación y los elementos mecánicos que lo facilitan."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el proceso de salida de las piezas y los elementos mecánicos que lo facilitan."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado el modelo de robot adecuado según los requerimientos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado la herramienta adecuada según los requerimientos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha implementado el programa de robot."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han calculado los indicadores clave de desempeño del proceso automatizado."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha razonado cómo pueden mejorarse los indicadores clave de desempeño del proceso automatizado."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han evaluado y corregido los posibles riesgos de la aplicación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Configuración y programación",
+      "codigo": "5088",
+      "ects": 10,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Configura los parámetros fundamentales del sistema, identificando los menús del panel de control y creando programas básicos de movimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los menús de la consola de programación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos del panel de conexiones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha desplazado el robot mediante el panel de movimiento usando los recursos de este."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado la posición y orientación del Punto Central de Herramienta mediante el método que incluye posicionar la herramienta del robot en diferentes orientaciones respecto al mismo punto de referencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado los parámetros de Carga y Centro de Gravedad de la herramienta mediante la utilidad del robot para determinarlos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha posicionado el robot en varias posiciones y orientaciones determinadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han generado movimientos con los comandos de los diferentes tipos de movimiento en programa de robot."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha implementado lectura de señales de entrada y modificación de señales de salida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Desarrolla programas, interactuando con señales de entradas y salidas y optimizando movimientos y tiempo de ciclo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha desarrollado un programa de coger y dejar un objeto interactuando con sensores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han actualizado los parámetros de carga y centro de gravedad de la herramienta al coger y dejar objetos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha optimizado el movimiento y tiempo de ciclo del programa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha estructurado el programa según sus acciones principales y renombrado los puntos de paso, las señales y variables utilizadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha configurado limitaciones en los diferentes parámetros de las funciones de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha configurado el arranque automático de un programa encender robot."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implementado subprogramas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado bucles y comandos condicionales para posibilitar una ejecución no lineal del programa."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha creado un sistema de referencia generando movimientos respecto a este."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica recursos avanzados de programación, ampliando la funcionalidad del programa y la interactuación con otros dispositivos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han implementado hilos de ejecución en paralelo al programa principal, generados simultáneamente a este o por una condición."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ejecutado comandos en el lenguaje de bajo nivel."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han implementado funciones en el lenguaje de bajo nivel."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ejecutado comandos en el lenguaje de bajo nivel enviados de manera remota."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cargado, ejecutado, pausado y parado un programa mediante comandos enviados de manera remota."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado los buses de comunicaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han escrito y leído registros del robot para interactuar con otros periféricos mediante los buses de comunicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla programas para aplicaciones concretas a partir de las especificaciones, secuenciando las diferentes fases de la acción y estructurándolo mediante un diagrama de flujo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado y secuenciado cada aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha implementado un diagrama de flujo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la estructura de programa más apropiada para cada aplicación específica dado un diagrama de flujo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha implementado un programa que permita acciones como paletizar, dosificar, pulir, atornillar, entre otras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha implementado un programa para detectar y coger sin dañar un elemento de interés."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha implementado un programa que utiliza un Punto Central de Herramienta remoto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Robots móviles autónomos",
+      "codigo": "5089",
+      "ects": 5,
+      "horas_minimas_boe": 40,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza robots móviles autónomos identificando los componentes que lo forman y determinando su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido las diferencias entre robots móviles autónomos colaborativos y vehículos de guiado automático."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los componentes de los robots móviles autónomos colaborativos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha evaluado la función de cada elemento del robot."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los elementos mecánicos utilizados por el sistema de control de movimiento del robot móvil autónomo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los elementos eléctricos que conforman la morfología del robot móvil autónomo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los diferentes sensores del sistema robótico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han evaluado complementos que interactúan con el robot."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina el funcionamiento general del sistema robótico identificando aplicaciones y procesos automatizables y caracterizando el entorno de trabajo adecuado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principios fundamentales del funcionamiento del sistema."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los pasos necesarios para poder hacer una auditoría de una planta previamente al proceso de automatización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado una auditoría de red Wifi para garantizar un funcionamiento adecuado del robot móvil autónomo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los requisitos básicos para el correcto proceso de mapeo del entorno."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado procesos automatizables en los que se justifica la aplicación de un sistema basado en robot móvil autónomo colaborativo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado el robot y elementos complementarios necesarios en una aplicación específica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura y desarrolla aplicaciones basadas en robots móviles autónomos, teniendo en cuenta sus características y el contexto de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han instalado de forma adecuada los elementos necesarios en el entorno para apoyar la navegación del robot móvil."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha configurado la interfaz de red del robot para poder conectarse adecuadamente a una red de planta mediante su propia red wifi."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha creado y optimizado un plano del entorno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado y corregido la precisión de la localización alcanzada en diferentes puntos en el plano."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido una secuencia de control relativa a una aplicación mediante un gráfico secuencial o un diagrama de flujo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha creado una misión relativa a una aplicación aplicando zonas, posiciones y marcadores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado operadores lógicos, recarga de batería y registros del PLC a una misión."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha incorporado una misión en otra mayor."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha establecido una cola de misiones."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha configurado la puesta en marcha y recarga automáticas en el programa de gestión de flotas."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha planificado la misión generando un plan para cada robot de la flota."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha integrado una supervisión de los robots durante la ejecución de la misión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Verifica el funcionamiento de robots móviles autónomos teniendo en cuenta su aplicación y los objetivos del sistema.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado el conexionado entre los elementos que conforman un robot móvil autónomo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado el funcionamiento de los dispositivos de seguridad (PLC de seguridad, láseres de seguridad y otros elementos)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seguido un protocolo de actuación para la puesta en servicio de un robot móvil autónomo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la secuencia de funcionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calibrado los sensores internos para el posicionamiento del robot móvil autónomo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la respuesta del robot ante situaciones anómalas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha monitorizado el estado de las señales externas e internas y el valor de los datos procesados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha actualizado software y firmware del robot."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tenido en cuenta las normas de seguridad."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha realizado el plan de mantenimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Repara averías en robot móviles autónomos diagnosticando disfunciones y elaborando informes de incidencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado métodos eficaces para la resolución de problemas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha accedido de forma remota al robot para poder realizar el diagnóstico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los puntos susceptibles de avería."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado instrumentación de medida y comprobación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las misiones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado el programa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han diagnosticado las causas de las averías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han localizado y reparado las averías"
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han restaurado copias de seguridad"
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha restablecido el funcionamiento del sistema."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha documentado la intervención en un informe de incidencias del sistema."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han tenido en cuenta las normas de seguridad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Seguridad y mantenimiento",
+      "codigo": "5090",
+      "ects": 4,
+      "horas_minimas_boe": 30,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza la seguridad de una instalación robótica, teniendo en cuenta las características de la instalación y la normativa de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tenido en cuenta las características de la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las categorías y tipos de paro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los modos de seguridad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los modos operativos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las funciones de seguridad del robot."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los elementos de seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica las funciones de seguridad del robot teniendo en cuenta su función en el sistema y el entorno de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado la limitación de fuerza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha tenido en cuenta la limitación de potencia."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha caracterizado la limitación de momento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado limitaciones en los parámetros de las funciones de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado planos de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado entradas configurables de seguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado salidas configurables de seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Evalúa la normativa vigente en seguridad para máquinas aplicando sus principios sobre robots.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado directivas, leyes y estándares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios generales de diseño con seguridad para máquinas según normativa vigente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los requisitos fundamentales del sistema de seguridad para robots integrados en entornos productivos según normativa vigente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los tipos de operación colaborativa."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los tipos de contacto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha calculado la distancia de seguridad según normativa vigente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado una evaluación de riesgos en una aplicación colaborativa."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado medidas correctoras para eliminación y/o reducción de riesgos en una aplicación robótica colaborativa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Verifica el funcionamiento seguro de robots y periféricos teniendo en cuenta su área de trabajo y su interacción en el conjunto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado el funcionamiento de los dispositivos de seguridad de la instalación robótica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado el funcionamiento de los dispositivos de seguridad de los robots y periféricos de la instalación robótica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado el funcionamiento seguro del conexionado entre los elementos que conforman un sistema robotizado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la secuencia de funcionamiento siguiendo las normas de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado la respuesta segura de la instalación robótica ante situaciones anómalas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el plan de mantenimiento de la instalación robótica segura."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Mantiene entornos productivos robotizados diagnosticando y solucionando disfunciones y elaborando informes de incidencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha examinado el plan de mantenimiento de la instalación robótica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han examinado los documentos técnicos de los elementos de la instalación robótica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha actualizado el software y firmware de los robots y periféricos de la instalación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han creado copias de seguridad de los ficheros del sistema robótico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado instrumentación de medida y comprobación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han diagnosticado y solucionado disfunciones del sistema."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha restablecido el funcionamiento del sistema."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un informe del proceso y las actuaciones realizadas en el mantenimiento del sistema."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

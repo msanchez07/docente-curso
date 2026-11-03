@@ -1,0 +1,867 @@
+{
+  "id": "ce-modelado-de-la-informacion-de-la-construccion-bim",
+  "denominacion": "Modelado de la información de la construcción (BIM)",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Instalación y Mantenimiento",
+  "duracion_horas": 600,
+  "ects": 0,
+  "abreviatura": "MICB",
+  "rd": "Real Decreto 263/2021, de 13 de abril, por el que se establece el Curso de especialización en Modelado de la información de la construcción (BIM) y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-7557",
+  "modulos": [
+    {
+      "nombre": "Metodologia BIM",
+      "codigo": "5055",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece el contenido del plan de ejecución BIM determinando el alcance y los procesos del proyecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido los objetivos del plan de ejecución BIM."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las dimensiones del proyecto BIM según los requisitos establecidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la matriz del nivel de definición (LOD) del proyecto para la información gráfica y no gráfica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los usos BIM para cada fase del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido el software interoperable a utilizar bajo la metodología BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza procesos de trabajo con aplicaciones interoperables bajo la metodología BIM determinando los flujos de trabajo que den cumplimiento a los requisitos establecidos en el plan de ejecución BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los procedimientos de modelado de información gráfica y no gráfica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado y modelado los procesos de trabajo del proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han representado los flujos de trabajo entre diferentes plataformas de software BIM."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han respetado las guías y estándares internacionales en la caracterización de los procesos de trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han asociado los procesos de trabajo a los usos BIM para cada fase del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Opera archivos nativos BIM e IFC utilizando diferentes plataformas de software para alcanzar los objetivos del proyecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la interoperabilidad de diferentes plataformas de software BIM."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el concepto y características del estándar IFC (Industry Foundation Classes) en sus diferentes versiones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha operado con archivos nativos procedentes de diferentes plataformas BIM para traducirlos a IFC."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han revisado archivos procedentes de diferentes plataformas BIM con visores IFC y se ha analizado la pérdida de información."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha trabajado de manera colaborativa entre diferentes especialidades del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona entregables y comunicaciones del proyecto empleando plataformas en la nube dejando registrada la trazabilidad del intercambio de información.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales vías de comunicación para la gestión de proyectos bajo la metodología BIM."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principales sistemas de gestión de archivos y documentación para el trabajo colaborativo bajo la metodología BIM."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado herramientas simplificadas de gestión de proyectos para el intercambio de archivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado herramientas avanzadas de gestión de proyectos para el intercambio de archivos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado las herramientas de comunicación para asegurar la trazabilidad de las comunicaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Revisa y analiza proyectos BIM detectando posibles colisiones, realizando mediciones, entre las diferentes especialidades y las informa proponiendo soluciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han federado modelos de diferentes especialidades para analizarlos conjuntamente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha sometido a modelos federados a procesos de detección de colisiones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han documentado y comunicado las colisiones detectadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han propuesto medidas correctoras orientadas a minimizar el coste del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado herramientas informáticas de gestión de proyectos, detección de colisiones, BCF (BIM Collaboration Format), entre otras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido tablas de mediciones del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Modela el estado actual de emplazamientos aplicando técnicas de digitalización y escaneado 3D del entorno e introduciéndolas en el modelo BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han utilizado sistemas de digitalización y escaneado del estado actual de un entorno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las herramientas a utilizar para tratar los datos obtenidos por el proceso de escáner 3D."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha modelado el estado actual del proyecto a partir de los datos obtenidos con las herramientas de digitalización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han depurado los errores procedentes del proceso de digitalización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Modelos de arquitectura y estructuras",
+      "codigo": "5056",
+      "ects": 9,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Desarrolla plantillas para el modelado de información en arquitectura y estructuras estableciendo los formatos, familias y elementos necesarios para alcanzar los objetivos establecidos en el plan de ejecución BIM de diferentes proyectos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las diferentes plataformas para el modelado de información gráfica y no gráfica en entornos de arquitectura."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las diferentes plataformas de modelado y cálculo de estructuras bajo la metodología BIM."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las características del interfaz de usuario de plataformas para el modelado BIM de arquitectura y estructuras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las herramientas necesarias para el modelado de proyectos de arquitectura y estructuras de plataformas BIM."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado plantillas con vistas de trabajo y de presentación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han editado objetos BIM para adaptarlos a los diferentes proyectos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han modelado objetos BIM paramétricos para arquitectura y estructuras."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Modela proyectos y objetos de arquitectura introduciendo la información gráfica y no gráfica del proyecto según las especificaciones establecidas en el plan de ejecución BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha modelado la información gráfica y no gráfica de tabiques y muros según las características indicadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han modelado suelos según las especificaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han modelado diferentes tipologías de cubiertas para resolver diferentes situaciones constructivas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han importado diferentes objetos BIM procedentes de librerías para enriquecer los modelos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han creado objetos BIM nuevos creando diferentes tipos en función de sus dimensiones, materiales o características."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han modelado escaleras y rampas, introduciendo todos los parámetros necesarios para su desarrollo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han modelado muros cortina a partir de las características de sus montantes y paneles."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han modelado recintos arquitectónicos con toda su información gráfica y no gráfica."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado las herramientas de programación BIM para el modelado de objetos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Modela proyectos y objetos estructurales introduciendo la información gráfica y no gráfica del proyecto según las especificaciones establecidas en el plan de ejecución BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha modelado la información de pilares, muros y zapatas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han modelado muros de contención con todas las características especificadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han modelado losas y forjados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han modelado escaleras, rampas y barandillas con las dimensiones y características de todos sus componentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han importado diferentes objetos BIM procedentes de librerías para enriquecer los modelos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han creado objetos BIM nuevos creando diferentes tipos en función de sus dimensiones, materiales o características."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han modelado estructuras en celosía con toda la información necesaria para su fabricación y montaje."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las herramientas de programación BIM para el modelado de objetos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Documenta toda la información del modelo generando tablas y planos a partir de los modelos BIM del Proyecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han generado tablas de vistas del proyecto para identificar sus características."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han producido tablas de medición de los diferentes objetos presentes en el proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado los diferentes formatos de planos del proyecto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado los diferentes planos del proyecto en función de las características del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha imprimido en aplicaciones digitales avanzadas el proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Modelos de instalaciones mecánicas y sostenibilidad",
+      "codigo": "5057",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Desarrolla plantillas para el modelado de información de instalaciones mecánicas estableciendo los formatos, familias y elementos necesarios para alcanzar los objetivos establecidos en el plan de ejecución BIM del proyecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las diferentes plataformas para el modelado de información gráfica y no gráfica en entornos de fontanería y climatización, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se reconocido diferentes plataformas BIM y aplicaciones para el análisis de la sostenibilidad del proyecto (6D)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las características del interfaz de usuario de plataformas para el modelado BIM de instalaciones mecánicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las herramientas necesarias para el modelado de especialidades de instalaciones mecánicas con plataformas BIM."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado plantillas con vistas de trabajo y de presentación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han editado objetos BIM para adaptarlos a los diferentes proyectos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han modelado familias de la disciplina mecánica con todos los conectores necesarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Modela información gráfica y no gráfica de instalaciones de suministro y evacuación de aguas introduciendo los parámetros necesarios para el adecuado funcionamiento de la maqueta virtual así como el cumplimiento de los requisitos del plan de ejecución BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han modelado tuberías, bajantes, colectores, uniones y accesorios de fontanería, así como los elementos necesarios para el adecuado funcionamiento de la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han modelado conexiones de tubería en pendiente y se ha comprobado que el sistema se encuentra conectado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han conectado objetos BIM de aparatos sanitarios a los sistemas de tuberías correspondientes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han introducido nuevas tuberías y todos sus accesorios a partir de fichas técnicas de proveedores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprobado las condiciones de funcionamiento de la instalación en relación a la reglamentación vigente: caudales, velocidades, entre otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado colisiones con otros sistemas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las herramientas de programación BIM para el modelado de objetos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Modela instalaciones de HVAC (Heating, ventilation and air conditioning) introduciendo la información gráfica y no gráfica con los parámetros necesarios para el adecuado funcionamiento del modelo, así como el cumplimiento de los requisitos del plan de ejecución BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han modelado sistemas de instalaciones mecánicas para ventilación y climatización, extinción, entre otras."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han modelado diferentes tipos de sistemas de conductos y sus piezas de unión y se ha comprobado que el sistema se encuentra conectado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han conectado objetos BIM de equipos de HVAC a los sistemas de tuberías y conductos correspondientes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han introducido nuevos tipos de conductos y todos sus accesorios a partir de fichas técnicas de proveedores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprobado las condiciones de funcionamiento de los diferentes sistemas (aire, gas, agua) instalación en relación a la reglamentación vigente: caudales, velocidades, entre otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado colisiones con otros sistemas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las herramientas de programación BIM para el modelado de objetos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza las condiciones de sostenibilidad y eficiencia energética de proyectos (6D) bajo la metodología BIM simulando energéticamente los modelos de información.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han introducido las condiciones de contorno del proyecto, situación, sombreamiento, usos, entre otras."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los diferentes recintos arquitectónicos en espacios o zonas en función de su uso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado las condiciones de carga interna de los diferentes espacios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han calculado las cargas térmicas de calefacción y refrigeración."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la simulación energética del edificio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los parámetros necesarios para obtener una puntuación alta en certificados de sostenibilidad o de certificación energética reconocidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Documenta toda la información del modelo generando tablas y planos a partir de los modelos BIM del proyecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han generado tablas de vistas del proyecto para identificar sus características."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han producido tablas de medición de los diferentes objetos presentes en el proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado tablas con magnitudes más significativas de las distintas instalaciones del modelo. Tablas de velocidades, caudales, presiones, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha generado un informe de simulación energética del edificio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado los diferentes formatos de planos del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado los diferentes planos del proyecto en función de las características del mismo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha imprimido en aplicaciones digitales avanzadas el proyecto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Modelos de instalaciones eléctricas y comunicaciones",
+      "codigo": "5058",
+      "ects": 7,
+      "horas_minimas_boe": 65,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Desarrolla plantillas para el modelado información de instalaciones eléctricas, de iluminación y comunicaciones estableciendo los formatos, familias y elementos necesarios para alcanzar los objetivos establecidos en el plan de ejecución BIM del proyecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las diferentes plataformas para el modelado de información gráfica y no gráfica en entornos de electricidad, protección contra incendios (detección y alarma), datos, circuito cerrado de televisión, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las características del interfaz de usuario de plataformas para el modelado BIM de instalaciones de electricidad y comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las herramientas necesarias para el modelado de especialidades de instalaciones eléctricas y comunicaciones con plataformas BIM."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado plantillas con vistas de trabajo y de presentación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han editado objetos BIM para adaptarlos a los diferentes proyectos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han modelado familias de la disciplina de electricidad con todos los conectores necesarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Modela instalaciones eléctricas determinando los parámetros necesarios e introduciendo la información gráfica y no gráfica según lo establecido en el plan de ejecución BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado los parámetros característicos de las instalaciones eléctricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han modelado objetos BIM de las instalaciones eléctricas con todos los parámetros necesarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han modelado las bandejas, tubos y soportes necesarios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han modelado los centros de mando y protección necesarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado la documentación técnica de proveedores de equipos eléctricos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado los esquemas necesarios en la plataforma BIM."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Modela instalaciones de iluminación dimensionando los equipos a partir de las condiciones del entorno y de las características técnicas de los proveedores.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han obtenido las condiciones del entorno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han introducido archivos fotométricos de luminarias de proveedores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado el flujo de trabajo para realizar todos los cálculos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado el software BIM necesario para dimensionar la instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han modelado objetos BIM de iluminación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han modelado instalaciones de alumbrado exterior."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han modelado instalaciones de alumbrado interior."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Modela instalaciones de comunicaciones, CCTV, y sistemas de detección y alarma de incendio, introduciendo la información gráfica y no gráfica necesaria.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado los parámetros característicos de las instalaciones de comunicaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han modelado objetos BIM de las instalaciones de comunicaciones con todos los parámetros necesarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha utilizado la documentación técnica de proveedores de equipos de comunicación e información."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han desarrollado los esquemas necesarios en la plataforma BIM."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Documenta toda la información del modelo generando tablas y planos a partir de los modelos BIM del proyecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han generado tablas de vistas del proyecto para identificar sus características."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han producido tablas de medición de los diferentes objetos presentes en el proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado tablas con magnitudes más significativas de las distintas instalaciones del modelo. Tablas de cargas, potencias, intensidades, entre otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha generado un informe de estudio de iluminación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado los diferentes formatos de planos del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado los diferentes planos del proyecto en función de las características del mismo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha imprimido en aplicaciones digitales avanzadas el proyecto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las herramientas de programación BIM."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control, gestión y presupuestos",
+      "codigo": "5059",
+      "ects": 5,
+      "horas_minimas_boe": 45,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Organiza el espacio de trabajo para el control y gestión de proyectos (4D) y su presupuesto (5D) estableciendo el calendario de las diferentes fases así como los precios relacionados con el modelo BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes herramientas para la planificación y control de proyectos bajo la metodología BIM."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han organizado espacios de trabajo con herramientas de planificación y control de obras asociadas al proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado diferentes herramientas informáticas para la vinculación de presupuestos y bases de datos a los modelos BIM."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los diferentes archivos necesarios para el modelado 4D y 5D."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han modelado los procesos de trabajo para el control y gestión de obra."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han modelado los procesos de trabajo para el presupuesto del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Modela los procesos de planificación y control de proyectos relacionando las aplicaciones necesarias con el modelo BIM.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los procesos de software para el modelado 4D del proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han obtenido las diferentes fases del proyecto a partir del modelo 3D."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han configurado los calendarios asociados a las diferentes fases del proyecto con la herramienta informática correspondiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido el camino crítico y la línea base del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han intercambiado archivos con información gráfica y no gráfica entre el software 4D y la plataforma BIM."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha generado la animación temporal del modelo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de control del modelo establecidas en el plan de ejecución BIM."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Presupuesta proyectos de construcción e instalaciones relacionando el modelo BIM con aplicaciones informáticas 5D y bases de datos de precios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los procesos de software para el modelado 5D del proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la estructura de trabajo de las aplicaciones de mediciones y presupuestos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han codificado los elementos BIM del modelo para relacionarlos con bases de datos de precios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha configurado la metodología de medición del modelo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido mediciones para los diferentes estados del presupuesto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han sincronizado los modelos 3D y 5D para la actualización de la información."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Documenta la información del modelo BIM generando informes y visualizaciones relacionando la maqueta virtual con el software correspondiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha generado los diagramas de planificación del proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han generado informes de control del proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han asociado los objetos BIM a las diferentes fases del proyecto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha generado la visualización del modelo 3D asociado las diferentes fases de planificación del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han configurado los informes de medición y presupuestos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido los informes de planificación y control."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "id": "ce-materiales-compuestos-en-la-industria-aeroespacial",
+  "denominacion": "Materiales compuestos en la industria aeroespacial",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Fabricación Mecánica",
+  "duracion_horas": 600,
+  "ects": 0,
+  "abreviatura": "MCIA",
+  "rd": "Real Decreto 1153/2021, de 28 de diciembre, por el que se establece el curso de especialización en Materiales compuestos en la industria aeroespacial y se fijan los aspectos básicos del currículo, y se modifica el Real Decreto 93/2019, de 1 de marzo, por el que se establece el Curso de especialización en cultivos celulares y se fijan los aspectos básicos del currículo, y se modifica el Real Decreto 74/2018, de 19 de febrero, por el que se establece el título de Técnico en montaje de estructuras e instalación de sistemas aeronáuticos y se fijan los aspectos básicos del currículo",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-1056",
+  "modulos": [
+    {
+      "nombre": "Fabricación de elementos aeroespaciales de materiales compuestos por moldeo manual",
+      "codigo": "5083",
+      "ects": null,
+      "horas_minimas_boe": 180,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Fabricación automática en materiales compuestos",
+      "codigo": "5084",
+      "ects": 11,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Configura el funcionamiento de máquinas de control numérico para el corte de la materia prima para fabricación en materiales compuestos preimpregnados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado los sistemas específicos de las máquinas de corte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han apuntado los detalles en la documentación / información necesaria para esta operación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han revisado los sistemas de seguridad y protección personal específicos para estas máquinas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los sistemas específicos de manipulación de material en las máquinas de corte."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado las diferentes etapas de estas operaciones (corte-embolsado de kits)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado y descrito las comprobaciones a realizar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han revisado las normativas de prevención y de protección ambiental, específicas de las máquinas de corte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado y descrito las operaciones de mantenimiento de primer nivel."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Conforma piezas planas mediante máquinas de conformado caliente, relacionándolo con su función y aplicación en los procesos de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sistemas específicos de las máquinas de conformado (vacío, refrigeración, control, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los detalles de la documentación / información necesaria para estas operaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los sistemas de seguridad y protección personal específicos para estas máquinas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las características de los útiles de conformado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado las diferentes etapas de la operación de conformado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el conformado según comprobaciones establecidas, así como los posibles defectos que pueden originarse en las operaciones de conformado: consecuencias, causa raíz y cómo evitarlos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han llevado a cabo las normativas de prevención y de protección ambiental, específicas de las máquinas de conformado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado y descrito las operaciones de mantenimiento de primer nivel."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura el funcionamiento de máquinas para el posicionado de cinta ATL (automatic tape lay up - laminado automático de cinta en superficies planas o con radios muy amplios), relacionándolo con su función y aplicación en los procesos de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado los sistemas específicos de las máquinas de ATL (alimentación del material, enfriamiento – calentamiento del material, corte del material, recogida de film protector, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han anotado los detalles en la documentación e información necesarios para el posicionado de cinta (ATL): orden de producción, programa de laminado, hojas de control de tiempos de exposición, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han activado los sistemas de seguridad y protección personal específicos para las máquinas de ATL."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los requisitos de preparación de útiles de laminado y de la materia prima, para ATL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado y descrito las comprobaciones a realizar, así como los posibles defectos que pueden originarse en las operaciones de ATL: consecuencias, causa raíz y cómo evitarlos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado los requerimientos de la normativa de prevención y de protección ambiental, específicas de las máquinas de posicionado de cinta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito, relacionado y ajustado las variables programables para el encintado desde el panel de control (velocidad de encintado, temperatura de cabezal, offset de máquina, presión de cabezal) relacionándolas con el tipo de material, configuración de laminado a encintar, espesor de laminado y los requisitos pedidos en calidad de pieza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Configura el funcionamiento de máquinas para el posicionado de cinta FP (fiber placement - laminado automático de cinta en superficies con radios reducidos), relacionándolo con su función y aplicación en los procesos de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sistemas específicos de la máquina FP (alimentación del material, enfriamiento – calentamiento del material, corte del material, recogida de film protector, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los detalles en la documentación e información necesarios para el posicionado de cinta (FP): orden de producción, programa de laminado, hojas de control de tiempos de exposición, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han activado los sistemas de seguridad y protección personal específicos para las máquinas de FP."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han desarrollado los requisitos de preparación de útiles de laminado y de la materia prima, para FP."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado y descrito las comprobaciones a realizar, así como los posibles defectos que pueden originarse en las operaciones de FP: consecuencias, causa raíz y cómo evitarlos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado los requerimientos de la normativa de prevención y de protección ambiental, específicas de las máquinas de posicionado de cinta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito, relacionado y ajustado las variables programables para el encintado desde el panel de control (velocidad de encintado, temperatura de cabezal, offset de máquina, presión de cabezal) relacionándolas con el tipo de material, configuración de laminado a encintar, espesor de laminado y los requisitos pedidos en calidad de pieza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Polimerización y mecanizado de piezas aeroespaciales de material compuesto",
+      "codigo": "5085",
+      "ects": 9,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Carga piezas procedentes de la sala blanca (lay-up), en la autoclave siguiendo las indicaciones del esquema de carga.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han agrupado las piezas según el tipo de ciclo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han cargado las piezas e identificado según esquema de carga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han conectado las piezas al vacío de la autoclave y anotado en el esquema de carga."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han conectado los termopares a la autoclave y anotado en el esquema de carga."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la estanqueidad de las piezas mediante sistema de vacío de la autoclave (prueba de vacío)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha recogido en la documentación de cada pieza (orden de proceso)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado la ausencia de cualquier elemento que pueda originar un incendio."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tenido en cuenta las condiciones de seguridad y salud laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura y pone en marcha la autoclave teniendo en cuenta el ciclo de funcionamiento establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado la receta del ciclo de autoclave (perfiles de temperatura, presión y vacío)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el fluido con el que presurizar (aire o nitrógeno) y sus proporciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado el cierre de la autoclave."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de puesta en marcha de la autoclave."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han controlado el cumplimiento de los parámetros corrigiendo las desviaciones observadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha enfriado la autoclave y se despresuriza."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descargado y desmoldeado las piezas de la autoclave."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tenido en cuenta las condiciones de seguridad y salud laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Desconecta las tomas de vacíos y termopares, procediendo a la descarga de la autoclave.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la ausencia de nitrógeno en el interior de la autoclave."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha desconectado las mangueras de vacío."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha desconectado los termopares."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han revisado los termopares para siguientes ciclos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha procedido a sacar el carro de la autoclave."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descargado la autoclave mediante puente grúa o máquina elevadora"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han colocado los útiles sobre elementos de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha asignado la documentación (orden de proceso) a cada pieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desmoldea elementos polimerizados en la autoclave teniendo en cuenta lo establecido en las ordenes de proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha retirado los materiales auxiliares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han retirado tomas de vacío reutilizables."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha procedido a dar los taladros de utillaje."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han retirado los termopares de la pieza."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desmoldeado la pieza con apoyo de elementos auxiliares no metálicos, o con dispositivos automáticos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han recogido probetas de ciclo para envío al laboratorio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cumplimentado las ordenes de producción referente al desmoldeo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tenido en cuenta las condiciones de seguridad y salud laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Limpia útiles y aplica agentes desmoldeantes preparándolos para siguientes laminaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han eliminado restos de resina y otras impurezas de la superficie del útil."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han protegido las zonas sensibles a los agentes desmoldeantes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado agentes desmoldeantes en toda la superficie del útil."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha dejado secar los agentes desmoldeantes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han guardado los útiles en estanterías a la espera de futuros usos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Recantea y mecaniza las piezas obtenidas verificando que cumplen las especificaciones indicadas en la documentación técnica y ajustándolas si procede.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los útiles/patrones para la realización del mecanizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las herramientas de corte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el programa de mecanizado para conseguir medidas finales de pieza."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han eliminado las rebabas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado la posición de los taladros en los planos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado la documentación anotando datos solicitados en la orden de proceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han tenido en cuenta las condiciones de seguridad y salud laboral."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tratado los residuos generados de acuerdo a la normativa vigente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Verificación de elementos de materiales compuestos",
+      "codigo": "5086",
+      "ects": 5,
+      "horas_minimas_boe": 45,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Revisa la cumplimentación de las operaciones de fabricación de las piezas de acuerdo a la normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han verificado el cumplimentado de las operaciones de moldeo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado las horas de exposición de los materiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado que los materiales utilizados son los indicados en la orden de proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han verificado el cumplimiento de los parámetros del ciclo de autoclave según indica la orden de proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado programas de mecanizado o utillaje utilizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado los resultados de las probetas de ciclo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Verifica las piezas y cumplimenta las instrucciones de verificación de acuerdo a los procedimientos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han verificado visualmente la pieza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han anotado las dimensiones pedidas en la instrucción de verificación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la memoria de control en piezas intercambiables."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han anotado los elementos de medida utilizados en la verificación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado programa de medición."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han calibrado los palpadores de medición."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han comparado y analizado diferencias entre valores obtenidos y valores de plano."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han emitido hojas de no conformidad en caso de desviaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Identificación final de pieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza ensayos de laboratorio a la materia prima y probetas de ciclo verificando la calidad del producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han tomado muestras de materia prima para la realización de ensayos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado ensayos de recepción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha controlado registros de temperatura durante el transporte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comprobado certificados de conformidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado ensayos de control de proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se realizan ensayos destructivos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza ensayos no destructivos a probetas de ciclo procedentes de la autoclave verificando la calidad del producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los métodos de inspección no destructiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado la calibración de los equipos de inspección."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han verificado piezas mediante ultrasonidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado ensayos por termografía."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado ensayos por RX."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado el cumplimiento de los requisitos específicos de proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realizan el control de aparatos de medida e instrumentos de verificación atendiendo a la normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han calibrado los equipos de vacío y presión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han calibrado los equipos de temperatura."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han calibrado los equipos eléctricos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han calibrado equipos de masa y fuerza."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calibrado equipos de medida dimensional (calibres, reglas, goniómetros, entre otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han medido partículas en salas limpias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado cálculos de incertidumbres."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

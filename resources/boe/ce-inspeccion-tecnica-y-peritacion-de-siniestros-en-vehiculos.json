@@ -1,0 +1,857 @@
+{
+  "id": "ce-inspeccion-tecnica-y-peritacion-de-siniestros-en-vehiculos",
+  "denominacion": "Inspección técnica y peritación de siniestros en vehículos",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Transporte y Mantenimiento de Vehículos",
+  "duracion_horas": 600,
+  "ects": 0,
+  "abreviatura": "ITPSV",
+  "rd": "Real Decreto 1090/2024, de 22 de octubre, por el que se establece el Curso de especialización de Formación Profesional de Grado Superior en Inspección técnica y peritación de siniestros en vehículos y se fijan los aspectos básicos del currículo, y se modifica el Real Decreto 569/2023, de 4 de julio, por el que se establecen tres certificados de profesionalidad de la familia profesional Fabricación Mecánica, que se incluyen en el Repertorio Nacional de certificados de profesionalidad.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-21706",
+  "modulos": [
+    {
+      "nombre": "Peritación de vehículos siniestrados",
+      "codigo": "5102",
+      "ects": 18,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce la normativa aplicable en materia aseguradora, interpretando la teoría general del seguro.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la normativa de los seguros en el sector del automóvil."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las instituciones y organismos vinculados al seguro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el contrato del seguro del automóvil (elementos de seguro, Derecho del contrato de seguro, el siniestro, metodología aseguradora)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado la normativa del contrato de seguro y la elaboración de informes relacionados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido los riesgos asegurables."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la formalización simulada de un contrato de seguro."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la verificación previa al aseguramiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha analizado el seguro en la circulación de vehículos a motor."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han determinado las garantías en el seguro de automóvil, garantías en reparaciones y en operaciones de compra-venta."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha valorado el riesgo que suponen las amenazas cibernéticas para los vehículos, normativa de aplicación."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comprobado la posible cobertura del siniestro en la póliza."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha analizado los convenios de indemnización directa entre entidades aseguradoras para la liquidación de siniestros de daños materiales."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se conoce la terminología y metodología de la peritación de vehículos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Gestiona la declaración recibida del siniestro, comprobando los datos del vehículo para valorar los riesgos asegurados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado la documentación presentada del siniestro (atestado, declaración amistosa de accidentes, denuncia, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha tenido en cuenta si las características de la póliza se ajustan al problema planteado (todo riesgo, franquicia, terceros, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflejado la interpretación del daño para iniciar un trámite de reparación y de información de daños reclamados no incluidos en las cláusulas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la veracidad de la declaración de siniestro presentada por distintos procedimientos de un determinado siniestro dado, explicando, identificando e interpretando los datos (atestado, Declaración Amistosa de Accidentes [DAA], denuncia, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado que los daños sufridos son coherentes con la declaración y están recogidos en los riesgos asegurados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planificado la elaboración del informe pericial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha planificado la valoración de daños del vehículo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han verificado los daños materiales y personales ocasionados a terceros en el siniestro."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expuesto el proceso o el procedimiento para concretar una reunión con una persona responsable de un vehículo (particular, taller de reparación, entre otros), localizando la dirección donde se encuentra y la fecha de intervención, para simular el agendado del encargo."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha explicado el procedimiento de tramitación de la aceptación de un encargo, comunicando vía telemática (e-mail, intranet, web solicitante) la confirmación de la actuación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza la comprobación de daños del vehículo, en cualquiera de sus modalidades, identificando los datos con el fin de obtener una valoración inicial de daños y así poder evaluarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado que los datos (matrícula, bastidor, kilometraje del vehículo, permiso de circulación y ficha técnica) de identificación del vehículo corresponden con el vehículo asegurado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado un reportaje fotográfico del vehículo, que recoja una panorámica completa del mismo, tanto de las zonas afectadas por el siniestro, como de las generales del vehículo (los cuatro ángulos, panorámicas, entre otros) e identificativas del mismo (matrícula, bastidor, kilometraje), aportando conclusiones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comprobado tanto los daños que guardan relación con el siniestro declarado como los que no."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la valoración, utilizando herramientas necesarias (guía de tasaciones, software de valoración de daños, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido los parámetros de reparabilidad, tipo de recambios, tiempos, reparadores externos, elementos afectados, entre otros, exponiendo procedimientos de negociación, explicando la metodología para ajustar el resto de conceptos inherentes a la tasación (precio mano de obra, descuentos, entre otros) del siniestro declarado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la comunicación a la persona solicitante indicando la previsión de fondos del coste de la reparación o el informe de pérdida total."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cumplimentado el compromiso de pago y se ha informado al taller, autorizando la reparación o desmontaje de los elementos afectados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el procedimiento del informe del siniestro total de un vehículo comunicándoselo a la persona solicitante de la reparación en base a los indicadores establecidos (condiciones del valor de responsabilidad civil, condiciones de póliza para los daños propios, entre otros), calculando el valor de la pérdida total como resultado de restar al valor asegurado del vehículo el valor de los restos del vehículo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha seguido el protocolo o procedimientos y circunstancias para realizar el seguimiento de reparación, fijando una nueva cita de visita y explicando qué datos se solicitan al taller reparador (e-mail, teléfono, entre otros) para la gestión del siniestro."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza la evaluación de un siniestro de un vehículo, utilizando el software de valoración de daños (Audatex, GT Motive, Eurotax, entre otros) o una tasación manual, para elaborar una estimación de reparación previa (avance inicial o cierre).",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha explicado el protocolo de evaluación de un siniestro (visita presencial o mediante videoperitación y reportaje fotográfico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha expuesto qué elementos se negocian con una persona responsable de taller (precio, hora de mano de obra, descuentos, tiempos de reparación y tipo de repuestos, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflejado una valoración de daños, utilizando un software de tasación, exponiendo cómo introducir la información de reparación (tiempos, piezas, entre otros), procesando los datos y obteniendo un importe final de reparación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado el valor límite de reparación, el contrato del seguro y las coberturas por las que se puede intervenir en un siniestro, evaluando datos y exponiendo si la reparación es o no antieconómica (siniestro total)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expuesto los procedimientos de envío de la valoración de daños, a través de medios telemáticos, adjuntando el reportaje fotográfico, cualquier observación o aclaración del siniestro, la previsión de fondos del coste de la reparación y un informe de pérdida total."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reflejado el procedimiento para remitir el avance inicial (si se dispone de compromiso de pago y que la reparación no es antieconómica) al taller reparador por escrito, autorizando el inicio de la reparación total o parcial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza el seguimiento de la reparación de daños del vehículo siniestrado, actualizando el presupuesto por deterioros ocultos no observados en la primera visita y concretando una tasación final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido el protocolo en el seguimiento de la reparación de un vehículo siniestrado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha actualizado la valoración inicial en caso necesario."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han estimado los daños ocultos que hayan podido aparecer durante el desmontaje de las zonas afectadas por el siniestro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han documentado y detallado los daños ocultos por medio de nuevas fotografías en las zonas no visualizadas en la primera tasación para justificar el proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado un ajuste con el taller, tanto presupuestario como en tiempos de reparación, acorde a las nuevas circunstancias halladas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comunicado a la persona solicitante, por vía telemática, la información actualizada del procedimiento de reparación (valoración de daños, reportaje fotográfico, nuevas previsiones de fondos, fecha estimada final de la reparación, entre otros)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado el estado del vehículo siniestrado una vez finalizada la reparación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha calculado la pérdida total del vehículo y el valor de los restos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza el cierre y entrega del informe pericial una vez finalizada la reparación del siniestro declarado, estableciendo, en caso necesario, la reapertura de la gestión del siniestro por disconformidades halladas en la reparación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la calidad los trabajos realizados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado que los elementos sustituidos se ajustan a lo acordados en la peritación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado la factura final emitida por el taller, comprobando que esté acorde a los trabajos realizados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha justificado y negociado el importe final de una factura, en caso de discrepancia con la persona responsable de taller, acordando el total de la tasación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha unificado toda la documentación generada en la gestión del siniestro y se ha remitido a la entidad solicitante junto con los honorarios de la pericia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha procedido a la reapertura del parte de siniestro."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la valoración de los nuevos daños encontrados siguiendo el procedimiento completo, cuando existe una reclamación por disconformidad en la reparación del vehículo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los procedimientos de redacción de un informe pericial (datos, objeto del informe, causas, circunstancias, conclusiones, valoración de daños, reportaje fotográfico, rehúses parciales o totales de daños, observaciones, entre otros)."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el cierre del informe pericial modificado, comunicando la valoración definitiva al centro reparador para concluirla."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha comprobado la calidad de la reparación establecida en una negociación de la pericia, observando la documentación asociada al siniestro (albaranes, presupuesto, factura, entre otros), las piezas sustituidas o reparadas y el estado final del vehículo (pintura, ajuste de elementos, limpieza, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha informado adecuadamente del resultado de la peritación a cliente, reparador y posibles terceros implicados, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Reabre el informe del siniestro por disconformidad en la reparación del vehículo de daños ocultos reclamados tras el cierre del mismo, realizando gestiones suplementarias en el proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha justificado la ampliación de daños, explicando posibles circunstancias de la reapertura del siniestro (por disconformidad en la reparación del vehículo, daños ocultos reclamados tras el cierre del informe, nuevos elementos incluidos en el encargo, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el procedimiento de gestión en una ampliación de daños (nuevas visitas, presenciales o mediante videoperitación, verificación de partidas, comprobación y ajuste real del siniestro), explicando procesos de comprobación visual y cómo se interpreta y se modifica una valoración de daños."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el proceso de observación visual de daños, justificándolos, tomando fotografías, incrementando en la tasación las variaciones correspondientes (nuevas piezas deterioradas, desmontajes de verificación, nuevos repintados, nuevos niveles de daños, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha elaborado un informe anexo al final de la documentación y una nueva valoración de daños."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido el procedimiento de envío telemático del informe pericial modificado al solicitante y responsable del centro reparador de la valoración final para concluir el siniestro."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Interviene en un procedimiento extrajudicial de peritación contradictoria, ajustándonos a lo establecido en la legislación española de seguros.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tenido en cuenta el protocolo del procedimiento extrajudicial de peritación contradictoria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha redactado el acta pericial conjunta con el otro perito de parte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha designado, en caso de que subsista la discrepancia y sea necesario el nombramiento de un perito tercero."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha facilitado al tercer perito informe pericial y/o documentación especifica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han mantenido con el propio perito tercero y con el otro perito de parte, las reuniones necesarias para explicar correctamente su valoración y los motivos de la discrepancia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha redactado y firmado el dictamen pericial de forma conjunta con el perito tercero y el perito de parte del asegurado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Prepara la actuación en un procedimiento judicial sobre daños peritados en un siniestro, explicando cómo ratificar, exponer y aclarar un informe pericial en sala y por escrito.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha expuesto el procedimiento de citación en los llamamientos judiciales, explicando cómo agendar y confirmar por escrito la asistencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha preparado el juicio, analizando la documentación del siniestro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha redactado un guion de los daños peritados y todas las gestiones realizadas para poder dar las aclaraciones pertinentes al juzgado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado los informes periciales realizados por cada uno de los peritos y peritas que estudiaron el daño, consensuando los resultados con un tercer perito o una tercera perita."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido procedimientos de consenso entre las partes implicadas en un siniestro, generando una hipótesis sólida de los daños en base a las evidencias de un determinado caso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de peritación que se expondrá ante el Juez o la Jueza de la hipótesis del accidente y la valoración de los daños del vehículo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha explicado el procedimiento de ratificación de un informe pericial, confirmando la validez y autoría."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha simulado la intervención de una perita o un perito en sala, explicando el procedimiento de su testimonio."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha simulado una declaración ante el Juez o la Jueza, atendiendo las cuestiones técnicas que pueda plantear la sala por parte de las personas intervinientes, explicando las hipótesis del accidente, la valoración de daños del vehículo y de los daños materiales y personales ocasionados a terceros en el accidente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de la Inspección Técnica de Vehículos (ITV)",
+      "codigo": "5103",
+      "ects": 18,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce la normativa aplicada y el proceso de trabajo en una estación de Inspección Técnica de Vehículos (ITV).",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la normativa que regula la Inspección Técnica de Vehículos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la estructura del manual de procedimiento de inspección de estaciones ITV."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado las inspecciones periódicas y las inspecciones no periódicas, conociendo los criterios particulares de cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha interpretado la clasificación de los vehículos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido los métodos de inspección de vehículos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido la clasificación de los defectos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha diferenciado la seguridad activa y pasiva de los vehículos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la homologación de los diferentes componentes que constituyen el vehículo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diferenciado la homologación de tipo y la homologación parcial."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha identificado la documentación necesaria para la circulación de los vehículos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha realizado la interpretación de defectos de cada una de las partes a inspeccionar, establecidas reglamentariamente en el manual de procedimiento."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han tenido en cuenta los requisitos de la norma UNE-EN ISO/IEC 17020 o equivalente en cada aspecto de la inspección (registro de datos, informe de resultados, equipos de medida, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reconoce la normativa aplicada a las reformas de importancia en vehículos, realizando la tramitación y legalización en centros de Inspección Técnica de Vehículos (ITV).",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido el concepto y tipos de reformas de importancia que afectan al vehículo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los criterios, procedimientos y requisitos que se deben cumplir para la tramitación de las reformas de vehículos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha interpretado la normativa y reglamentación de aplicación a la reforma de importancia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tipificado la reforma de importancia y las modificaciones en el vehículo que conlleva su aplicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la documentación necesaria para la legalización y quién la elabora."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los organismos que intervienen en la autorización de la reforma de importancia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la toma de datos en una hoja de campo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Verificación de la identificación del vehículo en el procedimiento de la ITV, comprobando el número de bastidor, la matrícula y los documentos oficiales (ficha técnica y permiso de circulación).",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seguido el manual del procedimiento de inspección de las estaciones ITV."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado y controlado la documentación que debe aportar el usuario."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha revisado la documentación aplicando el procedimiento o protocolo de verificación del permiso de circulación o equivalente y tarjeta ITV."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha observado que la documentación no ha sido manipulada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han interpretado los datos recogidos en la ficha técnica y el permiso de circulación comprobando que se ajustan al vehículo inspeccionado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado la ubicación del número de identificación del vehículo (VIN) de los diferentes fabricantes de vehículos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado y controlado la tipografía del número VIN utilizada por los distintos fabricantes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido los diferentes tipos de matrícula y que estos se ajustan a la normativa de cada uno de los vehículos inspeccionados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha comprobado el número de bastidor del vehículo, observando visualmente el grabado o troquelado indeleble en la estructura, para verificar su existencia, legibilidad y coincidencia con documentación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha comprobado la matrícula del vehículo, observando visualmente la placa, su existencia, homologación, legibilidad, emplazamiento y fijación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Supervisa el funcionamiento y realiza el ajuste, mantenimiento y puesta a cero de los equipos de comprobación y medida necesarios para la realización de las inspecciones de vehículos en una ITV y conoce los conceptos básicos de metrología.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la idoneidad, estado de mantenimiento, calibración y/o metrología legal de los equipos de medida antes de su utilización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha efectuado el mantenimiento y verificación del correcto funcionamiento del equipo de análisis de gases y del opacímetro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el conexionado y ajuste del equipo de verificación datos UCE (unidad de control electrónico) del vehículo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la colocación del regloscopio para la comprobación de los faros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la comprobación de funcionamiento y/o realizado el mantenimiento del detector de holguras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado y controlado el correcto funcionamiento del banco suspensión y se ha realizado el mantenimiento necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado y controlado el correcto funcionamiento del frenómetro y se ha realizado el mantenimiento necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado y controlado el correcto funcionamiento del velocímetro y se ha realizado el mantenimiento necesario."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha determinado el funcionamiento del decelerómetro."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha determinado el funcionamiento del dinamómetro para la comprobación de la fuerza de cierre de puertas en el transporte colectivo."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha realizado la comprobación del funcionamiento del detector de fugas de gas."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha realizado la comprobación del funcionamiento de los enchufes de remolque."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Valida el estado interior y exterior del vehículo, comprobando los elementos internos y externos para asegurar su trabajo funcional (movientes de raíles, cinturones, anclajes al chasis de componentes, entre otros) y garantizar la seguridad de su funcionamiento en la vía pública.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado el estado interior del vehículo comprobando los elementos internos (asientos, cinturones, indicador de velocidad, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha supervisado el funcionamiento, fijación, estado, entre otros de los elementos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado el estado exterior del vehículo, observando visualmente los elementos externos (carrocería, puertas, retrovisores, vidrios de seguridad, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han verificado aristas vivas del vehículo, comprobando en el interior y exterior del vehículo, la no existencia de partes puntiagudas o cortantes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reflejado e interpretado los defectos hallados durante la inspección para su subsanación, si fuera necesario, por parte de los usuarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado todos los procesos utilizando el manual de procedimiento de las estaciones ITV."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han documentado todos los procesos de forma manual o por procedimientos informáticos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Verifica el estado del sistema de alumbrado y señalización del vehículo, garantizando la seguridad de su funcionamiento en la vía pública.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido el protocolo de comprobación de luces en el vehículo, observando visualmente todas las opciones de conmutación, comprobando el funcionamiento, situación, número de luces, estado, testigos, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado las luces delanteras (faros, antiniebla, intermitentes, entre otros), traseras (pilotos, señalización de vehículo largo, luces prioritarias, frenos, antiniebla, marcha atrás, entre otros), laterales (posición, catadióptrico, intermitente, entre otros) y prioritarias de los vehículos especiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado el funcionamiento y la ausencia de deterioros evidentes, utilizando los equipos de específicos comprobación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comprobado las luces de cruce (haz de luz), utilizando el equipo de prueba (regloscopio) para comprobar su orientación, altura y luminosidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado las luces de remolque, comprobando las opciones de conmutación con el equipo (luces de remolque) y su funcionamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la señalización del vehículo, observando visual y auditivamente todas las señales (avisador acústico, vehículo prioritario, vehículo largo, entre otros), comprobando su existencia, situación, funcionamiento, estado, entre otros."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reflejado e interpretado los defectos hallados durante la inspección para su subsanación, si fuera necesario, por parte de los usuarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado todos los procesos utilizando el manual de procedimiento de las estaciones ITV."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han documentado todos los procesos de forma manual o por procedimientos informáticos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Realiza operaciones de verificación del estado de los sistemas de frenos, dirección, ejes, ruedas, neumáticos y suspensión, comprobando holguras de elementos, pérdidas de fluido, desgastes anormales, utilizando los equipos de prueba y medida para garantizar la seguridad de su funcionamiento en la vía pública.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado el sistema de frenos del vehículo, observando visualmente todos sus componentes (discos, latiguillos, pastillas de freno, pedal, entre otros), comprobando daños, corrosión, modificaciones, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han inspeccionado los frenos de servicio y estacionamiento del vehículo, utilizando los equipos de prueba y medida (frenómetro, decelerómetro, placas de holgura para frenos de estacionamiento eléctrico), comprobando su funcionamiento, eficacia, desequilibrio y fluctuación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado la dirección del vehículo, observando visualmente sus componentes (volante, manillar con eje delantero, columna de dirección, caja de dirección, guardapolvos, entre otros), comprobando su fijación, holguras, estado, pérdida de fluido, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reflejado en la inspección las desviaciones de ruedas del vehículo, utilizando el equipo de prueba y medida, comprobando la desalineación de las ruedas del eje directriz."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado los ejes, ruedas y suspensión del vehículo, utilizando el detector de holguras, y observando visualmente los elementos que lo componen (rodamiento, manguetas, estructura, suspensión, tornillo, tuerca, amortiguador, resortes, topes, entre otros), comprobando su existencia, pérdida de fluido, estado, fijación, holgura, entre otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han verificado los neumáticos del vehículo, observando visualmente todas sus características principales (marca o denominación comercial, índices de carga y velocidad, tamaño, categoría de utilización, homologación, entre otras), comprobando su estado, desgaste, utilización, equivalencia, no interferencia, entre otros."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reflejado e interpretado los defectos hallados durante la inspección para su subsanación, si fuera necesario, por parte de los usuarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado todos los procesos utilizando el manual de procedimiento de las estaciones ITV."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han documentado todos los procesos de forma manual o por procedimientos informáticos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Realiza operaciones de verificación del estado de los sistemas del motor, transmisión y emisiones contaminantes, para garantizar la seguridad y la no contaminación del medio ambiente en la vía pública.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado visualmente la sujeción del motor, pérdidas de combustible (gasolina, diésel, GLP, entre otros) y de aceite (motor y transmisión)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha revisado el procedimiento de comprobación de las transmisiones y análisis de los gases de escape, utilizando los equipos de prueba y medida (opacímetros, analizador de gases, sonómetro, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado el sistema de motor del vehículo, observando visualmente el comportamiento del motor al acelerarlo, su alimentación y escape, comprobando anclajes, electricidad, pérdidas de fluido, estado, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el procedimiento de inspección de la transmisión del vehículo, utilizando el detector de holguras, y observando visualmente los elementos que lo componen (cárteres, guardapolvos, palieres, árbol de transmisión, entre otros), comprobando existencia, estado, anclajes, pérdida de fluido, entre otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprobado las emisiones contaminantes del vehículo, utilizando los equipos de prueba y medida (OBD, analizador de gases, opacímetro, sonómetro, tacómetro, entre otros), analizando condiciones del vehículo y niveles de aceptación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado las emisiones en vehículos híbridos eléctricos, comprobando que el motor no funciona en modo eléctrico, realizando la prueba de emisiones, utilizando los equipos de prueba y medida (On Board Diagnostics [OBD], analizador de gases, opacímetro, sonómetro, tacómetro, entre otros), para comprobar las condiciones del vehículo y niveles de aceptación, siguiendo las instrucciones del fabricante."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reflejado e interpretado los defectos hallados durante la inspección para su subsanación, si fuera necesario, por parte de las personas usuarias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado todos los procesos utilizando el manual de procedimiento de las estaciones ITV."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han documentado todos los procesos de forma manual o por procedimientos informáticos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Realiza operaciones de verificación de las masas y dimensiones del vehículo, comprobando altura, longitud, distancia entre ejes, peso total, peso por ejes, entre otros, utilizando los útiles y equipos de medida, para garantizar la trazabilidad del vehículo con su documentación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido procedimientos de obtención de las dimensiones (altura, longitud, voladizo trasero, longitud de caja, entre otros) del vehículo, utilizando los útiles y equipos de medida (metro, plomada, telescómetro, medidor láser, entre otros), comprobando que se toman las medidas según manual de procedimiento de las estaciones ITV."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado procedimientos de obtención de las masas del vehículo, utilizando la báscula como equipo de prueba y medida, comprobando estado de carga, posición del vehículo, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado procedimientos de cumplimentación de registro de masas y dimensiones, rellenando el formato facsímil, comprobando que ningún valor esté fuera de los límites establecidos en el reglamento general de vehículos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reflejado e interpretado los defectos hallados durante la inspección para su subsanación si fuera necesario por parte de las personas usuarias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado todos los procesos utilizando el manual de procedimiento de las estaciones ITV."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado todos los procesos de forma manual o por procedimientos informáticos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA10",
+          "numero": 10,
+          "descripcion": "Reconoce el procedimiento a seguir para el control de otros tipos de vehículos, utilizando el manual de procedimientos de las estaciones ITV.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha efectuado la verificación de taxímetros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha efectuado la verificación y control de los diferentes puntos de inspección de los vehículos de transporte escolar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha efectuado el proceso de verificación de los vehículos especiales (agrícolas, maquinaria de obras y servicios, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el procedimiento de verificación y control de los diferentes puntos de inspección de ciclomotores, quads y motocicletas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la verificación y control de la documentación de los vehículos de transporte de mercancías peligrosas (ADR) y vehículos de mercancías perecederas (ATP)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la comprobación del estado del tacógrafo y la validez de la verificación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la comprobación y verificación del limitador de velocidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA11",
+          "numero": 11,
+          "descripcion": "Realiza el informe de inspección del vehículo, comprobando que se han ejecutado los ítems inspeccionados para garantizar la trazabilidad de la inspección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado el procedimiento de cumplimentación de informe de inspección, anotando el nivel de defectos obtenidos durante la inspección (leve, grave o muy grave), asegurando que se han ejecutado los ítems reflejados en el documento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha asignado la periodicidad del vehículo, observando su antigüedad, categoría y clasificación en cada caso, para comprobar que cumple la normativa aplicable que regula la ITV."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado el resultado de la inspección, observando los defectos encontrados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha emitido informe Favorable, Desfavorable o Negativo de la inspección."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha informado a la persona usuaria o a la clientela para la subsanación, si procede, de los defectos encontrados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido un nuevo plazo de inspección del vehículo para una nueva evaluación. ANEXO II Espacios y equipamientos mínimos Espacios (*) Espacio no necesariamente ubicado en el centro de formación. Equipamientos mínimos Aula polivalente. Ordenadores instalados en red. Conexión a Internet. Medios audiovisuales. Sistemas de reprografía. Programas informáticos específicos del curso de especialización. Almacenamiento de archivos en servidores accesibles. Aplicaciones de ofimática de escritorio en la nube. Equipos de medición. Carros portátiles con herramienta. Elevador de dos columnas. Equipos de herramientas básicos. Tablero reflector de abolladuras. Kit de varillas. Martillo moldeador. Ordenador. Cámara de fotos, software (sistemas de valoración de daños). Espesímetro. Cinta métrica. Medidor de neumáticos. Peine de formas. Alineador de dirección. Bancada. Elevador de vehículos. Equipo de diagnóstico. Analizador de gases con opacímetro. Elevador con detector de holguras o foso. Alineador al paso. Frenómetro. Banco de pruebas para la amortiguación de ejes. Banco de ensayo. Regloscopio. Comprobador de velocímetro. Decelerómetro. Medidor de fuerza de cierre. Sonómetro. Bascula. Polímetros. Útiles específicos del fabricante. Tacómetro, detector de fugas, pirómetro, útiles de medida, profundímetro, comprobador de tacógrafos, medidor de presión, Control del sistema de autodiagnóstico (EOBD). Galgas. Cronómetro. Otros específicos. (*) Espacio no necesariamente ubicado en el centro de formación. ANEXO III Especialidades del profesorado con atribución docente en los módulos profesionales del curso de especialización en Inspección técnica y peritación de siniestros en vehículos – Catedráticos de Enseñanza Secundaria. – Profesores de Enseñanza Secundaria. – Cuerpo a extinguir de Profesores Técnicos de Formación Profesional. – Cuerpo de Profesores especialistas en Sectores Singulares de Formación Profesional. ANEXO IV A) Correspondencia de unidades de competencia acreditadas con los módulos profesionales para su convalidación ANEXO IV B) Correspondencia de los módulos profesionales con las unidades de competencia para su acreditación UC2792_3: Gestionar el diagnóstico de anomalías en el funcionamiento de vehículos en estaciones de Inspección Técnica de Vehículos (ITV). UC2793_3: Peritar siniestros de automóviles."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

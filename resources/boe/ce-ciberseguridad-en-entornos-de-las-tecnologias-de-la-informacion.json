@@ -1,0 +1,1008 @@
+{
+  "id": "ce-ciberseguridad-en-entornos-de-las-tecnologias-de-la-informacion",
+  "denominacion": "Ciberseguridad en entornos de las tecnologías de la información",
+  "nivel": "Curso de Especialización de Grado Superior",
+  "familia_profesional": "Informática y Comunicaciones",
+  "duracion_horas": 720,
+  "ects": 0,
+  "abreviatura": "CETI",
+  "rd": "Real Decreto 479/2020, de 7 de abril, por el que se establece el Curso de especialización en ciberseguridad en entornos de las tecnologías de la información y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-4963",
+  "modulos": [
+    {
+      "nombre": "Incidentes de ciberseguridad",
+      "codigo": "5021",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Desarrolla planes de prevención y concienciación en ciberseguridad, estableciendo normas y medidas de protección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los principios generales de la organización en materia de ciberseguridad, que deben ser conocidos y apoyados por la dirección de la misma."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido una normativa de protección del puesto de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido un plan de concienciación de ciberseguridad dirigido a los empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha desarrollado el material necesario para llevar a cabo las acciones de concienciación dirigidas a los empleados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado una auditoría para verificar el cumplimiento del plan de prevención y concienciación de la organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Analiza incidentes de ciberseguridad utilizando herramientas, mecanismos de detección y alertas de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha clasificado y definido la taxonomía de incidentes de ciberseguridad que pueden afectar a la organización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido controles, herramientas y mecanismos de monitorización, identificación, detección y alerta de incidentes"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido controles y mecanismos de detección e identificación de incidentes de seguridad física."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido controles, herramientas y mecanismos de monitorización, identificación, detección y alerta de incidentes a través de la investigación en fuentes abiertas (OSINT: Open Source Intelligence)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado una clasificación, valoración, documentación y seguimiento de los incidentes detectados dentro de la organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Investiga incidentes de ciberseguridad analizando los riesgos implicados y definiendo las posibles medidas a adoptar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han recopilado y almacenado de forma segura evidencias de incidentes de ciberseguridad que afectan a la organización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado un análisis de evidencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la investigación de incidentes de ciberseguridad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha intercambiado información de incidentes, con proveedores y/o organismos competentes que podrían hacer aportaciones al respecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han iniciado las primeras medidas de contención de los incidentes para limitar los posibles daños causados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Implementa medidas de ciberseguridad en redes y sistemas respondiendo a los incidentes detectados y aplicando las técnicas de protección adecuadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han desarrollado procedimientos de actuación detallados para dar respuesta, mitigar, eliminar o contener los tipos de incidentes de ciberseguridad más habituales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado respuestas ciberresilientes ante incidentes que permitan seguir prestando los servicios de la organización y fortaleciendo las capacidades de identificación, detección, prevención, contención, recuperación y cooperación con terceros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido un flujo de toma de decisiones y escalado de incidentes interno y/o externo adecuados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han llevado a cabo las tareas de restablecimiento de los servicios afectados por un incidente hasta confirmar la vuelta a la normalidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han documentado las acciones realizadas y las conclusiones que permitan mantener un registro de “lecciones aprendidas”."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado un seguimiento adecuado del incidente para evitar que una situación similar se vuelva a repetir."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Detecta y documenta incidentes de ciberseguridad siguiendo procedimientos de actuación establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha desarrollado un procedimiento de actuación detallado para la notificación de incidentes de ciberseguridad en los tiempos adecuados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha notificado el incidente de manera adecuada al personal interno de la organización responsable de la toma de decisiones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha notificado el incidente de manera adecuada a las autoridades competentes en el ámbito de la gestión de incidentes de ciberseguridad en caso de ser necesario."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha notificado formalmente el incidente a los afectados, personal interno, clientes, proveedores, etc., en caso de ser necesario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha notificado el incidente a los medios de comunicación en caso de ser necesario."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Bastionado de redes y sistemas",
+      "codigo": "5022",
+      "ects": null,
+      "horas_minimas_boe": 95,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Diseña planes de securización incorporando buenas prácticas para el bastionado de sistemas y redes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los activos, las amenazas y vulnerabilidades de la organización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha evaluado las medidas de seguridad actuales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado un análisis de riesgo de la situación actual en ciberseguridad de la organización"
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha priorizado las medidas técnicas de seguridad a implantar en la organización teniendo también en cuenta los principios de la Economía Circular."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha diseñado y elaborado un plan de medidas técnicas de seguridad a implantar en la organización, apropiadas para garantizar un nivel de seguridad adecuado en función de los riesgos de la organización."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejores prácticas en base a estándares, guías y políticas de securización adecuadas para el bastionado de los sistemas y redes de la organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura sistemas de control de acceso y autenticación de personas preservando la confidencialidad y privacidad de los datos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los mecanismos de autenticación en base a distintos / múltiples factores (físicos, inherentes y basados en el conocimiento), existentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido protocolos y políticas de autenticación basados en contraseñas y frases de paso, en base a las principales vulnerabilidades y tipos de ataques."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido protocolos y políticas de autenticación basados en certificados digitales y tarjetas inteligentes, en base a las principales vulnerabilidades y tipos de ataques."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido protocolos y políticas de autenticación basados en tokens, OTPs, etc., en base a las principales vulnerabilidades y tipos de ataques."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido protocolos y políticas de autenticación basados en características biométricas, según las principales vulnerabilidades y tipos de ataques."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Administra credenciales de acceso a sistemas informáticos aplicando los requisitos de funcionamiento y seguridad establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de credenciales más utilizados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han generado y utilizado diferentes certificados digitales como medio de acceso a un servidor remoto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la validez y la autenticidad de un certificado digital de un servicio web."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comparado certificados digitales válidos e inválidos por diferentes motivos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha instalado y configurado un servidor seguro para la administración de credenciales (tipo RADIUS - Remote Access Dial In User Service)"
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Diseña redes de computadores contemplando los requisitos de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha incrementado el nivel de seguridad de una red local plana segmentándola físicamente y utilizando técnicas y dispositivos de enrutamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha optimizado una red local plana utilizando técnicas de segmentación lógica (VLANs)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha adaptado un segmento de una red local ya operativa utilizando técnicas de subnetting para incrementar su segmentación respetando los direccionamientos existentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado las medidas de seguridad adecuadas en los dispositivos que dan acceso a una red inalámbrica (routers, puntos de acceso, etc.)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido un túnel seguro de comunicaciones entre dos sedes geográficamente separadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Configura dispositivos y sistemas informáticos cumpliendo los requisitos de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado dispositivos de seguridad perimetral acorde a una serie de requisitos de seguridad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detectado errores de configuración de dispositivos de red mediante el análisis de tráfico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado comportamientos no deseados en una red a través del análisis de los registros (Logs), de un cortafuego."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han implementado contramedidas frente a comportamientos no deseados en una red."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado, instalado y configurado diferentes herramientas de monitorización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Configura dispositivos para la instalación de sistemas informáticos minimizando las probabilidades de exposición a ataques.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha configurado la BIOS para incrementar la seguridad del dispositivo y su contenido minimizando las probabilidades de exposición a ataques."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha preparado un sistema informático para su primera instalación teniendo en cuenta las medidas de seguridad necesarias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado un sistema informático para que un actor malicioso no pueda alterar la secuencia de arranque con fines de acceso ilegítimo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha instalado un sistema informático utilizando sus capacidades de cifrado del sistema de ficheros para evitar la extracción física de datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha particionado el sistema de ficheros del sistema informático para minimizar riesgos de seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Configura sistemas informáticos minimizando las probabilidades de exposición a ataques.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han enumerado y eliminado los programas, servicios y protocolos innecesarios que hayan sido instalados por defecto en el sistema."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han configurado las características propias del sistema informático para imposibilitar el acceso ilegítimo mediante técnicas de explotación de procesos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha incrementado la seguridad del sistema de administración remoto SSH y otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha instalado y configurado un Sistema de detección de intrusos en un Host (HIDS) en el sistema informático."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han instalado y configurado sistemas de copias de seguridad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Puesta en producción segura",
+      "codigo": "5023",
+      "ects": null,
+      "horas_minimas_boe": 65,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prueba aplicaciones web y aplicaciones para dispositivos móviles analizando la estructura del código y su modelo de ejecución.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han comparado diferentes lenguajes de programación de acuerdo a sus características principales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los diferentes modelos de ejecución de software."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los elementos básicos del código fuente, dándoles significado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ejecutado diferentes tipos de prueba de software."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han evaluado los lenguajes de programación de acuerdo a la infraestructura de seguridad que proporcionan."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina el nivel de seguridad requerido por aplicaciones identificando los vectores de ataque habituales y sus riesgos asociados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los niveles de verificación de seguridad en aplicaciones establecidos por los estándares internacionales (ASVS, “Application Security Verification Standard”)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el nivel de verificación de seguridad requerido por las aplicaciones en función de sus riesgos de acuerdo a estándares reconocidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enumerado los requisitos de verificación necesarios asociados al nivel de seguridad establecido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los principales riesgos de las aplicaciones desarrolladas, en función de sus características."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Detecta y corrige vulnerabilidades de aplicaciones web analizando su código fuente y configurando servidores web.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han validado las entradas de los usuarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detectado riesgos de inyección tanto en el servidor como en el cliente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha gestionado correctamente la sesión del usuario durante el uso de la aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha hecho uso de roles para el control de acceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado algoritmos criptográficos seguros para almacenar las contraseñas de usuario."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado servidores web para reducir el riesgo de sufrir ataques conocidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han incorporado medidas para evitar los ataques a contraseñas, envío masivo de mensajes o registros de usuarios a través de programas automáticos (bots)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Detecta problemas de seguridad en las aplicaciones para dispositivos móviles, monitorizando su ejecución y analizando ficheros y datos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han comparado los diferentes modelos de permisos de las plataformas móviles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito técnicas de almacenamiento seguro de datos en los dispositivos, para evitar la fuga de información."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha implantado un sistema de validación de compras integradas en la aplicación haciendo uso de validación en el servidor."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado herramientas de monitorización de tráfico de red para detectar el uso de protocolos inseguros de comunicación de las aplicaciones móviles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han inspeccionado binarios de aplicaciones móviles para buscar fugas de información sensible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Implanta sistemas seguros de desplegado de software, utilizando herramientas para la automatización de la construcción de sus elementos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características, principios y objetivos de la integración del desarrollo y operación del software."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implantado sistemas de control de versiones, administrando los roles y permisos solicitados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han instalado, configurado y verificado sistemas de integración continua, conectándolos con sistemas de control de versiones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han planificado, implementado y automatizado planes de desplegado de software."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha evaluado la capacidad del sistema desplegado para reaccionar de forma automática a fallos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado las tareas realizadas y los procedimientos a seguir para la recuperación ante desastres."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han creado bucles de retroalimentación ágiles entre los miembros del equipo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Análisis forense informático",
+      "codigo": "5024",
+      "ects": null,
+      "horas_minimas_boe": 65,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica metodologías de análisis forense caracterizando las fases de preservación, adquisición, análisis y documentación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los dispositivos a analizar para garantizar la preservación de evidencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado los mecanismos y las herramientas adecuadas para la adquisición y extracción de las evidencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha asegurado la escena y conservado la cadena de custodia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha documentado el proceso realizado de manera metódica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha considerado la línea temporal de las evidencias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de conclusiones a nivel técnico y ejecutivo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han presentado y expuesto las conclusiones del análisis forense realizado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza análisis forenses en dispositivos móviles, aplicando metodologías establecidas, actualizadas y reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado el proceso de toma de evidencias en un dispositivo móvil."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han extraído, decodificado y analizado las pruebas conservando la cadena de custodia."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado informes de datos móviles, cumpliendo con los requisitos de la industria forense de telefonía móvil."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han presentado y expuesto las conclusiones del análisis forense realizado a quienes proceda."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza análisis forenses en Cloud, aplicando metodologías establecidas, actualizadas y reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha desarrollado una estrategia de análisis forense en Cloud, asegurando la disponibilidad de los recursos y capacidades necesarios una vez ocurrido el incidente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha conseguido identificar las causas, el alcance y el impacto real causado por el incidente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las fases del análisis forense en Cloud."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las características intrínsecas de la nube (elasticidad, ubicuidad, abstracción, volatilidad y compartición de recursos)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han cumplido los requerimientos legales en vigor, RGPD (Reglamento general de protección de datos) y directiva NIS (Directiva de la UE sobre seguridad de redes y sistemas de información) o las que eventualmente pudieran sustituirlas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han presentado y expuesto las conclusiones del análisis forense realizado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza análisis forense en dispositivos del IoT, aplicando metodologías establecidas, actualizadas y reconocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los dispositivos a analizar garantizando la preservación de las evidencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado mecanismos y herramientas adecuadas para la adquisición y extracción de evidencias"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha garantizado la autenticidad, completitud, fiabilidad y legalidad de las evidencias extraídas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado análisis de evidencias de manera manual y mediante herramientas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha documentado el proceso de manera metódica y detallada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha considerado la línea temporal de las evidencias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha mantenido la cadena de custodia"
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un informe de conclusiones a nivel técnico y ejecutivo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han presentado y expuesto las conclusiones del análisis forense realizado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Documenta análisis forenses elaborando informes que incluyan la normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el objetivo del informe pericial y su justificación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el ámbito de aplicación del informe pericial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han documentado los antecedentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han recopilado las normas legales y reglamentos cumplidos en el análisis forense realizado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han recogido los requisitos establecidos por el cliente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incluido las conclusiones y su justificación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Determina herramientas de monitorización para detectar vulnerabilidades aplicando técnicas de hacking ético.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la terminología esencial del hacking ético."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los conceptos éticos y legales frente al ciberdelito."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el alcance y condiciones de un test de intrusión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los elementos esenciales de seguridad: confidencialidad, autenticidad, integridad y disponibilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las fases de un ataque seguidas por un atacante."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado y definido los tipos vulnerabilidades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado y definido los tipos de ataque."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado y caracterizado las diferentes vulnerabilidades existentes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han determinado las herramientas de monitorización disponibles en el mercado adecuadas en función del tipo de organización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Ataca y defiende en entornos de prueba, comunicaciones inalámbricas consiguiendo acceso a redes para demostrar sus vulnerabilidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han configurado los distintos modos de funcionamiento de las tarjetas de red inalámbricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las técnicas de encriptación de las redes inalámbricas y sus puntos vulnerables."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detectado redes inalámbricas y se ha capturado tráfico de red como paso previo a su ataque."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha accedido a redes inalámbricas vulnerables."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado otros sistemas de comunicación inalámbricos y sus vulnerabilidades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado técnicas de “Equipo Rojo y Azul”."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado informes sobre las vulnerabilidades detectadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Ataca y defiende en entornos de prueba, redes y sistemas consiguiendo acceso a información y sistemas de terceros.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información sobre la red y sistemas objetivo mediante técnicas pasivas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha creado un inventario de equipos, cuentas de usuario y potenciales vulnerabilidades de la red y sistemas objetivo mediante técnicas activas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha interceptado tráfico de red de terceros para buscar información sensible."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado un ataque de intermediario, leyendo, insertando y modificando, a voluntad, el tráfico intercambiado por dos extremos remotos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprometido sistemas remotos explotando sus vulnerabilidades."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Consolida y utiliza sistemas comprometidos garantizando accesos futuros.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han administrado sistemas remotos a través de herramientas de línea de comandos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprometido contraseñas a través de ataques de diccionario, tablas rainbow y fuerza bruta contra sus versiones encriptadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha accedido a sistemas adicionales a través de sistemas comprometidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado puertas traseras para garantizar accesos futuros a los sistemas comprometidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA10",
+          "numero": 10,
+          "descripcion": "Ataca y defiende en entornos de prueba, aplicaciones web consiguiendo acceso a datos o funcionalidades no autorizadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los distintos sistemas de autenticación web, destacando sus debilidades y fortalezas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado un inventario de equipos, protocolos, servicios y sistemas operativos que proporcionan el servicio de una aplicación web."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el flujo de las interacciones realizadas entre el navegador y la aplicación web durante su uso normal."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han examinado manualmente aplicaciones web en busca de las vulnerabilidades más habituales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han usado herramientas de búsquedas y explotación de vulnerabilidades web."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la búsqueda y explotación de vulnerabilidades web mediante herramientas software."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Hacking ético",
+      "codigo": "5025",
+      "ects": null,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Normativa de ciberseguridad",
+      "codigo": "5026",
+      "ects": null,
+      "horas_minimas_boe": 30,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los puntos principales de aplicación para asegurar el cumplimiento normativo reconociendo funciones y responsabilidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las bases del cumplimiento normativo a tener en cuenta en las organizaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito y aplicado los principios de un buen gobierno y su relación con la ética profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las políticas y procedimientos, así como la estructura organizativa que establezca la cultura del cumplimiento normativo dentro de las organizaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las funciones o competencias del responsable del cumplimiento normativo dentro de las organizaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido las relaciones con terceros para un correcto cumplimiento normativo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña sistemas de cumplimiento normativo seleccionando la legislación y jurisprudencia de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han recogido las principales normativas que afectan a los diferentes tipos de organizaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las recomendaciones válidas para diferentes tipos de organizaciones de acuerdo con la normativa vigente (ISO 19.600 entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado análisis y evaluaciones de los riesgos de diferentes tipos de organizaciones de acuerdo con la normativa vigente (ISO 31.000 entre otras)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha documentado el sistema de cumplimiento normativo diseñado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Relaciona la normativa relevante para el cumplimiento de la responsabilidad penal de las organizaciones y personas jurídicas con los procedimientos establecidos, recopilando y aplicando las normas vigentes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos penales aplicables a diferentes organizaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han implantado las medidas necesarias para eliminar o minimizar los riesgos identificados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido un sistema de gestión de cumplimiento normativo penal de acuerdo con la legislación y normativa vigente (Código Penal y UNE 19.601, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los principios básicos dentro de las organizaciones para combatir el soborno y promover una cultura empresarial ética de acuerdo con la legislación y normativa vigente (ISO 37.001 entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica la legislación nacional de protección de datos de carácter personal, relacionando los procedimientos establecidos con las leyes vigentes y con la jurisprudencia existente sobre la materia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las fuentes del Derecho de acuerdo con el ordenamiento jurídico en materia de protección de datos de carácter personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado los principios relacionados con la protección de datos de carácter personal tanto a nivel nacional como internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido los requisitos necesarios para afrontar la privacidad desde las bases del diseño."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado las herramientas corporativas contemplando el cumplimiento normativo por defecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado un análisis de riesgos para el tratamiento de los derechos a la protección de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han implantado las medidas necesarias para eliminar o minimizar los riesgos identificados en la protección de datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las funciones o competencias del delegado de protección de datos dentro de las organizaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Recopila y aplica la normativa vigente de ciberseguridad de ámbito nacional e internacional, actualizando los procedimientos establecidos de acuerdo con las leyes y con la jurisprudencia existente sobre la materia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido el plan de revisiones de la normativa, jurisprudencia, notificaciones, etc. jurídicas que puedan afectar a la organización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha detectado nueva normativa consultando las bases de datos jurídicas siguiendo el plan de revisiones establecido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado la nueva normativa para determinar si aplica a la actividad de la organización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha incluido en el plan de revisiones las modificaciones necesarias, sobre la nueva normativa aplicable a la organización, para un correcto cumplimiento normativo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado e implementado los controles necesarios para garantizar el correcto cumplimiento normativo de las nuevas normativas. incluidas en el plan de revisiones."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
