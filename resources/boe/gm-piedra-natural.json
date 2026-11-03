@@ -1,0 +1,3255 @@
+{
+  "id": "gm-piedra-natural",
+  "denominacion": "Piedra Natural",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Industrias Extractivas",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "PN",
+  "rd": "Real Decreto 1587/2011, de 4 de noviembre, por el que se establece el Título de Técnico en Piedra Natural y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-19536",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Corte de bloques",
+      "codigo": "0887",
+      "ects": null,
+      "horas_minimas_boe": 65,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Recepciona y almacena el bloque, describiendo las operaciones que va a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el material en función de sus dimensiones y marcas de cantera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha lavado y clasificado el material por calidades, siguiendo la trazabilidad de cantera."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha marcado el material y codificado para su ubicación en placeta y posterior corte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha manejado la maquinaria, equipos y elementos auxiliares para el movimiento, transporte interno y almacenaje."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha ubicado el material en el almacén."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza el precorte y el corte primario de la piedra, caracterizando la secuencia de las operaciones que va a efectuar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el bloque y las operaciones de precorte y corte primario en función del material y producto que se desea obtener."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado y manejado la maquinaria, los equipos y los útiles, según las especificaciones del proceso, para obtener las formas o la pieza requerida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha nivelado e inmovilizado el material conforme a las especificaciones técnicas para la realización del corte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han trazado las líneas y planos de corte en función de las características del proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el escuadre del bloque."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manejado los equipos de corte con hilos, sierras y otras herramientas para el precorte y corte primario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y corregido los posibles defectos del corte, relacionándolos con las causas que los provocan."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de herramientas, máquinas y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza el corte secundario, relacionando el material y maquinaria con el producto que se desea obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el material en función del producto que se desea obtener."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado y manejado la maquinaria y equipos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han secuenciado las operaciones de corte en función de las características del proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado los procedimientos de trazado y estereotomía según especificaciones técnicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han montado y ajustado los útiles de corte según especificaciones del proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han controlado los parámetros de corte de cada operación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han programado máquinas automáticas y semiautomáticas, según las especificaciones del proceso, para obtener las formas o la pieza requerida."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado y corregido los posibles defectos del corte, relacionándolos con las causas que los provocan."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de herramientas, máquinas y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Clasifica los productos resultantes del corte, relacionando el proceso con las características de los materiales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha medido el producto y se han comprobado los estándares de calidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado y manejado la maquinaria y equipos para movimiento interno, estiba y almacenaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los sistemas de identificación del material."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha embalado y paletizado el material para su expedición."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha ubicado y estibado el material conforme a sus características uso y destino."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha registrado la trazabilidad de los productos resultantes del corte."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que supone la manipulación de los materiales, herramientas, útiles y máquinas de corte de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección individual y colectiva que se deben adoptar en la ejecución de operaciones de corte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas que se deben emplear en las distintas operaciones del corte de bloques."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han recogido los residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Elaboración de piezas",
+      "codigo": "0889",
+      "ects": null,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Corta tableros y gruesos espesores de piedra, relacionando las técnicas y el tipo de material con los útiles y equipos que va a utilizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica, relacionándola con los trabajos de corte y elaboración de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han medido y marcado los tableros y piezas según planos de corte, para optimizar el aprovechamiento del material."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado y manejado la maquinaria, instrumentos y útiles necesarios, para realizar las operaciones de corte y elaboración de piezas de piedra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cargado el material en la máquina, posicionándolo y orientándolo según la dirección del corte."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado y corregido los posibles defectos de las piezas, relacionándolos con las causas que los provocan."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han limpiado y acondicionado las piezas para su posterior tratamiento o corte."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de los equipos y maquinaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza piezas estándar y en serie, describiendo y aplicando las técnicas de mecanizado conforme a las características, uso y destino del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las técnicas de elaboración de piezas de piedra, relacionándolas con los materiales, equipos e instalaciones y documentos de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los diferentes procedimientos de elaboración de piezas, en función de los resultados que se pretenden obtener."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los parámetros del proceso y se han seleccionado los útiles y equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha manejado la maquinaria y los equipos para mecanizar y elaborar cada material."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han regulado y controlado los equipos e instalaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones auxiliares y complementarias de mecanizado de terminación de las piezas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y corregido posibles defectos y verificado su acabado conforme a las especificaciones técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la limpieza y el mantenimiento preventivo y de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza piezas singulares y a medida, relacionando las técnicas de labores especiales con el tipo de material.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las técnicas de mecanizado de piezas singulares con los equipos, instalaciones y documentos de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado y programado plantillas para la elaboración de piezas y conjuntos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han programado y simulado los equipos de corte en función de la pieza que se va a elaborar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha manejado la maquinaria de labores especiales, los equipos y los medios auxiliares."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha optimizado el proceso para conseguir la calidad requerida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado y comprobado los encastres y ensamblados de las piezas que forman el conjunto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Labra y exfolia la pizarra, caracterizando las máquinas y utilizando las herramientas mediante el proceso manual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las distintas técnicas de lajado y corte de pizarra, relacionándolas con las herramientas y maquinaria específica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características propias del rachón, determinando su esquistosidad para realizar su tratamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha asegurado la humedad de la pieza para garantizar su fisibilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha exfoliado la pizarra según su esquistosidad o estratos mediante técnicas manuales y automáticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han serrado las piezas conforme a las medidas y estándares comerciales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado las labores especificas de taladrado, troquelado y acabado de piezas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora y conforma piezas con piedra y otros materiales, relacionando las características de los materiales con los procedimientos y el producto que se desea obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las materias primas, semielaborados y componentes empleados en la fabricación de productos prefabricados de piedra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los condicionantes productivos y tecnológicos con las tipologías de productos mixtos de piedra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las distintas técnicas de conformado de prefabricados, relacionándolas con los materiales, las herramientas y la maquinaria específica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han mezclado los materiales pétreos con resinas y compactos pétreos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado los moldes y se ha realizado el conformado mixto de la piedra natural y prefabricados de otros materiales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de llenado, vaciado y desmoldado según los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los defectos en productos elaborados originados en las operaciones de conformado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos. 6 Clasifica y etiqueta los productos para su almacenaje o expedición, relacionando sus características técnicas y funcionales con sus aplicaciones y destinos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito y seleccionado los procesos de clasificación y etiquetado de los productos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado los criterios de calidad a los productos elaborados de piedra natural."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han seleccionado y manejado los equipos y útiles adecuados para el movimiento de productos elaborados en cada punto del proceso productivo."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han preparado y manejado los equipos de embalaje, etiquetado y almacenaje."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha cargado y estibado el producto elaborado, asegurando su estabilidad."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se han clasificado y ubicado las piezas conforme a los criterios establecidos."
+            },
+            {
+              "codigo": "o",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y accidentes derivados de la manipulación de los materiales, equipos, maquinaria y medios auxiliares en los trabajos de elaboración de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad, de protección personal y colectiva que se deben adoptar en la ejecución de operaciones de elaboración de piezas de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la manipulación de materiales, equipos, maquinaria e instalaciones con las medidas de seguridad y protección personal requeridas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el orden y la limpieza de tajos, instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los procedimientos establecidos para el almacenamiento, control y gestión de los residuos resultantes del proceso de corte y elaboración de piezas de piedra natural."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las medidas de seguridad establecidas para el apilado, embalado y estabilización de las piezas de piedra natural."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han clasificado los residuos del embalado y etiquetado en los contenedores correspondientes, para su posterior entrega al gestor autorizado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Modelos en obras de piedra",
+      "codigo": "0890",
+      "ects": null,
+      "horas_minimas_boe": 115,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los documentos y representaciones de los proyectos de obras de piedra natural, interpretando la metodología de representación de los planos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado la estructura y contenidos de un proyecto de piedra natural, reconociendo los medios más adecuados para su representación gráfica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado e interpretado los sistemas de representación gráfica para desarrollar la solución constructiva."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los sistemas de normalización en representaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los útiles de representación y formatos de planos utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han interpretado las diferentes vistas, secciones y detalles de los planos, determinando la información contenida en cada caso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y descrito las técnicas de representación de luz, sombra y colores en proyectos de piedra natural."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los programas informáticos necesarios, identificando sus características y aplicaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han caracterizado los modelos, moldes y maquetas tridimensionales utilizados en obras de piedra natural."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora bocetos y croquis de elementos y obras de piedra natural, definiendo las soluciones constructivas de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y analizado los elementos representados, relacionándolos con sus características constructivas y su forma de representación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha representado en el croquis las formas, dimensiones y materiales que integran la solución."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han representado las vistas, detalles y los despieces necesarios en el croquis."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las técnicas de representación de luz y sombra para la reproducción de volúmenes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las técnicas y materiales para dar color a dibujos de obras de arte de piedra natural, relacionándolas con los distintos materiales o texturas que hay representar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha utilizado la simbología normalizada y la escala adecuada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la proporcionalidad del los elementos representados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado el croquis, siguiendo las normas de representación gráfica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Dibuja planos de elementos de obras de piedra natural, utilizando programas de diseño gráfico y aplicando las normas de representación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el sistema de representación y las unidades adecuadas a las características de la obra de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los útiles y soportes necesarios para la realización de los planos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado programas informáticos de dibujo técnico, identificando sus principales funciones y aplicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado el formato y las escalas normalizadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han representado los elementos de detalle y despiece de los elementos de piedra."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha acotado el modelo y las piezas según las normas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han incorporado al plano leyendas sobre el proceso de montaje."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado la correspondencia entre los elementos representados y el proceso de montaje de los mismos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha dibujado el plano con precisión y calidad, en el tiempo previsto."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha impreso y archivado el plano en soporte papel y digital."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza plantillas para trazar y verificar formas en obras de piedra natural, relacionando el material utilizado y los procesos de elaboración.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las técnicas para diseñar y dibujar las plantillas, a partir de un proyecto definido, en función de la obra que se va a realizar y del proceso de elaboración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el número de plantillas necesarias para trazar y verificar las formas de la obra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el material soporte adecuado para la realización de las plantillas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han dibujado sobre el material de la plantilla los perfiles de cada diseño, con la forma y las medidas a escala real."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado y utilizado la maquinaria, útiles de corte y repasado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han cortado las plantillas, siguiendo el trazado dibujado y se han repasado las aristas de las plantillas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han trazado sobre el material soporte los perfiles de cada plantilla."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado que las medidas de la plantilla se corresponden con las reflejadas en los planos utilizados como base, comprobando la obra realizada."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y de protección ambiental en la realización de plantillas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Representa elementos en tres dimensiones, identificando las técnicas, herramientas y útiles de modelado y mixtas para desarrollar modelos, moldes y maquetas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los materiales utilizados para la realización de maquetas, moldes y modelos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado e identificado las técnicas, herramientas y útiles empleados en la realización de maquetas y modelos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las técnicas para generar volúmenes, aplicando distintas escalas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado volúmenes mediante aplicaciones informáticas 3D, representando el objeto que se va a realizar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprobado las dimensiones y características del modelo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los tipos de armadura para la fabricación de maquetas y modelos, distinguiendo sus aplicaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado maquetas y modelos con técnicas de modelado y técnicas mixtas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado y aplicado técnicas de acabado, color y textura en modelos y maquetas, relacionándolos con el material empleado y su uso posterior."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y de protección ambiental, retirando los excedentes y residuos resultantes de la elaboración de las maquetas y modelos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Conocimiento y extracción de piedra",
+      "codigo": "0892",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Clasifica las rocas, relacionando sus características con las aplicaciones de la piedra natural.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las rocas, clasificándolas como ígneas, metamórficas y sedimentarias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principales mármoles nacionales, relacionándolos con su utilización y aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las principales pizarras nacionales, relacionándolas con su utilización y aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los principales granitos nacionales, relacionándolos con su utilización y aplicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las principales rocas y piedras naturales utilizadas en cantería."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las características y propiedades de la piedra natural."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado ensayos sencillos para evaluar las características y propiedades de la piedra natural."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido las rocas por observación directa y con la ayuda de los resultados de ensayos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza y aplica las técnicas de extracción de piedra natural, relacionando la maquinaria de corte y perforación con el arranque de bloques de piedra natural.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los factores que afectan a las explotaciones de piedra natural, relacionándolas con las técnicas de extracción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha secuenciado la metodología de explotación de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han marcado los planos de corte sobre la masa de piedra, reconociendo las diaclasas y planos de despegue de la piedra natural."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha replanteado la posición, dirección e inclinación de barrenos para el paso del hilo diamantado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha preparado la maquinaria y los medios de extracción de piedra natural."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los bloques o rachones que se van a utilizar y se ha colaborado en el transporte."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y de protección ambiental en los trabajos de extracción de piedra natural."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza el corte de bloques con técnicas y maquinaria de arranque mecanizado, describiendo el proceso en función de las características de la explotación y maquinaria.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha nivelado el terreno donde se ubica la maquinaria según la dirección de corte y se ha colocado la maquinaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han programado las máquinas de corte, ajustando sus parámetros a la naturaleza de la roca."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado los taladros de paso del hilo diamantado, logrando la conexión entre ellos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado redes de abastecimiento de agua y eléctricas en cada caso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha operado con la maquinaria de corte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha sustituido el material y útiles de corte, siguiendo los manuales de uso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha preparado y colaborado en la separación y abatimiento de los bloques primarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria de arranque mecanizado, siguiendo las instrucciones del manual de mantenimiento."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Prepara y realiza las perforaciones para el arranque de bloques de piedra natural, relacionando las especificaciones técnicas con la secuencia de las operaciones que se van a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado la secuencia de extracción según la maquinaria y tipo de roca."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha preparado la maquinaria de perforación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado que el plano de corte coincide con el plano deseado de despegue del bloque primario."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han dispuesto los barrenos, aprovechando los cortes naturales de las rocas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los taladros, siguiendo los esquemas de perforación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria de perforación, siguiendo las instrucciones del manual de mantenimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Conforma el bloque de piedra natural, caracterizando las técnicas de subdivisión y escuadreo que se van a utilizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las operaciones de subdivisión de bloques, identificando los planos de corte y exfoliación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha estabilizado el bloque y la maquinaría para conformarlo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado y utilizado maquinaria para conformar y subdividir el bloque."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado y utilizado maquinaria para escuadrar el bloque."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado y marcado los bloques para su almacenamiento y expedición."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria de conformado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Tecnologías de mecanizado de piedra natural",
+      "codigo": "0895",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los procesos de mecanizado y corte de piedra natural, relacionando las técnicas con las maquinaria y piezas que se van a elaborar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los procesos de corte y desbaste."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los procesos de fresado y torneado de piedra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los procesos de escaneado y trazado con agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las tareas especiales de acabado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han planificado los procesos en función de la pieza o modelo que se va a obtener."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han calculado los tiempos de ejecución en función del sistema de mecanizado, material y pieza que se quiere obtener."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las distintas clases de máquinas de control numérico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora programas de control numérico, interpretando y analizando documentación técnica, modelos y materiales para el mecanizado de piezas de piedra.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha utilizado y manejado documentación gráfica, plantillas, modelos y entidades geométricas de contorno de piezas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los modelos geométricos con los movimientos de cada herramienta en la programación estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las etapas en la elaboración de programas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han introducido los datos tecnológicos en el programa de mecanizado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado y programado los lenguajes de programación asistida y de control numérico y movimiento de herramientas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado las herramientas y útiles para el proceso de mecanizado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han respetado las indicaciones contempladas en el manual de programación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado los programas para el control numérico mediante aplicaciones informáticas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han corregido los errores detectados en la simulación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara máquinas de control numérico, relacionando los útiles y herramientas de corte con las técnicas y procedimientos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los útiles para efectuar el mecanizado del material."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han montado las herramientas, útiles y soportes de fijación de piezas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha cargado y simulado el programa en el controlador de la máquina."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha secuenciado el sistema de alimentación, retirada y transporte de piezas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ajustado los parámetros de la máquina y se han introducido los valores en las tablas de herramientas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la puesta en marcha y se ha tomado la referencia de los ejes de la máquina."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado los instrumentos de medición y verificación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Controla el proceso de mecanizado, relacionando el funcionamiento del programa de control numérico con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha manejado la máquina, procesando la pieza en vacío y comprobando las trayectorias de las herramientas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha ajustado el programa de control numérico en caso necesario."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha ejecutado el programa en la pieza real, ajustando parámetros y verificando el mecanizado de la pieza."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha programado el número de piezas necesarias, optimizando los desplazamientos en la máquina."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las piezas, comprobando su calidad y el acabado requerido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la parada de la máquina y se ha retirado el material obtenido."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el proceso de control, respetando los procedimientos, las normas y las recomendaciones que se especifican en la documentación técnica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de las máquinas de fabricación asistida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y los accidentes derivados de la manipulación de materiales, equipos, maquinaria y medios auxiliares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de operaciones de fabricación asistida en piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la manipulación de materiales, equipos, maquinaria e instalaciones con las medidas de seguridad y protección personal requeridas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en las operaciones de mecanizado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado el orden y la limpieza de tajos, instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido los procedimientos establecidos para el almacenamiento, control y gestión de los residuos resultantes del proceso de mecanizado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Tratamientos superficiales",
+      "codigo": "0888",
+      "ects": null,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Pule la piedra natural, relacionando las técnicas con el tipo de material, para obtener el acabado superficial con la calidad exigida.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las técnicas de pulido de la piedra natural de acuerdo con los documentos de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las técnicas de pulido de productos de piedra natural con los equipos e instalaciones empleados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los diferentes procedimientos de pulido de la piedra natural."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los abrasivos y sus correspondientes series de colocación, según las características de la piedra y el acabado final requerido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado y manejado los equipos, las máquinas y herramientas pulidoras, conforme al tratamiento que se va a realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las técnicas de pulido y se han introducido los parámetros del proceso."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado y corregido los posibles defectos del tratamiento, relacionándolos con las causas que los provocan."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha verificado que los pulidos cumplen con las especificaciones definidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica tratamientos superficiales de carácter físico, describiendo el proceso en función de las características de la piedra sobre la que se aplica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las técnicas de tratamientos físicos superficiales, relacionándolos con los equipos e instalaciones y con los documentos de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los diferentes procedimientos de tratamiento superficial en función de los resultados que se pretenden obtener."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las labores previas y accesorias de preparación del material."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado los parámetros del proceso y se han seleccionado los útiles y equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manejado la maquinaria y equipos para tratar superficialmente cada material."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y corregido posibles defectos y se ha verificado su acabado conforme a las especificaciones técnicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza tratamientos químicos relativos a la piedra natural, identificando las técnicas y procedimientos y caracterizando las máquinas, productos y consumibles.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las técnicas de tratamiento químico, relacionándolas con los equipos e instalaciones y con los documentos de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y secuenciado los diferentes procedimientos en función de los resultados esperados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y preparado las distintas máquinas, herramientas, útiles y consumibles para cada uno de los tratamientos químicos superficiales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han elaborado los preparados químicos, siguiendo las especificaciones técnicas y de seguridad del fabricante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manejado la maquinaria, equipos y medios para aplicar productos químicos a cada material, obteniendo los acabados con la calidad requerida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han previsto posibles defectos, relacionándolos con las causas que los provocan y se han propuesto soluciones o alternativas de tratamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado que las características del elemento obtenido se ajustan a las especificaciones técnicas. 4 Clasifica y etiqueta los productos para su almacenaje o expedición, relacionando sus características técnicas, estéticas y funcionales con sus aplicaciones y destinos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado los criterios de medición a los productos de piedra natural."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han descrito y seleccionado los procesos de clasificación y etiquetado de los productos, en función de los criterios de calidad establecidos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han preparado y manejado los equipos de embalado, etiquetado y almacenado."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se han clasificado y ubicado las piezas conforme a los criterios establecidos."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se ha identificado la trazabilidad del producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que supone la manipulación de los materiales, herramientas, útiles y máquinas de tratamientos superficiales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección individual y colectiva que se deben adoptar en la ejecución de operaciones de tratamientos superficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas que se deben emplear en las distintas operaciones del tratamiento superficial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han recogido los residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comercialización de obras de piedra",
+      "codigo": "0891",
+      "ects": null,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza mediciones de partidas de obra, relacionando las unidades obtenidas con los elementos de piedra natural.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los productos y servicios ofertados en piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han manejado los catálogos y manuales técnicos relacionados con trabajos y obras de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el asesoramiento sobre productos de piedra natural."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los criterios de medición de las partidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado la documentación gráfica relacionada con las mediciones que se pretenden realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las medidas sobre planos, utilizando la escala especificada según los criterios de medición establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han tomado medidas en áreas y zonas donde se ubicará el conjunto o pieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Analiza los costes, relacionándolos con las características de los equipos, materiales y mano de obra.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han manejado los catálogos y manuales de precios en trabajos de piedra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado bases de datos para la obtención de las partidas de obra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han obtenido los datos de los rendimientos de la maquinaria y mano de obra empleada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han obtenido los precios de los materiales empleados en las diferentes partidas de obra."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido las tablas salariales que determinan los costes de personal."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido los costes y los horarios de uso de la maquinaria y equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los costes directos y se han relacionado con los indirectos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los precios descompuestos y unitarios de la partida de obra."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Calcula los precios de los productos y trabajos de piedra, valorando los costes y beneficios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ordenado los tipos de costes existentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las variables que intervienen en el coste y en el beneficio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el método para calcular los costes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el escandallo del producto elaborado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han actualizado los precios a partir de la variación de los costes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los condicionantes de los precios de venta de los productos de piedra natural."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado el coste de producción por unidad de producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Elabora presupuestos, relacionando los costes de los productos y servicios con los equipos y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ordenado las mediciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han calculado los precios unitarios y descompuestos, el estado de mediciones y los detalles precisos para su valoración."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el tipo de presupuesto que se debe elaborar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el presupuesto por cada partida, relacionando la medición y el precio unitario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el presupuesto total, considerando los gastos generales y los impuestos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha redactado la memoria o ficha justificativa del trabajo que hay que realizar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Configura las mediciones y presupuestos, empleando e identificando herramientas informáticas específicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han manejado las bases de datos que contienen los precios de las partidas de obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las unidades que se deben incluir en las diferentes partidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han adjuntado las mediciones de las partidas de obra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha generado el presupuesto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido los informes y anexos oportunos al presupuesto a través de los programas específicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza el proceso de venta, describiendo el procedimiento para el cobro y presentación de productos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las variables que intervienen en el precio de venta."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los procesos de facturación y cobro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han calculado los descuentos, el precio de venta total y las ratios comerciales, en función de las condiciones de pago e impuestos que gravan la operación de venta."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cumplimentado la factura, indicando todos los datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el cobro de la factura, utilizando las distintas fórmulas o formas de pago."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de devolución o cambio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado la normativa de protección de datos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Talla y montaje de piedra natural",
+      "codigo": "0893",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona y replantea los bloques, relacionando las características del material y el tipo de trabajo que se va a realizar con la fabricación de piezas de piedra natural.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el bloque según los requerimientos y especificaciones técnicas, en función del destino final de las piezas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado que el bloque tiene las dimensiones adecuadas para la elaboración de las piezas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha inspeccionado la calidad de la piedra, comprobando anomalías y deficiencias y asegurando que es conforme al trabajo que hay que realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han marcado las piezas que se van a elaborar sobre el bloque seleccionado para optimizar el aprovechamiento del material."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos derivados de la manipulación de bloques en función del tamaño y del tratamiento al que se va a someter el bloque."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Desbasta y corta la piedra, relacionando el material y las formas requeridas con las técnicas, maquinaria y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado y secuenciado las técnicas y fases de desbaste y corte de la piedra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la ubicación y fijación de las piezas sobre la plataforma de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado y manejado la maquinaria y equipos para el desbaste y corte de las piezas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han regulado los parámetros de las máquinas y herramientas para optimizar el proceso de corte y desbaste de piezas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han retirado los excedentes y residuos procedentes de las operaciones de desbaste y corte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de las herramientas manuales y máquinas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Talla piezas de piedra natural, relacionando la geometría de las formas con la utilización de máquinas, herramientas y útiles manuales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las técnicas de talla manual y mecanizada de piezas de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las máquinas, herramientas y útiles de talla conforme a su aplicación y manejo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han transportado las medidas del plano y modelo a las piezas, aplicando las técnicas de reproducción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han efectuado las operaciones de talla."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la forma y dimensiones de las piezas, comprobando que se corresponden con la documentación de referencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han corregido las desviaciones y se han obtenido las piezas talladas con las características requeridas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de las herramientas manuales y máquinas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Monta conjuntos y obras de artesanía de piedra natural, caracterizando los tipos de anclaje, morteros, sistemas auxiliares de colocación y sustentación en función de la obra que se va realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación gráfica y técnica, relacionándola con el sistema y secuencia del premontaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado y ajustado las medidas reales en obra con las de los planos y el espacio donde van a ser montadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado sistemas de elevación, desplazamiento y elementos auxiliares para la manipulación de piezas de piedra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de sujeción y ajuste de anclajes de los componentes de piedra natural, asegurando su estabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprobado los encajes y ajustes mediante una presentación del elemento que se va a montar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado los tipos de morteros, adhesivos a las piezas del conjunto y soportes, caracterizando los sistemas de apoyo y sustento de las piezas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los trabajos de acabado, tratamiento de juntas y protección."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza los trabajos de acabado en piedra natural, describiendo la secuencia de las operaciones que van a realizar y siguiendo las especificaciones y documentación técnicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el sistema, la técnica, maquinaria y equipos, en función del acabado especificado y tipo de piedra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han manejado los equipos y maquinaria para aplicar el tratamiento superficial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado y preparado los productos y útiles empleados en los tratamientos y acabado de la piedra natural."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha mezclado la cantidad de producto necesario para conseguir el efecto deseado, según los requisitos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el resultado de los tratamientos y acabados superficiales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado, etiquetado, embalado, transportado y almacenado las piezas acabadas con criterios de calidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la limpieza y mantenimiento de primer nivel de la maquinaria, equipos y herramientas. h)"
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos generales y los específicos correspondientes a los trabajos de talla de piezas de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección individual y colectiva que se deben adoptar en la ejecución de operaciones de talla de piezas de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas, herramientas e instalaciones auxiliares."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han manejado las distintas máquinas eléctricas, neumáticas y herramientas manuales, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han manipulado las cargas, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manipulado y almacenado los productos químicos, respetando las normas de seguridad para la manipulación y almacenamiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han clasificado y recogido los residuos generados para su retirada selectiva, de acuerdo con las normas de protección ambiental vigentes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Restauración de piedra natural",
+      "codigo": "0894",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce las principales alteraciones y procesos de deterioro, relacionándolos con las técnicas de intervención en la piedra natural y sus causas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación gráfica y técnica, relacionándola con los trabajos de restauración de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las operaciones de acondicionamiento de tajos para los trabajos de restauración de la piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los daños y preparado los instrumentos y útiles necesarios para realizar las operaciones de tratamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los factores físicos, químicos y biológicos lesivos para la piedra natural, en función del contexto medioambiental y climático y del tipo de piedra, reconociendo sus efectos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la influencia de la contaminación atmosférica como factor sumativo en la degradación de la piedra."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los elementos o depósitos nocivos para los elementos de piedra natural, identificando cómo afectan a los distintos tipos de piedra."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado las técnicas de intervención, utilizadas para la preservación de los elementos y conjuntos en piedra natural, con los diferentes tipos de alteración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tomado muestras para su posterior análisis, siguiendo los procedimientos establecidos y las instrucciones técnicas recibidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Limpia las obras en piedra natural, caracterizando las técnicas y empleando las herramientas y útiles adecuados a los distintos materiales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los tipos de limpieza de la piedra mediante métodos físicos, mecánicos y químicos, según el material, sistema de agarre y tipo de obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y preparado los equipos y maquinaria específicos para la limpieza de obras de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han protegido los elementos adyacentes al material que hay que limpiar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la limpieza de la piedra para eliminar aquellos elementos que le sean extraños o dañinos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han respetado las dosificaciones y tiempos de aplicación establecidas en las aplicaciones de productos de limpieza."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manejado los equipos especiales de limpieza, ajustando los parámetros de regulación en función de la suciedad existente en la superficie de la piedra."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha actuado ante la aparición de anomalías, pátinas y policromías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de los equipos y maquinaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Elabora y aplica morteros y consolidantes con diferentes composiciones, texturas y coloraciones, caracterizando las técnicas de restitución de superficies y volúmenes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha preparado y verificado la adecuación del soporte y las superficies que hay que tratar según el tipo de material que se va a utilizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los morteros con la dosificación, coloración y textura requeridas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado pruebas de color y aplicación sobre el paramento que se va a reparar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han rellenado los volúmenes complejos con mortero o material de base."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado y aplicado las técnicas de modelado de superficies y volúmenes con las herramientas y equipos que hay que utilizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado y manejado los equipos, herramientas y medios auxiliares para la aplicación del mortero de acabado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Repone piezas y elementos de piedra natural, relacionando las técnicas y la maquinaria con los procedimientos de restitución y anclaje, según la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de montaje y restitución de piezas, contrastando la información recibida con las características de la obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las técnicas de montaje y colocación de elementos de piedra natural con los equipos e instalaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado y manejado la maquinaria, equipos y medios auxiliares necesarios para la sustitución de los elementos de piedra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado el tipo de piedra y los productos consumibles en función de las características de la obra."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado la información relativa a soportes, anclajes y uniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la adecuación del soporte y se han preparado las superficies, en función del sistema de anclaje que se va a utilizar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han colocado las piezas mediante adherentes o anclajes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado operaciones de relleno de juntas, remate y limpieza."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica tratamientos de protección a elementos en piedra natural, siguiendo las especificaciones técnicas de los productos y las instrucciones recibidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito en documentos de trabajo las técnicas de tratamiento, protección y consolidación, relacionándolas con los equipos e instalaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y preparado las distintas máquinas, herramientas, útiles y consumibles para cada uno de los tratamientos químicos de protección."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elaborado los preparados químicos, siguiendo las especificaciones técnicas y de seguridad del fabricante."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han protegido las zonas adyacentes a las que deben ser tratadas, de acuerdo con sus características y con las del producto que se va a emplear."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado los elementos que se van a tratar, eliminando suciedades, restos de morteros o elementos extraños a la piedra."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha manejado la maquinaria los equipos y los medios para aplicar productos químicos a cada material."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han solucionado los errores de aplicación y propuesto alternativas de tratamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y accidentes derivados de la manipulación de los materiales, equipos, maquinaria y medios auxiliares en los trabajos de restauración de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad de protección personal y colectiva que se deben adoptar en la ejecución de operaciones de restauración de obras en piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la manipulación de materiales, equipos, maquinaria e instalaciones con las medidas de seguridad y protección personal requeridas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de los trabajos de restauración de piedra natural."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado el orden y la limpieza de tajos, instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido los procedimientos establecidos para el almacenamiento, control y gestión de los residuos resultantes del proceso de colocación y montaje de elementos de piedra natural."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Montaje de piedra natural",
+      "codigo": "0896",
+      "ects": null,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Replantea y acondiciona la obra, describiendo la secuencia de operaciones que va a realizar según la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación gráfica y técnica, relacionándola con los trabajos de colocación de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las operaciones de replanteo y acondicionamiento de tajos para la colocación de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y preparado los instrumentos y útiles necesarios para realizar las operaciones de replanteo y acondicionamiento de las obras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han trasladado, ubicado y acopiado en obra las piezas y despieces en piedra natural."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha preparado el entorno de trabajo en función de las tareas que se van a desarrollar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han posicionado las referencias y sistemas de anclaje para guiar la colocación de elementos de piedra."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han colocado los elementos auxiliares previos al levantamiento de fábricas y conjuntos de piedra natural."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las técnicas de medición y comprobación para el replanteo de obras de colocación y montaje de conjuntos despieces, y fachadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Levanta fábricas de piedra natural, relacionando las técnicas y el tipo de material con los útiles y equipos que se van a utilizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los tipos de colocación de piedra en mampostería y sillería según el material, sistema de agarre y tipo de obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y preparado los equipos y maquinaria específicos para la construcción de fábricas de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han ajustado en obra las piezas, utilizando las herramientas y útiles adecuados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han colocado las piezas, en seco, con anclajes, morteros y otros adhesivos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los huecos y encuentros de obra singulares definidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han rematado los trabajos de fábricas de piedra y se han realizado las labores complementarias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de los equipos y maquinaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Construye arcos y otros remates singulares en mampostería y sillería, describiendo y aplicando las técnicas para la solución constructiva de la obra de piedra.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica de acuerdo con las características de la obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las técnicas de montaje de arcos, dinteles, cornisas, columnas y otros elementos, con los materiales, equipos y documentos de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y manejado los equipos, herramientas y medios auxiliares para la realización de la obra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado plantillas para la colocación de elementos singulares."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el ajuste, remate y otras labores complementarias de las piezas y del conjunto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Coloca y monta piezas y elementos singulares de piedra natural, caracterizando las máquinas y los productos consumibles.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de despiece y montaje, contrastando la información recibida con las características de la obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las técnicas de montaje y colocación de elementos singulares de piedra natural con los equipos e instalaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado y manejado la maquinaria, equipos, productos y consumibles necesarios para el montaje de los elementos singulares de piedra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han manejado plantillas y moldes conforme a las especificaciones requeridas para la colocación de conjuntos singulares."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han colocado las piezas mediante adherentes o anclajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha resuelto el encuentro con otros elementos constructivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han ejecutado las labores de acabado de los elementos singulares, garantizando la funcionalidad y estética del conjunto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Monta fachadas transventiladas de piedra natural, relacionando las técnicas y la maquinaria con los procedimientos de anclaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la información relativa a soportes, anclajes y uniones y su relación con las características de la obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado la adecuación del soporte para el tipo de subsistema de anclaje que se va a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y manejado los equipos, herramientas y medios auxiliares para la realización de la obra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han fijado los elementos del subsistema de anclaje, asegurando su estabilidad y resistencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ajustado las piezas de revestimiento y comprobado su sistema de posicionamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han unido las piezas al sistema de anclaje según el diseño del proyecto y las instrucciones del fabricante."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado operaciones de remate y limpieza para su entrega final."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han montado y desmontado elementos para su reparación conservación y mantenimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas de colocación de piedra natural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección individual y colectiva que se deben adoptar en la ejecución de operaciones de colocación de piedra natural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas que se deben emplear en las distintas operaciones de colocación de piedra natural."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han manejado las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han recogido los residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664227",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708227",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713915",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM227",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

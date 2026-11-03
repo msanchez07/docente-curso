@@ -1,0 +1,3081 @@
+{
+  "id": "gm-mantenimiento-electromecanico",
+  "denominacion": "Mantenimiento Electromecánico",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Instalación y Mantenimiento",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "MEN",
+  "rd": "Real Decreto 1589/2011, de 4 de noviembre, por el que se establece el Título de Técnico en Mantenimiento Electromecánico y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-19538",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas de fabricación",
+      "codigo": "0949",
+      "ects": null,
+      "horas_minimas_boe": 125,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina la forma y dimensiones de los productos que se van a fabricar, interpretando la simbología y asociándola con su representación en los planos de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los diferentes sistemas de representación gráfica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los diferentes formatos de planos empleados en fabricación mecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprendido el significado de las líneas representadas en el plano (aristas, ejes, auxiliares, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha deducido la forma del objeto representado en las vistas o sistemas de representación gráfica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los cortes y secciones representados en los planos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las diferentes vistas, secciones y detalles de los planos, determinando la información contenida en éstos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado las formas normalizadas del objeto representado (roscas, soldaduras, entalladuras y otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica tolerancias de formas y dimensiones y otras características de los productos que se quieren fabricar, analizando e interpretando la información técnica contenida en los planos de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los elementos normalizados que formaran parte del conjunto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las dimensiones y tolerancias (geométricas, dimensionales y superficiales) de fabricación de los objetos representados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los materiales del objeto representado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los tratamientos térmicos y superficiales del objeto representado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los elementos de unión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la influencia de los datos determinados en la calidad del producto final."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza croquis de utillajes y herramientas para la ejecución de los procesos, definiendo las soluciones constructivas en cada caso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el sistema de representación gráfica más adecuado para representar la solución constructiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los instrumentos de representación y soportes necesarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el croquis de la solución constructiva del utillaje o herramienta según las normas de representación gráfica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha representado en el croquis la forma, dimensiones (cotas, tolerancias dimensionales, geométricas y superficiales), tratamientos, elementos normalizados y materiales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado un croquis completo de forma que permita el desarrollo y construcción del utillaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto posibles mejoras de los útiles y herramientas disponibles."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Selecciona el material de mecanizado, reconociendo las propiedades de los materiales y relacionándolas con las especificaciones técnicas de la pieza que se va a construir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las dimensiones del material en bruto, teniendo en cuenta las características de los procesos de mecanizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las características de maquinabilidad con los valores que las determinan."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado las condiciones más favorables de mecanizado de los materiales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha obtenido la referencia comercial del material seleccionado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado cada material con sus aplicaciones tecnológicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los riesgos inherentes a la manipulación de materiales y evacuación de residuos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha observado una actitud ordenada y metódica en la realización de las actividades."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido los tipos de aceros por su designación numérica y simbólica."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado ensayos microscópicos y de dureza."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han relacionado los tratamientos térmicos y termoquímicos, con las características que aportan a los metales."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han efectuado tratamientos de acuerdo a la naturaleza del material y a las exigencias del trabajo que se van a realizar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Controla dimensiones, geometrías y superficies de productos, comparando las medidas con las especificaciones del producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los instrumentos de medida, indicando la magnitud que controlan, su campo de aplicación y precisión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el instrumento de medición o verificación en función de la comprobación que se pretende realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han montado las piezas que hay que verificar según el procedimiento establecido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los tipos de errores que influyen en una medida."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado técnicas y procedimientos de medición de parámetros dimensionales, geométricos y superficiales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han registrado las medidas obtenidas en las fichas de toma de datos o en el gráfico de control."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los valores de referencia y sus tolerancias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica técnicas de mecanizado manual, relacionando los procedimientos con el producto que se va a obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han preparado los materiales, útiles, herramientas de corte y medios auxiliares para la ejecución de los procesos de fabricación mecánica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han elegido los equipos y herramientas de acuerdo con las características del material y exigencias requeridas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado la técnica operativa (roscado y corte, entre otras) para ejecutar el proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comprobado las características de las piezas mecanizadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las deficiencias debidas a las herramientas, a las condiciones de corte y al material."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han interpretado los croquis y planos para ejecutar la pieza."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seguido la secuencia correcta en las operaciones de mecanizado, de acuerdo al proceso que hay que -realizar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han obtenido las dimensiones y forma estipulada a la pieza, aplicando técnicas de limado y corte, entre otras."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado técnicas de ajuste para obtener la calidad superficial exigida en el croquis."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha verificado que las medidas finales de la pieza están dentro de la tolerancia estipulada."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las medidas de seguridad exigidas en el uso de los útiles y herramientas de mecanizado manual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Opera máquinas-herramientas de arranque de viruta, relacionando su funcionamiento con las condiciones del proceso y las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado máquinas y equipos adecuados al proceso de mecanizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado fases y operaciones necesarias para la fabricación del producto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elegido herramientas y parámetros de corte apropiados al mecanizado que hay que realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han efectuado operaciones de mecanizado según el procedimiento establecido en el proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprobado las características de las piezas mecanizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha obtenido la pieza con la calidad requerida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las diferencias entre el proceso definido y el realizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha discriminado si las deficiencias son debidas a las herramientas, condiciones y parámetros de corte, máquinas o al material."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han corregido las desviaciones del proceso, actuando sobre la máquina o herramienta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que supone la manipulación de los distintos materiales, herramientas, útiles, máquinas y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas y equipos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, pasos de emergencia, entre otros) de las máquinas y los equipos de protección individual (calzado, protección ocular, indumentaria, entre otros) que se deben emplear en las distintas operaciones del proceso de fabricación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas, máquinas y equipos con las medidas de seguridad y protección personal requeridas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los elementos de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las distintas operaciones del proceso de fabricación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado la normativa de seguridad, utilizando los sistemas de seguridad y de protección personal."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la importancia de las medidas de protección, en lo referente a su propia persona, la colectividad y el medio ambiente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado el orden y limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas de unión y montaje",
+      "codigo": "0950",
+      "ects": null,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina el proceso que se va a seguir en las operaciones de montaje y unión, analizando la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado la simbología y las especificaciones técnicas contenidas en los planos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes vistas, secciones, cortes y detalles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el trazado, materiales y dimensiones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las formas constructivas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el material de partida y su dimensionado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las fases y las operaciones del proceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las máquinas y los medios de trabajo para cada operación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado los criterios de calidad, seguridad y respeto al medio ambiente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tenido en cuenta los tiempos previstos para el proceso."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha elaborado la información correspondiente al proceso de trabajo que se va a seguir."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica los materiales empleados en los procesos de montaje y unión, reconociendo la influencia que ejercen sus propiedades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los materiales empleados en el montaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado las características y propiedades de los materiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los distintos tratamientos térmicos, con las propiedades de los materiales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los problemas de corrosión y oxidación de los materiales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procedimientos y técnicas que se utilizan para proteger de la corrosión y oxidación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han respetado los criterios de seguridad y medio ambiente requeridos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los trabajos con orden y limpieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Conforma chapas, tubos y perfiles, analizando las geometrías y dimensiones específicas y aplicando las técnicas correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el utillaje empleado en el marcado de chapas, perfiles y tubos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los distintos equipos de corte y deformación con los materiales, acabados y formas deseadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los equipos necesarios según las características del material y las exigencias requeridas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han calculado las tolerancias necesarias para el doblado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han efectuado las operaciones de trazado y marcado de forma precisa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han efectuado cortes de chapa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han efectuado operaciones de doblado de tubos, chapas y perfiles."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado las normas de prevención de riesgos laborales y protección del medio ambiente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han respetado los tiempos previstos para el proceso."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza uniones no soldadas, analizando las características de cada unión y aplicando las técnicas adecuadas a cada tipo de unión.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los distintos tipos de uniones no soldadas y los materiales que hay que unir."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la secuencia de operaciones que se van a realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las herramientas en función del material y el proceso que se va a realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han manejado las herramientas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado las zonas que se van a unir."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han efectuado operaciones de roscado, atornillado, engatillado, pegado y remachado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de seguridad y prevención de riesgos laborales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado las normas de uso y calidad durante el proceso."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han respetado los tiempos previstos para el proceso."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Prepara la zona de unión para el montaje de elementos fijos, analizando el tipo de soldadura y los procedimientos establecidos en la hoja de procesos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha efectuado la limpieza de las zonas de unión, eliminando los residuos existentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han perfilado las zonas de unión y se han preparado los bordes en función de la unión que se va a realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las masillas y aprestos antioxidantes en la zona de unión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los refuerzos para las uniones según especificaciones técnicas de la documentación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han colocado las piezas que hay que soldar, respetando las holguras, reglajes y simetrías especificadas en la documentación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la alineación de las piezas a soldar con las piezas adyacentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Prepara equipos de soldadura blanda, oxiacetilénica y eléctrica para el montaje de elementos fijos, identificando los parámetros, gases y combustibles que se han de regular y su relación con las características de la unión que se va a obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la simbología utilizada en los procesos de soldeo y la correspondiente a los equipos de soldadura utilizados en la fabricación mecánica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el equipo de soldadura y los materiales de aportación con arreglo al material base de los elementos que se van a unir."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha efectuado el ajuste de parámetros de los equipos y su puesta en servicio, teniendo en cuenta las piezas que se van a unir y los materiales de aportación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han regulado los gases teniendo en cuenta los materiales sobre los que se van a proyectar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha aplicado la temperatura de precalentamiento, considerando las características de los materiales y sus especificaciones técnicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el punteado de los materiales teniendo en cuenta sus características físicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha montado la pieza sobre soportes que garantizan un apoyo y sujeción correcto y evitando deformaciones posteriores."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Opera con equipos de soldadura blanda, oxiacetilénica y eléctrica, de forma manual y semiautomática, relacionando su funcionamiento con las condiciones del proceso y las características del producto que se va a obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han soldado piezas mediante soldadura blanda manteniendo la separación entre las piezas y precalentando la zona a la temperatura adecuada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han soldado piezas mediante soldadura eléctrica con electrodo revestido, manteniendo la longitud del arco, posición y velocidad de avance adecuada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la unión de piezas mediante soldadura oxiacetilénica, ajustando la mezcla de gases a las presiones adecuadas para fundir los bordes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han soldado piezas mediante soldadura MIG/MAG, manteniendo la posición de la pistola y la velocidad de alimentación adecuada al tipo de trabajo que hay que realizar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han soldado piezas mediante soldadura por puntos, aplicando la intensidad y el tipo de electrodos en función de la naturaleza y espesores de las piezas que hay que unir."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado que las soldaduras efectuadas cumplen los requisitos en cuanto a penetración, porosidad, homogeneidad y resistencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, en cuanto al manejo de máquinas y equipos de soldadura, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas de soldadura y proyección."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos de seguridad de las máquinas de soldar y los equipos de protección personal (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las operaciones de soldeo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la prevención y ejecución de las operaciones de soldadura y proyección."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Electricidad y automatismos eléctricos",
+      "codigo": "0951",
+      "ects": null,
+      "horas_minimas_boe": 140,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Mide parámetros de magnitudes eléctricas en circuitos eléctricos de corriente continua, comparándolos con los cálculos efectuados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características de conductores, aislantes y semiconductores, diferenciando su comportamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales magnitudes eléctricas (tensión, intensidad y resistencia) y se han utilizado correctamente sus unidades."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han resuelto problemas sobre la ley de Ohm, comprobando de forma práctica sus resultados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado cálculos de potencia y energía."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado de forma práctica los resultados a partir de los cálculos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado e interpretado esquemas de circuitos eléctricos, utilizando simbología normalizada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado cálculos de agrupaciones serie y paralelo de resistencias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido las propiedades de los condensadores y la función de éstos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado cálculos de agrupaciones de condensadores."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado las características y formas de conexión de aparatos de medida de tensión, intensidad, resistencia y potencia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han realizado medidas de tensión, intensidad, resistencia y potencia, observando las normas de seguridad de los equipos y de las personas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Mide parámetros de magnitudes eléctricas en circuitos eléctricos de corriente alterna monofásica, comparándolas con los cálculos efectuados y describiendo los aspectos diferenciales con la corriente continua.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características de una señal sinusoidal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los valores característicos de la corriente alterna (c.a)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han verificado las relaciones entre tensión, intensidad y potencia en circuitos serie RLC."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado el factor de potencia de circuitos de c.a."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado el factor de potencia con el consumo de energía eléctrica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado medidas de tensión, intensidad, potencia y factor de potencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha identificado como corregir el factor de potencia de una instalación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado cálculos de caídas de tensión en líneas monofásicas de c.a."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Mide parámetros de magnitudes eléctricas en un sistema trifásico, comparándolas con los cálculos efectuados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los sistemas de generación y distribución a tres o cuatro hilos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes formas de conexión de los receptores trifásicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la diferencia entre receptores equilibrados y desequilibrados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado medidas de tensión, intensidad, potencia y energía, según el tipo de sistema trifásico y del tipo de carga."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado cálculos de mejora del factor de potencia en instalaciones trifásicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica los dispositivos de protección que se deben emplear, relacionándolos con los riesgos y efectos de la electricidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha manejado el Reglamento Electrotécnico de Baja Tensión y la normativa de aplicación en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los inconvenientes del efecto térmico de la electricidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los riesgos de choque eléctrico en las personas y sus efectos fisiológicos, así como los factores relacionados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los riesgos de incendio por calentamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido los tipos de accidentes eléctricos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los riesgos derivados del uso de instalaciones eléctricas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado las reglas para la realización de trabajos sin tensión."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha calculado la sección de los conductores de una instalación, considerando las prescripciones reglamentarias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las protecciones necesarias de una instalación contra sobreintensidades y sobretensiones."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado los sistemas de protección contra contactos directos e indirectos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Ejecuta operaciones de mecanizado de cuadros, aplicando técnicas de medición y marcado utilizando máquinas y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la simbología y las especificaciones técnicas en los planos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado materiales (perfiles, envolventes y cuadros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las fases y las operaciones del proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado un plan de mecanizado y montaje."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado herramientas, medios técnicos y de seguridad según el requerimiento de cada intervención."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los equipos, herramientas, medios técnicos y de seguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado mediciones con la precisión exigida."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han ejecutado operaciones de distribución, trazado y marcado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha operado con las herramientas y equipos de trabajo característicos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han ejecutado las operaciones de mecanizado en perfiles, envolventes, cuadros y canalizaciones."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han resuelto las contingencias surgidas."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han tenido en cuenta los tiempos previstos para el proceso."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se han respetado los criterios de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Monta cuadros y sistemas eléctricos asociados, interpretando documentación técnica y verificando su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha obtenido información de croquis y esquemas de mando y maniobra de cuadros y sistemas eléctricos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado programas informáticos de CAD (computer aided design) electrotécnico para representar esquemas de mando y maniobra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado la normativa electrotécnica y convencionalismos de automatismos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado cada elemento con su función de conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han montado circuitos de mando y potencia para motores."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado maniobras con motores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado el funcionamiento de la instalación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado medidas y verificaciones para la localización de averías."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha operado con autonomía y destreza en la manipulación de elementos, equipos y herramientas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Automatismos neumáticos e hidráulicos",
+      "codigo": "0952",
+      "ects": null,
+      "horas_minimas_boe": 140,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los elementos que componen los circuitos neumáticos y electro-neumáticos, atendiendo a sus características físicas y funcionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la estructura y componentes que configuran las instalaciones de suministro de energía neumática."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características diferenciadoras entre los automatismos neumáticos y los electroneumáticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido por su función y tipología los distintos elementos utilizados en la realización de automatismos neumáticos y electroneumáticos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las distintas áreas de aplicación de los automatismos neumáticos y electroneumáticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido la secuencia de funcionamiento de un automatismo neumático/electroneumático."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha obtenido información de los esquemas neumáticos y electroneumáticos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha discriminado el equipo/circuito de mando del circuito de fuerza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificando los elementos que componen el equipo/circuito de mando y el circuito de fuerza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica los elementos que componen los circuitos hidráulicos y electro-hidráulico, atendiendo a sus características físicas y funcionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la estructura y componentes que configuran las instalaciones de suministro de energía hidráulica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características diferenciadoras entre los automatismos hidráulicos y electrohidráulico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido por su función y tipología los distintos elementos utilizados en la realización de automatismos hidráulicos y electrohidráulico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las distintas áreas de aplicación de los automatismos hidráulicos y electrohidráulico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido correctamente la secuencia de funcionamiento de un automatismo hidráulicos/electrohidráulico real o simulado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha obtenido información de los esquemas hidráulicos y electrohidráulico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha discriminado el equipo/circuito de mando del circuito de fuerza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los elementos que componen el equipo/circuito de mando y el circuito de fuerza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta automatismos neumático/electro-neumático e hidráulico/electro-hidráulico, interpretando la documentación técnica, aplicando técnicas de conexionado y realizando pruebas y ajustes funcionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado croquis para optimizar la disposición de los elementos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han distribuido los elementos en el panel de simulación de acuerdo a su situación en la máquina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha efectuado el interconexionado físico de los elementos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha asegurado una buena sujeción mecánica y/o una correcta conexión eléctrica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las variables físicas que se deben regular para realizar el control del automatismo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los útiles y herramientas adecuados para realizar ajustes y reglajes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han regulado las variables físicas que caracterizan el funcionamiento del automatismo neumático y/o hidráulico."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han ajustado los movimientos y carreras a los parámetros establecidos durante la ejecución de las pruebas funcionales en vacío y en carga."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizando ajustes y/o modificaciones para una adecuada funcionalidad del automatismo neumático y/o hidráulico."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido los resultados en el documento correspondiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Diagnostica el estado de elementos de sistemas neumáticos e hidráulicos, aplicando técnicas de medida y análisis.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tolerancias de fabricación aplicables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las medidas actuales de un componente neumático/hidráulico desgastado con las originales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha cuantificado la magnitud de los desgastes y erosiones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado desgastes normales y anormales de piezas usadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comparado los parámetros de las superficies erosionadas con los de la pieza original."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los desgastes de una pieza con las posibles causas que los originan."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aportado soluciones para evitar o minimizar desgastes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Escribe programas sencillos para autómatas programables, identificando las variables que hay que controlar y dando respuesta a las especificaciones de funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las variables que hay que controlar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha elaborado el diagrama de secuencia del control automático de una máquina o proceso secuencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinando el número de entradas, salidas y elementos de programa que se van a utilizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado diagramas de secuencia (diagramas de flujo y GRAFCET, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado el programa de control que cumpla las especificaciones de funcionamiento prescritas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha documentado el programa desarrollado con los comentarios correspondientes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica los elementos de los circuitos de automatismos de tecnología neumática/ electroneumática, e hidráulica/ electrohidráulica, cableados y programados, interpretando documentación técnica y describiendo sus características.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la simbología y elementos representados en los planos de circuitos de automatismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han distinguido las diferentes vistas, cortes y detalles, entre otros, de los elementos de los distintos circuitos expresados en los planos y/o especificaciones del fabricante."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el funcionamiento de cada subsistema con el conjunto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado las especificaciones técnicas para la determinación de los elementos necesarios en caso de montaje real."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los símbolos que aparecen en los planos con los elementos reales del sistema de una máquina."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las partes internas y externas de cada elemento (mediante el empleo de vistas, cortes y detalles, entre otros), que aparece en los planos y en las especificaciones técnicas del fabricante."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Configura físicamente sencillos automatismos cableados y/o programados para control automático, elaborando croquis y esquemas para su construcción.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han propuesto soluciones cableadas y/o programadas que cumplan las especificaciones de los automatismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado, a partir de catálogos técnico-comerciales, los equipos y materiales que cumplan las especificaciones técnicas y económicas establecidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado los cálculos mínimos necesarios para la configuración del automatismo neumático/hidráulico de una pequeña máquina o proceso secuencial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha documentado el proceso que se va a seguir en el montaje y pruebas del sistema neumático/hidráulico de un pequeña máquina o proceso secuencial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado el interconexionado físico de los elementos neumáticos/hidráulicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha efectuado el cableado y conexionado del autómata (entradas, salidas y alimentación)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han verificado las sujeciones mecánicas y conexiones eléctricas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha conseguido la adecuada integración entre las partes lógica y física del sistema."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado pruebas funcionales."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Montaje y mantenimiento mecánico",
+      "codigo": "0953",
+      "ects": null,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina los bloques funcionales de máquinas y equipos, interpretando planos de elementos y conjuntos de máquinas y equipos, diagramas de principio y esquemas de circuitos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han asociado las representaciones y símbolos normalizados empleados en la documentación técnica analizada con los elementos físicos a los que representan."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las clases o categorías de los elementos presentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las características geométricas relevantes de los elementos de cada bloque."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la disposición espacial e interrelación de los elementos asociados a un bloque."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido correctamente la función de cada uno de los elementos reflejados en la documentación dentro del bloque funcional al que pertenecen."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los posibles modos de funcionamiento de la instalación con el comportamiento de cada uno de los bloques funcionales que la constituyen."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza operaciones de montaje y desmontaje de elementos mecánicos y electromecánicos de máquinas, interpretando la documentación técnica suministrada por el fabricante de los equipos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la secuencia de montaje a partir de la documentación técnica pertinente al supuesto en cuestión (planos, procedimientos y especificaciones)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y organizado los útiles, herramientas y equipos necesarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comprobado las características de los elementos que hay que montar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha ejecutado el montaje/desmontaje del elemento con arreglo a los procedimientos prescritos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el resultado final del proceso de acuerdo con lo indicado en la documentación técnica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han empleado los equipos e instrumentos de medida y verificación adecuados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han ajustado los acoplamientos, alineaciones y movimientos, entre otros según especificaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han efectuado los trabajos de limpieza y engrase de los elementos mecánicos previos a la puesta en funcionamiento de la máquina."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha llevado a cabo la puesta en marcha de la máquina de acuerdo con sus especificaciones de funcionamiento."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han respetado las normas de seguridad e higiene y medioambientales aplicables."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha cumplimentado la documentación relativa al trabajo realizado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones simples de reparación o modificación del estado funcional de la máquina, respetando las instrucciones contenidas en los planos de referencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la secuencia de operaciones a ejecutar a partir de las características del trabajo planteado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los equipos, herramientas, útiles e instrumentos de medida adecuados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han trazado y graneteado correctamente las piezas que se van a mecanizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ajustado adecuadamente los parámetros de operación de las máquinas-herramientas y equipos de soldadura."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los procesos de mecanizado previstos de acuerdo a las especificaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado las piezas que hay que unir de modo que faciliten la ejecución de la soldadura."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han efectuado las uniones soldadas previstas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado la ausencia de defectos que puedan comprometer el posterior funcionamiento de las piezas fabricadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado la puesta en marcha de la maquinaria de acuerdo con las especificaciones."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han respetado las normas de seguridad e higiene y medioambientales."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha actualizado la documentación relativa a la máquina, reflejando los cambios efectuados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Ejecuta la instalación y acoplamiento de maquinaria y equipamiento electromecánico, efectuando pruebas de funcionamiento y verificando su operación posterior.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las diferentes fases del proceso de instalación a partir de la documentación técnica del proyecto de instalación o del fabricante."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el replanteo de la instalación de la maquinaria o equipo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha efectuado el movimiento de la maquinaria y equipos, empleando los medios y procedimientos adecuados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la alineación, nivelación y fijación de la maquinaria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado el acoplamiento entre máquinas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han optimizado métodos y tiempos empleados en el proceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han efectuado las pruebas de funcionamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado las normas de seguridad e higiene y medioambientales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha actualizado la documentación relativa a la maquinaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Diagnostica las averías o defectos de funcionamiento de los sistemas mecánicos de maquinaria, interpretando sus síntomas y relacionándolos con las disfunciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado el funcionamiento de cada uno de los bloques funcionales de la máquina, empleando su documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los síntomas de la avería o defectos de funcionamiento de la máquina con los bloques funcionales y los elementos que la componen."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han formulado hipótesis coherentes de las posibles causas del origen de la avería."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido un procedimiento sistemático y razonado de búsqueda de la causa de la avería o disfunción de acuerdo con el histórico de fallos de la máquina."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las herramientas, útiles e instrumentos de medida y verificación necesarios para la ejecución de cada una de las etapas del procedimiento de búsqueda."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han ejecutado con eficacia cada uno de los pasos prescritos en el procedimiento previsto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han ejecutado operaciones de desmontaje, medida y verificación técnica, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las causas de la avería o disfunción."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han localizado los elementos responsables de la avería o disfunción."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha cumplimentado adecuadamente la documentación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Diagnostica el estado de elementos y piezas de máquinas, utilizando los instrumentos de medida apropiados a cada caso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado el modo de funcionamiento del elemento a partir de la documentación técnica de la máquina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las herramientas, útiles e instrumentos de medida necesarios para su inspección."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado adecuadamente la medición y verificación de los elementos, tomando como referencia las características reflejadas en la documentación técnica de la máquina."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado cabalmente los defectos observados en los objetos de estudio, desgastes y roturas, con el proceso que lo ha originado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han propuesto mejoras en el diseño del elemento o de la máquina que mejoren su fiabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han respetado en todo momento las normas de seguridad e higiene aplicables en el supuesto práctico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cumplimentado la documentación relativa al trabajo realizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han elaborado croquis de elementos mecánicos que hay que sustituir."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Aplica técnicas de mantenimiento que impliquen sustitución de elementos mecánicos y electromecánicos de maquinaria y de líneas de producción automatizadas, seleccionando y aplicando los procedimientos que hay que seguir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las características del elemento que hay que sustituir a partir de la interpretación de la documentación técnica de mantenimiento de la máquina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado la secuencia de acciones que se van a realizar y procedimientos de montaje/desmontaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las herramientas, medios e instrumentos de medida necesarios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ejecutado adecuadamente los procesos de desmontaje, verificación, en su caso, sustitución y montaje de los elementos objeto del trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los trabajos de limpieza, engrase y ajustes previos necesarios para la puesta en funcionamiento de la máquina."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha efectuado la puesta en marcha de la máquina, garantizando el restablecimiento de sus condiciones funcionales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han respetado en todo momento las normas de seguridad e higiene y medioambientales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha cumplimentado adecuadamente la documentación relativa al trabajo realizado (partes de trabajo y check-list, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Lleva a cabo operaciones de mantenimiento que no impliquen sustitución de elementos mecánicos y electromecánicos de maquinaria y de líneas de producción automatizadas, seleccionando y aplicando los procedimientos que se van a seguir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las actividades, elementos y sistemas objeto de operación a partir de la documentación técnica de mantenimiento de la máquina (manual de instrucciones, planos constructivos, esquemas y programas de mantenimiento, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las herramientas, medios e instrumentos de medida necesarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han ejecutado de acuerdo a los procedimientos previstos las operaciones de mantenimiento indicadas (limpieza, engrase, lubricación, ajustes de elementos, corrección de holguras, tensado de correas e inspecciones visuales, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ajustado correctamente los instrumentos de medida, control y regulación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han efectuado las medidas de parámetros clave para proceder a la valoración del estado de máquinas y equipos (ruidos, vibraciones y temperaturas, entre otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han respetado en todo momento las normas de seguridad e higiene y medioambientales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cumplimentado la documentación relativa al trabajo realizado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Montaje y mantenimiento eléctrico-electrónico",
+      "codigo": "0954",
+      "ects": null,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce el funcionamiento de las máquinas eléctricas, identificando su aplicación y determinando sus características.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de máquinas eléctricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los elementos mecánicos y eléctricos de las máquinas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado cada elemento de la máquina con su función."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han calculado magnitudes eléctricas y mecánicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado las máquinas con sus aplicaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado sistemas de puesta en marcha de los motores eléctricos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado parámetros de variación de velocidad de los motores eléctricos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta y mantiene máquinas eléctricas rotativas, ensamblando sus elementos, realizando el conexionado y verificando su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado averías características y sus síntomas en máquinas eléctricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado medios y equipos para la localización de averías."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado medidas eléctricas para la localización de averías."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han sustituido diferentes componentes mecánicos como escobillas y cojinetes, entre otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reparado la avería."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han respetado los criterios de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica las características de los transformadores, realizando el conexionado y verificando su funcionamiento mediante cálculos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado los cálculos para posteriormente comprobar con mediciones el correcto funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado averías características y sus síntomas en pequeños transformadores monofásicos, trifásicos y autotransformadores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado medios y equipos de localización de averías."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha localizado la avería realizando medidas eléctricas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reparado la avería."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han respetado los criterios de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Monta y mantiene sistemas automáticos con control programable, interpretando documentación técnica y verificando su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las entradas, salidas (analógicas y digitales) y el referenciado de las mismas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han conectado los equipos y elementos periféricos del sistema."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido la comunicación del software con el dispositivo programable."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado circuitos de control básicos con autómatas programables."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado pequeños programas secuenciales de control a partir del GRAFCET."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado el funcionamiento del sistema."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han localizado y solucionado disfunciones en circuitos automáticos básicos con autómatas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de calidad en las intervenciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Ajusta sistemas de arranque, configurando los equipos de regulación y control de motores eléctricos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes sistemas utilizados para el arranque y control de máquinas eléctricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el control de motores mediante arrancadores y convertidores de frecuencia."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han respetado las medidas de seguridad en la conexión de sistemas de arranque."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha conectado correctamente el motor al sistema de arranque y regulación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han localizado y reparado averías en sistemas de arranque de motores eléctricos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha utilizado correctamente los aparatos de medida para localizar averías."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Monta y mantiene cuadros eléctricos para maquinaria y equipo industrial a partir de la documentación técnica, detectando y reparando averías.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han montado todos los dispositivos en el cuadro de control según las especificaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el conexionado completo del cuadro de control de la máquina o equipo industrial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha programado el autómata programable para cumplir con las condiciones de funcionamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han conectado todos los componentes de campo externos al cuadro de control (botoneras, detectores y motores, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el correcto funcionamiento del cuadro de control."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha identificado la sección o parte como causa posible de la avería."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha detectado y reparado las averías producidas en cualquiera de los componentes o cableado del cuadro de control."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Diagnóstica averías en sistemas eléctrico-electrónicos utilizando equipos de medida y relacionando las causas con las disfunciones que las producen",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las averías típicas en los sistemas eléctrico-electrónicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las causas de las averías típicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han manejado manuales y esquemas de sistemas y equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han manejado equipos y aparatos de medida."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado técnicas de detección de averías."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han cumplimentado los históricos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado económicamente la intervención."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Montaje y mantenimiento de líneas automatizadas",
+      "codigo": "0955",
+      "ects": null,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Elabora procedimientos escritos de mantenimiento preventivo de maquinaria, determinando las operaciones que se deben realizar y su frecuencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las ventajas del mantenimiento preventivo y/o programado respecto el correctivo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado la documentación técnica necesaria para realizar el mantenimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado en la documentación técnica, los componentes que deben ser mantenidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las actividades de mantenimiento preventivo, sistemático y predictivo, que se deben realizar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los medios y materiales para realizar las intervenciones programadas de mantenimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los tipos de intervención (de uso y de nivel, entre otros) y la temporalización de los mismos que se van a definir en el plan de mantenimiento preventivo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado la ficha de mantenimiento preventivo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han desarrollado las gamas de mantenimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los procesos auxiliares de producción/fabricación, identificando y describiendo las técnicas y medios automáticos para realizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las técnicas de manipulación, transporte y almacenamiento, entre otros., utilizadas en procesos de fabricación/producción tipo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los medios utilizados para la automatización de la alimentación de máquinas (robots y manipuladores, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado los elementos estructurales, cadenas cinemáticas, elementos de control, actuadores (motores) y captadores de información."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han elaborado el listado de medios necesarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado el diagrama de flujo de fabricación de un proceso productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han contemplado las fases de selección de materiales, alimentación de máquinas, mecanizado, almacenaje, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Integra PLC en el montaje de una máquina, equipo o línea de producción automatizada para el control de la misma, conexionándolo, adaptando y/o elaborando sencillos programas, y comprobando y manteniendo su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha obtenido información de diagramas funcionales, de secuencia y de tiempo, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha obtenido información de los esquemas de sistemas automáticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido la secuencia de movimientos de sistemas automáticos de manipulación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han elaborado sencillos programas de control."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el funcionamiento de un sistema automático controlado por un programa de PLC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han regulado y verificado las magnitudes de las variables que afectan a un sistema automático manipulado y controlado por PLC."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han montado y conexionado los elementos y redes de los sistemas mecánicos, eléctricos, neumáticos y/o hidráulicos y de control."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado el funcionamiento correcto en la puesta en marcha de un sencillo sistema de manipulación/producción montado, conexionado y programado por el alumnado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado síntomas de las averías."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha localizado el elemento (hardware o software) responsable de la avería."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha restituido el funcionamiento del sistema, máquina o equipo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Integra un manipulador y/o un robot en el montaje global de una máquina, equipo o línea de producción automatizada controlada por PLC, instalándolo, conexionándolo y realizando sencillos programas para su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha obtenido información de planos, esquemas y listas de materiales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los dispositivos y componentes que configuran los sistemas automáticos manipulados y/o robotizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los símbolos que aparecen en la documentación con los elementos de los sistemas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los elementos y redes de los sistemas mecánicos, eléctricos, neumáticos y/o hidráulicos y de control del manipulador/robot."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han conexionado los elementos y redes de los sistemas mecánicos, eléctricos, neumáticos y/o hidráulicos y de control del manipulador/robot."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado programas sencillos de control del manipulador y/o robot."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Integra las comunicaciones industriales en el montaje global de una máquina, equipo o línea de producción automatizada controlada por PLC, instalando y conexionando sus componentes físicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el cableado del sistema susceptible de ser sustituido por buses de campo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el/los bus/es de campo que se va a integrar en el montaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el conexionado de un bus industrial que sustituyen entradas-salidas de los PLC en un sistema automático de manipulación simulado, por periferia descentralizada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el conexionado de un bus industrial para comunicar a nivel de célula los autómatas programables y PC."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han conectado sensores y actuadores de un sistema automático mediante buses."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Diagnostica y corrige averías en los sistemas de producción automáticos simulados, identificando la naturaleza de la avería y realizando las intervenciones correctivas para eliminar la disfuncionalidad y restablecer su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la tipología y características de las averías tipo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el procedimiento general que hay que utilizar para el diagnóstico y localización de averías en los sistemas o subsistemas integrantes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento de intervención (del conjunto y por sistema) para determinar la causa o causas que producen la avería."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los síntomas de las averías de un sistema automatizado que integren el PLC como elemento esencial de control."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han enunciado hipótesis de la(s) causa(s) que puede producir las averías detectadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las averías con los síntomas que presentan el sistema o sistemas implicados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha localizado el elemento responsable (hardware o software) de la avería."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha corregido la disfunción y/o modificado el programa en el tiempo adecuado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664193",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708193",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713212",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM193",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

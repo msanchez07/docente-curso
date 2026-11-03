@@ -1,0 +1,3176 @@
+{
+  "id": "gm-montaje-de-estructuras-e-instalacion-de-sistemas-aeronauticos",
+  "denominacion": "Montaje de Estructuras e Instalación de Sistemas Aeronáuticos",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Fabricación Mecánica",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "MEIN",
+  "rd": "Real Decreto 74/2018, de 19 de febrero, por el que se establece el título de Técnico en montaje de estructuras e instalación de sistemas aeronáuticos y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-2329",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Mecanizado básico",
+      "codigo": "0260",
+      "ects": null,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Dibuja croquis de piezas interpretando la simbología específica y aplicando los convencionalismos de representación correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han representado a mano alzada vistas de piezas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado las diferentes vistas, secciones y detalles del croquis, determinando la información contenida en este."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha utilizado la simbología específica de los elementos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reflejado las cotas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las especificaciones dimensionales y escalas en la realización del croquis."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el croquis con orden y limpieza."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado que las medidas del croquis corresponden con las obtenidas en el proceso de medición de piezas, elementos o transformaciones a realizar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Traza piezas para su posterior mecanizado, relacionando las especificaciones de croquis y planos con la precisión de los equipos de medida.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los distintos equipos de medida (calibre, palmer, comparadores, transportadores, goniómetros) y se ha realizado el calado y puesta a cero de los mismos en los casos necesarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de los distintos equipos de medida relacionándolos con las medidas a efectuar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los sistemas de medición métrico y anglosajón y se han interpretado los conceptos de nonio y apreciación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han estudiado e interpretado adecuadamente los croquis y planos para efectuar la medición y trazado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado cálculo de conversión de medidas entre el sistema métrico decimal y anglosajón."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado medidas interiores, exteriores y de profundidad con el instrumento adecuado y la precisión exigida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado los útiles necesarios para realizar el trazado de las piezas y se ha efectuado su preparación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha ejecutado el trazado de forma adecuada y precisa para la realización de la pieza."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha verificado que las medidas del trazado corresponden con las dadas en croquis y planos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Mecaniza piezas manualmente, relacionando las técnicas de medición con los márgenes de tolerancia de las medidas dadas en croquis y planos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han explicado las características de los materiales metálicos más usados en el automóvil, como fundición, aceros, y aleaciones de aluminio entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las herramientas necesarias para el mecanizado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los distintos tipos de limas atendiendo a su picado y a su forma teniendo en cuenta el trabajo que van a realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado las hojas de sierra teniendo en cuenta el material a cortar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la secuencia de operaciones que es preciso realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las distintas herramientas de corte con desprendimiento de viruta con los materiales, acabados y formas deseadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han estudiado e interpretado adecuadamente los croquis y planos para ejecutar la pieza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han dado las dimensiones y forma estipulada a la pieza aplicando las técnicas correspondientes (limado, corte, entre otros)."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha efectuado el corte de chapa con tijeras, seleccionando estas en función de los cortes."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han respetado los criterios de calidad requeridos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Rosca piezas exterior e interiormente ejecutando los cálculos y operaciones necesarias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el proceso de taladrado y los parámetros que se van a ajustar en las máquinas según el material que se ha de taladrar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado la velocidad de la broca en función del material que se ha de taladrar y del diámetro del taladro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado el diámetro del taladro para efectuar roscados interiores de piezas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ajustado los parámetros de funcionamiento de las máquinas taladradoras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ejecutado los taladros en los sitios estipulados y se ha efectuado la lubricación adecuada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha efectuado el avellanado teniendo en cuenta el taladro y el elemento a embutir en él."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado la varilla teniendo en cuenta los cálculos efectuados para la realización del tornillo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha seguido la secuencia correcta en las operaciones de roscado interior y exterior y se ha efectuado la lubricación correspondiente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha verificado que las dimensiones de los elementos roscados, así como su paso, son las estipuladas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han respetado los criterios de seguridad y medio ambiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza uniones de elementos metálicos mediante soldadura blanda describiendo las técnicas utilizadas en cada caso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características y propiedades de la soldadura blanda."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la preparación de la zona de unión y se han eliminado los residuos existentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el material de aportación en función del material base y la unión que es preciso efectuar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado y preparado los desoxidantes adecuados a la unión que se pretende efectuar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los medios de soldeo según la soldadura que se desea efectuar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha efectuado el encendido de soldadores y lamparillas respetando los criterios de seguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha efectuado la unión y rellenado de elementos comprobando que reúne las características de resistencia y homogeneidad requeridas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Montaje estructural aeronáutico",
+      "codigo": "0801",
+      "ects": null,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica las partes fijas y móviles que constituyen las aeronaves, relacionándolas con los fundamentos aerodinámicos básicos y de vuelo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las fuerzas aerodinámicas básicas que influyen en la navegación de las aeronaves."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos de la aeronave que intervienen en el concepto de aerodinámica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los componentes fijos y móviles de la aeronave identificando su función."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los principales elementos estructurales de los componentes fijos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las distintas partes del ala."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido la relación existente entre los distintos componentes del avión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los distintos ejes del avión."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado un organigrama donde se relaciona los componentes de la aeronave con su función."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Relaciona los principales sistemas y subsistemas de la aeronave, con su estructura, ubicación y función.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los sistemas de la aeronave realizando su clasificación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido y descrito las definiciones de cada uno de los sistemas de la aeronave."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha enunciado la función de cada uno de los sistemas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las funciones de cada sistema del avión"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la relación existente entre los distintos sistemas del avión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los principales componentes de cada sistema."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los objetivos de los sistemas auxiliares del avión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones de acoplamiento de piezas y montaje estructural en estructuras metálicas, de materiales compuestos e hibridas con máquinas semiautomáticas, interpretando especificaciones técnicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los equipos y herramientas necesarios para realizar los ajustes y aplicación de suplementos para el montaje estructural de la aeronave, interpretando la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el ajuste dimensional en las elementales pre-montadas en los útiles o gradas, verificando las tolerancias de ajuste ente las piezas según las especificaciones de la documentación técnica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los suplementos líquidos o sólidos y cumplido los ciclos de curado de los suplementos instalados asegurando el ajuste."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado e instalado la plantilla de taladrado de acuerdo a las características del sistema de conexión de la máquina y a la secuencia de fijación indicada en la documentación técnica, garantizando su posición sobre la pieza o útil."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han regulado los parámetros de avance, velocidad de rotación y profundidad de las Unidades Avanzadas de Taladrado (ADU), según las indicaciones en la documentación técnica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha instalado la herramienta de corte de acuerdo a los requerimientos de los planos, documentación técnica y sistema de amarre de la máquina."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las fases de taladrado establecidas en la documentación técnica y de acuerdo a la estructura con la que se está trabajando."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado que los acabados están de acuerdo a los requerimientos de diseño y a las indicaciones de los planos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han verificado que no existen desviaciones entre el producto terminado y los requerimientos de los planos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han utilizado los equipos de protección individual para los trabajos con Unidades Avanzadas de Taladrado (ADU)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza el endurecimiento de taladros en frío para conseguir mayor resistencia estructural, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las fases de la deformación estructural con el proceso de endurecido de taladros en frío."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las partes de las que está compuesto el equipo de expansión en frio de taladros (pistola extractora, mandriles, boquillas, equipo de potencia, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el equipo para realizar la expansión de taladros teniendo en cuenta el diámetro, tipo del taladro, espesores e indicaciones de la documentación técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el endurecimiento de los taladros insertando los casquillos en el orden y tamaño determinado, realizando su expansión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han efectuado las comprobaciones de los diámetros de expansión en todas las fases del endurecimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el escariado final del taladro en los casos determinados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado los equipos de protección individual en la realización de los procesos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel a los equipos de expansión, asegurando que están dentro de las tolerancias de calibración."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Ensambla mediante remachado elementos metálicos y materiales compuestos cumpliendo la reglamentación aeronáutica y de calidad establecidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características y propiedades del remachado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado el plano y se ha determinado los puntos a remachar, la distancia entre remaches, el tipo de remache a utilizar, ente otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el cálculo para determinar la medida del taladro en función del remache."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado y preparado las remachadoras realizando los ajustes necesarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el ajuste de las revoluciones de la taladradora en función del material a taladrar y del diámetro de la broca."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha efectuado el taladrado del material y el avellanado en los casos necesarios eliminando las rebabas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el remachado para la unión utilizando los tipos de remaches especificados en el plano."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado que el remachado efectuado reúne las características de calidad determinada."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "En las distintas operaciones efectuadas se han aplicado las medidas de seguridad y de impacto ambiental estipuladas, depositando los residuos en los lugares determinados para ello."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza las uniones de masas de la estructura y elementos aeronáuticos, garantizando la continuidad eléctrica de la aeronave, cumpliendo la normativa y siguiendo las especificaciones técnicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las partes de la estructura de la aeronave que garantizan la continuidad eléctrica estructural."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los puntos de uniones de masa en los planos de montaje y los elementos que intervienen en las uniones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado el proceso a realizar para garantizar la continuidad eléctrica en la estructura."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado la herramienta para realizar las uniones de masa de acuerdo al material sobre el que se va a trabajar"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido el proceso de medición de la continuidad eléctrica en la estructura."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el conexionado de los elementos que garantizan la continuidad eléctrica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido los valores de resistencia admisibles entre los elementos de la estructura y los equipos de la aeronave según la documentación técnica aplicable."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la protección de los puntos de masa de acuerdo a las indicaciones de los planos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Monta partes fijas y móviles aplicando los pares de apriete establecidos utilizando los equipos determinados en los planos de montaje y cumpliendo los criterios de calidad y normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas de medida métrico y anglosajón con los torcómetros o instrumentos a utilizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el cálculo de conversión de medidas entre el sistema métrico decimal y anglosajón"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los diferentes tipos de torcómetros (manuales, eléctrico, neumáticos, entre otros) con sus aplicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los prolongadores y acoples de los torcómetros identificando el factor de corrección necesario para cada modelo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el proceso de calibración de cada tipo de torcómetro con los equipos de metrología necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el montaje de los elementos y se les han aplicado los pares de apriete estipulado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el frenado del elemento de unión con la técnica indicada en los planos o la documentación técnica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han marcado e identificado los elementos de unión frenados según especificaciones de la documentación técnica o los planos de referencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Realiza operaciones con máquinas de control numérico, previas al montaje de estructuras relacionando las diferentes máquinas, con los controles y procesos establecidos en la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado las principales máquinas de control numérico utilizadas en el montaje de estructuras aeronáuticas (taladrado, remachado, esmerilado, entre otras)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado todas las partes que se utilizan para configurar las máquinas de control numérico (elementos de control, paneles, botoneras, porta-herramientas, sistema interfaz, entre otros)"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado el plan de carga/capacidad para obtener el máximo rendimiento de la máquina."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las secuencias para lanzar un programa de CN (control numérico), (búsqueda por bloques, reposicionar ejes, diagnostico de fallo, ajuste de decalajes, revisar informes de la máquina, ajustes de máquina, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ajustado los parámetros de taladrado, fresado o remachado antes de iniciar el programa de CN."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado los procesos (taladrado, remachado, fresado, entre otros) sobre la estructura de la aeronave."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado los resultados del proceso de taladrado/escariado avellanado después de ejecutarlo (control de profundidad, dimensiones del taladro, entre otros)."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el primer nivel de mantenimiento de las máquinas de CN referido en la documentación técnica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental, en el manejo de máquinas semiautomáticas y de control numérico, de acuerdo a los riesgos asociados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de las máquinas semiautomáticas y con control numérico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con las máquinas respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en los trabajos con máquinas semiautomáticas y con control numérico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, pasos de emergencia, entre otros) de las máquinas y los equipos de protección individual (calzado, protección ocular, indumentaria, entre otros) que se deben emplear en el manejo de las máquinas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado la manipulación y uso de las máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental producidas por el manejo de las máquinas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Instalaciones eléctricas y electrónicas",
+      "codigo": "1444",
+      "ects": null,
+      "horas_minimas_boe": 125,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los materiales y elementos de los circuitos eléctricos y electrónicos de las aeronaves, describiendo la función y características fundamentales de cada uno de ellos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las magnitudes y leyes eléctricas fundamentales con sus correspondientes unidades asociadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado las magnitudes básicas utilizadas en los circuitos eléctricos y electrónicos de las aeronaves, describiendo sus valores más característicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los elementos eléctricos y electrónicos, relacionando su simbología con los elementos reales, describiendo la función que realizan."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los tipos de cables, aislantes, elementos de montaje y conexionado, describiendo sus características eléctricas y mecánicas relacionándolos con su aplicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la funcionalidad de los sistemas de carga de corriente continua, corriente alterna y tipos de acumuladores relacionándolos con su aplicación en las aeronaves."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los distintos tipos de sensores y actuadores de los circuitos eléctricos y electrónicos y se les ha relacionado con su funcionalidad y aplicación en las aeronaves."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta circuitos eléctricos y electrónicos básicos sobre panel o maqueta aplicando la técnica correspondiente, y analizando la relación entre las magnitudes fundamentales con la interpretación de esquemas eléctricos y electrónicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado esquemas eléctricos y electrónicos de los circuitos básicos, relacionando cada elemento o parte del esquema con el componente real."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los elementos del circuito y de montaje a partir del plano o esquema, justificando su adecuación a las características de la instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han montado los elementos del circuito respetando los planos de montaje y las especificaciones del fabricante y aplicado la técnica requerida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han instalado los cables y realizado el conexionado de los diferentes elementos, utilizando la herramienta estipulada y siguiendo las especificaciones técnicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la comprobación de la carga de la batería, verificando con los aparatos de medida adecuados, que se cumplen los parámetros y características técnicas establecidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha conectado el acumulador de corriente continua (batería) justificando su adecuación a las características de la instalación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado medidas de magnitudes eléctricas, conexionando el aparato de medida en función del parámetro eléctrico a medir y seleccionado la parte del circuito más conveniente para su realización."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado la instalación describiendo la funcionalidad de cada parte o elemento y relacionándolo con el plano o esquema de la instalación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han calculado magnitudes eléctricas básicas de la instalación aplicando las leyes de la electricidad y relacionando los valores obtenidos con las medidas efectuadas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha comprobado los efectos que se produce sobre los circuitos o sobre alguna de sus magnitudes al modificar elementos o condiciones de la instalación justificando la causa que lo produce."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las normas se seguridad y utilizado los equipos de protección individual en el desarrollo de las técnicas y medidas utilizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta e instala el cableado de los circuitos eléctricos y electrónicos de las aeronaves, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado planos de montaje y ordenes de producción de circuitos eléctricos y electrónicos de aeronaves diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el cableado (cables, terminales, conectores, entre otros) de las aeronaves describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los tipos de señales y bandas de frecuencia con la tipología de cables y con los posibles defectos del propio cable o por la propia manipulación que puedan producir perturbaciones en las comunicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los tipos de cable y sus terminales y conectores que constituyen el mazo en función de las características de los equipos eléctricos y electrónicos de aeronaves y de los parámetros (intensidad, potencia, tipo de señal de comunicaciones o datos, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los útiles, herramientas y demás elementos de montaje justificando su utilización."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado mazos con diferentes ramificaciones aplicando la técnica de tendido de conductores, marcado, corte, pelado de conductores apantallados o sin apantallar, colocación de terminales y contactos para conectores, montaje de cinta de silicona, entre otros, y adecuándolos a las indicaciones de los planos de montaje."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha efectuado el ensamblado de distintos tipos de mazos utilizando los materiales y técnicas correspondientes y respetando el orden establecido en el plano."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el montaje y fijación de mazos y puesta a masa de pantallas, siguiendo especificaciones de la documentación técnica (planos, ordenes de producción, especificaciones de montaje) y con la calidad requerida."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha comprobado el correcto montaje y fijación de mazos y puesta a masa de las pantallas, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha realizado la limpieza del puesto de trabajo y puesta a punto de útiles y herramientas de montaje, justificando su utilidad para una buena conservación."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado la normativa aeronáutica, la normativa de impacto ambiental y utilizando los EPI correspondientes en la ejecución de las operaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Monta módulos de control eléctrico y electrónico, aplicando las técnicas establecidas y cumpliendo la normativa aeroespacial correspondiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica y las ordenes de producción para la fabricación de los módulos de control eléctrico y electrónico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los elementos que intervienen en la fabricación de módulos de control con la función que desempeñan en la instalación de los circuitos eléctricos y electrónicos de la aeronave."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos para la fabricación de módulos de control (cajas eléctricas y electrónicas, armarios eléctricos, cuadros de instrumentos, carátulas luminosas, entre otras), justificando su funcionalidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los materiales, equipos, útiles y herramientas, justificando su adecuación a las características de la fabricación de los módulos de control."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las soldaduras de componentes eléctricos y electrónicos sobre cajas de equipos y sobre circuitos impresos según planos de montaje, aplicando las técnicas de soldadura blanda y cumpliendo la normativa y condiciones de seguridad establecidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado las carátulas luminosas y equipado de breakers el tablero superior de cabina y los cuadros de instrumentos, frontal, central y laterales, siguiendo las especificaciones de las ordenes de producción y con la calidad requerida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las pruebas de continuidad eléctrica y funcionales de cada uno de los elementos instalados en los módulos de control, justificando su funcionalidad y relacionándolos con el plano o esquema de la instalación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cumplido las normas de seguridad en la instalación de equipos eléctricos y electrónicos y utilizado los equipos de protección personal en el desarrollo de las técnicas y comprobaciones realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Verifica la instalación de los circuitos eléctricos y electrónicos aplicando las técnicas de medida y comprobación correspondientes y utilizando los planos y las normas específicas de la aeronave.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los aparatos de medida, útiles y herramientas, justificando su adecuación a las pruebas de verificación de los sistemas eléctricos y electrónicos de las aeronaves y a la documentación técnica (planos, esquemas, especificaciones del fabricante) y normativa aeronáutica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los criterios que hay que aplicar en la comprobación de equipos y elementos que componen los circuitos eléctricos y electrónicos de aeronaves a partir de planos de montaje y la normativa aplicable."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado las herramientas, útiles y medios de comprobación necesarios para la realización de las pruebas de verificación eléctricas y electrónicas, justificando su adecuación a las pruebas aplicables."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado medidas de verificación en los circuitos eléctricos y electrónicos, aplicando la técnica requerida y comprobando que se ajustan a los valores o márgenes establecidos en la documentación técnica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procedimientos para la realización de las pruebas de verificación eléctricas y electrónicas de las etapas (distribución eléctrica, aviónica, telecomunicaciones, entre otras) de las aeronaves justificando las partes o fases que lo componen."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las normas de seguridad y utilizado los equipos de protección individual en el desarrollo de la verificación de los equipos eléctricos y electrónicos y aplicado la normativa aeronáutica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados en los procesos de montaje de sistemas eléctricos y electrónicos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y causas de peligro en el montaje (manipulación de materiales, herramientas, máquinas y equipos) y en la realización de las pruebas funcionales relacionando la normativa aplicable con la actividad que hay que desarrollar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad, protección personal y colectiva que se deben adoptar en la ejecución de instalación y en la realización de pruebas funcionales relacionando las medidas y la protección personal con el riesgo asociado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado los equipos de protección individual en las operaciones de montaje de sistemas eléctricos y electrónicos y en la realización de pruebas funcionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Preparación y sellado de superficies",
+      "codigo": "1445",
+      "ects": null,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los tipos de sellantes relacionando las superficies a proteger con las especificaciones técnicas de los productos, describiendo la función y características fundamentales de cada uno de ellos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los distintos tipos de sellantes relacionándolos con las superficies a tratar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las funciones de los sellantes con el tipo de protección requerida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procesos de transporte de los sellantes en función de las características del producto y de las condiciones ambientales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las características de los activadores y catalizadores y se les ha relacionado con el producto a activar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el proceso de preparación de los sellantes teniendo en cuenta el producto y la superficie sobre la que se va a aplicar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado los procesos de almacenaje con la conservación, duración y características del producto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado la documentación técnica para realizar el proceso de sellado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza mezclas de productos sellantes cumpliendo las reglas de proporcionalidad, verificando el curado de las mismas según especificaciones técnicas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los tipos y etapas del curado de los sellantes para obtener la calidad requerida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características que influyen en cada etapa del curado del sellante relacionándolos con su aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los equipos de mezcla, las probetas y los productos para la realización de mezclas justificando su utilización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha interpretado la documentación técnica y se han cumplido sus especificaciones en la mezcla y curado de los productos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado la mezcla de sellantes y catalizador cumpliendo las especificaciones de proporcionalidad y respetando los tiempos de vida y trabajo de la mezcla."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado los sellantes sobre probetas siguiendo las especificaciones técnicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado las distintas etapas del proceso de curado de la mezcla según las especificaciones del fabricante del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado los equipos de protección personal y colectiva en el desarrollo de las fases del proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara la superficie a sellar teniendo en cuenta las características de la misma y siguiendo la normativa aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las distintas etapas del proceso de preparación de la superficie para realizar el proceso de sellado, interpretando la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características que presenta la superficie a preparar (irregularidades, presencia de polvo, suciedad, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el método de preparación en función de las características que presenta la superficie siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los productos, equipos, útiles y herramientas dependiendo de la superficie a preparar y siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la preparación de la superficie (lijado, desengrasado, limpieza, entre otros) en función del producto a aplicar, del proceso de aplicación y de la superficie a sellar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la preparación de los productos previos al sellado (imprimaciones, productos de adherencia, entre otros), justificando su adecuación a las características de la superficie."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la aplicación de los productos previos al sellado verificando que se ha aplicado en toda la zona."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado los equipos de protección personal realizando la recogida, clasificación y depósito de los residuos según las normas establecidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza el sellado de elementos y componentes de las aeronaves siguiendo especificaciones técnicas y cumpliendo la normativa aeronáutica aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica relacionando la simbología y los productos con las partes a sellar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los métodos de aplicación con los productos y las características de las zonas a sellar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la protección de las zonas adyacentes al sellado, cumpliendo las normas de calidad establecidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los equipos y medios necesarios y se ha efectuado su puesta en servicio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la preparación y activación de los productos respetando las proporciones especificadas en la documentación técnica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado los sellantes mediante las distintas técnicas (espátulas, brochas y pistolas) siguiendo las especificaciones del fabricante y la normativa aeronáutica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha efectuado el sellado de las ranuras, huecos y elementos de unión utilizando sellantes en filete, cordón y encapsulado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el curado de los productos cumpliendo las especificaciones técnicas del fabricante y las determinadas por la normativa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Verifica el acabado final del sellado de superficies aeronáuticas, realizando las comprobaciones y pruebas estipuladas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las distintas técnicas de comprobación del sellado y estanqueidad de los elementos de las aeronaves, describiendo cada una de ellas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado la documentación técnica, adecuándola a la verificación del sellado de superficies."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y puesto en funcionamiento los equipos y medios necesarios para realizar las comprobaciones, justificando su utilización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado las dimensiones de los cordones del sellante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado que el sellante no tienen poros, que las capas reúnen las características estipuladas y que la dimensión de las mismas es la adecuada siguiendo las especificaciones técnicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las pruebas de estanqueidad siguiendo especificaciones técnicas y cumpliendo la normativa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha garantizado la trazabilidad de los productos aplicados en la documentación técnica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de materiales, herramientas, útiles y máquinas del área de sellado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de los procesos de sellado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes de trabajo en la manipulación de materiales, herramientas, máquinas y equipos empleados en los procesos de sellado de elementos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han depositado los residuos generados en los contenedores correspondientes para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas mecánicos y de fluidos",
+      "codigo": "1599",
+      "ects": null,
+      "horas_minimas_boe": 130,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los materiales, elementos y equipos mecánicos y de fluidos de las aeronaves, describiendo la función y características fundamentales de cada uno de ellos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las magnitudes mecánicas y de fluidos con sus correspondientes unidades de medida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado las magnitudes básicas utilizadas en los equipos mecánicos y de fluidos, describiendo sus valores más característicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los elementos mecánicos y de fluidos de las aeronaves, relacionando su simbología con los elementos reales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la función que realizan los elementos mecánicos y de fluidos de las aeronaves."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han valorado los problemas que ocasionan los rozamientos y golpes de ariete en los circuitos de fluidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los tipos de engranajes, poleas, acopladores, levas, rodamientos, cojinetes, resortes, elementos de unión, cables de mando, entre otros, con su aplicación y funcionalidad en las aeronaves."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los tipos de tuberías, canalizaciones y válvulas, entre otros, describiendo sus características hidráulicas y neumáticas e indicando su aplicación y funcionalidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta circuitos mecánicos y de fluidos básicos, aplicando las técnicas correspondientes y analizando la relación de las magnitudes fundamentales con los esquemas y planos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado esquemas de circuitos mecánicos y de fluidos básicos, relacionando cada elemento o parte del esquema con el componente real."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los elementos del circuito y de montaje a partir del plano, justificando su adecuación a las características de la instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han montado los engranajes, acopladores, poleas, correas, resortes, elementos de unión, cables de mando, entre otros y realizado el conexionado de los diferentes elementos mecánicos, utilizando las herramientas y aplicando la técnica requerida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los depósitos, válvulas, actuadores, tuberías, acumuladores, entre otros y realizado la conexión de los diferentes elementos hidráulicos y neumáticos, siguiendo las especificaciones de los esquemas y planos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado medidas de magnitudes físicas de mecánica y de fluidos, conexionando el aparato de medida en función del parámetro a medir y seleccionado la parte del circuito más conveniente para su realización."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la instalación, describiendo la funcionalidad de cada parte o elemento y comprobado que no existen fugas y los valores obtenidos coinciden con los estipulados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado las magnitudes físicas básicas de la instalación, relacionando los valores obtenidos con las medidas efectuadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han comprobado los efectos que se produce sobre los circuitos mecánicos y de fluidos o sobre alguna de sus magnitudes al modificar elementos o condiciones de la instalación justificando la causa que lo produce."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las normas de seguridad y de impacto ambiental, utilizando los equipos de protección individual en el desarrollo de las técnicas y medidas utilizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta e instala tubos y canalizaciones de fluidos hidráulicos y neumáticos sobre mamparo, panel o maqueta aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de montaje y ordenes de producción de los circuitos de fluidos de aeronaves, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje e instalación de los circuitos de fluidos (tuberías, depósitos, válvulas, actuadores, acumuladores, racores, entre otros) de las aeronaves, describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje e instalación de los circuitos de fluidos, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el corte, abocardado, curvado y conformado de tubos, aplicando la técnica requerida, y adecuándolos a las indicaciones de los planos de montaje."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado el ensamblado de distintos tipos de tuberías y canalizaciones (rígidas/flexibles, rígidas/rígidas y flexibles/flexibles), utilizando los materiales y técnicas correspondientes, en función del tipo de fluido, los parámetros a soportar y el modelo de aeronave."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado racores efectuando su grapado a 30, 60 y 90 grados, según las especificaciones técnicas y cumpliendo la normativa establecida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el montaje y fijación de tuberías y canalizaciones, siguiendo especificaciones de la documentación técnica (planos, ordenes de producción, especificaciones de montaje) y con la calidad requerida."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el desmontaje, limpieza y puesta a punto de útiles y herramientas de montaje, justificando su utilidad para una buena conservación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado la aplicación de productos anticorrosivos y de estanqueidad siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha comprobado el correcto montaje y fijación de tuberías y canalizaciones realizando las pruebas de presión y estanqueidad, siguiendo especificaciones técnicas y de calidad establecidas."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha aplicado la normativa aeronáutica, la normativa de impacto ambiental y utilizado los EPI correspondientes, en el montaje e instalación de tubos y canalizaciones de fluidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Monta e instala los sistemas de fluidos de combustible, oxigeno, presurización, entre otros, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de montaje y órdenes de producción de los sistemas de fluidos de combustible, oxigeno, presurización, entre otros, diferenciando la aplicación en la aeronave de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje e instalación de los sistemas de fluidos, describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje e instalación de los sistemas de fluidos, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado el sistema de fluidos; de combustible, oxigeno, presurización, entre otros), de las aeronaves, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las conexiones de los elementos de los diferentes sistemas de fluidos, utilizando las herramientas apropiadas y aplicando las técnicas requeridas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el correcto montaje y conexionado de los sistemas de fluidos, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los controles y ajustes de los parámetros de fluidos de los sistemas montados, siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad y utilizado los equipos de protección individual en el desarrollo de las técnicas de montaje e instalación de los sistemas de fluidos y aplicado la normativa aeronáutica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Monta e instala sistemas mecánicos; puertas, rampa, portalón, entre otros, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica (planos de montaje, órdenes de producción, entre otros) de los sistemas mecánicos, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje e instalación de los sistemas mecánicos (puertas, rampa, portalón, entre otros) de las aeronaves, describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje e instalación de los sistemas mecánicos, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los sistemas mecánicos; puertas, rampa, portalón, entre otros, de las aeronaves, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado el montaje de los diferentes elementos mecánicos, utilizando las herramientas apropiadas y aplicando las técnicas requeridas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el correcto montaje y ensamblado de los sistemas mecánicos, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de impacto ambiental, de seguridad personal y utilizando los equipos de protección individual en el desarrollo de las distintas operaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Verifica la instalación de los elementos, mecánicos, hidráulicos y neumáticos instalados y realiza las pruebas funcionales de la aeronave, aplicando las técnicas de medida y comprobación correspondientes y cumpliendo la normativa específica de la aeronave.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los criterios que hay que aplicar en la comprobación de equipos y elementos que componen los sistemas mecánicos, hidráulicos y neumáticos de aeronaves a partir de la documentación técnica de montaje y la normativa aplicable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los aparatos de medida y comprobación, útiles y herramientas, justificando su adecuación a las pruebas de verificación de los sistemas mecánicos, hidráulicos y neumáticos de las aeronaves y a la documentación técnica y normativa aeronáutica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado medidas en los sistemas mecánicos, hidráulicos y neumáticos montados en la aeronave, aplicando la técnica requerida y comprobando que se ajustan a los valores o márgenes establecidos en la documentación técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los procedimientos para la realización de las pruebas funcionales de los sistemas mecánicos, hidráulicos y neumáticos montados en la aeronave, justificando los procesos o fases que lo componen."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las pruebas funcionales en los sistemas mecánicos (puertas, rampa, portalón, entre otros) aplicando los procedimientos establecidos y cumpliendo los criterios de calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las pruebas funcionales en los sistemas hidráulicos y neumáticos montados en la aeronave (combustible, oxigeno, presurización, entre otros), cumpliendo los criterios de calidad y aplicando los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de seguridad en el desarrollo de las pruebas funcionales de los sistemas montados, cumpliendo la normativa aeronáutica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental identificando los riesgos asociados en los procesos de montaje de sistemas mecánicos y de fluidos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y causas de peligro en la instalación de los sistemas mecánicos, de fluidos y en la realización de pruebas funcionales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han cumplido las medidas de seguridad y de protección personal y colectiva en la ejecución de los procesos de instalación de sistemas mecánicos, de fluidos y en la realización de pruebas funcionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes de trabajo en la manipulación de materiales, herramientas, máquinas y equipos empleados en los procesos de instalación de sistemas mecánicos, de fluidos y en la realización de pruebas funcionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los EPIs siguiendo las especificaciones de la normativa de protección y la de regulación aeronáutica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la clasificación de los residuos generados depositándolos en los lugares determinados, para su posterior retirada y reciclaje."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Protección y pintado de aeronaves",
+      "codigo": "1600",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los distintos tipos de pretratamientos y pinturas de superficies de elementales y de aeronaves, describiendo su función y las características fundamentales de cada uno de ellos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los procesos de pintado en fabricación, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los tipos de pinturas de las aeronaves (de poliuretano, epoxi, de acabados especiales, entre otros), describiendo sus características relacionándolas con su aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado las órdenes de producción y la documentación técnica correspondiente a los pretratamientos y al pintado de aeronaves, diferenciando la aplicación de cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los procesos de pretratamientos (pasivado, alodiado, entre otros) según documentación técnica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la composición de las pinturas con los diferentes productos y materiales de revestimiento de la aeronave (titanio, aleaciones de aluminio, materiales compuestos, entre otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los diferentes tipos de recubrimiento del soporte sobre los que se va a pintar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado las operaciones a seguir en el pintado de los elementos de las aeronaves con los materiales y productos necesarios, interpretando la documentación técnica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha descrito los procesos de secado de la pintura relacionándolos con su curado y endurecido."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza la limpieza y decapado de la superficie de los elementos de las aeronaves realizando la preparación de la zona de trabajo, aplicando los procedimientos establecidos y la normativa aeronáutica cumpliendo las especificaciones de seguridad y medioambientales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica relacionando la simbología y especificaciones con los tratamientos a aplicar y la normativa aeronáutica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han efectuado la sujeción y protección de la aeronave o de sus elementos, y de bienes y equipos, siguiendo las especificaciones técnicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado el montaje de andamios, gradas, plataformas y escaleras para facilitar el movimiento y la seguridad de operarios, siguiendo las especificaciones de montaje y cumpliendo las normas de seguridad personales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha efectuado la puesta a tierra de los elementos y de la aeronave siguiendo indicaciones del fabricante y cumpliendo las especificaciones aeronáuticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la protección de los elementos delicados, para evitar que se puedan dañar por los distintos tratamientos, según especificaciones del fabricante."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los equipos, útiles, herramientas y demás elementos de limpieza, pretratamiento y/o decapado de superficies justificando su utilización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la limpieza y decapado de los elementos aplicando el proceso apropiado (por abrasión, en vapor de disolvente, pasivados, por emulsión, entre otros), justificando su adecuación a las características de las superficies."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha limpiado la superficie de los elementos mediante chorro de agua a presión efectuando el secado de las mismas según especificaciones técnicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han retirado los residuos generados y se han almacenado en los recipientes correspondientes cumpliendo las normas de impacto ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado todas las operaciones utilizando los EPI correspondientes y cumpliendo las normas de seguridad personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Enmascara las zonas que no van a ser pintadas, seleccionando los materiales a utilizar y siguiendo los procedimientos y las especificaciones técnicas incluidas en la normativa aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los elementos de enmascarado, justificando su adecuación a las características de las superficies a enmascarar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las zonas a proteger relacionándolas con los procesos y productos a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado enmascarados parciales y totales utilizando la herramienta estipulada y siguiendo las especificaciones técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado enmascarado de interiores y exteriores justificando su adecuación a las características de los elementos a proteger."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha tenido especial cuidado en el enmascarado de bordes y aristas aplicando la técnica requerida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado que el enmascarado cumple los requisitos de compatibilidad con los productos a aplicar siguiendo especificaciones técnicas y proporciona la protección necesaria con la calidad requerida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva depositándolos en los lugares estipulados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el trabajo cumpliendo en todo momento las normas de seguridad laboral, medioambientales y aeronáuticas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica tratamientos de protección de las superficies de las aeronaves analizando los procesos de preparación y aplicación y siguiendo la normativa aeronáutica que los regula.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica y se ha vinculado la simbología y especificaciones con los tratamientos a aplicar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los productos de protección de las aeronaves describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la técnica a aplicar según la superficie o elemento que se quiere proteger siguiendo indicaciones del fabricante de la aeronave y de los productos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los útiles, herramientas y demás elementos de preparación de superficies justificando su utilización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado las superficies con decapados, pretratamientos, limpieza o lijado, siguiendo las especificaciones de la documentación técnica y cumpliendo la normativa aeronáutica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los equipos y se han regulado los parámetros de aplicación relacionándolos con los productos a aplica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la preparación de los productos cumpliendo los parámetros de proporciones y viscosidad y se les ha agitado hasta conseguir su total emulsionado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la aplicación de productos de protección, tapaporos y adherencia sobre los elementos siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado los lijados precisos sobre las superficies, siguiendo las especificaciones técnicas y cumpliendo la normativa aeronáutica."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado la normativa aeronáutica, la normativa de impacto ambiental y utilizando los EPI correspondientes en la ejecución de las operaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Prepara la pintura para obtener las características estipuladas (viscosidad y homogeneidad), interpretando las especificaciones de los fabricantes y cumpliendo la normativa aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han explicado las propiedades, de los distintos tipos de pinturas justificando su uso en función de las zonas y elementos a pintar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado la documentación técnica facilitada por los fabricantes de pinturas identificando las características de los productos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el código de la pintura con la documentación técnica relacionándola con la orden de producción de los elementos a pintar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los productos necesarios para efectuar la preparación de la pintura según las especificaciones técnicas de los fabricantes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los útiles, herramientas y demás elementos de preparación justificando su utilización."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha efectuado la mezcla de productos con arreglo a las reglas de proporcionalidad estipulada por los fabricantes y utilizando los medios adecuados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado que la pintura cumple las especificaciones de viscosidad estipuladas mediante la utilización del viscosímetro."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el trabajo con seguridad, precisión, orden y limpieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Pinta elementos de la aeronave, aplicando las técnicas especificadas por el fabricante, cumpliendo la normativa aeronáutica correspondiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado el ajuste y reglaje del equipo aerográfico relacionándolo con el tipo de pintura que hay que aplicar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ajustado los parámetros de funcionamiento de la cabina de pintura describiendo sus características y las funciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado pintura con los equipos aerográficos adecuados al trabajo a realizar, manteniendo constante la distancia a la superficie de aplicación, superponiendo los abanicos y dejando transcurrir el tiempo adecuado entre las distintas capas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha pintado junto con el elemento una probeta para verificar la calidad de la aplicación que permitirá realizar las pruebas de control de (brillo, espesor de capa, cubrición, adherencia, entre otros), describiendo cada una de ellas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado el secado de pintura con los equipos adecuados, siguiendo las indicaciones del fabricante de la pintura y respetando los tiempos de evaporación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado que la pintura aplicada cumple las especificaciones de calidad establecida por el fabricante y la normativa aeronáutica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cumplido las normas de utilización de los equipos, material e instalaciones describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado las normas de seguridad y salud laboral y de impacto medioambiental clasificando los residuos generados para su posterior retirada y reciclaje."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Identifica los defectos de pintado relacionando las causas que lo producen y aplica las técnicas para su prevención o corrección según las especificaciones técnicas y cumpliendo las normas aeronáuticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica relacionando el defecto con la causa que lo ha producido."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha localizado el defecto en la pintura y se ha vinculado con el proceso de reparación adecuado que hay que efectuar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado los equipos, útiles y herramientas necesarias en los distintos procesos de corrección de defectos justificando su adecuación a las operaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han corregido los defectos originados por el uso de la técnica inadecuada de aplicación siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han corregido los defectos originados por superficies mal preparadas aplicando la técnica requerida y comprobando que cumple la normativa aeronáutica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han corregido los defectos producidos por factores climáticos, mecánicos, industriales y biológicos aplicando el proceso estipulado en cada caso según la documentación y la normativa aeronáutica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cumplido las normas de utilización de los equipos, materiales e instalaciones relacionando su uso con los factores de riesgo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado los EPI estipulados en la realización de los procesos y se han clasificado los residuos depositándolos en los lugares establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados a los procesos de protección y pintado de aeronaves y de sus elementos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen el pintado de las aeronaves y de sus elementos relacionando la normativa aplicable con la actividad que hay que desarrollar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad, protección personal y colectiva que se deben adoptar en la ejecución de los procesos de protección y pintado de superficies relacionando las medidas y la protección personal con el riesgo asociado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos de seguridad (aspiradores, ventilación, filtros, entre otros) de las instalaciones y los equipos de protección individual (calzado, protección ocular, indumentaria, guantes, mascarillas, entre otros) y se les ha relacionado con su utilización en los procesos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los equipos de protección personal en la realización de los procesos de preparación, protección y pintado de superficies."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental producidas por el uso de los productos y se las ha relacionado con los procesos y utilización de los equipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y de los equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas de distribución de corriente, telecomunicaciones y aviónica",
+      "codigo": "1601",
+      "ects": null,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los materiales, elementos y equipos de los sistemas de telecomunicaciones, aviónica y distribución eléctrica de las aeronaves, describiendo la función y características fundamentales de cada uno de ellos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han diferenciado las magnitudes eléctricas y electrónicas básicas utilizadas en los sistemas de telecomunicaciones, aviónica y distribución eléctrica de las aeronaves, describiendo sus valores más característicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que forman los sistemas telecomunicaciones, aviónica y distribución eléctrica de las aeronaves, relacionando su simbología con los elementos reales, describiendo la función que realizan."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los elementos que forman el sistema de telecomunicaciones (transmisor-receptor, antenas, acopladores, entre otros) con su aplicación y funcionalidad en las aeronaves."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los elementos que forman el sistema de aviónica (cajas de control, distribución de datos, interfaces, entre otros) con su aplicación y funcionalidad en las aeronaves."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los elementos que forman el sistema de distribución eléctrica (generación, distribución e iluminación eléctrica entre otros) con su aplicación y funcionalidad en las aeronaves."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta e instala sistemas de telecomunicaciones, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica (planos de montaje, órdenes de producción, entre otros) de los sistemas de telecomunicaciones, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje e instalación de los sistemas telecomunicaciones (antenas, radios, entre otros) de las aeronaves, describiendo sus características y las funciones de cada uno de ellos"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje e instalación de los sistemas de telecomunicaciones, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los sistemas de telecomunicaciones; (HF, VHF, comunicación por satélite, entre otros), de las aeronaves, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las conexiones de los diferentes elementos de los sistemas de telecomunicaciones, utilizando las herramientas apropiadas y aplicando las técnicas requeridas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el correcto montaje y conexionado de los sistemas de telecomunicaciones, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los controles y ajustes de los parámetros eléctricos y electrónicos de los sistemas, siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad y utilizado los equipos de protección individual en el desarrollo de las técnicas de montaje e instalación de los sistemas de telecomunicaciones y aplicado la normativa aeronáutica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta e instala los sistemas de aviónica, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de montaje y ordenes de producción de los sistemas de aviónica, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje e instalación de los sistemas de aviónica (navegación, piloto automático, grabadores de datos, entre otros), de las aeronaves, describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje e instalación de los sistemas de aviónica, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los sistemas de aviónica; navegación, piloto automático, grabadores de datos, entre otros, de las aeronaves, aplicando las técnicas correspondientes según las ordenes de producción y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las conexiones de los diferentes elementos de los sistemas de aviónica, utilizando las herramientas apropiadas y aplicando las técnicas requeridas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el correcto montaje y conexionado de los sistemas de aviónica, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado la normativa aeronáutica, la normativa de impacto ambiental y utilizado los EPI correspondientes en el montaje e instalación de los sistemas de aviónica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Monta e instala los sistemas de distribución eléctrica, describiendo la función de los elementos implicados, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de montaje y ordenes de producción de los sistemas de distribución eléctrica, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje y conexionado del sistema de distribución eléctrica de la aeronave, describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje y conexionado sistema de distribución eléctrica, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las fases del proceso de montaje y conexionado de los sistemas de distribución eléctrica en función del tipo de sistema a montar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han montado los sistemas de distribución eléctrica; generación, distribución e iluminación eléctrica, entre otros, de las aeronaves, aplicando las técnicas correspondientes según las ordenes de producción y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las conexiones de los diferentes elementos de los sistemas de distribución eléctrica, utilizando las herramientas apropiadas y aplicando las técnicas requeridas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado el correcto montaje y conexionado de los sistemas distribución eléctrica, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la normativa aeronáutica, la normativa de impacto ambiental y utilizado los EPI correspondientes en el montaje e instalación de los sistemas distribución eléctrica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza las pruebas de verificación y pruebas funcionales de los sistemas de telecomunicaciones, aviónica y distribución eléctrica, aplicando las técnicas requeridas, analizando la documentación aplicable y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los criterios que hay que aplicar en la comprobación de equipos y elementos que componen de los sistemas de telecomunicaciones, aviónica y distribución eléctrica de aeronaves a partir de la documentación técnica de montaje y la normativa aplicable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los aparatos de medida y comprobación, útiles y herramientas, justificando su adecuación a las pruebas de verificación de los sistemas de telecomunicaciones, aviónica y distribución eléctrica de aeronaves y a la documentación técnica y normativa aeronáutica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado medidas de comprobación de los sistemas de telecomunicaciones, aviónica y distribución eléctrica montados en la aeronave, aplicando la técnica requerida y comprobando que se ajustan a los valores o márgenes establecidos en la documentación técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los procedimientos para la realización de las pruebas funcionales de los sistemas de telecomunicaciones, aviónica y distribución eléctrica montados en la aeronave, justificando los procesos o fases que lo componen."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las pruebas funcionales de los sistemas telecomunicaciones (HF, VHF, comunicación por satélite, entre otros) aplicando los procedimientos establecidos y cumpliendo los criterios de calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las pruebas funcionales de los sistemas de aviónica montados en la aeronave (navegación, piloto automático, grabadores de datos, entre otros) cumpliendo los criterios de calidad y aplicando los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las pruebas funcionales del sistema de distribución eléctrica (generación, distribución e iluminación eléctrica, entre otros) cumpliendo los criterios de calidad y aplicando los procedimientos establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad en el desarrollo de las pruebas funcionales de los sistemas montados, cumpliendo la normativa aeronáutica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados al montaje de los sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de los procesos de montaje e instalación de los sistemas de mandos de vuelos, trenes de aterrizaje y de propulsión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes de trabajo en la manipulación de materiales, herramientas, máquinas y equipos empleados en los procesos de instalación de los sistemas de mandos de vuelos, trenes de aterrizaje y de propulsión."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han cumplido las normas de seguridad y protección personal aplicadas en los procesos de montaje y en las pruebas funcionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los EPIs correspondientes en la instalación de los sistemas montados y en la realización de pruebas funcionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión",
+      "codigo": "1602",
+      "ects": null,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los materiales, elementos y equipos de los sistemas de mando de vuelo, trenes de aterrizaje y de propulsión de las aeronaves, describiendo la función y características fundamentales de cada uno de ellos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las magnitudes físicas con sus correspondientes unidades asociadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado las magnitudes físicas básicas utilizadas en los sistemas de mando de vuelo, trenes de aterrizaje y de propulsión de las aeronaves, describiendo sus valores más característicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los elementos que forman los sistemas de mando de vuelo, trenes de aterrizaje y de propulsión de las aeronaves, relacionando su simbología con los elementos reales, describiendo la función que realizan."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los elementos que forman el sistema de mando de vuelo (grupo alar, empenaje, entre otros) con su aplicación y funcionalidad en las aeronaves."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los elementos que forman el sistema del tren de aterrizaje y de rodadura (amortiguación, frenos, ruedas, entre otros) con su aplicación y funcionalidad en las aeronaves."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los elementos que forman el sistema de propulsión (motor, alimentación, conexionado, entre otros) con su aplicación y funcionalidad en las aeronaves."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta e instala trenes de aterrizaje y de rodadura, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la documentación técnica (planos de montaje, órdenes de producción, entre otros) de los sistemas de trenes de aterrizaje y de rodadura, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje e instalación de los sistemas de trenes de aterrizaje y de rodadura (amortiguadores, frenos, dirección, ruedas, entre otros) de las aeronaves, describiendo sus características y las funciones de cada uno de ellos"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje e instalación de los sistemas mecánicos, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los sistemas mecánicos; trenes de aterrizaje y de rodadura (amortiguadores, frenos, dirección, ruedas, entre otros), de las aeronaves, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las conexiones de los diferentes elementos mecánicos, utilizando las herramientas apropiadas y aplicando las técnicas requeridas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el correcto montaje y conexionado de los sistemas mecánicos, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los controles y ajustes de los parámetros estáticos y dinámicos de los sistemas, siguiendo especificaciones técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad y utilizado los equipos de protección individual en el desarrollo de las técnicas de montaje e instalación de los sistemas mecánicos y aplicado la normativa aeronáutica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta e instala los sistemas de mandos de vuelo, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de montaje y ordenes de producción de los sistemas de mando de vuelo, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el montaje e instalación de los sistemas de mando de vuelo (empenaje, grupo alar, conjuntos de reglaje, entre otros), de las aeronaves, describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el montaje e instalación de los sistemas de mando de vuelo, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los sistemas de mando de vuelo; empenaje, grupo alar, conjuntos de reglaje, entre otros, de las aeronaves, aplicando las técnicas correspondientes según las ordenes de producción y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las conexiones de los diferentes elementos de los sistemas de mando de vuelo, utilizando las herramientas apropiadas y aplicando las técnicas requeridas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado el correcto montaje y conexionado de los sistemas de mando de vuelo, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado la normativa aeronáutica, la normativa de impacto ambiental y utilizado los EPI correspondientes en el montaje e instalación de los sistemas de mando de vuelo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Acopla y conexiona el motor de la aeronave y las hélices, describiendo la función de los elementos implicados, aplicando las técnicas requeridas y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de acoplamiento y conexionado del motor y las hélices, diferenciando la aplicación de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos que intervienen en el acoplamiento y conexionado del sistema de propulsión de la aeronave, describiendo sus características y las funciones de cada uno de ellos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales, equipos, útiles y herramientas para el acoplamiento y conexionado del motor y las hélices del sistema de propulsión, siguiendo las especificaciones técnicas y ordenes de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las fases del proceso de acoplamiento y conexionado del motor y las hélices en función del tipo de sistema de propulsión a montar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el acoplamiento del motor sobre los amortiguadores de posicionamiento, utilizando los útiles y herramientas adecuados, siguiendo las especificaciones técnicas, y teniendo en cuenta los ajustes y nivelación establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el conexionado de los sistemas de (alimentación, escape, eléctricos y electrónicos, mecánicos e hidráulicos, entre otros) del sistema de propulsión, siguiendo las especificaciones técnicas y con la calidad establecida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha montado la unidad de potencia auxiliar (APU) en la aeronave aplicando las técnicas correspondientes según las ordenes de producción y cumpliendo la reglamentación aeronáutica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el montaje de las hélices en el buje del motor aplicando la técnica requerida y comprobando que se ajustan a los valores o márgenes establecidos en la documentación técnica."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha comprobado el correcto montaje y conexionado de los sistemas de propulsión, siguiendo las especificaciones de verificación y calidad establecidas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha aplicado la normativa aeronáutica, la normativa de impacto ambiental y utilizado los EPI correspondientes en el acoplamiento y conexionado del sistema de propulsión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza las pruebas de verificación y pruebas funcionales de los sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión aplicando las técnicas requeridas, analizando la documentación aplicable y cumpliendo la reglamentación aeronáutica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los criterios que hay que aplicar en la comprobación de equipos y elementos que componen de los sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión de aeronaves a partir de la documentación técnica de montaje y la normativa aplicable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los aparatos de medida y comprobación, útiles y herramientas, justificando su adecuación a las pruebas de verificación de los sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión de aeronaves y a la documentación técnica y normativa aeronáutica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado medidas de comprobación de los sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión montados en la aeronave, aplicando la técnica requerida y comprobando que se ajustan a los valores o márgenes establecidos en la documentación técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los procedimientos para la realización de las pruebas funcionales de los sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión montados en la aeronave, justificando los procesos o fases que lo componen."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las pruebas funcionales de los sistemas de mandos de vuelo (empenaje, grupo alar, conjuntos de reglaje, entre otros) aplicando los procedimientos establecidos y cumpliendo los criterios de calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las pruebas funcionales de los sistemas de trenes de aterrizaje y de rodadura montados en la aeronave (amortiguación, frenos, ruedas, entre otros), cumpliendo los criterios de calidad y aplicando los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las pruebas funcionales del sistema de propulsión montado en la aeronave, cumpliendo los criterios de calidad y aplicando los procedimientos establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad en el desarrollo de las pruebas funcionales de los sistemas montados, cumpliendo la normativa aeronáutica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados al montaje de los sistemas de mandos de vuelo, trenes de aterrizaje y de propulsión para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de los procesos de montaje e instalación de los sistemas de mandos de vuelos, trenes de aterrizaje y de propulsión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes de trabajo en la manipulación de materiales, herramientas, máquinas y equipos empleados en los procesos de instalación de los sistemas de mandos de vuelos, trenes de aterrizaje y de propulsión."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han cumplido las normas de seguridad y protección personal aplicadas en los procesos de montaje y en las pruebas funcionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los EPIs correspondientes en la instalación de los sistemas montados y en la realización de pruebas funcionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664192",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708192",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713A12",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM192",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

@@ -1,0 +1,3702 @@
+{
+  "id": "gs-comercio-internacional",
+  "denominacion": "Comercio Internacional",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Comercio y Marketing",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "CI",
+  "rd": "Real Decreto 1574/2011, de 4 de noviembre, por el que se establece el Título de Técnico Superior en Comercio Internacional y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-19439",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": 7,
+      "horas_minimas_boe": 70,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce información profesional y cotidiana contenida en todo tipo de discursos orales emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes radiofónicos y de otro material grabado o retransmitido pronunciado en lengua estándar identificando el estado de ánimo y el tono del hablante."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información de grabaciones en lengua estándar, relacionadas con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los puntos de vista y las actitudes del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ideas principales de declaraciones y mensajes sobre temas concretos y abstractos, en lengua estándar y con un ritmo normal."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprendido con todo detalle lo que se le dice en lengua estándar, incluso en un ambiente con ruido de fondo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Interpreta información profesional contenida en textos escritos complejos, analizando de forma comprensiva sus contenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha leído con un alto grado de independencia, adaptando el estilo y la velocidad de la lectura a distintos textos y finalidades y utilizando fuentes de referencia apropiadas de forma selectiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado, con todo detalle, textos extensos y de relativa complejidad, relacionados o no con su especialidad, pudiendo releer las secciones más difíciles de los mismos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado el texto con el ámbito de la actividad profesional a que se refiere."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales y se ha decidido si es oportuno un análisis más profundo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos complejos utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado mensajes técnicos recibidos a través de soportes telemáticos: e-mail y fax."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han interpretado instrucciones extensas y complejas, que estén dentro de su especialidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Emite mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los registros utilizados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comunicado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado normas de protocolo en presentaciones formales e informales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha argumentado con todo detalle la elección de una determinada opción o procedimiento de trabajo elegido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Elabora documentos e informes propios de la actividad profesional o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito del escrito.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han redactado textos claros y detallados sobre una variedad de temas relacionados con su especialidad, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha organizado la información con corrección, precisión y coherencia, solicitando y/ o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han redactado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las fórmulas establecidas y el vocabulario específico en la cumplimentación de documentos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han resumido artículos, manuales de instrucciones y otros documentos escritos, utilizando un vocabulario amplio para evitar la repetición frecuente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se ha de elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas y características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios de la actividad profesional, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Transporte internacional de mercancías",
+      "codigo": "0622",
+      "ects": 12,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina la conveniencia de los distintos modos y medios de transporte evaluando las distintas alternativas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los distintos modos de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado las normas básicas que regulan las modalidades de transporte y se han clasificado sus variables, analizando ventajas e inconvenientes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las distintas alternativas según la mercancía y los puntos de origen y destino."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las infraestructuras logísticas disponibles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han valorado los requerimientos y la legislación específica aplicable a las mercancías peligrosas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las funciones de los distintos profesionales que pueden intervenir en las expediciones internacionales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la normativa legal aplicable según el modo de transporte y la operación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Selecciona los distintos modos y medios de transporte y las rutas óptimas, analizando las distintas alternativas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los elementos básicos de la geografía viaria, ferroviaria, marítima y aérea de los estados miembros de la Unión Europea."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha obtenido información sobre posibles proveedores y los servicios que prestan, en función de las características de la operación y de los medios de transporte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las áreas de cobertura de la ruta y los puntos operativos estratégicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las rutas disponibles, los puntos de intercambio óptimos, las características del producto, el destino y las condiciones de contrato, para seleccionar la ruta adecuada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado todos los componentes de costes, plazos de recogida, entrega de la mercancía y riesgos, para la selección de la ruta óptima."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han considerado las posibilidades de consolidación y/o transbordo de la mercancía, así como la fragilidad y/o peligrosidad de la mercancía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas e inconvenientes de externalizar algunas o todas las fases del transporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido indicadores de calidad que permitan valorar las decisiones tomadas y aplicar mejoras en futuras operaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la apuesta por medios que contribuyan a políticas de conservación medioambientales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Elabora y cumplimenta contratos de transporte, calculando los costes correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los contratos de transporte, teniendo en cuenta los incoterms y las obligaciones de cada una de las partes contratantes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado y formalizado el modelo de contrato del servicio de transporte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la normativa, las técnicas y el sistema de tarifas aplicable a cada medio de transporte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado las cláusulas habituales y los componentes del coste del servicio de transporte terrestre, marítimo, aéreo y multimodal."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha calculado el coste de operaciones de transportes terrestres, ferroviarios, marítimos, aéreos y multimodales, con los medios informáticos adecuados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha calculado el valor de la mercancía en un punto determinado de la ruta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado los costes adicionales y los riesgos que se pueden originar en función de la mercancía, el medio de transporte y la ruta."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado las incidencias producidas en las operaciones con las actuaciones posteriores para su subsanación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina los elementos que garantizan la integridad y el tránsito de las mercancías, identificando las situaciones de riesgo habituales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la legislación específica vigente según el tipo de producto: mercancía peligrosa, perecedera, animales vivos o gran volumen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los medios de protección física, embalajes y/o coberturas exteriores adecuadas a la mercancía, así como el medio de transporte y las posibles manipulaciones en los centros de carga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las condiciones de señalización, rotulación y etiquetado necesarias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han fijado las necesidades específicas para la estiba y colocación de mercancías, según su naturaleza y la cadena de transporte utilizada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la importancia de dar instrucciones concretas y se han delimitado las competencias de los distintos agentes externos que intervienen en las operaciones de transporte."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Formaliza y gestiona la documentación de las operaciones de transporte internacional, analizando los requisitos exigidos en cada medio de transporte utilizado en función de la mercancía enviada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los documentos de porte y tránsito necesarios según productos, ruta y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la tipología de permisos de circulación o navegación requeridos en las distintas modalidades de transporte y los trámites para la expedición y renovación de los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han gestionado los permisos y autorizaciones previas necesarias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han verificado los importes, fechas y plazos de toda la documentación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procesos de inspección de las operaciones de exportación, importación, expediciones intracomunitarias, adquisiciones intracomunitarias y de compra o venta domésticas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han asegurado las condiciones de seguimiento y trazabilidad de la mercancía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado los soportes de registro y archivo, y el sistema de clasificación y mantenimiento más adecuado para la operativa de transporte internacional."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado los niveles de protección, seguridad y acceso a la información, así como la normativa vigente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado, en la formalización y archivo de la documentación, las técnicas 3R (reducir, reutilizar y reciclar)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Secuencia las fases habituales del transporte y las posibles incidencias, utilizando los sistemas de comunicación, gestión y supervisión adecuados en cada operación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la importancia de la localización de la mercancía a lo largo del recorrido."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han señalado los medios de seguimiento y supervisión de cada operación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los medios o aplicaciones de comunicación e información óptimos para cada operación, modo de transporte, ruta y destino."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado que las instrucciones dadas a los profesionales intervinientes se ajustan al procedimiento establecido para cada operación y modo de transporte."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido las actuaciones que se deben realizar en caso de siniestro o incidencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han especificado los indicadores de calidad del servicio de transporte y las actuaciones en caso de desviaciones endógenas repetitivas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Tramita el seguro de las mercancías durante el transporte, ajustándose a la normativa vigente y a las condiciones establecidas en el contrato de compraventa internacional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características básicas de un contrato de seguro en el transporte internacional de mercancías y los elementos que lo constituyen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los riesgos más habituales en una operación de compraventa internacional de mercancías y las necesidades de cobertura, para garantizar la llegada de las mercancías a su destino en las debidas condiciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los sistemas de protección jurídica de las mercancías y los tipos de pólizas de seguro más utilizadas en el comercio internacional, según la modalidad de transporte utilizado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado las cláusulas que habitualmente se incluyen en las pólizas de seguro."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido los procedimientos de contratación del seguro en las operaciones de comercio internacional."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado la póliza de seguro más adecuada para cada operación de comercio internacional, según sus condicionantes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido el procedimiento que se debe seguir en caso de siniestro o incidencias surgidas en las operaciones de comercio internacional cubiertas con una póliza de seguro."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha obtenido información sobre las principales compañías de seguros que operan en el mercado, tramitando los riesgos a través de las herramientas informáticas de sus páginas web."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión económica y financiera de la empresa",
+      "codigo": "0623",
+      "ects": 12,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Recopila información sobre iniciativas emprendedoras y oportunidades de creación de empresas, valorando el impacto sobre el entorno de actuación e incorporando valores éticos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha evaluado el concepto de cultura emprendedora y su importancia como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la importancia de la iniciativa individual, la creatividad, la formación y la colaboración, para tener éxito en la actividad emprendedora."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito individualmente las funciones básicas de la empresa y se han analizado todas en conjunto como un sistema integral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los principales componentes del entorno general que rodea a la empresa: económico, social, demográfico y cultural."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han evaluado los conceptos de cultura empresarial e imagen corporativa, y su relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido el fenómeno de la responsabilidad social de la empresa y su importancia como elemento de estrategia empresarial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado prácticas que incorporan valores éticos y sociales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha llevado a cabo un estudio de viabilidad económica y financiera de una pyme."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Establece la forma jurídica de la empresa, ajustándose a la normativa vigente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado las distintas formas jurídicas de las empresas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han calculado los gastos de constitución y puesta en marcha de la empresa, derivados de las distintas formas jurídicas, consultando la legislación vigente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha obtenido información sobre las posibles ayudas y subvenciones oficiales para la creación de una empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado, a partir de un estudio comparativo, la forma jurídica más adecuada, valorando los costes, la responsabilidad y las obligaciones jurídicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los trámites jurídicos y administrativos que hay que realizar para la constitución de la empresa, a partir de la información obtenida en las administraciones y organismos competentes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los trámites administrativos, autorizaciones, licencias y, en su caso, capacitación profesional que se requieren para la puesta en marcha de una empresa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las obligaciones laborales y fiscales derivadas del ejercicio de la actividad económica de la empresa."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado las funciones de los sindicatos, comités de empresa, representantes de personal, inspectores de trabajo y otras instituciones sociales que intervienen en el sector correspondiente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han analizado las situaciones de insolvencia, quiebra, suspensión de pagos y el procedimiento de concurso de acreedores en casos de insolvencia, así como la responsabilidad del empresario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Organiza los trámites para la obtención de los recursos necesarios para la financiación de las inversiones y suministros, evaluando las distintas alternativas financieras posibles.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los organismos que informan sobre la obtención de ayudas y subvenciones públicas para la adquisición y renovación de activos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha obtenido información sobre los instrumentos financieros y de crédito más habituales para la financiación de las inversiones y demás operaciones de la empresa."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado la información sobre el procedimiento, requisitos, garantías y documentación que se exige para obtener un crédito o un préstamo en una entidad financiera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han calculado los costes y se han analizado los requisitos y garantías exigidos, en las operaciones de leasing y renting, para la compra de vehículos y otros inmovilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han diferenciado los conceptos de interés nominal e interés efectivo y la tasa anual equivalente (TAE), tanto en inversiones como en instrumentos financieros (préstamos y créditos)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han calculado los costes y las cuotas de amortización de un préstamo, mediante los sistemas de amortización más utilizados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado la alternativa financiera más ventajosa para la adquisición de vehículos, maquinaria y otros activos en función de costes, riesgos y garantías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha analizado el procedimiento y las condiciones para solicitar los avales, fianzas y garantías bancarias que se requieren para realizar determinadas operaciones de transporte especial."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado hojas de cálculo para analizar, mediante las funciones oportunas, diferentes operaciones financieras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina las formalidades para la compraventa y/o el alquiler de los vehículos y otros activos, analizando las necesidades de inversiones y suministros y los recursos financieros necesarios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las necesidades de vehículos, instalaciones, maquinaria y otros activos, y los suministros necesarios en las empresas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las diferencias fundamentales entre la compraventa o el alquiler de vehículos, maquinaria e inmovilizados necesarios para el ejercicio de la actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las variables de un plan de inversión, diferenciando la financiación propia y ajena, y la recuperación de las inversiones a corto y a largo plazo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las necesidades de suministros y servicios de mantenimiento y repuestos, así como los costes que se derivan de los distintos sistemas de aprovisionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han evaluado diferentes planes de inversión a partir de los costes y la previsión de ingresos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las ventajas y los inconvenientes de los mercados de primera y segunda mano, de alquiler de vehículos y otros activos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha contactado vía online y offline con diferentes proveedores y suministradores potenciales y se ha solicitado la presentación de ofertas y presupuestos de acuerdo con las especificaciones recibidas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han evaluado las diferentes alternativas para la adquisición y renovación de vehículos, maquinaria e instalaciones, a partir del análisis comparativo de los presupuestos de compra y condiciones de pago."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora facturas, recibos y documentos de cobro y pago de los productos y de los servicios prestados, aplicando las normas mercantiles y fiscales de facturación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado las normas mercantiles y fiscales y los usos del comercio que regulan la facturación de productos y/o servicios, incluyendo la facturación electrónica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los impuestos que gravan los servicios de transporte y los tipos de gravamen aplicables en cada caso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado los aspectos del Impuesto sobre el Valor Añadido (IVA) y las obligaciones establecidas para la facturación de productos y/o servicios nacionales e internacionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la facturación de la venta de productos y/o la prestación de servicios, utilizando las aplicaciones informáticas adecuadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las características, los costes de gestión de cobro y negociación y los riesgos de los diferentes medios de pago o cobro."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han gestionado los impagados de clientes, cumpliendo los requisitos y plazos contemplados en la normativa vigente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han supervisado las condiciones de pago y cobro de las operaciones en divisas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Gestiona el proceso contable y fiscal de la empresa, aplicando la normativa mercantil y fiscal vigente, y los principios y normas del Plan General Contable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han diferenciado las distintas partidas del balance, analizando su relación funcional: activo (fijo y circulante), pasivo (fijo y circulante) y patrimonio neto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado los conceptos de inversión, gasto, pago, ingreso y cobro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han registrado las operaciones realizadas y se ha calculado el resultado, de acuerdo con los principios generales y las normas de valoración del Plan General Contable."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la amortización de los vehículos y demás elementos del inmovilizado, de acuerdo con la normativa fiscal vigente y el Plan General Contable."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado las cuentas anuales de acuerdo con del Plan General Contable para las pymes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las obligaciones fiscales derivadas de la aplicación y gestión del Impuesto sobre el Valor Añadido (IVA)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido las gestiones que se han de realizar para la liquidación del Impuesto de Circulación de Vehículos, interpretando la normativa que lo regula."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los impuestos sobre determinados vehículos, así como las tasas, cánones y derechos de uso que hay que pagar por la utilización de determinadas infraestructuras."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han determinado las obligaciones fiscales relativas a los impuestos que gravan los beneficios, en función de la forma jurídica de la empresa: IRPF e Impuesto de Sociedades."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha utilizado una aplicación informática de contabilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Determina la rentabilidad de las inversiones y la solvencia y eficiencia de la empresa, analizando los datos económicos y la información contable disponible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han empleado las aplicaciones y utilidades de la información contable y los estados financieros para una gestión eficaz de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado las relaciones del equilibrio necesarias entre las inversiones realizadas y los recursos financieros propios y ajenos, diferenciando entre la financiación básica y la del circulante."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los métodos más habituales para la evaluación de la rentabilidad de inversiones: tasa interna de rentabilidad (TIR), valor actual neto (VAN) y tasa de retorno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado el valor de adquisición, vida útil, valor actual, valor de reposición y valor residual de los elementos del inmovilizado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calculado los flujos de tesorería o cash-flow y el período medio de maduración."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha calculado el punto muerto o umbral de rentabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado los principales ratios e indicadores financieros para analizar los estados financieros a través del balance y la cuenta de resultados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado hojas de cálculo para la determinación de los diferentes ratios financieros y para el cálculo de la rentabilidad de la empresa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Logística de almacenamiento",
+      "codigo": "0625",
+      "ects": 7,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Relaciona la normativa específica del almacenaje, reconociendo las normas de contratación y de tratamiento de mercancías especiales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las normas que reglamentan las actividades de almacenaje y distribución."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha aplicado la normativa en la cumplimentación del contrato de depósito."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las normas nacionales e internacionales sobre el almacenaje de productos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los aspectos que caracterizan un depósito aduanero, una zona y depósito franco y un local autorizado, entre otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido las formalidades y trámites que deben realizarse en un almacén."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado, en el almacén, sistemas de calidad homologables a nivel internacional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Organiza el proceso de almacenaje por tipo de actividad y volumen de mercancías, optimizando los espacios y los tiempos de manipulación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las condiciones y modalidades de los sistemas de almacenaje según diferentes variables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han secuenciado los diferentes subprocesos del proceso logístico de almacenaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el diseño en planta del almacén, en función de las operaciones y movimientos que hay que realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado equipos, medios y herramientas de manutención, según las características del almacén y de las mercancías almacenadas, aplicando criterios económicos, de calidad y servicio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado métodos y técnicas de optimización de los espacios de almacenamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado métodos de reducción en los tiempos de localización y manipulación de las mercancías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado diferentes sistemas modulares de envasado y embalaje de las mercancías del almacén."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han concretado procedimientos de prevención de riesgos en el almacén."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Confecciona y controla el presupuesto del almacén, identificando desviaciones provenientes de la asignación de costes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las partidas y conceptos que hay que tener en cuenta para elaborar un presupuesto estimativo del servicio de almacén."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado periódicamente el coste de funcionamiento del almacén."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los indicadores o estándares económicos óptimos: coste por hora y coste por servicio, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han calculado los costes de almacén en función de la urgencia, plazos de entrega, preparación de mercancías, co-packing y paletización, entre otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las desviaciones sobre los costes previstos, identificando su causa y origen, y proponiendo medidas correctoras de acuerdo con el procedimiento establecido por la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha preparado el presupuesto de gastos del almacén, teniendo en cuenta los costes de la actividad y el nivel de servicio establecido, utilizando hojas de cálculo informático."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado periódicamente los costes de funcionamiento del almacén, utilizando hojas de cálculo informático."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona los stocks del almacén, asegurando su aprovisionamiento y expedición.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los diferentes tipos de inventarios y la finalidad de cada uno de ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado los conceptos de stock medio, mínimo y óptimo, identificando las variables que intervienen en su cálculo y la velocidad de rotación de las existencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han previsto las unidades necesarias de existencias en almacén para evitar roturas de stock."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las existencias del almacén, utilizando diferentes métodos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han controlado las existencias del almacén, supervisando el procedimiento y las normas establecidas para identificar desviaciones del inventario y plantear medidas rectificadoras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las tareas necesarias para atender los pedidos de mercancías efectuados por los clientes y la expedición de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado las altas, bajas y modificaciones de productos (código EAN), proveedores, clientes y/o servicios por medio de herramientas informáticas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado aplicaciones informáticas generales para gestionar los stocks y específicas para la identificación de materiales, gestión de pedidos, extracción y registro de salidas del almacén."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Gestiona las operaciones sujetas a la logística inversa, determinando el tratamiento a dar a las mercancías retornadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las actividades relacionadas con la logística inversa según la política de devolución o acuerdos alcanzados con los clientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han previsto las acciones que hay que realizar con las mercancías retornadas: reparación, reciclado, eliminación o reutilización en mercados secundarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las medidas necesarias para evitar la obsolescencia y/o contaminación de las mercancías retornadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las normativas sanitarias y medioambientales vigentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha diseñado la recogida de los envases retornables con la entrega de nueva mercancía, aplicando la normativa vigente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las diferentes unidades y/o equipos de carga para su reutilización en otras operaciones de la cadena logística, evitando el transporte en vacío."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los diferentes tipos de envases y embalajes para reutilizarlos, siguiendo las especificaciones, recomendaciones y normativa vigente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Supervisa los procesos realizados en el almacén, implantando sistemas de mejora de la calidad del servicio y planes de formación/reciclaje del personal.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los elementos necesarios para la implantación de un sistema de calidad en el almacén, siguiendo las pautas de la empresa y/o clientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha previsto la implantación de sistemas de calidad y seguridad para la mejora continua de los procesos y de los sistemas de almacenaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el cumplimiento de los procesos y protocolos del almacén, partiendo del plan o manual de calidad de la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la implantación y seguimiento de la mercancía por sistemas de radiofrecuencia o con otras innovaciones tecnológicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han investigado los elementos necesarios para asegurar la trazabilidad de las mercancías y el cumplimiento de la normativa relativa a la misma, utilizando sistemas de gestión de almacenes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han fijado los objetivos de un plan de formación-tipo para mejorar la eficiencia y calidad del servicio de almacén."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han detectado las necesidades de formación inicial y continua, tanto individuales como del equipo en su conjunto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado programas de gestión de tareas y cronogramas para controlar las tareas, los tiempos y el personal, cumpliendo con las normas de prevención de riesgos laborales."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión administrativa del comercio internacional",
+      "codigo": "0627",
+      "ects": 12,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina organismos e instituciones relacionados con el comercio internacional, analizando sus principales funciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la estructura de balanza de pagos, diferenciando las distintas balanzas que la componen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las funciones de los principales organismos e instituciones económicas internacionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el proceso de integración económica internacional, diferenciando los distintos niveles de integración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el proceso de integración económica europea y su repercusión en el comercio comunitario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las distintas instituciones comunitarias, sus principales funciones y competencias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado el marco jurídico comunitario y se han identificado las normas con incidencia en el intercambio comercial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Organiza un sistema de información eficaz para las operaciones de compraventa internacional, utilizando las herramientas informáticas adecuadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han elaborado bases de datos para las operaciones de comercio internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han confeccionado ficheros maestros de clientes y proveedores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado la información que habitualmente solicita el cliente o el proveedor en las operaciones de compraventa internacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el mantenimiento y actualización de las bases de datos de clientes y proveedores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes sobre clientes y/o proveedores a partir de las bases de datos disponibles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado la normativa legal y fiscal del país de destino de la mercancía que se va a exportar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha procesado y archivado adecuadamente la información generada en las operaciones de compraventa internacional realizadas para su posterior utilización en futuras operaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Reconoce las distintas barreras al comercio internacional, analizando la normativa que las regula.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las barreras arancelarias a la importación de mercancías y otras medidas de efecto equivalente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los principales instrumentos de protección comercial de naturaleza cuantitativa, que limitan o restringen las importaciones de mercancías."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado la función del arancel de aduanas como instrumento de protección y su repercusión sobre el comercio internacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas de defensa de la competencia internacional aplicables en el marco de la OMC."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado las cláusulas de salvaguardia y las medidas de vigilancia, analizando los casos en que procede su aplicación en la UE."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado las principales barreras técnicas y administrativas al comercio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las distintas medidas de apoyo y fomento a las exportaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Caracteriza los procedimientos administrativos de las operaciones de importación/exportación y de introducción/expedición, interpretando la normativa vigente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferencias entre una importación y una introducción y entre una exportación y una expedición."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los documentos que se requieren en las operaciones de importación/exportación e introducción/expedición, los procedimientos para su tramitación y gestión, y los organismos implicados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado el origen de las mercancías y la documentación que se requiere para su acreditación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado el valor en aduana de diferentes mercancías."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado la clasificación arancelaria de las mercancías."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los impuestos y otros tributos que gravan las operaciones de comercio internacional que integran la deuda aduanera."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los procesos administrativos de gestión aduanera."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha analizado el sistema de declaración estadística de las operaciones intracomunitarias (INTRASTAT)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora y cumplimenta la documentación necesaria para las operaciones de importación/exportación e introducción/expedición de mercancías.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado las cláusulas que se incluyen en los contratos de compraventa internacional y se ha confeccionado el contrato de compraventa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han confeccionado los documentos comerciales, de transporte y seguro que se requieren en las operaciones de compraventa internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha supervisado la documentación comercial y administrativa correspondiente a una operación de comercio internacional, comprobando las condiciones pactadas en el contrato."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado los documentos de gestión aduanera de diferentes operaciones de compraventa internacional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la gestión aduanera de operaciones relativas a los distintos regímenes aduaneros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha utilizado un paquete informático de gestión administrativa para la obtención de la documentación necesaria para las operaciones de compraventa internacional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de comercio internacional",
+      "codigo": "0828p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas en el proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos, y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de las nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guion de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades, ordenándolas en función de las necesidades de desarrollo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la implementación, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de su puesta en práctica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Profundización Inglés Profesional GS",
+      "codigo": "CV0015",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Sistema de información de mercados",
+      "codigo": "0822",
+      "ects": 6,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza las variables del mercado y el entorno de la empresa u organización, valorando su incidencia en la actividad de la misma y en la aplicación de las diferentes estrategias comerciales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la estructura y funcionamiento de los mercados en los que opera la empresa, identificando las variables que influyen en los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el impacto de las variables del microentorno en la actividad comercial de la empresa u organización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los efectos de los factores del macroentorno en la actividad comercial de la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las principales organizaciones e instituciones económicas que regulan o influyen en la actividad de los mercados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la incidencia de los procesos de integración económica a nivel europeo e internacional, en la competencia de los mercados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las necesidades del consumidor y se han clasificado según la jerarquía o el orden de prioridad en la satisfacción de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las fases del proceso de compra del consumidor, analizando las variables internas y externas que influyen en el mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido diferentes estrategias comerciales, aplicando los principales métodos de segmentación de mercados según distintos criterios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura un sistema de información de marketing (SIM) para la toma de decisiones comerciales, definiendo las fuentes de información, los procedimientos y las técnicas de organización de los datos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las necesidades de información de la empresa para la toma de decisiones de marketing."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los datos que son procesados y organizados por un Sistema de Información de marketing."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las características de idoneidad que debe poseer un SIM, su tamaño, finalidad y objetivos, en función de las necesidades de información de la empresa u organización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha clasificado la información en función de su naturaleza, del origen o procedencia de los datos y de la disponibilidad de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los subsistemas que integran un SIM, analizando las funciones, tipos de datos y objetivos de cada uno de ellos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado los datos según la fuente de información de la que proceden."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado la necesidad de realizar una investigación comercial, identificando las fases del proceso."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado técnicas adecuadas para el tratamiento y organización de los datos, con el fin de transformarlos en información útil para la toma de decisiones de la empresa u organización."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado herramientas informáticas para el archivo e incorporación de la información a la base de datos de la empresa, para su actualización permanente, de forma que pueda ser utilizada de manera ágil y rápida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Diseña planes de trabajo para la obtención de información, definiendo los objetivos, las fuentes de información, los métodos y las técnicas aplicables para la obtención de los datos y el presupuesto necesario.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el problema u oportunidad de la empresa que se pretende investigar y se han formulado los objetivos de la investigación que se va a realizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el diseño o tipo de investigación que es necesario realizar, ya sea exploratoria, descriptiva o causal."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado el plan de trabajo, estableciendo el tipo de estudio, la información que hay que obtener, las fuentes de información, los instrumentos para la obtención de los datos, las técnicas de análisis y el presupuesto necesario."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fuentes de información, primarias y secundarias, internas y externas, que pueden facilitar la información, aplicando criterios de fiabilidad, representatividad y coste."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los métodos de acceso más habituales a las fuentes de información secundaria internas y externas, motores de búsqueda online u otras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han diferenciado las técnicas de obtención de información primaria cualitativa, como son la entrevista en profundidad, la dinámica de grupos o la observación, entre otras, analizando sus características."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las diferentes técnicas de obtención de información primaria cuantitativa, como son las encuestas, la observación, la experimentación o los paneles, entre otras, analizando sus características."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las ventajas de los medios para la obtención de datos en papel (PAPI) o con apoyo de medios informáticos (CAPI, CATI, CAWI), tanto en encuestas personales, como telefónicas o a través de la web."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han elaborado y probado diferentes tipos de cuestionarios para la realización de distintas modalidades de encuestas (personales, telefónicas, por correo y web)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina las características y el tamaño de la muestra de la población objeto de la investigación, aplicando técnicas de muestreo para la selección de la misma.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los distintos métodos de muestreo, probabilístico y no probabilístico, aplicables para la selección de una muestra representativa de la población sobre la que se va a investigar, analizando sus ventajas e inconvenientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el proceso de selección de la muestra, aplicando distintos métodos de muestreo aleatorio simple, sistemático, estratificado, por áreas o conglomerados, polietápico o por ruta aleatoria, analizando sus ventajas e inconvenientes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el proceso de muestreo, aplicando técnicas de muestreo no probabilístico, por conveniencia, por juicios, por cuotas o bola de nieve."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las distintas variables que influyen en el cálculo del tamaño de la muestra en una investigación comercial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado el método de muestreo y se ha calculado el tamaño óptimo de la muestra, en función de la población objeto de estudio, el error de muestreo, el nivel de confianza deseado y el presupuesto asignado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado el plan de trabajo de campo para la obtención de información primaria, determinando el tiempo y los recursos materiales y humanos necesarios, en función del medio y la forma de encuesta que se va a realizar (PAPI, CAPI, MCAPI, CATI y CAWI, entre otros)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha programado el trabajo de campo, elaborando el cuaderno de campo y la hoja de ruta de cada encuestador, estableciendo el número de entrevistas que hay que realizar, la duración de las mismas y las indicaciones para la localización física y/o selección de las personas que se van a entrevistar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha simulado la realización de la encuesta, según las instrucciones recogidas en cuaderno de trabajo de campo, con el fin de detectar posibles errores en el cuestionario y establecer las oportunas medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza el tratamiento y análisis de los datos obtenidos y elabora un informe con los resultados, aplicando técnicas estadísticas y herramientas informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han tabulado y representado gráficamente los datos obtenidos en la investigación comercial, de acuerdo con las especificaciones recibidas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han calculado las medidas estadísticas básicas de tendencia central, de dispersión de datos y las que representan la forma de la distribución."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado técnicas de inferencia estadística para extrapolar los resultados de la muestra a la totalidad de la población, con un determinado grado de confianza y un determinado nivel de error muestral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las medidas estadísticas básicas, para la obtención de información del mercado como tendencias de mercado, cuota de mercado u otras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comparado los resultados estadísticos obtenidos en un determinado estudio con las hipótesis previamente formuladas en el mismo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado hojas de cálculo para el tratamiento y análisis de los datos y el cálculo de las medidas estadísticas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado informes comerciales con los resultados y conclusiones obtenidas del análisis estadístico y su relación con el objeto de estudio."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han presentado los datos y resultados del estudio convenientemente organizados en forma de tablas estadísticas y acompañados de las representaciones gráficas más adecuadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han incorporado los datos y resultados del estudio a una base de datos en el formato más adecuado para su posterior actualización y para facilitar la consulta y recuperación de la información con rapidez y precisión."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Marketing internacional",
+      "codigo": "0823",
+      "ects": 9,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina la oportunidad de entrada de un producto en un mercado exterior, evaluando las características comerciales de los productos, líneas y gamas de productos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las dimensiones de un producto o servicio, diferenciando entre línea, gama y familia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha elaborado un informe mediante soporte informático, delimitando el campo de actividad y estableciendo la dimensión de los productos, servicios y marcas detectadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los factores que definen la política de productos en mercados exteriores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las relaciones causales entre las variables de marketing mix en las distintas etapas del ciclo de vida del producto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las debilidades y fortalezas de una línea de productos en un determinado mercado exterior."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los tipos de productos que se pueden utilizar en una estrategia de marketing online."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han confeccionado informes, utilizando herramientas informáticas, evaluando la oportunidad de lanzamiento de un producto y el posible posicionamiento en un mercado exterior."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña políticas de precios y tarifas comerciales en un mercado exterior, analizando las variables que componen e influyen en el precio de un producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los métodos de fijación de precios, teniendo en cuenta el incoterm y las distintas variables que determinan el precio del producto en el exterior."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la importancia y repercusión del tipo de cambio en la fijación del precio del producto y/o servicio en un mercado exterior."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los costes más relevantes en la fijación de precios competitivos en el mercado y las fuentes que proporcionan información sobre los precios de la competencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la tendencia de los precios de un producto durante un número determinado de años, aplicando técnicas de regresión estadística y tasas de variación previstas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las estrategias de precios y canal de distribución de marcas o productos competidores en un determinado mercado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los precios de un producto o marca en un determinado mercado con los de la competencia, teniendo en cuenta los incoterms correspondientes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado informes, utilizando las herramientas informáticas, sobre el análisis de la política de precios, para distintas categorías de productos que compiten en un determinado establecimiento o canal, en función de las variables de estudio: origen nacional, internacional, categoría, calidad y otras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Selecciona la forma más adecuada de entrada en un mercado exterior, analizando los factores que definen la estructura de los canales de distribución en mercados internacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han diferenciado los tipos de canales de distribución internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las variables que influyen en los diferentes tipos de canales de distribución internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado el coste para la entrada de productos en un mercado exterior, considerando las variables que intervienen en un canal de distribución."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado entre varios canales de distribución alternativos aquel que optimice tiempo y costes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido una red de ventas exterior, propia, ajena o mixta, en un canal de distribución determinado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado los productos de una empresa comercial, en función de criterios de distribución comercial, costes de distribución y ventas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe sobre los problemas y oportunidades de los distintos productos de una empresa comercial en los distintos canales de distribución, utilizando aplicaciones informáticas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina las acciones de comunicación comercial más adecuadas para la entrada en un mercado exterior, evaluando las posibles alternativas de comunicación y promoción internacional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han diferenciado los medios, soportes y formas de comunicación comercial más utilizados en la práctica comercial internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los objetivos y elementos de la comunicación comercial con los clientes internacionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las diferentes técnicas psicológicas en el diseño de una acción de comunicación comercial, teniendo en cuenta las diferencias culturales internacionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las diferencias entre publicidad y promoción en el contexto de apertura a mercados exteriores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado el medio de promoción, el contenido y forma del mensaje promocional, valorando la alternativa de comunicación online."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los principales elementos de un sitio web comercial o de información, especificando sus características."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado los métodos para la asignación de recursos financieros y presupuesto de una campaña de comunicación internacional."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado los objetivos y criterios para la asistencia a ferias y eventos internacionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han analizado las ventajas de utilizar un plan de marketing online, para el lanzamiento y difusión de nuevos productos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de marketing internacional, seleccionando la información de base o briefing de productos y relacionando entre sí las variables de marketing mix.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las fases de planificación comercial de un plan de marketing internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las relaciones entre las distintas variables que intervienen en el marketing mix internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un análisis estadístico, utilizando las herramientas informáticas, a partir de un plan de marketing internacional convenientemente caracterizado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las estrategias del plan de marketing del producto o servicio, a partir de la información disponible del SIM en los distintos mercados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los datos relacionados con un producto que son necesarios para elaborar la información de base del producto-marca."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la finalidad del briefing y los elementos que lo componen en el ámbito internacional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha presentado la información del briefing en los soportes e idiomas requeridos, de forma estructurada y de acuerdo con las especificaciones de la organización, utilizando las herramientas informáticas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Negociación internacional",
+      "codigo": "0824",
+      "ects": 6,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona clientes y/o proveedores potenciales de las fuentes de información, analizando sus condiciones comerciales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han utilizado las técnicas adecuadas de búsqueda y selección de clientes y/o proveedores internacionales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principales riesgos internos y externos en las operaciones comerciales internacionales, atendiendo a la rentabilidad y seguridad de la actuación comercial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los términos y condiciones comerciales que deben cumplir los clientes y/o proveedores internacionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado agentes, intermediarios, clientes y/o proveedores corporativos, en función de los objetivos marcados por la organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han confeccionado ficheros maestros de clientes y/o proveedores internacionales a partir de la aplicación informática de gestión de la relación con clientes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado informes de la selección de clientes y/o proveedores internacionales en soportes informáticos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han actualizado las bases de datos y los ficheros de clientes y/o proveedores de forma periódica, según procedimientos basados en la seguridad y la confidencialidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las partes que componen los pliegos de condiciones y las ofertas comerciales en los concursos y licitaciones internacionales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Establece procesos de comunicación según los protocolos empresariales y costumbres del país, utilizando los medios y sistemas adecuados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las técnicas más utilizadas en las relaciones de comunicación internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales normas de comunicación verbal y no verbal de las diversas culturas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han planificado las fases que componen una entrevista personal."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han elaborado documentos escritos basados en propuestas de información por parte de un cliente, agente o proveedor en el que se observe el tratamiento adecuado al país."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha simulado una conversación telefónica con un cliente, agente o proveedor, utilizando técnicas de comunicación adecuadas a la situación y al interlocutor."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado documentos con los puntos clave que hay que tratar en una reunión con un cliente, agente o proveedor."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado soportes informáticos o de nuevas tecnologías para la elaboración y transmisión de documentos comerciales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las nuevas tecnologías de la información y comunicación en los procesos de comunicación con operadores internacionales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Diseña el proceso de negociación con clientes y/o proveedores, proponiendo los términos más ventajosos para la organización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los factores esenciales que conforman la oferta y demanda de productos y/o la prestación de servicios en operaciones internacionales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han programado las diferentes etapas del proceso de negociación en una operación de compraventa internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado las principales técnicas de negociación internacional en las operaciones de compraventa internacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado la terminología comercial habitual en el ámbito internacional en las operaciones de compraventa internacional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han conocido las características más relevantes de los negociadores de diferentes culturas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un plan para iniciar negociaciones en el que se tenga en cuenta la idiosincrasia, normas, protocolo y costumbres del país del cliente y/o proveedor."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los principales parámetros y los límites máximos y mínimos que configuran una oferta presentada a clientes internacionales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado informes que recojan los acuerdos de la negociación, utilizando programas y medios informáticos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Interpreta la normativa y los usos habituales que regulan la contratación internacional, analizando su repercusión en las operaciones de comercio internacional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las fuentes jurídicas que regulan la contratación internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha caracterizado el valor jurídico de los convenios internacionales, de los organismos internacionales y de los usos uniformes en la contratación internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la terminología jurídica utilizada y la normativa mercantil que regula los contratos internacionales de compraventa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las condiciones y obligaciones derivadas de la utilización de los incoterms en las operaciones de comercio internacional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las partes y elementos de un contrato de compraventa internacional, diferenciando las cláusulas facultativas de las obligatorias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado las teorías de derecho internacional que solucionan los conflictos derivados de las condiciones establecidas en los contratos internacionales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado las ventajas de utilizar las cláusulas de arbitraje internacional en la resolución de conflictos de comercio internacional."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado las características generales que regulan los concursos y licitaciones internacionales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora los contratos asociados a los procesos de negociación, aplicando la normativa, usos y costumbres internacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los modelos documentales utilizados en la negociación de operaciones comerciales internacionales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han elaborado las cláusulas de un precontrato de una operación comercial internacional, aplicando la normativa de contratación internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los derechos y obligaciones derivados de la inclusión del incoterm acordado en el contrato de compra venta internacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los distintos tipos de contratos mercantiles internacionales que se utilizan."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los modelos documentales que representan los contratos mercantiles internacionales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha confeccionado el contrato adecuado a la operación comercial internacional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado aplicaciones informáticas en la redacción de las cláusulas tipo del contrato mercantil internacional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Planifica el desarrollo y el proceso de control de los acuerdos contractuales internacionales, obteniendo información de los agentes intervinientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha organizado el proceso de control de la fuerza de ventas/distribuidores/agentes comerciales, utilizando sistemas de comunicación e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado problemas, oportunidades y tendencias del mercado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los informes de clientes, proveedores, prescriptores, agentes comerciales y/o distribuidores mediante programas informáticos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han elaborado ratios específicos de evolución y rentabilidad de las ventas, utilizando programas informáticos específicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado planes de actuación que induzcan a la motivación, perfeccionamiento y metodología de la fuerza de ventas propia o de distribuidores."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido los métodos relevantes de control en el desarrollo y ejecución de los procesos de comercialización internacional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha definido el proceso de control que deben seguir los pedidos realizados por los clientes, utilizando sistemas y programas informáticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el proceso de control que deben seguir los pedidos y servicios realizados a un proveedor internacional, utilizando sistemas y programas informáticos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las incidencias más comunes que se pueden originar en los procesos de compraventa internacional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Financiación internacional",
+      "codigo": "0825",
+      "ects": 7,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece un sistema de información eficaz que sirva de apoyo en las operaciones de financiación internacional, utilizando las herramientas informáticas adecuadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales fuentes que pueden proporcionar la información que se requiere en las operaciones de financiación internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha obtenido información a través de las páginas web de diferentes organismos y se ha elaborado una base de datos que sirva de apoyo a las distintas operaciones de comercio internacional y su financiación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido el sistema y las técnicas de archivo para la organización de la información y documentación que se genera en las operaciones de compraventa internacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los organismos e instituciones competentes para la solicitud de ayudas y subvenciones a la exportación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las fuentes primarias de financiación bancaria, tanto multinacionales como regionales y estatales, y las fuentes secundarias de financiación de las exportaciones e importaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han confeccionado los ficheros maestros de clientes y de proveedores, a partir de la aplicación informática de gestión de la relación con clientes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de la base de datos de clientes y proveedores potenciales y se han elaborado informes a partir de la misma."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Analiza el funcionamiento del mercado de divisas y las variables que influyen en el mismo, valorando las repercusiones que puede tener el comportamiento del mercado en las operaciones de compraventa internacional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el funcionamiento del mercado de divisas, los elementos que lo conforman, las variables que influyen en el mismo y la determinación del precio o tipo de cambio de una divisa respecto a otras."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado e interpretado la normativa que regula el funcionamiento del mercado de divisas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diferenciado el mercado de divisas al contado y a plazo, distinguiendo los tipos de cambio spot y forward."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las características fundamentales del Euromercado y los segmentos de actividad en los que opera."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las variables que inciden en las fluctuaciones de los tipos de cambio de las distintas divisas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha obtenido y analizado información sobre el mercado de divisas, interpretando y utilizando la terminología específica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las implicaciones que pueden tener las fluctuaciones en el tipo de cambio y en el tipo de interés de una divisa, sobre las operaciones de comercio internacional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza el sistema de gestión del riesgo de cambio y el riesgo de interés en las operaciones de comercio internacional, aplicando en cada caso los mecanismos de cobertura más adecuados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los riesgos y costes que se generan al instrumentar el pago/cobro y la financiación de las operaciones de comercio internacional en una determinada divisa, como consecuencia de las fluctuaciones en el tipo de cambio y en el tipo de interés de la divisa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado las ventajas del seguro de cambio como forma de cobertura del riesgo de cambio de una divisa y se ha calculado su coste utilizando la aplicación informática adecuada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han evaluado otras formas de cobertura del riesgo de cambio, analizando sus ventajas e inconvenientes y calculando los costes financieros mediante la aplicación informática adecuada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado distintas formas de cobertura del riesgo de tipo de interés, analizando sus ventajas e inconvenientes y calculando los costes financieros mediante la aplicación informática adecuada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido el procedimiento, la documentación y los trámites que hay que realizar para contratar con la entidad financiera, en tiempo y forma, la fórmula de cobertura del riesgo más favorable para la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado sistemas de intercambio de datos internacionales como Swif, EDI y otros, para hacer más efectivas y seguras las comunicaciones relativas a la documentación financiera."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han manejado las herramientas informáticas de los distintos proveedores para la tramitación y gestión integrada del riesgo de cambio, de acuerdo con las necesidades de la empresa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina la forma de financiación adecuada en las operaciones de compraventa internacional, analizando las distintas modalidades de crédito, teniendo en cuenta la forma de pago/cobro y valorando los costes y riesgos que generan.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las fuentes primarias y secundarias de financiación de las exportaciones e importaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han evaluado las distintas formas de financiación de las importaciones, analizando sus ventajas e inconvenientes y determinando en cada caso los riesgos y costes financieros que generan."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado las distintas modalidades de créditos que se pueden utilizar en una operación de exportación o venta internacional, en la misma divisa de facturación y en distinta divisa, calculando en cada caso los riesgos y costes financieros que generan."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado los principales usos y prácticas mercantiles uniformes en las operaciones de crédito internacional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado otras formas de financiación de las exportaciones y proyectos internacionales, como factoring, forfaiting, leasing y project finance, entre otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha gestionado la documentación necesaria para la obtención de créditos vinculados a las operaciones de importación y exportación de productos y/o servicios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado los costes financieros y se ha elaborado el cuadro de amortización de préstamos utilizando la aplicación informática adecuada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Gestiona la obtención de financiación con apoyo oficial a la exportación, aplicando la normativa reguladora y elaborando la documentación necesaria.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado y analizado la normativa que regula los créditos oficiales a la exportación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han evaluado las distintas modalidades de crédito oficial a la exportación, teniendo en cuenta el país de destino, los bienes y servicios financiables y los requisitos que se exigen, y se ha seleccionado la más conveniente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado la base máxima financiable, los intereses a pagar y las cuotas de amortización del préstamo, utilizando la aplicación informática adecuada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha elaborado la documentación que se requiere para la solicitud de un crédito oficial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los cálculos oportunos para el ajuste de intereses, de acuerdo con lo establecido en el convenio de ajuste recíproco de intereses (CARI), utilizando la hoja de cálculo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han diferenciado los distintos tipos de créditos del Fondo de Ayuda al Desarrollo (créditos FAD), los requisitos y criterios de concesión de los mismos y la documentación que hay que presentar para su solicitud."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Elabora la documentación necesaria para participar en concursos o licitaciones internacionales, interpretando las normas de los organismos convocantes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado las normas y reglamentos de organismos de financiación internacionales que regulan las licitaciones y concursos internacionales de proyectos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los organismos e instituciones convocantes de proyectos, tanto internacionales, como europeos, nacionales, regionales y locales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seguido el procedimiento de adjudicación de proyectos, analizando los requisitos que se exigen y las distintas fases del proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fianzas, avales y garantías que se exigen para participar en una licitación o concurso internacional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los organismos que facilitan financiación para acudir al concurso o licitación internacional."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado el formulario de oferta y se ha preparado la documentación técnica y administrativa que se requiere para la participación en una licitación o concurso internacional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Selecciona la cobertura adecuada de los posibles riesgos en las operaciones de venta internacional, evaluando las distintas pólizas de seguro de crédito a la exportación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos más habituales en las operaciones de comercio internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principales mecanismos, públicos y privados, para la cobertura de riesgos en las operaciones internacionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha caracterizado el contrato de seguro de crédito a la exportación, analizando las operaciones asegurables, la prima y las entidades que intervienen en el contrato."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las funciones y competencias de la Compañía Española de Seguros de Crédito a la Exportación (CESCE)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han evaluado las distintas modalidades de pólizas de seguro de crédito a la exportación, analizando las condiciones, los riesgos que cubren, el ámbito de aplicación y el coste de la prima."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha preparado la documentación que se requiere para la gestión y contratación de una póliza CESCE."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido el procedimiento de actuación en caso de siniestro y la indemnización por daños."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Medios de pago internacionales",
+      "codigo": "0826",
+      "ects": 6,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica la normativa reguladora de los medios de pago internacionales, analizando los efectos jurídicos y económicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la normativa nacional e internacional vigente que regula los medios de pago internacionales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la normativa nacional e internacional vigente que regula los medios de pago a través de Internet."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado las reglas y usos uniformes relativos a los créditos documentarios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado las reglas y usos uniformes para el cobro del papel comercial de la CCI (Cámara de Comercio Internacional)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los efectos jurídicos y económicos de los convenios internacionales que regulan los medios de pago."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la normativa reguladora de los nuevos medios de pago internacionales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los diferentes medios de cobro y pago internacionales, analizando los procedimientos, los costes y la operativa de cada uno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los diferentes medios de pagos internacionales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las modalidades de créditos documentarios, describiendo sus procedimientos de emisión."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las remesas simple y documentaria como medios de pago internacionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los cheque personal y bancario como medios de pago internacionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado las órdenes de pago simple y documentaria como medios de pago internacionales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los nuevos medios de pago o cobro internacionales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas e inconvenientes de los diferentes medios de pago internacionales, calculando los costes derivados de su gestión."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las principales obligaciones legales de las entidades financieras, de seguros y de transporte asociadas a la operación internacional, asegurando el cobro o pago."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los documentos necesarios para llevar a cabo el cobro o pago de una operación de comercio internacional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza las garantías y avales, adecuándose a la normativa vigente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos inherentes a las operaciones contractuales internacionales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los conceptos de garantía real y personal."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado las principales garantías reales utilizadas en la práctica bancaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado las garantías en función de su relación con la obligación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han interpretado las reglas y usos relativos a las garantías bancarias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las ventajas e inconvenientes de cada modalidad de pago en función de las garantías exigidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha confeccionado la documentación relativa a la emisión, modificación y cancelación de las garantías y avales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona la documentación necesaria para realizar el cobro o pago internacional, analizando los plazos y condiciones estipuladas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la solvencia, el riesgo de impago y otras circunstancias financieras en las operaciones de comercio internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la documentación que se exige en cada medio de pago para proceder al cobro/pago de la operación de comercio internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el procedimiento definido para la presentación efectiva de los documentos en el sistema financiero."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado, para cada medio de pago internacional, el documento base que lo representa."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los documentos que intervienen en una operación de comercio internacional en la que se utiliza un medio de pago documentario."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha confeccionado el documento base correspondiente a los distintos medios de pago utilizados en las operaciones de comercio internacional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las causas de los retrasos o impagos asociadas a los diferentes medios de pago en operaciones de comercio internacional."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han calculado los costes financieros y no financieros debidos a un retraso o impago de una operación de comercio internacional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han gestionado los trámites administrativos relacionados con el protesto de efectos impagados asociados a operaciones comerciales internacionales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica los medios de cobro y pago a través de Internet y otros sistemas digitales, garantizando la confidencialidad y seguridad de las transacciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han utilizado herramientas informáticas para el análisis de la legislación del país de destino."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado técnicas digitales o convencionales de investigación para la obtención de la información."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado los medios de pago internacionales usados a través de Internet."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado sistemas de certificación digital que garanticen la confidencialidad y aseguren las operaciones de cobro o pago internacionales realizadas a través de Internet."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado sistemas de intercambio de datos internacionales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado medios y programas informáticos en la elaboración de informes y en la elaboración de documentos de pago/cobro internacional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comercio digital internacional",
+      "codigo": "0827",
+      "ects": 4,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Elabora el plan de marketing digital internacional, diseñando las políticas específicas que han de desarrollarse.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha confeccionado un plan de marketing digital internacional capaz de alcanzar los objetivos comerciales de la empresa en el exterior."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los procesos de posicionamiento y marketing online internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han fijado las normas que han de cumplirse para realizar la publicidad y promoción online en el ámbito internacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los elementos que configuran el marketing internacional de buscadores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han evaluado los desafíos del marketing electrónico internacional: la confianza en los medios de pago, los problemas logísticos y la seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han gestionado electrónicamente las relaciones con los clientes internacionales, definiendo claramente el programa de fidelización y las herramientas que se van a utilizar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las nuevas tendencias de comunicación y de relación con el cliente en el marketing digital internacional."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado acciones de marketing internacional por medio de dispositivos móviles."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza las tareas básicas necesarias para utilizar la red Internet, enfocando su uso como un canal de promoción internacional de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los conceptos esenciales de funcionamiento y uso de la red a nivel internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han evaluado los distintos sistemas de conexión a la red."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha configurado el acceso al sistema informático en la red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han comprobado las características propias de las intranets y las extranets."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado los principales programas navegadores nacionales e internacionales para moverse por la red."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado búsquedas selectivas de información mediante aplicaciones específicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado buscadores nacionales e internacionales especializados por temas y otras aplicaciones de búsqueda avanzada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Gestiona diversos servicios y protocolos de Internet, manejando programas de correo electrónico, transferencia de archivos, foros internacionales de comunicación y redes sociales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los elementos que configuran el correo electrónico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha utilizado el correo electrónico directamente desde la web."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado programas de cliente de correo electrónico para gestionar el envío y la recepción de mensajes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el protocolo de la red para la transferencia de archivos (FTP) desde un equipo cliente a un servidor."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han compartido archivos a través de una red de ordenadores entre iguales (peer-to-peer P2P)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido contactos con otros usuarios de la red a través de foros internacionales de debate y opinión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido contactos internacionales sobre temas concretos a través de blogs temáticos de contenido profesional."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado comunicaciones con usuarios internacionales de la red a través de redes sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define la política de comercio electrónico de la empresa, estableciendo las acciones necesarias para efectuar ventas internacionales on-line.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido los parámetros necesarios para crear o adaptar un negocio online internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido acciones de captación enfocadas al comercio electrónico internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los modelos de negocio existentes en la red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha diseñado una tienda virtual de ámbito internacional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha planificado la gestión de los pedidos recibidos y todo el proceso logístico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido los medios de pago internacionales que se va a utilizar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado los sistemas de seguridad que garanticen la privacidad e invulnerabilidad de las operaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los diferentes tipos de negocios electrónicos existentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza la facturación electrónica y otras tareas administrativas, propias del comercio internacional, de forma telemática, utilizando en cada caso el software específico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los formatos electrónicos de factura (EDIFACT, XML, pdf, html, doc, xls, gif, jpeg o txt, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido la transmisión telemática entre ordenadores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha garantizado la integridad y autenticidad de las transmisiones telemáticas a través de una firma electrónica reconocida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado aplicaciones específicas de emisión de facturas electrónicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado tareas administrativas online con organismos públicos y privados de ámbito nacional e internacional."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los programas perjudiciales para la seguridad e integridad de los datos almacenados en los equipos informáticos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implementado las barreras de seguridad necesarias para salvaguardar la información almacenada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de comercio internacional",
+      "codigo": "0828",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas en el proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos, y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de las nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guion de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades, ordenándolas en función de las necesidades de desarrollo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la implementación, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de su puesta en práctica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665020",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708020",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS020",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

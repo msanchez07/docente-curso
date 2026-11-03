@@ -1,55 +1,77 @@
-# Datos del BOE (ciclos de Informática)
+# Datos BOE de los ciclos formativos
 
-Datos oficiales de los ciclos de la familia **Informática y Comunicaciones**
-incluidos en el catálogo de horarios 2026-27 de la Comunitat Valenciana.
-
-Fuente de los enlaces: [Dosier de ciclos de FP](https://ceice.gva.es/es/web/formacion-profesional/dossier-cicles)
+Datos oficiales de los **181 ciclos** del catálogo de horarios 2026-27 de la
+Comunitat Valenciana, generados a partir del
+[Dosier de ciclos de FP](https://ceice.gva.es/es/web/formacion-profesional/dossier-cicles)
 de la Conselleria.
 
-## Ficheros JSON
+Cada ficha del dosier enlaza el Real Decreto del título (BOE) y el decreto
+autonómico de currículo (DOGV). El importador descarga esos enlaces, extrae los
+módulos, RA y CE, y los cruza con `resources/horarios/catalogo-2026-27.json`.
 
-| Fichero                                                  | Ciclo                                          | Norma principal           |
-| -------------------------------------------------------- | ---------------------------------------------- | ------------------------- |
-| `daw.json`                                               | Desarrollo de Aplicaciones Web                 | RD 686/2010 + RD 405/2023 |
-| `gs-desarrollo-de-aplicaciones-multiplataforma.json`     | Desarrollo de Aplicaciones Multiplataforma     | RD 450/2010               |
-| `gs-administracion-de-sistemas-informaticos-en-red.json` | Administración de Sistemas Informáticos en Red | RD 1629/2009              |
-| `gm-sistemas-microinformaticos-y-redes.json`             | Sistemas Microinformáticos y Redes             | RD 1691/2007              |
-| `gb-informatica-de-oficina.json`                         | Informática de Oficina                         | RD 356/2014 + RD 127/2014 |
-| `gb-informatica-y-comunicaciones.json`                   | Informática y Comunicaciones                   | RD 127/2014 + RD 356/2014 |
+## Generar o actualizar los datos
 
-## Enlaces oficiales
+```bash
+python3 scripts/importar_curriculos.py
+python3 scripts/importar_curriculos.py --ids gm-gestion-administrativa --force
+```
 
-- [RD 450/2010 (DAM)](https://www.boe.es/buscar/act.php?id=BOE-A-2010-8067)
-- [RD 1629/2009 (ASIR)](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18355)
-- [RD 1691/2007 (SMR)](https://www.boe.es/buscar/act.php?id=BOE-A-2008-819)
-- [RD 127/2014 (FP Básica)](https://www.boe.es/buscar/act.php?id=BOE-A-2014-2360)
-- [RD 356/2014 (FP Básica)](https://www.boe.es/buscar/act.php?id=BOE-A-2014-5591)
+El script cachea las descargas en el directorio temporal del sistema. Para los
+RDs antiguos que el BOE publica como imágenes usa `pdftotext -raw`; si el PDF
+tampoco tiene capa de texto, ese ciclo queda con los módulos que sí se hayan
+podido extraer.
 
-Módulos transversales de GM/GS: [Decreto 114/2025 (DOGV)](https://dogv.gva.es/datos/2025/08/04/pdf/2025_29742_es.pdf).
-Itinerario personal para la empleabilidad de FP Básica: [Decreto 117/2025 (DOGV)](https://dogv.gva.es/datos/2025/08/13/pdf/2025_32763_es.pdf).
+## Cobertura actual
 
-## Cobertura
+- 181 ciclos con al menos parte de sus RA/CE.
+- 2.467 de 2.991 módulos con RA/CE (82,5 %).
+- 14.282 RA y 105.927 CE en los ficheros por ciclo.
+- La tabla completa está en [`COBERTURA.md`](./COBERTURA.md).
 
-- Los módulos profesionales de los títulos LOE (DAM, ASIR, SMR) tienen RA/CE
-  completos.
-- Los módulos transversales (Inglés, IPE, Digitalización, Sostenibilidad) se
-  incorporan desde los anexos del Decreto 114/2025.
-- En FP Básica se incorporan los módulos profesionales de los RD de 2014 y el
-  IPE del Decreto 117/2025. Los ámbitos `3161`–`3164` y el proyecto intermodular
-  no tienen RA/CE en los enlaces oficiales del dosier; quedan sin datos.
-- Los módulos optativos y el proyecto de 1º sin norma estatal específica se
-  mantienen en el ciclo con `ra: []`.
+Los ciclos de FP Básica y algunos títulos antiguos tienen cobertura parcial:
+los ámbitos `3161`–`3164`, el proyecto intermodular de FP Básica y algunos
+módulos optativos no tienen RA/CE en los enlaces publicados en el dosier.
 
-## Nota sobre las horas
+## Ficheros
 
-`horas_minimas_boe` es la `Duración` que fija el BOE para cada módulo. No suma el
-total del ciclo: el BOE fija las enseñanzas mínimas y cada comunidad autónoma
-amplía la carga horaria hasta el total. Las horas reales del catálogo están en
-`resources/horarios/catalogo-2026-27.json`.
+- Un JSON por ciclo: `resources/boe/<id>.json`.
+- `COBERTURA.md`: módulos con y sin RA/CE por ciclo.
+- `daw.json`: se conserva el fichero original, ampliado con los módulos
+  transversales y el proyecto de 1º.
 
 ## Estructura
 
-La estructura es la misma que la del importador de currículos: un fichero JSON
-por ciclo con `id`, `denominacion`, `nivel`, `familia_profesional`,
-`duracion_horas`, `ects`, `rd`, `boe_url` y `modulos[]`; cada módulo contiene
-`ra[]` y cada RA contiene `ce[]`.
+```jsonc
+{
+  "id": "gm-gestion-administrativa",
+  "denominacion": "Gestión Administrativa",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Administración y Gestión",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "GA",
+  "rd": "Real Decreto 1631/2009, de 30 de octubre…",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-19148",
+  "modulos": [
+    {
+      "codigo": "0437",
+      "nombre": "Comunicación empresarial y atención al cliente",
+      "curso": "1",
+      "ects": null,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "…",
+          "ce": [{ "codigo": "a", "descripcion": "…" }]
+        }
+      ]
+    }
+  ]
+}
+```
+
+`duracion_horas` es la duración del ciclo; `horas_minimas_boe` es la duración
+mínima que fija el BOE para cada módulo y no suma el total autonómico.

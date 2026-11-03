@@ -1,0 +1,3624 @@
+{
+  "id": "gs-gestion-del-agua",
+  "denominacion": "Gestión del Agua",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Energía y Agua",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "GNA",
+  "rd": "Real Decreto 113/2017, de 17 de febrero, por el que se establece el título de Técnico Superior en gestión del agua y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-2309",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional, académica y cotidiana, contenida en todo tipo de discursos orales, emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de mensajes en lengua estándar relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes directos o emitidos en cualquier soporte en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica contenida en distintos discursos orales en lengua estándar, relacionada con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el punto de vista y la actitud del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en dichos mensajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprendido adecuadamente mensajes en lengua estándar en ambientes con contaminación acústica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional, lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende mensajes escritos, de naturaleza profesional, académica y cotidiana, de relativa dificultad, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de textos específicos de su ámbito social, profesional o académico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica de textos, de diferente naturaleza, relativos a su profesión, y contenidos en distintos soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un texto sin entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han leído y comprendido, de manera autónoma, textos relacionados con el sector con la velocidad y estilo de lectura propia del nivel competencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado textos extensos, y de cierta complejidad, relacionados o no con su especialidad, pudiendo realizar varias lecturas del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado instrucciones, con distintos niveles de dificultad, y mensajes técnicos recibidos a través de soportes digitales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han traducido textos de cierta complejidad, utilizando material de apoyo en caso necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han emitido mensajes generales propios de sector y de la vida cotidiana, utilizando nexos y estrategias de interacción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha intercambiado con fluidez información específica y detallada utilizando estructuras de una complejidad acorde al nivel competencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y aplicado los registros adecuados para la emisión del mensaje, así como protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado presentaciones, bien estructuradas, sobre temas de su ámbito profesional, haciendo uso de los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito y secuenciado oralmente un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interaccionado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha respondido a preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta documentos e informes, propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito textos claros y detallados sobre una variedad de temas relacionados con su profesión, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, utilizando vocabulario específico y protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información con corrección, precisión, con cohesión y coherencia, solicitando y/o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado textos mediante apoyos visuales y claves lingüísticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito cartas, formales e informales, empleando las fórmulas de cortesía establecidas y el vocabulario específico para la elaboración de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resumido diferentes tipos de documentos escritos, utilizando sus propios recursos lingüísticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Planificación y replanteo",
+      "codigo": "1572",
+      "ects": 11,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica actividades de proyecto y ejecución de obras de construcción, relacionándolas con las fases del proceso y con los medios de producción.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los trabajos que se van a realizar con la documentación del proyecto y con la tipología de las actividades implicadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los planos y detalles constructivos que describen los trabajos de ejecución."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descompuesto el proceso en sus fases principales elaborado un cuadro con la descripción sucinta de las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interrelacionado las fases del proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado la documentación gráfica necesaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las principales tipologías de obras de construcción en redes y estaciones de tratamiento de agua, relacionando los procesos para su ejecución con sus características y requerimientos básicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y clasificado las principales tipologías de obras de edificación y obra civil en relación con su función, características y situación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los procesos constructivos en redes y estaciones de tratamiento de agua con las distintas fases de su ejecución y requerimientos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los principales agentes que intervienen en las obras de construcción de redes y estaciones de tratamiento de agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las funciones que cumplen los agentes que intervienen en las obras con sus atribuciones y responsabilidades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los profesionales y oficios que ejecutan trabajos de obras de edificación y obra civil con las operaciones que realizan."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las necesidades de materiales y equipos empleados en la ejecución de obras de construcción de redes y estaciones de tratamiento de agua."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza mediciones de unidades de obra y presupuestos, calculando cantidades y reflejando su resultado en documentos normalizados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido los criterios de medición de forma inequívoca."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ajustado los criterios de medición a las unidades de obra medidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la documentación gráfica relacionada con las mediciones y presupuestos que se pretenden realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han medido los elementos identificados que intervienen en la medición, utilizando la escala especificada en los planos y teniendo en cuenta los criterios de medición establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reflejado las mediciones realizadas en el documento seleccionado con la precisión adecuada al destino final de las mismas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los precios unitarios y descompuestos aplicables a cada unidad de obra."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha obtenido el importe de cada unidad de obra que interviene en el presupuesto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el presupuesto teniendo en cuenta otros gastos de carácter general."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Representa e interpreta elementos de construcción, dibujando croquis, planos, detalles constructivos, plantas, alzados, cortes y secciones empleando útiles de dibujo, hardware, periféricos de salida gráfica, y software adecuado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el sistema de representación adecuado para representar los elementos constructivos, dependiendo de la información que se desee mostrar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha elegido el formato, escala y el soporte adecuado a los elementos constructivos según el uso previsto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la simbología normalizada y leyendas utilizadas con lo que representan."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han representado e interpretado las vistas, mínimas necesarias, utilizando la simbología adecuada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han representado los cortes y secciones necesarios para visualizar los elementos constructivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se representado los elementos constructivos de acuerdo a las normas de representación gráfica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las características y elementos constructivos del proyecto de construcción."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado los elementos representados, con sus características constructivas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Representa e interpretación de elementos eléctricos, dibujando croquis, planos, detalles constructivos, esquemas eléctricos empleando útiles de dibujo, hardware, periféricos de salida gráfica, y software adecuado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los símbolos normalizados eléctricos y electrónicos en croquis y esquemas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han especificado las características de los elementos que intervienen en los circuitos eléctricos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han representado gráficamente los esquemas eléctricos y de control con la simbología de aplicación y utilizando software de dibujo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado la normativa de representación del sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado la funcionalidad de los elementos representados en el conjunto del plano o esquema."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las características de los elementos representados, con sus aplicaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza croquis y planos de replanteo, seleccionando el método de replanteo y anotando los datos relevantes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los útiles, soportes y formatos más adecuados para la realización de croquis, planos de replanteo y cálculos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los posibles métodos de replanteo, cálculo y escala adecuados en función del trabajo que se va a realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han representado en croquis y en planos de replanteo los puntos, estaciones, referencias, datos y símbolos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado en croquis y en planos de replanteo todos los puntos y elementos críticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido coordenadas, distancias, ángulos, cotas, inclinaciones y otros parámetros con la precisión requerida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido los posibles errores en la obtención de los datos anteriores, en función del trabajo que se va a realizar y de la precisión de los equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han incorporado a los croquis, a los planos de replanteo y al planning, los datos necesarios para completar su elaboración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las TIC en la elaboración de croquis y planos de replanteo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Replantea puntos y elementos de obras de construcción, materializando en el terreno y/o en la obra su señalización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado la puesta a punto de los instrumentos topográficos, útiles, elementos de señalización y medios auxiliares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los croquis, los planos de replanteo y el planning."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han volcado, en su caso, los datos necesarios a los instrumentos topográficos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido el origen de los trabajos de replanteo y sus referencias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han estacionado, referenciado y manejado correctamente los instrumentos topográficos, útiles, elementos de señalización y medios auxiliares."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han materializado en el terreno y/o en la obra los puntos de replanteo necesarios según los croquis, los planos de replanteo y el planning."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la posición exacta de los puntos principales de replanteo y se ha realizado su referenciación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han indicado en los croquis, en los planos de replanteo y en el planning las anotaciones precisas posteriores a la materialización de puntos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Calidad y tratamiento de aguas",
+      "codigo": "1573",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Configuración de redes de agua",
+      "codigo": "1575",
+      "ects": 11,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina parámetros hidráulicos básicos en instalaciones de agua, interpretando las ecuaciones fundamentales de la hidráulica y los conceptos relacionados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las fases y generalidades del Ciclo Integral del Agua y del Ciclo Urbano del Agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los fundamentos de cada una de las etapas, en cada fase del ciclo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los efectos y consecuencias del agua en las conducciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los conceptos relevantes vinculados a la hidrostática e hidrodinámica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito y relacionado los conceptos de la física de fluidos en redes de agua."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito y caracterizado los equipos de medida de presión en los fluidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado medidas de presiones utilizando distintos equipos de medida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica los métodos de cálculo relacionados con los parámetros hidráulicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y enumeran los instrumentos de medida en conductos cerrados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado los cálculos necesarios para determinar los parámetros hidráulicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado medidas de caudales en distintos tipos de conductos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la pérdida de carga en tuberías."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los efectos sobre la velocidad del agua, indicados por la ecuación de Manning."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito y enumerado las presiones relacionadas con las redes hidráulicas y sus componentes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito y enumerado las diversas definiciones para la clasificación de tubos y sus características."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el concepto de golpe de ariete, causas del mismo y efectos producidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura redes de distribución seleccionando los elementos constituyentes de las instalaciones en función de las características hidráulicas de la red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los elementos, equipos, componentes y materiales conforme al estándar del sector."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento y las características hidráulicas de la red de distribución planteada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los sistemas de control de la red de distribución a partir de sus planos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito y razonado las funciones que realizan los distintos elementos, componentes y equipos que integran la red de distribución."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los datos de partida necesarios para la configuración de una red de distribución."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los elementos que cumplen las características requeridas para configurar la red."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los cálculos necesarios para valorar los parámetros de funcionamiento de las instalaciones en las redes de distribución."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido posibles configuraciones de redes de distribución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado la normativa correspondiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Configura redes de saneamiento seleccionando los elementos constituyentes de las instalaciones en función de las características hidráulicas de la red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los elementos, equipos, componentes y materiales conforme al estándar del sector."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento y las características hidráulicas de una red de saneamiento planteada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los sistemas de control de una red de saneamiento a partir de sus planos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito y razonado las funciones que realizan los distintos componentes que integran una red de saneamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los datos de partida necesarios para la configuración de una red de saneamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los elementos que cumplen las características requeridas para configurar la red."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los cálculos necesarios para valorar los parámetros de funcionamiento de las instalaciones en las redes de saneamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido posibles configuraciones de redes de saneamiento."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado la normativa correspondiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Configura otros tipos de redes de agua; regadío, antiincendios u otras, seleccionando los elementos constituyentes de las instalaciones en función de las características hidráulicas de la red.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el funcionamiento y las características hidráulicas de las redes de regadío, antiincendios u otras."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los sistemas de control de las redes de regadío, antiincendios u otras a partir de sus planos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito y razonado las funciones que realizan los distintos componentes que integran las redes de regadío, antiincendios u otras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los cálculos necesarios para valorar los parámetros de funcionamiento de las instalaciones en las redes de regadío, antiincendios u otras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido posibles configuraciones de redes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado las normativas correspondientes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas eléctricos en instalaciones de agua",
+      "codigo": "1576",
+      "ects": 5,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los diferentes sistemas eléctricos de redes e instalaciones de agua, relacionando sus funciones con el entorno operacional en la gestión del agua.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el funcionamiento de una central hidroeléctrica, a partir de la documentación técnica correspondiente, identificando su función, equipos y componentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de equipos eléctricos de sistemas de captación y aducción de agua, identificando su función, equipos y componentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el funcionamiento de equipos eléctricos instalados en las redes de abastecimiento, identificando su función, equipos y componentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito el funcionamiento de equipos eléctricos instalados en las redes de saneamiento, identificando su función, equipos y componentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado de equipos eléctricos de las instalaciones de tratamiento de agua, a partir de la documentación técnica correspondiente, identificando su función, equipos y componentes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el funcionamiento de equipos eléctricos implicados en el control de operaciones en las redes e instalaciones de agua, identificando su función, equipos y componentes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado sistemas alternativos de obtención de energía eléctrica, ubicados en instalaciones para la gestión del agua."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza medidas eléctricas y comprobaciones de seguridad eléctricas, utilizando los equipos adecuados e interpretando los resultados obtenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el instrumento de medida correspondiente a la magnitud que se va a medir y a los valores de los parámetros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado procedimientos de medida de acuerdo a la magnitud que se va a medir."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha interpretado el valor de la medida de acuerdo con las especificaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la respuesta de los elementos de protección ante anomalías."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido las metodologías de errores en las medidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado la precisión de los aparatos de medida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los distintos sistemas de medida."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han observado las normas de seguridad de los equipos y las personas en la realización de medidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta circuitos eléctricos con componentes característicos, interpretando esquemas y verificando su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las magnitudes fundamentales de las instalaciones eléctricas y se han relacionado con sus unidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado los símbolos normalizados eléctricos y electrónicos en croquis y esquemas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han calculado las magnitudes características en circuitos de C.C. y C.A. aplicando leyes y teoremas básicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el funcionamiento de los circuitos de contactores, relés y temporizadores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los principios de funcionamiento de los receptores y motores."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han interpretado esquemas eléctricos, analizando el funcionamiento de los circuitos de fuerza y mando de los equipos e instalaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han montado circuitos sencillos de maniobra y fuerza utilizando componentes eléctricos típicos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han montado circuitos sencillos con transformadores y fuentes de alimentación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han montado circuitos de mando y regulación de velocidad de motores monofásicos y trifásicos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha verificado el funcionamiento de circuitos eléctricos, realizando medidas de las magnitudes operacionales con los equipos adecuados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Monta cuadros y sistemas eléctricos asociados, interpretando esquemas y aplicando reglamentos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los esquemas de maniobra, control y fuerza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los componentes y conductores que configuran el cuadro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado cada elemento con su función en el conjunto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha mecanizado el tablero eléctrico, montando las guías y canaletas y dejando los márgenes dispuestos en el esquema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las herramientas requeridas para cada intervención."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado los elementos de los cuadros eléctricos en condiciones de calidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normativas y reglamentaciones electrotécnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado el funcionamiento del cuadro, de acuerdo a las especificaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han respetado los tiempos estipulados para la realización de la actividad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Conexiona máquinas eléctricas con los elementos auxiliares de mando, protección y regulación de velocidad, interpretando esquemas y verificando su funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han distinguido las características de las máquinas eléctricas, especificando su constitución y principios de funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado el funcionamiento y constitución de las máquinas eléctricas rotativas, y sus elementos auxiliares."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el funcionamiento y constitución de las máquinas eléctricas estáticas, y sus elementos auxiliares."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado cálculos de comprobación de las características descritas en la documentación técnica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han montado circuitos de mando y regulación de velocidad de motores monofásicos y trifásicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los circuitos de arranque e inversión de los motores eléctricos trifásicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los elementos de protección y regulación de velocidad de los motores, seleccionando los más adecuados en función de cada caso."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han conexionado los motores eléctricos con los elementos auxiliares de acuerdo a su tipo y características."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado operaciones de puesta en marcha de máquinas rotativas y estáticas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Selecciona y aplica las normas de prevención de riesgos eléctricos, identificando los riesgos asociados, las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los referentes normativos de seguridad frente al riesgo eléctrico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y evaluado los riesgos eléctricos presentes en la puesta en servicio, el montaje, y mantenimiento de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han propuesto las medidas preventivas requeridas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de montaje y mantenimiento de las instalaciones eléctricas asociadas a las instalaciones de agua."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los protocolos de actuación, y primeros auxilios, ante posibles emergencias surgidas durante trabajos con riesgo eléctrico en el montaje, puesta en servicio y mantenimiento de redes e instalaciones de agua."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas de montaje en instalaciones de agua",
+      "codigo": "1580",
+      "ects": 11,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los materiales y sus tratamientos utilizados en las instalaciones y redes de agua, analizando sus propiedades físicas y químicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los materiales empleados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado las características y propiedades físicas y químicas de los materiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los distintos tratamientos térmicos y superficiales con las propiedades de los materiales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito el proceso de corrosión y oxidación de los materiales metálicos y plásticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procedimientos y técnicas para proteger de la corrosión y oxidación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza operaciones de transformación de elementos aplicando técnicas de mecanizado y conformado, relacionando el funcionamiento de las máquinas con las condiciones del proceso y las características del producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes instrumentos de medida y control."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado mediciones con el instrumento adecuado y la precisión exigida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado los distintos equipos de mecanizado y conformado según sus aplicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las distintas herramientas y útiles necesarios para el mecanizado y conformado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado operaciones de mecanizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado operaciones de conformado en tubos y chapas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado tratamientos de anticorrosión y antioxidación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la secuencia de las operaciones que se deben realizar."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado correctamente las herramientas o equipos de trabajo."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han respetado los criterios de calidad requeridos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las normas de seguridad, medioambientales y prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza uniones no soldadas analizando las características de cada unión y aplicando las técnicas adecuadas a cada tipo de unión.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los distintos tipos de uniones no soldadas y los materiales que se deben unir."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la secuencia de operaciones que es preciso realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las herramientas en función del material y el proceso a realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han efectuado las operaciones de unión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han respetado los criterios dimensionales establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la fiabilidad de las uniones (resistencia, estanqueidad, entre otras)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha operado con las herramientas y materiales en condiciones de calidad y seguridad requeridas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza uniones soldadas seleccionando la técnica adecuada para cada tipo de material e instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el proceso de soldadura adecuado a las características de los materiales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la simbología de los distintos tipos de soldadura."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los distintos componentes de los equipos de soldeo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han operado las herramientas y máquinas con la seguridad requerida."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la unión aplicando la técnica de soldeo adecuada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la fiabilidad de las uniones (resistencia, estanqueidad, entre otras)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de uso y control durante el proceso de soldeo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado las especificaciones y normas de prevención de riesgos laborales y medioambientales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han respetado los tiempos previstos para el proceso."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza operaciones de montaje y mantenimiento de equipos y elementos de las instalaciones y redes de agua aplicando técnicas de montaje e interpretando planos e instrucciones del fabricante.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha elaborado el plan de montaje de la instalación aplicando la reglamentación de las instalaciones y las medidas de prevención de riesgos y seguridad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha replanteado la instalación relacionando los planos con el espacio de montaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las herramientas, materiales y técnicas necesarias para el montaje de la instalación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han fijado y nivelado los equipos, tubos y accesorios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la interconexión de los equipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado los equipos y elementos de las instalaciones y redes de agua."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los mecanismos principales que constituyen los grupos electromecánicos de los equipos e instalaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha han identificado las averías más comunes de los equipos y elementos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha relacionado los ajustes mecánicos con sus efectos en el funcionamiento de las partes móviles."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha operado con las herramientas con la calidad y seguridad requerida."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han realizado los trabajos con orden, limpieza y autonomía."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y los equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, útiles y máquinas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas y los equipos de protección individual que se deben emplear en las distintas operaciones de mecanizado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular en gestión eficiente del agua",
+      "codigo": "1581p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guion de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas de comunicación y de relaciones",
+      "codigo": "0309",
+      "ects": 3,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica técnicas de comunicación analizando las características y posibilidades de las mismas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes técnicas de comunicación, sus ventajas y limitaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características de los distintos canales de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los parámetros que caracterizan la atención adecuada en función del canal de comunicación utilizado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las técnicas más utilizadas de comunicación según los diferentes canales de comunicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los errores más habituales en la comunicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido los parámetros para controlar la claridad y precisión en la transmisión y recepción de la información."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia del lenguaje no verbal en la comunicación presencial."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han adaptado la actitud y el discurso a la situación de que se parte."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los elementos fundamentales en la comunicación oral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Atiende posibles clientes, relacionando sus necesidades con las características del servicio o producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos de una correcta atención al cliente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los diferentes tipos de clientes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado y caracterizado las distintas etapas de un proceso de comunicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado, en su caso, la información histórica del cliente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado el comportamiento del cliente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las motivaciones de compra o demanda de un servicio del cliente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha observado la forma y actitud adecuada en la atención y asesoramiento a un cliente en función del canal de comunicación utilizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado las interferencias que dificultan la comunicación con el cliente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito las actitudes positivas hacia los clientes, en la acogida y en la despedida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Transmite la imagen de negocio relacionándola con las características y objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las herramientas y elementos básicos de marketing."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el concepto de imagen de la empresa."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado diferentes organigramas de funcionamiento con los objetivos y características del servicio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fórmulas de cortesía y de tratamiento protocolario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la necesidad de transmitir una información diversa y precisa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los elementos fundamentales para transmitir en la comunicación telefónica la imagen adecuada de la empresa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la imagen corporativa para transmitir los objetivos de la empresa."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad y confidencialidad que se deben respetar en las comunicaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito las técnicas para proporcionar una información exacta y adecuada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Canaliza la gestión de quejas, reclamaciones y sugerencias analizando el problema e identificando la legislación aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los conceptos formales y no formales de quejas, reclamaciones y sugerencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los principales motivos de quejas de clientes en las empresas del sector del agua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han jerarquizado en función del tipo de organización los canales de presentación de reclamaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido las fases a seguir en la gestión de quejas y reclamaciones en su ámbito de competencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado la normativa legal vigente en el proceso de resolución de reclamaciones de clientes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia de las quejas, reclamaciones y sugerencias como elemento de mejora continua."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los puntos clave que debe contener un manual corporativo de atención al cliente y gestión de quejas y reclamaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la importancia de observar una actitud proactiva para anticiparse a incidencias en el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Controla la calidad del servicio prestado, analizando el grado de satisfacción de los posibles clientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las incidencias comunes en los procesos de atención al cliente en empresas de gestión del agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el concepto de calidad y sus implicaciones en la atención al cliente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los factores que influyen en la calidad de prestación del servicio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha obtenido información de los clientes para conocer sus necesidades y demandas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la calidad de servicio con la fidelización del cliente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado las características del servicio prestado, comparándolas con las necesidades de los clientes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los métodos de evaluación de la eficiencia en la prestación del servicio."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han propuesto posibles medidas de resolución ante problemas tipo de atención al cliente en empresas de gestión del agua."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han presentado conclusiones a través de informes de la satisfacción de los clientes, aportando medidas que puedan optimizar la calidad del servicio."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha transmitido el departamento correspondiente los defectos detectados en el servicio para mejorar su calidad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión eficiente del agua",
+      "codigo": "1574",
+      "ects": 6,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza el concepto de sostenibilidad del medio ambiente relacionando el consumo de energía con el uso que se hace del agua.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito e identificado los conceptos energéticos y de sostenibilidad ambiental vinculados al agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado todos los conceptos energéticos entre sí."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el binomio agua y energía dentro del marco de sostenibilidad ambiental."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito y caracterizado la huella hídrica y su repercusión en el medio ambiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el método de cálculo de la huella hídrica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el fenómeno del cambio climático y se ha identificado sus repercusiones en el medio ambiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y caracterizado la huella de carbono y su repercusión en el medio ambiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Desarrolla las operaciones necesarias para realizar las fases de una auditoría energética en una instalación de agua analizando los parámetros característicos de la misma.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los objetivos de una auditoría energética."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificados los ámbitos de actuación de una auditoría energética."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado el procedimiento de organizar una auditoría."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido las fases, y las secuencias de una auditoría energética."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha revisado y cumplimentado la documentación técnica asociada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los métodos de toma de datos in situ."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los elementos necesarios para la realización del análisis energético y económico."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido la secuencia y contenidos básicos de un Informe Final de auditoría."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza el seguimiento de planes de mejora derivados de auditorías energéticas, implementando las actuaciones requeridas para llevarlo a cabo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las posibles propuestas de mejora energética y económica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las ganancias energéticas derivadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la formulación de indicadores en los planes de mejora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han implementado en el ámbito de su competencia las actuaciones de mejora propuestas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado y organizado las revisiones periódicas de los planes de mejora."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han tomado medidas del consumo energético."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han comparado las ganancias obtenidas con las formuladas en la propuesta."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado los ajustes necesarios en función del consumo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza medidas de utilización y consumo de energía de distintos sistemas utilizando dispositivos y aparatos para medirla.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diversos sistemas de telecontrol y telelectura."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los equipos utilizados por los sistemas de telecontrol y telelectura."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido las medidas de control y utilización de los sistemas de telecontrol y telelectura."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los componentes de un sistema de iluminación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecidos las medidas de optimización energética en un sistema de iluminación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los diversos sistemas de climatización de una instalación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado el sistema de climatización óptimo desde una perspectiva de eficiencia energética."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Dimensiona los equipos y elementos de una instalación desde una perspectiva de eficiencia energética.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los equipos y elementos claves de una instalación desde la perspectiva de eficiencia energética."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las magnitudes características de un transformador."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la información necesaria para la instalación de variadores de frecuencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los efectos de control de la velocidad de giro de los motores sobre las bombas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito y secuenciado la instalación de motores de alta eficiencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los requerimientos de la instalación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado los equipos y elementos que se ajustan a los requerimientos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Propone planes de mejora de eficiencia energética en el ciclo integral del agua definiendo las medidas que hay que aplicar en las diferentes partes del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los puntos de consumo energético en las instalaciones de agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los equipos y componentes claves en el gasto energético en las instalaciones de agua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado el consumo energético de las bombas hidráulicas y determinado su punto óptimo de funcionamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado el gasto energético en los procesos de bombeo de aguas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han planificado medidas de prevención en relación al consumo energético en los procesos de bombeo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los equipos existentes en una EDAR y las medidas de eficiencia energéticas vinculadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los equipos existentes en una ETAP y las medidas de eficiencia energéticas vinculadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Propone medidas para la minimización de pérdidas de agua en una instalación analizando las causas de las mismas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el agua no registrada y los componentes de estas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito y caracterizado los diferentes indicadores de eficiencia en la red."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las actuaciones necesarias para la reducción de pérdidas reales en la red."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los planos de sectorización y microsectorización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado cálculos de caudales mínimos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los equipos de detección de fugas e identificado sus principios de funcionamiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado los elementos para la instalación y dimensionamiento correcto de los contadores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Automatismos y telecontrol en instalaciones de agua",
+      "codigo": "1577",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los elementos de instrumentación, control y medida utilizados en redes e instalaciones de agua, seleccionando elementos y valorando parámetros.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los sensores de medida, describiendo su funcionamiento y campos de aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las señales generadas por transductores empleados en redes e instalaciones de agua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la conexión de sensores empleados en redes e instalaciones de agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han enumerado los circuitos acondicionadores de señal y equipos de adquisición y medida asociados a transductores analógicos y digitales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido los instrumentos de medida utilizados en redes e instalaciones de agua."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los valores máximo, medio y eficaz de variables propias de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido valores de variables propias de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido los circuitos acondicionadores de señal y equipos de adquisición y medida asociados a transductores analógicos y digitales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los esquemas electrónicos y de tensión de mando, identificando e instalando los componentes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos unifilares y de componentes electrónicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado montaje de diferentes componentes electrónicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido el circuito de tensión de mando."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha interpretado la paramenta de protección de los equipos electrónico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado y ajustado las protecciones para la protección de componentes eléctricos y electrónicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha configurado el Sistema de Alimentación Ininterrumpida para los equipos de control."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura y programa el equipamiento electrónico y de automatización de instalaciones, realizando y ajustando sistemas de control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la función y el ajuste del receptor."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los ajustes de la excitación para los valores deseados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido el funcionamiento general y los bloques constitutivos de los autómatas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los periféricos y las tarjetas de entrada y salida."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han conectado entradas y salidas digitales y analógicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han configurado los parámetros fundamentales de señales analógicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han configurado terminales de diálogo hombre-máquina de control local."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado programas en esquemas de contactos (KOP) y en Grafcet."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado programación de procesos productivos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha reconocido el funcionamiento general y los bloques constitutivos del variador de frecuencia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han configurado los parámetros de funcionamiento del variador de frecuencia mediante PID."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha conectado el variador de frecuencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Monta los accionamientos utilizados en redes e instalaciones de agua, reconociendo su funcionamiento y utilizando documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los distintos tipos de accionamientos utilizados en redes e instalaciones de agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado la fuerza y velocidad de actuación de accionamientos neumáticos, hidráulicos y eléctricos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el montaje de accionamientos todo-nada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los circuitos electrónicos asociados con accionamientos de control proporcional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las conexiones de accionamientos de control proporcional."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado el correcto funcionamiento de accionamientos de control proporcional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Caracteriza sistemas de transmisión y comunicación para el telecontrol de procesos, reconociendo sus componentes y señales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los medios de transmisión empleados en telecontrol, identificando sus propiedades y características."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en funcionamiento un sistema básico de transmisión a través de bus de campo para el control y medida de variables físicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha distinguido una red de área local (LAN) utilizada en sistemas de telecontrol."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han configurado los parámetros básicos de una red de área local."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han accionado elementos a través de una red de área local."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha puesto en marcha una estación remota a través de Internet."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado aplicaciones de control automático con software tipo SCADA simulando controles y reconociendo ajustes de sistemas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Utiliza aplicaciones de control automático con software tipo SCADA simulando controles y reconociendo ajustes de sistemas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas SCADA (Supervisory Control And Data Acquisition), identificando sus características básicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado interfaces gráficos de operación como elementos de diálogo hombre-máquina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la adquisición de datos y generación de señales de control."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido la utilización de sistemas SCADA en el control de instalaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha simulado la operación de una instalación para la gestión del agua a través de un sistema SCADA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha simulado la integración de señales e interfax gráfico en el SCADA."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Controla parámetros de operación desde un centro de control realizando maniobras y comunicando información según protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los parámetros de funcionamiento de los diferentes equipos y sistemas de redes e instalaciones de agua, en un simulador de control."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han operado los diferentes elementos de redes e instalaciones de agua, en un simulador de telecontrol."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han controlado distintos parámetros en el simulador."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado las consecuencias de distintas actuaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detallado las configuraciones habituales de las salas de control, identificando los diferentes componentes, personal y su función."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado informes mediante análisis de cronológicos, históricos y estadísticas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito protocolos de operación en las redes e instalaciones de agua, indicando equipos y parámetros de funcionamiento que deben ser vigilados de manera prioritaria desde un centro de control."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado planes de emergencia, describiendo las actuaciones y comunicaciones frente a situaciones simuladas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha sistematizado la información relevante de operación en redes e instalaciones de agua, generando protocolos para la comunicación de la misma."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Operaciones en redes e instalaciones de agua",
+      "codigo": "1578",
+      "ects": 13,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza operaciones de montaje de redes de agua, siguiendo las directrices recogidas en la documentación técnica y el plan de trabajo establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la documentación técnica de redes e instalaciones de agua, localizando elementos principales e información necesaria para su montaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido la secuencia de intervención y naturaleza de las actuaciones en replanteo de redes e instalaciones de agua para su posterior montaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los diferentes procesos de montaje de redes de agua detallando técnicas de montaje y recursos materiales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha organizado la secuencia de montaje a partir de planos y documentación técnica, estableciendo un plan de trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Realiza operaciones de montaje de redes de agua, aplicando los procedimientos de trabajo establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planteado esquemas de organización del trabajo, asignando recursos, tiempos y costes, optimizando el proceso de montaje de redes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado la adecuación de los componentes a las prescripciones técnicas, siguiendo los procedimientos de calidad establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica los procedimientos para la puesta en servicio de redes e instalaciones de agua observando las exigencias de calidad y seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las comprobaciones y pruebas previas a la puesta en servicio, asegurando la funcionalidad de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la secuencia de operación y procedimientos empleados en la puesta en servicio de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Realiza maniobras de puesta en servicio y de operación en redes de agua, aplicando los protocolos correspondientes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los problemas que dificultan la puesta en servicio, analizando efectos y posibles soluciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la secuencia de actuaciones finales de la puesta en servicio de redes e instalaciones de agua, garantizando la reposición del servicio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido los criterios y procedimientos de control y supervisión de las tareas de puesta en servicio, atendiendo a criterios de optimización de recursos, calidad y normativa aplicable."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la documentación e información a entregar al usuario de la instalación, analizando los manuales técnicos correspondientes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica planes de mantenimiento preventivo en redes e instalaciones de agua, desarrollando actuaciones y gestionando recursos en base a los criterios establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las generalidades del mantenimiento preventivo, analizando estructura, ventajas y normativa de aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han señalado elementos y parámetros operacionales críticos para el mantenimiento preventivo en redes e instalaciones de agua, integrándolos en el programa de mantenimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado operaciones de mantenimiento preventivo en equipos y componentes de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha planteado la organización del mantenimiento preventivo considerando aspectos de gestión y de servicio al usuario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado programas de mantenimiento preventivo, asegurando la optimización de recursos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planteado la gestión de recursos humanos y materiales, determinando los criterios para la optimización de los mismos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza el mantenimiento correctivo en redes e instalaciones de agua, resolviendo disfunciones y averías de acuerdo a los protocolos de actuación establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las generalidades del mantenimiento correctivo, analizando estructura y normativa de aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los puntos críticos en los que pueden producirse averías, identificando los parámetros operaciones relevantes en el programa de mantenimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos para la localización y diagnóstico de averías en redes e instalaciones de agua, caracterizando sus causas y sus efectos en el sistema."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado operaciones de mantenimiento correctivo reparando las averías diagnosticadas y verificando su reparación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado programas de mantenimiento correctivo, asegurando la optimización de recursos y el servicio al cliente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planteado la gestión de recursos humanos y materiales, determinando los criterios para la optimización de los mismos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumplimenta y organiza la documentación necesaria para la gestión de operaciones en redes e instalaciones de agua.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los trámites y procedimientos de gestión a desarrollar para el montaje, puesta en servicio, explotación y mantenimiento de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los diferentes documentos administrativos necesarios para el montaje, puesta en servicio, explotación y mantenimiento de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los diferentes documentos técnicos necesarios para el montaje, puesta en servicio, explotación y mantenimiento de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado aplicaciones informáticas de propósito general y de tipo Scada, en los procesos de explotación y mantenimiento de redes e instalaciones de agua."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la documentación asociada a sistemas de gestión de la calidad, política ambiental y seguridad laboral en la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el proceso de atención de demandas del cliente y planteado sistemas de gestión integrada de servicios, reclamaciones, averías y actuaciones en la gestión del agua."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Selecciona y aplica las medidas de prevención, seguridad y protección ambiental respecto a las operaciones en redes e instalaciones de agua, analizando la normativa vigente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado las generalidades de la prevención de riesgos laborales, detallando normativa, descripción de riesgos y medidas de protección."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y evaluado los riesgos profesionales y ambientales presentes en el montaje y mantenimiento de redes e instalaciones de agua, proponiendo medidas preventivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y evaluado los riesgos profesionales y ambientales presentes en la puesta en servicio de redes e instalaciones de agua, proponiendo medidas preventivas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los protocolos de actuación ante posibles emergencias surgidas durante operaciones en redes e instalaciones de agua."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado situaciones de emergencia, las fases, los sistemas de comunicación, el personal y entidades de actuación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de operaciones calidad y medioambiente",
+      "codigo": "1579",
+      "ects": 7,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Elabora planes de trabajo para las obras de construcción y el montaje de redes e instalaciones de agua y relacionando el proyecto definido con su ejecución.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los circuitos y equipos que integran la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la documentación técnica de los distintos proveedores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las fases, las operaciones y actividades del proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las especificaciones de las operaciones y actividades que se van a realizar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido la secuencia y organización general de la obra o intervención, optimizando el proceso en cuanto a seguridad, método y tiempo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han representado los diagramas de planificación de la mano de obra, materiales y medios optimizando los plazos y recursos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los caminos críticos para la consecución de los plazos de ejecución y costes establecidos, cumpliendo con los requisitos requeridos por la planificación general."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los equipos, utillajes y herramientas necesarios."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha caracterizado y cumplimentado la documentación técnica y administrativa relacionada con los permisos oficiales para poder realizar la obra o intervención."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han utilizado las TIC y programas específicos en la planificación y en la elaboración de diagramas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina las necesidades de aprovisionamiento de recursos materiales y humanos necesarios a partir de la interpretación de proyectos de obras de redes e instalaciones de agua y de los recursos disponibles.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las necesidades de aprovisionamiento a partir del proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han planificado los suministros en el marco del sistema empleado para la gestión de stocks."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han Identificado las necesidades de recursos humanos en cada una de las fases de la intervención."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las funciones de las diferentes personas que intervienen en la intervención."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han considerado las posibilidades de aprovisionamiento y almacenaje con las necesidades del plan de montaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido los medios de transporte y los plazos de entrega de los equipos, componentes, útiles y materiales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha garantizado la disponibilidad y la calidad del aprovisionamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha establecido el protocolo de recepción y de cumplimiento de la normativa de seguridad de los materiales suministrados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los programas de gestión de almacenamiento."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha establecido el sistema de codificación para la identificación de piezas de repuesto."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han establecido las condiciones de almacenamiento de los materiales, equipos y componentes garantizando su correcta conservación y el cumplimiento de la reglamentación establecida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza el plan de seguimiento en las obras de construcción y en el montaje de redes e instalaciones de agua, aplicando técnicas de programación y proponiendo correcciones a las desviaciones detectadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el procedimiento establecido para realizar el seguimiento del plan."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado la información relevante para controlar el avance del proyecto o de la obra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborado un calendario para el seguimiento del plan de acuerdo con la periodicidad requerida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han representado mediante cronogramas realistas el avance, el control y las desviaciones de la programación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comprobado tiempos de ejecución y recursos asignados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado las TIC en la elaboración de diagramas de seguimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reasignado recursos para corregir desviaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han estimado tiempos de ejecución según los recursos reasignados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han elaborado diagramas de planes corregidos de acuerdo con nuevos plazos de ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica planes de calidad, gestionando la documentación y la normativa de aseguramiento y gestión de la calidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Identificar y cumplimentar la documentación técnica y administrativa relacionada con el control de la ejecución de la obra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los sistemas de aseguramiento de calidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los contenidos de un manual o plan de calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los procedimientos de montaje y mantenimiento del manual de calidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado acciones correctoras de las no conformidades que permitan la mejora de la calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha identificado la estructura y contenidos de los registros de los procedimientos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han asegurado los parámetros de una auditoría interna de calidad del proceso."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha deducido el grado de cumplimiento del plan de calidad."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado programas informáticos de gestión de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Establece medidas de protección medioambiental aplicando los sistemas de gestión ambiental establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los fundamentos y principios de los sistemas de gestión ambiental."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los requisitos legales establecidos en los sistemas de gestión ambiental."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los requisitos y el procedimiento que se deben incluir en una auditoría."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito el programa de control y reducción de contaminantes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales agentes contaminantes atendiendo a su origen y los efectos que producen sobre los diferentes medios receptores."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado los diferentes focos en función de su origen proponiendo medidas correctoras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las principales técnicas analíticas utilizadas, de acuerdo con la legislación y/o normas internacionales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado programas informáticos para el tratamiento de los datos y realizado cálculos estadísticos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han establecido pautas de compromiso ético con los valores de conservación y defensa del patrimonio ambiental y cultural de la sociedad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular en gestión eficiente del agua",
+      "codigo": "1581",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guion de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665191",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708191",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS191",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

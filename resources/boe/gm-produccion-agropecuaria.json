@@ -1,0 +1,3328 @@
+{
+  "id": "gm-produccion-agropecuaria",
+  "denominacion": "Producción Agropecuaria",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Agraria",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "PNA",
+  "rd": "Real Decreto 1634/2009, de 30 de octubre, por el que se establece el título de Técnico en Producción Agropecuaria y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-19149",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Fundamentos agronómicos",
+      "codigo": "0404",
+      "ects": null,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza el clima y sus efectos sobre los cultivos analizando las informaciones disponibles.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los climas de las diferentes zonas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el microclima de zonas características o conocidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los meteoros que influyen en la agricultura."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han recogido los datos meteorológicos y climáticos con equipos y aparatos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado la información recabada de la serie histórica de las variables climáticas de la zona."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han interpretado mapas meteorológicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la influencia de las actividades agrarias en el clima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica tipos de suelos y sus características interpretando los datos obtenidos mediante análisis.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las propiedades físicas, químicas y biológicas del suelo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los distintos tipos de suelo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas y métodos de recogida y acondicionamiento de muestras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las diferentes técnicas analíticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado las muestras que van a ser analizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las muestras siguiendo los protocolos analíticos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado e interpretado los resultados de los análisis."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la normativa ambiental y de prevención de riesgos laborales en los análisis de suelo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza la representación básica de las características topográficas del terreno justificando las técnicas utilizadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las unidades de medida topográficas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado mapas topográficos y planos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las curvas de nivel con la implantación de especies vegetales y erosión del suelo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los diferentes instrumentos y aparatos de medición."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han registrado los datos de la medición."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el croquis de la parcela con su acotación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha dibujado el plano de la parcela a diferentes escalas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la normativa de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina las necesidades hídricas de las especies analizando la relación agua - suelo - planta.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la procedencia y calidad del agua de riego."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la capacidad de retención de agua en el suelo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado la velocidad de infiltración del agua en el suelo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la capa freática del suelo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la evapotranspiración de la planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha calculado la dosis y frecuencia de riego."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los sistemas de riego en función de las características del suelo, agua, planta y topografía."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interpretado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Reconoce las características de los ecosistemas del entorno más próximo analizando las interrelaciones bióticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las comunidades bióticas de los ecosistemas del entorno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las diferentes redes tróficas de la zona."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha estudiado el flujo energético del entorno determinando sus características."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los recursos naturales existentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la incidencia de la actividad agropecuaria con el ecosistema."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la incidencia de la producción ecológica sobre el ecosistema."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica las especies vegetales siguiendo criterios taxonómicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las partes y funciones de la célula vegetal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los diferentes tipos de tejidos vegetales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la estructura, morfología y anatomía de las plantas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las principales funciones y características de las partes de la planta."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procesos fisiológicos de los vegetales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado claves de clasificación botánica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Caracteriza los fertilizantes que va a utilizar reconociendo su uso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los elementos nutritivos para las plantas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los desequilibrios nutricionales en las plantas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las propiedades de los distintos tipos de abonos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la importancia de los tipos de fertilizantes con el desarrollo de las plantas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el comportamiento de los abonos en el suelo y su incorporación a la planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los fertilizantes utilizados en hidroponía y fertirrigación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de las mezclas de fertilizantes en hidroponía y fertirrigación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Fundamentos zootécnicos",
+      "codigo": "0405",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica razas de mamíferos y aves de interés en ganadería, describiendo sus características morfológicas externas y sus aptitudes productivas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido las diferencias entre los conceptos de especie, raza, variedad, línea, mestizo e híbrido."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características morfológicas, fanerópticas y zoométricas de los animales de interés ganadero."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los parámetros zootécnicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los instrumentos y métodos para medir parámetros zoométricos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han interpretado los datos zoométricos obtenidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las aptitudes productivas de los animales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido la relación entre morfología y función."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la legislación de bienestar animal y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina las necesidades de alimentación y nutrición del ganado, calculando las raciones necesarias para cubrirlas según el tipo y características del mismo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la composición química de los alimentos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los alimentos atendiendo a diferentes criterios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diferenciado el concepto de alimentación del de nutrición."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito el aprovechamiento de los alimentos por el organismo y la influencia de su acondicionamiento previo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido las diferencias entre la anatomía y la fisiología digestiva de rumiantes, monogástricos y aves."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las necesidades nutritivas en función de la especie de destino."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado las materias primas y alimentos para el cálculo de raciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado las raciones adecuadas a la especie y a sus necesidades nutritivas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han valorado los resultados finales del cálculo e identificado las posibles medidas de corrección."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha valorado la influencia de la alimentación animal en la calidad y salubridad de las producciones obtenidas."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha aplicado la normativa sobre alimentación animal y seguridad alimentaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Describe la reproducción de los animales, considerando sus fundamentos biológicos y las técnicas asociadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características anatómicas y fisiológicas del aparato reproductor de mamíferos y aves."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los distintos sistemas de cubrición."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos para el diagnóstico de gestación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los protocolos a seguir durante el parto y el puerperio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procesos de ovulación, puesta, incubación y eclosión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han diseñado documentos técnicos para el control de la reproducción."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado los índices reproductivos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido, según criterios zootécnicos y productivos, los métodos de selección de reproductores."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la influencia positiva del bienestar animal en la reproducción."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Clasifica las patologías más comunes que afectan a los animales y su influencia en los mismos, analizando el concepto de enfermedad y las causas que la originan.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las enfermedades que afectan a las especies ganaderas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las causas que predisponen o provocan la aparición de enfermedades."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las fuentes de contagio de las enfermedades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la forma de transmisión de los agentes que provocan las enfermedades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las patologías más frecuentes en la explotación ganadera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado signos y síntomas de enfermedad y alteraciones morfológicas y/o funcionales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han asociado protocolos de actuación a distintas patologías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las campañas de saneamiento ganadero."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia del estado sanitario en la mejora cuantitativa y cualitativa de las producciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Caracteriza los alojamientos ganaderos, relacionándolos con la fase productiva y la especie de destino.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado el emplazamiento y la orientación de los alojamientos ganaderos de la explotación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características de los materiales utilizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detallado las distintas partes de una edificación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las condiciones ambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los distintos tipos de alojamientos ganaderos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado el tipo de alojamiento en función de la especie, sistema de explotación y fase productiva."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado la legislación ambiental, de bienestar y sanidad animal y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica los distintos productos animales, describiendo sus características y las bases fisiológicas de la producción.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los productos animales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la fisiología de la producción láctea."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los distintos tipos de leche por su composición y propiedades organolépticas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han detallado los parámetros morfológicos del animal que influirán en la canal."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el proceso de formación del huevo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las estructuras y la composición del huevo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido las distintas clases y categorías del huevo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado las distintas estructuras anatómicas de las abejas con sus funciones en la producción de miel y otros productos apícolas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito las características de los distintos tipos de miel y de otros productos apícolas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han descrito los distintos miembros de la colonia con sus funciones en la producción de miel y otros productos apícolas."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha valorado la importancia de la trazabilidad y del control de calidad en la salubridad de los productos ganaderos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Taller y equipos de tracción",
+      "codigo": "0407",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Organiza el taller de la explotación justificando la ubicación de herramientas y equipos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y señalizado las diferentes zonas del taller de la explotación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales herramientas y equipos del taller."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han ubicado las herramientas y equipos en el lugar correspondiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado un inventario de las herramientas y equipos verificando las necesidades de reposición."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado un registro de herramientas y equipos del taller."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado procedimientos de limpieza y eliminación de residuos del taller."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Maneja el tractor y equipos de tracción interpretando la funcionalidad y utilización del mismo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las partes y componentes de un tractor y equipos de tracción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los sistemas del tractor y de los equipos de tracción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los tipos de tractores y de equipos de tracción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado el coste horario de utilización del tractor y de los equipos de tracción."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado el tractor y equipos de tracción según las características de la explotación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha accionado la toma de fuerza y el sistema hidráulico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han acoplado los aperos y la maquinaria al tractor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado actividades de manejo de tractores sin aperos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado actividades de manejo de tractores con los remolques o aperos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza el mantenimiento básico del tractor y equipos de tracción interpretando los protocolos y fichas de mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y efectuado las principales operaciones de mantenimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado las indicaciones e instrucciones técnicas del programa de mantenimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las repercusiones técnico-económicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los materiales y repuestos necesarios para el mantenimiento y la reparación básica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el montaje/desmontaje de elementos y sistemas simples."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado sustituciones y reparaciones básicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cumplimentado los registros de las operaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las averías cuya reparación es necesario realizar en un taller especializado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza operaciones de soldadura y de mecanizado básico justificando los materiales y métodos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las herramientas y equipos más utilizados para realizar operaciones de mecanizado básico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los procesos de soldadura utilizados en el taller de una explotación agraria."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los equipos de soldadura según el procedimiento que se va a utilizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado uniones de elementos y recargas de material por distintos procedimientos de soldadura."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha controlado que la soldadura obtenida no presente defectos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado operaciones de mecanizado básico utilizando herramientas y máquinas sencillas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas del taller agrario."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de operaciones en el área de electromecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas y equipos de trabajo empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Infraestructuras e instalaciones",
+      "codigo": "0408",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Instala y mantiene infraestructuras agrícolas describiendo sus características y técnicas de montaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las infraestructuras necesarias para una explotación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las principales características y técnicas de montaje de las infraestructuras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la topografía del terreno y las características de la parcela con el tipo de infraestructura a implantar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los sistemas de drenaje."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado operaciones de mantenimiento de infraestructuras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha manejado la maquinaria y herramienta básica para la instalación y mantenimiento de una infraestructura."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta instalaciones de riego identificando los elementos de la instalación y las técnicas de montaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los componentes de la instalación de riego y su funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los materiales necesarios para el montaje de una instalación de riego."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado las especificaciones técnicas de un proyecto de riego."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el replanteo de una instalación de riego."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han montado piezas y accesorios de riego en diferentes tipos de tuberías."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado el funcionamiento de una instalación de riego."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han corregido las deficiencias de funcionamiento detectadas en una instalación de riego."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Instala sistemas de protección y forzado relacionándolos con los factores ambientales y de cultivo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las instalaciones de protección y forzado de los cultivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características de los sistemas de protección y forzado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las propiedades de los diferentes tipos de cubiertas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los materiales y herramientas para el montaje de un sistema de protección o forzado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han instalado los elementos de un sistema de protección siguiendo las especificaciones técnicas de montaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los elementos que permiten el control ambiental en un invernadero."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han instalado los elementos de control ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Mantiene instalaciones agrícolas interpretando los protocolos establecidos para su conservación e higiene.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y relacionado las averías más frecuentes con las instalaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos averiados o deteriorados en una instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aprovisionado los elementos necesarios para el mantenimiento de una instalación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han sustituido los elementos averiados o deteriorados de una instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las reparaciones básicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los productos de limpieza, desinfección, desinsectación y desratización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado los productos de limpieza, desinfección, desinsectación y desratización en las dosis recomendadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas de la instalación agrícola."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de operaciones en el área de electromecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas y equipos de trabajo empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Principios de sanidad vegetal",
+      "codigo": "0409",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza la vegetación espontánea no deseada describiendo las especies presentes en la zona.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las plántulas de vegetación espontánea no deseada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las plantas parásitas de los vegetales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las especies mediante el empleo de claves."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características biológicas de las especies de vegetación espontánea."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la asociación de la vegetación espontánea no deseada con los cultivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un herbario con las especies de vegetación espontánea no deseada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la incidencia ejercida por la vegetación espontánea sobre los cultivos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina la fauna perjudicial y beneficiosa para los vegetales, relacionando las características biológicas con los efectos sobre las plantas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ubicado los seres vivos perjudiciales y beneficiosos en una clasificación general."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características morfológicas de invertebrados, aves y mamíferos más significativos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la fisiología de la fauna perjudicial y beneficiosa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diferenciado los órdenes de insectos y ácaros perjudiciales y beneficiosos de las plantas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado un insectario con los órdenes más característicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los síntomas y daños producidos por la fauna perjudicial en las plantas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha identificado la fauna perjudicial que ha provocado los síntomas o daños en las plantas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha relacionado el ciclo biológico de la fauna que puede provocar plaga con las condiciones ambientales y la fenología de la planta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Determina los agentes beneficiosos y los que provocan enfermedades y daños que afectan a las plantas, describiendo sus características.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los agentes beneficiosos y los que provocan enfermedades y daños."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los agentes bióticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las condiciones ambientales que afectan a los agentes beneficiosos y a los que provocan las enfermedades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la forma de transmisión de las enfermedades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los síntomas y daños de las enfermedades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las enfermedades propias de cada planta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los agentes causantes de la enfermedad en una muestra."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina el estado sanitario de las plantas, valorando la información obtenida según el protocolo establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las unidades de muestreo señaladas en el terreno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han efectuado los conteos y tomas de muestras con las técnicas y medios establecidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han tomado muestras de patologías desconocidas para su envío al laboratorio siguiendo el protocolo establecido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado los niveles de presencia de agentes no beneficiosos, comparándolo con los valores de referencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado las condiciones ambientales con el muestreo que se ha de realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cuantificado la fauna auxiliar existente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reconocido el umbral de tratamiento de cada agente no beneficioso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Caracteriza los métodos de protección para las plantas valorando sus efectos sobre la sanidad de las mismas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los métodos de protección contra la fauna perjudicial, enfermedades, fisiopatías y vegetación espontánea no deseada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado las características de los métodos de control indirecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado las características de los métodos de control directo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado los métodos químicos empleados en la lucha contra la fauna perjudicial, enfermedades y vegetación espontánea no deseada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los métodos biológicos y biotécnicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el método de lucha integrada."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Implantación de cultivos",
+      "codigo": "0475",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Define la orientación productiva de la explotación agrícola, identificando los recursos disponibles y la demanda del mercado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los diferentes tipos de explotaciones agrícolas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características productivas de las explotaciones agrícolas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los requisitos técnicos para producir con criterios de calidad y rentabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los productos agrícolas y sus cualidades comerciales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los canales de comercialización con los productos agrícolas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia del subsector agrícola en la producción de alimentos y en la economía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han considerado los mecanismos de ayudas para la agricultura."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Selecciona los cultivos relacionándolos con los objetivos productivos de la explotación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los cultivos agrícolas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las plantas cultivadas reconociendo sus características botánicas y productivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los términos rotación, alternativa, asociación y policultivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios de las rotaciones, alternativas, asociaciones y policultivos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las principales rotaciones, alternativas, asociaciones y policultivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido una rotación de cultivos en función de las características productivas de la explotación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones de instalación de cultivos sin suelo analizando y aplicando técnicas de hidroponía.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han explicado los fundamentos del cultivo sin suelo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los sustratos utilizados en hidroponía."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los sistemas hidropónicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los equipos y herramientas para la instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado y mantenido las herramientas, equipos y maquinaria en la instalación del sistema hidropónico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza operaciones de adecuación del terreno en agricultura convencional para la siembra, trasplante y plantación analizando y aplicando técnicas de laboreo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las labores de preparación del suelo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los aperos y equipos para cada operación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han regulado los aperos y equipos de laboreo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha elegido el sistema de riego."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ejecutado las operaciones necesarias para el montaje de instalaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han calculado los fertilizantes y enmiendas en función de las necesidades del cultivo y las características del suelo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las enmiendas y el abonado de fondo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado y mantenido las herramientas, equipos y maquinaria en la preparación del terreno."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Implanta el material vegetal, justificando el uso de plantas y semillas mejoradas y aplicando las técnicas de la agricultura moderna.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las operaciones de siembra, trasplante y plantación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características de sembradoras, trasplantadoras y plantadoras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha distribuido la semilla en la dosis indicada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han empleado las técnicas de trasplante y plantación según cultivo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha dado el riego de plantación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han entutorado las plantas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han tomado medidas para evitar daños por vertebrados en la plantación o sembrado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cuantificado y repuesto las marras de plantación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el mantenimiento y limpieza de la maquinaria, equipos y herramientas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas de la explotación agrícola."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de operaciones en el área de electromecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas y equipos de trabajo empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Producción agrícola",
+      "codigo": "0476",
+      "ects": null,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza las operaciones necesarias para el riego de los cultivos relacionando el sistema de riego con el agua a aportar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado las labores de encauce y distribución del agua en los riegos por superficie."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado las operaciones necesarias para colocar los elementos móviles del sistema de riego."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha programado el riego utilizando los elementos de control."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha regado el cultivo cubriendo las necesidades hídricas o de lavado usando los elementos de control."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado y realizado el mantenimiento de primer nivel de herramientas, equipos y maquinaria empleados en el manejo del riego."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza el abonado de los cultivos analizando las técnicas y procedimientos de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha elegido el tipo de abono que cubre las necesidades de cobertera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los fertilizantes que se utilizan en fertirrigación, hidroponía y abonado foliar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado las mezclas nutritivas en fertirrigación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado las soluciones madre en cultivos hidropónicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los controles sobre los parámetros de abonado en hidroponía."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado el abono foliar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado y realizado el mantenimiento de primer nivel de herramientas, equipos y maquinaria empleados en el abonado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza labores culturales relacionándolas con el tipo de cultivo y sus técnicas asociadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las labores culturales según la especie cultivada y el producto deseado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y realizado los tipos de injerto según especie."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas de entutorado según cultivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diferenciado los tipos de poda según especie y cultivo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado técnicas de aclareo o despunte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado técnicas que favorezcan el cuajado de frutos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los tipos de labor entre líneas o calles."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han manejado los sistemas de control ambiental de las instalaciones de forzado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado y realizado el mantenimiento de primer nivel de herramientas, equipos y maquinaria empleados en las labores culturales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Recoge, manipula y acondiciona la cosecha justificando técnicas y métodos de agricultura moderna.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los métodos para determinar el estado de madurez."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el momento óptimo de recolección o aprovechamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las técnicas de recolección según el cultivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los restos de la cosecha para su aprovechamiento o eliminación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los recipientes y envases utilizados en la recogida y transporte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las técnicas de acondicionamiento de los productos agrícolas previo a su envasado y almacenaje."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los sistemas de transporte, envasado y almacenaje de diferentes productos agrícolas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado y realizado el mantenimiento de primer nivel de herramientas, equipos y maquinaria empleados en la recolección, envasado, transporte y almacenamiento."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la influencia de la recolección, envasado, transporte y almacenaje en la calidad del producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas de la explotación agrícola."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de operaciones en el área de electromecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas y equipos de trabajo empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Producción de leche, huevos y anim.",
+      "codigo": "0477",
+      "ects": null,
+      "horas_minimas_boe": 65,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona y prepara a los animales para la reproducción, aplicando los métodos y técnicas determinados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado criterios morfológicos y productivos para la elección de reproductores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido los requisitos mínimos de edad y desarrollo corporal para iniciar a los animales de reposición en la reproducción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los posibles defectos físicos o de comportamiento que dificulten su reproducción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han adiestrado a los reproductores para ser utilizados como «recelas» o para la recogida de semen."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los problemas sanitarios que pueden afectar a la reproducción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han cumplimentado la documentación necesaria para el control de los reproductores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han controlado las condiciones específicas de los alojamientos de los reproductores."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han proporcionado los alimentos requeridos por los sementales en atención a criterios de edad, estado fisiológico y frecuencia de utilización."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado la normativa ambiental, de bienestar y sanidad animal y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza las operaciones necesarias para el control de las fases de celo, cubrición y gestación, considerando las particularidades de cada especie.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado el control del ciclo ovárico y la sincronización del estro."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detectado los síntomas de celo en las distintas especies."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido el sistema de cubrición."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la recogida y conservación de material seminal en las distintas especies ganaderas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado dosis seminales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han controlado los parámetros ambientales de los alojamientos de las hembras gestantes a lo largo de las distintas fases de la gestación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha diagnosticado y controlado la gestación, utilizando los medios y siguiendo los protocolos establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido las principales patologías infecciosas, parasitarias, endocrinas y nutricionales asociadas a las fases de celo y gestación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha vigilado el estado sanitario de las hembras en la fase de celo y gestación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han cumplimentado la documentación necesaria para el control del celo, cubrición y gestación."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han proporcionado los alimentos requeridos para las fases de celo y gestación."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha aplicado la normativa ambiental, de bienestar y sanidad animal y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Maneja a la madre y las crías en el periparto y durante la fase de cría, siguiendo los protocolos establecidos para lograr la máxima supervivencia de las mismas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han controlado las condiciones ambientales e higiénico-sanitarias de las salas de parto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han alojado las hembras en las salas de parto en la fecha prevista."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado los síntomas de parto que predicen el momento de éste en las distintas especies."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado los protocolos de asistencia al parto en las distintas especies."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las anomalías más comunes que pueden presentarse en el parto y post-parto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han proporcionado los alimentos requeridos y los cuidados sanitarios a la madre y los recién nacidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado a las crías utilizando los métodos y medios indicados para cada especie."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha controlado el periodo de lactancia, natural o artificial, de las crías."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el destete siguiendo las pautas establecidas en función de la especie y la intención productiva de la explotación, optimizando en cada caso el intervalo parto-cubrición."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha cumplimentado los documentos y registros de control de las parideras y la fase de cría."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha aplicado la normativa ambiental, de bienestar y sanidad animal y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza las operaciones de ordeño, controlando los equipos y los animales y siguiendo los protocolos establecidos para obtener leche de calidad y mantener una buena salud de la ubre.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido los lotes de ordeño, siguiendo los criterios establecidos para cada especie."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado las operaciones de alimentación del ganado lechero."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el protocolo establecido para detectar la presencia de patologías infecciosas y traumáticas propias de las hembras en lactación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha organizado el ganado para el proceso de ordeño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las distintas partes de las instalaciones y equipos de ordeño y de conservación de la leche."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado el ordeño mecánico con los conceptos: formación de vacío y pulsaciones de la ordeñadora, preparación y estimulación de las ubres, extracción de la leche, tiempo de ordeño, apurado y desinfección de las ubres."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el ordeño aplicando los protocolos de higiene y sanidad de la ubre."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado las consecuencias productivas y sanitarias de un ordeño defectuoso."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha controlado y registrado la producción."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha realizado la toma de muestras para los controles bioquímicos y microbiológicos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha almacenado y conservado a refrigeración la leche."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han descrito el protocolo establecido para el secado de las distintas especies de rumiantes."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se han cumplimentado la documentación necesaria para el control de la producción de leche."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se ha aplicado la normativa de bienestar y sanidad animal, de seguridad alimentaria y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza las operaciones necesarias para la producción de huevos y pollitos, siguiendo las especificaciones técnicas y aplicando criterios de rentabilidad y calidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las operaciones previas a la entrada de las aves en las instalaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha controlado el ambiente de las naves según los parámetros de bienestar y confort estandarizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han agrupado a las aves en lotes según disponibilidad de espacios y criterios productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la distribución de pienso y agua adecuándose a la edad de las aves y al intervalo y con la presentación apropiada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los programas de iluminación y muda establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido la proporción macho/ hembra para la producción de huevos fecundados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha controlado, según los protocolos establecidos, la fecundación e incubación de huevos y el nacimiento de pollitos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido los huevos para consumo con la periodicidad establecida y con procedimientos que aseguren su integridad y sus condiciones higiénico-sanitarias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha controlado el estado sanitario de las aves."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha cumplimentado la documentación necesaria para el control de la producción de huevos y pollitos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha aplicado la normativa de bienestar y sanidad animal, de seguridad alimentaria y de prevención de riesgos laborales."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Producción de carne y otras produc.",
+      "codigo": "0478",
+      "ects": null,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza las operaciones de recepción y expedición de animales interpretando las normas y protocolos establecidos, garantizando la sanidad y bienestar animal.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito nociones básicas sobre comportamiento animal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el sistema de manejo según la especie raza, edad, sexo, y estado productivo del animal."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la documentación que acompaña la recepción y expedición de los animales y el estado sanitario de los mismos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido procesos de carga, descarga y transporte de animales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido los sistemas de aislamiento y cuarentena para los animales que llegan a la explotación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado las condiciones ambientales e higiénico-sanitarias de los alojamientos e instalaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los criterios de agrupamiento de animales, según la especie, raza, edad, sexo y destino productivo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las prácticas zootécnicas para la adecuación a la producción."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza las operaciones de alimentación del ganado, utilizando los medios y métodos apropiados para la especie, fase productiva y sistema de explotación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido las necesidades de aprovisionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de las máquinas utilizadas en la preparación, mezcla y distribución de alimentos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el acondicionamiento previo de los alimentos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han mezclado los alimentos para la elaboración de raciones conforme al sistema de explotación y a la técnica de producción."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han suministrado y distribuido las raciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de limpieza y mantenimiento de primer nivel de las máquinas y equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la influencia de la alimentación en el estado sanitario del ganado y en la calidad de las producciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han registrado los datos necesarios para el control de la alimentación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado la normativa de bienestar animal y de seguridad alimentaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Maneja los procesos de recría y cebo siguiendo criterios y protocolos preestablecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han agrupado los animales de recría y cebo en lotes homogéneos, atendiendo a criterios de sexo, tamaño y disponibilidad de espacios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha controlado el estado sanitario de las animales durante las fases de recría y cebo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado la velocidad de crecimiento y/o el índice de transformación de un lote de animales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han registrado los datos necesarios para el control de las fases de recría y cebo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la importancia de incluir a la explotación en el sistema de producción integrada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha aplicado la normativa de bienestar y sanidad animal y de seguridad alimentaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Maneja el pastoreo del ganado, aprovechando los recursos pastables de forma sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las especies y razas para el pastoreo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los distintos tipos de superficies de pastoreo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado, utilizando tablas, el valor nutritivo de los recursos pastables."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado el momento óptimo de consumo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha calculado la carga ganadera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado, según las características de la explotación, el tipo de pastoreo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha dividido el rebaño en grupos de pastoreo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la normativa de bienestar y sanidad animal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza las operaciones de manejo de las colmenas para producir miel y otros productos apícolas, aplicando las técnicas y utilizando los medios de producción intensiva.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la organización social de las abejas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha decidido el tipo de colmenas que se va a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han colocado las colmenas en el lugar seleccionado para su emplazamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha planificado la producción atendiendo a las características edafoclimáticas y botánicas de la zona."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de manejo, inspección y control sanitario de las colmenas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procesos de recolección de la miel y otros productos apícolas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las herramientas y equipos básicos para la producción apícola."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha cumplimentado la documentación de manejo del colmenar y de control de la producción."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado el beneficio ambiental derivado de la actividad apícola."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha aplicado la normativa de bienestar y sanidad animal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas de la explotación agropecuaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de operaciones en el área de electromecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas y equipos de trabajo empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control fitosanitario",
+      "codigo": "0479",
+      "ects": null,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina los productos químicos fitosanitarios que se deben aplicar analizando sus características técnicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los distintos tipos de productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las propiedades generales de los productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las principales características de los formulados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los formulados que se desean emplear."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han valorado las posibles incompatibilidades entre los formulados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las etiquetas y ficha técnica de seguridad de los formulados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado las condiciones ambientales y del cultivo en la elección de los productos químicos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la legislación fitosanitaria vigente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Almacena y manipula los productos químicos fitosanitarios interpretando las normas y protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las condiciones que debe cumplir el transporte y almacenamiento de productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han colocado los productos químicos fitosanitarios en el medio de transporte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha cumplimentado la documentación de transporte y el libro oficial de movimientos de productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han colocado los productos químicos fitosanitarios en el almacén siguiendo la normativa básica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los procedimientos a seguir en la retirada de productos fitosanitarios de la explotación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las actuaciones que se deben seguir en el caso de derrame accidental durante el transporte y/o almacenamiento de productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han manipulado los productos químicos fitosanitarios siguiendo el protocolo establecido."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la normativa de utilización de productos químicos fitosanitarios, ambiental y de prevención de riesgos laborales en el almacenamiento y manipulación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica métodos físicos, biológicos y/ o biotécnicos describiendo y manejando las técnicas prescritas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la conveniencia de aplicar métodos físicos, biológicos y/ o biotécnicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha elegido el método físico, biológico y/ o biotécnico que se va a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las condiciones de aplicación de productos biológicos y/ o biotécnicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado los materiales, herramientas y equipos en la aplicación de métodos físicos, biológicos y/ o biotécnicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calculado los costes de las aplicaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la eficacia de los métodos físicos, biológicos y/ o biotécnicos utilizados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han anotado las operaciones realizadas en el cuaderno de campo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la normativa ambiental y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Prepara productos químicos fitosanitarios siguiendo el protocolo establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales y equipos empleados en la preparación de productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado la cantidad de formulado en función de la dosis del tratamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado los equipos de protección individual."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la mezcla del formulado que se vaya a emplear."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han eliminado los envases vacíos según los sistemas de gestión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han anotado las operaciones realizadas en el cuaderno de campo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cumplido la normativa ambiental y de prevención de riesgos laborales referida a la utilización de productos químicos fitosanitarios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica productos químicos fitosanitarios seleccionando la maquinaria y equipos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales, equipos y maquinaria empleados en la aplicación de productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han previsto las condiciones climáticas que pueden afectar a la aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha regulado y calibrado la maquinaria y equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado el coste de los tratamientos aplicados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado los equipos de protección individual."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado las máquinas y equipos en la aplicación de productos químicos fitosanitarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las labores de limpieza y mantenimiento en máquinas y equipos según las especificaciones técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la eficacia de los tratamientos químicos realizados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han elaborado fichas y documentación que recogen las fechas, tareas, tiempos y medios empleados en los tratamientos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha seguido la normativa ambiental, de utilización de productos químicos fitosanitarios, de seguridad alimentaria, y de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Reconoce los riesgos derivados de la utilización de productos químicos fitosanitarios en función de su composición y mecanismos de acción, analizando sus efectos perjudiciales sobre las personas y el medio.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los factores que influyen en la peligrosidad de un producto químico fitosanitario."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha caracterizado la peligrosidad de los diferentes grupos de productos fitosanitarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los efectos de los productos químicos fitosanitarios sobre la salud de las personas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado los efectos de los productos químicos fitosanitarios sobre la agricultura."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los riesgos de los productos químicos fitosanitarios para el medio ambiente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las medidas para disminuir el riesgo derivado de la aplicación de los tratamientos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas de la explotación agrícola."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de operaciones en el área de electromecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas y equipos de trabajo empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664003",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708003",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713833",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM003",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

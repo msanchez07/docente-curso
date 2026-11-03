@@ -1,0 +1,3292 @@
+{
+  "id": "gm-fabricacion-de-productos-ceramicos",
+  "denominacion": "Fabricación de Productos Cerámicos",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Vidrio y Cerámica",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "FNPC",
+  "rd": "Real Decreto 454/2010, de 16 de abril, por el que se establece el título de Técnico en Fabricación de Productos Cerámicos.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-8120",
+  "modulos": [
+    {
+      "nombre": "Principios de mantenimiento electromecánico",
+      "codigo": "0116",
+      "ects": null,
+      "horas_minimas_boe": 55,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los elementos mecánicos de equipos, máquinas e instalaciones, describiendo la función que realizan y su influencia en el conjunto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los mecanismos principales que constituyen los grupos mecánicos de los equipos e instalaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la función que realizan y las características técnicas básicas de los elementos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos mecánicos transmisores y transformadores del movimiento, reconociéndose su presencia en los diferentes equipos de proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los elementos mecánicos en función de la transformación que realizan."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las relaciones funcionales de los elementos y piezas de los grupos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las propiedades y características de los materiales empleados en los mecanismos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las partes o puntos críticos de los elementos y piezas donde pueden aparecer desgastes razonando las causas que los originan."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado las medidas de prevención y seguridad que se deben tener en cuenta en el funcionamiento de los elementos mecánicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reconoce los elementos que intervienen en las instalaciones neumáticas, analizando la función que realizan y su influencia en el conjunto de la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los usos de la neumática como técnica de aplicación del aire comprimido."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las propiedades del aire comprimido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los circuitos de producción y tratamiento del aire comprimido describiendo la misión de sus elementos principales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las redes de distribución del aire comprimido y sus elementos de protección."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los elementos neumáticos de regulación y control y se ha reconocido su presencia en las instalaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los elementos neumáticos de accionamiento o de trabajo y se ha identificado su presencia en equipos de proceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito el funcionamiento de esquemas de circuitos neumáticos simples manuales, semiautomáticos y automáticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han enumerado las anomalías más frecuentes de las instalaciones neumáticas y sus medidas correctoras."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la utilidad del aire comprimido en la automatización de los procesos del sector."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Reconoce los elementos de las instalaciones hidráulicas describiendo la función que realizan.",
+          "ce": [
+            {
+              "codigo": "j",
+              "descripcion": "Se han descrito los sistemas hidráulicos como medios de producción y transmisión de energía."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han enumerado los principios físicos fundamentales de la hidráulica."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han enumerado los fluidos hidráulicos y sus propiedades."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se han relacionado los elementos hidráulicos con su simbología."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se ha identificado la unidad hidráulica y sus elementos funcionales y de protección."
+            },
+            {
+              "codigo": "o",
+              "descripcion": "Se han relacionado los elementos hidráulicos de trabajo con el tipo de mantenimiento que hay que realizar."
+            },
+            {
+              "codigo": "p",
+              "descripcion": "Se han descrito el funcionamiento de esquemas de circuitos hidráulicos simples."
+            },
+            {
+              "codigo": "q",
+              "descripcion": "Se han valorado las ventajas e inconvenientes del empleo de instalaciones hidráulicas en la automatización de proceso del sector."
+            },
+            {
+              "codigo": "r",
+              "descripcion": "Se han citado las anomalías más frecuentes de las instalaciones hidráulicas y sus medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica los elementos de las instalaciones eléctricas describiendo la misión que realizan en el conjunto de la instalación.",
+          "ce": [
+            {
+              "codigo": "s",
+              "descripcion": "Se ha descrito la estructura básica de las instalaciones eléctricas de interior."
+            },
+            {
+              "codigo": "t",
+              "descripcion": "Se ha reconocido los elementos de protección, maniobra y conexión de los circuitos eléctricos."
+            },
+            {
+              "codigo": "u",
+              "descripcion": "Se han relacionado el funcionamiento de instalaciones eléctricas aplicadas a los equipos industriales con su esquema unifilar."
+            },
+            {
+              "codigo": "v",
+              "descripcion": "Se han relacionado los elementos de protección y maniobra con el correcto funcionamiento y protección de las instalaciones eléctricas aplicadas a los equipos del sector."
+            },
+            {
+              "codigo": "w",
+              "descripcion": "Se han calculado magnitudes eléctricas (tensión, intensidad, potencia y caída de tensión, entre otros) en instalaciones básicas aplicadas del sector."
+            },
+            {
+              "codigo": "x",
+              "descripcion": "Se ha verificado la aplicación de las instrucciones técnicas del REBT en las instalaciones eléctricas aplicadas del sector."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se han reconocido los elementos eléctricos de control y maniobra y su función."
+            },
+            {
+              "codigo": "z",
+              "descripcion": "Se han relacionado las características eléctricas de los dispositivos de protección con las líneas y receptores eléctricos que deben proteger. aa) Se han descrito las condiciones de seguridad y prevención que se deben aplicar en la manipulación de los distintos componentes eléctricos/electrónicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica las máquinas eléctricas y los elementos constructivos que intervienen en el acoplamiento de los equipos industriales del sector, describiendo su funcionamiento y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las máquinas eléctricas utilizadas en los equipos e instalaciones del sector."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las máquinas eléctricas por su tipología y función."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el funcionamiento así como las características de las máquinas eléctricas y su aplicación en el sector."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la información de la placa de características con las magnitudes eléctricas y mecánicas de la instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha representado el esquema de conexionado (arranque e inversión de giro) de las máquinas eléctricas y sus protecciones mediante su simbología."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado el consumo de las máquinas con su régimen de funcionamiento de vacío y carga y sus protecciones eléctricas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado la aplicación de las instrucciones técnicas del REBT en las instalaciones de alimentación de las máquinas eléctricas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los sistemas de acoplamiento de las máquinas eléctricas a los equipos industriales del sector."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han relacionado los sistemas de sujeción de las máquinas eléctricas al equipo (tipo de movimiento, potencia de transmisión, ruido y vibraciones, entre otros)."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han descrito las condiciones de seguridad y prevención que se deben aplicar en la manipulación de los circuitos y máquinas eléctricas en funcionamiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica el mantenimiento de primer nivel, relacionando los procedimientos utilizados con los equipos e instalaciones implicados.",
+          "ce": [
+            {
+              "codigo": "k",
+              "descripcion": "Se han descrito los procedimientos de cada una de las operaciones de mantenimiento de primer nivel (básico) que deben ser realizadas sobre los equipos."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han identificado los elementos sobre los que se deben realizar las operaciones de mantenimiento preventivo/correctivo de primer nivel."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se han indicado las averías más frecuentes que se producen en los equipos e instalaciones."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se han identificado los equipos y herramientas necesarias para realizar las labores de mantenimiento de primer nivel."
+            },
+            {
+              "codigo": "o",
+              "descripcion": "Se han determinado las condiciones requeridas del área de trabajo para intervenciones de mantenimiento."
+            },
+            {
+              "codigo": "p",
+              "descripcion": "Se han puesto en marcha o invertido el sentido de giro de motores eléctricos, midiendo las magnitudes fundamentales durante el proceso."
+            },
+            {
+              "codigo": "q",
+              "descripcion": "Se han aplicado técnicas de mantenimiento o sustitución de elementos básicos en los equipos e instalaciones."
+            },
+            {
+              "codigo": "r",
+              "descripcion": "Se han registrado en el soporte adecuado las operaciones de mantenimiento realizadas."
+            },
+            {
+              "codigo": "s",
+              "descripcion": "Se han descrito las operaciones de limpieza, engrase y comprobación del estado de la instalación y equipos en el mantenimiento de primer nivel."
+            },
+            {
+              "codigo": "t",
+              "descripcion": "Se ha analizado la normativa vigente sobre prevención y seguridad relativas al mantenimiento de equipos e instalaciones."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos de fabricación de pastas cerámicas",
+      "codigo": "0417",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza el proceso de fabricación de pastas cerámicas, relacionando las instalaciones empleadas con los productos obtenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las materias primas empleadas en la fabricación de pastas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las pastas cerámicas y descrito sus características tecnológicas esenciales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las características tecnológicas de las pastas con las tipologías de los productos cerámicos fabricados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado un diagrama de proceso para una pasta cerámica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas del proceso de fabricación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las técnicas de operación del proceso de fabricación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado las propiedades de los productos de entrada y de salida de cada operación del proceso de fabricación con los medios de producción necesarios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las operaciones de recepción, apilado, mezclado y almacenamiento de materias primas, relacionando los procedimientos con los equipos necesarios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las técnicas industriales de recepción, almacenamiento, transporte y dosificación de materias primas no arcillosas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los procedimientos de transporte, recepción y descarga de arcillas para uso cerámico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas industriales de apilado y mezcla de arcillas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las instalaciones necesarias para la recepción, almacenamiento y mezcla de materias primas empleadas en el soporte de materiales cerámicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado, mediante cálculos, la cantidad de materiales almacenados en silos y graneros a partir de información de proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones de molienda industrial de composiciones interpretando el desarrollo del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las variables de los procesos de molienda industrial de composiciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las diferencias tecnológicas entre las pastas obtenidas por molienda en vía seca y por molienda en vía húmeda."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las técnicas de molienda con las características físicas de los productos cerámicos obtenidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el pesaje y/o la programación de equipos de dosificación a partir de fórmulas de carga establecidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado mediante cálculos, la carga teórica en molinos de bolas para molienda vía seca y vía húmeda en funcionamiento continuo o intermitente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado la carga y distribución de elementos molturantes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la carga de composiciones para la molienda de acuerdo con las condiciones establecidas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los elementos de regulación y control de molinos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han ajustado a las condiciones de trabajo las máquinas y equipos para la dosificación y molienda."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha realizado la descarga y el almacenamiento de composiciones molturadas de acuerdo con instrucciones establecidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza operaciones de desleído de composiciones, seleccionando las variables de proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características de las materias primas que permiten su empleo en la elaboración de pastas mediante desleído."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las variables de los procesos de desleído industrial de composiciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado el pesaje y/o la programación de equipos de dosificación de composiciones para desleído, a partir de fórmulas de carga establecidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la secuencia de operaciones necesaria para el desleído de una composición arcillosa."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado mediante cálculos, la carga de componentes para la preparación de una pasta mediante desleído."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la carga de composiciones para el desleído de acuerdo con las condiciones establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los elementos de regulación y control de desleidores industriales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han ajustado las máquinas y equipos para el desleído de composiciones a las condiciones de trabajo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el almacenamiento de composiciones desleídas de acuerdo con instrucciones establecidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza operaciones de preparación de pastas cerámicas analizando el desarrollo de las operaciones de conformado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las técnicas industriales de acondicionamiento a las condiciones de conformado de pastas molturadas por vía seca y por vía húmeda."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las variables de los procesos de preparación y acondicionamiento de la pasta."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los elementos de regulación y control de humectadoras, granuladoras, filtroprensas, amasadoras y atomizadores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los elementos de regulación y control de los equipos e instalaciones con las variables del proceso de preparación y acondicionamiento de pastas cerámicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ajustado a las condiciones de trabajo las máquinas y equipos para el acondicionamiento de pastas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la descarga de pastas preparadas de acuerdo con instrucciones establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el almacenamiento de pastas preparadas para el conformado de acuerdo con instrucciones establecidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Verifica el desarrollo del proceso de fabricación de pastas cerámicas justificando las técnicas y los procedimientos empleados.",
+          "ce": [
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los puntos de control del proceso de fabricación de pastas cerámicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado los controles de residuo a la luz de malla especificada."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado los controles de densidad y de viscosidad de las barbotinas molturadas o desleídas."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha realizado la medida del contenido en sólidos de la barbotina molturada o desleída."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha realizado la medida de la humedad de la pasta."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha realizado el control de la distribución granulométrica de las pastas granuladas o atomizadas."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se han expresado los resultados de los ensayos en las unidades correctas y con la precisión especificada."
+            },
+            {
+              "codigo": "o",
+              "descripcion": "Se han representado gráficamente los datos de ensayo que lo requieran."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los distintos materiales, instalaciones, máquinas y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con las máquinas e instalaciones respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, útiles y máquinas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas y pasos de emergencia, entre otros) de las máquinas e instalaciones y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de fabricación de pastas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas, máquinas e instalaciones con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de fabricación de pastas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos de fabricación de fritas y pigmentos cerámicos",
+      "codigo": "0418",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza el proceso de preparación de fritas y de pigmentos cerámicos, relacionando las operaciones de fabricación, los productos de entrada y salida y las variables de proceso con los medios y procedimientos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado un diagrama del proceso de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las operaciones de fabricación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las operaciones de fabricación con las instalaciones y equipos necesarios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la calidad de la frita obtenida con las variables de cada una de las operaciones de fabricación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la calidad del pigmento calcinado o la sal soluble obtenidos con las variables de cada una de las operaciones de fabricación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han señalado las materias primas empleadas en la fabricación de fritas, sus formas de suministro y condiciones de almacenamiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han señalado las materias primas y aditivos empleados en la fabricación de pigmentos calcinados y sales solubles, sus formas de suministro y condiciones de almacenamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado las materias primas empleadas según su composición y solubilidad."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los parámetros objeto de control."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han descrito los aspectos más relevantes sobre las condiciones de almacenamiento y transporte."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza el funcionamiento de las instalaciones y equipos de almacenamiento de materias primas, de dosificación y mezclado, relacionando los parámetros operativos con la calidad del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el funcionamiento de las instalaciones automáticas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de los equipos de dosificación y mezclado de sólidos, de sus elementos principales y de los mecanismos de regulación y control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el funcionamiento de los equipos de dosificación y mezclado para la preparación de sales solubles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha indicado la secuencia de operaciones para la elaboración de la mezcla de materias primas para la fusión o la calcinación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha indicado la secuencia de operaciones para la preparación de sales solubles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la secuencia operativa para la puesta en marcha y parada de los equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado la carga idónea de los diferentes tipos de equipos de mezclado, atendiendo a la calidad del producto y a los costes de operación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha relacionado el tiempo de mezclado con las características del material y la tecnología empleada por el equipo de mezclado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han señalado los principales elementos objeto de revisión y los criterios para su reparación o sustitución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza el funcionamiento de los hornos de fusión de fritas y de las instalaciones auxiliares, relacionando los parámetros operativos con las características del producto obtenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado un diagrama del flujo de materiales sólidos, líquidos y gases, en el horno y de las instalaciones auxiliares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de los quemadores y sus elementos de regulación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los procesos de combustión con los equipos e instalaciones necesarias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los diagramas representando los distintos elementos constructivos de un horno, según las distintas soluciones empleadas en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado los distintos tipos de refractario utilizados con los requerimientos específicos de las distintas partes del horno."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el funcionamiento de los equipos de producción e instalaciones auxiliares, de sus elementos principales y de los mecanismos de regulación, control y seguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha indicado la secuencia operativa para la puesta en marcha y parada de las instalaciones de fusión."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han señalado valores orientativos de los parámetros de funcionamiento de los hornos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han señalado los principales elementos objeto de revisión y los criterios para su reparación o sustitución."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han relacionado los parámetros operativos de los hornos de fusión de fritas con los costes de operación y mantenimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Caracteriza el funcionamiento de los equipos para la calcinación y el acabado de pigmentos cerámicos, relacionando los parámetros operativos con las características del producto obtenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la secuencia de operaciones para la carga y descarga del horno, la molienda y el lavado, el secado y la micronización, y la mezcla y el embalado del producto final."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y el funcionamiento de los distintos tipos de hornos de calcinación, de sus elementos principales y de los mecanismos de regulación y control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado las características de los crisoles de refractario con los ciclos de cocción empleados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los criterios de definición de un programa de cocción."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el funcionamiento de los equipos e instalaciones de molienda, lavado, secado, micronización, mezcla y embalado, de sus elementos principales y de los mecanismos de regulación y control."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado la secuencia operativa para la puesta en marcha y parada de los equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han indicado valores orientativos para el programa de calcinación, la carga de sólidos y agua del molino, el tiempo de molienda y los ciclos de lavado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionando los parámetros operativos con la calidad del producto obtenido, los costes de operación y de mantenimiento."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han señalado los principales elementos objeto de revisión y los criterios para su reparación o sustitución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Prepara fritas y pigmentos cerámicos, relacionando las variables del proceso de fabricación con las características del producto obtenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han dosificado con la precisión requerida los distintos componentes de la mezcla."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la homogeneización de la mezcla de los materiales dosificados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y cargado los crisoles para la fusión o calcinación de la mezcla."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha programado el horno para la calcinación del pigmento o la fusión de la frita según parámetros establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha obtenido la frita mediante horno de pruebas de fusión en continuo o mediante fusión discontinua en crisol."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha calcinado el pigmento y se ha molido hasta la granulometría establecida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha lavado, secado y micronizado el pigmento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han señalado los principales elementos objeto de revisión y los criterios para su reparación o sustitución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Calcula dosificaciones y datos referidos a las etapas del proceso, control de línea, almacenamiento y consumo de materiales, justificando las variables consideradas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha calculado la cantidad de materiales almacenados en silos e instalaciones de almacenamiento de materiales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la densidad aparente de un material seco con su masa y el volumen que ocupa."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado la cantidad de cada componente de una mezcla para obtener una cantidad dada de producto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han obtenido datos e información de proceso mediante la aplicación de fórmulas derivadas del balance másico en procesos de continuos de fusión y calcinación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado mediante cálculos el caudal necesario de agua de refrigeración con la temperatura y la producción de la frita obtenida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado mediante cálculos la concentración de oxígeno de los gases de combustión con los caudales de gas y aire de combustión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado mediante cálculos y el uso de tablas el caudal de gas de una conducción con las presiones estática y dinámica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha calculado el volumen que ocupa la producción obtenida."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han empleado las unidades adecuadas para expresar los resultados de los cálculos efectuados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los distintos materiales, instalaciones, máquinas y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con las máquinas e instalaciones respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, útiles y máquinas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas y pasos de emergencia, entre otros) de las máquinas e instalaciones y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de fabricación de fritas y pigmentos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas, máquinas e instalaciones con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de fabricación de fritas y pigmentos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos de preparación de esmaltes cerámicos",
+      "codigo": "0419",
+      "ects": null,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los procesos de preparación de esmaltes, relacionando las operaciones de fabricación y las variables de proceso con los medios y procedimientos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las operaciones de preparación de esmaltes y engobes en barbotina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las operaciones de preparación de esmaltes micronizados, en granillas, peletizados y tintas vitrificables."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las principales materias primas y aditivos empleados en la fabricación de esmaltes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las características de los productos de salida con las instalaciones y los equipos necesarios para su preparación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado las características de los productos de salida con los materiales de entrada y las condiciones de operación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los materiales utilizados y su proporción con el comportamiento de la mezcla en el proceso de preparación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los parámetros objeto de control."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los aspectos más relevantes sobre las condiciones de almacenamiento y transporte de los esmaltes preparados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara engobes y esmaltes en barbotina, relacionando las condiciones de funcionamiento de los equipos con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el funcionamiento de los equipos, componentes y elementos de regulación y control."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la secuencia de operaciones para la elaboración de la barbotina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la secuencia operativa para la puesta en marcha y parada de los equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el funcionamiento y disposición de cada uno de los sistemas y equipos de las instalaciones de preparado de barbotina."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado la idoneidad de las cargas de elementos molturantes y de esmalte para el buen funcionamiento del molino."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han dosificado con precisión los distintos componentes de la fórmula de carga."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha regulado el tiempo de molienda de acuerdo con el valor establecido."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado la densidad y el residuo sobre el tamiz establecido antes de proceder a la descarga."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha descargado la barbotina procesándola a través del equipo de tamizado y el sistema de separación magnética."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han empleado equipos de trasiego para disponer la barbotina en depósitos para su almacenamiento o transporte."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara tintas cerámicas, relacionando las condiciones de funcionamiento de los equipos con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el funcionamiento de los equipos de dosificación y de mezcla y refino."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la secuencia de operaciones para la elaboración de las tintas cerámicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la secuencia operativa para la puesta en marcha y parada de los equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el funcionamiento y disposición de los equipos de dosificación, mezcla y refino de las tintas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han indicado las variables objeto de control y los valores idóneos de operación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha indicado el modo en que influyen las variables de operación en la productividad, en el estado de conservación de los equipos y en la calidad de las tintas obtenidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han dosificado con precisión los distintos componentes de la fórmula."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han procesado los materiales con los equipos de mezcla y refino para obtener el producto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha controlado la densidad y el residuo sobre el tamiz establecido de las tintas obtenidas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han dispuesto las tintas obtenidas en recipientes herméticos debidamente referenciados para su almacenamiento y transporte."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Prepara esmaltes micronizados, esmaltes peletizados y esmaltes en granilla, relacionando las condiciones de funcionamiento de los equipos con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el funcionamiento de los equipos y sus elementos principales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la secuencia de operaciones para la elaboración del producto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la secuencia operativa para la puesta en marcha y parada de los equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el funcionamiento y disposición de cada uno de los sistemas y equipos de las instalaciones de preparado de esmaltes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han indicado las variables objeto de control y los valores idóneos de operación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha indicado el modo en que influyen las variables de operación en la productividad, en el estado de conservación de los equipos y en la calidad del producto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han dispuesto los tamices en el equipo de clasificación granulométrica indicando el intervalo granulométrico fijado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han regulado los equipos y se han operado para obtener el producto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha controlado la granulometría de los productos mediante tamizado."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han indicado las condiciones de almacenamiento y transporte de los pelets y granillas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Calcula dosificaciones y otros datos de variables del proceso analizando el desarrollo del mismo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado la geometría con la capacidad de depósitos y máquinas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado, mediante cálculos, la cantidad de los materiales almacenados en silos e instalaciones de almacenamiento de materiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la densidad aparente de un material seco con su masa y el volumen que ocupa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado, mediante cálculos, la densidad de las suspensiones, su contenido en sólidos y los pesos específicos del sólido y el líquido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha calculado la carga de bolas, de producto y la velocidad óptima de funcionamiento de un molino de bolas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha calculado la cantidad de cada componente de una mezcla para obtener una cantidad dada de producto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado el balance másico en procesos de atomización, granulado y secado-micronizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha calculado el volumen que ocupa la producción obtenida."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han representado e interpretado distribuciones granulométricas de pelets y granillas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han empleado las unidades adecuadas para expresar los resultados de los cálculos efectuados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los distintos materiales, instalaciones, máquinas y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con las máquinas e instalaciones respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, útiles y máquinas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas y pasos de emergencia, entre otros) de las máquinas e instalaciones y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de fabricación de esmaltes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas, máquinas e instalaciones con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de fabricación de esmaltes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos de fabricación de productos cerámicos",
+      "codigo": "0420",
+      "ects": null,
+      "horas_minimas_boe": 150,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Clasifica los productos cerámicos relacionando sus características técnicas, estéticas y funcionales con sus aplicaciones y zonas de consumo más habituales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado criterios de clasificación de productos cerámicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y descrito las características técnicas de los productos cerámicos y sus unidades de medida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los requisitos técnicos y estéticos exigidos a los productos cerámicos con sus usos y aplicaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado catálogos comerciales de productos cerámicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los productos cerámicos con sus principales mercados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las características técnicas, estéticas y funcionales de los productos cerámicos con sus mercados nacionales e internacionales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado criterios estéticos de productos cerámicos aceptados y demandados en sus mercados y se han relacionado con sus características funcionales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza el proceso de fabricación de productos cerámicos relacionando las instalaciones empleadas con los productos obtenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las materias primas, semielaborados y aditivos empleados en la fabricación de productos cerámicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los productos cerámicos en función de su tipología, de su funcionalidad y de sus características técnicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado los condicionantes productivos y tecnológicos con las tipologías de productos cerámicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado diagramas de proceso para diferentes productos cerámicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas de diferentes procesos de fabricación de productos cerámicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las técnicas de operación del proceso de fabricación y sus principales características."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado las propiedades de los productos de entrada y de salida de cada operación de los procesos de fabricación con los medios de producción necesarios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones de conformado de productos cerámicos analizando las variables de proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las técnicas industriales de conformado de productos cerámicos mediante prensado, moldeado, calibrado, extrusión y colado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las técnicas de conformado con los equipos e instalaciones empleados en los procesos de fabricación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los elementos de regulación y control de prensas, extrusoras, equipos de moldeo en plástico y equipos de colado automático."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el ajuste de parámetros de trabajo de equipos de conformado en semiseco o en estado plástico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado los moldes necesarios para el conformado de productos cerámicos mediante colado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de llenado, vaciado y desmoldado según los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el almacenamiento de productos cerámicos conformados en las condiciones de calidad y seguridad establecidas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las tecnologías de secado industrial atendiendo a las características del proceso de fabricación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los elementos de regulación y control de los secaderos industriales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han determinado los defectos en productos cerámicos originados en las operaciones de conformado o de secado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza operaciones de esmaltado y decoración de productos cerámicos, analizando las variables de proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las técnicas industriales de esmaltado y decoración de productos cerámicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las técnicas industriales de esmaltado y decoración de productos cerámicos con los equipos e instalaciones empleados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han ajustado la densidad y la viscosidad de los engobes, esmaltes y tintas a las condiciones de aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los elementos de regulación y control de los equipos de aplicación de engobes, esmaltes y tintas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la preparación y ajuste a las condiciones de trabajo de las máquinas de aplicación de engobes, esmaltes y tintas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto posibles soluciones a los defectos identificados en las operaciones de esmaltado y decoración de productos cerámicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza operaciones de cocción de productos cerámicos analizando el desarrollo del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los ciclos de cocción y las características de los productos cerámicos obtenidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las tecnologías de cocción de productos cerámicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las variables del proceso de cocción y su influencia en las características técnicas, estéticas y funcionales del producto acabado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los elementos de regulación y control de hornos empleados en la cocción de productos cerámicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el ajuste de los parámetros de trabajo de un horno, programando su ciclo de cocción y realizado la carga y descarga de productos en las condiciones establecidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado defectos en productos cerámicos originados en la operación de cocción."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han señalado las posibles causas de los defectos en la cocción de los productos cerámicos causas y se han propuesto soluciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Calcula datos referidos a las etapas del proceso, control de línea, almacenamiento y consumo de materiales, justificando las variables y parámetros considerados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la capacidad de almacenamiento de silos, tolvas y depósitos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado la producción de equipos de conformado, esmaltado-decoración y cocción a partir de datos de fabricación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha calculado la pasta consumida o necesaria a partir de datos de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado la cantidad de esmalte consumido o necesario a partir de datos de producción y de peso aplicado por pieza esmaltada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado, mediante cálculos, la capacidad de almacenamiento de vagonetas, boxes, o cualquier otro elemento de almacenamiento y/o transporte de productos semielaborados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han expresado los resultados de los cálculos en las unidades correctas y con la precisión requerida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Verifica, en la línea, el desarrollo del proceso de fabricación de productos cerámicos, justificando las técnicas y los procedimientos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado medidas de humedad y, en su caso, de la distribución granulométrica de polvos y pastas para el conformado de productos cerámicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado medidas de la compacidad o de la densidad aparente en verde de productos cerámicos conformados en semiseco."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado medidas de la compacidad o de la densidad aparente de productos cerámicos tras el secado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado controles dimensionales y de aspecto superficial en productos cerámicos conformados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado medidas de densidad y de viscosidad de esmaltes empleados en la fabricación de productos cerámicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado medidas de peso de esmalte aplicado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la verificación del aspecto superficial de las aplicaciones en línea de engobes, esmaltes y tintas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado medidas de las variables de proceso de maquinas y equipos para la fabricación de productos cerámicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los distintos materiales, instalaciones, máquinas y medios de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con las máquinas e instalaciones respetando las normas de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, útiles y máquinas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas y pasos de emergencia, entre otros) de las máquinas e instalaciones y los equipos de protección individual (calzado, protección ocular, indumentaria, entre otros) que se deben emplear en las distintas operaciones de fabricación de productos cerámicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas, máquinas e instalaciones con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de fabricación de productos cerámicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Normativa cerámica",
+      "codigo": "0421",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Interpreta la normativa internacional sobre productos cerámicos, relacionando la misma con las características técnicas de los productos concernidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las normas internacionales de producto y de ensayo referidas a productos cerámicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado las definiciones de conceptos empleados en la normativa para productos cerámicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado productos cerámicos aplicando los criterios definidos en la normativa internacional."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la normativa de producto a partir de los criterios de clasificación definidos en la normativa internacional y la normativa de producto que se deriva de ellos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los parámetros de marcado y designación indicados en la normativa internacional referida a un determinado producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica protocolos de ensayo definidos en la normativa internacional para productos cerámicos, interpretando los procedimientos utilizados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la normativa de ensayo aplicable a un determinado producto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la documentación técnica apropiada para la realización de los ensayos normalizados según los procedimientos descritos en la normativa internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los procedimientos de muestreo definidos por las normas internacionales de ensayo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado las muestras para la realización de los ensayos de producto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado los materiales y reactivos para la realización de ensayos de producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los equipos de ensayo a las condiciones especificadas en las normas correspondientes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado los procedimientos operativos de ensayo descritos en las normas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado los procedimientos normalizados de ensayo de productos acabados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia del estado de conservación de los equipos y medios auxiliares para la fiabilidad de las determinaciones efectuadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Interpreta los resultados de los ensayos de producto analizando los criterios de aceptación y rechazo definidos en la normativa internacional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la documentación técnica apropiada para la interpretación de los resultados de los ensayos de producto acabado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han expresado los resultados de los ensayos en las unidades establecidas por las normas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han expresado los resultados de los ensayos con la precisión establecida por las normas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha clasificado el producto objeto del ensayo de acuerdo con los criterios de clasificación definidos en la norma de ensayo cuando ésta lo requiere."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han valorado los fundamentos técnicos que justifican los criterios de aceptación y rechazo establecidos por la normativa internacional de ensayo de productos cerámicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado los criterios de aceptación y rechazo especificados en la normativa internacional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza informes de los resultados de los ensayos interpretando los procedimientos establecidos en las normas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la documentación técnica apropiada para la realización de los informes de los ensayos conforme a los procedimientos descritos en la normativa internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los productos ensayados de acuerdo con la terminología y los criterios definidos en la normativa internacional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los criterios de redacción y presentación de informes de los resultados de los ensayos normalizados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado los criterios de registro de los informes de ensayo de acuerdo con los procedimientos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido los códigos de archivo y localización de los informes de los ensayos normalizados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procedimientos de teneduría y archivo de la documentación técnica empleada y generada en los ensayos normalizados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los procedimientos de conservación y actualización de la documentación generada en los ensayos de producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Mantiene organizados los recursos del laboratorio valorando su importancia para la calidad y la seguridad de las operaciones de ensayo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la disponibilidad de las normas internacionales actualizadas, de producto y de ensayo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado las existencias de materiales y de reactivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la adecuación de los equipos disponibles a las condiciones de ensayo definidas en las normas internacionales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado y puesto a punto los instrumentos de ensayo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de conservación de los equipos y medios auxiliares."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los sistemas de archivo de las muestras objeto de los ensayos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los distintos materiales empleados en los ensayos normalizados de productos cerámicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado e interpretado los códigos de etiquetado de sustancias nocivas y peligrosas empleadas en los laboratorios de ensayo de productos cerámicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las normas de uso, seguridad y almacenamiento de materiales y reactivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha operado con los equipos e instalaciones respetando las normas de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, útiles y equipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas y pasos de emergencia, entre otros) de las máquinas e instalaciones y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en los ensayos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas, máquinas e instalaciones con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cumplido las normas de prevención de riesgos aplicables a la manipulación de reactivos químicos y a la realización de ensayos normalizados de productos cerámicos acabados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las normas de gestión de residuos de los ensayos de producto acabado."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de materiales y procesos cerámicos",
+      "codigo": "0422",
+      "ects": null,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Interpreta el plan de control de materiales y del proceso de fabricación de fritas, esmaltes, pigmentos y productos cerámicos, justificando las instrucciones establecidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado los puntos de control en el proceso de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los materiales y los parámetros objeto de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado las instrucciones del plan de muestreo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado los procedimientos de ensayo establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los procedimientos establecidos para el análisis de los datos de control."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los valores nominales, las tolerancias y los criterios de aceptación y rechazo para la evaluación de los datos de control."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los procedimientos y soportes para el registro de los datos de control."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han interpretado las normas de seguridad, de salud laboral y de protección ambiental que deben aplicarse en la ejecución del plan de control."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza ensayos para el control de materias primas arcillosas y pastas cerámicas, justificando los procedimientos que deben emplearse.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado la muestra para realizar el control asegurando su representatividad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los equipos de ensayo de acuerdo con las especificaciones técnicas de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado: la humedad, el contenido en carbonatos y la granulometría vía húmeda."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la plasticidad y el diagrama de desfloculación de arcillas y caolines."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la granulometría vía seca de pastas atomizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado la densidad, la viscosidad y la velocidad de colado de pastas en barbotina."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado la contracción de secado, la densidad aparente y la resistencia mecánica en verde y en seco en probetas preparadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado la contracción lineal, la absorción de agua, las pérdidas de peso y el color de probetas preparadas tras su cocción."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han relacionado los procedimientos y las condiciones de ensayo con la fiabilidad de los resultados obtenidos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha asegurado la trazabilidad de la muestra ensayada."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza ensayos para el control de materias primas no arcillosas, de fritas, de esmaltes, de pigmentos cerámicos y de materiales auxiliares, justificando los procedimientos que deben emplearse.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado la muestra para realizar el control asegurando su representatividad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los equipos de ensayo de acuerdo con las especificaciones técnicas de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la humedad, la granulometría, las pérdidas por calcinación de las muestras sólidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la fundencia de fritas y feldespatos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la densidad, la viscosidad y la granulometría de los esmaltes en barbotina y las tintas cerámicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado la densidad, viscosidad y pérdidas por calcinación de los vehículos serigráficos y líquidos auxiliares."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido las coordenadas colorimétricas de vidriados coloreados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionando los procedimientos y las condiciones de ensayo con la fiabilidad de los resultados obtenidos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha asegurado la trazabilidad de la muestra ensayada."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza ensayos para el control de productos cerámicos en el proceso de fabricación, justificando los procedimientos que se debe emplear.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado la muestra para realizar el control asegurando su representatividad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los equipos de ensayo de acuerdo con las especificaciones técnicas de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la humedad de las piezas a la entrada y salida del secadero."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado la densidad aparente y la resistencia mecánica de las piezas en verde y en seco."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la integridad y ausencia de defectos en las piezas antes de su cocción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado la integridad, las dimensiones y la ausencia de defectos en la superficie de las piezas cocidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionando los procedimientos y las condiciones de ensayo con la fiabilidad de los resultados obtenidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha asegurado la trazabilidad de la muestra ensayada."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Interpreta los datos de control obtenidos, relacionando los mismos con las variables de proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han expresado los resultados de los ensayos en las unidades correctas y con la precisión especificada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han representado gráficamente los resultados de los ensayos que lo requieren para su interpretación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han cumplimentado hojas y registros de control de acuerdo con los procedimientos especificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han construido gráficos de control por variables y por atributos con datos de control de proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado criterios de interpretación a gráficos de control por variables y por atributos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado puntos fuera de control, rachas y tendencias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado criterios de aceptación o rechazo a resultados de control de suministros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha evaluado la información obtenida de los ensayos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Mantiene la organización y los recursos del laboratorio, valorando su importancia para la calidad y la seguridad de las operaciones de control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado el stock de materiales y reactivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de los equipos y medios auxiliares."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado y, en su caso, calibrado los instrumentos de medida y control de su competencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la disponibilidad de los protocolos de ensayo y la información técnica de los equipos de ensayo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los sistemas de archivo de las muestras objeto de los controles y de las piezas resultantes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los sistemas de registro de los resultados de control."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la disponibilidad de los medios de protección personal y el cumplimiento de las normas de prevención de riesgos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia del estado de conservación de los equipos y medios auxiliares para la fiabilidad de las determinaciones efectuadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas y ensayos de desarrollo de productos cerámicos",
+      "codigo": "0423",
+      "ects": null,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara pastas cerámicas, relacionando los procedimientos y las variables de operación con las características de los productos obtenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretando las características técnicas de los componentes de la pasta."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado la carga de los componentes de acuerdo con la capacidad del equipo que se va a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado los molinos de bolas para la molienda de pastas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han obtenido pastas micronizadas mediante molinos de laboratorio para molienda vía seca."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido pastas en barbotina mediante molienda o desleído."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido polvos semisecos para prensado con el grado de humedad establecido."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido pastas en masa plástica mediante amasado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha preparado atomizado el coloreado en seco."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Obtiene probetas conformadas justificando las técnicas y los procedimientos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las variables de operación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado la idoneidad de la pasta para su conformación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el montaje del molde sobre la prensa y se ha regulado la presión de prensado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el montaje de la boquilla de la extrusora y se ha regulado la velocidad de extrusión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha preparado el molde para el colado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido probetas mediante extrusión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido probetas mediante prensado de polvos semisecos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han obtenido probetas mediante colado de pastas en barbotina."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara esmaltes relacionando los procedimientos y las variables de operación con las características de los productos obtenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los componentes del esmalte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado la carga de los componentes de acuerdo con la capacidad del equipo que se va a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado los molinos de bolas para la molienda de esmaltes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha obtenido esmalte o engobe en barbotina mediante molienda."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido esmaltes en polvo mediante secado de barbotinas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido granillas a partir de fritas en grano."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido pelets de esmaltes a partir de los componentes en polvo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Elabora probetas esmaltadas justificando las técnicas y los procedimientos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha acondicionado la barbotina de esmalte para su aplicación mediante patín, aerógrafo o inmersión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el montaje de la boquilla del aerógrafo y se ha regulado el caudal de aire y de esmalte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha regulado el grosor de capa aplicada en el patín de esmaltado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han obtenido probetas esmaltadas mediante patín de esmaltado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido probetas esmaltadas mediante aerógrafo manual."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han obtenido probetas esmaltadas mediante inmersión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido probetas esmaltadas mediante aplicaciones en seco."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Prepara tintas cerámicas y las aplica relacionando los procedimientos y las variables de operación con las características de los productos obtenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los componentes interpretando sus características técnicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han dosificado los componentes y homogenizado la mezcla."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha acondicionado la tinta de acuerdo con la técnica de aplicación empleada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado y dispuesto la pantalla serigráfica indicada sobre el cabezal de serigrafía manual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el centrado del soporte y la pantalla."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha preparado y aplicado manualmente fijador sobre el soporte."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado tintas sobre soportes crudos, mediante serigrafía manual."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado tintas sobre soportes cocidos, mediante serigrafía manual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de ensayo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza aplicaciones de esmaltes y tintas interpretando los procedimientos y las variables de operación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han acondicionado los soportes necesarios a las condiciones de aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han acondicionado el engobe, el esmalte y las tintas cerámicas de acuerdo con la técnica de aplicación empleada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado a las condiciones de trabajo los elementos de alimentación, transporte y descarga de la línea de pruebas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado a las condiciones de trabajo los equipos de humectación y aplicación de fijador o cola."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado a las condiciones de trabajo los equipos de aplicación de esmaltes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado a las condiciones de trabajo los equipos automáticos de serigrafía, flexografía, huecografía o inyección."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han regulado los caudales y velocidades de los equipos para obtener el producto con la calidad especificada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cumplido las normas de seguridad, de salud laboral y de protección ambiental durante las operaciones de la prueba."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Realiza ensayos de caracterización de pastas, tintas, engobes y esmaltes cerámicos, analizando los procedimientos de operación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado el rechazo de polvos y suspensiones cerámicas mediante tamiz."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la humedad de polvos, masas plásticas y probetas conformadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la densidad y tiempo de caída en copa Ford de suspensiones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el diagrama de desfloculación de pastas, esmaltes y tintas cerámicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el diagrama de compactación de pastas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado el diagrama de contracción frente a humedad en el secado de pastas conformadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el diagrama de gresificación de pastas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la temperatura de sellado y el rango de maduración de esmaltes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han relacionado el ajuste de variables de operación con la calidad de los resultados obtenidos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664068",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708068",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713840",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM068",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

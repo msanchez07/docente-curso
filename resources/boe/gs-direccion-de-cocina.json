@@ -1,0 +1,3115 @@
+{
+  "id": "gs-direccion-de-cocina",
+  "denominacion": "Dirección de Cocina",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Hostelería y Turismo",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "DNC",
+  "rd": "Real Decreto 687/2010, de 20 de mayo, por el que se establece el título de Técnico Superior en Dirección de Cocina y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-9270",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": 7,
+      "horas_minimas_boe": 70,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce información profesional y cotidiana contenida en todo tipo de discursos orales emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes radiofónicos y de otro material grabado o retransmitido pronunciado en lengua estándar identificando el estado de ánimo y el tono del hablante."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información de grabaciones en lengua estándar, relacionadas con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los puntos de vista y las actitudes del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ideas principales de declaraciones y mensajes sobre temas concretos y abstractos, en lengua estándar y con un ritmo normal."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprendido con todo detalle lo que se dice en lengua estándar, incluso en un ambiente con ruido de fondo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Interpreta información profesional contenida en textos escritos complejos, analizando de forma comprensiva sus contenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha leído con un alto grado de independencia, adaptando el estilo y la velocidad de la lectura a distintos textos y finalidades y utilizando fuentes de referencia apropiadas de forma selectiva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado, con todo detalle, textos extensos y de relativa complejidad, relacionados o no con su especialidad, siempre que pueda volver a leer las secciones difíciles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales y decide si es oportuno un análisis más profundo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos complejos utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado mensajes técnicos recibidos a través de soportes telemáticos: e-mail, fax."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han interpretado instrucciones extensas y complejas, que estén dentro de su especialidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Emite mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los registros utilizados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comunicado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado normas de protocolo en presentaciones formales e informales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha argumentado con todo detalle, la elección de una determinada opción o procedimiento de trabajo elegido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Elabora documentos e informes propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito del mismo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han redactado textos claros y detallados sobre una variedad de temas relacionados con su especialidad, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha organizado la información con corrección, precisión, coherencia y cohesión, solicitando y/ o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han redactado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las fórmulas establecidas y el vocabulario específico en la cumplimentación de documentos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han resumido artículos, manuales de instrucciones y otros documentos escritos, utilizando un vocabulario amplio para evitar la repetición frecuente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se ha de elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control del aprovisionamiento de materias primas",
+      "codigo": "0496",
+      "ects": 3,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona materias primas identificando sus cualidades organolépticas y sus aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y clasificado las materias primas en restauración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la organización de las materias primas teniendo como referencia el código alimentario."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las materias primas en restauración, sus características y sus cualidades organolépticas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las cualidades organolépticas de los alimentos y bebidas con sus principales aplicaciones gastronómicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido las categorías y presentaciones comerciales de los alimentos y bebidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido y caracterizado los sellos europeos y los sellos españoles de calidad alimentaria."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y caracterizado los productos acogidos a los sellos españoles de calidad alimentaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Recepciona materias primas verificando el cumplimiento de los protocolos de calidad y seguridad alimentaria.",
+          "ce": [
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito y caracterizado las operaciones necesarias para recepcionar materias primas en cocina."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los equipos e instrumentos para el control cuantitativo, cualitativo e higiénico-sanitario."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha interpretado el etiquetado de los productos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comprobado la coincidencia de cantidad y calidad de lo solicitado con lo recibido."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha verificado el cumplimiento por parte del proveedor de la normativa referente al embalaje, transporte, cantidad, calidad, caducidad, temperatura, manipulación y otras."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se han verificado el cumplimiento de la petición de compra y los requisitos establecidos para las materias primas solicitadas."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se han reconocido y formalizado los documentos relacionados con los procesos de recepción."
+            },
+            {
+              "codigo": "o",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos y se ha controlado la recogida de residuos."
+            },
+            {
+              "codigo": "p",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Almacena materias primas y otros suministros en restauración identificando las necesidades de conservación y ubicación. – Se han descrito y caracterizado los lugares para el almacenamiento y conservación de las materias primas y otros suministros. – Se han determinado los métodos de conservación idóneos para las materias primas. – Se han determinado las temperaturas y los envases adecuados para la conservación de los géneros hasta el momento de su uso. – Se han colocado las materias primas en función de la prioridad en su consumo. – Se ha mantenido el almacén, economato y/o bodega en condiciones de orden y limpieza. – Se ha evitado el consumo innecesario de recursos y controlado la recogida de residuos. – Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Controla consumos y existencias registrando los movimientos de entradas y de salidas de géneros. – Se ha descrito el concepto de control de existencias en restauración. – Se han caracterizado los procedimientos de solicitud de pedidos a almacén, su control, la documentación asociada y las relaciones interdepartamentales entre los departamentos involucrados. – Se han identificado los géneros susceptibles de ser entregados directamente en los departamentos de venta y/o producción por parte del proveedor y su control. – Se han realizado diversos tipos de inventarios y se han descrito su función e importancia en el control de consumos y existencias. – Se han efectuado rotaciones de géneros en el almacén en función de diversas circunstancias. – Se ha calculado el consumo de existencias teniendo en cuenta diferentes parámetros de valoración. – Se han utilizado aplicaciones informáticas para el control de consumos y existencias en economato.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos de preelaboración y conservación en cocina",
+      "codigo": "0497",
+      "ects": 16,
+      "horas_minimas_boe": 175,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara las zonas de producción reconociendo las características de instalaciones, equipos y procesos de aprovisionamiento interno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido las características de las máquinas, batería, útiles y herramientas relacionadas con la producción culinaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la ubicación y distribución de la maquinaria de cocina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las aplicaciones de las máquinas, batería, útiles y herramientas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de puesta en marcha de las máquinas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de limpieza y mantenimiento de la maquinaria, batería, útiles y herramientas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido y formalizado los documentos asociados al acopio."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han seleccionado los productos teniendo en cuenta la prioridad en su consumo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han trasladado las materias primas a los lugares de trabajo en tiempo y forma."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina sistemas y métodos de envasado y conservación de materias primas en cocina, relacionándolos con las características y necesidades de conservación de las mismas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los diversos métodos de envasado y conservación, así como los equipos, recipientes y envases asociados a cada método."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha caracterizado la técnica de conservación por vacío y se han reconocido sus aplicaciones en la cocina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las características y las diferencias entre la pasteurización y esterilización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado y relacionado las necesidades de envasado y conservación de las materias primas en cocina con los métodos y equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ejecutado las técnicas de envasado y conservación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las temperaturas y los lugares de conservación idóneos para los géneros hasta el momento de su uso/consumo o destino final."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido la relación entre método de envasado, la temperatura de conservación del producto y su caducidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado todas las operaciones, teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Regenera materias primas aplicando las técnicas en función de sus características.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las materias primas en cocina con posibles necesidades de regeneración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las técnicas de regeneración de materias primas en cocina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y seleccionado los equipos y técnicas adecuadas para la regeneración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ejecutado las técnicas de regeneración."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han desarrollado los procedimientos intermedios de conservación o mantenimiento, teniendo en cuenta la naturaleza de las diversas materias primas y su uso posterior."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Planifica los procesos de preelaboración de materias primas en cocina, caracterizando las técnicas de limpieza, corte y/o racionado necesarias en función de su posterior uso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las necesidades de limpieza y preparaciones previas de las materias primas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las técnicas con las especificidades de las materias primas, sus posibles aplicaciones posteriores y los equipos, útiles y/o herramientas necesarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las tareas de pesado, preparación y limpieza previas al corte, utilizando correctamente equipos, útiles y/o herramientas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado y ejecutado los cortes básicos e identificado sus aplicaciones a las diversas materias primas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado y ejecutado los cortes específicos y piezas con denominación propia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado los procedimientos intermedios de conservación teniendo en cuenta las necesidades de las diversas materias primas y su uso posterior."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado y calculado los métodos para la determinación de rendimientos y escandallos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos de elaboración culinaria",
+      "codigo": "0499",
+      "ects": 16,
+      "horas_minimas_boe": 175,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Organiza los procesos de elaboración culinaria, determinando sus fases y relacionándolas con las características de los productos que se pretenden obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los diversos ámbitos de la producción y del servicio en cocina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito y caracterizado los documentos relacionados con la producción en cocina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y secuenciado mediante diagramas las diversas fases de la producción culinaria, así como los protocolos de actuación relacionados con cada una."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido e interpretado la terminología relacionada con la producción culinaria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han deducido las necesidades de materias primas, así como de equipos, útiles, herramientas y otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han tenido en cuenta las posibles necesidades de coordinación con el resto del equipo de cocina y otros departamentos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los procedimientos intermedios de conservación o mantenimiento, teniendo en cuenta las necesidades de las elaboraciones y su uso posterior."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los procesos, buscando una utilización racional de los recursos materiales y energéticos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado, desde el ámbito organizativo, la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica técnicas de cocción, relacionando las transformaciones físico-químicas que se producen en los alimentos con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las diversas transformaciones físico–químicas que produce el calor en los alimentos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito y clasificado las diversas técnicas de cocción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y relacionado las técnicas de cocción con respecto a sus posibilidades de aplicación a diversos géneros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado y determinado las necesidades previas al desarrollo de las diversas técnicas de cocción."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las fases y formas de operar distintivas en la aplicación de cada técnica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han ejecutado las diversas técnicas de cocción siguiendo los protocolos de actuación establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han distinguido posibles alternativas en función de los resultados obtenidos y se han valorado su repercusión en la calidad del producto final."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Elabora productos culinarios básicos aplicando las diferentes técnicas asociadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y clasificado las diversas elaboraciones básicas de múltiples aplicaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las diversas fases y técnicas aplicables durante los procesos de producción de elaboraciones básicas de múltiples aplicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha interpretado correctamente toda la información previa necesaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la disponibilidad de todos los elementos necesarios previos al desarrollo de los diversos procedimientos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los procedimientos de obtención de elaboraciones básicas de múltiples aplicaciones siguiendo los protocolos de actuación establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado la aplicación y funcionalidad de las elaboraciones básicas de múltiples aplicaciones con los diversos productos culinarios básicos y su calidad final."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han ejecutado las tareas de obtención de productos culinarios básicos siguiendo los protocolos de actuación establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado las posibles medidas de corrección en función de los resultados obtenidos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han caracterizado y realizado las valoraciones de costes de las elaboraciones culinarias, aplicando los procedimientos para obtener rendimientos y escandallos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza acabados y presentaciones relacionando sus características con la elaboración culinaria a la que acompañan.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y clasificado las diversas guarniciones y decoraciones, así como sus posibles aplicaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las normas básicas para decorar y presentar productos culinarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las guarniciones y decoraciones adecuándolas a la elaboración a la que acompañan."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la disponibilidad de todos los elementos necesarios previamente al desarrollo de las tareas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado las guarniciones y decoraciones siguiendo los protocolos de actuación establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado la relación entre guarnición, decoración, acabado y presentación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han verificado y dispuesto todos los elementos que configuran el producto culinario siguiendo criterios estéticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado, justificado y aplicado las técnicas de envasado y conservación necesarias para los productos semielaborados y/o acabados siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han determinado las posibles medidas de corrección en función de los resultados obtenidos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado todas las operaciones, teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla el servicio en cocina valorando sus implicaciones en la satisfacción del cliente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y caracterizado los diferentes tipos de servicio en cocina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las operaciones previas al desarrollo de los diversos servicios en cocina."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la documentación relacionada con los servicios en cocina, así como la formalización y flujo de la misma."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las necesidades de coordinación durante el servicio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la disponibilidad de todos los elementos necesarios previamente al desarrollo de los servicios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han ejecutado las tareas propias del servicio en tiempo y forma, siguiendo los protocolos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las tareas de recogida de géneros y adecuación de zonas tras la finalización del servicio, siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los protocolos de actuación frente a diferentes tipos de quejas, sugerencias y reclamaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado todas las operaciones, teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de la calidad y de la seguridad e higiene alimentarias",
+      "codigo": "0501",
+      "ects": 5,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los sistemas de gestión de la calidad caracterizando los pasos para su diseño e implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los conceptos, la etimología y los diferentes aspectos del término «calidad»."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios más relevantes relacionados con la calidad y con su gestión."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los objetivos de los sistemas de gestión de la calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado el diseño del sistema de calidad con las particularidades de la empresa."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los manuales y otra documentación relacionada con el sistema de gestión de la calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las acciones de formación necesarias para el personal a su cargo para implementar el sistema de calidad determinado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Controla la aplicación de las normas de calidad caracterizando los métodos y herramientas de medición.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los métodos y herramientas de medición de la calidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los datos que se obtienen de las diferentes herramientas de medición con posibles acciones de mejora."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y reconocido las características de un plan de calidad para posteriormente obtener el certificado de calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado diferentes planes de calidad relacionados con las empresas de restauración."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido los métodos para la autoevaluación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido y caracterizado las tendencias o corrientes más actuales en la normalización y certificación de los nuevos modelos de la calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Supervisa la limpieza y desinfección del utillaje, equipos e instalaciones valorando su repercusión en la calidad higiénico-sanitaria de los productos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los requisitos higiénico-sanitarios que deben cumplir los equipos, utillaje e instalaciones de manipulación de alimentos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han evaluado las consecuencias para la inocuidad de los productos y la seguridad de los consumidores de una limpieza/ desinfección inadecuada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos, frecuencias y equipos de limpieza y desinfección (L+D)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la limpieza o desinfección con los productos establecidos, asegurando la completa eliminación de éstos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los parámetros objeto de control asociados al nivel de limpieza o desinfección requeridos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los tratamientos de Desratización, Desinsectación y Desinfección (DDD)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los procedimientos para la recogida y retirada de los residuos de una unidad de manipulación de alimentos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado los productos de limpieza, desinfección y los utilizados para los tratamientos de DDD y sus condiciones de empleo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han evaluado los peligros asociados a la manipulación de productos de limpieza, desinfección y tratamientos DDD."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Verifica las buenas prácticas higiénicas evaluando los peligros asociados a los malos hábitos higiénicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las normas higiénico-sanitarias de obligado cumplimiento relacionadas con las prácticas higiénicas y de manipulación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los peligros sanitarios, así como los principales riesgos y toxiinfecciones asociados a los malos hábitos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los agentes causantes de los riesgos y sus medidas de prevención en el caso de que existan."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas de higiene personal asociadas a la manipulación de alimentos, para evitar problemas en la salud de los consumidores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido todos aquellos comportamientos o aptitudes susceptibles de producir una contaminación o alteración en los alimentos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las enfermedades de obligada declaración, identificando a su vez alergias e intolerancias alimentarias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los procedimientos de actuación frente a alertas alimentarias"
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la vestimenta de trabajo completa y sus requisitos de limpieza."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los medios de protección de cortes, quemaduras o heridas del manipulador."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica los sistemas de autocontrol basados en el APPCC y de control de la trazabilidad, justificando los principios asociados a los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la necesidad y trascendencia para la seguridad alimentaria del sistema de autocontrol."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los conceptos generales del sistema de Análisis de Peligros y Puntos de Control Críticos (APPCC)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido conceptos clave para el control de potenciales peligros sanitarios: punto crítico de control, límite crítico, medidas de control y medidas correctivas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los parámetros asociados a la evaluación de los puntos críticos de control."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han cumplimentado los registros asociados al sistema."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado la trazabilidad con la seguridad alimentaria."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha documentado y trazado el origen, las etapas del proceso y el destino del alimento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido las principales normas voluntarias implantadas en el sector alimentario (BRC, IFS, UNE-EN ISO 9001:2000, UNE-EN ISO 22000:2005 y otras)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Controla la gestión ambiental en los establecimientos de restauración, reconociendo sus beneficios, así como sus implicaciones a nivel sanitario.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado el consumo y su reducción, valorando las ventajas ambientales que aporta."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las ventajas ambientales del concepto de reutilización de los recursos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado aquellas energías y/ o recursos cuya utilización sea menos perjudicial para el ambiente y aquellas que sean convenientes desde el punto de vista económico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido y clasificado los distintos tipos de residuos generados, así como los efectos ambientales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las posibles afecciones originadas por la industria alimentaria. Aplicación de las Buenas Prácticas de Manipulación de alimentos:"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Normativa general de manipulación de alimentos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Alteración y contaminación de los alimentos debido a prácticas de manipulación inadecuadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Importancia de la conservación de los alimentos y su relación con los peligros asociados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Procedimientos de actuación frente a alertas alimentarias. Control de la gestión ambiental en establecimientos de restauración: − Medidas de control relacionadas con los peligros sanitarios en la manipulación de los alimentos. − Los siete principios del sistema de autocontrol APPCC. − Trazabilidad y seguridad alimentaria. − Principales normas voluntarias en el sector alimentario (BRC, IFS, UNE-EN ISO 9001:2000, UNE-EN ISO 22000:2005 y otras). − Análisis e interpretación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de dirección de cocina",
+      "codigo": "0505p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector de la restauración, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha pensado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de ejecución."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la puesta en funcionamiento definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Profundización Inglés Profesional GS",
+      "codigo": "CV0015",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Elaboraciones de pastelería y repostería",
+      "codigo": "0498",
+      "ects": 12,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Supervisa la preparación de las zonas de producción de postres, reconociendo las características de instalaciones, equipos y maquinaria, y las necesidades de aprovisionamiento interno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las instalaciones, equipos, máquinas, batería, útiles y herramientas relacionadas con la producción de elaboraciones de pastelería/repostería."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la ubicación y distribución de la maquinaria de pastelería/repostería."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las aplicaciones de las máquinas, batería, útiles y herramientas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de puesta en marcha de las máquinas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de limpieza y mantenimiento de la maquinaria, batería, útiles y herramientas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido y formalizado los documentos asociados al acopio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado los productos teniendo en cuenta la prioridad en su consumo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han trasladado las materias primas a los lugares de trabajo en tiempo y forma."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza masas, pastas y otras elaboraciones básicas reconociendo y aplicando los diversos procedimientos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la terminología profesional relacionada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las transformaciones físico-químicas relacionadas con las técnicas básicas de pastelería/repostería."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las técnicas relacionadas con los útiles y herramientas de pastelería/repostería."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y caracterizado los diferentes tipos de elaboraciones básicas, así como las técnicas para su obtención, en función de sus especificidades y aplicaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han organizado y secuenciado las diversas fases para la obtención de masas, pastas y otras elaboraciones básicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la disponibilidad de todos los elementos necesarios para el desarrollo de los diversos procesos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los procesos de elaboración de distintos tipos de masas, pastas y otras elaboraciones básicas, siguiendo los procedimientos establecidos y respetando la formulación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han deducido las necesidades de conservación hasta el momento de su utilización o regeneración."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han valorado los resultados finales, identificando las posibles anomalías y sus medidas de corrección."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Elabora postres secuenciando fases y aplicando procedimientos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado y caracterizado los diferentes postres y se han relacionado con sus posibilidades de aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y secuenciado las distintas fases y puntos clave en los procesos de elaboración de postres."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado la disponibilidad de todos los elementos necesarios para el desarrollo de los diversos procesos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los procesos de elaboración de postres respetando las formulaciones y siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los procedimientos de elaboración de productos para personas con necesidades alimenticias específicas, evitando las contaminaciones cruzadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han deducido las necesidades de regeneración y/o de conservación hasta el momento de su utilización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado los resultados finales, identificando las posibles anomalías y sus medidas de corrección."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado los posibles perjuicios para la salud de personas con necesidades alimenticias específicas causados por una inadecuada manipulación/elaboración."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Presenta postres relacionando los criterios estéticos con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principales elementos de decoración para postres y sus alternativas de uso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado la disponibilidad de todos los elementos necesarios para la decoración y presentación de postres."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de regeneración de los productos que lo precisen."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las diversas técnicas de acabado y decoración en función de las características del producto final y sus aplicaciones, siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han dispuesto los diferentes elementos de la decoración siguiendo criterios estéticos o diseños preestablecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han valorado los resultados finales e identificado las posibles medidas de corrección."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han deducido las necesidades de conservación de los postres hasta el momento de su utilización."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha evitado el consumo innecesario de recursos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de la producción en cocina",
+      "codigo": "0500",
+      "ects": 15,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce sistemas de producción culinaria identificando sus características y especificidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito y analizado los diversos sistemas de producción culinaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los diferentes sistemas de distribución y servicio, en su caso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los sistemas de producción con los sistemas de distribución culinaria y viceversa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los métodos de cocinado/conservación asociados a los diferentes sistemas de producción/distribución."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ejemplificado mediante diagramas los procesos y subprocesos relacionados con cada sistema de producción en cocina."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado y caracterizado los diversos sistemas de producción en cocina y se han valorado las ventajas e inconvenientes de cada uno."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado los sistemas de producción culinaria con las diversas fórmulas de restauración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado y analizado los factores que determinan la elección de los sistemas de producción en cocina."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha reconocido y analizado la normativa relacionada con los sistemas de producción culinaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Asesora en el diseño de espacios y equipamientos, determinando las infraestructuras mobiliarias e inmobiliarias acordes a cada sistema productivo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las condiciones generales de las instalaciones y equipamientos asociadas a los diversos sistemas productivos en cocina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha tenido en cuenta la normativa vigente en materia de infraestructuras inmobiliarias en los espacios de cocina, así como la aplicación de los principios de higiene."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los aspectos previos a tener en cuenta para el diseño de espacios en cocina."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los condicionantes de seguridad alimentaria relacionados con el diseño de espacios en cocina."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los aspectos de funcionalidad a tener en cuenta para el diseño de espacios y equipamientos en cocina."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los conceptos de operatividad o productividad con la optimización de procesos, las previsiones de crecimiento y los espacios y equipamientos en cocina."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y distribuido las diversas zonas y anexos necesarios para la producción, servicio, distribución, almacenamiento y otros en cocina."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido los diversos circuitos y flujos de mercancías, personal, productos y transporte/distribución en las diversas zonas determinadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la relación entre el diseño de los espacios y equipamientos y el volumen previsto de producción/servicio en cocina."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado los equipamientos adecuados a cada zona, relacionados con los diversos sistemas de producción culinaria."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han reconocido las nuevas tecnologías relacionadas con los equipamientos en cocina."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Programa actividades para la producción y el servicio en cocina, determinando y planificando los recursos materiales y humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la información incluida en los documentos relacionados con la producción en cocina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la producción culinaria con las ofertas gastronómicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han calculado y determinado los recursos materiales y humanos necesarios para la producción y se han determinado las funciones de cada uno de los integrantes del equipo de cocina."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los cuadrantes de calendarios y horarios del personal del departamento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han planificado y secuenciado las fases de la producción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han coordinado todas las actividades con los departamentos implicados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las medidas de control relacionadas con la trazabilidad que debe realizarse en cada una de las fases de la producción culinaria."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las medidas de control, relacionadas con el sistema APPCC, que deben realizarse en cada una de las fases de la producción culinaria y se han determinado los puntos de control crítico."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha reconocido el procedimiento de realización de la guía de prácticas correctas de higiene (GPCH)."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado los diagramas de procesos y los protocolos de actuación necesarios."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han reconocido y atendido las necesidades de información y formación al personal sobre las actividades programadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Supervisa procesos de producción y/o servicio en cocina controlando todos los elementos y variables que los caracterizan.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha controlado el cumplimiento de los protocolos de actuación previstos para las operaciones previas, las técnicas de cocción y el acabado de productos culinarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha controlado el cumplimiento de los protocolos de actuación previstos para la presentación, servicio, envasado, transporte y distribución de productos culinarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han coordinado todas las actividades con los departamentos implicados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los productos culinarios más adecuados a las técnicas relacionadas con los diferentes sistemas productivos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han diseñado y realizado nuevos productos culinarios en función de las características de los procesos culinarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las nuevas tecnologías aplicadas en los procesos de producción culinaria."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado elaboraciones culinarias aplicando los procedimientos asociados a cada sistema de producción en cocina."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las elaboraciones culinarias siguiendo los procedimientos establecidos para su consumo diferido en el tiempo o para su consumo inmediato."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han reconocido las prioridades en el consumo de elaboraciones para determinar objetivos de venta de las mismas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Controla consumos analizando la documentación e información necesarias para cumplir con los presupuestos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito toda la documentación necesaria para el control de los consumos en cocina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las fichas técnicas de producción y se han realizado la actualización de las mismas, siempre que sea preciso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado los cálculos de consumo por actividad, periodos determinados, productos y otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han formalizado los documentos para el control de consumos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calculado las desviaciones entre los consumos reales y las previsiones predeterminadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han formalizado los informes preceptivos a las áreas de administración y gestión de la empresa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado aplicaciones informáticas relacionadas con el control de consumos en empresas de restauración."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gastronomía y nutrición",
+      "codigo": "0502",
+      "ects": 3,
+      "horas_minimas_boe": 30,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica tendencias gastronómicas analizando sus principios y características.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido la procedencia del concepto, la etimología y el origen del término «gastronomía»."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los hechos más relevantes relacionados con la gastronomía."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y caracterizado las diferentes publicaciones y autores relacionados con la gastronomía."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido eventos y distinciones gastronómicas de relevancia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido y caracterizado los movimientos o corrientes culinarias, así como sus principales representantes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido y caracterizado las tendencias o corrientes gastronómicas actuales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reconoce la gastronomía española e internacional, identificando los productos, elaboraciones y tradiciones y/o costumbres más representativas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado la gastronomía con la cultura de los pueblos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características de la gastronomía española."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las elaboraciones y productos españoles más significativos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las costumbres y tradiciones gastronómicas españolas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las aportaciones de la gastronomía española al patrimonio gastronómico internacional."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las características de la gastronomía internacional por países, áreas o zonas geográficas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se reconocido las elaboraciones y productos internacionales más significativos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la influencia de la gastronomía internacional en la gastronomía española."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica las propiedades nutricionales de los alimentos analizando sus funciones en la alimentación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los conceptos de alimento y alimentación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha caracterizado la pirámide de los alimentos y su relación con los distintos grupos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los hábitos alimentarios con su influencia en la salud."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los nuevos hábitos alimentarios en la sociedad actual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el concepto de nutrición."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los nutrientes y sus funciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los nutrientes presentes en los grupos de alimentos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica principios básicos de dietética en establecimientos de restauración, relacionando las propiedades dietéticas y nutricionales de los alimentos con las necesidades del cliente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de dietética."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las necesidades nutricionales y energéticas de las personas a lo largo de su vida y su relación con el metabolismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido diferentes tipos de dietas relacionadas con estilos de vida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los valores para la salud de la dieta mediterránea."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han manejado tablas de composición de alimentos para la confección de dietas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito dietas tipo y sus posibles aplicaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado principios dietéticos para elaborar dietas y menús específicos en establecimientos de restauración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han caracterizado y diseñado dietas para personas con necesidades alimenticias específicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha reconocido la importancia de hábitos alimentarios saludables a lo largo de la vida."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión administrativa y comercial en restauración",
+      "codigo": "0503",
+      "ects": 4,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece estructuras organizativas en restauración, caracterizando los diferentes modelos organizativos y los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la normativa sobre tipología y clasificación de los establecimientos de restauración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido los diferentes objetivos empresariales según el modelo de producto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido diferentes planes empresariales según los objetivos marcados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diseñado estrategias y técnicas de planificación empresarial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han conceptualizado los diferentes modelos organizativos y nuevas tendencias entre las empresas del sector."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado diferentes organigramas que correspondan a los modelos organizativos y nuevas tendencias entre las empresas del sector."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado los principios estructurales y organizativos de las empresas de restauración como elementos fundamentales para la consecución de los objetivos establecidos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Controla la gestión administrativa de áreas de restauración analizando la documentación y la información en ella reflejada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha justificado la finalidad de la gestión de la documentación en las empresas de restauración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido el circuito de la documentación y la finalidad en el sector de restauración."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diseñado sistemas de registro de la información en ella reflejada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado diferentes sistemas de archivo de la documentación generada, emitida o recibida."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha discriminado la información que refleja la documentación según las necesidades empresariales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido la normativa básica relativa a la gestión de la documentación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de una correcta gestión de la documentación administrativa, económica y financiera para mejorar el funcionamiento empresarial o departamental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las nuevas tecnologías en la gestión e interpretación de la documentación empresarial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Controla los presupuestos de las áreas de producción, reconociendo y determinando la estructura de los niveles de aprovisionamiento, gastos e ingresos de su departamento o establecimiento, según el caso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado los diferentes tipos de presupuestos que afectan a la planificación empresas de restauración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los diferentes elementos que conforman los presupuestos y se ha establecido la estructura de los ingresos y gastos para obtener referencias de comportamiento generalizado de los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elaborado diferentes tipos de presupuestos para la organización y planificación de las empresas de restauración, así como de áreas dentro de las mismas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido métodos de control presupuestario justificando racionalmente las posibles desviaciones y aplicando medidas correctoras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calculado los precios de venta de las diferentes ofertas gastronómicas del establecimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado el umbral de rentabilidad según la oferta gastronómica y el tipo de establecimiento o servicio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido criterios de evaluación de proveedores y posterior selección de los que mejor se adecuen a las demandas empresariales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado sistemas ofimáticos y de comunicación en la gestión departamental o empresarial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Evalúa los diferentes tipos de empresas de restauración analizando su posicionamiento en el mercado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los diferentes tipos de empresas tradicionales de restauración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado las nuevas tendencias empresariales en restauración."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito las tipologías de las empresas de restauración según la normativa legal vigente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los factores y las motivaciones de la demanda."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los clientes según su tipología."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado los elementos determinantes de la demanda: socioculturales, económicos y demográficos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han investigado las tendencias actuales de la demanda."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la importancia de conocer la situación del mercado y las tendencias de la oferta para conocer cada tipo de posicionamiento en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora el plan de comercialización propio de las empresas de restauración, estableciendo las características de los elementos que lo conforman y diseñando estrategias y acciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha conceptualizado el plan de comercialización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido objetivos a conseguir con el plan de comercialización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diseñado las estrategias y acciones necesarias para realizar el plan de comercialización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la planificación económica del Plan de comercialización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado sistemas de control del plan de marketing y desviaciones del mismo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha diseñado la presentación del plan de comercialización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia que supone la aplicación del plan de comercialización para alcanzar los objetivos de la empresa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Diseña ofertas gastronómicas, caracterizando y seleccionando los elementos y las variables que las configuran.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los principales tipos de ofertas gastronómicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las ofertas con las diferentes fórmulas de restauración."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han tenido en cuenta las características, las necesidades de la clientela y las nuevas tendencias en la confección de ofertas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han considerado el tipo de establecimiento, la estacionalidad, la ubicación del establecimiento, tipo de clientela y otros factores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido las necesidades de variación y rotación de la oferta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han tenido en cuenta los principios básicos para el diseño físico de la carta gastronómica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado técnicas de promoción y publicidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicados técnicas de marketing relacionadas con los precios."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha controlado el grado de satisfacción del cliente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Recursos humanos y dirección de equipos en restauración",
+      "codigo": "0504",
+      "ects": 3,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina los puestos de trabajo y sus funciones en el área de restauración, estableciendo las características de los distintos perfiles profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas de la planificación de plantillas y previsión de las necesidades de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las características de cada puesto de trabajo correspondientes a trabajadores semicualificados y cualificados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los principales métodos para la selección de trabajadores semicualificados y cualificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los límites de responsabilidad, funciones y tareas de cada puesto de trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han evaluado los tiempos de trabajo de las actividades profesionales más significativas en restauración."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado los principios deontológicos característicos en el marco de las empresas o áreas de restauración."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Planifica los recursos humanos, aplicando los sistemas de organización del personal dependiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las nuevas tendencias empresariales en restauración con los diferentes equipos humanos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las funciones que debe desempeñar el personal dependiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido los sistemas de planificación de plantillas evaluando las variables necesarias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los turnos necesarios, jornadas, calendario anual y el descanso para el correcto funcionamiento del establecimiento o área de restauración."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha operado con software de gestión de plantillas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido las técnicas de métodos de medición de tiempos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las diferentes técnicas de comunicación y motivación de personal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la normativa legal vigente en materia laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Colabora en la selección de personal, teniendo en cuenta las previsiones y necesidades de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el proceso de selección de personal y sus fases."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha preparado un plan secuenciado de selección de personal. Colaboración en la selección del personal: – Técnicas de selección. Entrevista, test y otras formas de selección. – El reclutamiento. Concepto y características. Sistemas de reclutamiento: interno y externo. Fuentes para reclutar. – La preselección. Integración del personal en la empresa de restauración: – Plan de formación. – Concepto de motivación. Evolución. – La desmotivación. Tedio, fatiga, absentismo. – Factores motivadores y desmotivadores. – Diseño del plan de acogida en la empresa. Dirección de equipos: – Leyes básicas de la dirección de equipos: leyes físicas, de Pareto, leyes humanas. – Plan de dirección. – Principios de la dirección: – Estrategias y liderazgo. – Estilos de liderazgo. – Técnicas de reuniones. Clases y tipos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de dirección de cocina",
+      "codigo": "0505",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector de la restauración, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha pensado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de ejecución."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la puesta en funcionamiento definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665039",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708039",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS039",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

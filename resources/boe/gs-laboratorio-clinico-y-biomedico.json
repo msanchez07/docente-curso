@@ -1,0 +1,3801 @@
+{
+  "id": "gs-laboratorio-clinico-y-biomedico",
+  "denominacion": "Laboratorio Clínico y Biomédico",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Sanidad",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "LCNB",
+  "rd": "Real Decreto 771/2014, de 12 de septiembre, por el que se establece el título de Técnico Superior en Laboratorio Clínico y Biomédico y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-10068",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional, académica y cotidiana, contenida en todo tipo de discursos orales, emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de mensajes en lengua estándar relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes directos o emitidos en cualquier soporte en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica contenida en distintos discursos orales en lengua estándar, relacionada con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el punto de vista y la actitud del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en dichos mensajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprendido adecuadamente mensajes en lengua estándar en ambientes con contaminación acústica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional, lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende mensajes escritos, de naturaleza profesional, académica y cotidiana, de relativa dificultad, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de textos específicos de su ámbito social, profesional o académico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica de textos, de diferente naturaleza, relativos a su profesión, y contenidos en distintos soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un texto sin entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han leído y comprendido, de manera autónoma, textos relacionados con el sector con la velocidad y estilo de lectura propia del nivel competencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado textos extensos, y de cierta complejidad, relacionados o no con su especialidad, pudiendo realizar varias lecturas del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado instrucciones, con distintos niveles de dificultad, y mensajes técnicos recibidos a través de soportes digitales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han traducido textos de cierta complejidad, utilizando material de apoyo en caso necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han emitido mensajes generales propios de sector y de la vida cotidiana, utilizando nexos y estrategias de interacción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha intercambiado con fluidez información específica y detallada utilizando estructuras de una complejidad acorde al nivel competencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y aplicado los registros adecuados para la emisión del mensaje, así como protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado presentaciones, bien estructuradas, sobre temas de su ámbito profesional, haciendo uso de los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito y secuenciado oralmente un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interaccionado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha respondido a preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta documentos e informes, propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito textos claros y detallados sobre una variedad de temas relacionados con su profesión, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, utilizando vocabulario específico y protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información con corrección, precisión, con cohesión y coherencia, solicitando y/o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado textos mediante apoyos visuales y claves lingüísticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito cartas, formales e informales, empleando las fórmulas de cortesía establecidas y el vocabulario específico para la elaboración de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resumido diferentes tipos de documentos escritos, utilizando sus propios recursos lingüísticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de muestras biológicas",
+      "codigo": "1367",
+      "ects": 11,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza la estructura organizativa del sector sanitario y de su área de trabajo, interpretando la legislación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos fundamentales del sistema sanitario, señalando las particularidades del sistema público y privado de asistencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detallado los principios de economía sanitaria."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos de gestión de la prestación sanitaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han enumerado las funciones más significativas que se realizan en las distintas áreas del laboratorio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido la composición de los equipos profesionales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las funciones de los técnicos de laboratorio clínico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido las funciones de los técnicos de anatomía patológica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica la documentación del laboratorio, relacionándola con los procesos de trabajo en la fase preanalítica y con el control de existencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los datos de identificación del paciente en la documentación sanitaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los métodos de identificación, codificación y etiquetado de las muestras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado los documentos de solicitud de análisis o estudios en relación con el tipo de muestra que hay que obtener."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado la información que hay que transmitir al paciente en la recogida de muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la normativa bioética y de protección de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los métodos de archivo de la documentación sanitaria."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las aplicaciones informáticas del laboratorio o de la unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha controlado el almacén de suministros del laboratorio, describiendo y aplicando las operaciones administrativas del control de existencias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha definido el proceso de trazabilidad de la documentación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica los tipos de muestras biológicas, relacionándolas con los análisis o estudios que hay que efectuar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los tipos de muestras biológicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características anatómicas de la región corporal de la que se extrae la muestra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detallado los análisis cualitativos o estudios que pueden efectuarse a partir de una muestra biológica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los análisis cuantitativos que pueden efectuarse a partir de una muestra biológica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los análisis funcionales o estudios que pueden efectuarse en muestras biológicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido los factores del paciente que influyen en los resultados analíticos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado aspectos relativos al género en cuanto a la salud y enfermedad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los errores más comunes en la manipulación preanalítica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza la recogida y distribución de las muestras biológicas más habituales, aplicando protocolos específicos de la unidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales adecuados para la recogida de la muestra."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado las técnicas de obtención de las muestras de acuerdo a un protocolo específico de la unidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha gestionado la recogida de los diferentes tipos de muestras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la clasificación y fraccionamiento de las muestras para su envío a los laboratorios de análisis correspondientes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha planificado el diseño del control de calidad para cada fase de la recogida de las muestras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido los criterios de exclusión y rechazo de muestras no aptas para su procesamiento y análisis."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha desarrollado el proceso de recogida de muestras con autonomía, responsabilidad y eficacia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado técnicas de asistencia a usuarios, describiendo y aplicando procedimientos y protocolos de comunicación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han caracterizado los conservantes y aditivos necesarios en función de la determinación analítica solicitada y del tipo de muestra."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han seleccionado técnicas de soporte vital básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza la recogida y distribución, aplicando protocolos específicos de la unidad, de las muestras biológicas humanas obtenidas por procedimientos invasivos o quirúrgicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha planificado la recogida de las muestras obtenidas por procedimientos invasivos o quirúrgicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha colaborado en la obtención, el procesamiento, la preservación y el almacenamiento de muestras para biobancos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los protocolos de obtención de muestras por ecopsia, líquidas, sólidas o para cultivos microbiológicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la clasificación y el fraccionamiento de las muestras, para su envío a los laboratorios de análisis correspondientes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha aplicado el control de calidad en cada fase de la recogida de las muestras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido los criterios de exclusión y rechazo de muestras no aptas para su procesamiento y análisis."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado el proceso de recogida de muestras con autonomía, responsabilidad y eficacia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado técnicas de asistencia a usuarios, describiendo y aplicando procedimientos y protocolos de comunicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Selecciona las técnicas de conservación, almacenaje, transporte y envío de muestras, siguiendo los requerimientos de la muestra.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características de cada muestra en cuanto a su caducidad y en relación al tiempo máximo de demora en el análisis."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y preparado las soluciones y los reactivos conservantes adecuados para cada muestra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seguido los protocolos de prevención de riesgos químicos y biológicos y de control de calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los métodos físicos de conservación de muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los protocolos del transporte de muestras intrahospitalario."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado el sistema de transporte y envío extrahospitalario de muestras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha verificado el etiquetado, el registro y la identificación de la muestra para su almacenaje, transporte o envío postal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Aplica los protocolos de seguridad y prevención de riesgos en la manipulación de productos químicos y biológicos, interpretando la normativa vigente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos asociados a los reactivos químicos, radiactivos y biológicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seguido los protocolos de prevención de riesgos físicos, químicos y biológicos durante la manipulación de los productos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los requisitos normativos referentes al tratamiento y a la eliminación de residuos químicos, radiactivos y biosanitarios generados en el laboratorio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha organizado la gestión de residuos con orden, higiene y método en el trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos específicos de los equipos de laboratorio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado las técnicas y los equipos de prevención y de protección individual y colectiva."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha definido el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la aplicación y registro de los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia del cumplimiento de las normas de seguridad física, química y biológica."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas generales de laboratorio",
+      "codigo": "1368",
+      "ects": 12,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Clasifica los materiales, los equipos básicos y los reactivos utilizados en laboratorio, describiendo su utilización y mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el tipo de material del laboratorio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las técnicas de limpieza, desinfección y esterilización que se van a emplear en el laboratorio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los diferentes tipos de agua y sus métodos de obtención."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los reactivos atendiendo a su naturaleza química y a su pureza."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los equipos básicos y los instrumentos del laboratorio y sus aplicaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han interpretado los procedimientos normalizados de trabajo (PNT) para la utilización y mantenimiento de los equipos básicos e instrumentos del laboratorio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica los protocolos de seguridad y prevención de riesgos en la manipulación de productos químicos y biológicos, interpretando la normativa vigente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos asociados a los reactivos químicos, radiactivos y biológicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seguido los protocolos de prevención de riesgos físicos, químicos y biológicos durante la manipulación de los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los requisitos normativos referentes al tratamiento y a la eliminación de residuos químicos, radiactivos y biosanitarios generados en el laboratorio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha organizado la eliminación de residuos en el trabajo, con orden, higiene y método."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos específicos de los equipos de laboratorio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado las técnicas y los equipos de prevención y protección individual y colectiva."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha definido el significado y el alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la aplicación y el registro de los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia del cumplimiento de las normas de seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza disoluciones y diluciones de muestras y reactivos, justificando cálculos de masas, volúmenes y concentraciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las reacciones que tienen lugar en el proceso de preparación de una disolución."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han calculado las masas, los volúmenes y las concentraciones de los reactivos implicados en una reacción dada, aplicando las leyes químicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han expresado las disoluciones en distintas unidades de concentración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los materiales volumétricos y los reactivos necesarios en la preparación de disoluciones y diluciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido los métodos de cálculo y medida electroquímica del pH."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los componentes y el funcionamiento del pHmetro."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha preparado y calibrado el pHmetro en función de los procedimientos normalizados de trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado determinaciones de pH mediante el pHmetro."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado curvas de titulación mediante técnicas electroquímicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica procedimientos de separación de substancias, justificando la técnica seleccionada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los componentes del equipo instrumental, relacionándolos con su funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las técnicas y principios del análisis instrumental mediante procedimientos normalizados de trabajo (PNT)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado, preparado y calibrado los equipos y los instrumentos en función del método de separación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado el material y los reactivos necesarios para la separación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han efectuado separaciones mediante filtración, centrifugación y electroforesis."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han recogido datos de los resultados de la separación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cumplimentado informes técnicos de análisis utilizando un soporte digital."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de calidad, prevención de riesgos laborales y protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza la valoración técnica de la coherencia y la fiabilidad de los resultados obtenidos, utilizando herramientas estadísticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los parámetros estadísticos aplicables a los análisis."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido los criterios de aceptación o rechazo de los resultados obtenidos en el análisis de una magnitud biológica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado los datos obtenidos en relación con los criterios previamente definidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han representado en gráficos de control en soporte digital los datos obtenidos según las reglas de control adecuadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes técnicos en soporte digital siguiendo las especificaciones y los criterios establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han considerado acciones de rechazo o correctoras de los resultados fuera de control."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha identificado el protocolo de reconstitución y conservación de controles para evitar problemas de validación, de calibración y de control de calidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la importancia del estudio de la calidad de los resultados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza técnicas de microscopía, aplicando herramientas de digitalización y envío de imágenes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los tipos y las características ópticas de los microscopios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha detallado el funcionamiento del microscopio óptico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enfocado preparaciones utilizando los microscopios disponibles en el laboratorio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los distintos sistemas de captación de imágenes digitales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han capturado imágenes de preparaciones microscópicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha procesado la imagen digital para mejorar su calidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un archivo de imágenes digitales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han transferido imágenes utilizando distintos métodos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado la norma de calidad y confidencialidad para la transferencia de datos asociados a las imágenes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Aplica sistemas de gestión de calidad en el laboratorio clínico y de anatomía patológica, analizando las normas de calidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las distintas normas de calidad aplicables en el laboratorio clínico y en anatomía patológica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han explicado las ventajas de la normalización y certificación de calidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los elementos del sistema de calidad con la actividad del laboratorio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las normas de calidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los documentos empleados en un sistema de gestión de calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado los procedimientos de la actividad del laboratorio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los tipos de auditoría relacionándolos con la evaluación de la calidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la importancia de la gestión de la calidad en el laboratorio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Biología molecular y citogenética",
+      "codigo": "1369",
+      "ects": null,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los procesos que hay que realizar en los laboratorios de citogenética y biología molecular, relacionándolos con los materiales y equipos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las áreas de trabajo de cada laboratorio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las condiciones de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas realizadas en cada área."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los equipos básicos y materiales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las normas para la manipulación del material y los reactivos en condiciones de esterilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el protocolo de trabajo en la cabina de flujo laminar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido el procedimiento de eliminación de los residuos generados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza cultivos celulares describiendo los pasos del procedimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los métodos de cultivo celular que se aplican en los estudios citogéneticos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los tipos de medios y suplementos en función del cultivo que hay que realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado los procedimientos de puesta en marcha, mantenimiento y seguimiento del cultivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado el número y la viabilidad celular en los cultivos en la propagación del cultivo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tomado las medidas para la eliminación de la contaminación detectada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido los procedimientos de conservación de las células."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha trabajado en todo momento en condiciones de esterilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica técnicas de análisis cromosómico en sangre periférica, líquidos y tejidos, interpretando los protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las características morfológicas de los cromosomas humanos y sus patrones de bandeado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las anomalías cromosómicas más frecuentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las aplicaciones de los estudios cromosómicos en el diagnóstico clínico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en marcha el cultivo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el sacrificio celular y la preparación de extensiones cromosómicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las técnicas de tinción y bandeado cromosómico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el recuento del número cromosómico y la determinación del sexo en las metafases analizadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han ordenado y emparejado los cromosomas por procedimientos manuales o automáticos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha determinado la fórmula cromosómica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica las técnicas de extracción de ácidos nucleicos a muestras biológicas, seleccionando el tipo de técnica en función de la muestra que hay que analizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el procedimiento de extracción de ácidos nucleicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las variaciones con respecto al procedimiento, dependiendo del tipo de muestra."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado las soluciones y los reactivos necesarios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el procesamiento previo de las muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido los ácidos nucleicos, ADN o ARN, siguiendo protocolos estandarizados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los sistemas automáticos de extracción de ácidos nucleicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la calidad de los ácidos nucleicos extraídos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha almacenado el ADN o ARN extraído en condiciones óptimas para su conservación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha trabajado en todo momento cumpliendo las normas de seguridad y prevención de riesgos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica técnicas de PCR y electroforesis al estudio de los ácidos nucleicos, seleccionando el tipo de técnica en función del estudio que hay que realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la técnica de PCR, sus variantes y aplicaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los materiales y reactivos para realizar la amplificación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado la solución mezcla de reactivos en función del protocolo, la técnica y la lista de trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han dispensado los volúmenes de muestra, controles y solución mezcla de reactivos, según el protocolo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha programado el termociclador para realizar la amplificación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado el marcador de peso molecular y el tipo de detección en función de la técnica de electroforesis que hay que realizar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cargado en el gel el marcador, las muestras y los controles."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han programado las condiciones de electroforesis de acuerdo con el protocolo de la técnica."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha determinado el tamaño de los fragmentos amplificados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica técnicas de hibridación con sonda a las muestras de ácidos nucleicos, cromosomas y cortes de tejidos, interpretando los protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto de sonda y se han caracterizado los tipos de marcaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el proceso de hibridación, las fases y los factores que influyen en la misma."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado las técnicas de hibridación en soporte sólido, cromosomas y cortes de tejidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado el tipo de sonda y de marcaje, en función del sistema de detección."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el procedimiento siguiendo el protocolo de trabajo seleccionado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado el funcionamiento de la técnica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado los resultados en los soportes adecuados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha trabajado de acuerdo con las normas de seguridad y prevención de riesgos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Determina los métodos de clonación y la secuenciación de ácidos nucleicos, justificando los pasos de cada procedimiento de análisis.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el proceso de clonación de ácidos nucleicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las enzimas de restricción, los vectores y las células huésped utilizadas en las técnicas de clonación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado programas bioinformáticos para obtener información sobre el inserto que se quiere clonar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha detallado la selección de las células recombinantes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido el fundamento y las características de los métodos de secuenciación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el procesamiento de las muestras que hay que secuenciar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado los secuenciadores automáticos y los programas informáticos utilizados en las técnicas de secuenciación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido los pasos que hay que seguir en la lectura e interpretación de las secuencias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito las aplicaciones de los procedimientos de clonación y secuenciación en el diagnóstico clínico y en la terapia genética."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Fisiopatología general",
+      "codigo": "1370",
+      "ects": 12,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce la estructura y la organización general del organismo humano, describiendo sus unidades estructurales y las relaciones según su especialización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha detallado la organización jerárquica del organismo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la estructura celular y sus componentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la fisiología celular."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los tipos de tejidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detallado las características de los distintos tipos de tejidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enunciado los sistemas del organismo y su composición."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han localizado las regiones y cavidades corporales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado la terminología de dirección y posición."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica el proceso de desarrollo de la enfermedad, relacionándolo con los cambios funcionales del organismo y las alteraciones que provoca.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el proceso dinámico de la enfermedad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detallado los cambios y alteraciones en la estructura y en las funciones celulares."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos constituyentes de la patología."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las partes de la clínica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han especificado los grupos de enfermedades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado los procedimientos diagnósticos complementarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han detallado las posibilidades terapéuticas frente a la enfermedad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha especificado la etimología de los términos clínicos utilizados en patología."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las reglas de construcción de términos en el vocabulario médico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Reconoce los trastornos del sistema inmunitario, relacionándolos con las características generales de la inmunidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los órganos y células del sistema inmune."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado los mecanismos de respuesta inmunológica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las características de la inmunidad específica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han detallado las características de la respuesta inmunológica específica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha secuenciado la respuesta inmunológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha clasificado la patología del sistema inmune."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las patologías más frecuentes del sistema inmune."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha detallado la inmunización pasiva y activa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica las características de las enfermedades infecciosas, relacionando los agentes infecciosos y las manifestaciones clínicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características de las fuentes de infección."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detallado los mecanismos de transmisión de las enfermedades infecciosas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los tipos de agentes infecciosos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha detallado la respuesta del organismo a la infección."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha explicado la respuesta inflamatoria."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las características de las principales enfermedades infecciosas humanas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibilidades terapéuticas frente a las enfermedades infecciosas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica el proceso de desarrollo tumoral, describiendo las características de las neoplasias benignas y malignas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las neoplasias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las neoplasias benignas y malignas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha detallado la epidemiología del cáncer."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los agentes carcinógenos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detallado las manifestaciones clínicas de los tumores."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han especificado los sistemas de prevención y diagnóstico precoz del cáncer."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las pruebas de diagnóstico del cáncer y las posibilidades terapéuticas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado las manifestaciones de las neoplasias malignas más frecuentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Reconoce manifestaciones de enfermedades de los grandes sistemas del organismo, describiendo las alteraciones fisiológicas de las patologías más frecuentes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la actividad fisiológica de órganos y aparatos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la sintomatología por aparatos más frecuente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los signos clínicos por aparatos más frecuentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han especificado las causas de fallo orgánico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detallado las manifestaciones de la insuficiencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha utilizado la terminología clínica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Reconoce trastornos hemodinámicos y vasculares, relacionando sus alteraciones con enfermedades humanas de gran morbilidad y alta mortalidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el mecanismo fisiopatológico del edema."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha detallado el proceso de formación de un trombo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido la embolia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han explicado las repercusiones orgánicas del bloqueo del riego sanguíneo en el tromboembolismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las características de la cardiopatía isquémica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las características de la embolia pulmonar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado los trastornos hemodinámicos con los accidentes cerebrovasculares."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Reconoce trastornos endocrinos-metabólicos y de la alimentación, relacionándolos con manifestaciones de patologías comunes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado los aspectos cuantitativos y cualitativos de la alimentación normal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las características de las alteraciones fisiopatológicas endocrino-metabólicas más frecuentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "se han descrito las consecuencias fisiopatológicas de las carencias alimenticias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han explicado las características de la obesidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el proceso fisiopatológico de la diabetes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado el proceso metabólico de los lípidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han detallado las repercusiones orgánicas del exceso de colesterol."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de laboratorio clínico y biomédico",
+      "codigo": "1375p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas en el proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos, y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de las nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de su desarrollo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de su puesta en práctica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Análisis bioquímico",
+      "codigo": "1371",
+      "ects": 10,
+      "horas_minimas_boe": 95,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica las técnicas utilizadas en el laboratorio de bioquímica clínica, identificando los equipos y sus aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha detallado el fundamento de las técnicas basadas en los métodos de detección de la radiación electromagnética."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los componentes de aparatos y equipos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto a punto los equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los patrones y obtenidos curvas de calibrado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado mediciones a punto final, dos puntos y cinéticas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado las fases y aplicado la muestra para la separación cromatográfica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito el fundamento de la osmometría."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los riesgos inherentes al método de trabajo y técnica instrumental seleccionada."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado los procedimientos de mantenimiento, conservación y limpieza de equipos y materiales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido el uso eficiente de los recursos,"
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Analiza las magnitudes bioquímicas relacionadas con el metabolismo de los principios inmediatos, seleccionando la técnica adecuada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los perfiles bioquímicos relacionados con el metabolismo de los principios inmediatos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha medido la concentración de glucosa, fructosamina y Hb glicosilada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la concentración de lípidos, lipoproteínas y apoproteínas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha medido la concentración de proteínas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado proteinogramas y se han cuantificado las fracciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la coherencia del resultado obtenido y, en su caso, se han aplicado medidas correctoras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han recogido datos y se ha efectuado el control de calidad referido a los análisis realizados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de calidad, prevención de riesgos laborales y protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza magnitudes bioquímicas relacionadas con los productos finales del metabolismo, seleccionando la técnica adecuada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado la puesta a punto de los equipos en función de la técnica y los parámetros que hay que determinar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los reactivos, los blancos y los controles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado la calibración del equipo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado magnitudes como la bilirrubina, la creatinina, el ácido úrico, la urea y el ácido láctico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado sistemas de química seca en la determinación de estas magnitudes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la coherencia del resultado obtenido y, en su caso, se han aplicado medidas correctoras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado las desviaciones de estos parámetros con los principales síndromes asociados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido datos y efectuado el control de calidad analítico."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplimentado informes técnicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina enzimas, describiendo la secuencia del procedimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las enzimas según su función y su localización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el fundamento de la determinación de la actividad enzimática."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha interpretado el protocolo de la técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la calibración del equipo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las enzimas hepáticas y pancreáticas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las enzimas musculares y cardiacas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han separado isoenzimas por electroforesis."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido datos y se ha efectuado el control de calidad analítico."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplimentado informes técnicos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las normas de calidad, prevención de riesgos laborales y protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza técnicas de estudio de muestras de orina, siguiendo los protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado técnicas de análisis físico-químicos y bioquímicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha centrifugado la muestra y obtenido el sedimento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las características microscópicas del sedimento urinario."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha elaborado un archivo digital de las imágenes obtenidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la concentración de sustancias excretadas en orina de 24 horas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha calculado el aclaramiento de creatinina."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado análisis de cálculos urinarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de calidad, seguridad, salud laboral y protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Caracteriza determinaciones en heces y otros líquidos corporales, seleccionando la técnica en función de la muestra.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las magnitudes bioquímicas asociadas a la absorción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las características microscópicas de la malabsorción en heces."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la presencia de sangre en heces."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado magnitudes bioquímicas en LCR y en líquidos serosos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el recuento de elementos formes en LCR y en líquidos serosos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las desviaciones de estos parámetros con las principales patologías asociadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las determinaciones bioquímicas y microscópicas que hay que realizar en líquido sinovial."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las determinaciones bioquímicas y microscópicas que hay que realizar en semen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado criterios de orden y limpieza en la recogida de equipos y materiales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Determina magnitudes relacionadas con los equilibrios hidroelectrolítico y ácido-base, asociándolas con los trastornos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los parámetros bioquímicos de los trastornos hidroelectrolíticos y ácido-base."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la técnica que determina la osmolalidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas de determinación de gases y electrolitos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las magnitudes bioquímicas relacionadas con el metabolismo del calcio y del fósforo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la concentración de sodio y potasio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los patrones de alteración de gases en sangre."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las magnitudes que hay que determinar a la cabecera del paciente"
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Caracteriza las determinaciones indicadas en otros estudios especiales, describiendo las técnicas que se van a emplear.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los principales patrones de alteración hormonal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las pruebas basales y funcionales utilizadas en el diagnóstico de los trastornos endocrinos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado hormonas como TSH, T3 y T4."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado marcadores tumorales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las técnicas utilizadas en la monitorización de fármacos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado procedimientos para detectar la presencia de drogas de abuso y tóxicos en muestras biológicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los parámetros bioquímicos en el seguimiento del embarazo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han enumerado las determinaciones propias del diagnóstico de metabolopatías."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas de inmunodiagnóstico",
+      "codigo": "1372",
+      "ects": 8,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica técnicas inmunológicas basadas en reacciones antígeno-anticuerpo secundarias, diferenciando sus fundamentos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado las técnicas inmunológicas basadas en las reacciones antígeno-anticuerpo secundarias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado la correspondencia entre los listados de trabajo y las muestras problema."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado las diluciones seriadas necesarias para las técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las técnicas basadas en reacciones secundarias según los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado los resultados de las técnicas de aglutinación en forma de título."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las pautas de diagnóstico y seguimiento serológico de las principales enfermedades infecciosas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado e interpretado los resultados de las técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y protección ambiental en todo el proceso."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha efectuado el control de calidad referido a los ensayos realizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica técnicas inmunológicas basadas en reacciones antígeno-anticuerpo primarias, diferenciando sus fundamentos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado las técnicas inmunológicas basadas en las reacciones antígeno-anticuerpo primarias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los inmunoensayos atendiendo a su metodología y a los marcadores utilizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado las etapas de la ejecución del inmunoensayo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han detallado los componentes del equipo y su funcionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha calibrado el equipo y se han procesado los controles antes de empezar el ensayo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la correcta colocación y la retirada de las muestras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las técnicas de inmunoensayo según los protocolos establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha representado la curva de calibración para la cuantificación del analito."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las normas de calidad, prevención de riesgos laborales y protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Detecta autoanticuerpos aplicando las técnicas para el diagnóstico de enfermedades autoinmunes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado los anticuerpos asociados a las enfermedades autoinmunes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado las diluciones de sueros y controles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido la secuencia de actividades en las diferentes etapas de la ejecución de la técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han procesado las muestras para su observación al microscopio de fluorescencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los patrones de fluorescencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado los controles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los criterios de validez de la prueba."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito otras técnicas de detección de autoanticuerpos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica técnicas de estudio de hipersensibilidad, relacionando el antígeno con la técnica que se va a desarrollar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado las técnicas relacionadas con el diagnóstico de hipersensibilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado la correspondencia entre los listados de trabajo y las muestras problema."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el extracto antigénico según la prueba que se va a realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las técnicas indicadas para la detección de IgE en función de los equipos disponibles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detallado las técnicas más adecuadas para la evaluación de la hipersensibilidad retardada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las técnicas de inmunoensayo relacionadas con el diagnóstico de alergia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado criterios de orden y limpieza en la realización del procedimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica técnicas de identificación de poblaciones celulares por citometría de flujo, realizando el mantenimiento preventivo del equipo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha detallado el funcionamiento del citómetro de flujo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la calibración del láser."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han pasado los controles en función de las células que hay que cuantificar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha incubado la muestra con el anticuerpo o anticuerpos monoclonales marcados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado el protocolo de manejo del citómetro de flujo para la técnica específica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la coherencia del resultado del citograma."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento preventivo del citómetro."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las normas de calidad, prevención de riesgos laborales y protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Valora la funcionalidad de la inmunidad celular, describiendo las técnicas de cultivo celular aplicables en cada caso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la importancia de la realización de pruebas de función celular en el estudio de las inmunodeficiencias primarias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detallado las técnicas de estudio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el aislamiento de linfocitos, a partir de la muestra de sangre periférica (gradiente de Ficoll) y su disposición en las placas de cultivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el cultivo y la estimulación de los linfocitos con los mitógenos seleccionados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la proliferación celular mediante la técnica del recuento en cámara, en el citómetro de flujo o en contador de partículas beta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las técnicas para valorar la función fagocítica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido las normas de calidad, prevención de riesgos laborales y protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Aplica estudios de tipificación HLA, identificando el polimorfismo del complejo mayor de histocompatibilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado los objetivos de las técnicas de tipificación de antígenos de histocompatibilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado los estudios de histocompatibilidad que se realizan para la tipificación de un posible donante."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado los estudios de histocompatibilidad que se realizan para la tipificación en pruebas de paternidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los marcadores según el tipo de HLA que hay que determinar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han separado los linfocitos que se han de utilizar en estudios de histocompatibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han leído al microscopio de fluorescencia las placas de la técnica de microlinfocitotoxicidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han diferenciado las técnicas de biología molecular utilizadas para la tipificación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Microbiología clínica",
+      "codigo": "1373",
+      "ects": 10,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica protocolos de seguridad y prevención de riesgos en el laboratorio de microbiología clínica, interpretando la normativa vigente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los microorganismos en grupos de riesgo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los niveles de seguridad biológica de los laboratorios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el nivel de peligrosidad asociado a los procedimientos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han propuesto soluciones a las causas más frecuentes de accidentes en el laboratorio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la aplicación de las normas de prevención y seguridad personales y colectivas, así como las de protección ambiental, en la ejecución de las técnicas específicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han organizado las medidas y los equipos de protección para diferentes áreas y situaciones de trabajo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha cumplimentado la documentación relacionada con la gestión de la prevención y seguridad, así como la de protección ambiental."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha establecido el procedimiento para la eliminación de los residuos generados en el laboratorio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica técnicas de tinción y observación de microorganismos a cultivos y muestras biológicas, seleccionando los procedimientos que hay que realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características morfológicas, tintóreas y diferenciales de las especies microbianas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los materiales y los colorantes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han especificado las técnicas de observación microscópica utilizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la preparación del frotis."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado técnicas de tinción específicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la observación de los frotis al microscopio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el resultado de la observación microscópica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara medios para el cultivo de microorganismos, interpretando los protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los medios de cultivo más utilizados en microbiología clínica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha detallado la composición de los medios de cultivo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los protocolos de preparación de medios sólidos y líquidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado el instrumental y los reactivos necesarios para la realización del medio deseado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la preparación de medios de cultivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el autoclavado de la batería de medios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la esterilidad de los medios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han almacenado los medios de cultivo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplicación de técnicas de aislamiento y de recuento de microorganismos, justificando la técnica seleccionada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las técnicas de inoculación, siembra y aislamiento con el tipo de muestra y el organismo que hay que aislar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado técnicas de inoculación y de siembra de microorganismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los parámetros de incubación para cada tipo de microorganismo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado aislamientos de unidades formadoras de colonias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la descripción macroscópica de los cultivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado técnicas de recuento bacteriano."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica técnicas de identificación bacteriana a muestras clínicas y a colonias aisladas en un cultivo, seleccionando los protocolos de trabajo en función del grupo bacteriano que hay que identificar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los protocolos de identificación de los principales grupos bacterianos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los medios, las temperaturas y los tiempos de incubación de los principales tipos de pruebas bioquímicas de identificación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las pruebas bioquímicas rápidas de identificación bacteriana."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las pruebas individuales bioquímicas más significativas en la identificación presuntiva."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado sistemas multiprueba para la confirmación de los aislamientos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado los estudios de sensibilidad solicitados, en función del tipo de bacteria aislada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado, para cada protocolo, las pruebas inmunológicas y moleculares asociadas al diagnóstico."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la lectura e interpretación de los resultados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica técnicas de identificación de hongos y parásitos, seleccionando los protocolos de trabajo en función del microorganismo que hay que identificar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los protocolos de identificación de hongos y de parásitos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los medios de cultivo apropiados para el aislamiento de mohos y levaduras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las temperaturas y los tiempos de incubación adecuados para el aislamiento de hongos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la identificación macro y microscópica de las colonias fúngicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las pruebas bioquímicas, inmunológicas y moleculares de identificación que marque el protocolo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado e interpretado los antibiogramas solicitados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seguido los protocolos de preparación del frotis para la observación de parásitos al microscopio óptico."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las formas parasitarias diagnósticas presentes en los frotis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han reconocido posibles artefactos en la identificación de parásitos en heces."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Identifica los virus, relacionándolos con los métodos de cultivo celular, inmunológicos y de biología molecular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características diferenciales de los virus."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la patología más frecuente asociada a cada familia vírica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el protocolo de diagnóstico de las infecciones víricas, por parte del laboratorio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los tipos de cultivo celular y las líneas celulares más frecuentes utilizadas en el diagnóstico virológico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el procesamiento de las muestras, para su inoculación en los cultivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado, en los cultivos, el efecto citopático asociado a determinados virus."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la utilización de las técnicas de inmunofluorescencia en la identificación vírica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha descrito la utilización de técnicas inmunológicas y de biología molecular en el diagnóstico de infecciones víricas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas de análisis hematológico",
+      "codigo": "1374",
+      "ects": 10,
+      "horas_minimas_boe": 95,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza técnicas de tinción en extensiones de sangre periférica y médula ósea, identificando los tipos celulares presentes en las mismas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los elementos formes en las extensiones de sangre."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado las extensiones siguiendo procedimientos manuales o automáticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los métodos de fijación y tinción en función del estudio que hay que realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha delimitado al microscopio óptico la zona ideal de estudio de la extensión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado criterios de clasificación celular para identificar células sanguíneas maduras en sangre periférica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las normas de seguridad y prevención de riesgos durante el procedimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Maneja equipos automáticos de análisis hematológico, identificando sus componentes y mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los tipos de autoanalizadores y sus sistemas de medida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la secuencia de pasos que hay que realizar durante el análisis."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las formas de expresión de resultados y alarmas en los informes emitidos por el aparato."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los parámetros más frecuentes de un hemograma."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido sus valores de referencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha purgado y calibrado el aparato."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el análisis y se ha obtenido el informe de resultados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado el informe siguiendo el protocolo establecido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han registrado las incidencias surgidas durante la realización del análisis."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica técnicas de análisis hematológico al estudio de la serie roja, relacionando los protocolos de análisis con las características y las funciones de los parámetros que hay que determinar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el proceso de eritropoyesis."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los precursores eritrocitarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los aspectos fundamentales de la estructura y el metabolismo eritrocitario."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los parámetros que evalúan la serie roja utilizando procedimientos manuales o automáticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha examinado la extensión al microscopio óptico en busca de alteraciones morfológicas en los hematíes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las alteraciones morfológicas con los resultados de los parámetros y la patología eritrocitaria más frecuente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han anotado los resultados de los análisis en el informe."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica técnicas de análisis hematológico al estudio de la serie blanca y plaquetar, relacionando los protocolos de análisis con las características y las funciones de los parámetros que hay que determinar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los procesos de granulopoyesis y trombopoyesis."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las células precursoras de las series granulocítica, mononuclear y plaquetar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el análisis manual o automático de los parámetros de cada una de las series."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las alteraciones morfológicas de leucocitos y plaquetas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha examinado la extensión al microscopio óptico en busca de alteraciones en ambas series."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los trastornos neoplásicos y no neoplásicos más frecuentes relacionados con la serie blanca."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las técnicas citoquímicas solicitadas en el estudio de leucemias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado las alteraciones encontradas en los análisis con la patología más frecuente de ambas series."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han anotado los resultados de los análisis en el informe."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza técnicas de valoración de la hemostasia y la coagulación, seleccionando equipos y reactivos en función del parámetro que hay que determinar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la fisiología de la hemostasia y sus mecanismos de regulación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las pruebas de laboratorio que valoran cada una de las fases del proceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la preparación de las muestras en función de los parámetros que hay que analizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el análisis de los parámetros mediante métodos manuales o automáticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido los valores de referencia para cada tipo de prueba."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las variaciones en los parámetros con las alteraciones más frecuentes de la hemostasia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las pruebas que permiten el control de los tratamientos anticoagulantes y la investigación de la tendencia trombótica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han validado los resultados siguiendo los protocolos establecidos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha trabajado en todo momento siguiendo las normas de seguridad y prevención de riesgos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica procedimientos para garantizar la compatibilidad de los componentes sanguíneos de donante y receptor, siguiendo los protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los protocolos de trabajo para la determinación del grupo ABO y Rh."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la determinación del grupo sanguíneo y del factor Rh."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las técnicas de la antiglobulina directa e indirecta."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el escrutinio de anticuerpos irregulares."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado y verificado las pruebas cruzadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han validado los resultados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han anotado los resultados en el informe."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha trabajado en todo momento siguiendo las normas de seguridad y prevención de riesgos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Prepara hemoderivados, interpretando protocolos estandarizados de obtención, conservación y distribución de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los criterios de aceptación y rechazo de donantes y de unidades de sangre."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los procedimientos de obtención y procesamiento de las unidades de sangre."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos de fraccionamiento y obtención de los componentes sanguíneos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la preparación de hemoderivados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el registro, etiquetado y conservación de los hemoderivados preparados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la distribución de los hemoderivados según las peticiones recibidas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de laboratorio clínico y biomédico",
+      "codigo": "1375",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas en el proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos, y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de las nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de su desarrollo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de su puesta en práctica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665061",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708061",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS061",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

@@ -1,0 +1,1654 @@
+{
+  "id": "gb-vidrieria-y-alfareria",
+  "denominacion": "Vidriería y Alfarería",
+  "nivel": "Formación Profesional de Grado Básico",
+  "familia_profesional": "Vidrio y Cerámica",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "VA",
+  "rd": "Real Decreto 127/2014, de 28 de febrero, por el que se regulan aspectos específicos de la Formación Profesional Básica de las enseñanzas de formación profesional del sistema educativo, se aprueban catorce títulos profesionales básicos, se fijan sus currículos básicos y se modifica el Real Decreto 1850/2009, de 4 de diciembre, sobre expedición de títulos académicos y profesionales correspondientes a las enseñanzas establecidas en la Ley Orgánica 2/2006, de 3 de mayo, de Educación.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-2360",
+  "modulos": [
+    {
+      "nombre": "Atención al cliente",
+      "codigo": "3005",
+      "ects": null,
+      "horas_minimas_boe": 40,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Atiende a posibles clientes, reconociendo las diferentes técnicas de comunicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el comportamiento del posible cliente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han adaptado adecuadamente la actitud y discurso a la situación de la que se parte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha obtenido la información necesaria del posible cliente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha favorecido la comunicación con el empleo de las técnicas y actitudes apropiadas al desarrollo de la misma."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha mantenido una conversación, utilizando las fórmulas, léxico comercial y nexos de comunicación (pedir aclaraciones, solicitar información, pedir a alguien que repita y otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha dado respuesta a una pregunta de fácil solución, utilizando el léxico comercial adecuado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha expresado un tema prefijado de forma oral delante de un grupo o en una relación de comunicación en la que intervienen dos interlocutores."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido una actitud conciliadora y sensible a los demás, demostrando cordialidad y amabilidad en el trato."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha trasmitido información con claridad, de manera ordenada, estructura clara y precisa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comunica al posible cliente las diferentes posibilidades del servicio, justificándolas desde el punto de vista técnico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las diferentes tipologías de público."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado clientes de proveedores, y éstos del público en general."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la terminología básica de comunicación comercial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha diferenciado entre información y publicidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han adecuado las respuestas en función de las preguntas del público."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha informado al cliente de las características del servicio, especialmente de las calidades esperables."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha asesorado al cliente sobre la opción más recomendable, cuando existen varias posibilidades, informándole de las características y acabados previsibles de cada una de ellas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha solicitado al cliente que comunique la elección de la opción elegida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Informa al probable cliente del servicio realizado, justificando las operaciones ejecutadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha hecho entrega al cliente de los artículos procesados, informando de los servicios realizados en los artículos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han transmitido al cliente, de modo oportuno, las operaciones a llevar a cabo en los artículos entregados y los tiempos previstos para ello."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los documentos de entrega asociados al servicio o producto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha recogido la conformidad del cliente con el acabado obtenido, tomando nota, en caso contrario, de sus objeciones, de modo adecuado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la pulcritud y corrección, tanto en el vestir como en la imagen corporal, elementos clave en la atención al cliente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha mantenido en todo momento el respeto hacia el cliente"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha intentado la fidelización del cliente con el buen resultado del trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido periodo de garantía y las obligaciones legales aparejadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Atiende reclamaciones de posibles clientes, reconociendo el protocolo de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ofrecido alternativas al cliente ante reclamaciones fácilmente subsanables, exponiendo claramente los tiempos y condiciones de las operaciones a realizar, así como del nivel de probabilidad de modificación esperable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los aspectos principales en los que incide la legislación vigente, en relación con las reclamaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha suministrado la información y documentación necesaria al cliente para la presentación de una reclamación escrita, si éste fuera el caso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han recogido los formularios presentados por el cliente para la realización de una reclamación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado una hoja de reclamación"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha compartido información con el equipo de trabajo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Reproducción de moldes",
+      "codigo": "3105",
+      "ects": null,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Acondiciona matrices para la reproducción de moldes de escayola y de resina describiendo y aplicando el proceso establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han enumerado las etapas del proceso de acondicionamiento de matrices."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los materiales, herramientas y equipos necesarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la tipología de la matriz con los métodos para su limpieza, conservación y reutilización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha limpiado la matriz."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha preparado la matriz para su reproducción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los principales defectos asociados a la preparación de matrices."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reproduce moldes de escayola relacionando la técnica apropiada con las características de la matriz.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principios de la técnica de reproducción de moldes de escayola."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han secuenciado las operaciones de reproducción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los útiles y herramientas apropiados al trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las condiciones de conservación de los moldes de escayola."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha preparado la superficie de trabajo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han sellado las paredes de la estructura."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha homogeneizado la pasta de escayola."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha vertido la pasta dentro de la estructura."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han dado pequeños golpes cerca del molde para provocar la salida de burbujas que puedan quedar en el interior."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han relacionado los principales defectos asociados a la reproducción de moldes con las posibles causas que los producen."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales y ambientales asociados al trabajo encomendado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Reproduce moldes de resina describiendo y aplicando técnicas de preparación de mezclas y de conformado de piezas de acuerdo al diseño establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el fundamento de las técnicas de reproducción de moldes de resina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enumerado las etapas del proceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los materiales y equipos para la preparación y conservación de las resinas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado la cantidad suficiente de resina para el trabajo encomendado con los aditivos químicos especificados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha vertido la resina controlando el tiempo establecido para su endurecimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han justificado las condiciones de conservación que deben cumplir las piezas, transcurrido el tiempo de endurecimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los defectos asociados a la reproducción de moldes atribuyendo las causas que los provocan."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales y ambientales asociados a la utilización de resinas para la reproducción de moldes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Conformado de piezas cerámicas",
+      "codigo": "3106",
+      "ects": null,
+      "horas_minimas_boe": 145,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Acondiciona moldes para la reproducción de productos cerámicos, relacionando los medios utilizados y las técnicas empleadas con el método operativo correspondiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han enumerado las etapas del proceso de acondicionamiento de moldes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los útiles adecuados y herramientas necesarias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha limpiado el molde comprobando su estado de humedad, porosidad, grietas, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha aplicado el desmoldeante adecuado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha montado el molde en el tiempo y orden establecido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los moldes para su almacenamiento y localización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara pastas cerámicas para la reproducción de productos cerámicos, relacionado el proceso con las proporciones y manipulaciones adecuadas para su conformado final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales tipos de pastas cerámicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los diferentes tipos de pastas cerámicas con sus aplicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los útiles, herramientas, equipos y maquinarias necesarias para el amasado de las pastas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha mezclado la pasta de forma homogénea."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha amasado la pasta de forma mecánica o manual siguiendo el procedimiento establecido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la ausencia de aire ocluido."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han empaquetado las pellas para evitar su pérdida de humedad y endurecimiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han almacenado las pellas para su posterior utilización."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han limpiado las herramientas y maquinaria utilizada."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Conforma piezas cerámicas mediante moldeo plástico describiendo y utilizando la técnica apropiada a las características de la masa y del molde.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principios de la técnica de moldeo manual y de torneado de masa plástica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han secuenciado las operaciones de moldeo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado los útiles y herramientas apropiados al trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han moldeado fragmentos de piezas cerámicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han mantenido las condiciones de conservación de los fragmentos y piezas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado los fragmentos uniéndolos en el orden establecido."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han secuenciado las operaciones de torneado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha centrado la pella en el torno de alfarero en la cantidad suficiente para el trabajo a realizar."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha torneado la pieza en función del diseño establecido."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han relacionado los principales defectos asociados a la reproducción por moldeado o torneado con las posibles causas que los producen."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Prepara barbotinas para la reproducción de piezas cerámicas mediante colado, describiendo y aplicando el procedimiento adecuado para obtener las condiciones de calidad establecidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los materiales y equipos para la preparación de la barbotina."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el orden y la forma de adición de las materias primas tales como arcillas, agua y otros aditivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han mezclado las materias primas de manera homogénea."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el tamiz especificado en el procedimiento de trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado manualmente la densidad y viscosidad de la barbotina"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han tratado los residuos del tamizado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha limpiado la zona de trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha limpiado la maquinaria utilizada."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales y medioambientales requeridas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Conforma piezas cerámicas mediante colado, controlando las variables del proceso de preparación y vertido de las barbotinas a partir de órdenes de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el fundamento de la técnica de colado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enumerado las etapas del proceso de colado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los materiales y equipos necesarios para el conformado por colado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado la cantidad suficiente de barbotina para el trabajo encomendado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha vertido la barbotina controlando el tiempo establecido para conseguir el espesor previsto de la pieza."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han justificado las condiciones de conservación que deben cumplir las piezas, transcurrido el tiempo de desmoldeo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los defectos asociados a las operaciones de colado atribuyendo las causas que los provocan."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Acabado de productos cerámicos",
+      "codigo": "3107",
+      "ects": null,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Acondiciona esmaltes, engobes, tintas serigráficas, sales solubles y colores, describiendo el procedimiento, mezclando componentes y justificando sus aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los útiles y herramientas apropiados al trabajo de acondicionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principales tipos de esmaltes, engobes tintas serigráficas, sales solubles y colores relacionándolos con sus aplicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la mezcla y homogeneización de las materias primas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han homogeneizado las mezclas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tamiz especificado en el procedimiento de trabajo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elegido el tamiz adecuado para eliminar partículas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los pigmentos que intervienen en la coloración de los medios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han medido los componentes de acuerdo a la dosificación establecida."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado el proceso especificado de acuerdo al procedimiento establecido."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales y ambientales asociados a las operaciones de preparación de esmaltes, engobes, tintas serigráficas, sales solubles y colores."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Esmalta productos cerámicos describiendo y realizando las aplicaciones manuales o semiautomáticas especificadas en el procedimiento",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principales procedimientos para el esmaltado de piezas cerámicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las ventajas e inconvenientes del esmaltad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han secuenciado las operaciones de esmaltado de acuerdo al procedimiento establecido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los productos a esmaltar comprobando su estado, ausencia de polvo, irregularidades, impurezas entre otros."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los esmaltes con medios manuales o semiautomáticos utilizando las diferentes técnicas como vertido, inmersión, pincelado, aerografía, entre otros, siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales y ambientales aplicados a las operaciones de esmaltado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Decora productos cerámicos, realizando aplicaciones manuales o semiautomáticas de acuerdo al diseño de la pieza establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principales procedimientos para la decoración de piezas cerámicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los productos a decorar, comprobando su estado, ausencia de polvo, irregularidades, impurezas, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los útiles y herramientas apropiadas en función de la técnica a utilizar y el diseño establecido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado los engobes, esmaltes, tintas serigráficas, sales solubles y colores respetando el diseño establecido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado los diferentes medios (entre otros, aerografía, plantillas, pantallas, reservas, calcomanías, pinceles) en función de la técnica a aplicar y el diseño establecido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado las distintas técnicas de decoración bajo cubierta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos. laborales y ambientales aplicadas a las operaciones de esmaltado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Seca y cuece piezas cerámicas, identificando, secuenciando y realizando las operaciones de secado, carga y descarga en el horno de acuerdo al procedimiento establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los distintos tipos de hornos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el proceso de cocción de piezas cerámicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el funcionamiento de un secadero/horno con los cambios producidos en las piezas cerámicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han secuenciado los ciclos de secado y cocción."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha procedido al secado de las piezas cerámicas respetando los tiempos indicados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha optimizado el espacio del horno en las operaciones de carga."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado los ciclos de cocción."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado las piezas en función de la compatibilidad del proceso de cocción."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha controlado periódicamente el ciclo de cocción."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha procedido a la cocción de las piezas cerámicas respetando los tiempos indicados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha realizado la descarga y almacenamiento de los productos tras la cocción y enfriamiento de estos."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales y ambientales asociados a las operaciones de cocción y secado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica los principales defectos de fabricación de productos cerámicos relacionándolos con sus posibles causas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principales defectos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las piezas defectuosas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado los defectos con la fase del proceso (ejecución de moldes, conformado, colado, moldeo, secado o cocción) en el que se producen."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado las piezas obtenidas en función de su calidad final y familias a partir de criterios establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado y almacenado las piezas siguiendo el criterio establecido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto medidas correctoras para resolver y evitar en lo sucesivo los posibles defectos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad 1º",
+      "codigo": "3159p",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales I",
+      "codigo": "3161",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias Aplicadas I",
+      "codigo": "3163",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Primero",
+      "codigo": "TU01CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Mecanizados manuales y aplicaciones superficiales",
+      "codigo": "3108",
+      "ects": null,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Recepciona materiales y productos de vidrio distinguiendo sus propiedades y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las mercancías recibidas con el contenido del albarán."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los tipos de vidrio, en función de sus características (tamaño, espesor, forma, color, y otras) y aplicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han ubicado los productos de vidrio identificados como «conformes» y «no conformes» en el destino previsto del almacén."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las principales técnicas de transporte con los equipos y medios necesarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procesos básicos de producción de materiales y productos de vidrio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las condiciones básicas de almacenamiento y acondicionado de materiales y productos de vidrio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado los distintos tipos de embalaje con los requerimientos de almacenaje y transporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha asegurado la trazabilidad de los productos almacenados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido en todo momento la zona de trabajo limpia y ordenada."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado herramientas informáticas en la gestión de almacén, hojas de cálculo, procesadores de texto y aplicaciones específicas, correo electrónico."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han relacionado los impresos y albaranes del programa informático con las aplicaciones."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han aplicado las normas de seguridad laboral en el proceso de recepcionado de materiales y productos de vidrio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza operaciones mecánicas en productos de vidrio plano, relacionándolas con las características técnicas y dimensionales del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los principales procesos de mecanizados (cortado, canteado, taladrado, lijado, pulido mateado, biselado y achaflanado) en productos de vidrio plano."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los medios y materiales que intervienen en la ejecución de las distintas operaciones de mecanizado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las diferentes técnicas de decoración mecánica (grabado al chorro de áridos y tallado) con los medios necesarios y con los productos obtenidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la secuencia idónea en las operaciones de manufacturas mecánicas y decoraciones mecánicas de vidrio plano."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha justificado el tipo de vidrio utilizado en función del producto descrito en la orden de trabajo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la coincidencia de las órdenes de trabajo escritas con la obtención del producto final."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la calidad del trabajo realizado y la calidad del acabado de los productos obtenidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido la maquinaria, útiles y herramientas en condiciones idóneas de funcionamiento y conservación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las normas de seguridad laboral en el manejo de las diferentes máquinas, útiles y herramientas de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Decora mediante aplicaciones superficiales productos de vidrio, justificando la técnica seleccionada en función de la estética del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los principales procesos de decoración mediante aplicaciones superficiales en productos de vidrio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado rótulos o decoraciones mediante impresión serigráfica en superficies de vidrio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado aplicaciones superficiales vitrificables mediante pincelado, coloreado o calcomanías en productos de vidrio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado decoraciones mediante aplicaciones superficiales no vitrificables."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las principales técnicas de aplicación de tintas vitrificables y reactivos en relación con los equipos y medios de producción necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las diferentes técnicas de decoración mediante aplicaciones superficiales con los medios y con los productos obtenidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las principales características de los materiales y productos que deben ser empleados en las diversas técnicas de decoración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado el tratamiento térmico de los productos de vidrio decorados de acuerdo con los procedimientos establecidos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado el aspecto estético y calidad del producto final identificando y, en su caso, relacionando posibles defectos con las causas que los originan."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las especificaciones de riesgos laborales en las operaciones y se han utilizando los medios de protección necesarios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Instala hojas de vidrio para acristalamientos, identificando las etapas del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado operaciones mecánicas (corte, biselado, canteado, mateado, lijado, taladrado y otras) necesarias en hojas de vidrio para la obtención del producto descrito en la orden de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han montado hojas de vidrio para acristalamientos y paneles prefabricados de vidrio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han sellado con diferentes productos sintéticos o mediante junquillos hojas de vidrio y paneles prefabricados de vidrio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los útiles y herramientas necesarios para el montaje y fijación de hojas de vidrio y paneles prefabricados de vidrio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la secuencia idónea en la instalación de hojas de vidrio para acristalamientos convencionales y acristalamientos especiales (cubiertas, claraboyas, carpintería oculta, entre otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado que las características de los componentes y del vidrio se corresponden entre si y responden a lo establecido en la orden de trabajo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han mantenido en todo momento las herramientas y útiles manejados en obra recogidos y controlados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha demostrado responsabilidad ante errores y fracasos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han relacionado los principales riesgos laborales derivados de las operaciones realizadas y manejo de maquinaria con los medios de protección necesarios."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales en las operaciones de mecanizado e instalación del vidrio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Termoformado, fusing y vidrieras",
+      "codigo": "3109",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara el vidrio y los equipamientos, relacionando sus características con las técnicas y procesos a desarrollar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han transportado placas de vidrio sin que sufran alteraciones ni deterioros en sus características."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cortado y canteado el vidrio mediante los útiles adecuados conforme a las dimensiones y formas del diseño establecido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la limpieza de las dos caras del vidrio previamente a las operaciones de decoración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado, en su caso, la cara inerte del vidrio de forma inequívoca."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las características de compatibilidad de los distintos tipos de vidrio conforme a su aplicación y tratamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las principales características tecnológicas y de funcionamiento de medios de producción y equipamientos utilizados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha justificado la curva de temperatura conforme al mapa calórico de cada horno específico utilizado en las distintas técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado los riesgos laborales propios de las instalaciones, medios y procedimientos operativos con los medios de protección necesarios."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la eficacia de los recursos y la minimización de los residuos en los diferentes procesos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Moldea placas de vidrio mediante termoformado, justificando los efectos decorativos y estéticos del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el tipo de vidrio especificado en la orden de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado que el vidrio cortado y canteado se ajusta a las dimensiones y características especificadas en la orden de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha justificado la selección del molde conforme a las características dimensionales de la pieza que se pretende obtener y las exigencias del ciclo térmico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el montaje y ajuste de los moldes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el tratamiento térmico de las hojas de vidrio de acuerdo con los procedimientos establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado que el proceso del tratamiento térmico está realizándose con normalidad, dentro de los parámetros programados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado los efectos decorativos y estéticos del producto final."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los procedimientos empleados estableciendo la secuencia idónea de las operaciones necesarias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado y, en su caso, relacionado posibles defectos con las causas que los originan."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha responsabilizado del mantenimiento de primer nivel de los diferentes medios y útiles de trabajo."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales en el proceso de moldeado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza decoraciones mediante las diferentes técnicas de fusing, relacionándolas con los efectos decorativos y estéticos del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los tipos de vidrio con los diferentes efectos decorativos y estéticos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales técnicas de fusing relacionándolas con los medios y con los productos obtenidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos utilizados en la decoración según las diferentes técnicas de fusing."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la secuencia idónea de las operaciones necesarias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha justificado la selección de útiles, herramientas y medios conforme a las operaciones a realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha preparado la base del horno de fusing justificando los parámetros seleccionados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el tratamiento térmico de acuerdo con los procedimientos establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado que el proceso del tratamiento térmico está realizándose con normalidad, dentro de la programación efectuada."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han valorado los efectos decorativos y estéticos del producto final"
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado y, en su caso, relacionado posibles defectos con las causas que los originan."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las especificaciones de prevención de riesgos laborales en el proceso de decorado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza distintos tipos de vidrieras, relacionando las técnicas específicas con el tipo de vidriera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los vidrios necesarios para la elaboración de la vidriera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los diferentes tipos de vidrieras con los materiales empleados en su ejecución y con sus técnicas de elaboración."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos empleados estableciendo la secuencia idónea de las operaciones necesarias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado que las dimensiones y numeración de los calibres o plantillas se corresponden con el diseño de cada uno de los componentes de la vidriera."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la numeración de las piezas cortadas con la de sus correspondientes calibres o plantillas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los parámetros de rigidez e impermeabilidad exigibles en la vidriera."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de montaje, sellado, enmarcado y limpieza conforme a las especificaciones técnicas escritas en la orden de trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado los efectos especiales y de variaciones de luminosidad respecto al efecto estético del acabado de la vidriera."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado y, en su caso, relacionado posibles defectos con las causas que los originan."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha responsabilizado del mantenimiento de primer nivel de los diferentes medios y útiles de trabajo."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las especificaciones de prevención de riesgos laborales en el proceso de elaboración de vidrieras."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Mecanizados manuales y semiautomáticos con vidrio fundido y tubos de vidrio",
+      "codigo": "3110",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad",
+      "codigo": "3159",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de aprendizaje colaborativo",
+      "codigo": "3160965",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales II",
+      "codigo": "3162",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias aplicadas II",
+      "codigo": "3164",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Segundo",
+      "codigo": "TU02CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

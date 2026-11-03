@@ -1,0 +1,3836 @@
+{
+  "id": "gs-vitivinicultura",
+  "denominacion": "Vitivinicultura",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Industrias Alimentarias",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "VITI",
+  "rd": "Real Decreto 1688/2007, de 14 de diciembre, por el que se establece el título de Técnico Superior en Vitivinicultura y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-750",
+  "modulos": [
+    {
+      "nombre": "Viticultura",
+      "codigo": "0077",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina la idoneidad del establecimiento del viñedo, analizando los factores naturales que intervienen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las propiedades del suelo y los factores limitantes del cultivo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la toma de muestras del suelo mediante el procedimiento establecido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los elementos meteorológicos y los factores geográficos que influyen en el cultivo de la vid."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado y calculado los principales índices bio-climáticos vitícolas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido la morfología, anatomía de la vid, así como su fisiología."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el ciclo vegetativo y reproductor de la vid y sus estados fenológicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y analizado las variedades de uva y sus aptitudes agronómicas y enológicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado y analizado los principales porta-injertos y sus características."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Planifica la plantación, relacionando las variedades y patrones con las características del vino que se va a elaborar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado el tipo de vino que se va a elaborar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el porta-injerto mejor adaptado a las características del terreno, compatible con la variedad escogida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la variedad y el clon más acorde a las características del producto que se va a elaborar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha decidido la orientación del viñedo y el marco de plantación buscando un equilibrio entre el uso de la maquinaria y la obtención de uvas de la máxima calidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido las labores previas a la plantación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado el método de establecimiento del viñedo: planta-injerto o plantación de barbado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha controlado la recepción y preparación de la planta."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha organizado la plantación en la época adecuada, eligiendo la técnica y maquinaria mejor adaptada al terreno y a las posibilidades económicas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han organizado los cuidados posteriores a la plantación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece el sistema de conducción del viñedo, justificando su elección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las características ecofisiológicas de los distintos sistemas de conducción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la disposición espacial de las plantas (formas libres o dirigidas), en función de la calidad de la uva que se va a obtener."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales y disposición de los sistemas de apoyo de la vegetación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han organizado las operaciones de manejo de la vegetación en las formas apoyadas: atado, recogida y guiado de la vegetación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los fundamentos y principios básicos de los sistemas de poda."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado el sistema de poda, la época y el equipo que se va a utilizar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha evaluado la influencia de las operaciones en verde sobre el viñedo y la calidad de la uva."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Organiza las labores culturales, relacionándolas con las características del producto a obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los efectos que las labores culturales (mantenimiento del suelo, abonado, riego) tienen sobre la composición final de la uva."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han elegido las técnicas de mantenimiento del suelo (laboreo mecánico, aplicación de herbicidas, sistema mixto, cubierta vegetal) acordes con las características del terreno y con las disponibilidades hídricas para obtener una uva de calidad, potenciando la producción integrada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado el método óptimo y la maquinaria para la siega de las cubiertas vegetales y la aplicación de herbicidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado los síntomas de carencias de nutrientes y fitotoxicidades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elegido el tipo, cantidad y periodicidad del abonado, en función de los resultados de los análisis, de los criterios técnicos acordes con el tipo de vino a obtener y de la filosofía de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha planificado el riego del viñedo en función de la evapotranspiración, del tipo de suelo y de las restricciones legales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado el método de riego, optimizando el uso del agua."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han planificado las operaciones en verde del viñedo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito las operaciones vitícolas especiales: reestructuración de formas libres en formas apoyadas, injertos de cambios de variedad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Coordina los tratamientos fitosanitarios seleccionando los productos y técnicas respetuosas con el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los síntomas de plagas, enfermedades y virosis en el viñedo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el estilo de protección del viñedo de acuerdo con la filosofía de la empresa."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los métodos de lucha contra patógenos potenciando la lucha integrada, biológica y el respeto al medio ambiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han evaluado los daños que las plagas y enfermedades puedan producir en la planta y en la cosecha para determinar el umbral de tratamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elegido el tipo, la dosis, el momento de aplicación del producto fitosanitario en función de los criterios técnicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado la maquinaria de aplicación para realizar los tratamientos fitosanitarios de forma eficiente y respetuosa con el medio ambiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado de manera adecuada los Equipos de Protección Individual (EPI)."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han retirado los envases y los restos de productos fitosanitarios utilizando las medidas de seguridad y respetando la legislación medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Controla el estado de madurez de la materia prima relacionándolo con la calidad del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las etapas de desarrollo del racimo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado la síntesis y evolución de los principales compuestos de la uva."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha caracterizado y seleccionado el tipo de madurez de la uva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado el tipo de muestreo y su periodicidad según el tipo de madurez."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los controles básicos para el seguimiento de la madurez."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia del control de la madurez fenólica (hollejo y pepitas) en las uvas destinadas a la elaboración de vinos de alta gama."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha identificado los principales métodos de control de la madurez fenólica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las principales alteraciones que puede sufrir la materia prima durante su maduración."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Vinificaciones",
+      "codigo": "0078",
+      "ects": 13,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Organiza la vendimia analizando el estado de madurez de la materia prima y las operaciones asociadas a cada tipo de vendimia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el estado sanitario y de madurez de la materia prima."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido la fecha de vendimia para cada parcela de la explotación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las ventajas e inconvenientes de la vendimia manual/ mecánica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha organizado y controlado el grupo de trabajo con instrucciones precisas para recoger y transportar la uva."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el aporte de sustancias enológicas en función del estado sanitario de la uva y del tipo de transporte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha preparado la maquinaria, el personal y los medios auxiliares."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las contingencias (meteorológicas, aglomeraciones, averías) y las medidas de actuación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha analizado la influencia de la vendimia mecánica en las características de la uva."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Organiza los equipos e instalaciones de vinificación, relacionándolos con su función en los procesos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los diferentes procesos de vinificación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los equipos con las fases del proceso de vinificación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el funcionamiento, la constitución y los dispositivos de seguridad de la maquinaria y equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el mantenimiento y limpieza de los equipos e instalaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la capacidad de procesado y elaboración de los equipos e instalaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han regulado y/ o programado los equipos de elaboración en función de los requerimientos del proceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado, para cada vinificación, las condiciones de ejecución, los parámetros que se han de controlar y las medidas correctoras en caso de desviaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han calculado las necesidades de servicios auxiliares."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han reconocido las medidas de seguridad en el manejo de los equipos, en la manipulación de los productos enológicos y en la realización de las operaciones de vinificación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha establecido el aprovisionamiento de productos enológicos necesarios para la vinificación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Controla las operaciones prefermentativas relacionando las técnicas y tratamientos con las características del producto que se va a elaborar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado el funcionamiento de los medios de control: báscula, toma-muestras, analizadores automáticos y otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado la materia prima en función de las especificaciones requeridas por el producto que se va a elaborar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado el flujo de materia prima, corrigiendo las incidencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han controlado las operaciones de despalillado y estrujado en función del estado de la materia prima y del tipo de vino que se va a elaborar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los equipos de bombeo-transporte en función de las instalaciones de la bodega, las características de la materia prima y del producto que se obtiene."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha controlado que el sulfitado se realiza en el momento y dosis adecuadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las características del mosto o pasta encubado y se han realizado las correcciones necesarias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha contrastado que las características de los mostos desfangados se corresponden con las especificaciones previstas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha asegurado la trazabilidad del proceso, cumplimentando los registros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Conduce la fermentación alcohólica y la maceración, reconociendo sus fundamentos y los mecanismos de control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la función de los microorganismos en la fermentación alcohólica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han adicionado las levaduras seleccionadas en las condiciones requeridas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los controles (temperatura, densidad, ac., volátil, cata) que se realizan durante la fermentación alcohólica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las operaciones necesarias para controlar la fermentación alcohólica (remontados, refrigeración)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las condiciones de tiempo y temperatura en las que se desarrolla la maceración prefermentativa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los controles que se realizan para conducir la maceración (color, índice de polifenoles totales, cata)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado el aporte de productos o materias enológicos para mejorar el desarrollo de la fermentación y la maceración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las posibles desviaciones del normal desarrollo de la fermentación alcohólica y los riesgos que implican para la calidad del vino."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han reconocido las técnicas que favorecen la maceración y su influencia en la calidad del vino."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha valorado la influencia de la biotecnología en la obtención de vinos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Supervisa el «descube» y prensado, relacionándolo con las características del producto que se desea obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la duración del encubado en función del tipo de vino que se desea obtener, estado de la materia prima y de las condiciones técnicas de la bodega."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la ubicación del vino descubado, las necesidades de mano de obra y las posibilidades de la prensa para decidir el momento del descube."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los riesgos y las medidas de seguridad que se necesita adoptar ante la presencia de dióxido de carbono."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la necesidad de un sulfitado según el tipo de vino y los riesgos derivados de posibles desviaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los controles analíticos y organolépticos que se han de realizar para caracterizar el vino fermentado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la posibilidad de la microoxigenación como una técnica de mejora de la calidad de los vinos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado el tipo de prensa y la presión de trabajo en función de las características del vino que se desea obtener."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Conduce la fermentación maloláctica, relacionándola con la calidad del vino obtenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la idoneidad de la fermentación maloláctica y sus consecuencias sobre la calidad del vino."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la incorporación de otras variables tecnológicas (micro-oxigenación, fermentación maloláctica en barrica, crianza sobre lías) y su influencia sobre las características de los vinos y los costes de producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los factores que influyen en la fermentación maloláctica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las ventajas e inconvenientes del uso de bacterias lácticas comerciales en la fermentación maloláctica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los controles analíticos y organolépticos para el seguimiento y control final de la fermentación maloláctica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han evaluado los riesgos de una fermentación maloláctica sin control."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Organiza la limpieza y desinfección de equipos e instalaciones, justificando la selección de productos y técnicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los fundamentos de la limpieza y desinfección de los equipos e instalaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el nivel de higiene necesario en cada etapa del proceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han evaluado los riesgos asociados a una higiene deficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los productos de limpieza y desinfección."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido las diferentes técnicas de aplicación de los productos de limpieza y desinfección."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido un plan de limpieza y desinfección."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las medidas de control de limpieza y desinfección."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido las medidas de seguridad en las operaciones de limpieza y desinfección."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la aplicación de la tecnología C.I.P. («clean in place») en la industria vitivinícola."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos bioquímicos",
+      "codigo": "0079",
+      "ects": 11,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza el desarrollo de la fermentación alcohólica reconociendo sus fundamentos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las características de las levaduras vínicas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las condiciones de desarrollo de las levaduras vínicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de los nutrientes en el desarrollo de la fermentación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las ventajas e inconvenientes de la utilización de levaduras comerciales (LSA) frente a las levaduras autóctonas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la técnica de pie de cuba."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los fundamentos bioquímicos de la fermentación alcohólica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido otras fermentaciones secundarias y su importancia en la producción de compuestos secundarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales problemas fermentativos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han analizado los factores de riesgo de paradas de fermentación y desviaciones del proceso fermentativo."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han valorado las implicaciones de las paradas de fermentación en la calidad del vino."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza la fermentación maloláctica reconociendo sus fundamentos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los fundamentos bioquímicos de la fermentación maloláctica (FML)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la implicación de la FML en la calidad de los vinos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los microorganismos responsables de la FML y sus condiciones de desarrollo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los factores tecnológicos que influyen en el desarrollo de la FML."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos asociados a una desviación de la FML."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los controles que se realizan durante la FML."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado las ventajas de la utilización de bacterias lácticas comerciales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Reconoce las herramientas biotecnológicas justificando su utilización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes tipos de enzimas enológicas y su aplicación tecnológica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los nuevos productos elaborados con levaduras inertes y sus usos tecnológicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las nuevas tendencias en la nutrición de las levaduras y bacterias vínicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los activadores de fermentación, su composición y su uso más adecuado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las levaduras específicas que se utilizan para solucionar problemas fermentativos así como la ayuda de otras herramientas biotecnológicas (cortezas de levaduras, nutrientes complejos, materiales de soporte y otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las nuevas tendencias biotecnológicas para solucionar paradas de fermentación mediante el uso de levaduras inmovilizadas previamente aclimatadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de las manoproteínas como factor de estabilidad y en la mejora de las cualidades gustativas de los vinos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las nuevas tendencias en la utilización de levaduras y bacterias vínicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica los enturbiamientos de origen físico-químico analizando los factores implicados y su prevención.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los enturbiamientos relacionados con fenómenos de oxidación-reducción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los enturbiamientos relacionados con fenómenos coloidales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los precipitados de materia colorante."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los precipitados cristalinos relacionados con las precipitaciones tártricas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los mecanismos de formación de enturbiamientos y precipitados y los factores que influyen."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los ensayos y pruebas utilizados para la identificación de los precipitados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los principales tratamientos o métodos para prevenir y eliminar enturbiamientos y precipitados de origen físico-químico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Caracteriza las enfermedades y los defectos originados por alteraciones microbianas analizando sus causas y los medios de prevención.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las principales enfermedades de los vinos producidas por levaduras y bacterias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los principales defectos organolépticos de los vinos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los factores que influyen en el desarrollo de las enfermedades y defectos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las consecuencias de las enfermedades y los defectos sobre la calidad de los vinos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las sustancias asociadas a riesgos para la salud: aminas biógenas, ocratoxina A, carbamato de etilo, sulfitos y otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia de la higiene en la prevención de defectos y enfermedades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de las buenas prácticas agrícolas y enológicas para prevenir los riesgos de enfermedades, defectos organolépticos y su repercusión para la salud del consumidor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Análisis enológico",
+      "codigo": "0081",
+      "ects": 11,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Organiza el laboratorio enológico reconociendo las instalaciones, equipos y recursos que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido el equipamiento, instalaciones, servicios auxiliares y dispositivos de seguridad de un laboratorio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han organizado y controlado los recursos del laboratorio y el almacenamiento de reactivos y material auxiliar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado el trabajo de laboratorio en función de las necesidades del proceso productivo y el plan de control de calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas de limpieza, desinfección y/ o esterilización a emplear en el laboratorio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado el funcionamiento, calibración y limpieza del instrumental y equipos de análisis."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las medidas de higiene y seguridad en la manipulación y almacenamiento de las muestras y reactivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido las condiciones y métodos de eliminación de las muestras y residuos del laboratorio, de acuerdo con el tipo, características y normativa vigente."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido las medidas de protección individual y colectiva."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina parámetros químicos, justificando los tipos de reacciones que tienen lugar y sus aplicaciones en dichos análisis.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido conceptos de química general aplicados al análisis enológico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los reactivos y el material necesario para los análisis físicos y químicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado y valorado las disoluciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la toma de muestras, su identificación y traslado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado y realizado los análisis enológicos basados en procedimientos físicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado y realizado los análisis enológicos basados en procedimientos químicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han recogido datos, efectuado cálculos y redactado informes de análisis y de control utilizando las Tecnologías de la Información y Comunicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y limpieza en la realización de los análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han adoptado las medidas de seguridad e higiene durante la realización de los análisis."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica técnicas analíticas instrumentales, relacionándolas con los parámetros y rango que se han de medir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las técnicas y principios del análisis instrumental."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado, preparado y calibrado los equipos e instrumentos en función del método analítico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha controlado el seguimiento de maduración de la uva y grado alcohólico en potencia del mosto mediante técnicas refractométricas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la acidez por medio del potenciómetro/pHmetro."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado análisis reflectométricos para la determinación de parámetros enológicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado análisis cromatográficos para el control de la fermentación maloláctica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado técnicas de espectrofotometría para el control de los compuestos fenólicos y sus índices."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han empleado técnicas de nefelometría para controlar la turbidez."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los principales métodos automáticos de análisis."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido datos, efectuado cálculos y redactado informes de análisis y de control utilizando las Tecnologías de la Información y Comunicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Efectúa análisis microbiológicos, identificando y caracterizando los microorganismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las técnicas de análisis microbiológico aplicadas a la enología."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado la técnica de limpieza, desinfección y/ o esterilización de los equipos, material e instrumental de acuerdo con sus características."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado y preparado el instrumental y los materiales en función de las técnicas y determinaciones a realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han adoptado las normas de seguridad establecidas durante la manipulación de las muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido y caracterizado las levaduras y bacterias de mostos, vinos y derivados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los medios de cultivo más apropiados para cada microorganismo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reconocido y seleccionado el método más adecuado para la identificación y/ o recuento microbiológico."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las pruebas de control microbiológico durante la elaboración, conservación y acabado de los vinos y derivados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han establecido las condiciones y métodos de eliminación de las muestras y residuos microbiológicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Interpreta los boletines de análisis relacionando los resultados obtenidos con el control del producto y del proceso productivo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los principales compuestos químicos de la uva, vino y derivados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los límites de los parámetros establecidos por la normativa legal vigente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los valores óptimos de los parámetros para el control del proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la importancia enológica de la acidez, su influencia en las transformaciones físico-químicas, su evolución durante la elaboración y conservación y la necesidad de su control."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha caracterizado el dióxido de azufre, sus propiedades, reacciones y la importancia de controlarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los azúcares y alcoholes, sus transformaciones y la necesidad de controlarlos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de los compuestos fenólicos, sus implicaciones en la calidad y su evolución."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado e interpretado los resultados determinando su coherencia y validez."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han recogido datos, efectuado cálculos y redactado informes de análisis y de control utilizando las Tecnologías de la Información y la Comunicación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comercialización y logística en la industria alimentaria",
+      "codigo": "0084",
+      "ects": 6,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Programa el aprovisionamiento identificando las necesidades y existencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido las variables a considerar en el plan de abastecimiento de mercancías."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han utilizado los sistemas de cálculo de necesidades de aprovisionamiento a partir de los consumos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las variables que intervienen en la realización de un inventario."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han evaluado las posibles causas de discordancia entre las existencias registradas y los recuentos realizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procedimientos de gestión y control de existencias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido los sistemas de catalogación de productos para facilitar su localización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las variables que determinan el coste de almacenamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han calculado los niveles de stock y sus índices de rotación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la logística en la optimización de los recursos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Controla la recepción, la expedición y el almacenamiento de mercancías relacionándolos con la calidad del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes zonas de un almacén y descrito sus características."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han programado las fases del proceso de almacenamiento, identificando las tareas asociadas a cada puesto de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha representado el flujo de los productos para optimizar el espacio, tiempo y uso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido e interpretado la normativa sobre protección en el transporte de productos en la industria alimentaria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado y especificado los tipos de embalajes asociados al medio de transporte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los datos e información que deben aparecer en rótulos y etiquetas de los productos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los procedimientos de control sobre materias primas, consumibles y productos terminados en recepción y expedición."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido los medios y procedimientos de manipulación en el almacenamiento de productos alimentarios, especificando las medidas de seguridad e higiene."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han determinado las condiciones ambientales para el almacenamiento de los productos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Comercializa materias primas, auxiliares y productos elaborados reconociendo y aplicando técnicas de negociación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas en un proceso de compraventa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las técnicas de negociación en la compraventa de productos alimentarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha interpretado la normativa mercantil que regula los contratos de compraventa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los criterios para la selección de proveedores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las funciones y aptitudes de un agente de ventas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y valorado las funciones del servicio post-venta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las técnicas de información y comunicación en la atención a proveedores y clientes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Promociona los productos elaborados, caracterizando y aplicando técnicas publicitarias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y aplicado las técnicas de recogida de información en la investigación comercial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado y valorado los resultados de la investigación comercial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido productos y técnicas de la competencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los nuevos nichos de mercado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los tipos, medios y soportes publicitarios y promocionales utilizados en la práctica comercial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los objetivos generales de la publicidad y la promoción."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido las variables a controlar en las campañas publicitarias y promocionales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha diferenciado entre comprador y consumidor y su influencia en el diseño de la publicidad."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado y explicado las técnicas de merchandising."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha valorado la promoción y venta a través de canales especializados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las tecnologías de la información y comunicación en la gestión logística y comercial, caracterizando las principales herramientas informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las aplicaciones informáticas utilizadas en la gestión logística y comercial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los datos que deben figurar en un fichero de clientes y proveedores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado las bases de datos para el archivo y manejo de la información procedente de los procesos de compraventa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han integrado datos, textos y gráficos, presentando la información de acuerdo con formatos requeridos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha justificado la necesidad de conocer y utilizar mecanismos de protección de la información."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido la importancia de las páginas WEB corporativas para la competitividad empresarial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la relevancia de Internet y las nuevas tecnologías en la promoción y venta."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la importancia de la aplicación de las nuevas tecnologías en la imagen corporativa de la empresa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular en la industria vitivinícola",
+      "codigo": "0087p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica el mercado vitivinícola, los diferentes productos, la organización económica/ productiva y las oportunidades, relacionándolo con el proyecto que se quiere implementar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha clasificado el tejido empresarial del sector en el entorno del centro educativo en función del tamaño de la empresa y los tipos de productos elaborados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el mercado vitivinícola: mediante informes económicos, estadísticas de ventas, información de revistas profesionales, tiendas especializadas, grandes superficies, identificando las tendencias de consumo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la competitividad de las empresas del sector según el tipo de producto elaborado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la complejidad tecnológica y el coste económico de la elaboración de los diferentes productos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la disponibilidad y el aprovisionamiento de la materia prima."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los canales de comercialización más habituales para cada tipo de producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la logística empleada en las empresas del sector, y entre otros, necesidades de almacenes y transporte."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha identificado la legislación específica relacionada con la elaboración y comercialización de los productos vitivinícolas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha identificado la normativa que afecta al sector respecto a la seguridad alimentaria, seguridad laboral y seguridad medioambiental."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han detectado las oportunidades de empleo y autoempleo en el sector."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha elegido, en función de la información obtenida, la orientación del proyecto hacia una gama/ línea de productos determinada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña un proyecto vitivinícola relacionado con las competencias expresadas en el título analizando su viabilidad económica y tecnológica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los proyectos vinculados con el sector en función de su tipología."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la idoneidad de la zona o región, para la implantación del proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando el alcance del proyecto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica y económica del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizar el proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han detallado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el pliego de condiciones para la aplicación del proyecto."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han definido los indicadores que garantizan la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Define y planifica la ejecución del proyecto, detallando las diferentes fases de su desarrollo y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y extraído del proyecto las necesidades y operaciones a realizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han secuenciado las operaciones ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada operación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las operaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los riesgos inherentes a la implementación definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los riesgos medioambientales vinculados al proyecto y sus implicaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha hecho la valoración económica necesaria para el desarrollo del proyecto."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han definido los indicadores que garantizan la calidad en la ejecución del proyecto."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la implementación o ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona el proyecto definiendo el procedimiento de seguimiento y control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha asignado la ejecución de las operaciones en función de la planificación establecida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el procedimiento de seguimiento de las operaciones o intervenciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la gestión de las incidencias que pueden presentarse durante la realización de las operaciones (análisis de la incidencia, solución y registro)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y operaciones, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido el procedimiento de finalización y cierre del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la finalización de las operaciones y del proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional, académica y cotidiana, contenida en todo tipo de discursos orales, emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de mensajes en lengua estándar relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes directos o emitidos en cualquier soporte en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica contenida en distintos discursos orales en lengua estándar, relacionada con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el punto de vista y la actitud del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en dichos mensajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprendido adecuadamente mensajes en lengua estándar en ambientes con contaminación acústica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional, lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende mensajes escritos, de naturaleza profesional, académica y cotidiana, de relativa dificultad, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de textos específicos de su ámbito social, profesional o académico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica de textos, de diferente naturaleza, relativos a su profesión, y contenidos en distintos soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un texto sin entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han leído y comprendido, de manera autónoma, textos relacionados con el sector con la velocidad y estilo de lectura propia del nivel competencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado textos extensos, y de cierta complejidad, relacionados o no con su especialidad, pudiendo realizar varias lecturas del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado instrucciones, con distintos niveles de dificultad, y mensajes técnicos recibidos a través de soportes digitales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han traducido textos de cierta complejidad, utilizando material de apoyo en caso necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han emitido mensajes generales propios de sector y de la vida cotidiana, utilizando nexos y estrategias de interacción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha intercambiado con fluidez información específica y detallada utilizando estructuras de una complejidad acorde al nivel competencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y aplicado los registros adecuados para la emisión del mensaje, así como protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado presentaciones, bien estructuradas, sobre temas de su ámbito profesional, haciendo uso de los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito y secuenciado oralmente un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interaccionado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha respondido a preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta documentos e informes, propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito textos claros y detallados sobre una variedad de temas relacionados con su profesión, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, utilizando vocabulario específico y protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información con corrección, precisión, con cohesión y coherencia, solicitando y/o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado textos mediante apoyos visuales y claves lingüísticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito cartas, formales e informales, empleando las fórmulas de cortesía establecidas y el vocabulario específico para la elaboración de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resumido diferentes tipos de documentos escritos, utilizando sus propios recursos lingüísticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Estabilización, crianza y envasado",
+      "codigo": "0080",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica la estabilización analizando los requerimientos de cada producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado el proceso de estabilización de los vinos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los diferentes tipos de estabilización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los recursos humanos y materiales en función del proceso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la secuencia y programa operativo de la estabilización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado y cuantificado las necesidades de servicios auxiliares."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la puesta a punto de los equipos e instalaciones de estabilización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las condiciones higiénicas y de operatividad de los recipientes vinarios, conducciones, equipos e instalaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han seleccionado los parámetros de control."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles desviaciones del proceso y las medidas correctoras."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han determinado las condiciones ambientales de los locales de estabilización y crianza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Organiza la clarificación justificando la elección del clarificante y su aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las propiedades de las soluciones coloidales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las sustancias en estado coloidal presentes en el vino."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los fundamentos de la estabilización coloidal de los vinos y sus productos derivados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los factores que influyen en la clarificación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los diferentes productos clarificantes (inorgánicos, orgánicos y sintéticos) y sus efectos sobre la estabilidad coloidal y las características organolépticas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los clarificantes y la dosis mediante ensayos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han preparado los clarificantes elegidos según el protocolo establecido para cada producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han adicionado los clarificantes eligiendo la técnica más adecuada que garantice una perfecta dispersión."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado el tiempo de contacto y el posterior trasiego garantizando la estabilización coloidal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Supervisa las operaciones de filtración, identificando su funcionamiento, sus características y el efecto producido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los mecanismos de la filtración."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las características del líquido que se ha de filtrar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características de las materias filtrantes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los diferentes sistemas de filtración."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los efectos de la filtración en la calidad de los vinos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las operaciones de preparación (limpieza, desinfección, formación de precapa, enjuagado, entre otros) de los filtros."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los parámetros de la filtración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han controlado los resultados del proceso de filtración."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha descrito la técnica de la centrifugación y sus aplicaciones enológicas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado las desviaciones y sus medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Controla la estabilización tártrica y el acondicionamiento final de los vinos relacionándolo con la calidad del producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las causas que originan precipitaciones en los vinos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado los tratamientos de estabilización para prevenir precipitaciones y enturbiamientos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los efectos secundarios que provocan los tratamientos de estabilidad y las posibles alternativas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los tratamientos que garantizan la estabilidad tártrica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los métodos utilizados en el tratamiento por frío."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los métodos de estabilización biológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las correcciones para el acondicionamiento final de los productos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido los criterios que se utilizan para realizar, mediante «coupages», la tipificación de los lotes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las desviaciones y sus medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Controla la crianza, caracterizando y aplicando las técnicas de envejecimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la idoneidad de un vino para su crianza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la influencia del tipo de roble, origen y proceso de fabricación de la barrica en los aportes organolépticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procesos físico-químicos que tienen lugar durante la crianza en barrica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las condiciones ambientales de la nave de crianza."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las operaciones y controles durante la crianza."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los riesgos derivados de una crianza incorrecta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los criterios que determinan el tiempo de estancia en barrica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los métodos alternativos a la crianza en barrica."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han reconocido los fenómenos físico-químicos durante el envejecimiento en botella y los factores que influyen."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado medidas de seguridad en las operaciones de crianza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Organiza el envasado de los productos, relacionándolo con la calidad del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha controlado que el producto que se va a envasar reúne los requisitos necesarios de estabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las características de los diferentes tipos de líneas de envasado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las operaciones, condiciones y medios empleados en el mantenimiento, limpieza y desinfección de instalaciones y equipos de envasado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han regulado y/ o programado los equipos de envasado en función de los requerimientos del proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las características y condiciones de empleo de los envases y materiales auxiliares de envasado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las propiedades del tapón de corcho y su adecuación al cierre de las botellas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los controles que se realizan en los tapones de corcho para asegurar su correcta funcionalidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han reconocido las alternativas tecnológicas existentes para los tapones de corcho."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las medidas de seguridad específicas en la utilización de las máquinas y equipos de envasado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Elabora vinos espumosos, dulces, licorosos, generosos y otros reconociendo las diferentes técnicas de elaboración.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado e interpretado la normativa que define la elaboración de los distintos productos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características de la materia prima para la elaboración de vinos espumosos, dulces, licorosos, generosos y otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los diferentes métodos de elaboración de vinos dulces, licorosos y otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han detallado los diferentes métodos de elaboración de vinos espumosos (tradicional, «Charmat» o granvás, transfer, gasificado)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los equipos e instalaciones de estabilización y envasado de los vinos espumosos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las condiciones específicas para la elaboración de vinos generosos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las diferencias entre crianza oxidativa y crianza biológica y su influencia en las características organolépticas de los vinos generosos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido una actitud innovadora ante el conocimiento de nuevos productos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Industrias derivadas",
+      "codigo": "0082",
+      "ects": 8,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Valora los subproductos vinícolas justificando su repercusión económica y ambiental.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los subproductos de la destilación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha caracterizado el proceso de obtención de tartrato de calcio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el procedimiento del compostaje para la obtención de fertilizante a partir del orujo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido el proceso de extracción de la materia colorante (enocianina) de los orujos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la extracción del aceite de las pepitas de uva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido el proceso de aprovechamiento del orujo para la alimentación animal."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado el ahorro energético que supone la utilización de los orujos como biomasa."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado la obtención de extractos tánicos de la pepita y hollejos de uva."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la obtención de bioetanol a partir de subproductos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Controla los procesos de destilación vínica, identificando la composición química de los destilados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado e interpretado la normativa que define la composición de los productos y la utilización de las materias primas y auxiliares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los distintos tipos de materias primas, auxiliares, productos en curso o terminados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los principios de la destilación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha distinguido entre destilación continua y discontinua."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han diferenciado distintos tipos de destilados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado la evolución y trasformación que puede producirse en los productos destilados durante su almacenamiento o envejecimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito el proceso de rectificación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han obtenido destilados a partir de vinos y orujos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha descrito la evolución histórica de los destilados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Conduce los procesos de elaboración de vinagres, reconociendo los fundamentos de la fermentación acética.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la composición del vinagre y sus aplicaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado los parámetros de control de la fermentación acética."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las condiciones óptimas para el desarrollo de las bacterias acéticas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes métodos (Orleáns, Luxemburgués, Frings, Módena) de obtención de vinagre."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las principales alteraciones del vinagre."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha obtenido vinagre a partir de diferentes sustratos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la transformación de alcohol etílico en ácido acético."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido el valor de la maduración en la obtención del vinagre."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Controla la obtención de bebidas espirituosas, relacionando las materias primas con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las principales bebidas espirituosas y sus procesos de obtención."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los diferentes tipos de aguas empleados en la elaboración de bebidas espirituosas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la influencia del envejecimiento en las características finales de las bebidas espirituosas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han secuenciado las fases de obtención de bebidas espirituosas, fermentación, destilación, añejamiento y mezcla."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado la normativa asociada a las bebidas espirituosas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el alcohol etílico como agente conservante."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reconocido el etiquetado de las bebidas espirituosas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Controla la elaboración de vinos aromatizados, aperitivos, licores, aguardientes y otros, describiendo sus fundamentos tecnológicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los procesos de elaboración de vinos aromatizados y aperitivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los procesos de elaboración de licores y aguardientes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los defectos, alteraciones y sus medidas correctivas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los residuos y vertidos obtenidos estableciendo su destino y los tratamientos a emplear."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han regulado y/ o programado los equipos de elaboración en función de los requerimientos del proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los riesgos asociados a las industrias de destilación y derivadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Cata y cultura vitivinícola",
+      "codigo": "0083",
+      "ects": 5,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara los materiales e instalaciones de la cata valorando su influencia en la apreciación de las características sensoriales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las condiciones ambientales y su influencia en la cata."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las instalaciones y equipamientos de la sala de cata."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado la influencia de la forma y tamaño de la copa de cata en las percepciones sensoriales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorando la influencia de la temperatura de servicio del vino en la apreciación de sus características."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido cuándo y cómo se debe decantar un vino."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los tipos de cata: analítica, de apreciación y clasificación, de análisis gustativo descriptivo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reconocido el vocabulario técnico que describe las sensaciones organolépticas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado las fichas de cata."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito los métodos e instrumentos para el entrenamiento sensorial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reconoce las características sensoriales de los productos analizando las fases de la degustación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los sentidos utilizados en la degustación y su funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las sustancias del vino que impactan en los diferentes órganos sensoriales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los sabores fundamentales, las zonas de impacto y los equilibrios y refuerzos entre ellos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los umbrales de percepción de los aromas y sabores y su influencia en la degustación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la metodología precisa de la degustación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el análisis visual del producto (limpidez, tipo de color, matiz)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado un reconocimiento de las sensaciones olfativas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado una apreciación de las sensaciones gustativas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado una valoración global del conjunto de sensaciones, apreciando su equilibrio."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha realizado una cuantificación de las sensaciones organolépticas en la ficha de cata."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Cata productos relacionando las sensaciones organolépticas con su calidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las sensaciones organolépticas con la calidad de la materia prima."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la influencia del sistema de elaboración en las características sensoriales del producto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los defectos organolépticos originados durante el proceso productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la influencia de las condiciones de conservación en la calidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la calidad organoléptica del vino y su evolución en el tiempo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los diferentes protocolos de cata según el tipo de producto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la concordancia entre las características organolépticas apreciadas y el tipo de producto catado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la relación calidad / precio del producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Reconoce el origen geográfico de los productos, describiendo sus características específicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las características vitivinícolas de las diferentes regiones productoras."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las variedades y las técnicas propias de elaboración de cada región."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha caracterizado la tipicidad del vino que se relaciona con un área geográfica determinada, región, denominación de origen."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los atributos «varietales»."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido los matices organolépticos originados por las técnicas singulares de elaboración."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las Denominaciones de Origen de España."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica el valor sociocultural del vino, relacionándolo con la historia, el impacto social, su influencia en la salud y el enoturismo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la evolución de la vid y el vino a través de la historia, su origen, su comercio e importancia en las diferentes etapas históricas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la repercusión de la viticultura en el desarrollo rural y mantenimiento del medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido las bodegas más importantes de cada región."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la influencia de las bodegas en el prestigio de las regiones productoras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido el enoturismo como valor añadido para las bodegas y su entorno."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los criterios establecidos en el maridaje de los vinos y alimentos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los efectos para la salud del consumo de vino y otros productos derivados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Legislación vitivinícola y seguridad",
+      "codigo": "0085",
+      "ects": 5,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Interpreta la normativa vitivinícola analizando su repercusión en la protección del consumidor y del sector productor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la normativa comunitaria, nacional y autonómica, su importancia y obligatoriedad de cumplimiento en función de su rango jerárquico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los principios básicos de la Organización Mundial del Comercio y las disposiciones especiales sobre «indicaciones geográficas» señaladas en el acuerdo sobre los ADPIC."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado los objetivos generales que persigue la Unión Europea para equilibrar y flexibilizar el mercado vitivinícola y las acciones que los desarrollan."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado las medidas de control del potencial de producción vinícola establecidas por la OCM y su influencia en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado la normativa en materia de plantación del viñedo y las distintas acciones que abarca la reestructuración y reconversión del mismo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han detallado los diferentes mecanismos de mercado autorizados en los países comunitarios y su proyección en el sector."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las prácticas y tratamientos recogidos en el Código Enológico Internacional y las directrices del Reglamento Técnico-Sanitario vigente."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la necesidad de normalización y control de los Vinos de Calidad Producidos en una Región Determinada (VCPRD) por medio de los Consejos Reguladores."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha reconocido la normativa relativa al etiquetado de los productos vitivinícolas (mostos, vinos de mesa, vinos de mesa con indicación geográfica VCPRD, vinos de licor; vinos de aguja, vinos gasificados, vinos espumosos), y su adecuación a los principales países importadores."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Gestiona la documentación específica del sector, relacionándola con su obligado cumplimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han cumplimentado los libros-registro de graneles, embotellado y tratamientos, exigidos por los organismos de Agricultura de las distintas Comunidades Autónomas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado los formularios de la Declaración de Cosecha entregada en bodega."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado y cumplimentado los modelos oficiales de la Declaración de Existencias y la Declaración de Elaboración de cada tipo de vino de la bodega, en función de las entradas y salidas registradas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la obligatoriedad de que todo producto vitivinícola que expida o reciba la bodega, vaya con su correspondiente «documento de acompañamiento de transporte»."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado el modelo oficial de Declaración Trimestral de Alcohol."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido y cumplimentado los documentos de exportación, según las exigencias del país de destino."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las declaraciones de arranque y plantación de viñedo, y las solicitudes de: arranque diferido, concesión de derechos de plantación, transferencia de derechos, ayudas comunitarias, reestructuración y reconversión del viñedo, destilaciones, almacenamiento privado, abandono de cultivo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Supervisa la aplicación de buenas prácticas higiénicas y de manipulación de los alimentos valorando su repercusión en la calidad higiénico-sanitaria de los productos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los requisitos legales e higiénico-sanitarios que deben cumplir las personas, equipos, utillaje e instalaciones del sector vitivinícola."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han evaluado las consecuencias, para la inocuidad del producto y la seguridad de los consumidores, de hábitos y prácticas inadecuadas durante la producción en el sector vitivinícola."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enumerado las principales intoxicaciones alimentarias del sector vitivinícola, identificando los agentes causantes, origen y toxicidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los procedimientos de limpieza y desinfección que requieren los equipos, utillaje e instalaciones vitivinícolas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los diferentes métodos de conservación y su repercusión sobre la seguridad del producto final."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia de la formación de los manipuladores de alimentos sobre la seguridad de los mismos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona los sistemas de autocontrol basados en el APPCC y de control de la trazabilidad, justificando los principios asociados a los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la necesidad y trascendencia para la seguridad alimentaria del sistema de autocontrol APPCC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los principios del sistema de Análisis de Peligros y Puntos de Control Críticos (APPCC)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elaborado los diagramas de flujo de los productos vitivinícolas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado y valorado los peligros físicos, químicos y biológicos asociados a la producción."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los Puntos de Control Crítico (PCC) del proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han justificado los límites críticos establecidos para los PCC."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los parámetros asociados al control de los PCC."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha descrito la información que debe contemplar el documento APPCC y sus registros asociados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la trazabilidad con respecto a la seguridad alimentaria."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han descrito los documentos y registros necesarios para identificar el origen, las etapas clave del proceso y el destino del producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica estándares voluntarios de gestión de la seguridad alimentaria como BRC, IFS o UNE-EN ISO 22000:2005 y otros, reconociendo sus ventajas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las diferencias entre lo exigido por la Legislación sobre Higiene y Seguridad Alimentaria y lo requerido por otras normas voluntarias sobre Gestión de la Seguridad Alimentaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado otros estándares voluntarios sobre Gestión de la Seguridad Alimentaria (BRC, IFS o UNE-EN ISO 22000:2005 y otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los aspectos principales de la norma de origen inglés BRC."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los aspectos principales de la norma de origen franco-alemán IFS."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los aspectos principales de la norma internacional UNE-EN ISO 22000:2005."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han valorado las diferencias existentes entre dichas normas describiendo las ventajas e inconvenientes de cada una de ellas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las fases para la obtención de los certificados de estas normas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las principales no conformidades relacionadas con la seguridad alimentaria y sus posibles acciones correctivas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de calidad y ambiental",
+      "codigo": "0086",
+      "ects": 7,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica sistemas de gestión de calidad describiendo la norma en la que se basa y sus requisitos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido el concepto de calidad y sus herramientas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las principales normas de gestión de la calidad (UNE-EN ISO 9001:2000, EFQM y otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el sistema de gestión de calidad y sus requisitos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fases para la implantación de un sistema de gestión de la calidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado los objetivos del sistema de gestión de calidad con la filosofía de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido y elaborado el soporte documental del sistema de gestión de la calidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la comunicación tanto interna como externa para la implantación del sistema de gestión de la calidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los medios existentes para la verificación de la implantación del sistema de gestión de la calidad."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito los criterios para la revisión y actualización del sistema de gestión de la calidad conforme a la norma de referencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora los registros de calidad, analizando sus características e importancia para el control y la mejora del proceso y del producto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los registros del sistema de gestión de calidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los requisitos básicos y las características generales de los procedimientos para su control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diseñado los registros y el plan de control asociados al proceso productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado la importancia de asignar responsables para la cumplimentación de los registros del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el procedimiento para el tratamiento de las no-conformidades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el procedimiento para la aplicación de las acciones correctivas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha caracterizado el plan para la mejora continua."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el procedimiento para el análisis de los resultados obtenidos en la revisión del sistema de gestión de la calidad."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han elaborado informes y descrito las posibles medidas correctivas a aplicar para la mejora del sistema de gestión de la calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Controla los vertidos, residuos y emisiones generadas, reconociendo su impacto ambiental.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características y parámetros de control de los vertidos generados en la industria alimentaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los residuos generados y sus parámetros de control en la industria alimentaria."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificando las emisiones generadas por la industria alimentaria, relacionándolas con sus parámetros de control."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los vertidos, los residuos y las emisiones generadas con el impacto ambiental que provocan."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido la legislación sobre protección ambiental de aplicación en la industria alimentaria."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y clasificado los vertidos, residuos y emisiones en función de sus características, posibilidad de reutilización o necesidad de tratamientos de depuración, descontaminación o filtración."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las técnicas de tratamiento de vertidos, residuos y emisiones generadas en la industria alimentaria."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los permisos y licencias que debe disponer la industria alimentaria y el procedimiento para obtenerlos y/ o actualizarlos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito los parámetros y límites legales exigidos a los vertidos, residuos y emisiones generadas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han descrito los límites de ruido establecidos para la industria alimentaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Utiliza los recursos eficientemente, evaluando los beneficios ambientales asociados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la importancia de la cuantificación de los consumos de agua, electricidad, combustibles y otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado las ventajas que la reducción de consumos aporta a la protección ambiental."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las ventajas ambientales de la reutilización de los recursos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los recursos menos perjudiciales para el ambiente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado las medidas para la disminución del consumo energético y de otros recursos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las malas prácticas relacionadas con la utilización ineficiente de los recursos en la industria alimentaria y sus posibles acciones correctivas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los equipos que minimizan la generación de residuos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica sistemas de gestión ambiental describiendo la norma en la que se basa y sus requisitos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales sistemas de gestión ambiental."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los requisitos exigidos por las normas UNE-EN ISO 14001:2004, EMAS y otras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido y elaborado el soporte documental del sistema."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado la importancia de la comunicación tanto interna como externa para la implantación del sistema de gestión ambiental."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el procedimiento para la obtención y/ o el mantenimiento de los certificados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto acciones de mejora del sistema de gestión ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las desviaciones y no-conformidades relacionadas con el sistema de gestión ambiental y sus posibles acciones correctivas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular en la industria vitivinícola",
+      "codigo": "0087",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica el mercado vitivinícola, los diferentes productos, la organización económica/ productiva y las oportunidades, relacionándolo con el proyecto que se quiere implementar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha clasificado el tejido empresarial del sector en el entorno del centro educativo en función del tamaño de la empresa y los tipos de productos elaborados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el mercado vitivinícola: mediante informes económicos, estadísticas de ventas, información de revistas profesionales, tiendas especializadas, grandes superficies, identificando las tendencias de consumo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la competitividad de las empresas del sector según el tipo de producto elaborado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la complejidad tecnológica y el coste económico de la elaboración de los diferentes productos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la disponibilidad y el aprovisionamiento de la materia prima."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los canales de comercialización más habituales para cada tipo de producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la logística empleada en las empresas del sector, y entre otros, necesidades de almacenes y transporte."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha identificado la legislación específica relacionada con la elaboración y comercialización de los productos vitivinícolas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha identificado la normativa que afecta al sector respecto a la seguridad alimentaria, seguridad laboral y seguridad medioambiental."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han detectado las oportunidades de empleo y autoempleo en el sector."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha elegido, en función de la información obtenida, la orientación del proyecto hacia una gama/ línea de productos determinada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña un proyecto vitivinícola relacionado con las competencias expresadas en el título analizando su viabilidad económica y tecnológica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los proyectos vinculados con el sector en función de su tipología."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la idoneidad de la zona o región, para la implantación del proyecto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando el alcance del proyecto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica y económica del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizar el proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han detallado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el pliego de condiciones para la aplicación del proyecto."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han definido los indicadores que garantizan la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Define y planifica la ejecución del proyecto, detallando las diferentes fases de su desarrollo y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y extraído del proyecto las necesidades y operaciones a realizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han secuenciado las operaciones ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada operación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las operaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los riesgos inherentes a la implementación definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los riesgos medioambientales vinculados al proyecto y sus implicaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha hecho la valoración económica necesaria para el desarrollo del proyecto."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han definido los indicadores que garantizan la calidad en la ejecución del proyecto."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la implementación o ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona el proyecto definiendo el procedimiento de seguimiento y control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha asignado la ejecución de las operaciones en función de la planificación establecida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el procedimiento de seguimiento de las operaciones o intervenciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la gestión de las incidencias que pueden presentarse durante la realización de las operaciones (análisis de la incidencia, solución y registro)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y operaciones, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido el procedimiento de finalización y cierre del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la finalización de las operaciones y del proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665142",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708142",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS142",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

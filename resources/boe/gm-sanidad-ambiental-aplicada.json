@@ -1,0 +1,2678 @@
+{
+  "id": "gm-sanidad-ambiental-aplicada",
+  "denominacion": "Sanidad Ambiental Aplicada",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Seguridad y Medio Ambiente",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "SAA",
+  "rd": "Real Decreto 1157/2024, de 19 de noviembre, por el que se establece el título de Formación Profesional de Grado Medio de Técnico en Sanidad ambiental aplicada, se fijan los aspectos básicos del currículo y las ofertas de grados C, B y A incluidos en este título.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24102",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Preparación y traslado de materiales en el control de organismos nocivos",
+      "codigo": "1697",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Maneja los equipos de aplicación adecuados a cada intervención, realizando la preparación y mantenimiento de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de equipos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los equipos de aplicación según el tipo de intervención."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las técnicas de aplicación adecuadas al tipo de formulación y de tratamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido las operaciones de mantenimiento de equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de calibración de equipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los equipos auxiliares necesarios para la inspección y tratamiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los registros correspondientes de las operaciones de calibración y mantenimiento de los equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara, traslada y aplica los productos biocidas teniendo en cuenta las condiciones ambientales y siguiendo la dosificación indicada en la etiqueta.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado el biocida adecuado a la intervención."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado otros productos químicos necesarios antes del tratamiento con el biocida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la documentación necesaria para el transporte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la carga y transporte del producto biocida según lo establecido en las Fichas de Datos de Seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones previas para el acondicionamiento de la instalación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido el programa de actuación diseñado por la persona responsable desde el punto de vista técnico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los cálculos para la dosificación de acuerdo con el etiquetado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha aplicado el biocida conforme al programa de actuación y cumpliendo la normativa de riesgos laborales y medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Cumplimenta el certificado de servicio realizado, siguiendo las pautas indicadas y dejando registro documental de la intervención realizada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los apartados que integran el certificado de servicio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los documentos donde realizar los registros oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han señalado las actuaciones efectuadas en los planos de las instalaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado los apartados del certificado de servicio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han registrado las medidas correctoras que debe realizar la clientela."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha recopilado la documentación que hay que entregar a la clientela."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha recopilado la documentación que hay que entregar a la empresa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza la correcta identificación y gestión de los residuos generados durante las fases de almacenamiento, traslado y aplicación de los biocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los potenciales residuos que se puedan generar en la actividad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los tipos de residuos en función del biocida utilizado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los residuos biológicos generados en el control de organismos nocivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido otros tipos de residuos generados en el tratamiento con biocidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los distintos residuos para su traslado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de traslado según la peligrosidad de los residuos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han almacenado los residuos atendiendo a su tipología cumpliendo la normativa de riesgos laborales y medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Reconoce las situaciones de riesgo, implementando las medidas de prevención y protección y medioambientales necesarias a cada una de ellas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los riesgos según la peligrosidad del biocida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los riesgos según el tipo de tratamiento que se tiene que efectuar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los riesgos con el tipo de área en que se realiza el tratamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han considerado los riesgos potenciales que entraña la actividad de la clientela."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las medidas de seguridad adecuadas al tipo de producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado las medidas de protección según el tipo de aplicación empleado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implementado las medidas de prevención según el tipo de área en que se realiza el tratamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las medidas de seguridad acordes a los riesgos potenciales que entraña la actividad de la clientela."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los daños producidos por el tiempo de exposición a biocidas en las distintas partes del cuerpo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de organismos nocivos, artrópodos y roedores",
+      "codigo": "1698",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Distingue los diferentes tipos de productos biocidas, atendiendo a su composición y peligrosidad en los diferentes entornos de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los tipos de productos biocidas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los distintos principios activos biocidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado las clases de formulaciones biocidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los escenarios de aplicación en función de la composición y aplicación de los biocidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido el espectro de acción y los organismos diana para los biocidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los riesgos que el uso de biocidas tiene para las personas y organismos no diana."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha evaluado el riesgo medioambiental que tienen los biocidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica la legislación adecuada, reconociendo la autorización y registro junto con el etiquetado de los productos biocidas e interpretando la ficha de datos de seguridad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado la legislación sobre productos biocidas, las empresas que prestan servicios biocidas y la formación que requiere el personal técnico aplicador."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las normativas que establecen los procedimientos que integran el plan de gestión de plagas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la legislación básica en prevención de riesgos laborales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado la forma de acceder a las autorizaciones del registro digital de biocidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido e interpretado los epígrafes que se incluyen en la autorización de los biocidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido e interpretado el etiquetado de los biocidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reconocido e interpretado los puntos que conforman la Ficha de Datos de Seguridad (FDS) de los biocidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica los diferentes grupos de invertebrados valorando su peligrosidad y repercusión para el ser humano y organismos no diana, seleccionando la técnica y el biocida adecuado en las intervenciones de control de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los distintos tipos de invertebrados que pueden encontrarse como plaga."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los principales insectos plaga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los principales arácnidos plaga."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los principales artrópodos y otros invertebrados invasores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lugares potenciales de desarrollo de invertebrados vectores de enfermedades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las diferentes vías de transmisión según el artrópodo vector."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha identificado la peligrosidad de los principales artrópodos y otros invertebrados plaga."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica los diferentes tipos de roedores y otros vertebrados, valorando su peligrosidad y repercusión para el ser humano y organismos no diana y seleccionando la técnica y el biocida adecuado en las intervenciones de control de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los distintos tipos de roedores en el ámbito urbano y en explotaciones de animales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los distintos grupos de otros vertebrados en el ámbito urbano y en explotaciones de animales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características de la rata gris."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las características de la rata negra."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las características de los ratones urbanos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los principales hábitats de los roedores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las principales características definitorias de otros vertebrados urbanos y en explotaciones de animales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales hábitats de otros vertebrados urbanos y en explotaciones de animales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han relacionado las vías de transmisión de enfermedades de los distintos roedores."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha identificado la peligrosidad de los roedores."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha identificado la peligrosidad de otros vertebrados urbanos y en explotaciones de animales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Incorpora las diferentes metodologías de control de plagas, logrando una gestión integrada de organismos nocivos, cumpliendo con la normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los principios de la gestión integrada de plagas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las fases y secuenciación de aplicación del plan de gestión de organismos nocivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito el diagnóstico de situación y los datos requeridos para su aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los apartados que integran el programa de actuación del control de plagas y se ha verificado su adecuación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado y aplicado el plan de gestión de organismos nocivos desarrollado por la persona responsable desde el punto de vista técnico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han recopilado los datos requeridos para llevar a cabo la evaluación del programa de actuación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han implementado las medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Reconoce las diferentes técnicas de muestreo, monitorización e inspección, interpretando los resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los puntos críticos de la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los indicios físicos de presencia de invertebrados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los indicios físicos de presencia de roedores y otros vertebrados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los distintos métodos de monitorización para invertebrados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los métodos de monitorización para roedores y otros vertebrados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los distintos factores estructurales, funcionales y ambientales favorecedores de la presencia y multiplicación de organismos nocivos en los diferentes espacios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Analiza las diferentes técnicas de control de plagas, seleccionando los tratamientos más adecuados en cada escenario.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las distintas técnicas de aplicación mediante pulverización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los distintos tratamientos de nebulización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las diferentes técnicas de cebado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los tipos de fumigación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado otros tipos de técnicas de aplicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los diferentes sistemas de control físicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los sistemas de control físico-químicos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han analizado los diferentes tipos de control biológico."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de organismos nocivos en piscinas y otras instalaciones acuáticas",
+      "codigo": "1701",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los diferentes tipos de instalaciones acuáticas, reconociendo el funcionamiento acorde a cada instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los distintos tipos de instalaciones acuáticas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido el diseño y funcionamiento de piscinas, spas, bañeras de hidromasaje, instalaciones en parques acuáticos, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los elementos y equipos de las instalaciones acuáticas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las instalaciones complementarias y auxiliares (zona de playa, ducha, entre otras)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido los diferentes tipos de depósitos, y de dosificadores de productos químicos y biocidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha identificado la legislación aplicable en las distintas instalaciones acuáticas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica las técnicas de limpieza y tratamientos de desinfección y control, en los vasos y aguas de baño, y del aire, en una piscina o instalación acuática, mediante un protocolo de autocontrol de piscina que asegure sus condiciones higiénico-sanitarias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las técnicas de limpieza en los vasos de una piscina o instalación acuática y los productos químicos necesarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los procesos necesarios para realizar los tratamientos de desinfección y corrección del agua del vaso de una instalación acuática."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los procedimientos físicos, físico-químicos y la utilización de productos biocidas, artículos tratados y precursores de los mismos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las autorizaciones de los productos biocidas, sus etiquetas, fichas de seguridad o fichas técnicas, así como las incompatibilidades entre ellos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los riesgos para la salud que conllevan los tratamientos de desinfección en el agua de piscina y otras instalaciones acuáticas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica procedimientos de control físico, físico-químico y microbiológico del agua de baño de los circuitos de vasos de una piscina o instalación acuática, siguiendo un protocolo de autocontrol, conforme a las condiciones de seguridad y salud.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los puntos críticos de riesgo de contaminación por organismos nocivos en las distintas instalaciones acuáticas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los puntos mínimos de toma de muestra en el circuito y en el vaso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el proceso de obtención y traslado de muestras representativas de agua en una instalación acuática, para su análisis físico-químico y microbiológico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han registrado adecuadamente los datos referentes a la obtención de las muestras en la etiqueta del envase y en los documentos normalizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los parámetros físico-químicos del agua, y se han descrito los procedimientos de análisis acreditados y validados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han registrado las incidencias y desviaciones en relación al programa de actuación de acuerdo con la documentación normalizada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los parámetros necesarios para controlar la calidad del aire en una piscina climatizada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica los procedimientos para la revisión de la maquinaria y equipos en piscinas y otras instalaciones acuáticas, verificando su puesta en marcha y parada, así como la sustitución de elementos en caso necesario, en condiciones de seguridad y salud.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado y reconocido los tipos de bombas empleadas según su funcionamiento en piscinas y otras instalaciones acuáticas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los procedimientos adecuados para comprobar el funcionamiento de la maquinaria de renovación, deshumectación y calentamiento del aire del recinto de una piscina, así como del acumulador de ACS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado el proceso de puesta en marcha/parada de una instalación climatizada, con indicación de los elementos, parámetros y existencia de posibles alteraciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el control de la maquinaria del equipo de una piscina con la supervisión de la persona responsable, con las medidas de seguridad y salud necesarias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los parámetros a regular de una bomba dosificadora o de cloración salina bajo la supervisión de la persona responsable, en una instalación acuática en condiciones de seguridad y salud."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado el esquema y el croquis del circuito hidráulico de la instalación, con la identificación de la situación de la bomba dosificadora o de cloración salina, así como el resto de elementos que lo componen."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la interdependencia entre los siguientes parámetros: temperatura, pH, redox y ácido cianúrico."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha descrito el proceso por el que se debe comunicar a la persona responsable las posibles desviaciones con respecto al protocolo establecido, así como los posibles riesgos para la salud."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Lleva a cabo los procedimientos para la revisión del funcionamiento del circuito hidráulico en piscinas y otras instalaciones acuáticas, verificando el correcto funcionamiento de la maquinaria en condiciones de seguridad y salud.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los elementos (tuberías, filtros, contadores, bypass, entre otros) y las funciones de cada uno en el circuito hidráulico de una instalación acuática."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado los materiales que componen los circuitos hidráulicos y otras conducciones de agua de acuerdo a sus diferencias en cuanto a características y utilización."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha revisado el circuito hidráulico de una instalación acuática bajo la supervisión de la persona responsable en condiciones de seguridad y salud."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los residuos generados según las características de eliminación de cada uno de ellos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comunicado a la persona responsable los posibles riesgos detectados para la salud de las personas usuarias o profesionales durante la revisión del circuito hidráulico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han registrado las operaciones realizadas, así como las incidencias y desviaciones observadas en un documento normalizado según el programa de actuación."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de organismos nocivos mediante desinfección",
+      "codigo": "1703",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona la metodología de limpieza con los productos adecuados en superficies y ambientes clínicos, farmacéuticos, veterinarios, ambientales y de alimentación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los focos de infección y los puntos de acumulación de suciedad, existencia de biofilm o incrustaciones, de la zona a limpiar mediante frotación y rayos ultravioleta, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado las zonas a limpiar precintándolas acotando el área de actuación mediante la utilización de elementos incluidos en medidas de seguridad como carteles avisadores, cintas perimetrales y placas, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han mantenido los materiales organizados, permitiendo el tránsito de personal por las zonas no acotadas, y manteniendo cerradas las puertas, ventanas y otras aberturas durante las operaciones de limpieza."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las operaciones de limpieza manual o mecánica utilizando las dosis y en las condiciones señaladas en el etiquetado del envase del producto como vapor y/o productos (detergentes, desincrustantes, entre otros) en superficies, equipos, enseres y zonas a limpiar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han establecido las pautas de intervención adecuadas, de arriba a abajo, de dentro a fuera y de limpio a sucio, atendiendo a las medidas de seguridad para las personas usuarias de los espacios, abriendo ventanas o activando ventilación forzada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica los diferentes microorganismos ambientales y de superficies, valorando su peligrosidad y repercusión para el ser humano.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los distintos tipos de microorganismos, virus, bacterias y hongos patógenos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los agentes microbianos para su eliminación, tomando muestras en la zona, espacio o superficie que hay que tratar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los lugares potenciales de desarrollo de microorganismos patógenos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las diferentes vías de transmisión según el microorganismo patógeno."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la peligrosidad de los principales microrganismos patógenos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica técnicas, artículos tratados, precursores de biocidas o productos desinfectantes o alguicidas, en ambientes clínicos, farmacéuticos, veterinarios y de alimentación, empleando elementos, productos y equipos de tratamiento específicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado las diferentes pautas de preparación del lugar de intervención, utilizando las medidas de seguridad y salud, en entornos relacionados con el ámbito clínico, farmacéutico, veterinario y de alimentación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido los diferentes tipos de residuos generados y su forma de eliminación, en entornos relacionados con el ámbito clínico, farmacéutico, veterinario y de alimentación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas de intervención específicas para zonas sensibles como salas blancas y otras zonas hospitalarias, así como aquellas que se determinen dentro del ámbito clínico, farmacéutico, veterinario y de alimentación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado los niveles de desinfección en los tratamientos alguicidas teniendo en cuenta las medidas de seguridad y salud."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las técnicas de desinfección adecuadas a los diferentes espacios clínicos, farmacéuticos, veterinarios y alimentarios, atendiendo al plan de actuación elaborado por una persona responsable desde el punto de vista técnico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado los partes de trabajo y certificados de desinfección en las diferentes zonas e instalaciones tratadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica un tratamiento térmico de desinfección, en ambientes clínicos, farmacéuticos, veterinarios y de alimentación, utilizando equipos a base de aire caliente, agua o vapor u otros medios físicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes espacios de intervención, clínicos, farmacéuticos, de recogida de desecho de hospitales, quirófanos y demás zonas críticas, incluyendo los ámbitos veterinarios y de alimentación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las diferentes pautas de preparación del lugar de intervención, utilizando las medidas de seguridad y salud."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las diferentes fases de la desinfección térmica, salvaguardando las propiedades de las superficies o equipos en el interior del área de intervención."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los parámetros condicionantes de la desinfección térmica, como temperatura, humedad, partículas en suspensión, flujo y presión interior del aire."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los niveles de desinfección en el tratamiento tomando muestras en puntos críticos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las técnicas de desinfección adecuadas a los diferentes espacios clínicos, farmacéuticos, veterinarios y alimentarios, atendiendo al plan de actuación elaborado por una persona responsable desde el punto de vista técnico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado los partes de trabajo y certificados de desinfección en las diferentes zonas e instalaciones tratadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Fundamentos científicos en la sanidad ambiental",
+      "codigo": "1704",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los elementos y compuestos químicos, reconociendo su formulación y nomenclatura y propiedades según su naturaleza.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la estructura interna de la materia en función de los distintos modelos atómicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido los criterios de ordenación de los elementos químicos en la tabla periódica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las diferencias entre elemento químico y compuesto químico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los compuestos químicos en orgánicos e inorgánicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los compuestos químicos utilizados en los distintos tipos de biocidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido la nomenclatura y la formulación de los principales compuestos químicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los tipos de enlaces químicos y sus propiedades."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha determinado el número de moles como cantidad de una sustancia, relacionándolos con su masa o volumen."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza experiencias sencillas de preparación de mezclas y disoluciones, seleccionando los materiales y productos necesarios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito una disolución, diferenciándola de las mezclas y clasificándola en función del estado de sus componentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido la concentración de una disolución y las diferentes unidades en las que se expresa."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado los cálculos necesarios para obtener las disoluciones en función de la concentración requerida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han medido masas y volúmenes con exactitud, precisión y limpieza."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha expresado la concentración de las disoluciones en distintas unidades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los materiales volumétricos y los reactivos necesarios en la determinación de disoluciones de concentración requerida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha efectuado la preparación de las disoluciones en función de las exigencias de precisión y de concentración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos y de protección ambiental en todo el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza las reacciones químicas describiendo sus aplicaciones analíticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado el mecanismo de una reacción química, identificando los reactivos y productos y atendiendo a su naturaleza química y a su pureza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las reacciones químicas en función de sus características."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los factores que afectan a la velocidad de reacción y al equilibrio químico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado cálculos estequiométricos en las reacciones químicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el carácter endotérmico o exotérmico de una reacción química."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado ácidos y bases, atendiendo a su comportamiento químico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido el carácter ácido, básico o neutro de una disolución utilizando la escala de pH."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Reconoce los sistemas de clasificación y nomenclatura de los seres vivos, justificando la necesidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los dominios y los reinos en los que se clasifican los seres vivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las diferentes categorías taxonómicas en las que se agrupan los seres vivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de especie."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha aplicado la nomenclatura binomial para nombrar científicamente las especies."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado claves dicotómicas para la identificación de diferentes especies de animales y plantas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los virus como seres acelulares parásitos intracelulares."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la biodiversidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Clasifica los principales grupos de moneras, hongos y animales, describiendo sus características.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido las características generales del reino Moneras y del reino Hongos y su importancia en la naturaleza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los invertebrados artrópodos y no artrópodos, atendiendo a sus características morfológicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado de visu diferentes ejemplares de invertebrados artrópodos y no artrópodos, asignándolos a la clase a la que pertenecen."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características generales de las cinco clases de vertebrados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han distinguido las especies animales más comunes de los medios urbano y periurbano."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las principales especies animales exóticas e invasoras del entorno urbano y periurbano."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Reconoce la estructura y dinámica de los ecosistemas, analizando la influencia de la actividad humana sobre los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los componentes de un ecosistema y las relaciones entre ellos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las relaciones interespecíficas e intraespecíficas como factores de regulación de los ecosistemas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado cadenas y redes tróficas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito el fenómeno de bioacumulación y sus consecuencias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los principales problemas ambientales causados por la actividad humana y propuesto alternativas sostenibles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y analizado las repercusiones ambientales y sobre la salud que puede tener la aplicación de biocidas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo y analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del título de Técnico Básico en Prevención de Riesgos Laborales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de los ciudadanos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de autoorientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo este mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664150",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de organismos que alteran la madera y sus derivados",
+      "codigo": "1699",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce la anatomía, resistencia y durabilidad de las diferentes especies de madera, identificando los tipos de madera y derivados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes especies de madera según su anatomía."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las diferentes especies de madera con respecto a su resistencia."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los tipos de durabilidad de madera existentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los diferentes productos de madera maciza disponibles en el mercado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los diferentes productos derivados de la madera disponibles en el mercado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado los distintos tipos de madera maciza con su durabilidad atendiendo a las características de su puesta en servicio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado los distintos tipos de productos derivados de la madera con su durabilidad atendiendo a las características de su puesta en servicio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica las diferentes especies de organismos xilófagos e insectos atendiendo a sus características morfológicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los diferentes agentes destructores de la madera y derivados en función de su origen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las condiciones previas favorecedoras del desarrollo de los distintos organismos destructores de la madera y derivados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes agentes deteriorantes de la madera de origen abiótico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los agentes destructores de la madera y derivados de origen biótico no xilófagos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los diferentes hongos destructores de la madera y derivados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los insectos destructores de la madera y derivados de metamorfosis completa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los insectos destructores de la madera y derivados de metamorfosis simple."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Reconoce los daños provocados por los diferentes agentes destructores atendiendo a su naturaleza.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los diferentes daños de la madera y derivados en función de su origen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los diferentes factores que contribuyen a los daños de la madera y sus derivados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los daños de origen abiótico de la madera y sus derivados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los daños de origen biótico no xilófago de la madera y sus derivados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los daños por hongos destructores de la madera y sus derivados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los daños producidos por insectos de metamorfosis completa destructores de la madera y sus derivados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido los daños producidos por insectos de metamorfosis simple destructores de la madera y sus derivados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza las diferentes operaciones de preparación de la madera y derivados, seleccionando la más adecuada en cada situación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el estado de los elementos de madera y sus derivados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado las diferentes tareas de limpieza de los diferentes elementos de madera y sus derivados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los diferentes procesos de desbastado de los elementos de madera y sus derivados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las diferentes técnicas de lijado en función del estado de los elementos de madera y sus derivados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han acondicionado las piezas de madera y sus derivados en función del tratamiento a realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha identificado el grado de humedad de los elementos de madera y sus derivados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las diferentes tareas necesarias para prevenir futuros ataques en los elementos de madera y sus derivados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Conoce las diferentes metodologías de control de plagas/organismos nocivos, distinguiendo entre las intervenciones físicas y los tratamientos biocidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las diferentes metodologías de control de organismos xilófagos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las características que diferencian las intervenciones físicas de los tratamientos con biocidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las metodologías de intervención físicas y sus técnicas de realización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las metodologías de intervención mediante tratamientos biocidas y sus técnicas de realización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido las distintas fases de intervención para cada una de las técnicas de tratamientos biocidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los riesgos ambientales asociados a la realización de las distintas intervenciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado las metodologías con los residuos generados en su utilización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Incorpora las diferentes metodologías de control de plagas/ organismos nocivos logrando una gestión integrada de organismos xilófagos e insectos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los diferentes deterioros en la madera y sus derivados según el agente causal y la temporalidad del mismo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las metodologías adecuadas valorando la situación de partida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la prioridad de la intervención mediante medidas físicas y ambientales frente a la realización de tratamientos biocidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las metodologías propuestas con el momento de realización de cada una de ellas estableciendo un cronograma de intervención."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido las particularidades técnicas de las metodologías propuestas y la interrelación entre ellas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las metodologías propuestas con el escenario de intervención valorando los riesgos ambientales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los tipos de residuos generados teniendo en cuenta la gestión de los mismos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de Legionella y otros organismos nocivos en instalaciones de riesgo",
+      "codigo": "1700",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce la Legionella y otros organismos nocivos como agente causal en instalaciones, valorando las enfermedades y la vía de transmisión.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la biología y características de los organismos nocivos en agua."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado la ecología de la Legionella y otros organismos nocivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los riesgos de la Legionella y otros organismos nocivos, y la importancia de su control."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la cadena epidemiológica de trasmisión de legionelosis, y otras enfermedades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los factores que favorecen el desarrollo y proliferación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la importancia del biofilm."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las concentraciones de riesgo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica las instalaciones de riesgo de Legionella y otros organismos nocivos reconociendo sus características.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las instalaciones de riesgo de dispersión y proliferación de Legionella y otros organismos nocivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido el diseño y el funcionamiento de las torres de refrigeración."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido el diseño y el funcionamiento de los condensadores evaporativos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido el diseño y el funcionamiento de los sistemas de agua climatizada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reconocido el diseño y el funcionamiento de los aparatos de enfriamiento evaporativo y centrales humidificadoras industriales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido el diseño y funcionamiento de los sistemas de agua sanitaria."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reconocido el diseño y funcionamiento de otros sistemas de riesgo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Interpreta el plan de prevención y control de Legionella y otros organismos nocivos estableciendo las medidas de seguridad y técnicas adecuadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han establecido las fases y secuenciación de aplicación del plan de prevención y control."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los puntos críticos de una instalación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han interpretado los apartados que integran el programa de actuación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido el programa de tratamiento del agua."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado el programa de muestreo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido el programa de limpieza y desinfección."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el programa de revisión y control."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza las operaciones de mantenimiento, conservación, limpieza y desinfección de la instalación conociendo las técnicas y medios más adecuados y minimizando los riesgos asociados a cada una de ellas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han aplicado los tratamientos de descalcificación, desincrustación y anticorrosión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han llevado a cabo las purgas de acumuladores y los drenajes de agua estancada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han desmontado los elementos de la instalación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han detectado los fallos y deterioros de los equipos y elementos de la instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han sustituido los elementos y equipos deteriorados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de limpieza y desinfección."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han tenido en cuenta las técnicas y medios adecuados en las operaciones adoptando las medidas de prevención de riesgos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han registrado todas las operaciones realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza las operaciones de muestreo, verificación y control de Legionella y otros organismos nocivos, conociendo las técnicas y medios más adecuados y minimizando los riesgos asociados a cada una de ellas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ajustado los equipos de dosificación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado que la concentración de biocida alcanzada es correcta."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los parámetros físico-químicos del agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las prácticas correctas de higiene en la toma de muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tomado las muestras para las determinaciones microbiológicas según el plan de muestreo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado los medios y métodos adecuados para la toma de muestras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de acondicionamiento de las muestras para su traslado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de verificación de funcionamiento los equipos y de la instalación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado los registros de datos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Distingue los diferentes tipos de productos biocidas utilizados en el tratamiento de Legionella y otros organismos nocivos, relacionando su composición y peligrosidad en los diferentes entornos de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los desinfectantes autorizados para el control de Legionella y otros organismos nocivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los productos antical, antiincrustantes y anticorrosivos para realizar tratamientos en el agua."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los neutralizantes de los biocidas utilizados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han empleado los biodispersantes y floculantes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los reactivos para realizar la toma de muestras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado otros productos químicos auxiliares."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido la composición y peligrosidad de cada producto químico utilizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las medidas de prevención en la utilización de todos ellos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de aves-plaga",
+      "codigo": "1702",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Recopila información sobre el hábitat, espacio exterior y edificaciones de colonización de las especies de aves-plaga adoptando medidas de seguridad, salud y protección medioambiental.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha revisado la documentación sobre el hábitat de la zona de actuación obteniendo datos sobre clima, especies protegidas, fenología, entre otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los factores favorecedores en las edificaciones y su entorno para la colonización de las especies plaga, permitiendo la identificación de la especie objeto de tratamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado con las herramientas y los medios auxiliares los indicios ocasionados en la zona de colonización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha recopilado y registrado la información sobre las edificaciones, el hábitat y el espacio exterior donde se produce la colonización utilizando los medios de seguridad y protección necesarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los equipos de protección individual (EPI) en base a las instrucciones del protocolo de seguridad, salud y medioambiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Recopila información referente a las características de las especies de aves-plaga, para su identificación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características morfológicas de la especie ave-plaga mediante su avistamiento y/o la inspección del entorno exterior y las edificaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado mediante la observación visual y el estudio de los nidos encontrados, el comportamiento de la especie ave-plaga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado mediante la inspección del entorno las señales de colonización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han recopilado muestras, y se han preparado para su transporte garantizando su integridad, conservación y estanqueidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha estimado la población de aves-plaga de forma visual."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han registrado mediante soportes físicos o digitales los datos recopilados para la identificación de la especie-plaga."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los residuos generados en el proceso de obtención de muestras."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha recopilado la información referente a las características de las especies aves-plaga en las distintas zonas, mediante el uso de los medios necesarios, con las medidas necesarias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los permisos o documentos legales necesarios para la intervención de control de especies aves-plaga."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara la zona de actuación y comprueba el material y los permisos o documentos legales necesarios para el control de la población de aves-plaga, conforme al programa de actuación elaborado por la persona responsable, adoptando las medidas de seguridad, salud y protección medioambiental.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha inspeccionado la zona de actuación valorando la localización de las medidas de protección frente a riesgos laborales, las medidas compensatorias para especies protegidas o no diana y los sistemas físicos de barrera, ahuyentamiento y captura."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado mediante observación la ausencia de especies protegidas o de la cadena alimentaria de las mismas en la zona de actuación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los dispositivos de seguridad de protección frente a riesgos según las características de cada edificación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los procesos de limpieza, desinfección y/o desinsectación en la zona de actuación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido las señales necesarias para la instalación de los sistemas físicos de control."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la selección del material, así como la de los equipos de seguridad teniendo en cuenta las características de la zona de actuación, los procedimientos que hay que realizar y la especie de ave-plaga a controlar, entre otros."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los equipos de protección individual y del entorno siguiendo las instrucciones del protocolo de seguridad, salud y medioambiente."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los permisos o documentos legales necesarios para la realización del trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Instala los sistemas físicos de barrera, captura, ahuyentamiento y refugio para el control de aves-plaga, gestionando los ejemplares capturados, así como los materiales y residuos generados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los sistemas físicos de púas, postes y alambres, seleccionados en función de la presión ejercida por las aves y el efecto estético a conseguir."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los sistemas productores de descargas eléctricas para evitar el posicionamiento de las aves-plaga en edificios y locales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los sistemas físicos de atrapamiento y captura de las especies de aves-plaga."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las cajas nido/refugio para la protección de aves protegidas u organismos no diana frente a las medidas de control de aves-plaga."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han saneado mediante limpieza y en su caso desinfección y/o desinsectación, las zonas de actuación, según la normativa aplicable en materia de utilización de productos químicos y biocidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las instalaciones de recogida de aves-plaga capturadas para su transporte siguiendo la normativa de bienestar animal."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cumplimentado los partes de trabajo, certificados de servicios o programa de autocontrol relativos a la instalación de sistemas de barrera y ahuyentamiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Prepara in situ las zonas, material y productos donde se realiza el tratamiento biocida, utilizando los medios físico-químicos, químicos o biológicos en las zonas de actuación para el control de aves-plaga conforme al programa de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han comprobado las medidas de prevención de riesgos y verificado que han sido realizadas por la persona titular de la instalación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha inspeccionado visualmente la zona de actuación valorando la mejor localización donde colocar los dispositivos de seguridad y protección frente a riesgos laborales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la ausencia de especies protegidas o de especies de la cadena alimentaria de las mismas en la zona de actuación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los dispositivos de seguridad y protección frente a riesgos acorde a las características de cada edificación o espacio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha acondicionado la zona de actuación mediante su limpieza exhaustiva, y en caso necesario mediante desinfección y/o desinsectación, eliminado los residuos generados por las aves-plaga."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha señalizado la zona de actuación en función del tipo de biocida, según las indicaciones establecidas en la ficha de seguridad (FDS) y autorización de registro del mismo, con las medidas de protección del entorno correspondientes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los equipos de protección individual (EPI), así como del entorno, con las instrucciones del protocolo de seguridad, salud y medio ambiente correspondiente."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han comprobado los permisos o documentos legales necesarios para la realización del trabajo, según las instrucciones indicadas en el procedimiento de trabajo e informando de su disponibilidad a la persona responsable."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Aplica los medios físico-químicos, químicos o biológicos en las zonas de actuación acondicionando la zona para el control de especies de aves-plaga conforme al programa de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los tratamientos con artículos tratados, precursores de sustancias y productos biocidas para el control de aves-plaga, en ausencia de personas y animales no diana."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los tratamientos que se llevan a cabo en ubicaciones/zonas, cumpliendo las medidas de seguridad del personal, así como del entorno."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la necesidad de saneamiento de las zonas de actuación donde se ha realizado el tratamiento, según la normativa aplicable en materia de utilización de productos químicos y biocidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los residuos generados, tanto químicos como biológicos, con las medidas de bioseguridad, para su posterior recogida según la normativa aplicable en materia de prevención y gestión de residuos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han cumplimentado los formularios referentes a los partes de trabajo, certificados de servicios o programa de autocontrol relativos al tratamiento con artículos tratados, precursores de sustancias y productos biocidas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708150",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de los individuos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713A56",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM150",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

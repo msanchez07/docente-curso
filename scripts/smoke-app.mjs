@@ -69,8 +69,8 @@ async function principal() {
     const ciclos = await ev('window.api.boe.listarCiclos()')
     const daw = ciclos.find((ciclo) => ciclo.id === 'daw')
     comprobar(
-      'seis ciclos de Informática, DAW con 20 módulos',
-      ciclos.length === 6 && daw?.modulos === 20,
+      'catálogo completo, DAW con 20 módulos',
+      ciclos.length === 181 && daw?.modulos === 20,
       `${ciclos.length} ciclos · DAW ${daw?.modulos ?? 0} módulos`
     )
 
@@ -83,9 +83,9 @@ async function principal() {
 
     const estado = await ev('window.api.bd.estado()')
     comprobar(
-      'BD sembrada (333 RA, 2532 CE)',
-      estado.ra === 333 && estado.ce === 2532,
-      `${estado.ra} RA · ${estado.ce} CE`
+      'BD sembrada con todos los currículos',
+      estado.modulos >= 1600 && estado.ra >= 8000 && estado.ce >= 60000,
+      `${estado.modulos} módulos · ${estado.ra} RA · ${estado.ce} CE`
     )
     comprobar('BD aislada en directorio temporal', estado.ruta.startsWith(dirDatos))
 

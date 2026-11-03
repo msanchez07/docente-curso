@@ -1,0 +1,3026 @@
+{
+  "id": "gm-emergencias-sanitarias",
+  "denominacion": "Emergencias Sanitarias",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Sanidad",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "ES",
+  "rd": "Real Decreto 1397/2007, de 29 de octubre, por el que se establece el título de Técnico en Emergencias Sanitarias y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-20202",
+  "modulos": [
+    {
+      "nombre": "Mantenimiento mecánico preventivo",
+      "codigo": "0052",
+      "ects": null,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza operaciones de mantenimiento básico del motor y de sus sistemas auxiliares analizando sus principios de funcionamiento y justificando las actuaciones de mantenimiento requeridas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las clases de motores y sus partes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento y las características de los diferentes motores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el funcionamiento de la distribución."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diferenciado los diversos tipos de aceites."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han explicado los componentes del sistema de refrigeración."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el funcionamiento de los sistemas de alimentación, escape y arranque."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las averías más frecuentes del motor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han sustituido elementos básicos del circuito de refrigeración (radiador, termostato, manguitos, entre otros), comprobando la ausencia de fugas y aplicando los pares de apriete establecidos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado la sustitución de los diferentes filtros del vehículo (filtro del aire, filtro de aceite, filtro de gasóleo, entre otros)."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han repuesto las correas de servicio según las especificaciones del fabricante."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza operaciones de mantenimiento básico en los sistemas de transmisión de fuerza y trenes de rodaje analizando su misión, características y funcionamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características y el funcionamiento de la transmisión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enumerado los elementos de la suspensión y los tipos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el sistema de dirección y su funcionamiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las averías más frecuentes relacionadas con los sistemas de transmisión y rodaje."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el estado de los neumáticos (dibujo, presiones, entre otros) sus tipos y usos y los componentes de las ruedas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y descrito los conjuntos más significativos del sistema de frenado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han enumerado las operaciones de mantenimiento de los sistemas de transmisión, de fuerza y trenes de rodaje."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado el nivel y estado de los diferentes fluidos del vehículo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado los cambios de fluidos según el plan de mantenimiento del vehículo."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha realizado y justificado el procedimiento de cambio de ruedas."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han cumplimentado los documentos de operaciones realizadas de mantenimiento."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han descrito y aplicado los procedimientos de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Efectúa pequeñas operaciones de mantenimiento básico en la instalación eléctrica diagnosticando sus componentes principales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las principales magnitudes eléctricas y sus unidades de medida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el sistema de carga y arranque."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los sistemas auxiliares del vehículo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la correcta alimentación de los equipos y elementos del habitáculo asistencial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el funcionamiento de las señales acústicas y luminosas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado y desmontado elementos eléctricos del vehículo, faros, lámparas, fusibles, motores del limpiaparabrisas y escobillas, entre otros."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito y aplicado los procedimientos de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado el funcionamiento del sistema eléctrico reparado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplimentado los documentos de operaciones de mantenimiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Verifica el estado operativo del vehículo y su equipamiento, relacionando la detección de averías simples con la técnica de reparación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha verificado el estado de operatividad del vehículo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado las operaciones de mantenimiento preventivo básico del vehículo y su equipamiento según el plan establecido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las principales averías de las diferentes partes o mecanismos del vehículo de forma básica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado distintos procedimientos básicos para detectar averías del vehículo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los equipos y elementos que intervienen en el sistema de comunicación del vehículo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han adoptado los procedimientos de actuación y/o resolución adecuados en caso de una determinada avería del vehículo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia del mantenimiento periódico del vehículo para su correcto funcionamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado las normas medioambientales durante la puesta a punto y reparación del vehículo, clasificando los residuos para su tratamiento."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Dotación sanitaria",
+      "codigo": "0054",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza el mantenimiento básico de la dotación sanitaria del vehículo interpretando y ejecutando las recomendaciones de los fabricantes de los equipos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado las instrucciones de los fabricantes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha clasificado la dotación material del vehículo, según el nivel asistencial y el plan de mantenimiento del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado la funcionalidad de los equipos sanitarios y de autoprotección."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado la funcionalidad de los sistemas de comunicaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las instrucciones de los fabricantes relativas al mantenimiento básico de la dotación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha demostrado autonomía en la resolución de contingencias relacionadas con el funcionamiento de los equipos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los medios y procedimientos de prevención y protección en función de los factores y situaciones de riesgo laboral en su ámbito de trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han interpretado las señales de protección y las normas de seguridad e higiene."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Controla las existencias y materiales del vehículo sanitario identificando sus características y necesidades de almacenamiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las distintas situaciones de emergencia que requieren material sanitario en la preparación logística."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los documentos de control de las existencias de almacén."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha asociado cada tipo de documento al objetivo que desempeña en el funcionamiento del almacén."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la caducidad de los fármacos, material fungible y material de cura, retirando lo caducado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las necesidades de reposición."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han cumplimentado las órdenes de pedido, precisando el tipo de material, el agente y la unidad o empresa suministradora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha efectuado la reposición de acuerdo a las condiciones de conservación del material, según sus características y necesidades de almacenamiento."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha utilizado la aplicación informática para la gestión del almacén."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha comprobado la cantidad de oxígeno de las balas del vehículo, efectuando su reposición si el nivel no es el adecuado."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha justificado la optimización de recursos materiales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Esteriliza el material, relacionando los procedimientos con la seguridad de su aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los procedimientos de limpieza, desinfección y esterilización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los procedimientos de limpieza, desinfección y esterilización con su aplicación sobre los distintos tipos de material."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado las soluciones para la limpieza y desinfección del material, según el tipo y características del mismo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la limpieza, desinfección y esterilización del material sanitario y del habitáculo asistencial tras una actuación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han eliminado los residuos orgánicos e inorgánicos derivados de la actividad sanitaria."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado contenedores correspondientes al tipo de residuos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha organizado y colocado el material del vehículo al terminar la limpieza y desinfección del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los peligros de la manipulación de productos de limpieza, esterilización y desinfección."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Complementa la documentación clínica y no clínica de su competencia, relacionándola con su utilidad y analizando la información tipo que debe constar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de documentos clínicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la función y cauces de tramitación de los documentos clínicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado el informe de asistencia de la realización de maniobras de soporte vital básico con la información que debe incluir."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cumplimentado el documento de deseo de no traslado y se ha transmitido la información."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la documentación preceptiva (formularios, partes de asistencia, autorizaciones y permisos legales, entre otros) del vehículo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado la importancia de la documentación como elemento clave de la trazabilidad del proceso de asistencia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Atención sanitaria inicial",
+      "codigo": "0055",
+      "ects": null,
+      "horas_minimas_boe": 125,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce los signos de compromiso vital relacionándolos con el estado del paciente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los procedimientos para verificar la permeabilidad de las vías aéreas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las condiciones de funcionamiento adecuadas de la ventilación-oxigenación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito y ejecutado los procedimientos de actuación en caso de hemorragias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito procedimientos para evaluar el nivel de consciencia del paciente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tomado las constantes vitales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha identificado la secuencia de actuación según protocolo establecido por el ILCOR (Comité Internacional de Coordinación sobre Resucitación)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha actuado con seguridad mostrando confianza en sí mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica técnicas de soporte vital básico describiéndolas y relacionándolas con el objetivo a conseguir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los fundamentos de la resucitación cardiopulmonar básica e instrumental."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado técnicas de apertura de la vía aérea."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado técnicas de soporte ventilatorio."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas de soporte circulatorio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado desfibrilación externa semiautomática."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado medidas post-reanimación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado normas y protocolos de seguridad y de autoprotección personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica criterios de clasificación de víctimas relacionando los recursos existentes con la gravedad y la probabilidad de supervivencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto de triaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han explicado los objetivos del primer y segundo triaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han explicado los diferentes métodos de triaje inicial clasificados según su fundamento operativo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha aplicado un método de triaje simple para hacer la primera clasificación de las víctimas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la codificación y la estructura de las tarjetas de triaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los métodos de identificación de las víctimas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha priorizado la evacuación de las víctimas seleccionando el medio de transporte adecuado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tomado decisiones con rapidez."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Clasifica las acciones terapéuticas en la atención a múltiples víctimas, relacionándolas con las principales lesiones según el tipo de suceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el ámbito de intervención."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la información para iniciar el proceso asistencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los objetivos terapéuticos generales en la medicina de catástrofe."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han explicado las acciones terapéuticas que se ejecutan en cada sector asistencial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la naturaleza de la catástrofe con los mecanismos «lesionales»."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las principales lesiones según el tipo de catástrofe."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha definido la cadena de supervivencia y se ha precisado la utilidad de cada uno de sus eslabones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha relacionado la información recibida con el procedimiento de intervención."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Evacuación y traslado de pacientes",
+      "codigo": "0057",
+      "ects": null,
+      "horas_minimas_boe": 135,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Acondiciona espacios de intervención, analizando las características de entornos típicos de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las situaciones de emergencia evaluando los riesgos para víctimas y equipos de actuación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los métodos y materiales de seguridad y balizamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el balizamiento de la zona del incidente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la situación de riesgo previo al inicio de la asistencia sanitaria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elegido la ubicación del vehículo en la posición y distancia adecuada para proteger a las víctimas y a la unidad asistencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado los procedimientos de estabilización básica de un vehículo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito y seleccionado los métodos de acceso a un paciente en el interior de un vehículo, vivienda, local o zona al aire libre."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procedimientos de comunicación con los medios de rescate ante la imposibilidad de acceso seguro al paciente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica procedimientos de inmovilización y movilización de pacientes seleccionando los medios materiales y las técnicas necesarias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los medios materiales de inmovilización y movilización de las unidades asistenciales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los métodos de inmovilización según las potenciales lesiones del accidentado y las circunstancias del accidente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado técnicas de inmovilización preventiva del paciente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado operaciones de traslado de pacientes desde el lugar del suceso al vehículo de transporte."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las medidas posturales a aplicar al paciente sobre la camilla."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos para asegurar una mayor confortabilidad del paciente durante el traslado en la camilla de la unidad asistencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido y fijado todos los elementos susceptibles de desplazarse y producir un daño durante el traslado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha descrito la información que debe proporcionarse al paciente y a los familiares sobre la posibilidad de uso de las señales acústicas, el tiempo aproximado de traslado y el hospital de destino."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica técnicas de conducción simulada relacionando el riesgo de agravamiento de las lesiones del paciente con las estrategias de conducción.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la información para el traslado del paciente al centro sanitario de destino."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado la ruta en función del estado del paciente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han tenido en cuenta los criterios de proximidad, estado de la vía, saturación del tráfico y condiciones climáticas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las repercusiones orgánicas que un traslado inadecuado puede tener en la salud del paciente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado en un circuito cerrado las maniobras de conducción, aceleración, desaceleración y giro, evitando el riesgo de agravamiento de las lesiones o posibles lesiones secundarias del paciente, y cumpliendo con la normativa vigente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el uso de las señales acústicas según el estado de salud del paciente y las condiciones de la vía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido el proceso de evaluación continua del estado del paciente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Transfiere al paciente reconociendo los datos relevantes del estado inicial del mismo, de las incidencias observadas y de los cuidados prestados durante el trayecto.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se identifica la figura responsable de la recepción del paciente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han verificado los datos de identificación y el resultado de la valoración del paciente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las posibles contingencias ocurridas durante el desplazamiento al centro asistencial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado y aplicado los procedimientos de comunicación con el centro asistencial."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado el informe de asistencia inicial y traslado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha utilizado el sistema de Codificación Internacional de Enfermedades (CIE) en la emisión del informe basado en signos y síntomas del paciente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado el informe para el responsable del triaje hospitalario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado y aplicado los procedimientos de comunicación de la información relacionada con el traslado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los aspectos legales relacionados con el secreto profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han detallado los diferentes tipos de responsabilidad legal."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Apoyo psicológico en situaciones de emergencia",
+      "codigo": "0058",
+      "ects": null,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce las disfunciones del comportamiento, analizando los principios básicos de psicología general.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los distintos tipos de personalidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas en el desarrollo de la personalidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diferenciado las teorías sobre el desarrollo de la personalidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los mecanismos de defensa de la personalidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las circunstancias psicológicas causantes de disfunción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las posibles alteraciones del comportamiento ante situaciones psicológicas especiales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha transmitido serenidad y empatía."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica los primeros auxilios psicológicos a supuestos afectados por una emergencia o catástrofe, identificando y relacionando la técnica más apropiada a cada situación de crisis.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los comportamientos más comunes en los pacientes afectados por una emergencia o catástrofe."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las reacciones psicopatológicas más frecuentes en los pacientes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la psicopatología mostrada con la atención psicológica que ha de recibir el paciente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los criterios en la aplicación de los primeros auxilios psicológicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las respuestas emocionales según los factores que actúen."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las distintas estrategias de control emocional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las funciones de un equipo de ayuda psicosocial."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han empleado habilidades básicas para controlar situaciones de duelo, de agresividad, de ansiedad, de angustia o de emociones no deseadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado técnicas de primeros auxilios psicológicos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado situaciones de emergencia psiquiátrica que conllevan problemas de agresividad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica técnicas de apoyo psicológico orientadas a los equipos de intervención, relacionándolas con las reacciones psicológicas de los mismos:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de un cuadro de estrés, que pueden padecer los equipos de intervención."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el «síndrome del quemado»."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de traumatización vicaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los objetivos en el apoyo psicológico que recibe el equipo de intervención."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han explicado los fundamentos de las técnicas de apoyo psicológico a los equipos de intervención."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han detallado las técnicas de apoyo psicológico al equipo de intervención."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado técnicas de apoyo psicológico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica técnicas de comunicación a lo largo de todo el proceso, empleando distintos tipos de lenguaje y escucha en diferentes escenarios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado distintos elementos de intervención en la teoría de la comunicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido las diferencias entre los distintos canales comunicativos y los tipos de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y reproducido las técnicas de escucha y de respuesta en la asistencia a un paciente en diferentes escenarios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las connotaciones de la psicología del trabajo en equipo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido los principios básicos de la comunicación sanitario-paciente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las medidas de control que se necesitan donde existen dificultades de comunicación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han detectado posibles víctimas de malos tratos tras comunicación verbal y no verbal con los implicados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un protocolo de comunicación para informar sobre ayuda psicosocial."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Anatomofisiología y patología básicas",
+      "codigo": "0061",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce la estructura y la organización general del organismo humano, describiendo sus unidades estructurales y relaciones según especialización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha detallado la jerarquía de célula a sistema."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la estructura celular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la fisiología celular."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los tipos de tejidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detallado las características generales de los distintos tipos de tejidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enunciado los sistemas del organismo y su composición."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Localiza estructuras anatómicas, diferenciando los sistemas convencionales de topografía corporal.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la posición anatómica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los planos anatómicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aplicado la terminología de posición y dirección."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han enumerado y localizado las regiones corporales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han detallado y ubicado las cavidades corporales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica los aspectos generales de la patología, describiendo los elementos del proceso dinámico de enfermar y su relación con la clínica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el concepto de enfermedad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el proceso dinámico de la enfermedad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detallado los elementos constitutivos de la patología."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han citado las fases de la enfermedad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han enumerado las incidencias en el curso de la enfermedad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las actividades clínicas relacionadas con la patología."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado la terminología patológica básica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Reconoce los sistemas relacionados con el movimiento, la percepción, y la relación describiendo la estructura, el funcionamiento y las enfermedades del sistema nervioso, los sentidos y el aparato locomotor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado las bases anatomofisiológicas del sistema nervioso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la actividad nerviosa, muscular y sensorial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las bases anatomofisiológicas de los órganos de los sentidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las manifestaciones y enfermedades neurológicas más frecuentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la estructura de los huesos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado los huesos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han localizado los huesos en el esqueleto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los tipos y las características de las articulaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han distinguido los movimientos de las articulaciones."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha descrito la estructura y tipos de los músculos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han identificado los diferentes músculos de la anatomía."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han detallado las lesiones y las enfermedades osteoarticulares y musculares más frecuentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Reconoce los sistemas relacionados con la oxigenación y distribución de la sangre, describiendo la estructura, el funcionamiento y las enfermedades del aparato cardiocirculatorio, el aparato respiratorio y la sangre.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han detallado las bases anatomofisiológicas del sistema cardiocirculatorio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ubicado los principales vasos sanguíneos y linfáticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detallado los parámetros funcionales del corazón y la circulación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las enfermedades cardíacas y vasculares más frecuentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido las características anatomofisiológicas del aparato respiratorio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las manifestaciones patológicas y enfermedades respiratorias más frecuentes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han enumerado los componentes sanguíneos y su función."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han citado los trastornos sanguíneos más frecuentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Reconoce los sistemas relacionados con la absorción, metabolismo y eliminación de nutrientes, describiendo la estructura, el funcionamiento y las enfermedades del aparato digestivo y renal.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las bases anatomofisiológicas del aparato digestivo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detallado las características de la digestión y el metabolismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las manifestaciones patológicas y enfermedades digestivas más frecuentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las bases anatomofisiológicas del aparato renal."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el proceso de formación de orina."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las enfermedades renales y los trastornos urinarios más frecuentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Reconoce los sistemas que intervienen en la regulación interna del organismo y su relación con el exterior, describiendo la estructura, el funcionamiento y las enfermedades del sistema endocrino, el aparato genital y el sistema inmunológico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la función hormonal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las glándulas endocrinas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado las alteraciones endocrinas más frecuentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características anatómicas del aparato genital femenino."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado el ciclo ovárico y el ciclo endometrial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el proceso de la reproducción."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han citado las alteraciones patológicas más frecuentes del aparato genital femenino."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las características anatómicas y funcionales del aparato genital masculino."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han citado las alteraciones patológicas más frecuentes del aparato genital masculino."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han analizado las características del sistema inmunológico."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han citado las alteraciones de la inmunidad."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Logística sanitaria en emergencias",
+      "codigo": "0053",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Propone despliegues organizativos sanitarios en situaciones de emergencia, identificando los sectores asistenciales y las estructuras desplegadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los sistemas de protección civil, de emergencias médicas y de ayuda humanitaria internacional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los planes logísticos aplicados en catástrofes que han tenido lugar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido la sectorización de la zona de actuación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los límites de cada sector asistencial y sus funciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han enumerado los recursos personales y materiales existentes en cada área de trabajo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elegido el lugar del despliegue según las características del mismo y factores que intervienen."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado posibles escenarios de emergencias colectivas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los procedimientos de balizamiento y señalización."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los recursos humanos y materiales necesarios en función del escenario."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han definido las fases de alarma y aproximación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Estima el material de primera intervención necesario para la asistencia, relacionando la aplicación del material con el tipo de emergencia o catástrofe.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la estructura de la cadena de mando y sus funciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha delimitado el tipo y la cantidad de material sanitario en función de la emergencia o catástrofe y lugar de ubicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características técnicas de los contenedores a utilizar en caso de catástrofes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los contenedores para el transporte de material."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha distribuido el material de primera intervención atendiendo al código de colores recomendado por la Organización Mundial de la Salud."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado un mapa de la distribución del material de primera intervención, según sectores, indicando los colores recomendados por la Organización Mundial de la Salud."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha incluido en cada contenedor la relación de material que contiene."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Controla el suministro de recursos no sanitarios analizando los protocolos de intervención en una situación de emergencia colectiva o catástrofe.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de planificación y gestión del agua en situaciones de catástrofes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los métodos de potabilización del agua así como los métodos de análisis de potabilidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento de planificación y gestión de alimentos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha controlado la caducidad de los productos perecederos, así como su correcto envasado y almacenado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido el procedimiento de eliminación de excretas y de gestión de residuos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han detallado los riesgos relacionados con el suministro de agua y de víveres, y con la eliminación de residuos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los fundamentos y objetivos del proceso de desinfección, desinsectación y desratización."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Asegura las comunicaciones analizando el funcionamiento de los elementos de una red autónoma de comunicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las necesidades de comunicación entre los distintos operativos en el área del suceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado las posibles vías de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han operado y programado los equipos de comunicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido el sistema de comunicación compatible con los sistemas empleados por los distintos grupos operativos que intervienen en la catástrofe."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha empleado el lenguaje y las normas de comunicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha emitido información clara y concisa para facilitar la interpretación del mensaje."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito los procedimientos de comunicación con los centros de coordinación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Coordina la evacuación de víctimas entre distintas áreas asistenciales, identificando los objetivos y función de las norias de evacuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han explicado los objetivos de las norias de evacuación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enumerado los tipos de norias de evacuación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las funciones de cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las condiciones de utilización de las UVIs móviles en situaciones de catástrofe."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las funciones del responsable del puesto de carga de ambulancias (PCAMB)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las características del puesto de carga de ambulancias (PCAMB)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y registrado los datos necesarios para realizar la dispersión hospitalaria de los heridos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Atención sanitaria especial",
+      "codigo": "0056",
+      "ects": null,
+      "horas_minimas_boe": 150,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza operaciones de apoyo al equipo de salud en el soporte vital avanzado relacionándolas con las patologías de emergencia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el material de emergencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la utilidad, funcionamiento y el manejo de los equipos electromédicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los equipos y el material según las diferentes situaciones de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha colaborado en el aislamiento de la vía aérea."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado el material necesario para la ventilación mecánica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha colaborado en la canalización de la vía venosa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado y preparado el material y equipos de monitorización."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha seleccionado y preparado el material para la realización del registro electrocardiográfico."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha determinado la saturación de oxígeno del paciente por pulsioximetría."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza operaciones de preparación y administración de la medicación de emergencia, interpretando las especificaciones farmacéuticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la medicación de emergencia de uso más frecuente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las indicaciones de la medicación en las situaciones de emergencia sanitaria."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enumerado los efectos adversos de la medicación de uso mas frecuente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han enumerado las diferentes vías de administración."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la preparación de la medicación según la vía de administración."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado operaciones de administración de la medicación sobre maniquís de entrenamiento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Efectúa procedimientos para prestar atención a los pacientes con lesiones por traumatismos y otros agentes físicos, analizando los protocolos de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han explicado los picos de mortalidad tras un accidente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los procedimientos para la valoración primaria y secundaria del accidentado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las lesiones atendiendo a la biomecánica de los accidentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los diferentes tipos de vendaje relacionándolos con su función."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado diferentes vendajes según la localización de la lesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado los protocolos de limpieza y desinfección de las heridas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado los cuidados iniciales ante un paciente con lesiones por otros agentes físicos (radiaciones, electricidad, congelaciones)."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han clasificado las quemaduras atendiendo a su profundidad y a su extensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica los procedimientos para prestar atención a los pacientes con lesiones por agentes químicos y biológicos, analizando los protocolos de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los diferentes agentes tóxicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los agentes tóxicos con sus efectos nocivos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las medidas iniciales ante un paciente intoxicado, dependiendo de la naturaleza, cantidad y vía de entrada del agente tóxico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los diferentes agentes biológicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado las vías de exposición y las lesiones que producen."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha especificado la utilidad de los diferentes materiales de bioseguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la técnica de descontaminación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los signos y síntomas de las picaduras y mordeduras de animales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica los procedimientos para prestar atención a los pacientes con patología orgánica de urgencia, analizando los protocolos de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la patología cardiovascular de urgencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el protocolo de actuación en las emergencias cardiovasculares."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la patología respiratoria de urgencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han especificado los protocolos de actuación en las emergencias respiratorias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito la patología neurológica de urgencia."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado el protocolo de actuación en las emergencias neurológicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Interviene en situaciones de parto inminente analizando los síntomas que presenta la embarazada y describiendo los procedimientos de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han enumerado las fases del parto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los signos de parto inminente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y aplicado las maniobras de apoyo al parto, en las fases de expulsión y alumbramiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los cuidados iniciales al neonato y la madre."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principios de higiene para evitar la aparición de infecciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido complicaciones en la evolución del parto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Planes de emergencia y dispositivos",
+      "codigo": "0059",
+      "ects": null,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aporta datos para la elaboración de planes de emergencia describiendo sus objetivos, componentes y funciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito riesgo, daño y vulnerabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha definido el plan de emergencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los objetivos generales de un plan de emergencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el esquema de la estructura general de un plan de emergencias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado cada estructura jerárquica con su función establecida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las funciones de los órganos directivos, operativos y de apoyo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han concretado las características del grupo operativo sanitario y los requerimientos en la organización del transporte sanitario de heridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los objetivos de la actualización de un plan de emergencias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha establecido el procedimiento de revisión y evaluación de un plan de emergencias."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han fijado los indicadores de calidad y los resultados deseables de un plan de emergencia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora mapas de riesgo, caracterizando posibles riesgos naturales, humanos y tecnológicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los índices de riesgo, de probabilidad y de daño."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detallado las posibles consecuencias sobre la población de los riesgos de origen natural, humano y tecnológico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los riesgos sobre la población y los bienes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado, valorado y catalogado los riesgos detectados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha ubicado en un plano cada riesgo detectado, según el procedimiento establecido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han delimitado en el plano las áreas de actuación de los grupos de intervención."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han enumerado los medios propios y ajenos de un plan de emergencias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado los riesgos catalogados con las actuaciones del grupo operativo sanitario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Activa un supuesto plan de emergencias, describiendo sus características y requerimientos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha detallado el procedimiento de recepción de información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los niveles de activación de un plan de emergencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las fases de activación de un plan de emergencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha esquematizado el organigrama de activación de un plan de emergencias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la estructura de coordinación de un plan emergencias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han detallado las características de la información a la población."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la estructura del plan operativo de emergencias sanitarias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Diseña un dispositivo de riesgos previsibles describiendo el protocolo de elaboración.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los objetivos del equipo sanitario en un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los componentes básicos de un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enumerado los diferentes tipos de dispositivos de riesgos previsibles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la información necesaria para realizar el análisis de la concentración a cubrir."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han concretado los objetivos a cubrir de un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado eventos con grandes concentraciones de población."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los riesgos potenciales en grandes eventos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado la hipótesis más probable y la más peligrosa en diferentes eventos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los recursos materiales y humanos necesarios del dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha descrito el protocolo asistencial y de evacuación del dispositivo de riesgos previsibles."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Ejecuta un supuesto de un dispositivo de riesgo previsible, describiendo los protocolos de activación y desactivación del mismo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los objetivos fundamentales de la fase de ejecución de un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los elementos logísticos necesarios para la ejecución de un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido la estructura, funciones y responsabilidades de los profesionales que intervienen en la ejecución de un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido horarios y turnos de trabajo en la puesta en marcha de un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido los protocolos operativos de un dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido la uniformidad de los profesionales que intervienen en el proceso y se han fijado las normas de disciplina internas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito el procedimiento de activación del dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha desarrollado la fase de desactivación del dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los objetivos generales de la desactivación del dispositivo de riesgos previsibles."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha esquematizado el procedimiento de análisis del desarrollo del dispositivo de riesgos previsibles y de la elaboración de la memoria."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Tele emergencias",
+      "codigo": "0060",
+      "ects": null,
+      "horas_minimas_boe": 35,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Utiliza sistemas gestores de despacho de centros coordinadores de emergencia, identificando las funciones y elementos del sistema despacho de llamadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los objetivos de un centro coordinador de emergencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enumerado los elementos que componen un centro de coordinación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los distintos tipos de recursos de los que dispone una central de coordinación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las características de un centro de regulación integrado 112 y de un centro de regulación médica 061."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido las funciones y elementos de un sistema de despacho para gestión de centros coordinadores de emergencias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las diferentes plataformas tecnológicas existentes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha manejado el sistema de despacho del centro coordinador."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado la conexión, la comprobación de las intercomunicaciones entre puestos y la salida del sistema, entre otros."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han valorado las advertencias del sistema recibidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Establece la comunicación en un sistema de transmisión integrado, describiendo los elementos del proceso de comunicación interpersonal.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los diferentes canales de comunicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las barreras que dificultan el proceso de comunicación en radiocomunicación y transmisión radiofónica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los diferentes medios de transmisión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los tipos de onda y los elementos de una estación de radio."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido el lenguaje radiofónico y la comunicación verbal y no verbal, a través de medios no presenciales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado técnicas de recepción de mensajes orales, de comunicación y de interrogatorio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha utilizado el lenguaje y normas de comunicación vía radio."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido comunicaciones en un sistema de transmisión integrado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han solucionado problemas básicos surgidos en un sistema de transmisión."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han mantenido y actualizado los elementos de apoyo informativo de la Central de Comunicaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Recepciona demandas de emergencias, describiendo el proceso de recepción e identificando los datos significativos de la demanda.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los procedimientos de actuación en el proceso de recepción de llamadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los datos relativos a la localización del suceso, identificación del alertante, riesgos añadidos, entre otros, generándose una demanda."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito la estructura y los campos de un formulario informático de demanda."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la toma de datos de la alerta con el programa informático."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha localizado la dirección de la demanda utilizando los sistemas cartográficos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las características significativas de cada uno de los planes de demanda de emergencias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado los diferentes tipos de demanda de emergencias de acuerdo con un algoritmo de decisiones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cumplimentado los formularios de gestión de demanda de emergencias empleando las TIC."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han categorizado y priorizado las demandas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han interpretado los tipos de respuesta del sistema gestor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Valora la demanda de asistencia sanitaria describiendo los protocolos de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha categorizado la demanda asistencial, según la previsible gravedad del paciente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los tipos de respuesta con o sin necesidad de movilización de recursos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado al facultativo del centro coordinador al que hay que transferir la escucha."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha cumplimentado el formulario correspondiente en el sistema gestor."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el recurso asistencial más adecuado atendiendo a la demanda sanitaria."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito el seguimiento de la unidad en situación y tiempo hasta la conclusión del servicio."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han recabado los datos clínicos y códigos de resolución."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado la cumplimentación del formulario informático en el sistema gestor, la finalización de la asistencia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664061",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708061",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM061",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

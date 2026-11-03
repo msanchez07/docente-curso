@@ -1,0 +1,3293 @@
+{
+  "id": "gs-patronaje-y-moda",
+  "denominacion": "Patronaje y Moda",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Servicios Socioculturales y a la Comunidad",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "PM",
+  "rd": "Real Decreto 954/2008, de 6 de junio, por el que se establece el título de Técnico Superior en Patronaje y Moda y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-10619",
+  "modulos": [
+    {
+      "nombre": "Gestión de la calidad, prevención de riesgos laborales y protección ambiental",
+      "codigo": "0165",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Define actuaciones para facilitar la implantación y mantenimiento de los sistemas de aseguramiento de la calidad interpretando los conceptos y factores básicos de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los fundamentos y principios de los sistemas de aseguramiento de la calidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los requisitos legales establecidos en los sistemas de gestión de la calidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los requisitos y el procedimiento que se deben incluir en una auditoría interna de la calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito el soporte documental y los requisitos mínimos que deben contener los documentos para el análisis del funcionamiento de los sistemas de calidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado el contenido de las normas que regulan el aseguramiento de la calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha controlado la documentación de un sistema de aseguramiento de la calidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito el procedimiento estándar de actuación en una empresa para la certificación en un sistema de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Define actuaciones para facilitar la implantación y mantenimiento de los modelos de excelencia empresarial interpretando los conceptos y factores básicos de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los conceptos y finalidades de un sistema de calidad total."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la estructura organizativa del modelo EFQM identificando las ventajas e inconvenientes del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han detectado las diferencias del modelo de EFQM con otros modelos de excelencia empresarial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los requisitos y el procedimiento que se deben incluir en una autoevaluación del modelo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito metodologías y herramientas de gestión de la calidad (5s, gestión de competencias y gestión de procesos, entre otras)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las metodologías y herramientas de gestión de la calidad con su campo de aplicación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los principales indicadores de un sistema de calidad en las industrias del sector."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han seleccionado las posibles áreas de actuación en función de los objetivos de mejora indicados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han relacionado objetivos de mejora caracterizados por sus indicadores con las posibles metodologías o herramientas de la calidad susceptibles de aplicación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha planificado la aplicación de la herramienta o modelo."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han elaborado los documentos necesarios para la implantación y seguimiento de un sistema de gestión de la calidad."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha descrito el procedimiento estándar de actuación en una empresa para la obtención del reconocimiento a la excelencia empresarial."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Define actuaciones para facilitar la implantación y mantenimiento de los sistemas de la prevención de riesgos laborales interpretando los conceptos y factores básicos de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los fundamentos, principios y requisitos legales establecidos en los sistemas de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los elementos que integran un plan de emergencia en el ámbito de la empresa."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha explicado mediante diagramas y organigramas la estructura funcional de la prevención de riesgos laborales en una empresa tipo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los requisitos y el procedimiento que se deben incluir en una auditoría interna de la prevención de riesgos laborales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los requisitos mínimos que debe contener el sistema documental de la prevención de riesgos laborales y su control."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado los equipos de protección individual con relación a los peligros de los que protegen."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las operaciones de mantenimiento, conservación y reposición, de los equipos de protección individual."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha descrito la forma de utilizar los equipos de protección individual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito las técnicas de promoción de la prevención de riesgos laborales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han evaluado los riesgos de un medio de producción según la norma."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han relacionado los factores de riesgo con las técnicas preventivas de actuación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define actuaciones para facilitar la implantación y mantenimiento de los sistemas de gestión ambiental interpretando los conceptos y factores básicos de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los fundamentos y principios de los sistemas de gestión ambiental."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los requisitos legales establecidos en los sistemas de gestión ambiental."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los requisitos y el procedimiento que se deben incluir en una auditoría interna."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los requisitos mínimos que deben contener los documentos para el análisis del funcionamiento de los sistemas de gestión ambiental."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado el contenido de las normas que regulan la protección ambiental."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado procedimientos para el control de la documentación de un sistema de protección ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las técnicas de promoción de la reducción de contaminantes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha descrito el programa de control y reducción de contaminantes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han establecido pautas de compromiso ético con los valores de conservación y defensa del patrimonio ambiental y cultural de la sociedad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Reconoce los principales focos contaminantes que pueden generarse en la actividad de las empresas del sector describiendo los efectos de los agentes contaminantes sobre el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha representado mediante diagramas el proceso productivo de una empresa tipo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principales agentes contaminantes atendiendo a su origen y los efectos que producen sobre los diferentes medios receptores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elaborador el inventario de los aspectos medioambientales generados en la actividad industrial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado los diferentes focos en función de su origen proponiendo medidas correctoras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los límites legales aplicables."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las diferentes técnicas de muestreo incluidas en la legislación o normas de uso para cada tipo de contaminante."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las principales técnicas analíticas utilizadas, de acuerdo con la legislación y/o normas internacionales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha explicado el procedimiento de recogida de datos más idóneo respecto a los aspectos ambientales asociados a la actividad o producto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado programas informáticos para el tratamiento de los datos y realizado cálculos estadísticos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional, académica y cotidiana, contenida en todo tipo de discursos orales, emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de mensajes en lengua estándar relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes directos o emitidos en cualquier soporte en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica contenida en distintos discursos orales en lengua estándar, relacionada con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el punto de vista y la actitud del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en dichos mensajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprendido adecuadamente mensajes en lengua estándar en ambientes con contaminación acústica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional, lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende mensajes escritos, de naturaleza profesional, académica y cotidiana, de relativa dificultad, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de textos específicos de su ámbito social, profesional o académico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica de textos, de diferente naturaleza, relativos a su profesión, y contenidos en distintos soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un texto sin entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han leído y comprendido, de manera autónoma, textos relacionados con el sector con la velocidad y estilo de lectura propia del nivel competencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado textos extensos, y de cierta complejidad, relacionados o no con su especialidad, pudiendo realizar varias lecturas del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado instrucciones, con distintos niveles de dificultad, y mensajes técnicos recibidos a través de soportes digitales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han traducido textos de cierta complejidad, utilizando material de apoyo en caso necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han emitido mensajes generales propios de sector y de la vida cotidiana, utilizando nexos y estrategias de interacción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha intercambiado con fluidez información específica y detallada utilizando estructuras de una complejidad acorde al nivel competencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y aplicado los registros adecuados para la emisión del mensaje, así como protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado presentaciones, bien estructuradas, sobre temas de su ámbito profesional, haciendo uso de los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito y secuenciado oralmente un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interaccionado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha respondido a preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta documentos e informes, propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito textos claros y detallados sobre una variedad de temas relacionados con su profesión, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, utilizando vocabulario específico y protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información con corrección, precisión, con cohesión y coherencia, solicitando y/o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado textos mediante apoyos visuales y claves lingüísticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito cartas, formales e informales, empleando las fórmulas de cortesía establecidas y el vocabulario específico para la elaboración de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resumido diferentes tipos de documentos escritos, utilizando sus propios recursos lingüísticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Materiales en textil, confección y piel",
+      "codigo": "0276",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los materiales utilizados en productos de confección industrial determinando sus propiedades mediante la realización de las pruebas y ensayos adecuados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características y propiedades de las materias y productos textiles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las materias textiles según su naturaleza."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han medido los parámetros que determinan las propiedades de las materias y productos, utilizando instrumentos y procedimientos adecuados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los procedimientos establecidos para la identificación de materias y productos textiles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los criterios ha seguir para la selección de las materias según el producto que se pretende fabricar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los defectos más usuales en las materias textiles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reconocido la normativa de simbología de las materias textiles."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los usos y aplicaciones de las materias textiles."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los procesos productivos utilizados para la fabricación de los distintos productos y materiales textiles."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Reconoce muestras de materias y productos textiles, seleccionando los procedimientos establecidos de ensayo y control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la naturaleza de las materias y productos textiles por medio de ensayos físicos y químicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las características estructurales y de comportamiento de las materias y productos textiles."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las propiedades de las materias y productos textiles en una muestra expresándolas en las unidades adecuadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado los resultados obtenidos en los márgenes de aceptación y tolerancia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han operado con los medios, instrumentos y materiales de identificación y medición determinados en los procedimientos establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manipulado y medido los parámetros con seguridad, pulcritud y de manera metódica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica pieles y cueros en productos de confección, determinando calidades, tipos y tratamientos recibidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el proceso de curtición de pieles y cueros señalando los productos de entrada y salida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado por procedimientos adecuados las propiedades y características de las pieles y cueros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las propiedades de las pieles y cueros con los procesos de fabricación o tratamientos que los han originado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han distinguido los tipos de pieles y su relación con las características de distintos artículos que se pretenden fabricar"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descritos un proceso de calidad tipo de piel y cuero."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado y analizado «pautas de inspección» relativa al control de pieles y cueros."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han señalado los defectos más comunes en cueros y pieles, debido a su naturaleza y proceso de transformación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado las repercusiones de los defectos y anomalías más frecuentes que inciden en las características del producto final."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha relacionado el elemento complementario con su función."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha observado la adecuación de los elementos complementarios al modelo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Selecciona tratamientos, aprestos y acabados de materias y productos, reconociendo las propiedades o características que se modifican y las distintas calidades que obtenemos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los procedimientos de aprestos y acabados, indicando las materias empleadas y las características que confieren a las materias y productos textiles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los criterios que es preciso aplicar para la selección de los aprestos y acabados que deben tener las materias textiles en relación a las características deseadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han deducido en las materias y productos textiles los tratamientos a los que han sido sometidos y las características para conseguirlos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las propiedades y prestaciones que confieren los procesos de acabados a un producto textil."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha diferenciado el antes y el después del proceso sobre muestras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica los textiles técnicos y otras materias específicas describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las áreas más representativas donde intervienen los textiles técnicos (automoción, geotextiles, agricultura, construcción, protección personal, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido sus usos y aplicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de los textiles técnicos en el sector de la confección."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido las funciones de los llamados productos de vestir inteligentes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado nuevas tendencias en productos textiles y piel."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Determina las condiciones de conservación y almacenaje de materias textiles, pieles y cueros, analizando su influencia sobre las características de componentes y productos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado la naturaleza de las materias, productos textiles, pieles y cueros con las condiciones ambientales de conservación y almacenamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los distintos tipos de materias, productos, pieles y cueros en su embalaje o presentación comercial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han deducido las condiciones de conservación (temperatura, luz, humedad, ventilación) que debe tener un almacén para mantener las materias y productos textiles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han indicado los tipos de embalajes, presentaciones comerciales de las materias y productos textiles para su transporte y almacenamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado la simbología de conservación e instrucciones de uso de las materias y productos textiles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado el tipo de materia, los productos textiles, pieles y cueros a partir de la simbología de etiquetaje normalizada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las características funcionales y condiciones operativas de seguridad de los medios y sistemas de transporte, manipulación empleadas en el almacenaje de materias, productos textiles, pieles y cueros."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas en confección",
+      "codigo": "0277",
+      "ects": null,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Corta materias textiles y de piel identificando los parámetros de control y justificando los equipos y útiles empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han tenido en cuenta las especificaciones de la ficha técnica del producto a transformar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha tenido en cuenta las características del material en el ajuste de parámetros de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la marcada según indicaciones técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha procedido al extendido del tejido o preparado de la piel."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han observando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha controlado la calidad del proceso realizado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha preparado las prendas cortadas para su entrada al proceso de ensamblaje."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara maquinaria y equipos para el proceso de confección identificando los parámetros de control y justificando los recursos seleccionados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han tenido en cuenta las especificaciones de la ficha técnica del producto que es preciso transformar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han tenido en cuenta las características de los materiales y las indicaciones en el ajuste de los órganos operadores de las máquinas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado el correcto funcionamiento de los sistemas de seguridad de los equipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha organizado el puesto de trabajo, incidiendo en la ergonomía y en la seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Ensambla materias textiles y de piel relacionando la información del proceso con las operaciones para su ejecución y control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes partes del artículo que se pretende confeccionar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha tenido en cuenta la forma y dimensiones de las piezas para la optimización del proceso de cosido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las puntadas y costuras especificadas en la ficha técnica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han observando las normas de seguridad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las fornituras correspondientes según diseño del artículo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el control de calidad del artículo resultante del proceso de confección."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza operaciones de acabado de artículos de textil o piel relacionando la información del proceso con las operaciones para su ejecución y control.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la información técnica del proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los equipos y útiles necesarios para el proceso de planchado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha adecuado el equipo a las características del material que es preciso planchar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el correcto funcionamiento de los sistemas de seguridad instalados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ajustado los parámetros de control del proceso (temperatura, presión, tiempo) especificados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el control de calidad del proceso terminado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Prepara artículos textiles y de piel para su almacenamiento y expedición, relacionando los protocolos de manipulación e identificación con la normativa de etiquetado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las diferentes etiquetas de composición de materiales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes etiquetas de manipulación y conservación del producto terminado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han fijado las etiquetas correspondientes al artículo terminado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el control de calidad final."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha procedido al embolsado manual o mecánico del artículo textil."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el embalado a mano de prendas de piel."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Procesos en confección industrial",
+      "codigo": "0278",
+      "ects": null,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Reconoce flujos de materias, productos e información en la industria de la confección, el calzado y/o la marroquinería, analizando los procesos productivos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado para cada proceso las distintas líneas de producción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito los distintos tipos de suministros exteriores en función de los materiales y productos suministrados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado los distintos sistemas de distribución interna de los materiales y productos en los procesos industriales de confección."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito los distintos tipos de distribución externa de uso generalizado en el sector en función del tipo de productos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la documentación que genera el proceso productivo de confección industrial, del calzado y/o marroquinería."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina procesos de confección industrial de textil y piel, analizando la secuencia y justificando variables del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las características de los materiales que inciden en los procesos de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las máquinas y equipos necesarios en los distintos procesos de corte, ensamblaje, acabado y presentación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el estudio de la marcada atendiendo a las características y propiedades de los materiales que se pretende transformar y el equipo y maquinaria disponibles."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado el sistema de extendido del colchón."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las operaciones de extendido y corte del modelo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las operaciones de preparación para el ensamblaje del modelo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han especificado las operaciones de confección y montaje del artículo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha representado el diagrama de las operaciones del proceso productivo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han representado las máquinas y herramientas de las fases de los procesos de fabricación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han calculado y analizado los tiempos y métodos de trabajo de los procesos de fabricación."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han determinado las especificaciones técnicas de trabajo y tolerancias de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Determina procesos de confección industrial de calzado y marroquinería analizando la secuencia y justificando variables del proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las características, propiedades y defectos de los materiales que inciden en los procesos de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las operaciones y la secuencia de los procesos de corte, ensamblaje, acabado y presentación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las máquinas y equipos necesarios de los procesos de corte, ensamblaje, acabado y presentación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el estudio de la marcada y las especificaciones de los materiales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el sistema de corte según modelo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han especificado las operaciones de preparación para el ensamblaje del modelo atendiendo a sus características y particularidades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han especificado las operaciones de unión y montaje del artículo en las instrucciones de trabajo o listas de fases."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha representado el diagrama de las operaciones del proceso productivo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han calculado y analizado los tiempos y métodos de trabajo de los procesos de fabricación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han determinado las especificaciones técnicas de trabajo y tolerancias de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica los elementos de maquinaria e instalaciones de textil, confección y piel analizando su funcionamiento y los parámetros de trabajo más significativos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado instalaciones-tipo según el tipo de transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las máquinas según el tipo de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado los elementos del equipamiento e instalaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la normativa (UNE, ISO) sobre tipos de puntadas y costuras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado las máquinas de confección según el tipo de puntada, arrastres, accesorios y guías, entre otros."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los elementos operadores de las máquinas de confección industrial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito el funcionamiento de los elementos operadores de las máquinas de confección industrial."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha analizado los parámetros que determinan las características de los diferentes tipos de puntadas y materiales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha relacionando la función de cada elemento con la influencia que ejerce sobre el conjunto."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha determinado la adecuación de la aguja y el título o número de los hilos de coser."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha determinado la calibración de otros elementos operadores que influyen en las características de las puntadas."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha analizado la documentación del proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Distribuye en planta máquinas y equipos, relacionando la capacidad de producción y su disposición con el proceso de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha calculado el personal y número de máquinas necesario según una producción determinada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado el ritmo de trabajo y sus tolerancias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el equilibrado de las líneas de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la normativa de representación de máquinas, equipos y personal."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado esquemas de implantación en planta de máquinas y equipos relacionándolos con el personal y con la producción."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado esquemas del recorrido de los materiales en la distribución en planta de máquinas y personal."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han tenido en cuenta los espacios necesarios para el funcionamiento y para cumplir las condiciones de seguridad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Determina costes de productos de confección industrial, analizando alternativas de fabricación y aplicando criterios económicos y ambientales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los tipos de costes que inciden en el proceso de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los factores técnicos y organizativos que determinan los costes de producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han calculado los costes directos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han repercutido los costes indirectos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta los criterios de distribución."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han cumplimentado las fichas de escandallo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado los costes de prendas y artículos a partir de los tiempos y máquinas definidos en propuestas de fabricación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado la viabilidad técnica y económica de diferentes propuestas de producción."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Patronaje industrial textil piel",
+      "codigo": "0285",
+      "ects": null,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Elabora tablas de medidas según tipos de patrón y tallas normalizadas analizando los puntos anatómicos que intervienen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las medidas que identifican la talla en cada prenda."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los puntos anatómicos que intervienen en la creación de diferentes patrones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las principales características físicas de cada grupo (bebé, niños, adolescente, jóvenes y adultos)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han estimado los desahogos y holguras en función del material y tipo de prenda."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado cuadros de tallas de patronaje en función de las configuraciones corporales establecidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las tallas normalizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado cuadros de tallas de patronaje a partir de tablas normalizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora patrones del modelo en la talla base mediante herramientas manuales e informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado medidas, técnicas, materiales y acabados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la tabla de medida de patronaje con el patrón que se ha de trazar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contemplado los desahogos y holguras en función del material y del tipo de prenda."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han dibujado las líneas del patrón siguiendo las normas de trazado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la concordancia de las medidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la situación de los puntos de ajuste."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han marcado las señales requeridas en el proceso de unión de piezas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cortado los patrones siguiendo los perfiles y señales marcados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han incorporado las especificaciones de los patrones a la documentación técnica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Transforma patrones base aplicando variaciones formales y volumétricas mediante herramientas manuales e informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el tipo de transformación que requiere el modelo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado el patrón base de acuerdo al tipo de transformación que se va ha realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la técnica más adecuada para transformar el patrón."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado al patrón las variaciones necesarias para obtener el modelo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha obtenido el patrón del modelo en la talla prototipo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado la concordancia de las medidas y los puntos de adaptación y unión."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han marcado las señales requeridas en el proceso de unión de piezas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han modificado los patrones en función de la prueba del prototipo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Elabora modelos y colecciones modifiando patrones del modelo prototipo mediante herramientas manuales e informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los patrones para la obtención de nuevos modelos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado variaciones necesarias al patrón para conseguir nuevos modelos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la técnica más adecuada para transformar el patrón."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la concordancia de las medidas y los puntos de adaptación y unión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han marcado las señales requeridas en el proceso de unión de piezas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los patrones principales, patrones secundarios y patrones auxiliares."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de patronaje y moda",
+      "codigo": "0287p",
+      "ects": null,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecer."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la implementación definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la implementación o ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Moda y tendencias",
+      "codigo": "0264",
+      "ects": null,
+      "horas_minimas_boe": 50,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Justifica las razones del hombre para vestirse analizando sus motivaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han justificado las razones relacionadas con la protección como motivación para vestirse."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado razones como el pudor y el adorno como motivación para vestirse."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las razones de índole social (posición social, integración, diferenciación de los demás, entre otras) como motivación para vestirse."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado otras razones como motivaciones para vestirse."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica las características de la indumentaria a lo largo de la historia humana, relacionándolas con la evolución histórica, con los estilos de vestir y con las tendencias del momento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado la historia de la indumentaria con la de la humanidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado diseños de prendas de vestir de algunos de los diseñadores de moda actuales en función de criterios estilísticos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la tendencia en la obra de diferentes autores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el papel de la mujer en la estructura industrial y social y su repercusión en la moda del vestir."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las características básicas del diseño de alta costura y «prêt-à-porter»."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han valorado las ventajas e inconvenientes en la confección de diseños de alta costura y «prêt-à-porter»."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica los factores que influyen en la evolución de la indumentaria relacionándolos con los avances tecnológicos y con el concepto de moda a lo largo de la historia.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los fenómenos industriales con la organización de los procesos industriales y la aparición de nuevas tecnologías."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la aparición de la máquina de coser y su influencia en la transformación del vestido y su proceso de confección."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el avance tecnológico con la aparición de las diferentes temporadas anuales de modo de vestir, apareciendo el concepto «moda»."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los acontecimientos tecnológicos y los cambios en las maneras, modos y estilos de vestir."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha razonado la aparición del diseñador de moda y sus funciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la organización actual de la moda, las temporadas y las pasarelas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Elabora «paletas» de color y textura para su aplicación a la confección, justificando la composición de las mismas en relación al propósito buscado en cada caso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los colores según criterios de armonía y contraste."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los métodos adoptados internacionalmente para la catalogación e identificación de los colores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elaborado escalas cromáticas que se pueden aplicar a un artículo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han efectuado composiciones de coloridos inspirados en un tema elegido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las composiciones en diferentes materiales y texturas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido las diferentes texturas, coloridos y motivos empleados en los diseños."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado programas informáticos sobre el tratamiento del color."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Esboza prendas de vestir, justificando la gama de color elegida y la combinación de texturas seleccionada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han preparado los utensilios y los materiales necesarios para dibujar diseños de moda."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado un motivo inspirador del diseño que se debe realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha efectuado un esbozo del futuro diseño."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han compuesto varias combinaciones y formas acordes al motivo del diseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado diferentes combinaciones de texturas, colores y motivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elegido la combinación de texturas, colores y motivos apropiada a la tendencia imperante en el momento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han respetado las proporciones antropométricas en la elaboración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el esbozo con pulcritud y limpieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica tendencias de moda valorando la información relevante en relación al sector de población al que se dirige y a la temporada considerada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características de los materiales asociados a cada tendencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la tendencia con el sector al que va dirigido (infantil, señora, joven y otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las tendencias con el contexto social imperante (deportivo, tiempo libre, etiqueta, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los principales cauces para obtener la información de las próximas tendencias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha extraído información de diversas fuentes (revistas, noticiarios, Internet, exposiciones y otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un dossier sobre la información obtenida acerca de tendencias y composiciones de colores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Organización producción confección",
+      "codigo": "0280",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Determina el aprovisionamiento de materias primas y componentes analizando las necesidades productivas e identificando los recursos necesarios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las necesidades de materias primas y componentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha calculado la frecuencia del abastecimiento en relación a los lotes de producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado la localización y tamaño de los stocks."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los medios de transporte internos y la ruta que deberán seguir."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las características de los transportes externos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado el plan de aprovisionamiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han contemplado tiempos de suministro."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Gestiona la recepción de materias primas, el almacenamiento de componentes y la expedición de productos, justificando los medios y procedimientos establecidos para su manipulación y distribución interna y externa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los procedimientos para la recepción de materias primas, componentes y productos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las condiciones de conservación y almacenaje de materias, productos textiles, pieles y cueros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha tenido en cuenta la normativa vigente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la simbología especifica para la conservación y almacenaje de materias y productos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado el método de almacenaje con las características del producto y el espacio disponible."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha determinado el tipo de embalaje y el sistema de etiquetado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los riesgos para la seguridad y salud de los trabajadores y protección del medio ambiente relacionado con la recepción, almacenamiento y expedición de productos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha establecido el método para el control del inventario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Elabora programas de fabricación justificando los recursos asignados en relación con la capacidad productiva.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado la cantidad de prendas que es preciso confeccionar con el plazo de ejecución y la capacidad de producción necesaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el tamaño óptimo de los lotes de producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los equipos, utillajes e instalaciones disponibles que respondan al procedimiento establecido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado la ruta que debe seguir el material en proceso."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la capacidad de los equipos disponibles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la relación entre la carga y capacidad total de los recursos utilizados"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los caminos críticos de la producción."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado la producción por unidad de tiempo para satisfacer la demanda en el plazo previsto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han asignado los recursos humanos capaces de realizar las operaciones establecidas en el proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Gestiona documentación de programación de la producción identificando, organizando y procesando la información relevante.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los documentos necesarios para programar y controlar la producción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los programas informáticos de ayuda a la organización y control de la producción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han generado los diferentes documentos de trabajo (hojas de ruta, lista de materiales, fichas técnicas, hojas de instrucciones y control estadístico del proceso, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha organizado y archivado la documentación técnica consultada y/o generada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Gestiona el control de la producción relacionando la técnica empleada con los métodos para el seguimiento de la fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el modelo de control de la producción más adecuado para el proceso de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el método de seguimiento de la producción que permite optimizar el control de la misma así como el tiempo de reacción en caso de que fuera necesario."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado modelos de reprogramación para periodos de especial disposición de recursos o modificación de la demanda."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito estrategias de supervisión y control de la producción."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Gestiona los programas de mantenimiento de las instalaciones productivas, analizando su influencia en la fiabilidad de la producción.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los tipos de mantenimiento industriales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el mantenimiento requerido por una línea de producción tipo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han diseñado fichas de control de mantenimiento de equipos, máquinas e instalaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha planificado el mantenimiento de todas las máquinas, equipos e instalaciones de una línea de producción tipo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el mantenimiento de las máquinas del aula/taller según una planificación determinada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha evaluado un mantenimiento preventivo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Análisis diseños textil piel",
+      "codigo": "0283",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece criterios para el diseño de artículos en textil y piel, calzado y marroquinería, relacionándolos con las características funcionales, estéticas y técnicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las fuentes de información sobre tendencias de moda."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han establecido parámetros que definen su línea, estilo y el segmento de mercado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las características funcionales de los productos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han especificado las características técnicas de los productos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Justifica la viabilidad del producto relacionando las posibilidades de fabricación con el cumplimiento de las condiciones de diseño.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los criterios que permiten medir la satisfacción de los clientes (diseño, calidad, precio, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha tenido en cuenta la función social y de uso del producto en relación con el segmento de mercado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado alternativas de producción en función de la calidad de los materiales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado alternativas de fabricación en función de criterios económicos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica los componentes de artículos en textil y piel, calzado y marroquinería, aplicando convencionalismos de representación y programas de diseño.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los útiles, soportes y formatos más adecuados para la realización de los planos, croquis y esquemas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha representado el conjunto o volumen del modelo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descompuesto el modelo en las formas planas correspondientes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han utilizado escalas y formatos normalizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha acotado de acuerdo a las normas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las normas sobre simbología de puntadas y costuras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han incorporado indicaciones y leyendas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han elaborado listados de componentes especificando los elementos internos y externos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han incorporado especificaciones para la fabricación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Modifica el diseño de artículos en textil y piel, calzado y marroquinería, aplicando criterios estéticos y funcionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las fuentes de información útiles sobre las variaciones de moda."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han propuesto diferentes variaciones de diseño a partir de artículos tipo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los materiales y las fornituras de acuerdo a las variaciones propuestas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido técnicamente las variaciones de un modelo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han representado las modificaciones del diseño."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Elaboración de prototipos",
+      "codigo": "0284",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Define las fases para la obtención de prototipos determinando las operaciones y sistemas de confección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el diseño técnico de la prenda o artículo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los materiales para la elaboración de los prototipos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la lista de fases de las operaciones para la elaboración de los prototipos utilizando fichas técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las máquinas, accesorios y herramientas en función del modelo y del material con el que se elaborará el prototipo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora prototipos verificando el ajuste de los patrones en el proceso de confección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han verificado los estudios del corte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha obtenido el prototipo con las técnicas y operaciones especificadas (puntadas y costuras de ensamblaje, complementos y fornituras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elaborado tablas de control de las medidas de los prototipos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han evaluado los prototipos en función de las medidas previstas con la prenda terminada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los defectos de elaboración de los prototipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han listado las correcciones de los prototipos para su rectificación en los patrones correspondientes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Define criterios y procedimientos para evaluar prototipos elaborando fichas técnicas de control calidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado fichas de control para la valoración de los prototipos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado parámetros y criterios para la valoración de los prototipos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido los equipos y los instrumentos de control."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las desviaciones y defectos en el proceso de elaboración de los prototipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Verifica el control de calidad de los prototipos realizando las pruebas correspondientes sobre maniquí o modelo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado que el acoplamiento de la prenda al modelo permite los movimientos habituales del cuerpo humano."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado las características estéticas y funcionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las anomalías observadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los defectos de los prototipos con sus posibles causas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las medidas correctoras que se tienen que aplicar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado la ficha técnica de control con los datos obtenidos y los aspectos de mejora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Industrialización y escalado de pat",
+      "codigo": "0286",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara conjuntos de patrones determinando especificaciones técnicas para su industrialización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las variables que influyen en la preparación de patrones para la industrialización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado el número de tallas según el segmento de población."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la tabla de medidas normalizada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la serie de tallas con sus intervalos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los puntos de escalado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han calculado los incrementos de todos los puntos del patrón que se pretende escalar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han marcado las referencias internas y externas (costuras, piquetes, orientación de la pieza, entre otras) sobre los patrones del modelo prototipo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Escala patrones aplicando tablas de incrementos de tallaje mediante herramientas convencionales e informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las variables que influyen en el escalado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el patrón del modelo prototipo y la información relevante para el escalado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado los incrementos determinados en las especificaciones técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha dibujado la proyección de las tallas especificadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han obtenido los patrones de las tallas según normas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprobado los puntos de referencia, curvas y proporciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las líneas de ensamblado, el emplazamiento de las señales de montado, pinzas y bolsillos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado la concordancia entre las diferentes secciones para facilitar su posterior ensamblaje."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los patrones escalados mediante la terminología y simbología propia."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Agrupa patrones industrializados justificando los criterios para su organización.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y verificado los patrones industrializados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han agrupado los patrones por modelo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las piezas del modelo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han agrupado las piezas en función de criterios de fabricación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado la información necesaria para la marcada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han archivado los patrones de los modelos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Distribuye piezas de patrones aplicando criterios de posicionado para el aprovechamiento de recursos mediante herramientas convencionales e informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han tenido en cuenta las características dimensionales del modelo en el estudio de marcada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han posicionado las piezas de acuerdo a las especificaciones técnicas (sentido del hilo, sentido de la piel, estructura, ancho del tejido o pietaje y dibujo)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han posicionado las piezas optimizando el rendimiento del material."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las tolerancias admisibles en función del material y del sistema de corte."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha calculado el aprovechamiento y consumo de material."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado y archivado la información generada (estudio de marcada y plan de corte)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de patronaje y moda",
+      "codigo": "0287",
+      "ects": null,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecer."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la implementación definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la implementación o ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665126",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708126",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS126",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

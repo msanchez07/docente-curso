@@ -1,0 +1,3675 @@
+{
+  "id": "gs-quimica-y-salud-ambiental",
+  "denominacion": "Química y Salud Ambiental",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Seguridad y Medio Ambiente",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "QMSA",
+  "rd": "Real Decreto 283/2019, de 22 de abril, por el que se establece el título de Técnico Superior en Química y Salud Ambiental y se fijan los aspectos básicos del currículo.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-6882",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional, académica y cotidiana, contenida en todo tipo de discursos orales, emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de mensajes en lengua estándar relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes directos o emitidos en cualquier soporte en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica contenida en distintos discursos orales en lengua estándar, relacionada con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el punto de vista y la actitud del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en dichos mensajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprendido adecuadamente mensajes en lengua estándar en ambientes con contaminación acústica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional, lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende mensajes escritos, de naturaleza profesional, académica y cotidiana, de relativa dificultad, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de textos específicos de su ámbito social, profesional o académico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica de textos, de diferente naturaleza, relativos a su profesión, y contenidos en distintos soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un texto sin entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han leído y comprendido, de manera autónoma, textos relacionados con el sector con la velocidad y estilo de lectura propia del nivel competencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado textos extensos, y de cierta complejidad, relacionados o no con su especialidad, pudiendo realizar varias lecturas del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado instrucciones, con distintos niveles de dificultad, y mensajes técnicos recibidos a través de soportes digitales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han traducido textos de cierta complejidad, utilizando material de apoyo en caso necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han emitido mensajes generales propios de sector y de la vida cotidiana, utilizando nexos y estrategias de interacción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha intercambiado con fluidez información específica y detallada utilizando estructuras de una complejidad acorde al nivel competencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y aplicado los registros adecuados para la emisión del mensaje, así como protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado presentaciones, bien estructuradas, sobre temas de su ámbito profesional, haciendo uso de los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito y secuenciado oralmente un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interaccionado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha respondido a preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta documentos e informes, propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito textos claros y detallados sobre una variedad de temas relacionados con su profesión, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, utilizando vocabulario específico y protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información con corrección, precisión, con cohesión y coherencia, solicitando y/o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado textos mediante apoyos visuales y claves lingüísticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito cartas, formales e informales, empleando las fórmulas de cortesía establecidas y el vocabulario específico para la elaboración de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resumido diferentes tipos de documentos escritos, utilizando sus propios recursos lingüísticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas de gestión ambiental",
+      "codigo": "1546",
+      "ects": 6,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los elementos de un sistema de gestión de calidad, analizando su estructura y aplicando los procedimientos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las distintas normas de calidad aplicables en la unidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado las ventajas de la normalización y la certificación de calidad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las características de un Sistema Integrado de Gestión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los elementos del sistema de calidad con la actividad de la unidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los documentos empleados en un sistema de gestión de calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han documentado los procedimientos de la actividad de la unidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los tipos de auditoría relacionándolos con la evaluación de la calidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha relacionado el sistema de gestión de calidad con el aseguramiento de la competencia técnica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora procedimientos normalizados de trabajo de la unidad, relacionando las actividades que se han de realizar con la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado la información científico-técnica y la normativa relacionada para cada actividad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los criterios de calidad establecidos y los recursos asignados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enumerado las necesidades de recursos humanos y materiales para cada actividad de la unidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diseñado los procedimientos normalizados de trabajo para cada actividad de la unidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han cumplido los requisitos establecidos en las normas de calidad de certificación y/o acreditación vigentes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han interpretado instrucciones y fichas de seguridad para la prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha utilizado la terminología técnico-científica en la documentación elaborada."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica los aspectos ambientales derivados de una actividad, comprobando el cumplimiento de la normativa y proponiendo, en su caso, actuaciones correctivas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los aspectos medioambientales generados en una actividad industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los aspectos medioambientales generados en una actividad de prestación de servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han evaluado los aspectos ambientales siguiendo los criterios establecidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han jerarquizado los aspectos medioambientales destacando aquellos que resulten más significativos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado propuestas de adaptación debido a cambios en el proceso productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los aspectos ambientales evaluados con los resultados obtenidos en periodos anteriores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la mejora ambiental de la organización a lo largo del tiempo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica un Sistema de Gestión Ambiental (SGA), elaborando la documentación establecida mediante programas informáticos específicos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las funciones y responsabilidades en la organización para permitir la correcta implantación del SGA."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la sistemática del funcionamiento del SGA para colaborar en la difusión del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han elaborado los materiales y medios necesarios para realizar labores de información/formación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han enumerado los aspectos medioambientales ligados a la actividad de la organización, incluidos en el SGA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado los documentos del SGA como, procedimientos, registros u otros, siguiendo las directrices establecidas en la organización."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las operaciones y actividades desarrolladas por la organización que contribuyen a controlar los aspectos medioambientales significativos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado los informes ambientales y de revisión del SGA establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han documentado las «no conformidades» detectadas siguiendo las metodologías de estudio y corrección definidas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha actuado ante incidentes y accidentes con repercusión medioambiental según el plan de emergencia implantado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de materiales, productos, equipos e instrumental de la unidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad y de protección personal y colectiva que se deben adoptar en la ejecución de las distintas actividades."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, productos, equipos e instrumental."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los residuos generados para su retirada selectiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de aguas",
+      "codigo": "1548",
+      "ects": 20,
+      "horas_minimas_boe": 180,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los focos de contaminación de aguas de uso y de consumo, valorando su influencia en el medio ambiente y en la salud de la población.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las características del agua con su origen, estado y localización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado las aguas en función de su uso y consumo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado la normativa que regula las aguas de uso y de consumo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la composición química, evolución geoquímica y localización de las aguas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los principales sistemas de abastecimiento y producción de aguas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las aguas residuales en función de sus características químicas y biológicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han relacionado los principales contaminantes del agua con los procesos que los originan."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado el plan de trabajo teniendo en cuenta el ámbito geográfico de actuación, los puntos que hay que estudiar y el muestreo previsto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han elaborado informes concretando los planes de actuación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa las deficiencias técnico-sanitarias de las aguas de uso y consumo, identificando los parámetros característicos y contrastándolos con la normativa de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los requisitos y características que debe reunir la inspección de los sistemas de abastecimiento de aguas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado cálculos de necesidades de agua teniendo en cuenta las variables correspondientes en el consumo humano, industrial y agropecuario previsto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado programas de vigilancia y control promoviendo un uso eficiente del agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los puntos críticos de los sistemas de abastecimiento y producción de aguas de uso y consumo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los requisitos sanitarios establecidos por la normativa relacionada con los sistemas de obtención, transporte, distribución y almacenamiento de las aguas de consumo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han secuenciado las fases de un proceso de envasado de agua, identificando los riesgos y los puntos de control."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los parámetros sanitarios de los sistemas de abastecimiento y producción de agua de consumo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los procesos de tratamientos y depuración de aguas de piscinas e instalaciones acuáticas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha relacionado el funcionamiento de las instalaciones de tratamiento de aguas con las operaciones que realiza cada equipo."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado las variables que se han de controlar en cada etapa del tratamiento."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han adoptado las medidas que subsanen las deficiencias técnico-sanitarias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han cumplimentado y registrado los boletines, libros de registro e informes pertinentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Controla procesos de tratamiento de aguas de uso y consumo, identificando los procedimientos en planta para cumplir con los parámetros de calidad establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los parámetros que se han de controlar en una estación de tratamiento de aguas de uso y consumo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las principales operaciones de tratamiento de aguas con los principios físico-químicos en los que se fundamentan."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el funcionamiento de una planta tratamiento de aguas con las operaciones que se realizan en cada fase."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los parámetros de control de una planta tipo de tratamiento de agua potable."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los puntos críticos de la instalación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los tipos de desinfección que se realizan en las plantas de tratamiento de aguas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los requisitos de calidad e higiénicos sanitarios que debe cumplir una planta de tratamiento de aguas de uso y consumo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han calibrado los instrumentos de control de acuerdo con el patrón de medida establecido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han cumplido las medidas de seguridad y prevención de riesgos profesionales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han registrado los resultados del proceso en los boletines de seguimiento y control de calidad de acuerdo con el protocolo establecido."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Controla procesos de tratamiento de aguas residuales, identificando los procedimientos en planta para cumplir con los parámetros de calidad establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los parámetros físicos, químicos y microbiológicos de las aguas residuales en función de su origen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las medidas técnico-sanitarias de los sistemas de alcantarillado, depuración y vertido de aguas residuales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el proceso de tratamiento de aguas residuales, en función de su origen."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las principales técnicas de depuración."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha caracterizado el funcionamiento de los equipos de una planta de tratamiento de aguas residuales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las variables que se han de controlar en cada una de las etapas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los requisitos de calidad e higiénico-sanitarios que debe cumplir una planta de tratamiento de aguas residuales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado el funcionamiento y la calibración de los instrumentos de control de los diferentes parámetros."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han analizado las medidas de minimización de las aguas residuales y reutilización de las mismas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han cumplido las medidas de seguridad y prevención de riesgos profesionales."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado los criterios para la cumplimentación e interpretación de los registros de seguimientos y control de calidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Toma muestras de aguas de uso y consumo, aplicando procedimientos de trabajo de acuerdo con la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los puntos e intervalos de muestreo establecidos en el plan de muestreo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la técnica de muestreo, el número de muestras y la cantidad de cada una de acuerdo con el procedimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado el material y los reactivos necesarios para la toma de muestras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los reactivos necesarios para la toma de muestra de acuerdo con el procedimiento establecido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calibrado los instrumentos de toma de muestra."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha tomado la muestra siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha preparado la muestra en función del análisis que se ha de realizar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado las medidas de acondicionamiento y de conservación según el tipo de muestra."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han seleccionado las técnicas de conservación y los métodos de transporte de acuerdo con el tipo de muestra, protocolo y normativa."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha cumplimento la documentación del muestreo hasta el laboratorio permitiendo la trazabilidad del proceso."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han utilizado los equipos de protección individual adecuados a la toma de muestras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza controles de calidad físico-químicos, aplicando procedimientos normalizados de trabajo e interpretando resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características de un laboratorio de análisis físico-químico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enunciado los fundamentos de las diferentes técnicas de análisis físico-químico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las técnicas físico-químicas de análisis más comunes utilizadas para el control de calidad del agua."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las operaciones básicas necesarias en los procesos analíticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado los equipos e instrumentos de medida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado las disoluciones con la concentración requerida."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado el material y los reactivos necesarios en función del tipo de análisis que se ha de realizar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de calibración de equipos e instrumental."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el análisis cualitativo y cuantitativo en función del tipo de muestra, cantidad y concentración."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado determinaciones mediante métodos electroquímicos, cromatográficos y métodos ópticos."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos y los protocolos de trabajo acordes con la normativa vigente."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han aplicado tratamientos estadísticos en los resultados obtenidos."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha cumplimentado el informe sobre los resultados del análisis según protocolos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Realiza controles de calidad microbiológicos, aplicando procedimientos normalizados de trabajo e interpretando resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características de un laboratorio de análisis microbiológico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los microorganismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han enunciado los fundamentos del análisis microbiológico."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las técnicas de ensayos microbiológicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los medios de cultivo describiendo sus propiedades."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los medios de cultivo y el material de forma apropiada para su esterilización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han preparado las diluciones necesarias en función de la carga microbiana esperada en la muestra."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha preparado el material y los equipos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el ensayo microbiológico aplicando las técnicas analíticas correspondientes."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las técnicas de tinción y observación."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha realizado el barrido en el microscopio."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha efectuado el recuento."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se han aplicado pruebas de identificación bioquímica."
+            },
+            {
+              "codigo": "n",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos y protocolos de trabajo acordes con la normativa vigente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Determina protocolos de actuación para minimizar los efectos sobre la salud asociados a la contaminación de aguas de uso y consumo, evaluando riesgos y proponiendo medidas correctoras.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la epidemiología de las enfermedades de transmisión hídrica, para su prevención y control, en las aguas de consumo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han detallado las enfermedades asociadas al uso de las aguas de recreo y zonas de baño."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los protocolos de investigación de brotes de enfermedades de transmisión hídrica para elaborar líneas de actuación que permitan su prevención y control."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado las medidas de prevención y control de las enfermedades asociadas al baño con fines recreativos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado el informe de los efectos sobre la salud por la contaminación de aguas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto las medidas correctoras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los protocolos de actuación en situaciones de emergencia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de residuos",
+      "codigo": "1549",
+      "ects": 6,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica las posibles fuentes de contaminación del suelo, caracterizando el proceso de generación de residuos y principales contaminantes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los diferentes tipos de residuos sólidos, en función de su origen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las posibles fuentes de generación de residuos sólidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los procedimientos para evaluar la generación de residuos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los suelos y los principales residuos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los criterios para identificar suelos que requieran valoración de riesgos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido los niveles de referencia de protección de los ecosistemas y de la salud humana."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado los peligros, puntos críticos y condicionantes higiénicos-sanitarios de los lugares de producción de residuos y espacios contaminados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el impacto de la generación de residuos, sobre la salud humana y el medio ambiente."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han descrito los aspectos sanitarios y propiedades del suelo, relacionándolo con su uso."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha identificado la normativa que regula la producción de residuos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza sistemas de gestión de residuos sólidos, analizando la eficiencia de los procesos y proponiendo medidas correctoras.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales tipos de instalaciones de gestión de residuos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las principales operaciones de tratamiento de residuos con los principios en los que se fundamentan."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha establecido la secuencia de las fases de los principales procesos de recuperación y minimización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado las principales técnicas de descontaminación y recuperación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado el funcionamiento de los equipos de tratamiento, recuperación y minimización de residuos sólidos con las operaciones que realiza cada equipo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto acciones para la minimización y control de residuos sólidos, analizando inventarios, censos o lugares de generación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido las condiciones de almacenamiento, etiquetado y transporte de residuos y de sustancias peligrosas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han relacionado los procesos de tratamiento con la naturaleza de los residuos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha respetado la normativa de aplicación para la gestión de residuos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza tomas muestras de suelos y de residuos sólidos, aplicando procedimientos de trabajo de acuerdo con la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los puntos e intervalos de muestreo establecidos en el plan de muestreo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha determinado la técnica de muestreo, el número de muestras y la cantidad de cada una de acuerdo con el procedimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado el material y los reactivos necesarios para la toma de muestras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los reactivos necesarios para la toma de muestra de acuerdo con el procedimiento establecido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calibrado los instrumentos de toma de muestra."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha tomado la muestra siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha preparado la muestra en función del análisis que se ha de realizar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado las medidas de acondicionamiento y de conservación según el tipo de muestra."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han seleccionado las técnicas de conservación y los métodos de transporte de acuerdo con el tipo de muestra, protocolo y normativa."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha cumplimentado la documentación del muestreo hasta el laboratorio permitiendo la trazabilidad del proceso."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han utilizado los equipos de protección individual adecuados a la toma de muestras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza suelos y residuos sólidos, aplicando protocolos establecidos y registrando sus resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las principales técnicas de análisis de suelos y residuos sólidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los equipos e instrumentos de medida que se utilizan para el análisis."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los principales parámetros físicos, químicos y biológicos de los residuos sólidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado el material y los reactivos necesarios en función del tipo de análisis que se ha de realizar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de calibración de equipos e instrumental."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos y los protocolos de trabajo acordes con la normativa vigente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado el tratamiento estadístico previsto por el procedimiento a los datos obtenidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han comparado los resultados obtenidos con los valores de referencia."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha cumplimentado el informe sobre los resultados del análisis según protocolos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Selecciona protocolos de actuación para minimizar los efectos de la contaminación asociada a los residuos sólidos, evaluando riesgos y proponiendo medidas correctoras.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado la sostenibilidad del ecosistema urbano y su impacto en el medio ambiente con la repercusión en la salud de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la epidemiología de las enfermedades debida a los contaminantes del suelo y de los residuos sólidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado los efectos sobre la salud y el medio ambiente de los accidentes ocasionados por la contaminación asociada a los residuos sólidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado protocolos de investigación de brotes epidemiológicos relacionados con la contaminación del suelo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes identificando los efectos para la salud y el medio ambiente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planteado medidas correctoras interpretando informes y los resultados obtenidos en análisis."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los protocolos de actuación para situaciones de emergencia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Contaminación ambiental y atmosférica",
+      "codigo": "1552",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los focos de contaminación atmosférica, valorando su influencia en el medio ambiente y en la salud de la población.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han explicado las características de la atmósfera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los contaminantes del aire, según su origen, generación y naturaleza."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y caracterizado las fuentes emisoras de contaminación atmosférica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado los principales contaminantes de la atmósfera con los procesos que los originan."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado emisión e inmisión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los procesos que intervienen en la dispersión de los contaminantes atmosféricos con los factores meteorológicos, climáticos y topográficos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han valorado los efectos que produce la contaminación atmosférica sobre los materiales y los seres vivos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han explicado los efectos de la contaminación atmosférica sobre la salud de las personas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza tomas de muestras de aire, siguiendo los procedimientos establecidos de acuerdo con la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los puntos e intervalos de muestreo que marca el plan de muestreo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de los muestreadores activos y pasivos, analizadores automáticos y sensores remotos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha seleccionado el material y los reactivos necesarios para la toma de muestras y recogida de datos meteorológicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los reactivos necesarios para la toma de muestra de acuerdo con el procedimiento establecido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han calibrado los instrumentos de toma de muestra."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha tomado la muestra siguiendo los procedimientos establecidos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seleccionado las técnicas de conservación y los métodos de transporte de acuerdo con el tipo de muestra, protocolo y normativa."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado la muestra y asegurado la trazabilidad."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado los equipos de protección individual adecuados a la toma de muestras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Determina la calidad del aire identificando los parámetros característicos y contrastándolos con la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la normativa que regula la calidad del aire y la protección de la atmósfera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los indicadores de calidad del aire de acuerdo con la normativa de aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han calibrado los equipos analíticos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han medido los parámetros que determinan la calidad del aire siguiendo los procedimientos normalizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han comparado las variables medidas con los valores de referencia para determinar las condiciones de cumplimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han evaluado los riesgos para la salud y el medio ambiente que pueden producir los contaminantes de la atmósfera."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha redactado un informe siguiendo protocolos normalizados."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han planteado medidas correctoras en función de los problemas detectados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado las actividades de mantenimiento de los analizadores automáticos y sensores remotos de contaminantes atmosféricos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han caracterizado los componentes de una red de vigilancia de contaminación atmosférica."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han caracterizado los sistemas de registro en las estaciones integrantes de una red de vigilancia de calidad del aire."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han aplicado las normas de calidad, salud laboral y protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Controla procesos de depuración de emisiones atmosféricas, identificando los procedimientos para cumplir con los parámetros de calidad establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los principales sistemas de depuración y control ambientales y de emisiones a la atmósfera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha explicado el funcionamiento y manejo de los equipos integrantes de los sistemas de depuración y control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha explicado el protocolo de mantenimiento de los equipos de depuración."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sensores y equipos para medida que se utilizan en las instalaciones de depuración y control ambientales y de emisiones a la atmósfera."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha aplicado el protocolo para verificar los sensores y equipos para medida incorporados en las instalaciones de depuración y control."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los equipos de protección individual utilizados en la prevención de riesgos asociados a las operaciones de depuración y control atmosférico."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han gestionado los residuos generados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Determina la incidencia de la contaminación de origen físico en la calidad ambiental interpretando la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las principales fuentes de radiaciones electromagnéticas no ionizantes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han explicado los efectos de las radiaciones sobre los organismos vivos y las personas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las normas y equipos de protección contra radiaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fuentes más habituales de ruidos, vibraciones y ultrasonidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los elementos que intervienen en la propagación de ruidos y vibraciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha medido el ruido ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado mapas de ruidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado la legislación referente a límites de emisión de ruidos y vibraciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han propuesto medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Determina protocolos de actuación para minimizar los efectos de la contaminación atmosférica y ambiental, evaluando riesgos y proponiendo medidas correctoras.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado la sostenibilidad del ecosistema urbano y su impacto en el medio ambiente con la repercusión en la salud de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la epidemiología de las enfermedades debida a la contaminación atmosférica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado los efectos sobre la salud y el medio ambiente de los accidentes provocados por los contaminantes en la atmósfera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado protocolos de investigación de brotes de epidemiológicos relacionados con la contaminación de la atmósfera."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes identificando los efectos para la salud y el medio ambiente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planteado medidas correctoras interpretando los informes y los resultados obtenidos en los análisis."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han establecido los protocolos de actuación para situaciones de emergencia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Unidad de salud ambiental",
+      "codigo": "1554",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica objetivos y funciones de la unidad de salud ambiental, relacionando la prestación de servicios con la estructura organizativa del sector sanitario.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las competencias de ámbito sanitario con las administraciones públicas del Estado y la Unión Europea."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los rasgos fundamentales del sistema sanitario español, destacando las particularidades del sector público y privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la estructura organizativa y funcional de los centros, unidades o servicios de salud ambiental."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han distinguido los Servicios de Sanidad Ambiental."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el proceso de prestación del servicio en una unidad de salud ambiental."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han definido las funciones y competencias del Técnico Superior en Química y Salud Ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la normativa vigente en Salud Ambiental y Medio Ambiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Gestiona la documentación técnica de la unidad, utilizando programas de gestión documental y sistemas de registro y archivo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado documentos en función de las actividades de la unidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características de los documentos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido los flujos de tramitación de documentos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado documentos siguiendo los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los sistemas de codificación y registro de la documentación según su finalidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han archivado y custodiado documentos siguiendo las normas establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha respetado la confidencialidad de los datos durante el uso de los documentos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado programas informáticos básicos de gestión de documentos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Gestiona los recursos materiales de unidades de salud ambiental, aplicando técnicas de logística.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los recursos materiales necesarios según las características de la unidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han confeccionado pedidos de materiales y otros elementos teniendo en cuenta protocolos establecidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha admitido el pedido comprobando las condiciones de los productos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado métodos, condiciones de almacenamiento y conservación de los productos y materiales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado criterios de orden y se han seguido las normas de seguridad e higiene."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido criterios para el control de existencias."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado los métodos de control de existencias y de realización del inventario de materiales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado programas básicos de gestión y control de almacén."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado normas de seguridad e higiene en almacenes de unidades de salud ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza la preparación y puesta en marcha de equipos, programando las actividades de funcionamiento y mantenimiento de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características técnicas, funciones y condiciones de uso de los distintos equipos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado instrucciones y fichas de seguridad de equipos para mantener las condiciones de uso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han verificado y calibrado los equipos según los procedimientos establecidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han programado y realizado actividades de limpieza, desinfección y esterilización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplido el plan de revisiones de equipos marcado por el sistema de calidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han sustituido piezas y realizado pequeñas reparaciones siguiendo los procedimientos normalizados de trabajo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han cumplimentado los documentos del sistema de calidad referentes al mantenimiento y calibración de los equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora informes y resúmenes de actividad, utilizando métodos de explotación de datos y aplicaciones informáticas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han mantenido operativas y actualizadas las bases de datos relacionadas con las actividades de la unidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido formatos de presentación de la información teniendo en cuenta el tipo y la finalidad de la información, y las características del programa informático utilizado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seguido los procedimientos y códigos establecidos en el registro de actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado métodos de evaluación de datos obtenidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado procedimientos de tabulación de datos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el cálculo y análisis estadístico de datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado informes y resúmenes con los resultados obtenidos, comparando con lo que marca la normativa."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han comparado los resultados obtenidos con los de otras actividades."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han respetado los protocolos y normas de trabajo establecidos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha utilizado la terminología técnico-científica en la documentación elaborada."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha tratado la información obtenida con discreción y respeto."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de química y salud ambiental",
+      "codigo": "1555p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Educación para la salud y el medio ambiente",
+      "codigo": "1547",
+      "ects": 4,
+      "horas_minimas_boe": 40,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza actividades de vigilancia epidemiológica, relacionando los riesgos del medio ambiente con la salud de las personas y de la comunidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha detallado la cartera de servicios de la sanidad ambiental."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los determinantes de salud y enfermedad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los indicadores generales del nivel de salud de la población."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los tipos de prevención en salud pública."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han enumerado los factores de riesgo ambientales que inciden sobre la salud."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las características de la epidemiología ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han consultado estudios epidemiológicos relacionados con los problemas de salud de causa ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha utilizado la terminología básica relacionada con Salud pública, Promoción y Educación para la Salud."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Planifica actividades de educación sanitaria y ambiental en función del grupo diana, siguiendo planes y programas de promoción de la salud establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características de los planes y programas de salud que se han llevado a cabo en el territorio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido las prioridades y los objetivos a lograr en un plan o programa de educación para la salud."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las fases en la planificación y el diseño de actividades de educación sanitaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado en distintos contextos los factores ambientales y los problemas de salud que hay que tratar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han diseñado instrumentos para obtener información sobre salud y enfermedad de personas y colectivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado el grupo diana."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha determinado el nivel de formación y motivación del grupo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han propuesto actividades educativas adaptadas a las características del grupo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara la información que ha y que transmitir sobre los problemas de salud relacionados con el medio ambiente, seleccionando los contenidos en función del grupo diana.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características del colectivo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los objetivos de la información que se tiene que transmitir."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han previsto las dificultades de los conocimientos que hay que transmitir."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado y adaptado la información según el grupo receptor."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han organizado los contenidos que hay que transmitir en las actividades sobre hábitos y conductas no saludables y sobre pautas de comportamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han secuenciado y temporalizado las actividades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los recursos necesarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han elaborado materiales de trabajo en función de las personas y grupos participantes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado técnicas de grupo utilizadas en educación sanitaria."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han utilizado recursos didácticos adaptados a cada actividad."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha manifestado iniciativa en la búsqueda y estudio de técnicas para difundir los conocimientos en materia de salud."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Selecciona técnicas de comunicación, adaptándolas a las características del grupo al que se dirigen las actividades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las características de la información y el asesoramiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las técnicas de comunicación, sus fases y requisitos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los diferentes tipos de lenguaje y estrategias para una buena comunicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido las diferencias entre los distintos canales comunicativos y los tipos de comunicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado técnicas de motivación y refuerzo en distintas situaciones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado técnicas para comprobar el nivel de comprensión de las personas o grupos receptores."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado técnicas de modificación de comportamiento en el ámbito de la promoción de la salud."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha informado de forma clara, correcta y adaptada a diferentes situaciones."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica técnicas de evaluación de programas de educación sanitaria, relacionando objetivos con resultados obtenidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los objetivos del programa o actividad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han formulado criterios para evaluar la consecución de los objetivos programados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los aspectos que deben ser evaluados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado o, en su caso, diseñado instrumentos para la evaluación de actividades de educación sanitaria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado instrumentos para evaluar las actividades desarrolladas en el programa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido medidas correctoras y de refuerzo para casos en los que no se consiguen los objetivos previstos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la evaluación de resultados en la aplicación de programas de educación sanitaria."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Salud y riesgos del medio construido",
+      "codigo": "1550",
+      "ects": 6,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica procedimientos de inspección y control, relacionando las condiciones higiénico-sanitarias con las deficiencias del medio construido y las medidas preventivas correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las condiciones higiénico-sanitarias necesarias en viviendas, establecimientos y espacios públicos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enumerado los requisitos legales de habitabilidad de acuerdo con la normativa vigente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los peligros, puntos críticos de control y vigilancia y condicionantes para el diagnóstico de salud del medio construido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado la documentación relevante para la vigilancia de las condiciones técnico-sanitarias en el medio construido y para la elaboración del estudio de impacto ambiental."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado sistemas de recogida de datos para el tratamiento estadístico de los mismos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado criterios de calidad en la cumplimentación de las actas de inspección y elaboración de informes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha definido el procedimiento utilizado para cada tipo de inspección higiénico-sanitaria y se ha establecido un cronograma de trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han caracterizado las deficiencias más frecuentes de las condiciones higiénico-sanitarias y las posibles recomendaciones y medidas correctivas en caso de riesgo inminente para la salud pública y el medio ambiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica procedimientos de inspección y control, relacionando las actividades molestas, insalubres, nocivas y peligrosas (MINP) con las medidas preventivas y correctoras establecidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las actividades MINP y su impacto sobre la salud y el medio ambiente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los requisitos legales sobre actividades MINP según la legislación vigente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado las condiciones higiénico-sanitarias de los establecimientos según el tipo de actividad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los peligros, puntos críticos de control y vigilancia y condicionantes en establecimientos con estas actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado censos, cartografías e infraestructuras de las actividades MINP."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado las características de los sistemas de gestión de los residuos generados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha calculado la carga polucionante del aire, agua y suelo de diversas actividades."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el procedimiento para la autorización administrativa de actividad MINP."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han caracterizado las técnicas de alejamiento y las de imposición de medidas correctoras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Toma muestras de elementos del medio construido, seleccionando el procedimiento en función de las características de la muestra y aplicándolo de acuerdo con el protocolo de actuación establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las características, los puntos, lugares y frecuencia de muestreo que intervienen en la calidad de la muestra obtenida."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado los tipos de muestreo para la evaluación de los lugares e instalaciones según criterios técnico-legales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha clasificado la información que debe recopilarse para permitir la evaluación de los resultados obtenidos en el análisis posterior."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los instrumentos y equipos de recogida necesarios en la toma de muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han envasado y etiquetado muestras y reactivos de acuerdo con el sistema de codificación establecido."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha obtenido la cantidad requerida de muestras válidas en las condiciones establecidas por la normativa."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las técnicas de conservación y los métodos de transporte según el tipo de muestra y de acuerdo con los protocolos y con la normativa de referencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha cumplimentado la documentación preanalítica que acompaña a la muestra."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han adoptado las medidas de seguridad y prevención de riesgos en el proceso de toma de muestras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y mide parámetros físico-químicos de elementos del medio construido, aplicando los protocolos establecidos y registrando los resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el fundamento teórico de las técnicas empleadas para el análisis de medio construido."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los métodos en función de su eficiencia, eficacia y efectividad para garantizar la calidad de los datos obtenidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado los equipos e instrumentos de medida, material y reactivos de acuerdo con las especificaciones establecidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la limpieza, preparación y calibración de los equipos y el instrumental utilizado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seguido los protocolos normalizados de trabajo en los procedimientos de análisis."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han recogido datos sobre fuentes de emisión de ruidos y radiaciones ionizantes de forma objetiva y normalizada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado los valores analíticos y las mediciones efectuadas de forma que permitan el posterior tratamiento de los datos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han tratado y eliminado los residuos generados en el procedimiento analítico para evitar posibles contaminaciones."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han elaborado los informes requeridos según el protocolo normalizado cumplimentando la documentación correspondiente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora programas de vigilancia ambiental en el medio construido, relacionando los riesgos específicos sobre la salud, el bienestar y el medio ambiente con las medidas de prevención y protección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las condiciones higiénico-sanitarias del medio construido con los efectos sobre la salud y el bienestar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las actividades MINP con los efectos sobre la salud y el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los aspectos epidemiológicos de las enfermedades adquiridas por deficiencias higiénico-sanitarias en la vivienda."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido las principales medidas para la prevención y el control de las deficiencias higiénico sanitarias de las viviendas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los aspectos epidemiológicos de las enfermedades, y las intoxicaciones asociados a establecimientos públicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han establecido las principales medidas para la prevención y el control de las deficiencias higiénico sanitarias de los establecimientos públicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado los componentes de un programa de vigilancia ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han elaborado informes con las principales medidas para la prevención y control de los riesgos asociados al medio construido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de conseguir entornos sostenibles y saludables."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control y seguridad alimentaria",
+      "codigo": "1551",
+      "ects": 14,
+      "horas_minimas_boe": 120,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Elabora planes de trabajo de inspección y control sanitario de alimentos, identificando tareas, puntos críticos y recursos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los conceptos de alimentación y salud con las enfermedades asociadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características de los programas de inspección y de vigilancia de alimentos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha secuenciado el proceso de elaboración de un programa de trabajo y sus componentes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el proceso del Sistema de Alertas Alimentarias."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los procedimientos de intercambio de información."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la normativa sanitaria relacionada con el uso o consumo humano de alimentos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha seleccionado la información relevante para la inspección y el control alimentario contenida en los censos de establecimientos de elaboración/transformación, distribución y restauración."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han seleccionado los puntos que hay que muestrear en los censos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Identifica deficiencias técnico-sanitarias en productos alimentarios, aplicando técnicas de inspección y control sanitario de acuerdo con la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales fases en el proceso de producción de alimentos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los establecimientos de elaboración, transformación, almacenamiento, comercialización, manipulación y consumo de los alimentos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los factores de riesgo de la contaminación de los alimentos con las fases de la cadena alimentaria."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los criterios sanitarios de manipulación y etiquetado de alimentos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los métodos de higienización y conservación de los alimentos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha relacionado la calidad estética y organoléptica de los alimentos con las posibles deficiencias en las fases del proceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado los protocolos y las normas de inspección y control sanitario para cada fase del proceso."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han propuesto actuaciones correctivas en función de las deficiencias detectadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha cumplimentado el acta, los libros de registro y elaborado los informes pertinentes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Toma muestras de alimentos, seleccionando el procedimiento en función de las características de la muestra y aplicándolo de acuerdo con el protocolo de actuación establecido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los puntos de muestreo en función de los riesgos higiénico-sanitarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los instrumentos, equipos de recogida y material fungible necesario en la toma de muestras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado las muestras en función de las características de los establecimientos y estudios que hay que realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado las técnicas de toma de muestras para análisis microbiológico, químico y organoléptico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado los medios de cultivo utilizados en los estudios microbiológicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha seleccionado la información que debe recopilarse para la evaluación posterior de los resultados analíticos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han seguido los protocolos de muestreo en la recogida de la muestra."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han adaptado los procedimientos de conservación y de transporte al tipo de muestra, protocolo y normativa."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha procedido a la identificación y envasado de las muestras para el transporte y posterior análisis."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha cumplimentado la documentación preanalítica que acompaña a la muestra y a su registro."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza la calidad higiénico-sanitaria de los alimentos aplicando protocolos establecidos y registrando sus resultados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los caracteres organolépticos, físico-químicos y microbiológicos de los alimentos de origen animal y vegetal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los métodos analíticos en función de su eficiencia, eficacia y efectividad, para garantizar la calidad de los datos obtenidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la limpieza, preparación y calibración de los equipos y el instrumental utilizado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los métodos y técnicas de control de calidad según la normativa técnico-sanitaria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado los procedimientos de análisis para la determinación de los parámetros físico-químicos, microbiológicos y organolépticos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han registrado los resultados analíticos para el posterior tratamiento de los datos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han gestionado los residuos generados en el procedimiento analítico, para evitar posibles contaminaciones."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han cumplimentado los boletines analíticos y elaborado informes según protocolo normalizado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han adoptado las medidas de seguridad y prevención de riesgos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla programas formativos y campañas de información sobre seguridad alimentaria y consumo, aplicando metodologías y técnicas de comunicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido la epidemiología de las enfermedades de transmisión alimentaria y los factores condicionantes de la aparición de la enfermedad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las medidas de prevención y control de las enfermedades de transmisión alimentaria."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado las fuentes de contaminación de los alimentos con las medidas de prevención y control en cada caso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los fundamentos legislativos sobre consumo de alimentos y defensa de los consumidores."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado programas formativos y campañas de información en materia de seguridad alimentaria."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las necesidades de información y formación del consumidor."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han programado actividades formativas y campañas de información en función de las necesidades detectadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han seleccionado los parámetros que incluyen las técnicas de evaluación de las campañas de información y actividades formativas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado técnicas de información y asesoramiento, y en su caso, de atención de quejas y reclamaciones de consumidores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Control de organismos nocivos",
+      "codigo": "1553",
+      "ects": 10,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Aplica procedimientos de inspección de establecimientos comerciales, de servicios y de uso residencial, identificando los elementos estructurales y las condiciones higiénico-sanitarias que influyen en el desarrollo de organismos nocivos:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado el concepto de plaga con los factores ambientales de un entorno urbano."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha valorado la importancia del equilibrio de los ecosistemas en la aparición de plagas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las deficiencias estructurales en edificios y locales capaces de influir en el desarrollo de organismos nocivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las deficiencias higiénico-sanitarias y actividades desarrolladas en los locales que pueden incidir en el desarrollo de organismos nocivos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han relacionado las características del entorno y los elementos urbanísticos con su influencia en la proliferación de organismos nocivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han propuesto las medidas adecuadas para corregir las deficiencias encontradas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Selecciona técnicas de identificación y control de plagas, relacionando vectores y organismos nocivos con los efectos sobre la salud y el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los vectores de interés en salud pública en función de su grupo taxonómico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las características fenotípicas, ecológicas y etológicas de insectos, mamíferos, aves y otras especies de interés que constituyen plagas en el entorno urbano."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de los vectores en la transmisión de enfermedades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado las medidas de protección y prevención frente a vectores en cualquiera de las etapas de su ciclo biológico."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado métodos de identificación, claves e instrumental óptico para la identificación de plagas, vectores y organismos nocivos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los principales materiales e instrumentos empleados en la identificación de individuos que constituyen una plaga."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las señales que indican la presencia de organismos nocivos y vectores en sus distintas fases de desarrollo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Selecciona los principales medios de lucha utilizados para el control de organismos nocivos y vectores, valorando su eficacia, eficiencia y efectividad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los distintos métodos de lucha contra organismos nocivos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito y clasificado los biocidas y productos fitosanitarios utilizados en el control de plagas y organismos nocivos, atendiendo a su peligrosidad, grupo químico y modo de acción."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los efectos para la salud y el medio ambiente de los productos utilizados en el control de plagas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han elaborado planes de control de riesgos asociados al uso de productos químicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha seleccionado el método que hay que aplicar relacionándolo con el lugar a tratar y el tipo de infestación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado los equipos de aplicación y sus técnicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calculado las dosis y los periodos necesarios para la aplicación de productos químicos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha seleccionado la normativa relacionada con la utilización de biocidas y productos fitosanitarios."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han establecido medidas de prevención frente a los riesgos asociados al uso de biocidas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Toma muestras de vectores y organismos nocivos, productos químicos y productos fitosanitarios para su análisis en laboratorio, siguiendo procedimientos normalizados de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y descrito el material utilizado para realizar la toma de muestras."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las técnicas para realizar la toma de muestras de productos químicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las técnicas adecuadas para realizar la captura de vectores u otros organismos nocivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los cálculos establecidos para estimar la densidad y distribución de una plaga a partir de los datos recogidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado el proceso de muestreo para llevar a cabo la toma de muestras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los tipos de conservantes y medios de transporte utilizados según el tipo de muestra."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la toma de muestras de acuerdo al protocolo establecido."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han adoptado las medidas de seguridad y prevención de riesgos en el proceso de toma de muestras."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Identifica las características de establecimientos y servicios biocidas y productos fitosanitarios, comprobando los requisitos determinados por la normativa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado la normativa vigente aplicable a los establecimientos y servicios biocidas y productos fitosanitarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los requisitos y características físico-estructurales de los establecimientos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado los puntos críticos que hay que vigilar en establecimientos y servicios biocidas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los requisitos que deben cumplir los distintos tipos de biocidas y productos fitosanitarios en cuanto a su comercialización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha determinado la normativa vigente y la documentación necesaria para el transporte de productos químicos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los datos relevantes que deben constar en el Libro Oficial de Movimientos de biocidas (LOM)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las características de los sistemas de vigilancia y control de sustancias químicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido los procedimientos de gestión del tratamiento de residuos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han establecido los procesos de notificación frente a una infracción normativa o daño para la salud."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Elabora planes de control integrado de plagas, relacionándolos con los datos obtenidos de la inspección ambiental y de la toma de muestras.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado la normativa vigente aplicable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las principales fases de un protocolo de Control Integrado de Plagas (CIP)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han justificado los objetivos del plan de control integral de plagas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los peligros y puntos críticos de la instalación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han indicado las medidas estructurales y de higiene que deben adoptarse."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado los medios físicos, biológicos y/o químicos necesarios para su aplicación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado los sistemas de aplicación y dosis adecuadas según las características de la plaga."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han establecido los recursos humanos y materiales necesarios."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han contemplado las medidas de seguridad y prevención de riesgos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han determinado métodos para valorar la eficacia de la actuación."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han establecido protocolos de supervisión y evaluación del tratamiento de control de organismos nocivos."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha cumplimentado la certificación del tratamiento realizado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de química y salud ambiental",
+      "codigo": "1555",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado las empresas tipo indicando la estructura organizativa y las funciones de cada departamento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades más demandadas a las empresas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han valorado las oportunidades de negocio previsibles en el sector."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado las características específicas requeridas al proyecto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el estudio de viabilidad técnica del mismo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las fases o partes que componen el proyecto y su contenido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han establecido los objetivos que se pretenden conseguir, identificando su alcance."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han previsto los recursos materiales y personales necesarios para realizarlo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el presupuesto económico correspondiente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las necesidades de financiación para la puesta en marcha del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para su diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la ejecución del proyecto, determinando el plan de intervención y la documentación asociada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las actividades ordenándolas en función de las necesidades de implementación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los recursos y la logística necesaria para cada actividad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los riesgos inherentes a la ejecución, definiendo el plan de prevención de riesgos y los medios y equipos necesarios."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido el procedimiento de evaluación de las actividades o intervenciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han definido los indicadores de calidad para realizar la evaluación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha establecido el procedimiento para la participación de los usuarios o clientes en la evaluación y se han elaborado los documentos específicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665150",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708150",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS150",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

@@ -1,0 +1,1611 @@
+{
+  "id": "gb-instalaciones-electrotecnicas-y-mecanica",
+  "denominacion": "Instalaciones Electrotécnicas y Mecánica",
+  "nivel": "Formación Profesional de Grado Básico",
+  "familia_profesional": "Electricidad y Electrónica",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "IECM",
+  "rd": "Real Decreto 774/2015, de 28 de agosto, por el que se establecen seis Títulos de Formación Profesional Básica del catálogo de Títulos de las enseñanzas de Formación Profesional.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-9462",
+  "modulos": [
+    {
+      "nombre": "Instalaciones de telecomunicaciones",
+      "codigo": "3014",
+      "ects": null,
+      "horas_minimas_boe": 115,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona los elementos que configuran las instalaciones de telecomunicaciones, identificando y describiendo sus principales características y funcionalidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos de instalaciones relacionados con la infraestructura común de telecomunicaciones en edificios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los elementos (canalizaciones, cableados, antenas, armarios («racks») y cajas, entre otros) de una instalación de infraestructura de telecomunicaciones de un edificio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los tipos de conductores (par de cobre, cable coaxial, fibra óptica, entre otros)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha determinado la tipología de las diferentes cajas (registros, armarios, «racks», cajas de superficie, de empotrar, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los tipos de fijaciones (tacos, bridas, tornillos, tuercas, grapas, entre otros) de canalizaciones y equipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las fijaciones con el elemento a sujetar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado el suministro de los elementos de la instalación con el ritmo de ejecución de la misma."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa de seguridad laboral y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta canalizaciones, soportes y armarios en instalaciones de infraestructuras de telecomunicaciones en edificios, interpretando los croquis de la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las técnicas empleadas en el curvado de tubos de PVC, metálicos u otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han indicado las herramientas empleadas en cada caso y su aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas y elementos empleadas en las uniones de tubos y canalizaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las fases típicas de montaje de un «rack»."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado en un croquis del edificio o parte del edificio los lugares de ubicación de los elementos de la instalación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los huecos y cajeados para la ubicación de cajas y canalizaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han preparado y/o mecanizado las canalizaciones y cajas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han montado los armarios («racks»)."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han montado canalizaciones, cajas y tubos, entre otros, asegurando su fijación mecánica."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado normas de seguridad en el uso de herramientas y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta cables en instalaciones de telecomunicaciones en edificios, aplicando las técnicas establecidas y verificando el resultado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los conductores empleados en diferentes instalaciones de telecomunicaciones (radio, televisión, telefonía y otras)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han enumerado los tipos de guías pasacables más habituales, indicando la forma óptima de sujetar los cables a la guía."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los tubos y sus extremos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha introducido la guía pasacables en el tubo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha sujetado adecuadamente el cable a la guía pasacables de forma escalonada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha tirado de la guía pasacables, evitando que se suelte el cable o se dañe."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cortado el cable dejando una «coca» en cada extremo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha etiquetado el cable, siguiendo el procedimiento establecido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado normas de seguridad en el uso de herramientas y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Instala elementos y equipos de instalaciones de infraestructuras de telecomunicaciones en edificios, aplicando las técnicas establecidas y verificando el resultado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ensamblado los elementos que consten de varias piezas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el cableado en función de su etiquetado o colores."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han colocado los equipos o elementos (antenas, amplificadores, entre otros) en su lugar de ubicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han fijado los equipos o elementos (antenas, amplificadores, entre otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha conectado el cableado con los equipos y elementos, asegurando un buen contacto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han colocado los embellecedores, tapas y elementos decorativos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las posibles medidas de corrección en función de los resultados obtenidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado normas de seguridad en el uso de herramientas y equipos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Soldadura y carpintería metálica",
+      "codigo": "3021",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara materiales de carpintería metálica férrica, relacionándolos con las características del producto final e interpretando la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los materiales a utilizar, perfiles, herrajes y medios de unión, de acuerdo con los elementos a construir."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los materiales a emplear en el proceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comprobado las características de los perfiles, herrajes y medios de unión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado croquis, vistas y secciones sobre las piezas individuales que forman el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las características básicas de los perfiles, herrajes y medios de unión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha trasmitido la información con claridad, de manera ordenada y estructurada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las especificaciones de prevención de riesgos laborales y medioambientales requeridas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido una actitud ordenada y metódica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara las máquinas y herramientas de construcciones metálicas, reconociendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y clasificado las máquinas y herramientas en función de sus prestaciones en el proceso de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los dispositivos de las máquinas y sus sistemas de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y montado los accesorios y herramientas, según las operaciones que van a ser realizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el estado de funcionalidad de los accesorios y herramientas para ejecutar un correcto mecanizado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el reglaje y ajuste de los equipos y herramientas en función de la operación que ha de ejecutarse."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la limpieza, lubricación y mantenimiento de primer nivel de los diferentes equipos y herramientas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales requeridas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido una actitud metódica y ordenada en el proceso de preparación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara los equipos de soldadura por arco eléctrico y oxiacetilénica, reconociendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los componentes de un puesto de trabajo de soldadura por arco eléctrico y de soldadura oxiacetilénica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el funcionamiento de los componentes de un puesto de trabajo de soldadura por arco y oxiacetilénica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han regulado las variables de trabajo como presión, intensidad y dardo de la llama, según el trabajo a realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los electrodos, relacionándolos con las características técnicas de los elementos a unir."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado y montado los accesorios, según las operaciones que van a ser realizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las uniones soldadas utilizando las técnicas normalizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la limpieza, lubricación y mantenimiento de primer nivel de los diferentes equipos de soldadura."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido una actitud metódica y ordenada en el proceso de preparación."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado los equipos de protección individual adecuados en cada fase de la preparación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza las operaciones básicas de mecanizado por conformado y soldeo sobre materiales férricos, relacionando la técnica a utilizar con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las fases de proceso de mecanizado en función de las características de material y de la técnica de mecanizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido un orden de ejecución en función de la optimización de los recursos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado el recalcado, estirado, aplanado, curvado y doblado de perfiles y chapas de acuerdo a procedimientos normalizados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los bordes de las piezas a unir."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ejecutado los procesos de soldeo y uniones de acuerdo a las características técnicas de los productos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alimentado correctamente las máquinas manuales teniendo en cuenta las propiedades de los materiales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han alimentado las máquinas automáticas, teniendo en cuenta el proceso a desarrollar y los parámetros de la máquina."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han verificado con plantillas o mediciones las piezas obtenidas, corrigiendo los posibles defectos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las normas de seguridad y salud laboral, utilizando correctamente las protecciones de las máquinas y los medios individuales de protección."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza las operaciones básicas de montaje de productos férricos, relacionando las fases del mismo con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado el plano de montaje del producto a obtener."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las fases de proceso de montaje en función de las piezas a unir."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los accesorios, medios de unión y herramientas, en función de la orden de ejecución."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han posicionado las piezas a montar para obtener un producto de calidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las uniones fijas y desmontables siguiendo criterios de seguridad, funcionalidad y economía."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han verificado las características dimensionales y geométricas de los productos obtenidos, corrigiendo posibles defectos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad y salud laboral, utilizando correctamente las protecciones de las máquinas y los medios individuales de protección."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido una actitud metódica y ordenada en el proceso de preparación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Transporta productos de carpintería metálica férrica, seleccionando los embalajes y útiles de transportes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los productos de embalaje, de acuerdo a las características del producto final."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los soportes y medios de amarres adecuados para su inmovilización durante el transporte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el embalaje de los productos con los materiales apropiados y protegiendo los puntos débiles de deterioro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado mediante etiquetas u otros medios especificados los productos embalados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manipulado el producto embalado con seguridad y cuidado hasta su ubicación en el medio de transporte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las sujeciones con los medios adecuados y se verifica su inmovilización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales en el embalaje y transporte de cargas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la descarga y desembalaje del producto, de acuerdo con normas de seguridad para evitar su deterioro."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido una actitud metódica y ordenada en el proceso de embalaje y transporte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Carpintería de aluminio y PVC",
+      "codigo": "3022",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara materiales de carpintería metálica no férrica, relacionándolos con las características del producto final e interpretando la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los materiales a utilizar, perfiles, herrajes y medios de unión, de acuerdo con los elementos a construir."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los materiales a emplear en el proceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comprobado las características de los perfiles, herrajes y medios de unión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado croquis, vistas y secciones sobre las piezas individuales que forman el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las características básicas de los perfiles, herrajes y medios de unión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha trasmitido la información con claridad, de manera ordenada y estructurada."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las especificaciones de prevención de riesgos laborales y medioambientales requeridas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido una actitud ordenada y metódica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara las máquinas y herramientas de construcciones metálicas no férricas, reconociendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y clasificado las máquinas y herramientas en función de sus prestaciones en el proceso de fabricación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los dispositivos de las máquinas y sus sistemas de control."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y montado los accesorios y herramientas, según las operaciones que van a ser realizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el estado de funcionalidad de los accesorios y herramientas para ejecutar un correcto mecanizado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el reglaje y ajuste de los equipos y herramientas en función de la operación que ha de ejecutarse."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la limpieza, lubricación y mantenimiento de primer nivel de los diferentes equipos y herramientas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido una actitud metódica y ordenada en el proceso de preparación."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales requeridas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza las operaciones de mecanizado sobre materiales no férricos, relacionando la técnica a utilizar con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las fases de proceso de mecanizado en función de las características de material y de la técnica de mecanizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido un orden de ejecución en función de la optimización de los recursos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la sujeción de los perfiles de aluminio y PVC en las condiciones de seguridad requeridas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el tronzado, troquelado, encastrado, fresado, taladrado y roscado de perfiles y chapas de aluminio y PVC de acuerdo a los procedimientos normalizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el acabado de las piezas mecanizadas para su posterior ensamblado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han verificado con plantillas o mediciones las piezas obtenidas, corrigiendo los posibles defectos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad y salud laboral utilizando correctamente las protecciones de las máquinas y los medios individuales de protección."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza las operaciones de montaje de productos no férricos, relacionando las fases del mismo con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las fases de proceso de ensamblado y montaje en función de las piezas a unir."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los accesorios, medios de unión y herramientas, en función del orden de ejecución."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el montaje de bisagras, herrajes y accesorios sobre los elementos mecanizados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las uniones fijas y desmontables siguiendo criterios de seguridad, funcionalidad y economía."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el ensamblaje de los componentes de la estructura comprobando su rigidez y funcionalidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han verificado las características dimensionales y geométricas de los productos obtenidos, corrigiendo posibles defectos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de seguridad requeridas en el montaje de productos no férricos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido una actitud metódica y ordenada en el proceso de preparación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Transporta productos de carpintería metálica no férrica, seleccionando los embalajes y útiles de transportes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionados los productos de embalaje, de acuerdo a las características del producto final."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los soportes y medios de amarres adecuados para su inmovilización durante el transporte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el embalaje de los productos con los materiales apropiados y protegiendo los puntos débiles de deterioro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado mediante etiquetas u otros medios especificados los productos embalados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manipulado el producto embalado con seguridad y cuidado hasta su ubicación en el medio de transporte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las sujeciones con los medios adecuados, verificando su inmovilización."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la descarga y desembalaje del producto, de acuerdo con normas de seguridad para evitar su deterioro."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales en el embalaje y transporte de cargas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido una actitud metódica y ordenada en el proceso de embalaje y transporte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad 1º",
+      "codigo": "3159p",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales I",
+      "codigo": "3161",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias Aplicadas I",
+      "codigo": "3163",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Primero",
+      "codigo": "TU01CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Instalaciones eléctricas y domóticas",
+      "codigo": "3013",
+      "ects": null,
+      "horas_minimas_boe": 175,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona los elementos, equipos y herramientas para la realización del montaje y mantenimiento de instalaciones eléctricas de edificios, relacionándolos con su función en la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los canales, tubos y sus soportes y accesorios de fijación, según su uso, en la instalación (empotrado, de superficie, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los distintos tipos de conductores según su aplicación en las instalaciones eléctricas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las cajas, registros, los mecanismos (interruptores, conmutadores y tomas de corriente, entre otros) según su función."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las distintas formas de ubicación de caja y registros (empotrado o de superficie)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las luminarias y accesorios según el tipo (fluorescente, halógeno, entre otros), relacionándolos con el espacio donde van a ser colocadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los equipos y elementos típicos utilizados en las instalaciones domóticas con su función y características principales."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han asociado las herramientas y equipos utilizados en el montaje y el mantenimiento con las operaciones que se van a realizar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha ajustado el acopio del material, herramientas y equipo al ritmo de la intervención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha trasmitido la información con claridad, de manera ordenada y estructurada."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha mantenido una actitud ordenada y metódica."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta canalizaciones, soportes y cajas en una instalación eléctrica de baja tensión y/o domóticas, replanteando el trazado de la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las herramientas empleadas según el tipo (tubos de PVC y tubos metálicos, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las técnicas y los elementos empleados en la unión de tubos y canalizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las técnicas de curvado de tubos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las diferentes técnicas de sujeción de tubos y canalizaciones (mediante tacos y tornillos, abrazaderas, grapas y fijaciones químicas, entre otras)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha marcado la ubicación de las canalizaciones y cajas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los espacios (huecos y cajeados) destinados a la ubicación de cajas y canalizaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han montado los cuadros eléctricos y elementos de sistemas automáticos y domóticos de acuerdo con los esquemas de las instalaciones e indicaciones dadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado los tiempos estipulados para el montaje, aplicando las normas específicas del reglamento eléctrico en la realización de las actividades."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado los trabajos con orden y limpieza, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Tiende el cableado entre equipos y elementos de las instalaciones eléctricas de baja tensión y/o domóticas, aplicando técnicas de acuerdo a la tipología de los conductores y a las características de la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características principales de los conductores (sección, aislamiento, agrupamiento, color, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los tipos de agrupación de conductores según su aplicación en la instalación (cables monohilo, cables multihilo, mangueras, barras, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los colores de los cables con su aplicación de acuerdo al código correspondiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los tipos de guías pasacables más habituales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la forma de sujeción de los cables a la guía."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los cables tendidos para su conexionado dejando una «coca» (longitud de cable adicional) y etiquetándolos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha operado con las herramientas y materiales con la calidad y seguridad requerida."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado los trabajos con orden y limpieza."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha mostrado una actitud responsable e interés por la mejora del proceso."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Instala mecanismos y elementos de las instalaciones eléctricas y/o domóticas, identificando sus componentes y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los mecanismos y elementos de las instalaciones."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las principales funciones de los mecanismos y elementos (interruptores, conmutadores y sensores, entre otros)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han ensamblado los elementos formados por un conjunto de piezas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han colocado y fijado mecanismos, «actuadores» y sensores en su lugar de ubicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado los terminales de conexión según su tipo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han conectado los cables con los mecanismos y aparatos eléctricos, asegurando un buen contacto eléctrico y la correspondencia entre el cable y el terminal del aparato o mecanismo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han colocado embellecedores y tapas cuando así se requiera."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha operado con las herramientas y materiales y con la calidad y seguridad requerida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza operaciones auxiliares de mantenimiento de instalaciones eléctricas y/o domóticas de edificios, relacionando las intervenciones con los resultados a conseguir.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las averías tipo en instalaciones eléctricas tanto en edificios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las averías tipo en instalaciones domóticas en edificios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha inspeccionado la instalación comprobando visual o funcionalmente la disfunción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido el estado de la instalación o de alguno de sus elementos, efectuando pruebas funcionales o medidas eléctricas elementales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado la ausencia de peligro para la integridad física y para la instalación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha sustituido el elemento deteriorado o averiado, siguiendo el procedimiento establecido o de acuerdo a las instrucciones recibidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las normas de seguridad en todas las intervenciones de reparación de la instalación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha demostrado responsabilidad ante errores y fracasos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Operaciones básicas de fabricación",
+      "codigo": "3020",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Organiza su trabajo en la ejecución del mecanizado, interpretando la información contenida en las especificaciones del producto a mecanizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la simbología normalizada aplicable en fabricación mecánica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprendido las instrucciones recibidas (tanto orales como escritas) para la realización del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído la información necesaria (de las hojas de trabajo, catálogos, y otros) que permita poner en práctica el proceso de trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han explicado las operaciones a realizar, de tal forma que permitan la realización del proceso, ajustándose a las especificaciones señaladas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado a mano alzada dibujos sencillos que representen los productos a obtener."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han tenido en cuenta las especificaciones de prevención de riesgos laborales y medioambientales requeridos en la organización del trabajo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han mantenido las zonas de trabajo de su responsabilidad en condiciones de orden, limpieza y seguridad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha operado con autonomía en las actividades propuestas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara materiales, útiles y equipos de mecanizado, reconociendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado el acopio de los materiales necesarios para el proceso de mecanizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado que los medios, herramientas y equipos que se van a utilizar están en las condiciones de uso que permitan optimizar su rendimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado las herramientas, útiles y máquinas en función del tipo del material y calidad requerida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha efectuado el transporte de materiales y equipos, aplicando las normas de seguridad requeridas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el mantenimiento y cuidado de los medios empleados en el proceso una vez finalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha ajustado el acopio del material, herramientas y equipo al ritmo de la intervención."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales requeridas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han planificado metódicamente las tareas a realizar con previsión de las dificultades y el modo de superarlas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones básicas de fabricación, seleccionando las herramientas y equipos y aplicando las técnicas de fabricación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado la preparación y limpieza de las superficies de las piezas a mecanizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han trazado y marcado las piezas según especificaciones requeridas o instrucciones recibidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han manipulado y colocado las piezas empleando los útiles y herramientas apropiados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ajustado los parámetros de mecanizado en función del material, de las características de la pieza y de las herramientas empleadas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de mecanizado en la máquina adecuada en función del material y de la calidad requerida."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de mecanizado, siguiendo las especificaciones recibidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado la normativa de Prevención de Riesgos Laborales en la ejecución de las operaciones de mecanizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado los trabajos con orden y limpieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Manipula cargas en la alimentación y descarga de máquinas y sistemas automáticos para la realización de operaciones de fabricación, describiendo los dispositivos y el proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito los procesos auxiliares de fabricación mecánica en mecanizado, soldadura, calderería y otros."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los procedimientos de alimentación y descarga de sistemas automáticos de fabricación mecánica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los procedimientos de manipulación de cargas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ajustado los parámetros de operación según las instrucciones recibidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han efectuado operaciones de carga y descarga de máquinas automáticas según las especificaciones requeridas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha vigilado el sistema automatizado para su correcto funcionamiento, deteniendo el sistema ante cualquier anomalía que ponga en riesgo la calidad del producto."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado los requerimientos de seguridad en la manipulación y transporte de cargas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han comunicado las incidencias surgidas y registrado en el documento apropiado."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha aplicado la normativa de prevención de riesgos laborales en la manipulación de máquinas y equipos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha mostrado una actitud responsable e interés por la mejora del proceso."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han mantenido hábitos de orden y limpieza."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza operaciones de verificación sobre las piezas obtenidas, relacionando las características del producto final con las especificaciones técnicas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y descrito los instrumentos básicos de medida y control y su funcionamiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con los instrumentos de verificación y control según los procedimientos establecidos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comparado las mediciones realizadas con los requerimientos expresados en el plano u hojas de verificación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado el registro de los resultados en las fichas y documentos apropiados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reflejado en los informes las incidencias observadas durante el control de materias primas, de las operaciones de mecanizado y de las piezas mecanizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de uso de los aparatos utilizados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha operado con rigurosidad en los procedimientos desarrollados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad",
+      "codigo": "3159",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de aprendizaje colaborativo",
+      "codigo": "3160991",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales II",
+      "codigo": "3162",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias aplicadas II",
+      "codigo": "3164",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Segundo",
+      "codigo": "TU02CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

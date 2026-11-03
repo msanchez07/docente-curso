@@ -1,0 +1,1337 @@
+{
+  "id": "gb-industrias-alimentarias",
+  "denominacion": "Industrias Alimentarias",
+  "nivel": "Formación Profesional de Grado Básico",
+  "familia_profesional": "Industrias Alimentarias",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "IA",
+  "rd": "Real Decreto 356/2014, de 16 de mayo, por el que se establecen siete títulos de Formación Profesional Básica del catálogo de títulos de las enseñanzas de Formación Profesional.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-5591",
+  "modulos": [
+    {
+      "nombre": "Operaciones auxiliares de almacenaje",
+      "codigo": "3070",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Recepciona mercancías relacionando sus características con las condiciones de almacenamiento previstas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado etiquetas, embalajes y medios de transporte con la tipología de productos y destinos, para su correcta manipulación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado distintos tipos de cargas y mercancías en función de sus características específicas de manipulación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado la correspondencia entre las mercancías recibidas y sus etiquetas y/o el contenido del albarán."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los distintos tipos de documentos relacionados con la recepción: pedido, albarán, etiquetas, cartas de porte, acta e informe de recepción."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido las discrepancias y anomalías más frecuentes de las cargas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha extraído una muestra de una carga para su inspección."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han clasificado mercancías conforme a sus características y condiciones de conservación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito los procesos de desconsolidación y desembalaje de cargas manualmente o utilizando las herramientas adecuadas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han utilizado hojas de cálculo para cumplimentar fichas de almacén."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha elaborado un informe con el resultado de la recepción, utilizando aplicaciones informáticas."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha empleado tiempo y esfuerzo en ampliar conocimientos e información complementaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Etiqueta mercancías mediante aplicaciones informáticas específicas valorando el control de la trazabilidad que posibilita su registro y codificación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado diferentes sistemas de codificación de mercancías."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los contenidos y significados de los códigos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha consultado un índice de códigos en una base de datos de almacén."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han etiquetado mercancías con el código de forma visible."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han indicado condiciones de manipulación y conservación de los productos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la trazabilidad de las mercancías a partir de la etiqueta y documentos de control."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el alta en el registro de «stocks» utilizando aplicaciones informáticas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado y aplicado las medidas de seguridad, salud y prevención de riesgos laborales en el almacén."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Almacena productos y mercancías justificando su ubicación y condiciones de almacenamiento en función del espacio disponible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado distintos tipos de almacenes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la ubicación física de las distintas zonas del almacén."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito sistemas básicos y reglas generales de ubicación de mercancías en el almacén para optimizar el espacio disponible."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado órdenes de movimiento de mercancías y productos para optimizar el espacio de almacenaje o proceder a su expedición o suministro."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descrito el funcionamiento de carretillas automotoras para la manipulación de cargas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han colocado cargas o mercancías en el lugar indicado en la orden de trabajo, teniendo en cuenta las características de las mismas y sus condiciones de manipulación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado medios informáticos para transmitir, con precisión, la información de los movimientos que se realizan de cargas y mercancías."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado y respetado las medidas de seguridad y prevención de riesgos en el almacén."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido el almacén limpio y ordenado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Colabora en la elaboración de inventarios de mercancías, realizando operaciones básicas de control de existencias mediante herramientas informáticas de control de almacenes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito la documentación técnica relacionada con el almacén."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado el almacenaje mínimo con el tiempo de aprovisionamiento de proveedores y la demanda."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los tipos de almacenajes así como de inventarios y sus variables."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado inventario de productos existentes en un almacén, elaborando partes de incidencia si fuese necesario y comunicando necesidades de reaprovisionamiento y roturas de «stock»."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han señalado los mecanismos que se emplean para asegurar la renovación de almacenajes y el mantenimiento del «stock» mínimo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha identificado el sistema óptimo de reposición de «stocks» en función del tipo de almacén."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado aplicaciones informáticas específicas de control de almacenes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado la información asociada al control del almacén, de manera ordenada, estructurada, clara y precisa, utilizando procesadores de texto y hojas de cálculo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la relevancia del control de almacén en la distribución comercial y en el proceso productivo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Prepara pedidos para su expedición relacionando las características, condiciones de manipulación y conservación de mercancías y productos con órdenes de trabajo y documentos de expedición.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha interpretado la normativa que regula el embalaje y el etiquetado de las mercancías o productos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las características de los distintos tipos de embalaje con las características físicas y técnicas de los productos y mercancías, sus condiciones de manipulación y transporte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito, a partir de la orden de pedido, las mercancías a expedir."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha verificado, a partir de las fichas de almacén, que existe mercancía suficiente para cubrir el pedido."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los movimientos a realizar en el almacén hasta ubicar la mercancía en la zona de expedición y los equipos adecuados de manipulación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han utilizado aplicaciones informáticas para cumplimentar notas de entrega."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado salidas de mercancías en fichas de almacén y documentación técnica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han creado etiquetas y se ha determinado el lugar que deben ocupar en el embalaje, así como las señales de protección de la mercancía."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado órdenes de carga, identificando el lugar de colocación de la mercancía en el medio de transporte en función de sus características físicas y su destino."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha demostrado responsabilidad ante errores."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Operaciones auxiliares en la industria alimentaria",
+      "codigo": "3133",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Colabora en el trabajo de control y recepción de materias primas y de productos auxiliares, registrando las mediciones previas y ejecutando posteriores instrucciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado las instrucciones recibidas y la documentación asociada a la recepción de materias primas y productos auxiliares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las materias primas y sus características, relacionándolas con el proceso y producto final."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las mediciones previas registrando los datos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han transportado y depositado las materias primas atendiendo a las instrucciones de trabajo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara las materias primas y los productos auxiliares, realizando las operaciones básicas necesarias y atendiendo a las instrucciones del proceso previo a la elaboración.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha puesto a punto el material que se ha de utilizar en la preparación de las materias primas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha seleccionado la materia prima que se necesita teniendo en cuenta el producto que se va a obtener."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha limpiado la materia prima eliminando las partes sobrantes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha troceado, despiezado, molido o picado las materias primas y productos entrantes en los casos necesarios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha controlado el ritmo del proceso evitando atascos o excesos en la entrada."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Prepara materiales de envasado, acondicionado y embalaje de productos alimentarios, regulando los equipos específicos según las instrucciones de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los útiles y materiales apropiados al trabajo de envasar y configurar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principales tipos y modalidades de envasados de productos alimentarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la limpieza de los envases externos en las condiciones de higiene necesarias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los materiales de embalaje."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han regulado los equipos de la línea de envasado según las instrucciones recibidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha asociado el tipo de envasado, acondicionado y embalaje con el proceso de producción y el producto obtenido."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado los materiales de acondicionamiento asociados a la presentación final."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado la normativa higiénico-sanitaria, las medidas de seguridad y prevención de riesgos laborales y ambientales asociados a las operaciones de preparación de materiales y preparación de equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Envasa y acondiciona los productos alimentarios, controlando las líneas automáticas del proceso de acuerdo con las instrucciones establecidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han supervisado y puesto a punto las máquinas, equipos principales y auxiliares del proceso de envasado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado el control del llenado, cerrado y etiquetado automático de los envases de productos alimentarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha registrado en las hojas y partes de trabajo el recuento de consumibles y de los envases producidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha reconocido el lugar donde debe alojarse los envases contados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha establecido la forma y el lugar donde debe depositarse los sobrantes y desechos para su recuperación o eliminación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado la normativa higiénico-sanitaria, las medidas de seguridad y prevención de riesgos laborales y ambientales aplicados a la utilización de máquinas y equipos de envasado y acondicionado de productos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Empaqueta y embala los productos alimentarios envasados, operando con equipos automáticos o semiautomáticos según las instrucciones de trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la disposición correcta en las líneas o equipos de los materiales principales y auxiliares de embalaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha operado con las máquinas de embalaje, controlando su funcionamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han comprobado las operaciones finales de embalaje."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el lugar y la forma donde depositar los residuos del embalaje para su recuperación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha registrado el número de consumibles y paquetes o unidades producidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado la normativa higiénico-sanitaria, las medidas de seguridad y prevención de riesgos laborales y ambientales asociados a las operaciones de embalaje."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Elaboración de productos alimentarios",
+      "codigo": "3134",
+      "ects": null,
+      "horas_minimas_boe": 125,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Elabora productos alimentarios, aplicando técnicas sencillas, el utillaje y los equipos correspondientes al proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado la documentación y las instrucciones de trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido las operaciones de elaboración de productos alimentarios que hay que realizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado correctamente los utensilios, equipos y sustancias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han añadido todos los ingredientes y sustancias que formen parte del producto elaborado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha mantenido el ritmo el proceso, evitando posibles incidencias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las medidas de higiene y de seguridad específicas en la manipulación de productos y manejo de equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza operaciones básicas de tratamientos finales de conservación y acabado de productos alimentarios, utilizando técnicas según las instrucciones recibidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los equipos e instalaciones que intervienen en los tratamientos finales de conservación y/o acabado de productos alimenticios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han cargado los equipos y cámaras de tratamientos en la forma y cuantía establecidos para el proceso."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha controlado los medios y sistemas de regulación de los equipos e instalaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han revisado los indicadores de los parámetros estándar y se han registrado los datos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han depositado los productos tratados en el lugar y de la forma adecuada para su posterior traslado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha colaborado en la toma de muestras aplicando instrucciones detallando explicaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones básicas de mantenimiento en instalaciones y servicios auxiliares de la industria alimentaria, colaborando en su mantenimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los servicios auxiliares que tiene la industria alimentaria, relacionándolos con el proceso productivo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la señalización, los colores y los trazados de las conducciones de los servicios auxiliares."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha actuado sobre los mandos y los aparatos reguladores en operaciones sencillas y rutinarias de la producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha ayudado en la puesta a punto y mantenimiento básico de los servicios e instalaciones auxiliares."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han adoptado medidas de seguridad personal y de protección ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Adopta las normas de seguridad alimentaria en las operaciones de preparación de materias primas y productos auxiliares, reconociendo los factores de riesgo y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las normas básicas de higiene alimentaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado las medidas de higiene necesarias en la recepción de materias primas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han adoptado las medidas de higiene estipuladas en las operaciones de transporte, descanso y ubicación de las mercancías."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado las medidas de higiene personal en el proceso de tratamiento de materias primas y auxiliares."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seguido los requisitos higiénicos generales de las instalaciones y equipos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado la recogida y control de residuos adoptando las medidas higiénicas estipuladas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad 1º",
+      "codigo": "3159p",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales I",
+      "codigo": "3161",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias Aplicadas I",
+      "codigo": "3163",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Primero",
+      "codigo": "TU01CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Limpieza y mantenimiento de instalaciones y equipos",
+      "codigo": "3135",
+      "ects": null,
+      "horas_minimas_boe": 110,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza tareas rutinarias de limpieza y desinfección general de áreas de trabajo, instalaciones, maquinaria y equipos de la industria alimentaria reconociendo los procedimientos de limpieza y desinfección y las medidas de higiene personal y general relacionadas con su trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los medios y productos de limpieza y desinfección con las zonas, instalaciones y equipos donde se aplican."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado los productos de higiene y desinfección para la limpieza de instalaciones y equipos de la industria alimentaria."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado los utensilios y maquinaria de higienización."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado los procesos y procedimientos de limpieza, desinfección e higienización manuales o automáticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado que el trabajo realizado es el esperado según los parámetros establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza tareas rutinarias para eliminar la suciedad en materiales, instrumentos, equipos y áreas de laboratorios e industrias químicas, reconociendo los procedimientos de limpieza y desinfección y las medidas de higiene personal y general relacionadas con su trabajo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los equipos y productos de limpieza con los materiales, instrumentos equipos y áreas de laboratorios donde se aplican y con la naturaleza de la suciedad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado que los productos y/o equipos de limpieza se encuentran en condiciones adecuadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado que los contenedores de eliminación de residuos de productos químicos se encuentran en el lugar adecuado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado la ropa de trabajo adecuada a los productos que se manipulen."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reconocido y utilizado los equipos de protección adecuados al tipo de productos que manipulen."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza limpiezas específicas en función de los tipos de urgencia, y riesgo para las personas, equipos e instalaciones, siguiendo instrucciones y según los protocolos establecidos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha diferenciado la actuación urgente ante una limpieza imprevista frente a la limpieza previamente establecida en los planes de limpieza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la limpieza de laboratorios e industrias químicas siguiendo la frecuencia definida en lo reglamentado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado materiales y equipos específicos en la eliminación de vertidos accidentales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado los registros establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comunicado al responsable de gestión ambiental la necesidad de retirar los residuos que se eliminan a través de un gestor autorizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa de seguridad laboral y de protección medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza operaciones de recogida, depuración y vertido de residuos, aplicando los procedimientos establecidos en los planes de gestión ambiental.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los distintos tipos de residuos que se generan en las industrias alimentarias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los residuos y contaminantes originados en la industria alimentaria con los efectos medioambientales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha colaborado en la recogida de residuos con las precauciones y procedimientos establecidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han almacenado en el lugar indicado los residuos y desperdicios de la industria alimentaria."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el manejo rutinario de los equipos de depuración."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha tomado la muestra según las indicaciones recibidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza tareas rutinarias de preparación y mantenimiento de equipos e instalaciones, reconociendo los procedimientos establecidos en las instrucciones recibidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las operaciones de preparación de cámaras, equipos e instalaciones para las diferentes elaboraciones de productos alimentarios."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado y puesto a punto los equipos e instalaciones según las instrucciones de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": ".Se han detectado las anomalías en el funcionamiento de los equipos e instalaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha ayudado en reparaciones sencillas y en arreglos y mejoras de equipos e instalaciones de procesos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa higiénico-sanitaria, de seguridad laboral y de protección medioambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Operaciones básicas de laboratorio",
+      "codigo": "3136",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza operaciones rutinarias sencillas de medida de masas y volúmenes siguiendo procedimientos normalizados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los conceptos de masa y volumen."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido el material básico del laboratorio."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado las balanzas en función de las cantidades de masa que hay que utilizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diferenciado los distintos aparatos para medir volúmenes en función de las cantidades de líquido que hay que utilizar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el trasvase de líquidos atendiendo a las indicaciones necesarias."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado en el soporte establecido las operaciones realizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha operado siguiendo las normas de protección y seguridad personal y medioambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara mezclas y disoluciones rutinarias, seleccionando los materiales y productos necesarios.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los reactivos implicados en la preparación de una disolución."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los materiales y equipos de preparación rutinaria de mezclas y disoluciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado los cálculos de la concentración requerida."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las medidas correspondientes de soluto y disolvente en la preparación de una disolución determinada."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado mezclas rutinarias de bajo riesgo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado disoluciones sencillas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y etiquetado las disoluciones preparadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos y de protección ambiental en todo el proceso de preparación de mezclas y disoluciones rutinarias."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza operaciones auxiliares sencillas de laboratorio, manejando equipos o útiles adecuados y siguiendo instrucciones recibidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las propiedades básicas para el tratamiento de materias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las operaciones básicas que hay que realizar con el posterior tratamiento que va a tener lugar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han tratado y eliminado los residuos generados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han anotado los trabajos realizados en los soportes correspondientes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos y de protección ambiental en todo el proceso de realización de operaciones sencillas de laboratorio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza tareas rutinarias de preparación y mantenimiento de equipos auxiliares e instalaciones de laboratorio, reconociendo los procedimientos establecidos en las instrucciones recibidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado las operaciones de preparación de equipos e instalaciones de laboratorio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado y puesto a punto los equipos e instalaciones según las instrucciones de trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": ".Se han detectado las anomalías en el funcionamiento de los equipos e instalaciones."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha ayudado en reparaciones sencillas y en arreglos y mejoras de equipos e instalaciones de laboratorios."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado todas las operaciones teniendo en cuenta la normativa de seguridad laboral y de protección medioambiental. Duración 140 horas. Contenidos. Operaciones rutinarias de medida de masas y volúmenes: ‒ Producto químico. Tipos de envases. Pictogramas e indicaciones de las etiquetas de productos químicos. ‒ Dependencias y mobiliario de laboratorio. ‒ Aparatos de medida de masa y volumen. Balanzas. Tipos de balanzas. ‒ Pipetas y material volumétrico. Tipos y mantenimiento. ‒ Sistemas de medida de masa y volumen. ‒ Cálculos sencillos de concentraciones. ‒ Equipos de protección individual en el laboratorio de química. ‒ Seguridad en el laboratorio de química. Preparación de mezclas y disoluciones rutinarias ‒ Características y denominación de los productos y reactivos químicos más comunes. ‒ Mezclas y disoluciones. ‒ Disoluciones. Tipos de disoluciones. ‒ Componentes de una disolución: soluto y disolvente. ‒ Preparación de disoluciones según procedimientos descritos. ‒ Instrumentos y equipos en la preparación de disoluciones. Operaciones auxiliares sencillas de laboratorio: ‒ Materiales y equipos comunes en el laboratorio. ‒ Operaciones auxiliares en procesos de la industria química. ‒ Métodos de separación de mezclas. Preparación y mantenimiento de equipos auxiliares. ‒ Servicios auxiliares en un laboratorio. ‒ Mantenimiento de primer nivel de los equipos e instalaciones de tratamiento de aguas. ‒ Procedimientos de orden y limpieza en los equipos de tratamiento de aguas. ‒ Procedimientos de orden y limpieza en los equipos de tratamiento de gas. ‒ Mantenimiento de primer nivel de los equipos e instalaciones de gas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad",
+      "codigo": "3159",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de aprendizaje colaborativo",
+      "codigo": "3160971",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales II",
+      "codigo": "3162",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias aplicadas II",
+      "codigo": "3164",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Segundo",
+      "codigo": "TU02CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

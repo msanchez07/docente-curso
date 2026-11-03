@@ -1,0 +1,1715 @@
+{
+  "id": "gs-sistemas-de-telecomunicaciones-e-informaticos",
+  "denominacion": "Sistemas de Telecomunicaciones e Informáticos",
+  "nivel": "Formación Profesional de Grado Superior",
+  "familia_profesional": "Electricidad y Electrónica",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "STIT",
+  "rd": "Real Decreto 883/2011, de 24 de junio, por el que se establece el título de Técnico Superior en Sistemas de Telecomunicaciones e Informáticos y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-12724",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GS",
+      "codigo": "0179",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional, académica y cotidiana, contenida en todo tipo de discursos orales, emitidos por cualquier medio de comunicación en lengua estándar, interpretando con precisión el contenido del mensaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de mensajes en lengua estándar relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de mensajes directos o emitidos en cualquier soporte en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica contenida en distintos discursos orales en lengua estándar, relacionada con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado el punto de vista y la actitud del hablante."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en dichos mensajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comprendido adecuadamente mensajes en lengua estándar en ambientes con contaminación acústica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído las ideas principales de conferencias, charlas e informes, y otras formas de presentación académica y profesional, lingüísticamente complejas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje sin entender todos y cada uno de los elementos del mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende mensajes escritos, de naturaleza profesional, académica y cotidiana, de relativa dificultad, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la idea principal de textos específicos de su ámbito social, profesional o académico."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha extraído información específica de textos, de diferente naturaleza, relativos a su profesión, y contenidos en distintos soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un texto sin entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han leído y comprendido, de manera autónoma, textos relacionados con el sector con la velocidad y estilo de lectura propia del nivel competencial."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha interpretado la correspondencia relativa a su especialidad, captando fácilmente el significado esencial."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado textos extensos, y de cierta complejidad, relacionados o no con su especialidad, pudiendo realizar varias lecturas del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha identificado con rapidez el contenido y la importancia de noticias, artículos e informes sobre una amplia serie de temas profesionales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han interpretado instrucciones, con distintos niveles de dificultad, y mensajes técnicos recibidos a través de soportes digitales."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han traducido textos de cierta complejidad, utilizando material de apoyo en caso necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales claros y bien estructurados, analizando el contenido de la situación y adaptándose al registro lingüístico del interlocutor.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han emitido mensajes generales propios de sector y de la vida cotidiana, utilizando nexos y estrategias de interacción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha intercambiado con fluidez información específica y detallada utilizando estructuras de una complejidad acorde al nivel competencial."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y aplicado los registros adecuados para la emisión del mensaje, así como protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado presentaciones, bien estructuradas, sobre temas de su ámbito profesional, haciendo uso de los protocolos establecidos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito y secuenciado oralmente un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha solicitado la reformulación del discurso o parte del mismo cuando se ha considerado necesario."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha interaccionado espontáneamente, adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha expresado con fluidez, precisión y eficacia sobre una amplia serie de temas generales, académicos, profesionales o de ocio, marcando con claridad la relación entre las ideas."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han expresado y defendido puntos de vista con claridad, proporcionando explicaciones y argumentos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha respondido a preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta documentos e informes, propios del sector o de la vida académica y cotidiana, relacionando los recursos lingüísticos con el propósito de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escrito textos claros y detallados sobre una variedad de temas relacionados con su profesión, sintetizando y evaluando información y argumentos procedentes de varias fuentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, utilizando vocabulario específico y protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información con corrección, precisión, con cohesión y coherencia, solicitando y/o facilitando información de tipo general o detallada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han cumplimentado textos mediante apoyos visuales y claves lingüísticas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elaborado informes, destacando los aspectos significativos y ofreciendo detalles relevantes que sirvan de apoyo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han escrito cartas, formales e informales, empleando las fórmulas de cortesía establecidas y el vocabulario específico para la elaboración de las mismas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han resumido diferentes tipos de documentos escritos, utilizando sus propios recursos lingüísticos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han reconocido los marcadores lingüísticos de la procedencia regional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Configuración de infraestructuras de sistemas de telecomunicaciones",
+      "codigo": "0525",
+      "ects": 8,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza las instalaciones de las infraestructuras comunes de telecomunicaciones (ICT) para la captación, adaptación y distribución de señales de radiodifusión sonora y de televisión (emisiones terrestres y de satélite), analizando la normativa y describiendo la función y características de los espacios, equipos y elementos que la integran. Se han identificado los elementos y espacios que integran la ICT. Se han identificado el conjunto de elementos de captación de señales (antenas, mástiles, torretas y elementos de sujeción, entre otros). Se han identificado y reconocido sobre esquemas los elementos del equipo de cabecera. Se han relacionado los elementos del equipo de cabecera con los conjuntos de captación de señales. Se han identificado y reconocido sobre planos los tipos de redes (distribución, dispersión y de usuario). Se ha relacionado cada elemento de la ICT con su función y características.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura infraestructuras de telecomunicaciones para la captación, adaptación y distribución de señales de radiodifusión sonora y televisión, realizando cálculos y elaborando esquemas. Se han identificado las características físicas de los edificios para la instalación de la ICT. Se han ubicado en planos los elementos de captación, respetando las distancias a posibles obstáculos y a líneas eléctricas. Se han calculado los parámetros de los elementos y equipos. Se han seleccionado los elementos de captación en función de las características técnicas indicadas en la normativa (calidad de la señal, velocidad del viento, radiación e inmunidad, entre otras). Se han seleccionado los elementos activos y pasivos del equipo de cabecera, para el procesamiento de las señales. Se han dimensionado las redes que componen la infraestructura de comunicaciones. Se han dibujado esquemas (generales y de detalle) con la simbología normalizada. Se ha aplicado la normativa de ICT en la configuración de la instalación.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza la infraestructura común de telecomunicaciones para el acceso al servicio básico de telefonía y redes digitales de servicios integrados, analizando la normativa y describiendo la función y características de los elementos que la integran. Se han identificado los tramos que constituyen la red de interior (red de alimentación, distribución, dispersión y red interior de usuario). Se han identificado las características de la instalación de acuerdo con método de enlace entre las centrales y el inmueble (mediante cable o medios radioeléctricos). Se han reconocido en planos los registros implicados dependiendo del método de enlace. Se han determinado los elementos de conexión (puntos de interconexión, punto de distribución, punto de acceso al usuario y bases de acceso terminal). Se han identificado los elementos y características de la red digital de servicios integrados. Se han determinado los elementos que constituyen los sistemas de interfonía y videoportería. Se han localizado sobre planos o esquemas los elementos de la red.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Configura infraestructuras de telecomunicaciones para el acceso al servicio de telefonía disponible al público, realizando cálculos y elaborando esquemas. Se han identificado los usos del inmueble (viviendas, locales comerciales y oficinas en edificios de viviendas, entre otros). Se han evaluado las necesidades telefónicas de los usuarios del inmueble. Se han determinado el número de líneas, atendiendo al uso, número de puestos de trabajo, superficie y tipos de acceso. Se ha tenido en cuenta en la red común el cableado para el servicio a través de redes digitales. Se ha dimensionado la red de distribución, teniendo en cuenta la necesidad futura estimada y el número de verticales. Se han dimensionado las redes de dispersión e interior de usuario, (número de estancias, superficies, entre otros). Se ha determinado la ubicación de los terminadores de red. Se han seleccionado los elementos de las instalaciones. Se han elaborado esquemas de la instalación, utilizando programas informáticos.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Caracteriza la infraestructura común de telecomunicaciones para el acceso al servicio de telecomunicaciones de banda ancha, analizando la normativa y describiendo la función y características de los elementos que la integran. Se han identificado los tipos de red. Se ha reconocido el tipo de enlace (mediante cable o radioeléctrico). Se han identificado en planos o esquemas los registros y recintos de la red de distribución. Se han determinado los elementos de conexión en los puntos de distribución final. Se han determinado los elementos de conexión en los puntos de terminación de red. Se han identificado las especificaciones técnicas mínimas de los edificios en materia de telecomunicaciones.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Configura infraestructuras de redes de voz y datos con cableado estructurado, analizando las características de las redes y elaborando esquemas. Se han evaluado las necesidades de los servicios a soportar. Se han previsto futuras ampliaciones en los servicios. Se ha tenido en cuenta la presencia de otras instalaciones posibles fuentes de interferencias. Se han seleccionado equipos y elementos (cableados, canalizaciones y distribuidores, entre otros) de cada subsistema. Se han seleccionado elementos y equipos de los recintos de telecomunicaciones. Se han elaborado esquemas de los racks. Se han definido las condiciones de seguridad de los recintos de telecomunicaciones y cuartos de equipos. Se han elaborado esquemas de la instalación, utilizando programas informáticos.",
+          "ce": []
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Determina las características de las instalaciones eléctricas para sistemas de telecomunicaciones, analizando los requerimientos del sistema y dimensionando los elementos que las integran. Se han identificado las características del sistema eléctrico de los recintos e instalaciones de telecomunicaciones (equipos de cabecera, cuartos de telecomunicaciones, tomas de tierra y sistemas de captación de señales, entre otros). Se han dimensionado los mecanismos y elementos de la instalación. Se han reconocido los elementos de protección y su función. Se ha calculado el calibre de las protecciones en función del tipo de instalación. Se ha establecido la distribución de los elementos en el cuadro de protección. Se han ubicado, en los esquemas de los recintos, los mecanismos, tomas de corriente y protecciones, entre otros. Se ha verificado la aplicación de la normativa (REBT).",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Elementos de sistemas de telecomunicaciones",
+      "codigo": "0551",
+      "ects": 8,
+      "horas_minimas_boe": 75,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los sistemas de telecomunicaciones, identificando los subsistemas que los integran y analizando su función en el conjunto. Se ha identificado la función de los dispositivos electrónicos empleados en telecomunicaciones (amplificadores, mezcladores, osciladores, moduladores, filtros, entre otros). Se han reconocido los diferentes tipos de modulación, sus características y aplicaciones. Se ha elaborado un diagrama de los bloques funcionales del sistema. Se han identificado los tipos de canales de comunicaciones y sus características. Se han definido las características de los transmisores de radiofrecuencia. Se han definido las características de los receptores de radiofrecuencia. Se han relacionado las señales de entrada y salida con su tratamiento en cada bloque. Se han visualizado o medido señales de entrada y salida en los subsistemas.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Determina las características de las antenas de transmisión/recepción para sistemas de radiofrecuencia, analizando sus parámetros típicos e identificando sus aplicaciones. Se han identificado los modos de propagación de señales electromagnéticas. Se han reconocido bandas y servicios de comunicaciones en el espectro electromagnético. Se han definido las características de las antenas. Se han relacionado tipos de antenas con su aplicación. Se han relacionado los elementos de las antenas con su función. Se han calculado parámetros de las antenas. Se han relacionado diagramas de radiación con su aplicación.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Evalúa las prestaciones de los medios guiados de transmisión, realizando montajes, medidas y verificando sus características. Se han identificado los medios de transmisión guiados (cables de pares, fibra, guías de onda, entre otros). Se han reconocido sus características y campos de aplicación. Se han montado los conectores y accesorios utilizados en medios de transmisión de cobre. Se han realizado empalmes en fibra óptica. Se han unido cables de fibra mediante conectores. Se han medido parámetros de los medios de transmisión guiados. Se han relacionado los parámetros medidos con su valor característico en distintas aplicaciones.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Determina la calidad de las señales en líneas de transmisión de telecomunicaciones, aplicando técnicas de medida o visualización e interpretando los valores obtenidos. Se han identificado los equipos de medida de señales eléctricas y sus aplicaciones. Se han identificado los equipos de medida de señales de radiofrecuencia y sus aplicaciones. Se han identificado los equipos de medida de fibra óptica y sus aplicaciones. Se han reconocido las medidas que hay que realizar para comprobar la calidad de las señales y líneas de transmisión. Se han medido o visualizado señales. Se ha evaluado la calidad en señales y líneas de transmisión. Se han relacionado los valores medidos de las señales con valores de referencia.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la calidad de las señales de sonido y vídeo, aplicando técnicas de visualización o medida e interpretando sus parámetros. Se han relacionado las magnitudes fundamentales utilizadas en audio y vídeo con sus unidades de medida. Se han identificado y relacionado las funciones lineales y logarítmicas y sus unidades. Se han caracterizado los fenómenos acústicos y electroacústicos. Se han visualizado señales de audio y vídeo e identificado sus características. Se han valorado los niveles normalizados de las señales y sus unidades de medida. Se han determinado las características de las señales de audio y vídeo digitales. Se han reconocido las perturbaciones más usuales que afectan a los sistemas de sonido y vídeo. Se han identificado los instrumentos, equipos y técnicas de medida utilizados para evaluar señales de audio y vídeo. Se han medido y visualizado señales digitales.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas informáticos y redes locales",
+      "codigo": "0552",
+      "ects": 11,
+      "horas_minimas_boe": 95,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Selecciona equipos informáticos, evaluando los requerimientos del sistema de telecomunicaciones y definiendo la composición y características de sus elementos. Se han determinado las necesidades informáticas de los sistemas de telecomunicación. Se han identificado los equipos en función de las aplicaciones del sistema de telecomunicaciones. Se han caracterizado los componentes del equipo informático. Se han caracterizado diferentes tipos de periféricos. Se han determinado las necesidades de software de los sistemas de telecomunicaciones. Se ha determinado el equipamiento.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura equipos informáticos, examinando las características requeridas por el sistema de telecomunicaciones e instalando el hardware y el software. Se ha verificado que el hardware y software responden a las necesidades del sistema. Se ha interpretado la documentación técnica de los elementos del equipo. Se han montado los elementos físicos del equipo informático. Se han instalado los periféricos específicos. Se han cargado los sistemas operativos. Se ha configurado el software del equipo. Se ha documentado el proceso de montaje.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Configura servicios y funciones específicas en el sistema informático, planificando su implantación y teniendo en cuenta las especificaciones del sistema de telecomunicaciones. Se han interpretado los requerimientos software del sistema. Se ha planificado la asignación de servicios y funciones. Se han configurado cuentas de usuarios, perfiles y políticas de contraseñas. Se han configurado aplicaciones y servicios requeridos. Se han utilizado herramientas de virtualización y simulación del sistema informático. Se ha verificado el funcionamiento del sistema.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Integra redes de área local (LAN) en sistemas de telecomunicaciones, interpretando las especificaciones del sistema y configurando las partes física y lógica. Se han caracterizado los componentes de las redes de datos. Se han identificado las topologías y estructuras de redes. Se ha distinguido el funcionamiento y las características de los elementos de trabajo en red (networking). Se han reconocido los protocolos de comunicación. Se ha planificado una red LAN y su direccionamiento. Se ha montado la electrónica de red y los elementos asociados. Se han conexionado los equipos y los elementos de la red. Se ha configurado una red LAN.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Integra redes locales inalámbricas (WLAN) en sistemas de telecomunicaciones, interpretando las especificaciones del sistema y configurando las partes física y lógica. Se han definido las redes inalámbricas de acceso local (WLAN). Se han determinado los componentes y características de las redes WLAN. Se ha diseñado una red WLAN. Se han ubicado los dispositivos y equipos. Se han configurado los servicios y dispositivos de la red WLAN. Se han configurado los elementos de seguridad de la red. Se ha verificado el funcionamiento de la WLAN.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza pruebas de puesta en servicio de sistemas informáticos o redes de datos, aplicando técnicas de análisis de rendimiento y verificando su integración en el sistema de telecomunicaciones. Se han identificado los puntos de control. Se ha aplicado el plan de puesta en servicio. Se ha probado el funcionamiento del hardware del sistema. Se ha comprobado el funcionamiento del software del sistema. Se ha verificado el funcionamiento de las redes. Se ha realizado la integración de los equipos informáticos en el sistema de telecomunicaciones. Se han realizado pruebas de rendimiento del sistema informático. Se ha documentado la puesta en servicio.",
+          "ce": []
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Mantiene sistemas informáticos y redes, aplicando técnicas de diagnóstico o monitorizado y efectuando la corrección de las disfunciones. Se han relacionado las averías típicas de los sistemas informáticos y redes locales, con los elementos del sistema. Se ha aplicado el plan de mantenimiento. Se han utilizado herramientas hardware/software de diagnóstico y monitorización. Se han ejecutado las tareas de mantenimiento preventivo y predictivo. Se ha localizado el equipo o elemento responsable de la disfunción. Se ha reparado la avería. Se ha restituido el funcionamiento. Se han documentado las intervenciones de mantenimiento.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas y procesos en infraestructuras de telecomunicaciones",
+      "codigo": "0553",
+      "ects": 8,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Replantea infraestructuras de sistemas de telecomunicaciones, interpretando planos de edificación y esquemas de la instalación y relacionando redes de cableado, equipos y elementos con su lugar de ubicación. Se ha verificado la coincidencia entre los datos de los planos y la ubicación de las instalaciones. Se ha verificado que los espacios (recintos, registro, arquetas y lugar de ubicación de los elementos de captación de señales, entre otros) son los indicados en la documentación. Se han tenido en cuenta las características específicas de los tipos de instalación. Se ha comprobado que el trazado de la instalación no interfiere con otras instalaciones existentes o previstas. Se han relacionado los espacios y elementos de la instalación con su lugar de ubicación. Se han identificado posibles contingencias y planteado soluciones. Se ha marcado el trazado de la instalación en planos y/u obra. Se han tenido en cuenta los reglamentos y normas de aplicación en el replanteo.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Monta conjuntos captadores de señales de radiodifusión sonora y de televisión para emisiones terrestres y de satélite, interpretando planos y esquemas de montaje y aplicando técnicas específicas. Se han seleccionado los equipos y herramientas de montaje de antenas y mástiles. Se han montado elementos soporte de las antenas y sus elementos de fijación. Se han montado antenas para radiodifusión sonora y televisión. Se ha verificado la dirección de máxima señal. Se han orientado las antenas. Se han montado los elementos activos o pasivos para entregar la señal al equipo de cabecera. Se han conectado los mástiles de antena a la toma de tierra.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Monta el equipamiento de cabecera, describiendo la función de cada elemento y aplicando técnicas específicas. Se han montado bases soporte de fijación mural o racks para ubicar los equipos. Se han seleccionado los elementos en función del tipo de cabecera. Se han montado los elementos del equipo de cabecera (mezcladores de señales, conversores y separadores, entre otros) necesarios para procesar las señales. Se han conexionado los elementos del equipo de cabecera. Se han montado la alimentación del sistema. Se han verificado las características que debe presentar la instalación a la salida (impedancia y nivel máximo, entre otros). Se han configurado los elementos del sistema.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Instala los elementos de la red de distribución para señales de radio y televisión, interpretando planos o esquemas de su estructura y aplicando técnicas específicas de montaje. Se ha tendido el cableado de la red de distribución. Se ha tendido el cableado de la red de dispersión. Se ha tendido el cableado de la red interior de usuario. Se han montado derivadores y distribuidores. Se han montado las tomas de usuario (bases de acceso terminal). Se han montado los puntos de acceso de usuario. Se han conexionado los cables de la red. Se han verificado los valores de las características de la red.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Instala la infraestructura común de telecomunicaciones para el acceso al servicio de telefonía disponible al público (telefonía básica y través de una red digital de servicios integrados), interpretando planos o esquemas y aplicando técnicas específicas de montaje. Se ha identificado el método de enlace utilizado por los operadores. Se han identificado los tipos de acceso (acceso básico RDSI o acceso primario RDSI). Se han identificado los dos casos del acceso primario, teniendo en cuenta la ubicación del TR1 p. Se han individualizado, hasta la TR1 p, los cables de emisión y recepción. Se han montado los registros de terminación de red para telefonía básica (TB) y la red digital de servicios integrados (RDSI). Se han instalado diferentes configuraciones de cableado para RDSI (bus pasivo corto, bus pasivo ampliado y punto a punto). Se han montado los elementos de los puntos de distribución. Se ha montado la intercomunicación y control de acceso.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Instala infraestructuras de redes de banda ancha, interpretando planos y esquemas de su estructura y aplicando técnicas de montaje. Se ha replanteado la instalación de acuerdo a los planos. Se ha instalado el cableado troncal (subsistema de campus). Se ha instalado el cableado vertical (subsistema de edificios). Se ha instalado el cableado horizontal. Se han montado distribuidores de campus y de edificio de planta, entre otros. Se han montado los equipos de los recintos de telecomunicaciones y cuartos de equipos. Se han realizado pruebas y medidas de parámetros relacionados con certificaciones. Se han elaborado esquemas de las posibles modificaciones.",
+          "ce": []
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Verifica el funcionamiento de las infraestructuras de sistemas de telecomunicaciones, efectuando medidas y contrastándolas con los parámetros normativos. Se han seleccionado las herramientas e instrumental de medida. Se han efectuado medidas, ajustes y ensayos de funcionamiento. Se han interpretado los resultados obtenidos en las medidas. Se ha comprobado que los parámetros de la instalación cumplen la normativa o están de acuerdo a estándares. Se han ajustado equipos de acuerdo a parámetros normativos. Se han contrastado los resultados obtenidos.",
+          "ce": []
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Mantiene instalaciones de infraestructuras de sistemas de telecomunicaciones, efectuando mediciones y corrigiendo averías o disfunciones. Se ha realizado el plan de intervención en el sistema para la detección de fallos y averías, de acuerdo a la instalación. Se han realizado pruebas y medidas según la tipología del sistema. Se han interpretado las medidas realizadas, señalando las posibles disfunciones. Se han aplicado técnicas de diagnóstico y localización de averías según tipología y características de la instalación. Se han propuesto hipótesis de las causas y repercusión de averías. Se han sustituido equipos o partes de la instalación. Se ha verificado la restitución del funcionamiento en caso de avería. Se han realizado las operaciones de mantenimiento preventivo.",
+          "ce": []
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos. Se han identificado los riesgos y el nivel de peligrosidad que supone la manipulación de los materiales, herramientas, útiles y máquinas. Se han utilizado las máquinas respetando las normas de seguridad. Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales y herramientas, entre otros. Se han descrito los elementos de seguridad de las máquinas (protecciones, alarmas y paros de emergencia, entre otros) y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento. Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridas. Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de montaje y mantenimiento de los sistemas de telefonía. Se han identificado las posibles fuentes de contaminación del entorno ambiental. Se han clasificado los residuos generados para su retirada selectiva. Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de sistemas de telecomunicaciones e informáticos",
+      "codigo": "0558p",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer. Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen. Se han caracterizado las empresas tipo, indicando la estructura organizativa y las funciones de cada departamento. Se han identificado las necesidades más demandadas a las empresas. Se han valorado las oportunidades de negocio previsibles en el sector. Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas. Se han determinado las características específicas requeridas al proyecto. Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación. Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen. Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen. Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto. Se ha realizado el estudio de viabilidad técnica del mismo. Se han identificado las fases o partes que componen el proyecto y su contenido. Se han establecido los objetivos que se pretenden conseguir identificando su alcance. Se han previsto los recursos materiales y personales necesarios para realizarlo. Se ha realizado el presupuesto económico correspondiente. Se han identificado las necesidades de financiación para la puesta en marcha del mismo. Se ha definido y elaborado la documentación necesaria para su diseño. Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada. Se han secuenciado las actividades, ordenándolas en función de las necesidades de implementación. Se han determinado los recursos y la logística necesaria para cada actividad. Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades.",
+          "ce": [
+            {
+              "codigo": "ñ",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades. Se han identificado los riesgos inherentes a la implementación, definiendo el plan de prevención de riesgos y los medios y equipos necesarios. Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución. Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación. Se ha definido y elaborado la documentación necesaria para la implementación o ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados. Se ha definido el procedimiento de evaluación de las actividades o intervenciones. Se han definido los indicadores de calidad para realizar la evaluación. Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro. Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos. Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto. Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos. Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Gestión de proyectos de instalaciones de telecomunicaciones",
+      "codigo": "0601",
+      "ects": 6,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica la documentación técnico-administrativa de las instalaciones, analizando proyectos e interpretando la información de cada documento. Se han reconocido los documentos que componen un proyecto. Se ha identificado la función de cada documento. Se ha relacionado el proyecto de la instalación con el proyecto general. Se han determinado los informes necesarios para la elaboración de cada documento. Se han reconocido las gestiones de tramitación legal de un proyecto. Se han identificado los datos requeridos por el modelo oficial de certificado de instalación. Se ha identificado la normativa de aplicación.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Elabora planos y esquemas de instalaciones de telecomunicaciones, dando respuesta a la configuración de las instalaciones y manejando programas informáticos de aplicación. Se han relacionado los elementos y espacios con la configuración de la instalación. Se han identificado los planos y esquemas indicados por la normativa. Se ha seleccionado la escala y el formato apropiado, de acuerdo con la utilizada en los planos de edificación. Se han tenido en cuenta las escalas mínimas para los planos de planta y para los planos generales de situación. Se han dibujado los esquemas (general, de principio y detalles, entre otros) de la infraestructura. Se han dibujado planos de la instalación. Se ha incluido en el cajetín la información indicada en la norma. Se han incorporado las leyendas cuando corresponda.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Elabora presupuestos de instalaciones de telecomunicaciones, considerando listado de materiales, baremos y aplicando precios unitarios. Se han identificado las unidades de obra de las instalaciones o sistemas y los elementos que las componen. Se han realizado las mediciones de obra. Se han determinado los recursos para cada unidad de obra. Se han obtenido los precios unitarios a partir de catálogos de fabricantes. Se ha detallado el coste de cada unidad de obra. Se han realizado las valoraciones de cada capítulo del presupuesto. Se han utilizado aplicaciones informáticas para la elaboración de presupuestos. Se ha valorado el coste de mantenimiento predictivo y preventivo.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Planifica el aprovisionamiento para el montaje y mantenimiento de instalaciones y de telecomunicaciones, analizando los requerimientos de la instalación y la documentación técnica. Se han definido las características de aceptación de equipos, medios y materiales. Se han definido los puntos críticos de aprovisionamiento en el montaje y mantenimiento. Se ha definido el sistema de codificación para la identificación y trazabilidad de los materiales. Se han relacionado las fases del plan de montaje con sus necesidades de aprovisionamiento. Se han identificado las necesidades para cada tipo de mantenimiento. Se han establecido las condiciones de suministro de cada material o equipo. Se ha elaborado el plan de aprovisionamiento.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Planifica el montaje de instalaciones de telecomunicaciones, analizando planes de montaje y definiendo las fases de ejecución. Se ha reconocido la documentación técnica, normas y reglamentos que afectan al montaje. Se han identificado las fases del proceso de montaje. Se han determinado las necesidades de cada fase de montaje. Se han reconocido los materiales, herramientas y maquinaria de cada fase de montaje. Se han determinado los recursos humanos de cada fase de montaje. Se han evaluado los puntos críticos de montaje. Se ha representado el cronograma del montaje según sus fases. Se han determinado los medios de protección necesarios. Se han previsto contingencias y propuesto soluciones para su resolución. Se ha elaborado el plan de montaje.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Elabora manuales y documentos anexos a los proyectos de instalaciones de telecomunicaciones, definiendo procedimientos de previsión, actuación y control. Se han relacionado las medidas de prevención de riesgos en el montaje o mantenimiento de las instalaciones y sistemas. Se han identificado las pautas de actuación en situaciones de emergencia. Se han definido los indicadores de calidad de la instalación o sistema. Se ha definido el informe de resultados y las acciones correctoras, atendiendo a los registros. Se ha establecido el procedimiento de trazabilidad de materiales y residuos. Se ha determinado el almacenaje y tratamiento de los residuos generados en los procesos. Se han elaborado manuales de servicio y mantenimiento. Se han elaborado manuales de puesta en servicio.",
+          "ce": []
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Planifica el mantenimiento de las instalaciones de telecomunicaciones, identificando necesidades y elaborando programas de mantenimiento y gestión de residuos. Se han identificado las partes y elementos de la instalación susceptibles de mantenimiento. Se ha planificado el aprovisionamiento de cada una de las partes. Se ha establecido el procedimiento para las operaciones básicas de mantenimiento preventivo y correctivo. Se ha programado el mantenimiento de la instalación teniendo en cuenta sus características. Se han identificado las instrucciones de los fabricantes de los equipos y elementos que intervienen en la instalación. Se han propuesto ajustes de los equipos y elementos para su buen funcionamiento. Se han determinado la compatibilidad de equipos o elementos. Se han elaborado programas de mantenimiento. Se han reconocido los tipos de residuos de una instalación. Se ha planificado el programa de gestión de residuos.",
+          "ce": []
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Aplica técnicas de gestión del montaje y mantenimiento de instalaciones de telecomunicaciones, analizando planes de montaje y estudios de seguridad. Se han identificado todos los apartados del plan de montaje. Se ha planificado el control de avance de obra. Se han adecuado el plan de montaje a las características de la instalación. Se han identificado técnicas de gestión de personal en la ejecución de las instalaciones y su mantenimiento. Se han aplicado técnicas de gestión de materiales y elementos para el montaje y mantenimiento de instalaciones. Se han reconocido procedimientos para la gestión del montaje y mantenimiento. Se han determinado indicadores de control del montaje y mantenimiento. Se ha aplicado la normativa.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas de telefonía fija y móvil",
+      "codigo": "0713",
+      "ects": 8,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Configura sistemas privados de telefonía convencional, determinando los servicios y seleccionando equipos y elementos. Se han identificado las características técnicas y funcionales de los sistemas y redes de telefonía analógica y digital. Se han reconocido normativas, requerimientos y especificaciones técnicas de las instalaciones. Se han distinguido los servicios de los operadores de telecomunicaciones. Se han identificado los interfaces y terminadores de red. Se han dimensionado las instalaciones fijas, centralitas, servicios adicionales y terminales, entre otros, y la red de usuario. Se ha dimensionado la estructura del servicio inalámbrico (DECT y enlaces GSM, entre otros). Se han seleccionado elementos del sistema. Se han elaborado esquemas de de la instalación.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura sistemas de telefonía de voz sobre IP, determinando los servicios y seleccionando equipos y elementos. Se han detallado las características técnicas, funcionales y aplicaciones de la telefonía de voz sobre IP (VoIP). Se han evidenciado los servicios de los operadores de telecomunicaciones de VoIP. Se han determinado los servicios de telecomunicaciones según necesidades y requerimientos. Se ha estructurado la red de usuario. Se han seleccionado los equipos, software, servidor SIP y proxy, entre otros, y los elementos de la red local de usuario. Se han seleccionado los equipos y elementos de la red local (ToIP) de movilidad (teléfonos, Wifi, IP, móviles y PDA, entre otros). Se han representado los esquemas de conexión de los equipos, terminales y elementos. Se han determinado los valores y parámetros de configuración de la instalación.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza sistemas de radiocomunicaciones para telefonía, identificando su estructura y analizando el funcionamiento de los equipos que la integran. Se han identificado reglamentos y normativas. Se han definido los sistemas de radiocomunicación según su ubicación (urbanas, rurales y transportables, entre otras), tecnologías y cobertura (local y metropolitana). Se ha identificado la estructura de las redes terrestres fijas y móviles de radiocomunicaciones. Se han reconocido las infraestructuras y redes de la telefonía vía satélite. Se han reconocido las características de los equipos e instalaciones asociadas (medios de transmisión, sistemas radiantes y de alimentación, entre otros). Se han identificado los interfaces de conexión entre los equipos de radio con la red troncal de comunicación. Se han determinado los parámetros de configuración de los equipos de radiocomunicaciones. Se han identificado los sistemas y modos de acceso remoto y telecontrol a los equipos.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Instala estaciones base, interpretando planos y esquemas, aplicando técnicas específicas de montaje y configurando equipos. Se han seleccionado los medios y recursos específicos para la instalación. Se ha realizado el replanteo de la instalación. Se han ubicado y fijado los equipos, elementos auxiliares y de canalización. Se ha tendido el cableado de la instalación. Se han conexionado los equipos de telefonía, de la red troncal y de las instalaciones asociadas. Se han configurado los equipos celulares de telefonía, GSM, TETRA, entre otros. Se han aplicado los criterios de calidad y seguridad en las operaciones de montaje. Se ha elaborado la documentación técnica del montaje.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Instala sistemas de telefonía, integrando tecnologías y servicios y configurando sus equipos y elementos. Se han seleccionado los medios y recursos específicos para la instalación. Se ha realizado el replanteo de la instalación. Se han conectado los equipos de telefonía a la red del proveedor. Se han reconocido las posibilidades que ofrece la integración de servicios de telefonía. Se ha establecido conexión entre las centralitas, unidades DECT, enlaces GSM y terminales fijos y móviles, entre otros. Se han configurado los equipos, terminales fijos y el software de VoIP. Se ha configurado la red de movilidad (ToIP) y los terminales IP específicos, móviles GSM, PDA´s, entre otros. Se ha establecido comunicación vía satélite con modem DSL o terminales telefónicos específicos. Se ha implementado el sistema de movilidad vía satélite con la telefonía ToIP y GSM.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Verifica la puesta en servicio de instalaciones de telefonía, efectuando medidas y configurando los equipos de comunicaciones. Se han seleccionado las herramientas y el instrumental de medida. Se ha realizado la configuración básica de las centralitas y equipos, en local y de forma remota. Se han efectuado medidas, ajustes y ensayos de funcionamiento. Se han interpretado los resultados obtenidos en las medidas. Se ha verificado la comunicación entre los equipos fijos y el proveedor de servicio. Se han verificado las condiciones de radiación y cobertura. Se ha establecido comunicación entre equipos radio celulares, con la red troncal y entre estaciones base. Se ha elaborado el informe de puesta en servicio.",
+          "ce": []
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Mantiene sistemas de telefonía, efectuando mediciones y corrigiendo averías o disfunciones. Se ha realizado el plan de intervención en el sistema para la detección de fallos y averías. Se han realizado pruebas y medidas según la tipología del sistema. Se han propuesto hipótesis de las causas y repercusiones de las averías. Se han aplicado técnicas de diagnóstico y localización de averías según tipología y características. Se han interpretado las medidas realizadas, señalando las diferencias obtenidas y justificando los resultados. Se han realizado las operaciones de mantenimiento de acuerdo con los procedimientos establecidos. Se han utilizado las herramientas adecuadas para detectar y corregir problemas en el sistema de telefonía. Se han documentado las intervenciones.",
+          "ce": []
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos. Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas. Se han utilizado las máquinas respetando las normas de seguridad. Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales y herramientas, entre otros. Se han descrito los elementos de seguridad de las máquinas (protecciones, alarmas y paros de emergencia, entre otros) y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento. Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridas. Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de montaje y mantenimiento de los sistemas de telefonía. Se han identificado las posibles fuentes de contaminación del entorno ambiental. Se han clasificado los residuos generados para su retirada selectiva. Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas de producción audiovisual",
+      "codigo": "0554",
+      "ects": 10,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza equipos de sonido, identificando sus aplicaciones y analizando su funcionamiento. Se han clasificado los elementos de captación y emisión de sonido según su funcionalidad. Se han distinguido los equipos de amplificación y procesado de audio. Se han identificado los equipos de grabación y reproducción de sonido. Se han comprobado las características técnicas de los equipos de sonido. Se han reconocido los procesos de transformación de las señales en cada equipo. Se han identificado los conectores y las líneas de transmisión de los sistemas de sonido según sus características. Se han examinado los diferentes tipos de interfaces de los equipos de audio y las posibilidades de interconexión entre ellos (audio analógico balanceado y no balanceado).",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura instalaciones de sonido, definiendo su estructura y seleccionando los elementos que las componen. Se ha identificado la estructura, características técnicas y elementos de los sistemas de sonido ambiental, megafonía y sonorización de espectáculos. Se ha identificado la estructura, características técnicas y elementos de los sistemas de sonido de estudios de grabación, edición y difusión de radio y televisión. Se han establecido las relaciones de funcionamiento entre los diferentes sistemas y elementos de las instalaciones. Se han definido los parámetros que aseguran la calidad de la instalación. Se han calculado los parámetros de los elementos y equipos de la instalación (secciones de conductores, tiempos de reverberación, impedancia en altavoces y potencia en amplificadores, entre otros). Se ha seleccionado el equipamiento técnico (sistemas de previo, equipos de proceso de señal, micrófonos y difusores electroacústicos, entre otros). Se han determinado las líneas de transmisión, los elementos y accesorios de conexión. Se han elaborado esquemas de las instalaciones.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Caracteriza equipos de imagen, identificando sus aplicaciones y analizando su funcionamiento. Se han identificado las diferentes tecnologías de vídeo analógico y digital. Se han relacionado los interfaces y sus posibilidades de interconexión (SDI, HD-SDI, Vídeo compuesto, Vídeo en componentes, HDMI y Firewire, entre otros). Se han identificado los equipos de captación y visualización de vídeo, sus características y aplicaciones. Se han clasificado los equipos de generación, conmutación, distribución y procesado de vídeo, sus características y aplicaciones. Se han identificado los equipos de grabación, reproducción, edición y visualización de vídeo, sus características y aplicaciones. Se han distinguido los procesos de transformación de las señales en cada equipo. Se han comprobado las características técnicas de los equipos de imagen. Se han clasificado los conectores y las líneas de transmisión de los sistemas de imagen.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Configura instalaciones de imagen, definiendo su estructura y seleccionando los elementos que las componen. Se ha identificado la estructura y equipamiento de los sistemas de circuito cerrado de televisión. Se ha relacionado la estructura, características técnicas y elementos de los sistemas de vídeo en estudios de televisión. Se ha identificado la estructura, características y particularidades del equipamiento técnico de las unidades móviles de televisión. Se ha determinado la estructura de las instalaciones auxiliares asociadas (iluminación e intercomunicación, entre otros). Se ha seleccionado el equipamiento técnico (cámaras, monitores, distribuidores, matrices, mezcladores y grabadores, entre otros). Se han determinado las líneas de transmisión, los elementos y accesorios de conexión de los equipos. Se ha elaborado la documentación técnica.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Instala sistemas de imagen y sonido, interpretando planos y esquemas y aplicando técnicas específicas de montaje. Se ha interpretado la documentación técnica de la instalación. Se han seleccionado las herramientas y técnicas de montaje adecuadas (soldadura y engastado, entre otras). Se ha supervisado el programa de montaje. Se han ubicado las estructuras, canalizaciones, armarios de equipos y consolas de la instalación. Se ha tendido, marcado y agrupado el cableado de los sistemas de la instalación. Se han ubicado y fijado los equipos del sistema (monitores, cámaras, altavoces, procesadores de señal, altavoces, grabadores y mezcladores, entre otros). Se han conexionado los equipos y elementos de la instalación. Se han documentado los replanteos y modificaciones realizadas respecto del proyecto original.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Verifica la puesta en servicio de instalaciones de imagen y sonido, realizando medidas y configurando los equipos. Se han identificado los parámetros y medidas de control de calidad de la instalación, en función de sus características. Se han ajustado los equipos para conseguir la funcionalidad requerida (zonas de sonorización, potencia de amplificadores, modos de trabajo de procesadores y enrutamientos, entre otros). Se han realizado las medidas (potencia, distorsión, RT60, jitter, amplitud y relación s/n, entre otros). Se han realizado ensayos de funcionamiento. Se han interpretado las medidas obtenidas. Se ha aplicado el protocolo de puesta en servicio de la instalación. Se ha elaborado el informe de puesta en servicio.",
+          "ce": []
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Mantiene sistemas de imagen y sonido, efectuando mediciones y corrigiendo averías o disfunciones. Se han examinado las tipologías y características de las averías de los sistemas de imagen y sonido (fallos de conexión, lazos de tierras, desadaptaciones de impedancia, desgastes mecánicos y averías electrónicas, entre otros). Se han ejecutado las tareas de mantenimiento preventivo (medida de parámetros eléctricos, limpieza de mandos y controles y sustitución de piezas desgastadas, entre otros). Se han aplicado técnicas de medida, diagnóstico y localización de averías. Se han realizado pruebas y medidas según la tipología del sistema. Se ha diagnosticado la causa de la avería. Se ha sustituido el equipo o elemento, reparando la avería. Se ha restituido el funcionamiento según el protocolo de comprobación y puesta en servicio. Se han actualizado los históricos de averías y el programa de mantenimiento preventivo.",
+          "ce": []
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos. Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas. Se han utilizado las máquinas respetando las normas de seguridad. Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales y herramientas, entre otros. Se han descrito los elementos de seguridad de las máquinas (protecciones, alarmas y paros de emergencia, entre otros) y los equipos de protección individual (calzado, protección ocular e indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento. Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridas. Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de montaje y mantenimiento de las instalaciones de imagen y sonido. Se han identificado las posibles fuentes de contaminación del entorno ambiental. Se han clasificado los residuos generados para su retirada selectiva. Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Redes telemáticas",
+      "codigo": "0555",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Configura routers, analizando su función en las redes de comunicaciones y utilizando instrucciones y comandos específicos. Se ha identificado la función de los routers en las redes de datos. Se ha caracterizado el hardware y software del router. Se han determinado los medios de transmisión más adecuados para cada interfaz del router. Se ha elaborado el protocolo de arranque del router. Se han utilizado diferentes modos de acceso y comandos básicos para configurar el router. Se han definido los diferentes tipos de protocolos de enrutamiento. Se ha configurado el router según diferentes tipos de enrutamientos, direccionamiento y protocolos. Se ha verificado la configuración del router.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Implementa redes de acceso local virtual (VLAN), justificando su utilización y configurando los switches. Se han caracterizado diversos tipos de VLAN. Se ha definido la función de un switch en una red VLAN. Se han distinguido los elementos software que componen el switch. Se ha realizado una configuración básica de un switch. Se ha interpretado la información visual del switch. Se ha configurado la VLAN. Se han conectado varios switches. Se ha verificado el funcionamiento de la red. Se ha realizado la interconexión de varias VLANs a través de un router.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Implementa el acceso a redes de área amplia (WAN), configurando los dispositivos de conexión. Se han definido las características de las redes WAN. Se ha identificado la tecnología de conexión a una red WAN. Se han identificado diferentes tipos de conexiones con la red. Se han configurado accesos a la red. Se ha verificado el acceso a la red. Se han distinguido los protocolos NAT y PAT con sus características. Se han documentado las intervenciones.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Verifica la puesta en servicio de redes telemáticas, realizando medidas y aplicando criterios de certificación. Se ha verificado el funcionamiento de las instalaciones eléctricas asociadas. Se han interconectado las redes jerárquicas cableadas e inalámbricas. Se han integrado los equipos y periféricos. Se ha verificado la conectividad con redes exteriores. Se ha configurado el protocolo SNMP. Se han realizado operaciones de puesta en servicio. Se ha aplicado el protocolo de puesta en servicio.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica técnicas de seguridad de la red, identificando las amenazas más comunes y configurando los recursos del sistema para su protección. Se han identificado las amenazas de seguridad en redes. Se han reconocido los métodos para proteger las redes. Se ha configurado la seguridad básica del router. Se han configurado las listas de control de acceso (ACL) en la red. Se han aplicado listas ACL a los interfaces del router. Se han aplicado los protocolos de seguridad en Internet (IPsec). Se han configurado protocolos y dispositivos de autenticación en redes privadas virtuales (VPN). Se han configurado dispositivos como pasarela de acceso a la red interna (DMZ). Se han documentado las intervenciones.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Mantiene redes telemáticas, aplicando procedimientos de medida o monitorización y relacionando las disfunciones o averías con sus causas. Se han relacionado las averías con las tipologías y características de las redes. Se ha aplicado el plan de mantenimiento preventivo. Se han identificado síntomas de averías. Se han monitorizado las redes telemáticas. Se ha localizado el subsistema, equipo o elemento responsable de la disfunción. Se ha restituido el funcionamiento siguiendo el protocolo de puesta en servicio. Se han actualizado los históricos de averías y el programa de mantenimiento.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas de radiocomunicaciones",
+      "codigo": "0556",
+      "ects": 9,
+      "horas_minimas_boe": 80,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza sistemas de transmisión para radio y televisión, identificando sus aplicaciones y analizando su funcionamiento. Se han relacionado los distintos sistemas de emisión y transmisión para radio y televisión (RTV) con los servicios y aplicaciones prestadas. Se ha identificado la estructura de los sistemas de transmisión de señales de las instalaciones fijas y de las unidades móviles. Se han relacionado las partes y elementos de la instalación con los símbolos que aparecen en los esquemas y planos. Se han establecido las relaciones de funcionamiento entre los diferentes sistemas y elementos de las instalaciones. Se han caracterizado las técnicas de los bloques o subconjuntos que forman un sistema emisor de RTV. Se han comprobado las características técnicas de los equipos de emisión y transmisión para radio y televisión. Se han definido los parámetros que aseguran la calidad del servicio. Se ha identificado la normativa que afecta a la instalación (REBT, normativas de telecomunicaciones y ordenanzas municipales, entre otras).",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Configura instalaciones fijas y unidades móviles para la transmisión de señales de radio y televisión, definiendo su estructura y seleccionando los elementos que las componen. Se han realizado cálculos y emulaciones de la cobertura de un sistema de transmisión. Se han determinado los emplazamientos de los emisores, las zonas de cobertura y la estructura de la red de radiofrecuencia. Se han calculado los parámetros de la instalación (altura efectiva del sistema radiante, potencia del transmisor, ganancia de las antenas, entre otros). Se ha seleccionado el equipamiento técnico de los emisores, reemisores y radioenlaces (moduladores, demoduladores, procesadores y amplificadores, entre otros). Se ha determinado la composición y equipamiento de antenas, sistemas radiantes y sus accesorios (filtros, acopladores, multiplexores y combinadores, entre otros). Se han dimensionado los mástiles, soportes y torretas. Se han seleccionado los equipos de alimentación y protección de la instalación (sistemas de alimentación, tomas de tierra, grupos electrógenos, entre otros). Se han elaborado esquemas de la instalación.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Instala sistemas para la transmisión de señales de radio y televisión, interpretando planos y esquemas y aplicando técnicas específicas de montaje. Se ha aplicado la secuencia de montaje de los elementos que componen el sistema. Se han relacionado los símbolos de los planos y esquemas con los elementos que se van a montar y sus lugares de ubicación. Se han instalado las antenas y los sistemas radiantes. Se han instalado los conductores y las líneas de transmisión. Se han montado los racks y los soportes de los equipos. Se han instalado las protecciones del equipamiento. Se han conectado los equipos de emisión y transmisión del sistema según la documentación técnica. Se han conexionado los equipos de transmisión con la red troncal de comunicaciones. Se han documentado los replanteos y modificaciones realizadas respecto a la documentación original.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Verifica el funcionamiento de los sistemas de emisión y transmisión realizando medidas de los parámetros significativos y configurando los equipos. Se ha aplicado el protocolo de puesta en servicio de la instalación. Se han configurado los equipos de forma local y remota. Se ha configurado el hardware y software de los equipos de emisión y transmisión siguiendo la documentación técnica (modo de funcionamiento, potencia y frecuencia de trabajo, entre otros). Se han realizado las pruebas y medidas de funcionalidad de los equipos, siguiendo procedimientos determinados por los fabricantes. Se han medido los parámetros de calidad del sistema (potencias directa y reflejada. ROE. Distorsiones. Intermodulaciones. Medidas de ecos. Relaciones S/N, C/N y BER, entre otras). Se ha verificado el funcionamiento de los equipos de conmutación automática y los sistemas redundantes. Se han realizado medidas en el sistema de alimentación (sistemas fotovoltaicos y SAI, entre otros). Se han contrastado los parámetros medidos con los característicos de la instalación.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Mantiene sistemas para la transmisión y emisión de señales de radio y televisión, efectuando medidas y corrigiendo averías o disfunciones. Se ha programado el mantenimiento del sistema. Se han examinado las tipologías y características de las averías de los sistemas de emisión y transmisión (desadaptaciones de impedancia, derivas de frecuencia, distorsiones, averías en líneas de transmisión y etapas amplificadoras, entre otras). Se han definido los puntos de revisión y los controles que hay que realizar en el plan de mantenimiento preventivo. Se han aplicado técnicas de medida, diagnóstico y localización de averías. Se han identificado los síntomas de la avería. Se ha diagnosticado la causa de la avería. Se ha sustituido el equipo o elemento causante de la avería. Se ha restituido el funcionamiento siguiendo el protocolo de puesta en servicio. Se han actualizado los históricos de averías y el programa del mantenimiento preventivo.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos. Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles y máquinas. Se han utilizado las máquinas, respetando las normas de seguridad. Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales y herramientas, entre otros. Se han descrito los elementos de seguridad (protecciones, alarmas y paros de emergencia, entre otros) de las máquinas y los equipos de protección individual (calzado, protección ocular, indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento. Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridas. Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de montaje y mantenimiento de los sistemas de radiocomunicaciones. Se han identificado las posibles fuentes de contaminación del entorno ambiental. Se han clasificado los residuos generados para su retirada selectiva. Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Sistemas integrados y hogar digital",
+      "codigo": "0557",
+      "ects": 7,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza las infraestructuras del hogar digital (IHD), examinando los ámbitos que lo componen y distinguiendo los servicios que hay que prestar. Se ha determinado el nivel de aplicación digital (ICT, nivel básico o nivel superior) y los servicios asociados. Se han definido las estructuras de las redes interiores, (HAN, TGCS, entre otras), las conexiones y canalizaciones de ampliación. Se han determinado las características y funcionalidades de los servicios. Se han determinado los buses de interconexión de los dispositivos y elementos. Se han definido los medios de acceso remoto a los servicios. Se han seleccionado los interfaces, servidores y pasarelas. Se ha aplicado la normativa vigente.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Integra sistemas multimedia y de comunicaciones en red, gestionando los servicios y controlando el funcionamiento de los dispositivos y equipos. Se han verificado las características del streamer de transporte de audio y vídeo. Se han identificado los interfaces de distribución de audio por IP, elementos de red, amplificadores y pantallas, entre otros. Se han seleccionado los elementos hardware y software para una IPTV. Se han configurado los módulos streamers IP. Se ha realizado el conexionado de los elementos de la instalación IPTV. Se ha instalado el software para la visualización y escucha de los streamers de vídeo y audio. Se han configurado los dispositivos y sistemas multimedia. Se han configurado los dispositivos y sistemas de comunicaciones. Se ha verificado la funcionalidad de los equipos y sistemas.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Instala sistemas de seguridad, verificando su integración y examinando su funcionalidad. Se han interconectado los equipos y elementos. Se han programado las centralitas. Se han integrado los sistemas de seguridad en redes LAN y WAN. Se ha instalado el software de recepción y decodificación de señales de alarma. Se han configurado los equipos para transmisiones de señales de alarma por diferentes medios, (vía satélite y TCP/IP, entre otros). Se han integrado señales de posicionamiento y seguimiento en centros de control. Se ha verificado la funcionalidad de los equipos y sistemas. Se ha elaborado la documentación técnica.",
+          "ce": []
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Integra sistemas de CCTV, control de accesos y vídeo inteligente, verificando la instalación, interconexión de los elementos y gestionando equipos y servidores de comunicaciones. Se han identificado las características funcionales de la red local, (velocidad, configuración, topología, entre otras). Se han interconectado los equipos y elementos de captación, identificación y control. Se ha implementado el software de gestión de CCTV, control de accesos y vídeo inteligente. Se han configurado los medios de almacenamiento digital, (DVR, servidores, NVR, discos de red, entre otros). Se han integrado los servidores y equipos de comunicación en LAN y WAN. Se han configurado los dispositivos móviles de visionado y control remoto. Se ha verificado la funcionalidad de los equipos y sistemas. Se ha elaborado la documentación técnica.",
+          "ce": []
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Integra dispositivos de automatización, controlando el funcionamiento de los sistemas y gestionando los equipos y servidores de la red de control. Se ha identificado la convergencia de servicios en la instalación. Se han determinado los elementos y dispositivos. Se ha configurado la red de control y buses domóticos. Se han conexionado los elementos de control y automatización. Se ha integrado la pasarela de control. Se han configurado los servidores de monitorización y control remoto. Se ha verificado la funcionalidad de los equipos y sistemas. Se ha elaborado la documentación técnica.",
+          "ce": []
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Mantiene sistemas integrados del hogar digital, planificando las acciones y relacionándolas con las disfunciones o averías. Se han descrito las tipologías y características de las averías en los sistemas integrados en edificios inteligentes. Se ha elaborado el plan de mantenimiento preventivo. Se han identificado síntomas de averías. Se han monitorizado las redes y sistemas. Se ha localizado el subsistema, equipo o elemento responsable de la disfunción. Se ha restituido el funcionamiento siguiendo el protocolo de puesta en servicio. Se han actualizado los históricos de averías y el programa del mantenimiento.",
+          "ce": []
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos. Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles, máquinas y medios de transporte. Se ha operado con herramientas respetando las normas de seguridad. Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales y herramientas, entre otras. Se han descrito los elementos de seguridad (protecciones, alarmas, paros de emergencia, entre otros), los equipos de protección individual y colectiva (calzado, protección ocular, indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento. Se ha identificado el uso correcto de los elementos de seguridad y de los equipos de protección individual y colectiva. Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos. Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en la preparación y ejecución de las operaciones de montaje y mantenimiento de sistemas inteligentes. Se han identificado las posibles fuentes de contaminación del entorno ambiental. Se han clasificado los residuos generados para su retirada selectiva. Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de sistemas de telecomunicaciones e informáticos",
+      "codigo": "0558",
+      "ects": 5,
+      "horas_minimas_boe": 25,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica necesidades del sector productivo, relacionándolas con proyectos tipo que las puedan satisfacer. Se han clasificado las empresas del sector por sus características organizativas y el tipo de producto o servicio que ofrecen. Se han caracterizado las empresas tipo, indicando la estructura organizativa y las funciones de cada departamento. Se han identificado las necesidades más demandadas a las empresas. Se han valorado las oportunidades de negocio previsibles en el sector. Se ha identificado el tipo de proyecto requerido para dar respuesta a las demandas previstas. Se han determinado las características específicas requeridas al proyecto. Se han determinado las obligaciones fiscales, laborales y de prevención de riesgos y sus condiciones de aplicación. Se han identificado posibles ayudas o subvenciones para la incorporación de nuevas tecnologías de producción o de servicio que se proponen. Se ha elaborado el guión de trabajo que se va a seguir para la elaboración del proyecto.",
+          "ce": []
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Diseña proyectos relacionados con las competencias expresadas en el título, incluyendo y desarrollando las fases que lo componen. Se ha recopilado información relativa a los aspectos que van a ser tratados en el proyecto. Se ha realizado el estudio de viabilidad técnica del mismo. Se han identificado las fases o partes que componen el proyecto y su contenido. Se han establecido los objetivos que se pretenden conseguir identificando su alcance. Se han previsto los recursos materiales y personales necesarios para realizarlo. Se ha realizado el presupuesto económico correspondiente. Se han identificado las necesidades de financiación para la puesta en marcha del mismo. Se ha definido y elaborado la documentación necesaria para su diseño. Se han identificado los aspectos que se deben controlar para garantizar la calidad del proyecto.",
+          "ce": []
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Planifica la implementación o ejecución del proyecto, determinando el plan de intervención y la documentación asociada. Se han secuenciado las actividades, ordenándolas en función de las necesidades de implementación. Se han determinado los recursos y la logística necesaria para cada actividad. Se han identificado las necesidades de permisos y autorizaciones para llevar a cabo las actividades.",
+          "ce": [
+            {
+              "codigo": "ñ",
+              "descripcion": "Se han determinado los procedimientos de actuación o ejecución de las actividades. Se han identificado los riesgos inherentes a la implementación, definiendo el plan de prevención de riesgos y los medios y equipos necesarios. Se han planificado la asignación de recursos materiales y humanos y los tiempos de ejecución. Se ha hecho la valoración económica que da respuesta a las condiciones de la implementación. Se ha definido y elaborado la documentación necesaria para la implementación o ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Define los procedimientos para el seguimiento y control en la ejecución del proyecto, justificando la selección de variables e instrumentos empleados. Se ha definido el procedimiento de evaluación de las actividades o intervenciones. Se han definido los indicadores de calidad para realizar la evaluación. Se ha definido el procedimiento para la evaluación de las incidencias que puedan presentarse durante la realización de las actividades, su posible solución y registro. Se ha definido el procedimiento para gestionar los posibles cambios en los recursos y en las actividades, incluyendo el sistema de registro de los mismos. Se ha definido y elaborado la documentación necesaria para la evaluación de las actividades y del proyecto. Se ha establecido el procedimiento para la participación en la evaluación de los usuarios o clientes y se han elaborado los documentos específicos. Se ha establecido un sistema para garantizar el cumplimiento del pliego de condiciones del proyecto, cuando este existe.",
+          "ce": []
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GS",
+      "codigo": "1665031",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Analiza el concepto de digitalización y su repercusión en los sectores productivos teniendo en cuenta la actividad de la empresa e identificando entornos IT (Information Technology: tecnología de la información) y OT (Operation Technology: tecnología de operación) característicos. Digitalización contra Transformación digital.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito en qué consiste el concepto de digitalización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la implantación de la tecnología digital con la organización de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han establecido las diferencias y similitudes entre los entornos IT y OT."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los departamentos típicos de las empresas que pueden constituir entornos IT."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado las tecnologías típicas de la digitalización en planta y en negocio."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha analizado la importancia de la conexión entre entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las ventajas de digitalizar una empresa industrial de extremo a extremo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza las tecnologías habilitadoras digitales necesarias para la adecuación/transformación de las empresas a entornos digitales describiendo sus características y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las principales tecnologías habilitadoras digitales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado las THD con el desarrollo de productos y servicios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la importancia de las THD con la economía sostenible y eficiente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado nuevos mercados generados por las THD."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la implicación de THD tanto en la parte de negocio como en la parte de planta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las mejoras producidas debido a la implantación de las tecnologías habilitadoras en relación con los entornos IT y OT."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado un informe que relacione las tecnologías con sus características y áreas de aplicación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica sistemas basados en cloud/nube y su influencia en el desarrollo de los sistemas digitales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con la cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización de la cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica aplicaciones de la IA (inteligencia artificial) en entornos del sector donde está enmarcado el título describiendo las mejoras implícitas en su implementación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado la importancia de la IA en la automatización de procesos y su optimización."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha relacionado la IA con la recogida masiva de datos (Big data) y su tratamiento (análisis) con la rentabilidad de las empresas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia presente y futura de la IA."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los sectores con implantación más relevante de IA."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los lenguajes de programación en IA."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito cómo influyó la IA en el sector del título."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Evalúa la importancia de los datos, así como su protección en una economía digital globalizada, definiendo sistemas de seguridad y ciberseguridad tanto a nivel de equipo/sistema, como globales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha establecido la diferencia entre dato e información."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el ciclo de vida de la dada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha identificado la relación entre Big data, análisis de datos, machine/deep learning e inteligencia artificial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las características que definieron Big data."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito las etapas típicas de la ciencia de datos y su relación en el proceso."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los procedimientos de almacenamiento de datos en el cloud/nube."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito la importancia del cloud computing."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los principales objetivos de la ciencia de datos en las diferentes empresas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la importancia de la seguridad y su regulación en relación con los datos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha definido tipos de métodos de autenticación seguros (contraseñas, biométricos, entre otros)."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha procedimentado planes de restauración ante desastres (copias de seguridad, desconexión de equipos importantes, entre otros)."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se ha identificado las amenazas más importantes dentro de los puestos de trabajo como phishing, ransomware, smishing, entre otros."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha definido medidas de prevención y protección como antivirus, cortafuegos, entre otros."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Desarrolla un proyecto de transformación digital de una empresa de un sector relacionado con el título, teniendo en cuenta los cambios que deben producirse en función de los objetivos de la empresa.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los objetivos estratégicos de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y alineado las áreas de producción/negocie y de comunicaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las áreas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado el encaje de AD (áreas digitalizadas) entre sí y con las que no lo están."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han tenido en cuenta las necesidades presentes y futuras de la empresa."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado cada una de las áreas con la implantación de las tecnologías."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las posibles brechas de seguridad en cada una de las áreas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido el tratamiento de los datos y su análisis."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha tenido en cuenta la integración entre datos, aplicaciones, plataformas que los soportan, entre otros."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han documentado los cambios realizados en función de la estrategia."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han tenido en cuenta la idoneidad de los recursos humanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708031",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPS031",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

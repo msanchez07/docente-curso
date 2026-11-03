@@ -85,8 +85,8 @@ const esquemaCiclo = z.object({
   duracion_horas: numeroOpcional,
   ects: numeroOpcional,
   abreviatura: z.string().trim().max(20).nullable().default(null),
-  rd: z.string().trim().max(300).default(''),
-  rd_actualizacion: z.string().trim().max(300).default(''),
+  rd: z.string().trim().max(2000).default(''),
+  rd_actualizacion: z.string().trim().max(2000).default(''),
   boe_url: z.string().trim().max(1000).default(''),
   boe_url_actualizacion: z.string().trim().max(1000).default(''),
   modulos: z.array(esquemaModulo).min(1, 'El ciclo debe tener al menos un módulo')

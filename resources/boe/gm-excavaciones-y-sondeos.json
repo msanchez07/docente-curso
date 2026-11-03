@@ -1,0 +1,3259 @@
+{
+  "id": "gm-excavaciones-y-sondeos",
+  "denominacion": "Excavaciones y Sondeos",
+  "nivel": "Formación Profesional de Grado Medio",
+  "familia_profesional": "Industrias Extractivas",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "ES",
+  "rd": "Real Decreto 1592/2011, de 4 de noviembre, por el que se establece el Título de Técnico en Excavaciones y Sondeos y se fijan sus enseñanzas mínimas.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-19541",
+  "modulos": [
+    {
+      "nombre": "Inglés profesional GM",
+      "codigo": "0156",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "ING",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Comprende información, de índole profesional y cotidiana, contenida en discursos orales sencillos, emitidos en lengua estándar, descifrando el contenido global del mensaje, y relacionándolo con los recursos lingüísticos correspondientes.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha situado el mensaje en su contexto por medio del análisis de sus características textuales y contextuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado el hilo argumental de mensajes orales y determinado los roles que aparecen en los mismos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la finalidad del mensaje, ya se trate de un mensaje directo, telefónico o en cualquier otro medio auditivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha extraído información específica contenida en discursos orales, en lengua estándar, relacionados con la vida social, profesional o académica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han secuenciado los elementos constituyentes del mensaje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado y resumido con claridad las ideas principales de un discurso sobre temas conocidos, transmitido por los medios de comunicación y emitido en lengua estándar."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han reconocido las instrucciones orales y se han seguido las indicaciones siendo capaz de concluir si precisan de una respuesta verbal o de una no verbal."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha tomado conciencia de la importancia de comprender globalmente un mensaje, sin necesidad de entender todos y cada uno de los elementos del mismo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha servido del análisis de la entonación y de los elementos visuales para identificar los diversos significados e intenciones comunicativas del emisor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comprende información profesional contenida en textos escritos sencillos, analizando de forma comprensiva su contenido.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los materiales de consulta y diccionarios técnicos. para la comprensión del texto."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han leído de forma comprensiva textos claros en lengua estándar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el texto con el ámbito del sector a que se refiere."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido las ideas principales de un texto escrito identificando la información relevante, sin necesidad de entender todos y cada uno de los elementos de dicho texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha identificado la terminología utilizada, así como las estructuras gramaticales y demás elementos característicos de cada tipología discursiva."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado traducciones de textos en lengua estándar utilizando material de apoyo en caso necesario."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el mensaje recibido a través de soportes telemáticos o cualquier otro tipo de soporte."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha reconocido la finalidad de distintos textos escritos en cualquier soporte, en lengua estándar y relacionados con la actividad profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha extraído información específica de textos de diferente naturaleza, relativos a su profesión y contenidos en distintos soportes."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Produce mensajes orales sencillos, claros y estructurados, participando como agente activo en conversaciones profesionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado los registros más adecuados para la emisión del mensaje."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comunicado utilizando fórmulas, nexos de unión, marcadores discursivos y estrategias de interacción acordes a la situación de comunicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito hechos breves e imprevistos relacionados con su profesión."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha utilizado correctamente la terminología de la profesión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han expresado sentimientos, ideas u opiniones."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han enumerado las actividades propias de la tarea profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha descrito y secuenciado un proceso de trabajo de su competencia."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha justificado la aceptación o no de propuestas realizadas haciendo uso de normas de cortesía y de modales apropiados."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha intercambiado, con relativa fluidez, información específica y detallada utilizando frases de estructura sencilla y diferentes soportes telemáticos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han realizado, de manera clara, presentaciones breves y preparadas sobre un tema dentro de su especialidad, haciendo uso de los protocolos adecuados."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha comunicado espontáneamente adoptando un nivel de formalidad adecuado a las circunstancias."
+            },
+            {
+              "codigo": "l",
+              "descripcion": "Se han respondido preguntas relativas a su vida socio-profesional, incluidas las propias de una entrevista de trabajo."
+            },
+            {
+              "codigo": "m",
+              "descripcion": "Se ha solicitado la reformulación del discurso o la aclaración de parte del mismo cuando se ha considerado necesario para una mejor comprensión."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Redacta textos sencillos en lengua estándar, relacionando las reglas gramaticales con la finalidad de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado las estrategias, estructuras, vocabulario y convenciones más adecuadas para el tipo de texto que se va a crear (fax, nota, carta o correo electrónico, entre otros)."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han redactado textos breves relacionados con aspectos cotidianos y/o profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha organizado la información de manera coherente y cohesionada."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado resúmenes de textos relacionados con su entorno profesional, identificando las ideas principales de los mismos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado documentación específica de su campo profesional, aplicando las fórmulas establecidas y el vocabulario específico."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplimentado un texto dado con apoyos visuales y claves lingüísticas aportadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado las fórmulas de cortesía propias del documento que se va a elaborar."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha escrito correspondencia formal básica en formato físico o digital destinada principalmente a pedir información, solicitar un servicio o llevar a cabo una reclamación u otra gestión sencilla, siempre atendiendo a las convenciones de la tipología textual."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han tomado notas, y mensajes, con información sencilla sobre aspectos propios de su labor profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se ha solicitado, de forma escrita, información referente a aspectos relacionados con su campo profesional (página web y correo electrónico, entre otros)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica actitudes y comportamientos profesionales en situaciones de comunicación, describiendo las relaciones típicas características del país de la lengua extranjera.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido los rasgos más significativos de las costumbres y usos de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito los protocolos y normas de relación social propios del país."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los valores y creencias propios de la comunidad donde se habla la lengua extranjera."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos socio-profesionales propios del sector, en cualquier tipo de texto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los protocolos y normas de relación social propios del país de la lengua extranjera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sondeos",
+      "codigo": "0847",
+      "ects": null,
+      "horas_minimas_boe": 115,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara el transporte y ubicación del equipo de perforación, relacionándolo con el tipo de sondeo, las características del terreno y la técnica aplicada.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha localizado y reconocido el área de trabajo en el que se va realizar el sondeo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado la adecuación de los accesos, medios de transporte, explanada donde se ubicará el sondeo y las balsas, en función de los equipos de perforación que se utilicen."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito las propiedades y factores que afectan a la perforabilidad de las rocas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado los tipos de sondeos, vinculándolos con los métodos y técnicas empleadas de perforación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado y descrito los equipos de perforación y su funcionamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha preparado la sarta de perforación de cada equipo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han caracterizado los fluidos de perforación, sus sistemas de circulación y los equipos auxiliares necesarios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Instala el equipo y medios auxiliares de perforación, describiendo la secuencia de las operaciones que se van a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha emplazado el equipo de perforación y medios auxiliares, siguiendo las especificaciones técnicas y necesidades de espacio."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha colocado el equipo de sondeo en el punto de emboquille conforme a la documentación técnica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han preparado los revestimientos o entubaciones necesarios para la ejecución del sondeo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha izado y controlado la inclinación de la torre del equipo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han preparado y comprobado el suministro de agua y aire, necesarios para realizar el sondeo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han montado los equipos auxiliares del sondeo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han preparado los lodos, balsas y pozos que se van a utilizar en función del sondeo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han colocado las mangueras o tuberías que unen el pozo y las balsas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las técnicas de perforación del sondeo, caracterizando los procedimientos y maquinaria que se van a utilizar, en función del tipo de perforación y terreno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han secuenciado las operaciones de perforación según el tipo de sondeo y terreno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en marcha el equipo, comprobando su correcto funcionamiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado y corregido la velocidad de rotación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado la adecuación de la presión del lodo, agua y aire."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han examinado de forma periódica las propiedades de los lodos durante la perforación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha controlado el empuje y avance de la sarta."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han extraído testigos en perforaciones a rotación con recuperación de testigo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han añadido varillas de perforación cuando sea necesario."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza las operaciones de recuperación o rectificación durante la perforación, relacionando el estado del pozo o sondeo con la maquinaria y equipos que se van a utilizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han controlado y corregido las desviaciones del sondeo, respetando los valores máximos establecidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han tomado medidas preventivas para evitar pérdidas de circulación del fluido y atranques de la sarta."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha sustituido el útil de perforación en función del grado de desgaste del mismo o de las características del terreno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado el mortero para la cementación de la entubación en caso de ser necesario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han colocado las entubaciones y reducciones necesarias según avanza la perforación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cementado la entubación según las especificaciones técnicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han utilizado los “útiles de pesca” cuando sean necesarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha finalizado el sondeo y desmontado sus elementos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza el mantenimiento de primer nivel de la maquinaria de sondeo, relacionando las técnicas o labores de mantenimiento con los equipos, materiales y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las operaciones de mantenimiento de primer nivel de la maquinaria y equipos de sondeo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado y utilizado los equipos, materiales y herramientas necesarias para realizar las labores de mantenimiento de primer nivel."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y localizado los elementos sobre los que se deben realizar las operaciones de mantenimiento preventivo o correctivo de primer nivel."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de limpieza y comprobación del estado de la instalación y equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado desmontajes y montajes de elementos simples de acuerdo con el procedimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han recogido los residuos de acuerdo con las normas de protección ambiental."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado los controles y revisiones efectuadas para asegurar las operaciones de mantenimiento realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos de protección individual y colectiva para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad específicos de los sondeos, relacionándolos con las medidas preventivas correspondientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las medidas de seguridad, prevención y de protección personal que se deben adoptar en la preparación, ejecución y mantenimiento de las operaciones de perforación de sondeos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los equipos de protección individual (calzado, protección ocular, auditiva e indumentaria, entre otros) que se deben emplear en las distintas operaciones de sondeos, en función de los riesgos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, comprobación y lectura del control de aislamiento eléctrico de los equipos eléctricos, entre otros) de las máquinas que se deben emplear en las distintas operaciones de perforación de sondeos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han manejado las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, maquinarias de perforación y para la realización de sondeos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Trabajos geotécnicos",
+      "codigo": "0850",
+      "ects": null,
+      "horas_minimas_boe": 95,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica y toma muestras de suelos y rocas para su análisis, relacionándolos con el método de extracción, con la recogida, la finalidad y el tipo de material muestreado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han preparado los utensilios, herramientas y materiales necesarios para realizar un muestreo por medios manuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los parámetros de perforación y las características geotécnicas de las rocas y suelos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado la maquinaria, equipos, útiles y consumibles necesarios para realizar un muestreo por medios mecánicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado y preparado los métodos de conservación e identificación de muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado catas y recogido muestras de las mismas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han elaborado los partes de trabajo y almacenado las muestras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de la maquinaria y equipos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Toma muestras en sondeos a destroza por rotopercusión, relacionando el tipo de fluido de perforación con el sistema de recogida y con las características de la muestra extraída.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha instalado y preparado la maquinaria, útiles y consumibles necesarios para realizar un muestreo por rotopercusión."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han instalado y revisado los sistemas de captación de polvo o detritus según las especificaciones técnicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha montado el circuito para la recuperación de las muestras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado y comprobado las bolsas y sacos en los que se recogen las muestras."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han desechado las muestras contaminadas para evitar falsear los datos de la investigación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado las muestras para su posterior estudio y descrito de visu las características observables a simple vista."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han envasado y etiquetado las muestras, recogiendo en el parte del muestreo las incidencias producidas que puedan ser relevantes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de la maquinaria y equipos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Extrae testigos continuos en sondeos a rotación, caracterizando la secuencia de extracción y los parámetros de perforación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha instalado y preparado la maquinaria, útiles y consumibles necesarios para extraer testigos continuos por rotación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha montado y revisado la testiguera en la sarta."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado y revisado las cajas y embalajes en los que se recogen las muestras."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han tomado muestras, sacando el testigo de la testiguera, y evitando que se rompa, se pierdan fragmentos o se desordene."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los casos en que se necesita parafinar las muestras."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han colocado y etiquetado las muestras en las cajas, ordenándolas y de acuerdo con la profundidad a la que corresponden."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha calculado el RQD. (rock quality designation) de la muestra y se ha recogido en el parte del muestreo junto a las incidencias."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de la maquinaria y equipos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza ensayos de penetración, presiométricos y dilatométricos, describiendo el proceso en función de las técnicas y normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha relacionado el tipo de penetrómetro y de ensayo con las características del suelo, seleccionando el adecuado en cada caso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha emplazado el penetrómetro y controlado la verticalidad de la guiadera y soporte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha controlado el número de golpes de la maza sobre la cabeza de impacto y la penetración del cono o tomamuestras del penetrómetro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado que la velocidad de penetración de los elementos de la puntaza o del cono y manguito es constante en los ensayos estáticos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha anotado en la libreta de campo las observaciones realizadas durante el ensayo y las paradas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han preparado los equipos necesarios para los ensayos presiométricos y dilatométricos, indicando su aplicación y desarrollo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado el diámetro del sondeo, colocando el presiómetro o dilatómetro en su interior."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha controlado y anotado la presión aplicada y la deformación de las paredes, hasta alcanzar la presión establecida o cuando se supera la resistencia a compresión de la roca o suelo."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de la maquinaria y equipos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza el ensayo vane test o de molinete y el ensayo de placa en carga, describiendo el proceso en función de las técnicas y normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el ensayo vane test o de molinete y el ensayo de placa en carga, indicando su aplicación, elementos y desarrollo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado un taladro previo, cuando proceda, e hincado el molinete."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han respetado los tiempos de espera y de realización del ensayo vane test o de molinete, una vez alcanzada la profundidad de ensayo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha manejado el molinete según la normativa aplicable."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha comprobado las condiciones del terreno, preparado el área de ensayo y calibrado los equipos de ensayo de placa en carga."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha asentado el aparato de carga y medida en el ensayo de placa de carga."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han obtenido registros de las propiedades de asiento vertical y resistencia del suelo por diferentes métodos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de la maquinaria y equipos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza medidas de permeabilidad in situ mediante ensayos de producción, bombeo y otros, relacionando los parámetros hidrogeológicos y características de los acuíferos con las técnicas de ensayo y normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los ensayos de permeabilidad in situ, relacionándolos con la porosidad y métodos de medición."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha montado el equipo necesario para realizar el ensayo y comprobado la limpieza del pozo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha instalado la tubería de inyección a la profundidad que se va a realizar el ensayo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han colocado los obturadores en el sondeo, aislando los tramos necesarios para efectuar el ensayo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha instalado la bomba, el depósito de agua, el caudalímetro y el manómetro."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manejado los equipos de los ensayos de permeabilidad in situ y de los de producción y bombeo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han anotado en la libreta de campo los datos necesarios según el ensayo realizado."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de la maquinaria y equipos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Mide la longitud, desviaciones, nivel piezométrico y variaciones tensionales en sondeos, relacionando los equipos e instrumentos utilizados con la secuencia y forma de realizar las medidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha utilizado la sonda para medir un sondeo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han montado inclinómetros para medir la desviación de un sondeo respecto a la vertical y determinar la dirección hacia la que se desvía."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha caracterizado el proceso y método de medición del nivel piezométrico en función de las características del sondeo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han montado los piezómetros para medir niveles piezométricos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han colocado los extensómetros para medir los desplazamientos relativos en sondeos y taludes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han anotado periódicamente las mediciones en la libreta de campo."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de la maquinaria y equipos utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Realiza ensayos de laboratorio de suelos y rocas, relacionándolos con los aparatos y materiales necesarios y describiendo el proceso en función de la técnica y normativa aplicable.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado la recepción y preparación de las muestras o probetas para ensayos de suelos y de rocas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han tamizado, lavado y secado las fracciones de suelo, siguiendo el ensayo de análisis granulométrico por tamizado y calibrado y corregido el densímetro en caso de realizarlo con densímetro."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han caracterizado los ensayos de humedad, densidad, porosidad, permeabilidad, contenidos de sustancias químicas y límites de Atterberg en suelos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado y secuenciado los ensayos de compactación y del índice “CBR” de suelos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado las propiedades mecánicas de suelos y rocas, caracterizando los ensayos según la normativa aplicable."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han anotado los datos necesarios y resultados según el ensayo realizado y la norma aplicable."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de los equipos y herramientas utilizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos de protección individual y colectiva para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad específicos de los trabajos geotécnicos, relacionándolos con las medidas preventivas correspondientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las medidas de seguridad, prevención y de protección personal que se deben adoptar en la preparación, ejecución y mantenimiento de los trabajos geotécnicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los equipos de protección individual (calzado, protección ocular, auditiva e indumentaria, entre otros) que se deben emplear en las distintas operaciones de los trabajos geotécnicos en función de los riesgos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, comprobación y lectura del control de aislamiento eléctrico de los equipos eléctricos, entre otros) de las máquinas que se deben emplear en las distintas operaciones de los trabajos geotécnicos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manejado con las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas y maquinarias de perforación, para la realización de trabajos geotécnicos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Perforaciones",
+      "codigo": "0881",
+      "ects": null,
+      "horas_minimas_boe": 115,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza las operaciones de verificación del estado del frente, sostenimiento, control de gases y otros, relacionando el estado de la excavación con la maquinaria o equipos que se van a utilizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las características del terreno en función del tipo y los métodos de excavación empleados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido los riesgos asociados a la inestabilidad de las excavaciones subterráneas y a cielo abierto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los barrenos fallidos y los fondos de barreno, señalando las medidas que hay que adoptar de acuerdo con la normativa vigente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito las instalaciones de la ventilación primaria y secundaria y se han instalado los elementos que la conforman."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado y medido los gases más comunes en las excavaciones subterráneas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han seleccionado y preparado los equipos, maquinaria y accesorios de perforación, según la documentación técnica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha interpretado el esquema de perforación, los planos y los datos topográficos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Perfora barrenos con equipos manuales, aplicando las técnicas y procedimientos requeridos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los tipos, las partes y componentes de las perforadoras manuales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y montado las barrenas al equipo de perforación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han conectado las mangueras de suministro al equipo y verificado su estado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha posicionado y orientado el equipo según las características de la perforación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha regulado el empuje, el caudal de agua, de aire comprimido en su caso y otros parámetros para optimizar el rendimiento y evitar atascos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han detectado y señalizado las anomalías en los barrenos durante la operación de perforación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Perfora con equipos con martillo en cabeza o en fondo, relacionando los parámetros de perforación con las técnicas y procedimientos requeridos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado e identificado los componentes y funciones de los equipos de perforación con martillo en cabeza o en fondo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha preparado y emplazado el equipo de perforación y sus componentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han montado los accesorios de perforación, bocas de perforación y varillaje, en función del equipo y del tipo de terreno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha revisado el equipo antes de la puesta en marcha, identificando las posibles anomalías."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han manejado los equipos de perforación con martillo en cabeza o en fondo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han añadido los elementos de la sarta de perforación sistemáticamente hasta alcanzar la longitud total del barreno."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha comprobado la inclinación y dirección del barreno, según el esquema de perforación y las instrucciones de trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha detectado y señalizado las anomalías en los barrenos durante la operación de perforación con martillo en cabeza o en fondo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Perfora barrenos con jumbo, interpretando los parámetros, técnicas y esquemas de perforación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha preparado el jumbo conforme al tipo de perforación y características del terreno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha posicionado y anclado el jumbo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han montado los accesorios y puesto en marcha el equipo de perforación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han controlado los parámetros de funcionamiento e indicadores de operación del equipo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha ejecutado las instrucciones del programa en jumbos automáticos o semiautomáticos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han añadido los elementos de la sarta de perforación sistemáticamente hasta alcanzar la longitud total del barreno."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado y corregido situaciones anómalas en el transcurso de la perforación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha retirado la sarta, evitando el enganche y comprobado las características de los barrenos realizados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Perfora barrenos con perforadoras rotativas, neumáticas o electrohidráulicas, relacionando las operaciones con la documentación técnica, las características y la finalidad de la perforación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha emplazado y orientado el equipo de perforación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han montado las bocas de perforación y el varillaje en la deslizadera."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha conectado el equipo a las redes de alimentación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han controlado los parámetros de funcionamiento e indicadores de operación del equipo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha retirado la barrena, evitando el enganche y comprobado las características de los barrenos realizados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han recogido y ordenado los equipos y el material auxiliar, una vez finalizada la perforación."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza el mantenimiento de primer nivel de la maquinaria de perforación, relacionando las técnicas o labores de mantenimiento con los equipos, materiales y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las operaciones de mantenimiento de primer nivel de la maquinaria y equipos de perforación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los equipos, materiales y herramientas necesarias para realizar las labores de mantenimiento de primer nivel."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y localizado los elementos sobre los que se deben realizar las operaciones de mantenimiento preventivo de primer nivel."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de limpieza y comprobación del estado de la instalación y equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado y mantenido los niveles de los lubricantes y tensiones de los elementos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado el desmontaje y montaje de elementos simples, de acuerdo con el procedimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el repostaje de la maquinaria y las operaciones de inicio y fin de jornada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han registrado los controles y revisiones efectuadas para asegurar las operaciones de mantenimiento realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas para prevenirlos y preparando los equipos de protección individual y colectiva.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos inherentes a la actividad de perforación y mantenimiento, relacionándolos con las medidas preventivas correspondientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las medidas de seguridad, prevención, ambientales y de protección personal que se deben adoptar en las operaciones de perforación y mantenimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito y comprobado los equipos de protección individual y colectiva que se deben emplear en las operaciones de perforación y mantenimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado y manejado los equipos de seguridad, verificando su funcionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas que se deben emplear en las distintas operaciones de perforación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha manejado con las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas y equipos de perforación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental, adoptando las medidas pertinentes según la normativa ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Estabilización de taludes",
+      "codigo": "1078",
+      "ects": null,
+      "horas_minimas_boe": 40,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Acondiciona el talud, describiendo la secuencia de las operaciones que van a realizar y con las condiciones de seguridad establecidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el comportamiento de los taludes y sus riesgos de inestabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las operaciones de acondicionado del talud."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado y utilizado la maquinaria y equipos para la realización de los trabajos de acondicionado de taludes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado y utilizado los equipos de trabajo en altura para las operaciones que se realicen suspendidos o elevados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han retirado los materiales sueltos e inestables de la superficie del talud."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado los métodos de estabilización de taludes, en función del tipo y naturaleza del terreno y factores externos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de máquinas y equipos de acondicionado del talud."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Modifica la geometría del talud y lo drena, relacionando las técnicas con las condiciones del terreno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado y manejado la maquinaria, equipos y medios auxiliares necesarios para adaptar la geometría del talud de acuerdo a los planos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado las operaciones de descabezado, tendido o perfilado y banqueo de taludes, según las especificaciones técnicas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y realizado las medidas de drenaje superficial del talud para evitar su filtración y la erosión del talud."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha seleccionado y manejado la maquinaria y equipos para drenaje profundo de taludes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado el drenaje profundo del talud."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Refuerza el talud con elementos resistentes según el procedimiento establecido, caracterizando las técnicas de corrección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos y la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y manejado los medios y equipos necesarios para reforzar el talud con elementos resistentes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los sistemas de anclaje de taludes, relacionando sus características técnicas con la naturaleza del terreno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha perforado el barreno y colocado los cables o barras de anclaje en el talud, comprobando su adherencia y siguiendo las indicaciones del proyecto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han caracterizado los materiales, tipos y métodos constructivos de los muros utilizados para el sostenimiento de taludes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado muros para la contención de taludes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Consolida el talud con correcciones superficiales, caracterizando la secuencia de las operaciones que va a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha colocado la malla metálica en el talud."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han preparado las mezclas y manejado los equipos para gunitar taludes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha ejecutado el gunitado del talud conforme a las especificaciones técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han caracterizado y manejado los equipos y métodos constructivos de elementos de contención de desprendimientos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la contención de desprendimientos con mallas metálicas, pantallas flexibles y amortiguadores de caídas de rocas según las especificaciones técnicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han caracterizado y manejado los equipos y métodos constructivos de estabilización con vegetación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha preparado el terreno y se ha realizado la siembra o plantación de las especies en el talud según la documentación técnica."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos de protección individual y colectiva para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad específicos de la estabilización de taludes, relacionándolos con las medidas preventivas correspondientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las medidas de seguridad, prevención y de protección personal que se deben adoptar en la preparación, ejecución y mantenimiento de las operaciones de estabilización de taludes."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los equipos de protección individual (calzado, protección ocular y auditiva e indumentaria, entre otros) que se deben emplear en las distintas operaciones de estabilización de taludes en función de los riesgos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas, comprobación y lectura del control de aislamiento eléctrico de los equipos eléctricos, entre otros) de las máquinas que se deben emplear en las distintas operaciones de estabilización de taludes."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manejado con las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas y máquinas para la realización de estabilización de taludes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Operación y manejo de maquinaria de excavación",
+      "codigo": "1081",
+      "ects": null,
+      "horas_minimas_boe": 115,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Acondiciona y prepara el terreno, caracterizando los procesos y técnicas de excavación mecánica y manual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las distintas fases de movimientos de tierras y el orden de intervención de las máquinas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han interpretado los documentos de trabajo y los manuales de operador de las máquinas de excavación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y preparado los útiles y herramientas destinadas a la excavación y refino manuales."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han manejado los útiles y herramientas en excavaciones manuales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desbrozado el terreno y extendido material para regular la plataforma de trabajo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el acopio del material excavado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Excava y prepara el terreno con bulldozer, relacionando los útiles e implementos con las técnicas y procedimientos de excavación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado y preparado la maquinaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado los útiles y medios para efectuar el arranque y excavación del material."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han montado los implementos y posicionado el bulldozer en función de las características del terreno y frente de trabajo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha manejado el bulldozer, siguiendo la secuencia operativa y manual de funcionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha escarificado el terreno cuando la dureza lo aconseje."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han ajustado las características geométricas del trabajo realizado conforme al replanteo y nivelación."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han ajustado los tiempos de ejecución al ciclo de producción establecido."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Maneja la excavadora y retroexcavadora, relacionando las características de la maquinaria con el tipo de terreno y las operaciones que va a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado la superficie que se va a excavar y relacionado los trabajos que se van a efectuar con el equipo de excavación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha preparado la maquinaria y seleccionado los implementos y medios para efectuar la excavación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han efectuado los movimientos de avance y traslación de la máquina conforme al tipo de terreno y trabajo que se va a efectuar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha posicionado y estabilizado la máquina en el frente que se va a excavar."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha excavado el terreno, manejando la maquinaria conforme a la documentación técnica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha acopiado el material en las zonas adecuadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de carga de material."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han ajustado los tiempos de ejecución al ciclo de producción establecido."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha retirado, estacionado y parado el equipo de excavación de forma segura."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza el mantenimiento de primer nivel de la maquinaria de excavación, relacionando las técnicas o labores de mantenimiento con los equipos, materiales y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las operaciones de mantenimiento de primer nivel de la maquinaria y equipos de excavación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los equipos, materiales y herramientas necesarias para realizar las labores de mantenimiento de primer nivel."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y localizado los elementos sobre los que se deben realizar las operaciones de mantenimiento preventivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de limpieza y comprobación del estado de la instalación y equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado y mantenido los niveles de los lubricantes y tensiones de los elementos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado desmontajes y montajes de elementos simples de acuerdo con el procedimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el repostaje de la maquinaria y las operaciones de inicio y fin de la jornada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han registrado los controles y revisiones efectuadas para asegurar las operaciones de mantenimiento realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos de protección individual y colectiva para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad específicos del manejo de la maquinaria de excavación, relacionándolos con las medidas preventivas correspondientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las medidas de seguridad, prevención y de protección personal que se deben adoptar en la preparación, manejo, ejecución y mantenimiento de la maquinaria de excavación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los equipos de protección individual y colectiva que se deben emplear en las distintas operaciones de mantenimiento y manejo de la maquinaria de excavación, en función de los riesgos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas que se deben emplear en las distintas excavaciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manejado la maquinaria y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, equipos y maquinaria para la realización de excavaciones."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad I",
+      "codigo": "1709",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Alcanza las competencias necesarias para la obtención del Título de técnico básico en Prevención de Riesgos Laborales",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de la cultura preventiva en todos los ámbitos actividades de la empresa u organismo equiparado relacionado las condiciones laborales con la salud de la persona trabajadora identificando y clasificando los factores de riesgo en la actividad y los daños derivados de los mismos, especialmente las situaciones de riesgo más habituales en los entornos de trabajo del sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha determinado la evaluación de riesgos en la empresa u organismo equiparado y definido las técnicas de prevención y de protección que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado los principales derechos y deberes en materia de prevención de riesgos laborales."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han clasificado las distintas formas de gestión de la prevención en la empresa u organismo equiparado, en función de los distintos criterios establecidos en la normativa sobre prevención de riesgos laborales y determinado las formas de representación de las personas trabajadoras en la empresa u organismo equiparado en materia de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha valorado la importancia de la existencia de un plan preventivo en la empresa u organismo equiparado que incluya la secuenciación de 16 actuaciones a realizar en caso de emergencia y reflexionado sobre el contenido del mismo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han determinado los requisitos y condiciones para la vigilancia de la salud de la persona trabajadora y su importancia como medida de prevención."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Distingue las características del sector productivo y define los puestos de trabajo relacionándolos con las competencias profesionales expresadas en el título",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las principales oportunidades de empleo y de inserción laboral en el sector profesional, identificando las posibilidades de empleo, analizado sus requerimientos actuales para el perfil profesional."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comparado los diferentes requerimientos exigidos por el mercado laboral con las exigencias para el trabajo en la función pública relacionados con el sector privado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre las actitudes y aptitudes requeridas actualmente para la actividad profesional relacionadas con el título, así como las competencias personales y sociales más relevantes para el sector, identificando nuestra zona de desarrollo próximo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Analiza sus condiciones laborales como persona trabajadora por cuenta ajena identificándolas en los principales tipos de contratos, cambios y vicisitudes relevantes que se pueden presentar en la relación laboral en la normativa laboral y especialmente en el convenio colectivo del sector.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los derechos y obligaciones derivados de la relación laboral, así como las condiciones de trabajo pactadas en un convenio colectivo aplicable al sector profesional relacionado con el título."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comparado las principales modalidades de contratación, localizando los diferentes modelos en las fuentes oficiales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las características definitorias de los nuevos entornos de organización del trabajo y los derechos que conlleva."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes componentes del recibo de salario."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los recursos laborales existentes ante las diferentes vicisitudes que se pueden dar en la relación laboral,"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha valorado el papel de la Seguridad Social como pilar esencial para la mejora de la calidad de vida de la ciudadanía."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han analizado las principales prestaciones derivadas de la suspensión y extinción de la relación laboral."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Analiza y evalúa su potencial profesional y sus intereses para guiarse en el proceso de auto orientación y elabora una hoja de ruta para la inserción profesional en base al análisis de las competencias, intereses y destrezas personales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las cualidades y competencias personales afines a la actividad profesional relacionada con el perfil del título."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han señalado las preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado expectativas de futuro para inserción profesional analizando competencias, intereses y destrezas personales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado hitos importantes en la trayectoria vital con valor profesionalizador."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado los itinerarios formativos profesionales relacionados con el perfil profesional."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han formulado objetivos profesionales y se ha determinado metas personales y profesionales para la mejora de la empleabilidad y las condiciones de inserción laboral."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha trazado un plan de acción para desarrollar las áreas de mejora y potenciar las fortalezas personales con valor para el empleo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Aplica las estrategias para el aprendizaje autónomo reconociendo su valor profesionalizador, diseñando y optimizando su propio entorno de aprendizaje haciendo uso de las tecnologías digitales como herramientas de aprendizaje autónomo, siendo coherente con su identidad digital y sus propios objetivos profesionales planteados en su plan de desarrollo individual.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha tomado conciencia de la responsabilidad individual en el desarrollo profesional valorando la actitud de aprendizaje permanente para el desarrollo de propias y nuevas competencias."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha identificado la empleabilidad como capacidad de adaptación al entorno laboral. c) Se han conocido y utilizado herramientas, fuentes de información, conexiones y actividades para la configuración de un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica la competencia digital para configurar un entorno personal de aprendizaje para la empleabilidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el concepto de identidad digital y su impacto en la empleabilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha justificado el diseño de su entorno de aprendizaje basado en cómo éste mejora la empleabilidad."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha elaborado su plan de desarrollo individual como herramienta para la mejora de la empleabilidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las herramientas de aprendizaje autónomo para su desarrollo personal y profesional."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha diseñado el entorno de aprendizaje que permite alcanzar el plan de desarrollo individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Identifica el concepto de salud psicosocial derivada del desempeño profesional, identificando y evaluando los factores de riesgo asociados a la misma, y aplicando medidas correctivas:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado y valorado el concepto de salud psicosocial como factor determinante del bienestar mental del individuo y de los entornos laborales saludables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado la salud mental como desencadenante de siniestralidad y absentismo laboral, así como su evolución en los diferentes colectivos de personal laboral, especialmente en los grupos de población joven"
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha aprendido a reconocer e identificar los factores de riesgo psicosocial en el ámbito laboral."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los diferentes tipos de daños derivados de los factores de riesgo psicosocial y su repercusión en las personas y en las organizaciones, así como su impacto en la competitividad y productividad de las empresas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han definido y delimitado los conceptos de estrés laboral, tecnoestrés y burnout como las principales consecuencias ante condiciones psicosociales desfavorables o adversas en el entorno laboral"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han activado las estrategias de afrontamiento personal frente a los estresores derivados de las condiciones laborales, así como los recursos facilitadores del bienestar emocional de las personas a lo largo de su vida"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han determinado las medidas de intervención a nivel social, empresarial y asistencial, que permitan la adecuada respuesta a las situaciones de conflicto en el ámbito laboral. CONTENIDOS IPE I Autoanálisis y toma de decisiones académicas y profesionales. Autoconocimiento personal y profesional. Intereses, competencias, habilidades y motivaciones hacia el empleo. Análisis y evaluación del potencial profesional. DAFO personal. Orientación para la igualdad de oportunidades. Búsqueda, selección y manejo de información académica y profesional. El proceso de toma de decisiones. Definición objetivos profesionales. Aprendizaje autónomo y competencia digital. Entorno personal de aprendizaje. Herramientas, fuentes de información y actividades para el diseño del entorno personal de aprendizaje. Estrategias de aprendizaje autónomo para el desarrollo personal y profesional. Concepto de identidad digital y su impacto en la empleabilidad. Marca personal. Contenidos mínimos niveles básico de PRL I. Conceptos básicos sobre seguridad y salud en el trabajo. El trabajo y la salud: los riesgos profesionales. Factores de riesgo. Daños derivados del trabajo. Los accidentes de trabajo y las enfermedades profesionales. Otras patologías derivadas del trabajo. Marco normativo básico en materia de prevención de riesgos laborales. Derechos y deberes básicos en esta materia. II. Riesgos generales y su prevención. Riesgos ligados a las condiciones de seguridad. Riesgos ligados al medioambiente de trabajo. La carga de trabajo, la fatiga y la insatisfacción laboral. Sistemas elementales de control de riesgos. Protección colectiva e individual. Planes de emergencia y evacuación. El control de la salud de la plantilla. III. Riesgos específicos y su prevención en el sector correspondiente a la actividad de la empresa. IV. Elementos básicos de gestión de la prevención de riesgos. Organismos públicos relacionados con la seguridad y salud en el trabajo. Organización del trabajo preventivo: «rutinas» básicas. Documentación: recogida, elaboración y archivo. Primeros auxilios. Condiciones Laborales Derechos y deberes derivados de la relación laboral. El contrato de trabajo: elementos básicos y modalidades. Componentes del recibo de salario. La negociación colectiva y medidas de conflicto. El convenio colectivo. La seguridad social y el estado del bienestar. Prestaciones y trámites derivados de la suspensión y extinción del contrato de trabajo. Retos laborales derivados del ámbito digital. Sector productivo y perfil profesional: Análisis del mercado de trabajo. Requisitos y capacitaciones necesarias para el desempeño profesional. Concepto de empleabilidad. Áreas ocupacionales y perfiles del sector profesional del título… Elaboración de un análisis de puesto de trabajo relacionado con el perfil profesional. Salud Psicosocial ligada al ámbito laboral. Concepto integral de salud mental en el ámbito laboral. Análisis de los datos de siniestralidad y absentismo vinculados a la salud mental, con especial foco en los grupos de población más joven. Definición y clasificación de riesgos psicosociales. Estrategias para la identificación de los riesgos en el ámbito laboral. Concepto de estrés laboral, tecnoestrés y burnout. El tiempo de trabajo y su distribución, como factores estresores en el entorno de trabajo. La desconexión digital. La conciliación personal y laboral. Factores de protección frente al estrés laboral: Estrategias personales para el afrontamiento. Hábitos saludables y su repercusión en el trabajo. Estrategias y recursos ante los daños derivados de factores psicosociales: aspectos organizativos, de participación de las y los trabajadores y asistenciales. La incapacidad temporal: conceptos básicos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Técnicas de voladuras",
+      "codigo": "1031",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara los equipos, máquinas, herramientas y accesorios de voladura, relacionando los parámetros que se deben controlar con las mediciones in situ.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los equipos y las máquinas presentes en la voladura."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha medido la concentración de gases ambientales y se ha comprobado que se encuentran dentro de los límites establecidos en la legislación vigente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha verificado que el caudal de aire presente en el frente, en caso de excavaciones subterráneas, se encuentra dentro de los límites establecidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han seleccionado los equipos de comprobación y disparo, en función del tipo de voladura y verificado su funcionamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los accesorios de voladura y herramientas, en función de su naturaleza y comprobado su buen funcionamiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de los equipos de seguridad, máquinas y herramientas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Manipula explosivos industriales y sistemas de iniciación simulados y accesorios de voladura, relacionando sus características con el modo de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han verificado las condiciones atmosféricas y el horario para las operaciones con explosivos y accesorios simulados, dentro de la explotación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los explosivos industriales y los sistemas de iniciación simulados y accesorios que se van a utilizar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado los vehículos o recipientes autorizados para realizar el transporte de los explosivos y accesorios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han recepcionado y transportado los explosivos y accesorios simulados según lo establecido en la legislación vigente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han almacenado los explosivos y accesorios simulados en los depósitos auxiliares y polvorines autorizados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito los parámetros que se van a controlar para verificar el estado de conservación y caducidad de los explosivos industriales y los sistemas de iniciación y accesorios."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Carga la voladura simulada a cielo abierto y subterráneas, aplicando los procedimientos establecidos en la documentación técnica.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado el estado del lugar de trabajo y observado que no existe ningún parámetro que pueda ocasionar derrumbes o la inestabilidad de los taludes o del sostenimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha controlado la presencia de barrenos, fallidos o fondos de barrenos antes de realizar el proceso de simulación de carga de la voladura."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han limpiado los barrenos antes de proceder a la simulación de carga."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha preparado el cartucho-cebo simulado para distintos sistemas de iniciación, de acuerdo con la normativa vigente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha introducido el cartucho-cebo y el explosivo simulado en el barreno, según el tipo de voladura que se va a realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han cargado los barrenos con explosivos a granel simulados, de acuerdo con el manual de funcionamiento del fabricante."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han retacado los barrenos según el tipo de voladura que se va a realizar."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza de forma simulada voladuras a cielo abierto y subterráneas, relacionando la carga y los sistemas de iniciación con el esquema de disparo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los esquemas de tiro correspondientes a distintos supuestos de voladuras simuladas a cielo abierto y subterráneas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han cerrado los accesos y avisado sobre el disparo de la voladura simulada."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han repartido, conectado los detonadores eléctricos simulados y comprobado el circuito eléctrico según el esquema de tiro."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha conectado la pega con mecha simulada según distintos supuestos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha repartido y conectado los detonadores no eléctricos simulados y comprobado según el esquema de tiro."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha simulado el disparo de voladuras no especiales, siguiendo los procedimientos de seguridad establecidos en la legislación vigente."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han taqueado los bolos con explosivo simulado y eliminado barrenos fallidos según distintas situaciones simuladas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado los resultados de la voladura simulada, identificando posibles anomalías y procediendo conforme a la legislación vigente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Destruye explosivos industriales y sistemas de iniciación simulados, utilizando el método más adecuado en función de su naturaleza y composición.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha seleccionado el sistema de destrucción de explosivos y de iniciadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado que la zona destinada a la destrucción de explosivos e iniciadores cumple con lo establecido en la legislación vigente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha procedido a realizar los cortes de accesos, señalización y montaje de los dispositivos de seguridad para la destrucción de explosivos e iniciadores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han guardado las distancias de seguridad establecidas en la legislación vigente."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado los procedimientos de combustión, detonación o disolución química para la destrucción de explosivos y sistemas de iniciación simulados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han retirado y gestionado los residuos según se establece en la legislación vigente."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos laborales derivados de la realización de voladuras a cielo abierto y subterráneas y relacionado con las medidas preventivas que se van a adoptar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado los equipos de protección individual que se van a utilizar en la realización de voladuras."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han determinado las protecciones colectivas de equipos e instalaciones y relacionado con los riesgos asociados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado las instrucciones técnicas y disposiciones internas de seguridad referentes a la actividad minera."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales, reglamento de explosivos y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han definido los procedimientos establecidos para la retirada, control y gestión de los residuos resultantes de las voladuras."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenimiento",
+      "codigo": "1077",
+      "ects": null,
+      "horas_minimas_boe": 70,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Proyecta hormigones, según las especificaciones del producto, describiendo la secuencia de las operaciones que van a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el sostenimiento de galerías y túneles en función del tipo y naturaleza del terreno y factores externos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido si la superficie que hay que revestir es regular, está saneada y drenada para la correcta aplicación de la proyección de hormigón."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado las operaciones necesarias para colocar la malla metálica en los bordes del hueco."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han dosificado y mezclado los componentes en las proporciones establecidas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha preparado y manejado el equipo de proyección."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha ejecutado la proyección de hormigones, de forma uniforme y con el espesor establecido."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel y limpieza de la máquina de proyección de hormigón."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza el sostenimiento con cuadros o cerchas, según el procedimiento establecido, describiendo y aplicando las técnicas para la estabilización del hueco.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los elementos del cuadro o cercha, máquinas, equipos, accesorios de unión y materiales de recubrimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado, de acuerdo a los planos de montaje, los medios y equipos necesarios para la colocación de cerchas o cuadros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las zapatas, soleras o bases para acondicionar el suelo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han colocado plataformas o andamios para la colocación del cuadro metálico, tresillones y trabajos de revestimiento en galerías y túneles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito y realizado las operaciones de montaje de los elementos del cuadro o cercha."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado y comprobado los solapes y la presión de apriete del cuadro o cercha conforme a las especificaciones técnicas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el revestimiento de la galería o túnel."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han realizado las operaciones de mantenimiento de primer nivel de maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza el sostenimiento con bulones, anclajes y micropilotes según el procedimiento establecido, describiendo y aplicando las técnicas para la estabilización del hueco.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado, de acuerdo a los planos, los medios y equipos necesarios para la ejecución de bulones, anclajes y micropilotes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han caracterizado los tipos de bulones y anclajes, relacionando sus características técnicas con la naturaleza del terreno."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado la perforación y limpieza del barreno, siguiendo las indicaciones del proyecto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los tipos de cartuchos de resinas o morteros, interpretando sus especificaciones técnicas."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de introducción y fijación de bulones y anclajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado el grado de fijación de los diferentes tipos de bulones y anclajes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han descrito las operaciones de estabilización de galerías o túneles con micropilotes y paraguas de micropilotes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la perforación, armado, entubado y hormigonado de micropilotes."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha realizado el mantenimiento de primer nivel de la maquinaria y equipos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Aplica las técnicas de estaja y levantamiento de hundimientos en galerías y túneles, describiendo la secuencia de las operaciones que se van a realizar y con las condiciones de seguridad establecidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado los planos de ampliación de la nueva sección."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los distintos tipos de elementos de refuerzo establecidos para asegurar el sostenimiento de la zona próxima a estajar o levantar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han realizado las operaciones necesarias para retirar el sostenimiento anterior de la sección que se va a ampliar o recuperar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de empiquetado desde el último sostenimiento colocado para evitar desprendimientos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han efectuado las operaciones necesarias para franquear la nueva sección, en función de la naturaleza y estado del terreno."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha caracterizado el sostenimiento de la sección recuperada en función del tipo y naturaleza del terreno y factores externos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos de protección individual y colectiva para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad específicos de los sostenimientos y proyecciones, relacionándolos con las medidas preventivas correspondientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las medidas de seguridad, prevención y de protección personal que se deben adoptar en la preparación, ejecución y mantenimiento de las operaciones de sostenimiento y proyección de hormigones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los equipos de protección individual (calzado, protección ocular, auditiva e indumentaria, entre otros) que se deben emplear en las distintas operaciones de sostenimiento y proyección de hormigones, en función de los riesgos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad (protecciones, alarmas y comprobación y lectura del control de aislamiento eléctrico de los equipos eléctricos, entre otros) de las máquinas que se deben emplear en las distintas operaciones de sostenimiento y proyección de hormigones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha manejado con las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas de proyección de hormigones y para la realización de sostenimientos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Excavaciones con arranque selectivo",
+      "codigo": "1079",
+      "ects": null,
+      "horas_minimas_boe": 100,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Caracteriza los procesos de excavación mecanizada mediante arranque y corte de material, relacionando las técnicas con la maquinaria y secciones que se van a perforar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha reconocido la dureza y excavabilidad del terreno."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado el uso de los minadores con las características del frente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los sistemas de ataque con minador en función de la naturaleza y estructura del terreno o macizo rocoso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las características y el uso de las rozadoras, cepillos y equipos auxiliares con el arranque de mineral."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han seleccionado medios de transporte asociados a la maquinaria de arranque."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han calculado los tiempos de ejecución en función del sistema de excavación, material y sección que se va a obtener."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara las máquinas de ataque puntual, relacionando los útiles e implementos de corte con las técnicas y procedimientos de excavación con minador.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han seleccionado los útiles, materiales y medios para efectuar el arranque del material con minador."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han comprobado y montado los implementos necesarios al sistema de corte y verificado su desgaste."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha posicionado y anclado el minador, adecuando su fijación a las características del terreno."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha posicionado la cabeza de corte conforme a las técnicas de ataque del material."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha puesto en marcha el minador, siguiendo la secuencia operativa y manual de funcionamiento y se ha simulado el equipo en vacío."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han verificado las conexiones y funcionamiento de los servicios auxiliares."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Arranca y carga material con minador, describiendo la secuencia de las operaciones que va a realizar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha comprobado que la superficie que se va a rozar es regular, está saneada y drenada."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha manejado el equipo de minador, conforme a las técnicas y a la documentación recibida."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han regulado los parámetros en el cuadro de mandos o tablero durante la operación de roza."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha controlado el tamaño del material rozado y el contenido de polvo en suspensión."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha realizado la carga del material arrancado, separando los bloques grandes que no puedan ser evacuados por el transportador."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha reconocido y actuado ante las señales indicativas de anomalías del proceso."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de sostenimiento con minador y de acabado en el frente."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha retirado, estacionado y parado el minador."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza los nichos de ubicación de rozadoras y cepillos y prepara la maquinaria, caracterizando los métodos de excavación mecanizada con arranque selectivo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha manejado el martillo picador para la excavación del nicho, conforme a la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la cuña, en caso necesario, adecuada al sistema de avance."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha amarrado y comprobado el equipo de guiado y anclajes adecuados al traslado de la rozadora o cepillo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han adaptado los controles de la máquina a la distancia de rozado y paso del cepillo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha montado la maquinaria auxiliar de corte y transporte."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado las operaciones de comprobación en vacío y verificación de funcionamiento de la rozadora y cepillo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Maneja la maquinaria de arranque, caracterizando los sistemas de rozado y cepillado y los sostenimientos adecuados a los trabajos de excavación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han realizado las tareas de corte de techo y muro mediante rozadora."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han corregido los atascos o desbordes de las máquinas de arranque."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han cepillado las zonas del tajo, controlando los parámetros de corte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha ripado la maquinaria de corte mediante transportador para el acabado de la calle."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han colocado los sostenimientos, avanzando en el hueco."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desentibado, desplazado y colocado los sistemas de sostenimientos según el plan de ejecución."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Realiza el mantenimiento de primer nivel de la maquinaria de excavación mecanizada con arranque selectivo, relacionando las técnicas o labores de mantenimiento con los equipos, materiales y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las operaciones de mantenimiento de primer nivel de la maquinaria y equipos de excavación con arranque selectivo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los equipos, materiales y herramientas necesarias para realizar las labores de mantenimiento de primer nivel."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y localizado los elementos sobre los que se deben realizar las operaciones de mantenimiento preventivo o correctivo de primer nivel."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de limpieza y comprobación del estado de la instalación y equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado y mantenido los niveles de los lubricantes y tensiones de los elementos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado desmontajes y montajes de elementos simples de acuerdo con el procedimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el repostaje de la maquinaria y las operaciones de inicio y fin de jornada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han registrado los controles y revisiones efectuadas para asegurar las operaciones de mantenimiento realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y accidentes derivados de la manipulación de los materiales, equipos, maquinaria y medios auxiliares."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las medidas de seguridad de protección personal y colectiva que se deben adoptar en la ejecución de operaciones de excavación con arranque selectivo y de mantenimiento."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado la manipulación de materiales, equipos, maquinaria e instalaciones con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han interpretado las instrucciones técnicas y disposiciones internas de seguridad referentes a la actividad minera y de ventilación de sobreguías y nichos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han determinado las medidas de seguridad y de protección personal que se deben adoptar en las operaciones de excavación mecanizada con arranque selectivo y de mantenimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha cumplido la normativa de prevención de riesgos laborales y de protección ambiental en las operaciones realizadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha valorado el orden y la limpieza de tajos, instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los procedimientos establecidos para el almacenamiento, control y gestión de los residuos resultantes del proceso de excavación y arranque."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Operaciones de carga y transporte en excavaciones",
+      "codigo": "1080",
+      "ects": null,
+      "horas_minimas_boe": 85,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Maneja y carga con pala cargadora, relacionando las características de la máquina con los materiales que se van a manipular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha preparado la máquina y efectuado su arranque conforme a los parámetros establecidos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han seleccionado y montado los implementos adecuados conforme a la naturaleza y características de los materiales que hay que cargar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha cargado el material, optimizando el proceso y de acuerdo a las instrucciones técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trasladado el material de forma segura y a la velocidad establecida."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha descargado el material en las zonas requeridas y conforme a los parámetros establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha estacionado la máquina conforme a las indicaciones técnicas y en los lugares designados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Opera con escraper, relacionando las características de la maquinaria con el material que se va a cargar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y preparado el escraper y sus componentes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han instalado y anclado los componentes del escraper y adecuado su fijación a las características del terreno y a las instrucciones recibidas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha comprobado la sujeción del cazo y el estado del cable y verificado que se encuentra dentro de los parámetros establecidos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado el anclaje del cabrestante y la polea de reenvío y verificado su ubicación y el estado de tensión del cable."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha verificado el estado de los elementos de desgaste y de seguridad antes de arrancar la máquina."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha realizado el arranque del material, controlando los parámetros de funcionamiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha cargado, transportado y descargado el material con escraper, optimizando el proceso, y de acuerdo a las instrucciones técnicas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han solventado situaciones técnicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Transporta materiales mediante sistemas de transporte continuos, relacionando las características de la instalación con el tipo de material que se va a cargar.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas de transporte con medios continuos, con sus capacidades y rendimientos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha verificado el estado de la instalación, componentes y elementos de seguridad de los sistemas de transporte continuo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han seleccionado y preparado los elementos auxiliares de los sistemas de transporte."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han manejado las cintas transportadoras y controlado su funcionamiento de forma segura."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han manejado los transportadores blindados conforme a las instrucciones técnicas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han corregido posibles anomalías del funcionamiento del transporte."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Maneja y transporta material con dumper o volquete, relacionando las características de la máquina con la configuración del terreno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han caracterizado los elementos principales del dumper o volquete."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado las tareas previas y la puesta en marcha del dumper o volquete y, verificado cada uno de los parámetros que hay que controlar."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha posicionado el dumper para la carga de acuerdo a las instrucciones técnicas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha manejado el dumper conforme a la técnica instruida y a la documentación técnica."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado la descarga del material en las zonas requeridas y conforme a los parámetros establecidos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha estacionado el dumper o volquete en los lugares designados y de acuerdo con las especificaciones técnicas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza el mantenimiento de primer nivel de la maquinaria de carga y transporte, relacionando las técnicas o labores de mantenimiento con los equipos, materiales y herramientas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han descrito las operaciones de mantenimiento de primer nivel de la maquinaria y equipos de carga y transporte."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los equipos, materiales y herramientas necesarias para realizar las labores de mantenimiento de primer nivel."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado y localizado los elementos sobre los que se deben realizar las operaciones de mantenimiento preventivo de primer nivel."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han realizado las operaciones de limpieza y comprobación del estado de la instalación y equipos."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han verificado y mantenido los niveles de los lubricantes y tensiones de los elementos."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han realizado desmontajes y montajes de elementos simples de acuerdo con el procedimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado el repostaje de la maquinaria y las operaciones de inicio y fin de jornada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han registrado los controles y revisiones efectuadas para asegurar las operaciones de mantenimiento realizadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados y las medidas y equipos de protección individual y colectiva para prevenirlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los riesgos y el nivel de peligrosidad específicos del manejo de la maquinaria de carga y transporte y del mantenimiento, relacionándolos con las medidas preventivas correspondientes."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las medidas de seguridad, prevención y de protección personal que se deben adoptar en la preparación, ejecución y mantenimiento de las excavaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han descrito los equipos de protección individual y colectiva que se deben emplear en las distintas operaciones de carga, transporte y mantenimiento, en función de los riesgos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los elementos de seguridad de las máquinas que se deben emplear en las operaciones de carga, transporte y mantenimiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han utilizado las máquinas y equipos, respetando las normas de seguridad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, equipos y maquinaria para la realización de operaciones de carga, transporte y mantenimiento."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han identificado las posibles fuentes de contaminación del entorno ambiental."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han recogido residuos de acuerdo con las normas de protección ambiental."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Digitalización aplicada al sistema productivo GM",
+      "codigo": "1664227",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Establece las diferencias entre la Economía Lineal (EL) y la Economía Circular (EC), identificando las ventajas de la EC en relación con el medio ambiente y el desarrollo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las etapas «típicas» de los modelos basados en los modelos basados en EC."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado cada etapa de los modelos EL y EC y su repercusión en el medio ambiente."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia del reciclaje en los modelos económicos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado procesos reales basados en EL."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado procesos reales basados en EC."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han comparado los modelos anteriores en relación con su impacto medioambiental y los ODS (Objetivos de Desarrollo Sostenible)."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los principales aspectos de la 4ª Revolución Industrial indicando los cambios y las ventajas que se producen tanto desde el punto de vista de los clientes como de las empresas. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado los sistemas ciberfísicos con la evolución industrial."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el cambio producido en los sistemas automatizados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la combinación de la parte física de las industrias con el software, IoT (Internet de las cosas), comunicaciones, entre otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha descrito la interrelación entre el mundo físico y el virtual."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la migración a entornos 4.0 con la mejora de los resultados de las empresas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado las ventajas para clientes y empresas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Identifica la estructura de los sistemas basados en cloud/nube describiendo su tipología y campo de aplicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los diferentes niveles del cloud/nube."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las principales funciones del cloud/nube (procesamiento de datos, intercambio de información, ejecución de aplicaciones, entre otras)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito el concepto de edge computing y su relación con el cloud/nube."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han definido los conceptos de fog y mist y sus zonas de aplicación en el conjunto."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado las ventajas que proporciona la utilización del cloud/nube en los sistemas conectados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Compara los sistemas de producción/prestación de servicios digitalizados con los sistemas clásicos identificando las mejoras introducidas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las tecnologías habilitadoras (THD) actuales que definieron un sistema digitalizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han descrito las características y aplicaciones del IoT, IA (Inteligencia Artificial), Big data, tecnología 5G, la robótica colaborativa, Blockchain, Ciberseguridad, fabricación aditiva, realidad virtual, gemelos digitales, entre otros."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha descrito la contribución de las THD a la mejora de la productividad y la eficiencia de los sistemas productivos o de prestación de servicios."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha relacionado la alineación entre las unidades funcionales de las empresas que conforman el sistema y el objetivo de este."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha relacionado la implantación de las tecnologías habilitadoras (sensórica, tratamiento de datos, automatización y comunicaciones, entre otros) con la reducción de costes y la mejora de la competitividad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado las tecnologías disruptivas con aplicaciones concretas en los sectores productivos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han definido los sistemas de almacenamiento de datos no convencionales y el acceso a los mismos desde cada unidad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han descrito las mejoras producidas en el sistema y en cada una de sus etapas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Elabora un plan de transformación de una empresa clásica del sector en el que se enmarca el título, basada en una EL, en el concepto 4.0, determinando los cambios a introducir en las principales fases del sistema e indicando cómo afectaría los recursos humanos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha definido en el ámbito de bloques el diagrama de funcionamiento de la empresa clásica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las etapas susceptibles de ser digitalizadas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido las tecnologías implicadas en cada una de las etapas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha establecido la conexión de las etapas digitalizadas con el resto del sistema."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un diagrama de bloques del sistema digitalizado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha elaborado un informe de viabilidad y de las mejoras introducidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado la mejora en la producción y gestión de residuos, entre otros."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado un documento con la secuencia del plan de transformación y los recursos utilizados."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Sostenibilidad aplicada al sistema productivo",
+      "codigo": "1708227",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los aspectos ambientales, sociales y de gobernanza (ASG) relativos a la sostenibilidad teniendo en cuenta el concepto de desarrollo sostenible y los marcos internacionales que contribuyen a su consecución. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha descrito el concepto de sostenibilidad, estableciendo los marcos internacionales asociados al desarrollo sostenible."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los asuntos ambientales, sociales y de gobernanza que influyen en el desarrollo sostenible de las organizaciones empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han relacionado los Objetivos de Desarrollo Sostenible (ODS) con su importancia para la consecución de la Agenda 2030."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha analizado la importancia de identificar los aspectos ASG más relevantes para los grupos de interés de las organizaciones relacionándolos con los riesgos y oportunidades que suponen para la propia organización."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado los principales estándares de métricas para la evaluación del desempeño en sostenibilidad y su papel en la rendición de cuentas que marca la legislación vigente y las futuras regulaciones en desarrollo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha descrito la inversión socialmente responsable y el papel de las y los analistas, inversores, agencias y índices de sostenibilidad en el fomento de la sostenibilidad."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Caracteriza los retos ambientales y sociales a los cuales se enfrenta la sociedad, describiendo los impactos sobre las personas y los sectores productivos y proponiendo acciones para minimizarlos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales retos ambientales y sociales."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los retos ambientales y sociales con el desarrollo de la actividad económica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha analizado el efecto de los impactos ambientales y sociales sobre las personas y los sectores productivos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las medidas y acciones encaminadas a minimizar los impactos ambientales y sociales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la importancia de establecer alianzas y trabajar de manera transversal y coordinada para abordar con éxito los retos ambientales y sociales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Establece la aplicación de criterios de sostenibilidad en el desempeño profesional y personal, identificando los elementos necesarios. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los ODS más relevantes para la actividad profesional que realiza."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los riesgos y oportunidades que representan los ODS."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las acciones necesarias para atender algunos de los retos ambientales y sociales desde la actividad profesional y el entorno personal."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Propone productos y servicios responsables teniendo en cuenta los principios de la economía circular.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Realiza actividades sostenibles minimizando el impacto de las mismas en el medio ambiente.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha caracterizado el modelo de producción y consumo actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los principios de la economía verde y circular."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han contrastado los beneficios de la economía verde y circular frente al modelo clásico de producción."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha evaluado el impacto de las actividades personales y profesionales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado principios de ecodiseño."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado estrategias sostenibles."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha analizado el ciclo de vida del producto."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los procesos de producción y los criterios de sostenibilidad aplicados."
+            },
+            {
+              "codigo": "y",
+              "descripcion": "Se ha aplicado la normativa ambiental."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza un plan de sostenibilidad de una empresa del sector, identificando sus grupos de interés, los aspectos ASG materiales y justificando acciones para su gestión y medición. Criterios de evaluación:",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los principales grupos de interés de la empresa."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado los aspectos ASG materiales, las expectativas de los grupos de interés y la importancia de los aspectos ASG en relación con los objetivos empresariales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han definido acciones encaminadas a minimizar los impactos negativos y aprovechar las oportunidades que plantean los principales aspectos ASG identificados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han determinado las métricas de evaluación del desempeño de la empresa de acuerdo con los estándares de sostenibilidad más ampliamente utilizados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha elaborado un informe de sostenibilidad con el plan y los indicadores propuestos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad II",
+      "codigo": "1710",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE II",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Planifica y pone en marcha estrategias en los diferentes procesos selectivos de empleo que le permiten mejorar sus posibilidades de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han determinado las técnicas utilizadas actualmente en el sector para el proceso de selección de personal."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han desarrollado estrategias para la búsqueda de empleo relacionadas con las técnicas actuales más utilizadas contextualizadas al sector."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han valorado las actitudes y aptitudes que permiten superar procesos selectivos en el sector privado y en el sector público."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha construido una marca personal identificando las necesidades del mercado actual, sus habilidades, destrezas y su aporte de valor."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Aplica estrategias relacionadas con las competencias personales, sociales y emocionales para el empleo en búsqueda de la mejora de su empleabilidad.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad en el sector de referencia."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha participado activamente en el establecimiento de los objetivos del equipo y en la toma de decisiones del mismo y asumido la responsabilidad de las acciones y decisiones del grupo, participando activamente en el logro de unos objetivos compartidos cooperando con otras personas y compartiendo el liderazgo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han incorporado al propio proceso de aprendizaje las técnicas y recursos de presentación y comunicación, tanto orales como escritos, adecuados para una comunicación efectiva y afectiva siendo capaz de adaptarlos a cada situación y circunstancias, valorando las oportunidades y dificultades que ofrece cada una de ellas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han aplicado técnicas y estrategias para la gestión del tiempo disponible para alcanzar los objetivos tanto individuales como del equipo y programado las actividades necesarias"
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones mostrando una actitud flexible en las relaciones con otras personas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han desarrollado estrategias para la programación de actividades atendiendo a criterios de organización eficiente y previendo las posibles dificultades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Pone en práctica las habilidades emprendedoras necesarias para el desarrollo de procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo hacia un modelo sostenible.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha identificado el concepto de innovación y su relación con la construcción de una sociedad más sostenible que mejore en el bienestar de las personas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado las distintas metodologías para emprender y su importancia para favorecer la innovación y como fuente de creación de empleo y bienestar social."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han aplicado las habilidades emprendedoras necesarias para promover el emprendimiento y el intraemprendimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha puesto en práctica el trabajo colaborativo como requisito para el desarrollo de procesos de innovación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha desarrollado la competencia digital necesaria para la mejora de los procesos de innovación e investigación aplicadas que promuevan la modernización del sector productivo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han incorporado los objetivos de las políticas e iniciativas relacionadas con la sostenibilidad y el medio ambiente a la estrategia empresarial enfocada al desarrollo de un modelo económico y social sostenible."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Identifica, define y valida ideas de emprendimiento generadoras de nuevas oportunidades a partir de estrategias de análisis del entorno socio productivo utilizando metodologías ágiles para el emprendimiento.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los problemas de las personas destinatarias potenciales del proyecto emprendedor como paso previo a la propuesta de soluciones que se conviertan en oportunidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha puesto en práctica el proceso creativo con el fin de conseguir una idea emprendedora que aporte valor económico, social y/o cultural."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha diseñado un modelo de negocio y/o gestión derivado de la idea emprendedora. d) Se han incorporado valores éticos y sociales a la idea emprendedora analizando modelos de balance social."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha analizado la contribución de la Economía Circular y la Economía del Bien Común al desarrollo de un modelo económico y social basado en la equidad, la justicia social y la sostenibilidad."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han analizado los principales componentes del entorno general y específico, y su impacto en la idea emprendedora."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado entrevistas de problema para validar el perfil y el problema de las personas destinatarias de la idea emprendedora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha validado la solución mediante la creación de prototipos buscando el encaje problema-solución."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha experimentado con la puesta en práctica de estrategias de marketing para desarrollar destrezas en técnicas de comunicación y venta."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla un proyecto emprendedor de innovación social y/o tecnológica aplicada en colaboración con el entorno.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los conceptos básicos del emprendimiento y la innovación social."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre la necesidad del liderazgo ético y sostenible en las organizaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reflexionado sobre la tecnología como base para el cambio del modelo productivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en marcha las estrategias propias del pensamiento de diseño para detectar necesidades sociales y medioambientales."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han analizado los elementos del diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han alineado metas de desarrollo sostenible con el diseño de modelos de negocio ecosociales y/o de base tecnológica."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las estrategias necesarias para analizar la viabilidad del proyecto emprendedor."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han investigado las opciones financieras socialmente responsables."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han definido los agentes implicados en el proyecto, así como su participación en el mismo."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Analiza la rentabilidad de la propuesta emprendedora valorando inversión, costes y beneficios y diseña una estrategia para la puesta en marcha de la misma teniendo en cuenta obligaciones administrativas, fiscales y contables.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado la inversión, los costes y beneficios y determinado si la propuesta emprendedora es rentable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han consultado y comparado las diferentes formas jurídicas y asociativas que pueden aplicarse a la propuesta emprendedora y se ha tomado una decisión razonada sobre la más adecuada al supuesto concreto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las diferentes obligaciones administrativas, fiscales y contables que se derivan de la propuesta emprendedora."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha trazado un plan de acción para la puesta en marcha de la propuesta emprendedora."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular",
+      "codigo": "1713910",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Módulo optativo",
+      "codigo": "CVOPM227",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}

@@ -1,0 +1,1558 @@
+{
+  "id": "gb-carpinteria-y-mueble",
+  "denominacion": "Carpintería y Mueble",
+  "nivel": "Formación Profesional de Grado Básico",
+  "familia_profesional": "Instalación y Mantenimiento",
+  "duracion_horas": 2000,
+  "ects": 120,
+  "abreviatura": "CM",
+  "rd": "Real Decreto 127/2014, de 28 de febrero, por el que se regulan aspectos específicos de la Formación Profesional Básica de las enseñanzas de formación profesional del sistema educativo, se aprueban catorce títulos profesionales básicos, se fijan sus currículos básicos y se modifica el Real Decreto 1850/2009, de 4 de diciembre, sobre expedición de títulos académicos y profesionales correspondientes a las enseñanzas establecidas en la Ley Orgánica 2/2006, de 3 de mayo, de Educación.",
+  "boe_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-2360",
+  "modulos": [
+    {
+      "nombre": "Atención al cliente",
+      "codigo": "3005",
+      "ects": null,
+      "horas_minimas_boe": 40,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Atiende a posibles clientes, reconociendo las diferentes técnicas de comunicación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el comportamiento del posible cliente."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han adaptado adecuadamente la actitud y discurso a la situación de la que se parte."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha obtenido la información necesaria del posible cliente."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha favorecido la comunicación con el empleo de las técnicas y actitudes apropiadas al desarrollo de la misma."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha mantenido una conversación, utilizando las fórmulas, léxico comercial y nexos de comunicación (pedir aclaraciones, solicitar información, pedir a alguien que repita y otros)."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha dado respuesta a una pregunta de fácil solución, utilizando el léxico comercial adecuado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha expresado un tema prefijado de forma oral delante de un grupo o en una relación de comunicación en la que intervienen dos interlocutores."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha mantenido una actitud conciliadora y sensible a los demás, demostrando cordialidad y amabilidad en el trato."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha trasmitido información con claridad, de manera ordenada, estructura clara y precisa."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Comunica al posible cliente las diferentes posibilidades del servicio, justificándolas desde el punto de vista técnico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado las diferentes tipologías de público."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado clientes de proveedores, y éstos del público en general."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha reconocido la terminología básica de comunicación comercial."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha diferenciado entre información y publicidad."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han adecuado las respuestas en función de las preguntas del público."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha informado al cliente de las características del servicio, especialmente de las calidades esperables."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha asesorado al cliente sobre la opción más recomendable, cuando existen varias posibilidades, informándole de las características y acabados previsibles de cada una de ellas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha solicitado al cliente que comunique la elección de la opción elegida."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Informa al probable cliente del servicio realizado, justificando las operaciones ejecutadas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha hecho entrega al cliente de los artículos procesados, informando de los servicios realizados en los artículos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han transmitido al cliente, de modo oportuno, las operaciones a llevar a cabo en los artículos entregados y los tiempos previstos para ello."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los documentos de entrega asociados al servicio o producto."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha recogido la conformidad del cliente con el acabado obtenido, tomando nota, en caso contrario, de sus objeciones, de modo adecuado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha valorado la pulcritud y corrección, tanto en el vestir como en la imagen corporal, elementos clave en la atención al cliente."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha mantenido en todo momento el respeto hacia el cliente"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha intentado la fidelización del cliente con el buen resultado del trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha definido periodo de garantía y las obligaciones legales aparejadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Atiende reclamaciones de posibles clientes, reconociendo el protocolo de actuación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han ofrecido alternativas al cliente ante reclamaciones fácilmente subsanables, exponiendo claramente los tiempos y condiciones de las operaciones a realizar, así como del nivel de probabilidad de modificación esperable."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los aspectos principales en los que incide la legislación vigente, en relación con las reclamaciones."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha suministrado la información y documentación necesaria al cliente para la presentación de una reclamación escrita, si éste fuera el caso."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han recogido los formularios presentados por el cliente para la realización de una reclamación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha cumplimentado una hoja de reclamación"
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha compartido información con el equipo de trabajo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Instalación de elementos de carpintería y mueble",
+      "codigo": "3075",
+      "ects": null,
+      "horas_minimas_boe": 90,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Realiza operaciones auxiliares en la instalación de suelos, parquet, tarimas y recubrimientos de paneles de madera en paramentos horizontales y verticales, interpretando los planos de montaje.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han interpretado correctamente los planos de montaje distribuyendo de forma racional el material y la maquinaria necesaria."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han nivelado los paramentos horizontales y verticales con masilla para un correcto recibimiento de los elementos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reconocido los tipos de suelos, parquet y tarimas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han ajustado a los paramentos y esquinas los elementos constructivos, dejando espacio para las dilataciones."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han realizado las operaciones de acuchillado y barnizado de parqué con las condiciones de calidad exigidas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han rectificado los bajos de las puertas tras la instalación de suelos de madera o moquetas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han realizado las operaciones de mantenimiento básico de las máquinas, útiles y herramientas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales y medioambientales requeridas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han empleado los equipos de protección individual."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Realiza operaciones auxiliares en la instalación de elementos de carpintería y muebles, relacionándolas con la funcionalidad de la instalación.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los distintos tipos de instalación y sus finalidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han obtenido los datos y medidas de la instalación a partir de croquis o plantilla del montaje."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han colocado los herrajes en la proporción y altura adecuadas, para conseguir la sujeción correcta de la hoja de la puerta o ventana."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha comprobado que la inclinación del canto en las hojas es la adecuada (alambor) y que la elección de los herrajes de apertura es la correcta (a derechas o a izquierdas)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha efectuado la instalación sin que los elementos arquitectónicos, cercos y precercos, las instalaciones o las personas sufran daños."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han fijado puertas block-porte considerando las características de los elementos arquitectónicos soportes."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han calzado provisionalmente las puertas, comprobando que encajan correctamente con el marco."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales y medioambientales requeridas"
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Ajusta piezas, herrajes y mecanismos, reconociendo su función en el elemento de carpintería o mueble.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han reconocido los distintos tipos de instalación y sus finalidades."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los distintos sistemas de fijación de elementos con los soportes a los que se fijan."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los principales herrajes a utilizar en muebles y elementos de carpintería para uniones con o sin movimiento."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han enumerado los factores a tener en cuenta en el ajuste de subconjuntos en la instalación de muebles."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han colocado las piezas, herrajes y mecanismos según las instrucciones de montaje, verificando que es la adecuada y que cumplen con la función para la que fueron instalados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha comprobado que las herramientas y medios utilizados para la instalación son los más idóneos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han restaurado por eliminación de residuos las condiciones higiénicas del lugar de instalación tras finalizar el trabajo."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado que el desplazamiento de las piezas móviles se realiza sin impedimentos y responde a las especificaciones del proyecto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las normas de seguridad y prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Transporta material y útiles para la instalación de elementos de carpintería y muebles, identificando las medidas de protección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han embalado los productos de madera y muebles manualmente utilizando cartón, plástico de burbuja, retráctil o poliuretano expandido, quedando firmemente sujetos y con las protecciones fijadas en el lugar indicado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han ajustado correctamente los parámetros de la embaladora termo-retráctil en función de los productos para embalar (tamaño del rollo de plástico, velocidad del tapete y temperatura del horno)."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado mediante etiquetas u otros medios especificados los productos embalados."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han embalado con las protecciones especificadas los productos a embalar con plástico termo-retráctil."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha protegido con cartón o material similar las zonas de contacto del fleje con el mueble."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han apartado para su reproceso aquellas piezas que tras el embalado presentan no conformidades."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales relacionadas con el embalado transporte de cargas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha transportado el mueble embalado siguiendo las normativas del sector de transportes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Tapizado de muebles",
+      "codigo": "3078",
+      "ects": null,
+      "horas_minimas_boe": 105,
+      "siglas": null,
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Elabora presupuestos y facturas de tapizado de muebles, justificando los mismos en función del material empleado y de la dificultad asociada al proceso.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han tomado medidas del mueble o la parte del mueble que se va a tapizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han reconocido los materiales necesarios para el tapizado."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han calculado anchos y largos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha calculado la cantidad de material."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha estimado el tiempo requerido en el desarrollo del producto."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han señalado las dificultades asociadas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha aplicado el margen comercial a los costes establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha realizado la emisión de facturas de acuerdo con el presupuesto, justificando las posibles desviaciones y cumpliendo los requisitos legales."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han empleado aplicaciones informáticas en la elaboración del presupuesto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara máquinas, equipos y herramientas para el tapizado de muebles, relacionando las variables seleccionadas con las características del producto que se va a obtener.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y clasificado los equipos y herramientas en función de sus prestaciones en el proceso de tapizado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han realizado operaciones de montaje y desmontaje asociadas a cambio de utensilios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el lubrificado, limpieza y mantenimiento de primer nivel de los diferentes equipos y herramientas."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha llevado a cabo el reglaje y ajuste de los equipos, accesorios y herramientas en función de la operación y del material que se va a emplear."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han reajustado los parámetros de las operaciones de prueba."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han determinado los elementos fungibles de los equipos y se ha ensayado su montaje y desmontaje."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha mantenido el área de trabajo en condiciones de orden, limpieza y seguridad."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los medios y equipos de seguridad asociados a la manipulación de las máquinas y herramientas."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales y medioambientales requeridas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Obtiene las piezas que componen el tapizado de los muebles, trazando patrones y aplicando técnicas de confección.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han analizado los procesos de tapizado de diferentes modelos de muebles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han relacionado los criterios estéticos y funcionales del tapizado con la ubicación y aplicaciones del mueble."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el desmontado o desvestido de muebles tapizados, retirando la cubierta exterior e interior, entretelas, rellenos y suspensiones o soportes."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han descrito los procedimientos de preparación de distintos materiales (tejido exterior, entretela, rellenos, forros y otros), controlando los parámetros implicados para evitar desviaciones (textura, color, dibujo y otros)."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha trazado el patrón adaptándolo a las medidas de mueble que se va a tapizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha marcado el material, señalando puntos de unión, acabados de orillos, emplazamientos de adornos o fornituras."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han ejecutado las operaciones de corte sin deformación de los perfiles de las piezas, sentido del hilo y dirección adecuada."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han ejecutado operaciones de ensamblaje, aplicando métodos y técnicas apropiados a cada tipo de unión (acabado de orillos, plisado, de cerramiento, y otros)."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han realizado operaciones de acabados intermedios y finales, siguiendo criterios de seguridad y estética."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han propuesto diferentes ideas de confección, mostrando una actitud creativa."
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales y medioambientales requeridas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Tapiza muebles, identificando y aplicando los procedimientos de montado de tapizados.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado los elementos del armazón y de suspensión de muebles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito el comportamiento de diferentes tipos de espumas y guatas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha preparado el armazón del mueble, comprobado su estabilidad y solidez."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han colocado los elementos de suspensión (cinchas, muelles en espiral o en tensión, flejes u otros), al armazón del mueble."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha distribuido el material de relleno (espuma, crin, guata), ajustándolo a la estructura y forma del modelo."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha conseguido la simetría y volumen deseado con el material de relleno."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han fijado las piezas correspondientes a cada zona (tapizado exterior, interior, entretela, forro)"
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han aplicado los elementos decorativos (borlas, botones, galones u otros), de acuerdo con el diseño."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han detectado defectos o problemas en el tapizado, corrigiéndolos in situ si es posible."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales y medioambientales requeridas"
+            },
+            {
+              "codigo": "k",
+              "descripcion": "Se ha dejado el área limpia y ordenada una vez finalizado el tapizado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad 1º",
+      "codigo": "3159p",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE I",
+      "curso": "1",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales I",
+      "codigo": "3161",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias Aplicadas I",
+      "codigo": "3163",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Primero",
+      "codigo": "TU01CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "1",
+      "ra": []
+    },
+    {
+      "nombre": "Operaciones básicas de mecanizado de madera y derivados",
+      "codigo": "3074",
+      "ects": null,
+      "horas_minimas_boe": 160,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Interpreta documentación técnica distinguiendo vistas, piezas, secciones uniones, detalles, perfiles y cotas.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado y trasladado al material la información relativa a escalas y cotas de la documentación técnica."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha interpretado y trasladado al material la información relativa a los tipos de superficies, cortes, taladros y herrajes identificados en la documentación técnica."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han utilizado las diferentes vistas y detalles de la pieza para conseguir una visión completa de la tarea a realizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha interpretado y trasladado al material de forma coherente toda información verbal, escrita o gráfica proporcionada por el encargado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han eliminado posibles errores de interpretación, dibujando bocetos y croquis acotados de las tareas que hay que realizar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han trazado planos sencillos, acotados y a escala a partir de las ideas, bocetos y croquis siguiendo la normativa UNE."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han elaborado vistas, cortes, líneas de rotura y detalles que complementan la información general."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado la nota de madera y hoja de procesos a partir de la documentación gráfica realizada maximizándose los recursos y eliminando tiempos muertos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Selecciona las maderas y sus productos derivados, relacionando sus características técnicas con sus aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han identificado las maderas y sus productos derivados convencionales del mercado."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha clasificado las maderas en función de sus características u origen."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha elegido correctamente la cara maestra de la pieza en función de su ausencia de defectos y otros parámetros de calidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha elegido correctamente la cara de referencia en función de su planitud y escuadría."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han elegido los útiles de medición y trazado más apropiados en función de las características del material y de las medidas que hay que verificar."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han trasladado las medidas de la nota de madera al material de forma exacta o, en su caso, maximizada para compensar las operaciones posteriores de lijado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha demostrado responsabilidad ante errores y fracasos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han identificado los riesgos laborales y ambientales, así como las medidas de prevención de los mismos."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las operaciones básicas de mecanizado sobre madera y derivados con herramientas manuales o con maquinaria identificando los distintos procesos y las condiciones idóneas de mecanizado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han agrupado las materias primas en el almacén en función de sus características (material, tamaño, forma, defectos) y de su aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha establecido un orden de ejecución en función de la maximización de los recursos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han alimentado correctamente las máquinas manuales teniendo en cuenta los defectos de forma y calidad de la madera y la dirección de la fibra."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han alimentado las máquinas automáticas, teniendo en cuenta el proceso a desarrollar y los parámetros de la máquina."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han mecanizado piezas de madera y derivados con la sierra de cinta utilizando plantillas para obtener un mayor rendimiento."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han mecanizado piezas en la tupí utilizando plantillas o al aire, con sujeción correcta de la pieza y respetando las medidas de seguridad"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han mecanizado tableros y retestado tablones en la sierra circular manejando la escuadradora."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han verificado con plantillas o mediciones las piezas y productos obtenidos tras el mecanizado, corrigiendo posibles errores."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido el área de trabajo con el grado apropiado de orden y limpieza."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las normas de seguridad y salud laboral utilizando correctamente las protecciones de las máquinas y los medios individuales de protección"
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Realiza uniones en madera y derivados distinguiendo las más apropiadas en función del material, de la funcionalidad y de criterios de economía.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han unido las partes mecanizadas mediante ensambles o elementos de fijación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han unido los tableros mediante elementos de sujeción específicos."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han reforzado las uniones en madera mediante herrajes, llaves y otros elementos."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha elegido el tipo correcto de aglutinante en función del material, condiciones de trabajo y atmosféricas a la que estará sometida la pieza una vez puesta en obra."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha mantenido el equilibrio entre la funcionalidad y la economía en el número de elementos de sujeción fijados a las piezas."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las labores de mantenimiento básico de las herramientas, útiles y maquinaria utilizados."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medias y normas de prevención y seguridad en las actividades realizadas."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha responsabilizado de la labor que desarrolla, comunicándose de manera eficaz con la persona adecuada en cada momento."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Acabados básicos de la madera",
+      "codigo": "3076",
+      "ects": null,
+      "horas_minimas_boe": 95,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Prepara las superficies (lijado, limpieza, acabado), relacionando estas operaciones con la calidad del proceso de acabado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han puesto a punto los equipos de lijado y pulido introduciéndose los parámetros establecidos en el plan de producción."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha realizado la elección del tamaño de abrasivo, tipo de grano y de las pastas de pulir en función del tipo de producto que se va a aplicar y del acabado final establecido."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado el lijado en la dirección adecuada en función del soporte, del grano del abrasivo y de la presión necesaria para conseguir el acabado requerido."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la operación de masillado antes de efectuar el lijado y se ha verificado el correcto funcionamiento del sistema de extracción de aire."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha procedido a la limpieza de la superficie mediante los medios convenientes antes de proceder a la aplicación del acabado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales y medioambientales requeridas"
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han puesto en marcha los equipos de extracción y depuración de aire que garantizan las condiciones ambientales y de seguridad adecuadas."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Prepara productos de acabado, justificando cantidades y proporciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han almacenado los productos de acabado en un lugar separado de la madera y en las condiciones de temperatura y humedad adecuadas."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha procedido a la inspección visual o mediante viscosímetro de la fluidez del producto añadiendo, en caso necesario, productos o disolventes para facilitar la aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han regulado las máquinas de acuerdo con los parámetros establecidos según las características del soporte y el material que se va a utilizar."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los productos de acabado a través de la información recogida en las etiquetas de los envases."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha interpretado la simbología de seguridad de los productos de acabado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las operaciones de mezcla, de preparación de los productos y de aplicación en forma y proporción establecidas."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha realizado la preparación de la mezcla en función de la superficie a tratar y en función del parásito a combatir."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha comprobado que los niveles de humedad y temperatura son los adecuados en la zona de acabados, modificándolos en cabina según las especificaciones del producto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han aplicado las medidas de seguridad y medioambientales requeridas"
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han efectuado todas las operaciones necesarias de limpieza, renovación y pureza de aire, y otras, consiguiendo una atmósfera de trabajo limpia de elementos contaminantes del acabado."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Realiza las operaciones básicas de acabados en la madera y derivados, relacionándolas con las características del producto final.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han escogido los medios manuales (brochas, utillaje, útiles adecuados y rodillos, entre otros) en función del trabajo a realizar."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han situado correctamente el aplicador y las piezas para su acabado y, así, conseguir el máximo aprovechamiento del material y aumentar la calidad de la aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha efectuado la aplicación del producto de acabado mediante las operaciones manuales y manejo diestro de los útiles y medios, de forma que se obtiene el resultado esperado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se ha realizado la aplicación de producto manteniendo las condiciones óptimas para las personas, equipos e instalaciones, respetando las normas de seguridad y salud laboral."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ajustado los parámetros de presión y caudal en el acabado con pistolas tras un control visual de la aplicación."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha procedido al secado de los acabados en el espacio destinado específicamente para este fin, asegurando los requisitos de temperatura, humedad y ausencia de contaminantes, requeridos para la óptima calidad del acabado."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se ha efectuado el control de calidad a lo largo de todo el proceso de aplicación según los criterios establecidos."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han almacenado los residuos en recipientes adecuados y en los lugares previamente establecidos cumpliendo con la normativa vigente aplicable."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se han limpiado los equipos y accesorios una vez finalizada la tarea, dejándolos en condiciones óptimas para su utilización posterior."
+            },
+            {
+              "codigo": "j",
+              "descripcion": "Se han aplicado las normas de prevención de riesgos laborales y medioambientales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Seca productos acabados, reconociendo las condiciones ambientales y los parámetros de secado.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han diferenciado los distintos procedimientos de secado relacionándolos con los tipos de acabados aplicados."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reconocido el valor añadido que aporta el secado-curado, en relación con la calidad final del producto."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado las condiciones ambientales idóneas del lugar de secado (temperatura, humedad, ausencia de partículas en suspensión, y otras)."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han preparado los equipos introduciendo los parámetros de temperatura y velocidad del aire de secado."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han ajustado los sistemas de extracción y filtración de la cabina de secado."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han manipulado las piezas economizando tiempos y recorridos."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han aplicado las medidas de prevención de riesgos laborales y medioambientales."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han utilizado correctamente los equipos de protección individual."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Materiales y productos textiles",
+      "codigo": "3077",
+      "ects": null,
+      "horas_minimas_boe": 60,
+      "siglas": null,
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Recepciona materiales y productos textiles, distinguiendo sus propiedades y aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han relacionado las mercancías recibidas con el contenido del albarán."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han diferenciado los materiales (tejidos, laminares, elementos complementarios y otros), en relación con sus características y aplicación."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han clasificado los materiales en función de sus características (tamaño, grosor, defectos y otros) y según su origen y aplicación."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han reconocido los defectos y anomalías más frecuentes, tanto los de origen natural como los derivados de los procesos de fabricación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han descrito los procesos básicos de producción de materiales y productos textiles."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han descrito las propiedades y características que transmiten los tratamientos a las materias primas (blanqueo, tintura, aprestos y otros)."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han interpretado etiquetas normalizadas de composición y manipulación."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha verificado la coincidencia de las etiquetas con las especificaciones de la ficha técnica del material o producto."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha empleado tiempo y esfuerzo en ampliar conocimientos e información complementaria."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Recepciona elementos complementarios, relacionando las características de los mismos con sus aplicaciones.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la composición del lote recibido y sus medidas de protección."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha comprobado que los elementos recibidos se corresponden con los solicitados."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los elementos de relleno, de refuerzo, de adorno, de sujeción y otros."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han diferenciado los elementos complementarios en relación con sus características y aplicación."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han clasificado los distintos elementos complementarios, empleando la terminología correcta."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se ha verificado la coincidencia de las etiquetas con las especificaciones de la ficha técnica del material o producto."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Almacena los materiales y productos textiles y elementos complementarios, justificando la ubicación y condiciones de almacenamiento de los mismos.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han agrupado los productos según su origen y aplicación."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han indicado las condiciones básicas de manipulación y conservación de las materias textiles y elementos complementarios."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han identificado los defectos ocurridos como consecuencia de una mala manipulación o almacenado."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han relacionado las condiciones ambientales (temperatura, humedad, luz, ventilación y otras) y procedimiento de colocación en el almacén con la integridad de los productos almacenados."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha asegurado la trazabilidad de los productos almacenados."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han relacionado los distintos tipos de presentación y embalaje con los requerimientos de almacenaje y transporte."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han indicado las condiciones básicas de almacenamiento y acondicionado de materiales textiles y elementos complementarios."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se han respetado y aplicado las medidas de seguridad y prevención de riesgos en el almacén."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha mantenido el almacén limpio y ordenado en todo momento."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Controla las existencias del almacén, justificando el almacenaje mínimo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha realizado el inventario de productos existentes en el almacén, elaborando partes de incidencia si fuese necesario."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha descrito la documentación técnica relacionada con el almacén."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha relacionado el almacenaje mínimo con el tiempo de aprovisionamiento de los proveedores."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los tipos de almacenajes así como de inventarios y sus variables."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han señalado los mecanismos que se emplean para asegurar la renovación de almacenajes."
+            },
+            {
+              "codigo": "f",
+              "descripcion": "Se han aplicado herramientas informáticas en el control del almacén."
+            },
+            {
+              "codigo": "g",
+              "descripcion": "Se han registrado las entradas y salidas de existencias, actualizando los archivos correspondientes."
+            },
+            {
+              "codigo": "h",
+              "descripcion": "Se ha elaborado la información asociada al control del almacén con claridad, de manera ordenada, estructurada, clara y precisa."
+            },
+            {
+              "codigo": "i",
+              "descripcion": "Se ha valorado la relevancia del control de almacén en el proceso productivo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Itinerario personal para la empleabilidad",
+      "codigo": "3159",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": "IPE",
+      "curso": "2",
+      "ra": [
+        {
+          "codigo": "RA1",
+          "numero": 1,
+          "descripcion": "Identifica los conceptos básicos sobre seguridad y salud en el trabajo en el sector productivo asociado al perfil profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la relación entre trabajo y la salud con especial atención a los conceptos clave de riesgo y daño derivado del trabajo."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha reflexionado sobre los daños derivados del trabajo y sus diferentes formas: accidentes de trabajo, enfermedades profesionales y otras patologías derivadas del trabajo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se determinado el marco normativo básico, así como los derechos y deberes en materia de prevención de riesgos laborales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA2",
+          "numero": 2,
+          "descripcion": "Evalúa los riesgos derivados de su actividad, analizando las condiciones de trabajo y los factores de riesgo presentes en su entorno laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han clasificado los factores de riesgo en la actividad y los daños derivados de los mismos."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las situaciones de riesgo más habituales en los entornos de trabajo de la actividad profesional relacionada con el título profesional básico."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la evaluación de riesgos en la empresa."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han clasificado y descrito los tipos de daños profesionales, con especial referencia a accidentes de trabajo y enfermedades profesionales, relacionados con el perfil profesional del título profesional básico."
+            }
+          ]
+        },
+        {
+          "codigo": "RA3",
+          "numero": 3,
+          "descripcion": "Aplica las medidas de prevención y protección, analizando las situaciones de riesgo en el entorno laboral del título profesional básico.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han definido las técnicas de prevención y de protección individual y colectiva que deben aplicarse para evitar los daños en su origen y minimizar sus consecuencias en caso de que sean inevitables."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado el significado y alcance de los distintos tipos de señalización de seguridad."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado los protocolos de actuación en caso de emergencia."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las técnicas básicas de primeros auxilios que han de ser aplicadas en el lugar del accidente ante distintos tipos de daños y la composición y uso del botiquín."
+            }
+          ]
+        },
+        {
+          "codigo": "RA4",
+          "numero": 4,
+          "descripcion": "Desarrolla actividades de autoconocimiento que le permiten orientarse a campos profesionales motivadores en los que puede desplegar todas sus capacidades.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han evaluado los propios intereses, motivaciones, habilidades y destrezas en el marco de un proceso de autoconocimiento."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han determinado las competencias personales y sociales con valor para el empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado el concepto de autoestima en el proceso de búsqueda de empleo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado las fortalezas, debilidades, amenazas y oportunidades propias para la inserción profesional, así́ como las estrategias para sacarles el mayor aprovechamiento."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se han identificado expectativas de futuro para la inserción profesional analizando competencias, intereses y destrezas personales."
+            }
+          ]
+        },
+        {
+          "codigo": "RA5",
+          "numero": 5,
+          "descripcion": "Desarrolla habilidades sociales concretas que se han demostrado como fundamentales a la hora de encontrar un empleo y mantenerlo.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha valorado la importancia de las competencias personales y sociales en la empleabilidad."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han aplicado estrategias para canalizar las emociones de manera asertiva en las relaciones con otras personas, diferenciándolas de conductas agresivas y/o pasivas."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han puesto en práctica técnicas de presentación, orales y escritas, para una comunicación efectiva y afectiva valorando su importancia como recurso personal para la empleabilidad."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los beneficios del trabajo en equipo, así́ como las diferentes formas de llevarlo a cabo."
+            },
+            {
+              "codigo": "e",
+              "descripcion": "Se ha reaccionado de forma flexible y positiva ante conflictos y situaciones nuevas, aprovechando las oportunidades y gestionando las dificultades haciendo uso de estrategias relacionadas con la inteligencia emocional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA6",
+          "numero": 6,
+          "descripcion": "Accede a la información de los posibles itinerarios académicos y/o profesionales que tiene a su alcance a través de la investigación y la reflexión libre de estereotipos vocacionales.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha determinado la realidad del entorno sociolaboral actual."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado los itinerarios académicos y profesionales afines a sus intereses y se han valorado las opciones que mejor se ajustan a sus perfiles profesionales y sus preferencias."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la formación permanente como factor clave para el empleo y la adaptación al cambio."
+            }
+          ]
+        },
+        {
+          "codigo": "RA7",
+          "numero": 7,
+          "descripcion": "Pone en marcha un itinerario propio analizando las distintas opciones educativas y profesionales, valorando las ventajas e inconvenientes de cada una de ellas y examinando aquellas que mejor se ajustan a sus posibilidades y preferencias.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se han valorado las ventajas e inconvenientes de cada una de las opciones posibles."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han analizado y seleccionado las opciones que más se ajustan a sus perfiles profesionales."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha realizado un proceso de toma de decisiones identificando el itinerario académico y profesional personal, a partir de sus preferencias profesionales, intereses y metas en el marco de un proyecto profesional."
+            }
+          ]
+        },
+        {
+          "codigo": "RA8",
+          "numero": 8,
+          "descripcion": "Conoce las estrategias de acceso al mercado de trabajo por cuenta ajena y utiliza las herramientas necesarias para el proceso de inserción laboral.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado la búsqueda de empleo como un proceso."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se han identificado las diferentes fuentes de información de acceso al empleo."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se han analizado las distintas técnicas utilizadas para la búsqueda de empleo por cuenta ajena."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han puesto en práctica las diferentes herramientas que permitan una búsqueda de empleo óptima."
+            }
+          ]
+        },
+        {
+          "codigo": "RA9",
+          "numero": 9,
+          "descripcion": "Conoce los derechos fundamentales y los derechos laborales vinculados a su sector profesional.",
+          "ce": [
+            {
+              "codigo": "a",
+              "descripcion": "Se ha analizado el Estatuto de los trabajadores."
+            },
+            {
+              "codigo": "b",
+              "descripcion": "Se ha analizado los derechos fundamentales vinculados al trabajo, el derecho de sindicación y huelga."
+            },
+            {
+              "codigo": "c",
+              "descripcion": "Se ha valorado la importancia de la negociación colectiva y el convenio colectivo."
+            },
+            {
+              "codigo": "d",
+              "descripcion": "Se han identificado los aspectos básicos de la jornada laboral y de la nómina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "Proyecto intermodular de aprendizaje colaborativo",
+      "codigo": "3160048",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Comunicación y Ciencias Sociales II",
+      "codigo": "3162",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Ciencias aplicadas II",
+      "codigo": "3164",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    },
+    {
+      "nombre": "Tutoría Segundo",
+      "codigo": "TU02CF",
+      "ects": null,
+      "horas_minimas_boe": null,
+      "siglas": null,
+      "curso": "2",
+      "ra": []
+    }
+  ]
+}
