@@ -380,7 +380,12 @@ function irMesActual(): void {
 }
 
 function seleccionarDia(fecha: string): void {
-  nuevaFila(fecha)
+  const existentes = filas.value
+    .filter((fila) => fila.fecha === fecha)
+    .slice()
+    .sort(ordenarFilas)
+  if (existentes.length > 0) editarFila(existentes[0])
+  else nuevaFila(fecha)
 }
 
 function guardarDia(): void {

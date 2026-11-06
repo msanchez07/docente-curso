@@ -741,6 +741,27 @@ async function principal() {
       )
     )
 
+    /* --- Programación de aula: editar desde el calendario -------- */
+    await ev('document.querySelector(".programacion__celda--hoy")?.click()')
+    await new Promise((r) => setTimeout(r, 250))
+    comprobar(
+      'el calendario carga el contenido existente para editar',
+      await ev(
+        'document.querySelector("#programacion-contenido")?.value === "Sesión desde el calendario"'
+      )
+    )
+    await escribir('#programacion-contenido', 'Sesión desde el calendario editada')
+    comprobar('guarda la edición desde el calendario', await clicTexto('Guardar día'))
+    await new Promise((r) => setTimeout(r, 200))
+    await clicTexto('Guardar programación')
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar(
+      'el calendario actualiza la sesión sin duplicarla',
+      await ev(
+        `window.api.programacion.listar(${clase.id}).then((filas) => filas.filter((fila) => fila.contenido === 'Sesión desde el calendario').length === 0 && filas.some((fila) => fila.contenido === 'Sesión desde el calendario editada'))`
+      )
+    )
+
     /* --- Programación de aula: edición en tabla ------------------ */
     comprobar('abre la tabla de programación', await clicTexto('Tabla'))
     await new Promise((r) => setTimeout(r, 300))
