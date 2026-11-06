@@ -9,7 +9,7 @@ empresa e informes trazables al BOE.
 >
 > **📄 [Guía de uso en Markdown](./GUIA-APLICACION.md)** — versión de consulta rápida con capturas.
 >
-> **📦 [Descargar Aula Nova 1.1.8](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.8)** —
+> **📦 [Descargar Aula Nova 1.1.9](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.9)** —
 > instaladores para macOS, Windows y Linux.
 
 > **Repositorio:** [github.com/msanchez07/docente-curso](https://github.com/msanchez07/docente-curso)
@@ -23,17 +23,17 @@ empresa e informes trazables al BOE.
 
 ## Estado
 
-Aplicación funcional en **versión 1.1.8**. Verificación actual:
+Aplicación funcional en **versión 1.1.9**. Verificación actual:
 
 - `npm run typecheck` ✅
 - `npm test` ✅ **249 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
-## Release 1.1.8
+## Release 1.1.9
 
 Empaquetado para macOS, Windows y Linux. Los artefactos se generan en `dist/` y se publican en
-**[GitHub Releases v1.1.8](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.8)**:
+**[GitHub Releases v1.1.9](https://github.com/msanchez07/docente-curso/releases/tag/v1.1.9)**:
 
 | Plataforma                | Artefacto                        |
 | ------------------------- | -------------------------------- |
@@ -86,6 +86,8 @@ restringidos a la previsualización web de desarrollo.
 - **1.1.8:** auditoría final de programación de aula, faltas y convocatorias; permite cambiar solo
   la hora o la unidad de una sesión, excluye festivos de la quincena, habilita las unidades
   ponderadas y recupera el importador de currículos desde Cursos académicos.
+- **1.1.9:** corrige la edición de sesiones desde el calendario de Programación de aula; al
+  pulsar un día con contenido se actualiza la sesión existente y se puede volver a editar.
 
 ---
 
