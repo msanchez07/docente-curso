@@ -5,7 +5,7 @@
 > está en [`README.md`](./README.md) y la guía de uso completa en
 > [`GUIA-APLICACION.md`](./GUIA-APLICACION.md).
 
-**Última actualización:** 03/11/2026
+**Última actualización:** 06/11/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
 **Verificación de referencia:** `typecheck`, **249 tests**, `build` y `smoke` en verde.
 
@@ -345,3 +345,6 @@ Al cerrar cada iteración:
 | 02/11/2026 | Actualización macOS     | Descarga del DMG con progreso y apertura del instalador para evitar el fallo de firma de Squirrel.Mac.                                  |
 | 02/11/2026 | Pendientes de aula      | Vista por defecto con los días de clase sin contenido hasta hoy para rellenar solo esos días.                                           |
 | 02/11/2026 | Guardar esquemas        | Los esquemas JSON se guardan con el diálogo nativo de Electron en lugar de la descarga Blob.                                            |
+| 06/11/2026 | Auditoría de rutas     | Recorrido sintético de todas las rutas y corrección de faltas, convocatorias, calendario, entregas, currículo y unidades ponderadas.    |
+| 06/11/2026 | Programación de aula   | Edición de hora/unidad, días no lectivos fuera de pendientes y quincena, y smoke de alta, importación, tabla y calendario.              |
+| 06/11/2026 | Release 1.1.8          | Empaquetado de las correcciones de auditoría para macOS, Windows y Linux con 249 tests y smoke completo.                               |

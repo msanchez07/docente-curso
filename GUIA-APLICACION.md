@@ -5,8 +5,8 @@
 > Guía viva de la aplicación. Debe actualizarse siempre que se añada, cambie o elimine una
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
 
-**Última actualización:** 31/10/2026  
-**Versión verificada:** 1.1 · 249 tests, `typecheck`, `build` y `smoke` en verde.
+**Última actualización:** 06/11/2026
+**Versión verificada:** 1.1.8 · 249 tests, `typecheck`, `build` y `smoke` en verde.
 
 ---
 
