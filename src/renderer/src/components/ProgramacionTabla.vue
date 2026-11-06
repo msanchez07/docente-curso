@@ -12,7 +12,7 @@ import { cursoAcademicoActual } from '@shared/curso-academico'
 import { ESQUEMA_PROGRAMACION } from '@shared/esquemas-importacion'
 import { parsearDiasProgramacion } from '@shared/importar-programacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
-import type { GrupoClase, ProgramacionAula, UnidadProgramacion } from '@shared/tipos'
+import type { DiaCalendario, GrupoClase, ProgramacionAula, UnidadProgramacion } from '@shared/tipos'
 
 const props = defineProps<{ grupo: GrupoClase }>()
 
@@ -53,6 +53,7 @@ const borrando = ref(false)
 
 const mostrarImportar = ref(false)
 const unidades = ref<UnidadProgramacion[]>([])
+const diasNoLectivos = ref<Set<string>>(new Set())
 const textoImportar = ref('')
 const ficheroImportar = ref<HTMLInputElement | null>(null)
 const errorImportar = ref<string | null>(null)
@@ -132,6 +133,10 @@ const filasPendientes = computed<ProgramacionAula[]>(() => {
   while (fecha <= fin) {
     if (diasDeClase.value.has(fecha.getDay())) {
       const iso = isoLocal(fecha)
+      if (diasNoLectivos.value.has(iso)) {
+        fecha = sumarDias(fecha, 1)
+        continue
+      }
       const existentes = porFecha.get(iso) ?? []
       const rellenos = existentes.some(
         (fila) => fila.contenido.trim() || fila.desviacion.trim() || fila.observaciones.trim()
@@ -202,7 +207,10 @@ const filasQuincena = computed<ProgramacionAula[]>(() => {
   while (fecha <= fin) {
     const iso = isoLocal(fecha)
     const existentes = porFecha.get(iso) ?? []
-    if (existentes.length > 0 || diasDeClase.value.has(fecha.getDay())) {
+    if (
+      existentes.length > 0 ||
+      (diasDeClase.value.has(fecha.getDay()) && !diasNoLectivos.value.has(iso))
+    ) {
       resultado.push(...(existentes.length > 0 ? existentes : [filaVacia(iso)]))
     }
     fecha = sumarDias(fecha, 1)
@@ -237,6 +245,8 @@ const hayCambiosDia = computed(() => {
   }
   return (
     editando.value.fecha !== form.fecha ||
+    (editando.value.hora ?? '') !== form.hora ||
+    editando.value.unidad_id !== form.unidad_id ||
     editando.value.contenido !== form.contenido ||
     editando.value.desviacion !== form.desviacion ||
     editando.value.observaciones !== form.observaciones
@@ -251,12 +261,25 @@ async function cargarUnidades(): Promise<void> {
   }
 }
 
+async function cargarCalendario(): Promise<void> {
+  try {
+    const dias: DiaCalendario[] = await window.api.calendarioEscolar.listar(
+      props.grupo.curso_academico_id
+    )
+    diasNoLectivos.value = new Set(
+      dias.filter((dia) => dia.tipo !== 'lectivo').map((dia) => dia.fecha)
+    )
+  } catch {
+    diasNoLectivos.value = new Set()
+  }
+}
+
 onMounted(async () => {
   try {
     filas.value = await window.api.programacion.listar(props.grupo.id)
     original.value = serializar(filas.value)
     form.fecha = fechaSugerida()
-    await cargarUnidades()
+    await Promise.all([cargarUnidades(), cargarCalendario()])
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {

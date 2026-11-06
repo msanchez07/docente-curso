@@ -704,6 +704,144 @@ async function principal() {
       )
     }
 
+    /* --- Programación de aula: alta y calendario ----------------- */
+    await ev(`location.hash = '#/grupo/${clase.id}/programacion'`)
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar('abre el formulario de un día', await clicTexto('Añadir día'))
+    await escribir('#programacion-fecha', '2026-11-12')
+    await escribir('#programacion-contenido', 'Sesión sintética de aula')
+    comprobar('añade el día a la programación', await clicTexto('Añadir a la programación'))
+    await new Promise((r) => setTimeout(r, 300))
+    comprobar(
+      'la programación marca cambios pendientes',
+      await ev('document.body.textContent.includes("Sin guardar")')
+    )
+    comprobar('guarda la programación', await clicTexto('Guardar programación'))
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'el día de programación persiste',
+      await ev(
+        `window.api.programacion.listar(${clase.id}).then((filas) => filas.some((fila) => fila.fecha === '2026-11-12' && fila.contenido === 'Sesión sintética de aula'))`
+      )
+    )
+
+    await clicTexto('Calendario')
+    await new Promise((r) => setTimeout(r, 300))
+    await ev('document.querySelector(".programacion__celda--hoy")?.click()')
+    await new Promise((r) => setTimeout(r, 200))
+    await escribir('#programacion-contenido', 'Sesión desde el calendario')
+    comprobar('añade un día desde el calendario', await clicTexto('Añadir a la programación'))
+    await new Promise((r) => setTimeout(r, 200))
+    await clicTexto('Guardar programación')
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar(
+      'el día añadido desde el calendario persiste',
+      await ev(
+        `window.api.programacion.listar(${clase.id}).then((filas) => filas.some((fila) => fila.contenido === 'Sesión desde el calendario'))`
+      )
+    )
+
+    /* --- Programación de aula: edición en tabla ------------------ */
+    comprobar('abre la tabla de programación', await clicTexto('Tabla'))
+    await new Promise((r) => setTimeout(r, 300))
+    comprobar('añade una fila en la tabla', await clicTexto('Añadir fila'))
+    await new Promise((r) => setTimeout(r, 200))
+    const rellenadaTabla = await ev(`(() => {
+      const filas = [...document.querySelectorAll('table.programacion__tabla tbody tr')]
+      const fila = filas[filas.length - 1]
+      const fecha = fila?.querySelector('input[type="date"]')
+      const contenido = fila?.querySelector('textarea')
+      if (!fecha || !contenido) return false
+      const escribir = (campo, valor) => {
+        const descriptor = Object.getOwnPropertyDescriptor(Object.getPrototypeOf(campo), 'value')
+        descriptor.set.call(campo, valor)
+        campo.dispatchEvent(new Event('input', { bubbles: true }))
+      }
+      escribir(fecha, '2026-11-13')
+      escribir(contenido, 'Sesión desde tabla')
+      return true
+    })()`)
+    comprobar('rellena la fila de la tabla', rellenadaTabla)
+    comprobar('guarda la fila de la tabla', await clicTexto('Guardar programación'))
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'la fila de la tabla persiste',
+      await ev(
+        `window.api.programacion.listar(${clase.id}).then((filas) => filas.some((fila) => fila.fecha === '2026-11-13' && fila.contenido === 'Sesión desde tabla'))`
+      )
+    )
+
+    /* --- Programación de aula: importación ----------------------- */
+    comprobar('abre las acciones de programación', await clicTexto('Acciones'))
+    comprobar('abre el importador de programación', await clicTexto('Importar programación'))
+    await escribir(
+      '.programacion__importar textarea',
+      JSON.stringify([{ fecha: '2026-11-16', contenido: 'Sesión importada' }])
+    )
+    comprobar('importa días de programación', await clicTexto('Importar'))
+    await new Promise((r) => setTimeout(r, 300))
+    comprobar('guarda los días importados', await clicTexto('Guardar programación'))
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'el día importado persiste',
+      await ev(
+        `window.api.programacion.listar(${clase.id}).then((filas) => filas.some((fila) => fila.fecha === '2026-11-16' && fila.contenido === 'Sesión importada'))`
+      )
+    )
+
+    /* --- Programación de aula: edición de un día ----------------- */
+    await clicTexto('Tarjetas')
+    await clicTexto('Ver todo')
+    await new Promise((r) => setTimeout(r, 300))
+    const editadoDia = await ev(`(() => {
+      const articulo = [...document.querySelectorAll('.programacion__dia')].find((item) =>
+        item.textContent.includes('Sesión sintética de aula')
+      )
+      const boton = articulo?.querySelector('button[aria-label="Editar día"]')
+      if (!boton) return false
+      boton.click()
+      return true
+    })()`)
+    comprobar('abre la edición de un día guardado', editadoDia)
+    await escribir('#programacion-contenido', 'Sesión sintética corregida')
+    comprobar('guarda la edición del día', await clicTexto('Guardar día'))
+    await new Promise((r) => setTimeout(r, 200))
+    await clicTexto('Guardar programación')
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar(
+      'la edición del día persiste',
+      await ev(
+        `window.api.programacion.listar(${clase.id}).then((filas) => filas.some((fila) => fila.fecha === '2026-11-12' && fila.contenido === 'Sesión sintética corregida'))`
+      )
+    )
+
+    /* --- Programación de aula: cambio solo de hora ---------------- */
+    const editadoHora = await ev(`(() => {
+      const articulo = [...document.querySelectorAll('.programacion__dia')].find((item) =>
+        item.textContent.includes('Sesión sintética corregida')
+      )
+      const boton = articulo?.querySelector('button[aria-label="Editar día"]')
+      if (!boton) return false
+      boton.click()
+      return true
+    })()`)
+    comprobar('abre la edición para cambiar la hora', editadoHora)
+    await escribir('#programacion-hora', '10:30')
+    comprobar(
+      'permite guardar aunque solo cambie la hora',
+      await ev('!document.querySelector(".programacion__formulario button[type=submit]").disabled')
+    )
+    comprobar('guarda el cambio de hora', await clicTexto('Guardar día'))
+    await new Promise((r) => setTimeout(r, 200))
+    await clicTexto('Guardar programación')
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar(
+      'el cambio de hora persiste',
+      await ev(
+        `window.api.programacion.listar(${clase.id}).then((filas) => filas.some((fila) => fila.fecha === '2026-11-12' && fila.hora === '10:30'))`
+      )
+    )
+
     /* --- Faltas: guardado de configuración ----------------------- */
     await ev(`location.hash = '#/faltas?grupo=${clase.id}'`)
     await new Promise((r) => setTimeout(r, 900))
