@@ -2,6 +2,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
 import { extraerFaltasPdf } from '@renderer/utils/faltas-pdf'
+import { paraIpc } from '@renderer/utils/ipc'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { notificar } from '@renderer/composables/notificaciones'
 import type {
@@ -118,12 +119,12 @@ async function cargarCohorte(): Promise<void> {
   if (!cohorte) return
   mostrarHistorial.value = false
   clave.value = claveDe(cohorte)
-  const datos = await window.api.faltas.obtenerCurso(clave.value)
+  const datos = await window.api.faltas.obtenerCurso(paraIpc(clave.value))
   curso.value = datos
   modulos.value = datos.modulos.map((modulo) => ({ ...modulo }))
   limite.value = datos.limite
   incluirJustificadas.value = datos.incluirJustificadas
-  informes.value = await window.api.faltas.listarInformes(clave.value)
+  informes.value = await window.api.faltas.listarInformes(paraIpc(clave.value))
   if (informes.value.length > 0) {
     await verInforme(informes.value[0].id)
   } else {
@@ -180,13 +181,17 @@ async function guardarConfiguracion(): Promise<void> {
   try {
     for (const modulo of modulos.value) {
       await window.api.faltas.guardarModulo(
-        clave.value,
+        paraIpc(clave.value),
         modulo.moduloCodigo,
         modulo.nombreInforme,
         modulo.horas
       )
     }
-    await window.api.faltas.guardarAjustes(clave.value, limite.value, incluirJustificadas.value)
+    await window.api.faltas.guardarAjustes(
+      paraIpc(clave.value),
+      limite.value,
+      incluirJustificadas.value
+    )
     mensaje.value = 'Configuración de faltas guardada.'
     notificar(mensaje.value)
     await cargarCohorte()
@@ -246,7 +251,7 @@ async function alElegirPdf(evento: Event): Promise<void> {
       limite: limite.value,
       incluirJustificadas: incluirJustificadas.value
     }
-    await window.api.faltas.importarInforme(clave.value, archivo.name, datos)
+    await window.api.faltas.importarInforme(paraIpc(clave.value), archivo.name, paraIpc(datos))
     await cargarCohorte()
     mensaje.value = `Faltas de «${archivo.name}» añadidas al historial.`
     notificar(mensaje.value)

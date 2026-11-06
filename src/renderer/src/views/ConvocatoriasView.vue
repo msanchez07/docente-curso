@@ -23,9 +23,9 @@ interface FilaAsignacion {
 }
 
 const props = withDefaults(defineProps<{ embebido?: boolean; tipo?: TipoConvocatoria }>(), {
-  embebido: false,
-  tipo: 'ordinaria'
+  embebido: false
 })
+const emit = defineEmits<{ actualizada: [] }>()
 
 const route = useRoute()
 const store = useGruposClaseStore()
@@ -227,17 +227,17 @@ async function cargar(): Promise<void> {
         )
       : null
     if (props.embebido && convocatorias.value.length === 0) {
+      const tipo = props.tipo ?? 'ordinaria'
       const creada = await window.api.convocatorias.crear(grupo.value.id, {
-        tipo: props.tipo,
+        tipo,
         nombre:
-          props.tipo === 'extraordinaria'
-            ? 'Convocatoria extraordinaria'
-            : 'Convocatoria ordinaria',
+          tipo === 'extraordinaria' ? 'Convocatoria extraordinaria' : 'Convocatoria ordinaria',
         fecha: null
       })
       await crearBloquesIniciales(creada.id)
       convocatorias.value = [creada]
       seleccionada.value = creada.id
+      emit('actualizada')
     } else if (seleccionada.value === null && convocatorias.value[0]) {
       seleccionada.value = convocatorias.value[0].id
     }
@@ -282,7 +282,7 @@ async function crearConvocatoria(): Promise<void> {
   error.value = null
   try {
     const convocatoria = await window.api.convocatorias.crear(grupo.value.id, {
-      tipo: props.embebido ? props.tipo : crearForm.tipo,
+      tipo: props.embebido ? (props.tipo ?? 'ordinaria') : crearForm.tipo,
       nombre: crearForm.nombre.trim(),
       fecha: crearForm.fecha || null
     })
@@ -292,6 +292,7 @@ async function crearConvocatoria(): Promise<void> {
     mostrarFormulario.value = false
     await recargarConvocatorias()
     await seleccionar(convocatoria.id)
+    emit('actualizada')
   } catch (e) {
     error.value = (e as Error).message ?? String(e)
   } finally {
@@ -331,6 +332,7 @@ async function crearBloque(): Promise<void> {
     bloqueForm.descripcion = ''
     mostrarBloque.value = false
     await cargarDetalle()
+    emit('actualizada')
     mensaje.value = 'Bloque añadido.'
     notificar(mensaje.value)
   } catch (e) {
@@ -345,6 +347,7 @@ async function borrarBloque(bloque: BloqueConvocatoria): Promise<void> {
   if (!window.confirm(`¿Borrar el bloque «${bloque.nombre}»?`)) return
   await window.api.convocatorias.borrarBloque(bloque.id)
   await cargarDetalle()
+  emit('actualizada')
 }
 
 async function borrarConvocatoria(): Promise<void> {
@@ -354,6 +357,7 @@ async function borrarConvocatoria(): Promise<void> {
   seleccionada.value = null
   detalle.value = null
   await recargarConvocatorias()
+  emit('actualizada')
 }
 
 async function guardarAsignaciones(): Promise<void> {
@@ -380,6 +384,7 @@ async function guardarAsignaciones(): Promise<void> {
       lista
     )
     inicializarAsignaciones()
+    emit('actualizada')
     mensaje.value = 'Asignaciones y notas guardadas.'
     notificar(mensaje.value)
   } catch (e) {
@@ -425,7 +430,7 @@ function verExamen(alumnoId: number): void {
 }
 
 onMounted(() => {
-  crearForm.tipo = props.tipo
+  crearForm.tipo = props.tipo ?? 'ordinaria'
   void cargar()
 })
 watch(grupoId, cargar)

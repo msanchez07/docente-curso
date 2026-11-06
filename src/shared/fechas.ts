@@ -6,3 +6,10 @@ export function esFinDeSemana(fecha: string): boolean {
   const dia = new Date(`${fecha}T00:00:00`).getDay()
   return dia === 0 || dia === 6
 }
+
+/** Fecha de hoy en ISO local (evita el desfase de `toISOString` en UTC). */
+export function hoyLocal(): string {
+  const ahora = new Date()
+  const local = new Date(ahora.getTime() - ahora.getTimezoneOffset() * 60000)
+  return local.toISOString().slice(0, 10)
+}

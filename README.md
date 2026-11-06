@@ -26,7 +26,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en **versión 1.1**. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **247 tests**
+- `npm test` ✅ **249 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 
@@ -64,7 +64,7 @@ restringidos a la previsualización web de desarrollo.
   Conselleria, los RDs del BOE y los decretos autonómicos del DOGV.
 - **36 cursos de especialización:** módulos, RA/CE y catálogo propio para crear grupos.
 - **Importador de currículos con esquema JSON:** permite cargar o completar ciclos desde
-  `Ajustes → Currículo`.
+  `Cursos académicos → Currículo`.
 - **Módulos compartidos:** tabla `modulo_ciclos` para que un mismo módulo aparezca en todos sus
   ciclos sin duplicar RA/CE.
 - **Unidades de programación:** importación con fechas ISO completas, criterios alternativos y

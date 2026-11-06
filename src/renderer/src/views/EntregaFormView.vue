@@ -12,6 +12,7 @@ import type {
 } from '@shared/tipos'
 import { cursoAcademicoActual } from '@shared/curso-academico'
 import { notificar } from '@renderer/composables/notificaciones'
+import { paraIpc } from '@renderer/utils/ipc'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
 import {
@@ -81,6 +82,7 @@ const entregaId = computed(() => Number(route.params.entregaId))
 const esEdicion = computed(() => route.name === 'entrega-editar')
 const sinCriterios = computed(() => !cargando.value && !errorCarga.value && !criterios.value)
 const entregaBloqueada = computed(() => entrega.value?.bloqueada === true)
+const unidadObligatoria = computed(() => criterios.value?.modoCalificacion === 'unidades')
 
 const cursoFormulario = computed(() => {
   if (esEdicion.value && grupo.value) return grupo.value.curso_academico_nombre
@@ -291,8 +293,10 @@ watch([grupoId, entregaId, esEdicion], cargar)
 async function guardar(): Promise<void> {
   if (!grupo.value) return
   errorFormulario.value = null
-  if (form.unidad_id === null) {
-    errorFormulario.value = 'Selecciona la unidad didáctica a la que pertenece la entrega.'
+  if (unidadObligatoria.value && form.unidad_id === null) {
+    errorFormulario.value = unidades.value.length
+      ? 'Selecciona la unidad didáctica a la que pertenece la entrega.'
+      : 'Crea primero una unidad de programación: este grupo calcula las notas por unidades.'
     return
   }
   if (!form.rubrica.trim() && !form.rubrica_archivo) {
@@ -317,9 +321,9 @@ async function guardar(): Promise<void> {
     }
 
     if (esEdicion.value) {
-      await window.api.entregasClase.actualizar(entregaId.value, datos)
+      await window.api.entregasClase.actualizar(entregaId.value, paraIpc(datos))
     } else {
-      await window.api.entregasClase.crear(grupo.value.id, datos)
+      await window.api.entregasClase.crear(grupo.value.id, paraIpc(datos))
     }
 
     notificar(esEdicion.value ? 'Entrega actualizada.' : 'Entrega creada.')
@@ -480,7 +484,7 @@ async function guardar(): Promise<void> {
               <div class="campo">
                 <label for="entrega-unidad">
                   Unidad didáctica
-                  <template v-if="criterios.modoCalificacion === 'unidades'"> *</template>
+                  <template v-if="unidadObligatoria"> *</template>
                 </label>
                 <select id="entrega-unidad" v-model="form.unidad_id" @change="alCambiarUnidad">
                   <option :value="null">Sin asignar</option>

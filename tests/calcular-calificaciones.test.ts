@@ -319,8 +319,60 @@ describe('cálculo por unidades didácticas', () => {
     )
     const fila = resumen.alumnos[0]
     expect(fila.unidades.map((unidad) => unidad.nota)).toEqual([7.33, 7])
-    expect(fila.notaFinal).toBe(7.17)
+    expect(fila.notaFinal).toBe(7.2)
     expect(fila.aprobado).toBe(true)
+  })
+
+  it('prioriza las unidades sobre los RA cuando el modo es unidades', () => {
+    const modelo = {
+      ...modeloPorDefecto('presencial'),
+      modoCalificacion: 'unidades' as const,
+      pesosRa: { RA1: 100 }
+    }
+    const criterios: CriterioDisponible[] = [
+      {
+        ceId: 1,
+        ceCodigo: 'a',
+        raCodigo: 'RA1',
+        raDescripcion: 'RA1',
+        descripcion: 'CE RA1'
+      }
+    ]
+    const entregasUnidad = entregas.map((item, indice) => ({
+      ...item,
+      unidad_id: indice === 2 ? 11 : 10
+    }))
+    const resumen = calcularResumenClase(
+      grupo,
+      modelo,
+      entregasUnidad,
+      [alumno],
+      notas({ 1: 8, 2: 6, 3: 7 }),
+      criterios,
+      unidades
+    )
+    expect(resumen.alumnos[0].notaFinal).toBe(7.2)
+  })
+
+  it('respeta el modo por trimestres aunque existan unidades', () => {
+    const modelo = {
+      ...modeloPorDefecto('presencial'),
+      modoCalificacion: 'trimestres' as const
+    }
+    const entregasUnidad = entregas.map((item, indice) => ({
+      ...item,
+      unidad_id: indice === 2 ? 11 : 10
+    }))
+    const resumen = calcularResumenClase(
+      grupo,
+      modelo,
+      entregasUnidad,
+      [alumno],
+      notas({ 1: 8, 2: 6, 3: 7 }),
+      [],
+      unidades
+    )
+    expect(resumen.alumnos[0].notaFinal).toBe(7.17)
   })
 })
 

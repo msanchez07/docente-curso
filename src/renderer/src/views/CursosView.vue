@@ -2,6 +2,7 @@
 import { computed, onMounted, reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import Confirmacion from '@renderer/components/Confirmacion.vue'
+import CurriculoPanel from '@renderer/components/CurriculoPanel.vue'
 import type { CursoAcademico } from '@shared/tipos'
 import { useCursosAcademicosStore } from '@renderer/stores/cursos-academicos'
 
@@ -216,6 +217,8 @@ async function borrar(): Promise<void> {
         </button>
       </div>
     </div>
+
+    <CurriculoPanel />
 
     <Confirmacion
       v-if="cursoABorrar"

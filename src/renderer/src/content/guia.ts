@@ -775,7 +775,7 @@ export const seccionesGuia: SeccionGuia[] = [
       'El menú inferior de la barra lateral reúne las herramientas que no pertenecen a un único grupo.',
     explicacion: [
       'Opciones globales está al final de la barra lateral. Desde ahí se gestionan los grupos, los cursos académicos, las plantillas, el control de faltas, las copias de seguridad, la guía, la normativa y la importación de normativa.',
-      'En Ajustes, la pestaña Currículo permite importar módulos, RA y CE desde JSON con un esquema descargable. Es útil para completar ciclos que aún no tengan datos oficiales cargados.',
+      'En Cursos académicos, la sección Currículo permite importar módulos, RA y CE desde JSON con un esquema descargable. Es útil para completar ciclos que aún no tengan datos oficiales cargados.',
       'En la previsualización web aparecen además dos acciones de datos de prueba: restaurar los datos de ejemplo y eliminarlos. Estas acciones no afectan a la aplicación de escritorio. La guía de uso también está en este menú para poder consultarla sin perder la pantalla en la que estás.'
     ],
     imagen: globalMenu,
@@ -820,7 +820,7 @@ export const seccionesGuia: SeccionGuia[] = [
       {
         titulo: 'Currículo y RA/CE',
         detalle:
-          'Ajustes → Currículo importa un ciclo completo o un array de ciclos desde JSON. Puedes descargar el esquema, rellenarlo y volver a importarlo; los pesos ya configurados se conservan.'
+          'Cursos académicos → Currículo importa un ciclo completo o un array de ciclos desde JSON. Puedes descargar el esquema, rellenarlo y volver a importarlo; los pesos ya configurados se conservan.'
       },
       {
         titulo: 'Datos de prueba',

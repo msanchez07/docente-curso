@@ -26,7 +26,7 @@ process.env.GE_VENTANA_OCULTA = '1'
 const rescate = setTimeout(() => {
   console.error('[smoke-app] ERROR: tiempo agotado')
   app.exit(1)
-}, 40000)
+}, 90000)
 
 let fallos = 0
 
@@ -638,6 +638,221 @@ async function principal() {
       'la nota final del alumno con pérdida de continua usa la convocatoria',
       await ev(
         'document.querySelector(".calificaciones__final-nota strong")?.textContent?.trim() === "6,00" && document.body.textContent.includes("ha perdido la evaluación continua")'
+      )
+    )
+
+    /* --- Auditoría de todas las rutas ----------------------------- */
+    const erroresConsola = []
+    win.webContents.on('console-message', (_evento, nivel, mensaje) => {
+      if (nivel >= 3) erroresConsola.push(String(mensaje))
+    })
+
+    const rutas = [
+      ['/calendario', 'Calendario del curso'],
+      ['/grupos', 'Grupos'],
+      ['/cursos', 'Cursos académicos'],
+      ['/plantillas', 'Plantillas'],
+      ['/backups', 'Copias de seguridad'],
+      ['/configuracion', 'Configuración general'],
+      ['/guia', 'Guía'],
+      ['/normativa', 'Normativa'],
+      ['/faltas', 'Control de faltas'],
+      [`/grupo/${clase.id}`, clase.nombre],
+      [`/grupo/${clase.id}/programacion`, 'Programación de aula'],
+      [`/grupo/${clase.id}/horario`, 'Horario'],
+      [`/grupo/${clase.id}/programacion-didactica`, 'Programación didáctica'],
+      [`/grupo/${clase.id}/programacion-didactica?tab=fechas`, 'Evaluaciones'],
+      [`/grupo/${clase.id}/programacion-didactica?tab=criterios`, 'Criterios'],
+      [`/grupo/${clase.id}/programacion-didactica?tab=rae`, 'BOE'],
+      [`/grupo/${clase.id}/programacion-didactica?tab=presentacion`, 'Presentación'],
+      [`/grupo/${clase.id}/criterios`, 'Criterios de calificación'],
+      [`/grupo/${clase.id}/alumnado`, 'Alumnado'],
+      [`/grupo/${clase.id}/alumnado/${alumnoClase.id}`, 'García'],
+      [`/grupo/${clase.id}/alumnado/${alumnoClase.id}/formacion`, 'formación'],
+      [`/grupo/${clase.id}/entregas`, 'Entregas'],
+      [`/grupo/${clase.id}/entregas/nueva`, 'Nueva entrega'],
+      [`/grupo/${clase.id}/entregas/${entregaClase.id}/editar`, 'Editar entrega'],
+      [`/grupo/${clase.id}/entregas/${entregaClase.id}/evidencias`, 'Evidencias'],
+      [`/grupo/${clase.id}/entregas/${entregaClase.id}`, 'Entrega'],
+      [`/grupo/${clase.id}/boe`, 'RA'],
+      [`/grupo/${clase.id}/evaluaciones`, 'Evaluaciones'],
+      [`/grupo/${clase.id}/calificaciones`, 'Calificaciones'],
+      [`/grupo/${clase.id}/convocatorias`, 'Convocatorias'],
+      [`/grupo/${clase.id}/informes`, 'Informes']
+    ]
+
+    for (const [ruta, texto] of rutas) {
+      const antes = erroresConsola.length
+      await ev(`location.hash = '#${ruta}'`)
+      await new Promise((r) => setTimeout(r, 900))
+      const contenido = await ev('document.body.textContent')
+      const titulo = await ev(
+        'document.querySelector(".vista__cabecera h2, .dashboard__cabecera h2, .seccion__cabecera h3")?.textContent?.trim() ?? ""'
+      )
+      const errorVisible = await ev(
+        'document.querySelector(".aviso--error")?.textContent?.trim() ?? ""'
+      )
+      const nuevosErrores = erroresConsola.slice(antes)
+      comprobar(
+        `ruta ${ruta}`,
+        contenido.includes(texto) && !errorVisible && nuevosErrores.length === 0,
+        JSON.stringify({
+          titulo,
+          error: errorVisible,
+          consola: nuevosErrores.slice(0, 2)
+        })
+      )
+    }
+
+    /* --- Faltas: guardado de configuración ----------------------- */
+    await ev(`location.hash = '#/faltas?grupo=${clase.id}'`)
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'la vista de faltas carga la configuración',
+      await ev('document.body.textContent.includes("Configuración del control")')
+    )
+    await escribir('#faltas-limite', '20')
+    comprobar('guarda la configuración de faltas', await clicTexto('Guardar cambios'))
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar(
+      'la configuración de faltas se guarda sin error de IPC',
+      await ev(
+        'document.body.textContent.includes("Configuración de faltas guardada.") && !document.querySelector(".aviso--error")'
+      )
+    )
+
+    /* --- Convocatorias: ordinaria y extraordinaria ---------------- */
+    await ev(`location.hash = '#/grupo/${clase.id}/convocatorias'`)
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'la ruta de convocatorias muestra la ordinaria existente',
+      await ev('document.body.textContent.includes("Ordinaria sintética")')
+    )
+    comprobar('abre el formulario de convocatoria', await clicTexto('Nueva convocatoria'))
+    await new Promise((r) => setTimeout(r, 200))
+    await escribir('#convocatoria-nombre', 'Extraordinaria sintética')
+    await ev(`(() => {
+      const select = document.querySelector('#convocatoria-tipo')
+      if (!select) return false
+      select.value = 'extraordinaria'
+      select.dispatchEvent(new Event('change', { bubbles: true }))
+      return true
+    })()`)
+    comprobar('crea la convocatoria extraordinaria', await clicTexto('Crear convocatoria'))
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'la convocatoria extraordinaria aparece en la ruta',
+      (await ev('document.body.textContent.includes("Extraordinaria sintética")')) &&
+        !(await ev('document.querySelector(".aviso--error")'))
+    )
+
+    /* --- Currículo accesible desde Cursos ------------------------- */
+    await ev(`location.hash = '#/cursos'`)
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'el importador de currículos está accesible desde Cursos',
+      await ev('document.body.textContent.includes("Currículo: módulos, RA y CE")')
+    )
+
+    /* --- Calendario: definir un día no lectivo -------------------- */
+    await ev(`location.hash = '#/calendario'`)
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar('abre el menú de acciones del calendario', await clicTexto('Acciones'))
+    comprobar('abre el formulario de día no lectivo', await clicTexto('Definir día no lectivo'))
+    await escribir('#calendario-fecha', '2026-12-07')
+    await escribir('#calendario-descripcion', 'Festivo sintético')
+    comprobar('guarda el día no lectivo', await clicTexto('Añadir día'))
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar(
+      'el día no lectivo queda en el calendario',
+      await ev(
+        `window.api.calendarioEscolar.listar(${cursoActual.id}).then((dias) => dias.some((dia) => dia.fecha === '2026-12-07' && dia.descripcion === 'Festivo sintético'))`
+      )
+    )
+
+    /* --- Calendario: meses anteriores ----------------------------- */
+    const fechaPasada = new Date()
+    fechaPasada.setMonth(fechaPasada.getMonth() - 1)
+    fechaPasada.setDate(15)
+    const isoPasado = `${fechaPasada.getFullYear()}-${String(fechaPasada.getMonth() + 1).padStart(2, '0')}-${String(fechaPasada.getDate()).padStart(2, '0')}`
+    await ev(
+      `window.api.eventosEvaluacion.crear(${clase.id}, { tipo: 'otro', titulo: 'Evento del mes pasado', fecha: '${isoPasado}' })`
+    )
+    await ev(`location.hash = '#/grupos'`)
+    await new Promise((r) => setTimeout(r, 200))
+    await ev(`location.hash = '#/calendario'`)
+    await new Promise((r) => setTimeout(r, 900))
+    await ev('document.querySelector(\'[aria-label="Mes anterior"]\')?.click()')
+    await new Promise((r) => setTimeout(r, 500))
+    comprobar(
+      'el calendario muestra hitos de meses anteriores',
+      await ev('document.body.textContent.includes("Evento del mes pasado")')
+    )
+
+    /* --- Guardado de criterios desde la interfaz ------------------ */
+    await ev(`location.hash = '#/grupo/${clase.id}/criterios'`)
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar('guarda los criterios desde la interfaz', await clicTexto('Guardar criterios'))
+    await new Promise((r) => setTimeout(r, 600))
+    comprobar(
+      'los criterios se guardan sin error',
+      await ev(
+        'document.body.textContent.includes("Criterios guardados.") && !document.querySelector(".aviso--error")'
+      )
+    )
+
+    /* --- Alta de una entrega desde el formulario ------------------ */
+    const unidadCreada = (await ev(`window.api.unidadesProgramacion.listar(${clase.id})`)).find(
+      (unidad) => unidad.nombre === 'Unidad sintética'
+    )
+    await ev(`location.hash = '#/grupo/${clase.id}/entregas/nueva'`)
+    await new Promise((r) => setTimeout(r, 900))
+    await escribir('#entrega-titulo', 'Entrega sintética')
+    await escribir('#entrega-rubrica', 'Criterios de la entrega sintética')
+    await ev(`(() => {
+      const select = document.querySelector('#entrega-unidad')
+      if (!select) return false
+      select.value = ${JSON.stringify(String(unidadCreada?.id ?? ''))}
+      select.dispatchEvent(new Event('change', { bubbles: true }))
+      return true
+    })()`)
+    comprobar('crea una entrega desde el formulario', await clicTexto('Crear entrega'))
+    await new Promise((r) => setTimeout(r, 900))
+    comprobar(
+      'la entrega creada aparece en el listado',
+      (await ev('document.body.textContent.includes("Entrega sintética")')) &&
+        !(await ev('document.querySelector(".aviso--error")'))
+    )
+
+    /* --- Calificaciones por unidades ------------------------------ */
+    const entregaSintetica = (await ev(`window.api.entregasClase.listar(${clase.id})`)).find(
+      (entrega) => entrega.titulo === 'Entrega sintética'
+    )
+    if (unidadCreada && entregaSintetica) {
+      await ev(
+        `window.api.unidadesProgramacion.actualizar(${unidadCreada.id}, { nombre: 'Unidad sintética', avaluacion_id: 'AV1', peso: 100 })`
+      )
+      await ev(
+        `window.api.notasClase.guardar(${clase.id}, ${alumnoClase.id}, [{ entregaId: ${entregaSintetica.id}, nota: 8, observaciones: null }])`
+      )
+      await ev(`location.hash = '#/grupo/${clase.id}/calificaciones?alumno=${alumnoClase.id}'`)
+      await new Promise((r) => setTimeout(r, 900))
+      comprobar(
+        'las unidades ponderadas aparecen en calificaciones',
+        (await ev('document.body.textContent.includes("Unidad sintética")')) &&
+          !(await ev('document.querySelector(".aviso--error")'))
+      )
+    }
+
+    /* --- Campos de evaluación de las unidades --------------------- */
+    await ev(`location.hash = '#/grupo/${clase.id}/programacion-didactica?tab=unidades'`)
+    await new Promise((r) => setTimeout(r, 900))
+    await clicTexto('Nueva unidad')
+    await new Promise((r) => setTimeout(r, 200))
+    comprobar(
+      'los campos de evaluación y peso de la unidad son visibles',
+      await ev(
+        'Boolean(document.querySelector("#unidad-avaluacion")?.offsetParent && document.querySelector("#unidad-peso")?.offsetParent)'
       )
     )
 

@@ -7,7 +7,7 @@
 
 **Última actualización:** 03/11/2026
 **Estado:** aplicación funcional de escritorio + previsualización web con API simulada.  
-**Verificación de referencia:** `typecheck`, **247 tests**, `build` y `smoke` en verde.
+**Verificación de referencia:** `typecheck`, **249 tests**, `build` y `smoke` en verde.
 
 ---
 
@@ -288,7 +288,7 @@ npm run build
 npm run smoke
 ```
 
-Estado actual (03/11/2026): **247 tests**, 42 archivos de test, build y smoke correctos.
+Estado actual (03/11/2026): **249 tests**, 42 archivos de test, build y smoke correctos.
 
 ---
 
@@ -296,7 +296,7 @@ Estado actual (03/11/2026): **247 tests**, 42 archivos de test, build y smoke co
 
 - E2E real con Playwright + Electron (la Fase 8 sigue abierta).
 - Revisar si se necesita una nota final manual/override y cómo encaja con la trazabilidad.
-- Terminar de pulir textos y estados vacíos de algunas vistas heredadas (`AjustesView`).
+- Revisar textos y estados vacíos de las vistas heredadas que ya no están en el menú (`AjustesView`, `HomeView`).
 - Validar el mapa de contenidos del módulo 0613 con el profesorado.
 - Revisar rendimiento y accesibilidad de tablas largas y del dashboard en ventanas pequeñas.
 

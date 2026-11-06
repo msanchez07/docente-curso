@@ -13,6 +13,7 @@ import type {
   ModeloEvaluacion
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
+import { hoyLocal } from '@shared/fechas'
 
 withDefaults(defineProps<{ embebido?: boolean }>(), { embebido: false })
 
@@ -46,7 +47,7 @@ const form = reactive<EventoEvaluacionEntrada>({
 })
 
 const grupoId = computed(() => Number(route.params.grupoId))
-const hoy = new Date().toISOString().slice(0, 10)
+const hoy = hoyLocal()
 const opcionesTipo = [
   { value: 'evaluacion', label: 'Evaluación' },
   { value: 'examen', label: 'Examen' },

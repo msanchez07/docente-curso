@@ -16,6 +16,7 @@ import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
 import { generarHtmlFichaEntrega } from '@shared/entrega-ficha'
 import { generarHtmlImpresionEntrega } from '@shared/entrega-impresion'
 import { notificar } from '@renderer/composables/notificaciones'
+import { paraIpc } from '@renderer/utils/ipc'
 
 const route = useRoute()
 const router = useRouter()
@@ -421,7 +422,7 @@ async function confirmarExportacion(): Promise<void> {
   try {
     const resultado = await window.api.entregasClase.exportar(
       grupo.value.id,
-      opcionesExportacion.value
+      paraIpc(opcionesExportacion.value)
     )
     if (resultado.ok) {
       mensaje.value = resultado.ruta

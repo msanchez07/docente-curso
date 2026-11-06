@@ -7,6 +7,7 @@ import Modal from '@renderer/components/Modal.vue'
 import AyudaSeccion from '@renderer/components/AyudaSeccion.vue'
 import { notificar } from '@renderer/composables/notificaciones'
 import { DIAS_SEMANA } from '@shared/grupos'
+import { hoyLocal } from '@shared/fechas'
 import { ESQUEMA_CALENDARIO } from '@shared/esquemas-importacion'
 import { descargarJson } from '@renderer/utils/descargar-json'
 import type {
@@ -54,7 +55,7 @@ const importando = ref(false)
 const ficheroCalendario = ref<HTMLInputElement | null>(null)
 const mostrarDefinir = ref(false)
 const nuevoDia = ref({
-  fecha: new Date().toISOString().slice(0, 10),
+  fecha: hoyLocal(),
   tipo: 'festivo' as TipoDiaCalendario,
   descripcion: ''
 })
@@ -106,7 +107,6 @@ const grupos = computed(() =>
 
 const agendaGeneral = computed(() =>
   [...modulos.value.flatMap((modulo) => modulo.agenda), ...calendario.value]
-    .filter((item) => item.fecha >= hoy)
     .slice()
     .sort(
       (a, b) =>

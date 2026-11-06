@@ -34,14 +34,22 @@ const detallesConvocatorias = ref<{
 
 const id = computed(() => Number(route.params.grupoId))
 
+const modoUnidades = computed(
+  () =>
+    resumen.value?.modelo.modoCalificacion === 'unidades' &&
+    Boolean(
+      filaSeleccionada.value?.unidades.some((unidad) => unidad.peso > 0 && unidad.nota !== null)
+    )
+)
+
 const descripcionModelo = computed(() => {
   if (!resumen.value) return ''
   const modelo = resumen.value.modelo
   const categorias = modelo.categorias.map((c) => `${c.nombre} ${c.peso} %`).join(' + ')
-  return `${categorias} · nota final ponderada por RA`
+  return `${categorias} · ${
+    modoUnidades.value ? 'nota final por unidades y trimestres' : 'nota final ponderada por RA'
+  }`
 })
-
-const modoUnidades = computed(() => false)
 const esConvocatoria = computed(
   () => avaluacionActiva.value === 'ordinaria' || avaluacionActiva.value === 'extraordinaria'
 )
@@ -113,7 +121,14 @@ const opcionesAvaluaciones = computed(() => {
 const formulaFinal = computed(() => {
   const fila = filaSeleccionada.value
   const modelo = resumen.value?.modelo
-  if (!fila || !modelo || fila.ras.length === 0) return ''
+  if (!fila || !modelo) return ''
+  if (modoUnidades.value) {
+    return fila.trimestres
+      .filter((trimestre) => trimestre.nota !== null)
+      .map((trimestre) => `${trimestre.nombre} ${trimestre.peso} %`)
+      .join(' + ')
+  }
+  if (fila.ras.length === 0) return ''
   return fila.ras
     .map((ra) => {
       const peso = modelo.pesosRa?.[ra.codigo] ?? 100 / fila.ras.length
@@ -220,16 +235,7 @@ async function cargar(): Promise<void> {
       criteriosDisponibles,
       unidades
     )
-    const listaConvocatorias = await window.api.convocatorias.listar(grupo.value.id)
-    const cargarDetalle = async (tipo: 'ordinaria' | 'extraordinaria') => {
-      const convocatoria = listaConvocatorias.find((item) => item.tipo === tipo)
-      return convocatoria ? await window.api.convocatorias.obtener(convocatoria.id) : null
-    }
-    const [ordinaria, extraordinaria] = await Promise.all([
-      cargarDetalle('ordinaria'),
-      cargarDetalle('extraordinaria')
-    ])
-    detallesConvocatorias.value = { ordinaria, extraordinaria }
+    await cargarConvocatorias()
     const solicitado = Number(route.query.alumno)
     const anterior =
       Number.isFinite(solicitado) && solicitado > 0 ? solicitado : seleccionadoId.value
@@ -244,6 +250,22 @@ async function cargar(): Promise<void> {
   } finally {
     cargando.value = false
   }
+}
+
+async function cargarConvocatorias(): Promise<void> {
+  if (!grupo.value) return
+  const lista = await window.api.convocatorias.listar(grupo.value.id)
+  const cargarDetalle = async (
+    tipo: 'ordinaria' | 'extraordinaria'
+  ): Promise<ConvocatoriaDetalle | null> => {
+    const convocatoria = lista.find((item) => item.tipo === tipo)
+    return convocatoria ? await window.api.convocatorias.obtener(convocatoria.id) : null
+  }
+  const [ordinaria, extraordinaria] = await Promise.all([
+    cargarDetalle('ordinaria'),
+    cargarDetalle('extraordinaria')
+  ])
+  detallesConvocatorias.value = { ordinaria, extraordinaria }
 }
 
 onMounted(cargar)
@@ -331,6 +353,7 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
         v-if="esConvocatoria"
         embebido
         :tipo="avaluacionActiva === 'extraordinaria' ? 'extraordinaria' : 'ordinaria'"
+        @actualizada="cargarConvocatorias"
       />
 
       <div v-else class="calificaciones__layout">
@@ -579,8 +602,11 @@ function motivoAvaluacion(avaluacion: AvaluacionCalificacion): string {
             <div class="calificaciones__final-formula">
               <strong>Nota final = {{ formulaFinal || 'sin pesos configurados' }}</strong>
               <p class="tenue">
-                Cada RA pondera según el porcentaje configurado; la nota final es la media ponderada
-                de los RA. Las recuperaciones se gestionan desde Convocatorias.
+                {{
+                  modoUnidades
+                    ? 'Cada unidad pondera dentro de su trimestre y cada trimestre en la nota final. Las recuperaciones se gestionan desde Convocatorias.'
+                    : 'Cada RA pondera según el porcentaje configurado; la nota final es la media ponderada de los RA. Las recuperaciones se gestionan desde Convocatorias.'
+                }}
               </p>
             </div>
 

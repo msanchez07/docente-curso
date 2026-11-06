@@ -10,6 +10,7 @@ import type {
   TipoRaFormacionEmpresa
 } from '@shared/tipos'
 import { useGruposClaseStore } from '@renderer/stores/grupos-clase'
+import { hoyLocal } from '@shared/fechas'
 
 interface FormFormacion {
   fecha_inicio: string
@@ -46,7 +47,7 @@ const form = reactive<FormFormacion>({
 
 const grupoId = computed(() => Number(route.params.grupoId))
 const alumnoId = computed(() => Number(route.params.alumnoId))
-const hoy = new Date().toISOString().slice(0, 10)
+const hoy = hoyLocal()
 
 function isoLocal(fecha: Date): string {
   const anio = fecha.getFullYear()

@@ -274,27 +274,45 @@ export function calcularResumenClase(
     const perdidaContinua = Boolean(alumno.perdida_evaluacion_continua)
 
     const usaPesosRa = ras.length > 0
-    const notaFinal = usaPesosRa
+    const trimestresConNota = trimestres.filter((trimestre) => trimestre.nota !== null)
+    const usaUnidades =
+      modelo.modoCalificacion === 'unidades' &&
+      unidadesCalificadas.some((unidad) => unidad.nota !== null) &&
+      trimestresConNota.length > 0
+    const notaFinalUnidades = usaUnidades
       ? mediaPonderada(
-          ras.map((ra) => ({
-            peso: Number(modelo.pesosRa?.[ra.codigo] ?? 100 / ras.length) || 0,
-            valor: ra.nota ?? 0
+          trimestresConNota.map((trimestre) => ({
+            peso: trimestre.peso,
+            valor: trimestre.nota ?? 0
           }))
         )
-      : mediaPonderada(
-          avaluaciones
-            .filter((avaluacion) => avaluacion.nota !== null)
-            .map((avaluacion) => ({
-              peso: modelo.avaluaciones.find((a) => a.id === avaluacion.avaluacionId)?.peso ?? 0,
-              valor: avaluacion.nota ?? 0
+      : null
+    const notaFinal =
+      notaFinalUnidades ??
+      (usaPesosRa
+        ? mediaPonderada(
+            ras.map((ra) => ({
+              peso: Number(modelo.pesosRa?.[ra.codigo] ?? 100 / ras.length) || 0,
+              valor: ra.nota ?? 0
             }))
-        )
+          )
+        : mediaPonderada(
+            avaluaciones
+              .filter((avaluacion) => avaluacion.nota !== null)
+              .map((avaluacion) => ({
+                peso: modelo.avaluaciones.find((a) => a.id === avaluacion.avaluacionId)?.peso ?? 0,
+                valor: avaluacion.nota ?? 0
+              }))
+          ))
 
     const avaluacionesSuspensas = avaluaciones.some((avaluacion) => avaluacion.suspensa)
+    const trimestresSuspensos = trimestres.some((trimestre) => trimestre.suspensa)
     const vaAConvocatoria =
       perdidaContinua ||
-      (usaPesosRa
-        ? (notaFinal !== null && notaFinal < minAprobado) || !todosRasSuperados
+      (usaUnidades || usaPesosRa
+        ? (notaFinal !== null && notaFinal < minAprobado) ||
+          !todosRasSuperados ||
+          (usaUnidades && trimestresSuspensos)
         : avaluacionesSuspensas ||
           (notaFinal !== null && notaFinal < minAprobado) ||
           !todosRasSuperados)
