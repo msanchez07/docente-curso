@@ -6,7 +6,7 @@
 > función relevante. Si algo no coincide con la aplicación, la guía está mal y hay que corregirla.
 
 **Última actualización:** 31/10/2026  
-**Versión verificada:** 1.1 · 241 tests, `typecheck`, `build` y `smoke` en verde.
+**Versión verificada:** 1.1 · 247 tests, `typecheck`, `build` y `smoke` en verde.
 
 ---
 

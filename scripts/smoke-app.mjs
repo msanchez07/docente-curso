@@ -304,6 +304,61 @@ async function principal() {
           1
     )
 
+    const rasFormacion = await ev(
+      `window.api.formacionEmpresa.guardarRas(${clase.id}, ${alumnoClase.id}, [{ ra_codigo: 'RA7', tipo: 'total' }, { ra_codigo: 'RA9', tipo: 'parcial' }])`
+    )
+    comprobar(
+      'guarda los RA totales y parciales de formación en empresa',
+      rasFormacion.length === 2 &&
+        rasFormacion.some((ra) => ra.ra_codigo === 'RA7' && ra.tipo === 'total') &&
+        rasFormacion.some((ra) => ra.ra_codigo === 'RA9' && ra.tipo === 'parcial')
+    )
+
+    const perdida = await ev(
+      `window.api.alumnosClase.marcarPerdidaContinua(${clase.id}, ${alumnoClase.id}, true)`
+    )
+    comprobar(
+      'marca la pérdida de evaluación continua por alumno',
+      perdida?.perdida_evaluacion_continua === true
+    )
+    comprobar(
+      'la marca de pérdida de evaluación continua se conserva al listar',
+      (await ev(`window.api.alumnosClase.listar(${clase.id})`)).some(
+        (item) => item.id === alumnoClase.id && item.perdida_evaluacion_continua
+      )
+    )
+
+    const eventoOtro = await ev(
+      `window.api.eventosEvaluacion.crear(${clase.id}, { tipo: 'otro', titulo: 'Reunión sintética', fecha: '2026-11-21' })`
+    )
+    comprobar(
+      'crea una fecha de tipo otras',
+      eventoOtro.tipo === 'otro' &&
+        (await ev(`window.api.eventosEvaluacion.listar(${clase.id})`)).some(
+          (evento) => evento.id === eventoOtro.id
+        )
+    )
+
+    const convocatoria = await ev(
+      `window.api.convocatorias.crear(${clase.id}, { tipo: 'ordinaria', nombre: 'Ordinaria sintética', fecha: '2026-11-20' })`
+    )
+    const bloqueGlobal = await ev(
+      `window.api.convocatorias.crearBloque(${convocatoria.id}, { nombre: 'Examen global', peso: 100, orden: 0 })`
+    )
+    const convocatoriaGuardada = await ev(
+      `window.api.convocatorias.guardarAsignaciones(${convocatoria.id}, [{ alumnoId: ${alumnoClase.id}, bloqueId: ${bloqueGlobal.id}, nota: 6, observaciones: null, incluida: true }])`
+    )
+    comprobar(
+      'guarda la nota de la convocatoria ordinaria',
+      convocatoriaGuardada.asignaciones.some(
+        (asignacion) =>
+          asignacion.alumno_id === alumnoClase.id &&
+          asignacion.bloque_id === bloqueGlobal.id &&
+          asignacion.nota === 6 &&
+          asignacion.incluida
+      )
+    )
+
     const normativaIncluida = await ev('window.api.normativaFpt.leer()')
     comprobar(
       'normativa FP incluida',
@@ -522,6 +577,91 @@ async function principal() {
       await ev(
         'document.body.textContent.includes("Cola de trabajo") && document.body.textContent.includes("Agenda y próximas fechas")'
       )
+    )
+
+    const clicTexto = async (texto) =>
+      ev(`(() => {
+        const boton = [...document.querySelectorAll('button')].find(
+          (item) => item.textContent.trim() === ${JSON.stringify(texto)}
+        )
+        if (!boton) return false
+        boton.click()
+        return true
+      })()`)
+
+    const escribir = async (selector, valor) =>
+      ev(`(() => {
+        const campo = document.querySelector(${JSON.stringify(selector)})
+        if (!campo) return false
+        const descriptor = Object.getOwnPropertyDescriptor(
+          Object.getPrototypeOf(campo), 'value'
+        )
+        descriptor.set.call(campo, ${JSON.stringify(valor)})
+        campo.dispatchEvent(new Event('input', { bubbles: true }))
+        campo.dispatchEvent(new Event('change', { bubbles: true }))
+        return true
+      })()`)
+
+    /* --- Tabla de la quincena y de «Ver todo» ---------------------- */
+    await ev(`location.hash = '#/grupo/${clase.id}/programacion'`)
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar('abre la tabla de Ver todo', await clicTexto('Tabla'))
+    comprobar('selecciona Ver todo', await clicTexto('Ver todo'))
+    await new Promise((r) => setTimeout(r, 300))
+    comprobar(
+      'Ver todo muestra la tabla de programación',
+      await ev('document.querySelector("table.programacion__tabla") !== null')
+    )
+
+    /* --- Guardado de una unidad con fechas ------------------------- */
+    await ev(`location.hash = '#/grupo/${clase.id}/programacion-didactica?tab=unidades'`)
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar('abre el formulario de unidad', await clicTexto('Nueva unidad'))
+    await new Promise((r) => setTimeout(r, 200))
+    await escribir('#unidad-nombre', 'Unidad sintética')
+    await escribir('#unidad-inicio', '2026-11-10')
+    await escribir('#unidad-fin', '2026-11-20')
+    comprobar('crea la unidad', await clicTexto('Crear unidad'))
+    await new Promise((r) => setTimeout(r, 500))
+    comprobar(
+      'guarda la unidad con fechas sin error de pesos',
+      (await ev('document.body.textContent.includes("Unidad creada.")')) &&
+        !(await ev('document.body.textContent.includes("Los pesos de las unidades")'))
+    )
+
+    /* --- Nota de convocatoria para pérdida de continua ------------ */
+    await ev(`location.hash = '#/grupo/${clase.id}/calificaciones?alumno=${alumnoClase.id}'`)
+    await new Promise((r) => setTimeout(r, 700))
+    comprobar('abre la nota final', await clicTexto('Final'))
+    await new Promise((r) => setTimeout(r, 300))
+    comprobar(
+      'la nota final del alumno con pérdida de continua usa la convocatoria',
+      await ev(
+        'document.querySelector(".calificaciones__final-nota strong")?.textContent?.trim() === "6,00" && document.body.textContent.includes("ha perdido la evaluación continua")'
+      )
+    )
+
+    /* --- Fines de semana fuera del dashboard ---------------------- */
+    await ev(
+      `window.api.calendarioEscolar.importar(${cursoActual.id}, ${JSON.stringify(
+        JSON.stringify([
+          { fecha: '2026-11-07', tipo: 'no_lectivo', descripcion: 'Sábado' },
+          { fecha: '2026-11-08', tipo: 'no_lectivo', descripcion: 'Domingo' },
+          { fecha: '2026-11-09', tipo: 'no_lectivo', descripcion: 'Lunes no lectivo' }
+        ])
+      )})`
+    )
+    await ev(`location.hash = '#/grupo/${clase.id}'`)
+    await new Promise((r) => setTimeout(r, 700))
+    const noLectivosDashboard = await ev(
+      'document.querySelector(".dashboard__no-lectivos")?.textContent ?? ""'
+    )
+    comprobar(
+      'el dashboard oculta los fines de semana no lectivos',
+      noLectivosDashboard.includes('09/11/2026') &&
+        !noLectivosDashboard.includes('07/11/2026') &&
+        !noLectivosDashboard.includes('08/11/2026'),
+      String(noLectivosDashboard)
     )
 
     clearTimeout(rescate)

@@ -26,7 +26,7 @@ empresa e informes trazables al BOE.
 Aplicación funcional en **versión 1.1**. Verificación actual:
 
 - `npm run typecheck` ✅
-- `npm test` ✅ **241 tests**
+- `npm test` ✅ **247 tests**
 - `npm run build` ✅
 - `npm run smoke` ✅
 

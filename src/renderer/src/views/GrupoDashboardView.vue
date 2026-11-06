@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import NavegacionMes from '@renderer/components/NavegacionMes.vue'
 import { calcularResumenClase } from '@shared/calcular-calificaciones'
+import { esFinDeSemana } from '@shared/fechas'
 import { DIAS_SEMANA, etiquetaModalidad } from '@shared/grupos'
 import type {
   AlumnoClase,
@@ -150,8 +151,7 @@ const agendaItems = computed<ItemAgenda[]>(() => {
     if (dia.tipo === 'lectivo') continue
     // El calendario escolar puede marcar sábados y domingos como no lectivos;
     // en el dashboard no aportan información y ensucian la agenda.
-    const fechaDia = new Date(`${dia.fecha}T00:00:00`)
-    if (fechaDia.getDay() === 0 || fechaDia.getDay() === 6) continue
+    if (esFinDeSemana(dia.fecha)) continue
     const titulo =
       dia.descripcion ||
       (dia.tipo === 'vacaciones'

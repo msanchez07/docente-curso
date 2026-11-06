@@ -114,6 +114,26 @@ describe('cálculo de calificaciones por grupo', () => {
     expect(fila.vaAConvocatoria).toBe(true)
   })
 
+  it('aplica los pesos propios de una evaluación', () => {
+    const modelo = modeloPorDefecto('presencial')
+    modelo.avaluaciones[0].pesosCategorias = {
+      examenes: 100,
+      actividades: 0,
+      proyectos: 0
+    }
+    const resumen = calcularResumenClase(
+      grupo,
+      modelo,
+      entregas,
+      [alumno],
+      notas({ 1: 8, 2: 6, 3: 7 })
+    )
+    const evaluacion = resumen.alumnos[0].avaluaciones[0]
+    expect(evaluacion.categorias.find((c) => c.categoriaId === 'examenes')?.peso).toBe(100)
+    expect(evaluacion.categorias.find((c) => c.categoriaId === 'actividades')?.peso).toBe(0)
+    expect(evaluacion.nota).toBe(8)
+  })
+
   it('marca a convocatoria si pierde la evaluación continua', () => {
     const resumen = calcularResumenClase(
       grupo,
